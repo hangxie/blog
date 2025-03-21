@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iod &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/iod/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 20 Aug 2022 06:27:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<item>
+		<title>lol Google</title>
+		<link>https://xiehang.com/blog/2022/08/19/lol-google/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 20 Aug 2022 06:27:29 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[iod]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1833</guid>
+
+					<description><![CDATA[The Announcement of Discontinuing Google Cloud IotT Core Service Stirs the Community and Customers from googlecloud Just lol, not sad, not even surprised.]]></description>
+										<content:encoded><![CDATA[<br />
+<blockquote class="reddit-card" ><p>      <a href="https://www.reddit.com/r/googlecloud/comments/wsa5fv/the_announcement_of_discontinuing_google_cloud/?ref_source=embed&amp;ref=share">The Announcement of Discontinuing Google Cloud IotT Core Service Stirs the Community and Customers</a> from      <a href="https://www.reddit.com/r/googlecloud/">googlecloud</a>    </p></blockquote>
+<p>    <script async src="https://embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script></p>
+<p>Just lol, not sad, not even surprised.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

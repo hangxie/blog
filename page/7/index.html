@@ -77,7 +77,37 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 			<div id="container" class="fix">
 					<div id="main-col">
 		<div id="content" class="hfeed">
-	<article class="full-content post-1555 post type-post status-publish format-standard hentry category-triviality tag-glusterfs tag-performance category-1-id post-seq-1 post-parity-odd meta-position-corners fix" id="post-1555">
+	<article class="full-content post-1558 post type-post status-publish format-standard hentry category-triviality tag-memcached tag-memory tag-redis category-1-id post-seq-1 post-parity-odd meta-position-corners fix" id="post-1558">
+<header class="post-header title-container fix">
+	<div class="title">
+		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/07/29/is-redis-much-more-stable-than-memcached/" class="entry-title" rel="bookmark" title="Is redis much more stable than memcached?">Is redis much more stable than memcached?</a></h2>
+		<div class="postdata fix">
+					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
+						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2013/07/29/is-redis-much-more-stable-than-memcached/#respond">No Responses &#187;</a></span>
+				</div>
+<!-- /.postdata -->
+		</div>
+<!-- /.title -->
+		<div class="date">
+<span class="month">Jul</span> <span class="day">29</span><span class="year">2013</span>
+</div>
+	</header><!-- /.title-container -->
+	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2013-07-29T09:56:26-07:00"></span>	<div class="entry-container fix">
+		<div class="entry entry-content fix">
+<p>I got a weird feeling that redis is more stable than memcached &#8230; but I don&#8217;t have solid evidence for that.</p>
+<p>The case is, I migrated an application&#8217;s backend from memcached to redis, there were surely some other bug fixes and trivial performance tuning, but thinking of the memcached version had been running in production for more than 6 months without any significant problem, I wouldn&#8217;t think my changes make any big difference. Also, I changed my codes only, nothing to do with redis/memcached so I think it&#8217;s a fair comparison.</p>
+<p>memcached use to hit 6GB memory (VIRT) usage after a week to 10 days running, then for most cases it will crash cos ops people set RAM limitation. Ops people asked me to do a restart once the memory utilization hit a certain level, but I found that restart memcached will simply wipe out all my in-memory-only data like counter, which is not critical but will make the application looks weird (&#8220;no more visitor in the past 7 days???&#8221;), and this initiated the migration to redis.</p>
+<p>After migrated to redis, the memory utilization started from 4200MB, and one of the oldest instance had been running there since Jun 4 (50+ days till now), and memory is at 4300MB. I <strong><em>guess</em> </strong>the increment was due to data size growth instead of memory leak, though again, I don&#8217;t have evidence.</p>
+<p>Anyway, I&#8217;m not going to go back to memcached in the future, so the difference won&#8217;t bother me.</p>
+		</div>
+<!--entry -->
+	</div>
+<!-- .entry-container -->
+<footer class="post-footer postdata fix">
+<span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 09:56</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/memcached/" rel="tag">memcached</a>, <a href="https://xiehang.com/blog/tag/memory/" rel="tag">memory</a>, <a href="https://xiehang.com/blog/tag/redis/" rel="tag">redis</a></span>
+	</footer><!-- .post-footer -->
+	</article><!--post -->
+	<article class="full-content post-1555 post type-post status-publish format-standard hentry category-triviality tag-glusterfs tag-performance category-1-id post-seq-2 post-parity-even meta-position-corners fix" id="post-1555">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/" class="entry-title" rel="bookmark" title="To-do list with glusterfs">To-do list with glusterfs</a></h2>
@@ -110,7 +140,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 17:41</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/glusterfs/" rel="tag">glusterfs</a>, <a href="https://xiehang.com/blog/tag/performance/" rel="tag">performance</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1551 post type-post status-publish format-standard hentry category-triviality tag-gd tag-gdgraph tag-geo tag-map tag-perl tag-php tag-plot tag-python tag-shapefile tag-shp-pyshp category-1-id post-seq-2 post-parity-even meta-position-corners fix" id="post-1551">
+	<article class="full-content post-1551 post type-post status-publish format-standard hentry category-triviality tag-gd tag-gdgraph tag-geo tag-map tag-perl tag-php tag-plot tag-python tag-shapefile tag-shp-pyshp category-1-id post-seq-3 post-parity-odd meta-position-corners fix" id="post-1551">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/07/19/how-to-solve-problems/" class="entry-title" rel="bookmark" title="How to solve problems">How to solve problems</a></h2>
@@ -137,7 +167,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 15:54</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/gd/" rel="tag">gd</a>, <a href="https://xiehang.com/blog/tag/gdgraph/" rel="tag">gd::graph</a>, <a href="https://xiehang.com/blog/tag/geo/" rel="tag">geo</a>, <a href="https://xiehang.com/blog/tag/map/" rel="tag">map</a>, <a href="https://xiehang.com/blog/tag/perl/" rel="tag">perl</a>, <a href="https://xiehang.com/blog/tag/php/" rel="tag">php</a>, <a href="https://xiehang.com/blog/tag/plot/" rel="tag">Plot</a>, <a href="https://xiehang.com/blog/tag/python/" rel="tag">python</a>, <a href="https://xiehang.com/blog/tag/shapefile/" rel="tag">shapefile</a>, <a href="https://xiehang.com/blog/tag/shp-pyshp/" rel="tag">shp. pyshp</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1545 post type-post status-publish format-standard hentry category-triviality tag-gd tag-gdgraph tag-perl tag-php tag-phpplot category-1-id post-seq-3 post-parity-odd meta-position-corners fix" id="post-1545">
+	<article class="full-content post-1545 post type-post status-publish format-standard hentry category-triviality tag-gd tag-gdgraph tag-perl tag-php tag-phpplot category-1-id post-seq-4 post-parity-even meta-position-corners fix" id="post-1545">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/07/18/trying-phplot/" class="entry-title" rel="bookmark" title="Trying PHPlot">Trying PHPlot</a></h2>
@@ -164,7 +194,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 17:52</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/gd/" rel="tag">gd</a>, <a href="https://xiehang.com/blog/tag/gdgraph/" rel="tag">gd::graph</a>, <a href="https://xiehang.com/blog/tag/perl/" rel="tag">perl</a>, <a href="https://xiehang.com/blog/tag/php/" rel="tag">php</a>, <a href="https://xiehang.com/blog/tag/phpplot/" rel="tag">phpplot</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1537 post type-post status-publish format-standard hentry category-triviality tag-map tag-python tag-shapefile tag-shp category-1-id post-seq-4 post-parity-even meta-position-corners fix" id="post-1537">
+	<article class="full-content post-1537 post type-post status-publish format-standard hentry category-triviality tag-map tag-python tag-shapefile tag-shp category-1-id post-seq-5 post-parity-odd meta-position-corners fix" id="post-1537">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/07/17/take-a-note-about-map/" class="entry-title" rel="bookmark" title="Take a note about map">Take a note about map</a></h2>
@@ -194,7 +224,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 15:45</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/map/" rel="tag">map</a>, <a href="https://xiehang.com/blog/tag/python/" rel="tag">python</a>, <a href="https://xiehang.com/blog/tag/shapefile/" rel="tag">shapefile</a>, <a href="https://xiehang.com/blog/tag/shp/" rel="tag">shp</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1534 post type-post status-publish format-standard hentry category-triviality tag-dada-base tag-mongodb tag-redis category-1-id post-seq-5 post-parity-odd meta-position-corners fix" id="post-1534">
+	<article class="full-content post-1534 post type-post status-publish format-standard hentry category-triviality tag-dada-base tag-mongodb tag-redis category-1-id post-seq-6 post-parity-even meta-position-corners fix" id="post-1534">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/06/22/db-store-choices/" class="entry-title" rel="bookmark" title="DB store choices">DB store choices</a></h2>
@@ -222,7 +252,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 11:11</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/dada-base/" rel="tag">Dada base</a>, <a href="https://xiehang.com/blog/tag/mongodb/" rel="tag">mongodb</a>, <a href="https://xiehang.com/blog/tag/redis/" rel="tag">redis</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1527 post type-post status-publish format-standard hentry category-triviality tag-fedora tag-firewall tag-systemctl tag-xfce tag-xrdp category-1-id post-seq-6 post-parity-even meta-position-corners fix" id="post-1527">
+	<article class="full-content post-1527 post type-post status-publish format-standard hentry category-triviality tag-fedora tag-firewall tag-systemctl tag-xfce tag-xrdp category-1-id post-seq-7 post-parity-odd meta-position-corners fix" id="post-1527">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/06/20/fedora-xrdp-and-xfce/" class="entry-title" rel="bookmark" title="Fedora, xrdp, and xfce">Fedora, xrdp, and xfce</a></h2>
@@ -250,7 +280,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 18:43</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/fedora/" rel="tag">fedora</a>, <a href="https://xiehang.com/blog/tag/firewall/" rel="tag">firewall</a>, <a href="https://xiehang.com/blog/tag/systemctl/" rel="tag">systemctl</a>, <a href="https://xiehang.com/blog/tag/xfce/" rel="tag">xfce</a>, <a href="https://xiehang.com/blog/tag/xrdp/" rel="tag">xrdp</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1521 post type-post status-publish format-standard hentry category-triviality tag-mac tag-osx tag-ubuntu tag-ui tag-windows category-1-id post-seq-7 post-parity-odd meta-position-corners fix" id="post-1521">
+	<article class="full-content post-1521 post type-post status-publish format-standard hentry category-triviality tag-mac tag-osx tag-ubuntu tag-ui tag-windows category-1-id post-seq-8 post-parity-even meta-position-corners fix" id="post-1521">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/05/30/moved-back-to-windows/" class="entry-title" rel="bookmark" title="Moved (back) to Windows">Moved (back) to Windows</a></h2>
@@ -280,7 +310,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 18:28</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/mac/" rel="tag">mac</a>, <a href="https://xiehang.com/blog/tag/osx/" rel="tag">osx</a>, <a href="https://xiehang.com/blog/tag/ubuntu/" rel="tag">ubuntu</a>, <a href="https://xiehang.com/blog/tag/ui/" rel="tag">UI</a>, <a href="https://xiehang.com/blog/tag/windows/" rel="tag">windows</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1518 post type-post status-publish format-standard hentry category-triviality tag-html tag-pdf tag-png tag-x category-1-id post-seq-8 post-parity-even meta-position-corners fix" id="post-1518">
+	<article class="full-content post-1518 post type-post status-publish format-standard hentry category-triviality tag-html tag-pdf tag-png tag-x category-1-id post-seq-9 post-parity-odd meta-position-corners fix" id="post-1518">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/05/28/command-line-x-environment/" class="entry-title" rel="bookmark" title="Command line X environment">Command line X environment</a></h2>
@@ -309,7 +339,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 21:18</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/html/" rel="tag">html</a>, <a href="https://xiehang.com/blog/tag/pdf/" rel="tag">pdf</a>, <a href="https://xiehang.com/blog/tag/png/" rel="tag">png</a>, <a href="https://xiehang.com/blog/tag/x/" rel="tag">x</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
-	<article class="full-content post-1512 post type-post status-publish format-standard hentry category-triviality tag-deb tag-debian tag-dpkg tag-how-to tag-package tag-ubuntu category-1-id post-seq-9 post-parity-odd meta-position-corners fix" id="post-1512">
+	<article class="full-content post-1512 post type-post status-publish format-standard hentry category-triviality tag-deb tag-debian tag-dpkg tag-how-to tag-package tag-ubuntu category-1-id post-seq-10 post-parity-even meta-position-corners fix" id="post-1512">
 <header class="post-header title-container fix">
 	<div class="title">
 		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/04/08/finally-i-found-a-readable-debian-package-how-to/" class="entry-title" rel="bookmark" title="Finally I found a &#8220;readable&#8221; debian package how-to">Finally I found a &#8220;readable&#8221; debian package how-to</a></h2>
@@ -337,35 +367,6 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 16:11</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/deb/" rel="tag">deb</a>, <a href="https://xiehang.com/blog/tag/debian/" rel="tag">debian</a>, <a href="https://xiehang.com/blog/tag/dpkg/" rel="tag">dpkg</a>, <a href="https://xiehang.com/blog/tag/how-to/" rel="tag">how-to</a>, <a href="https://xiehang.com/blog/tag/package/" rel="tag">package</a>, <a href="https://xiehang.com/blog/tag/ubuntu/" rel="tag">ubuntu</a></span>
-	</footer><!-- .post-footer -->
-	</article><!--post -->
-	<article class="full-content post-1508 post type-post status-publish format-standard hentry category-triviality tag-apache tag-cookie tag-http-filter tag-iis tag-jetty tag-net tag-nginx tag-tomcat category-1-id post-seq-10 post-parity-even meta-position-corners fix" id="post-1508">
-<header class="post-header title-container fix">
-	<div class="title">
-		<h2 class="posttitle"><a href="https://xiehang.com/blog/2013/03/26/updates/" class="entry-title" rel="bookmark" title="Updates">Updates</a></h2>
-		<div class="postdata fix">
-					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
-						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2013/03/26/updates/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Mar</span> <span class="day">26</span><span class="year">2013</span>
-</div>
-	</header><!-- /.title-container -->
-	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2013-03-26T12:06:45-07:00"></span>	<div class="entry-container fix">
-		<div class="entry entry-content fix">
-<p>Well, one and half month passed and I never post even a single word &#8230; yes I was busy but main reason is &#8230; I was lazy.</p>
-<p>Alright, some updates &#8211; I successfully migrate the bcookie module from Apache HTTPd to nginx, things were really tough at the very beginning whenever all you understand is Apache. However, at this stage I would like to say nginx is kind of neat and elegant, expanding it is not that hard though you have to build everything  in one shot (i.e. no dso allowed), I&#8217;d like to dig in why they have design like this as this is really uncommon in modern era.</p>
-<p>And I&#8217;m moving to .Net now, again I have no idea so far, but I believe I need to write a filter in C# (YAY!), but before that I need get IIS up and running, and determine if there is any compatibility issues between different version of IIS (and .Net Framework).</p>
-<p>Stay tuned, I will post whenever I make any progress and most likely that will be the time I move to Java container part &#8211; Jetty or Tomcat, not sure so far.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
-<footer class="post-footer postdata fix">
-<span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 12:06</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/apache/" rel="tag">apache</a>, <a href="https://xiehang.com/blog/tag/cookie/" rel="tag">cookie</a>, <a href="https://xiehang.com/blog/tag/http-filter/" rel="tag">http filter</a>, <a href="https://xiehang.com/blog/tag/iis/" rel="tag">iis</a>, <a href="https://xiehang.com/blog/tag/jetty/" rel="tag">jetty</a>, <a href="https://xiehang.com/blog/tag/net/" rel="tag">net</a>, <a href="https://xiehang.com/blog/tag/nginx/" rel="tag">nginx</a>, <a href="https://xiehang.com/blog/tag/tomcat/" rel="tag">tomcat</a></span>
 	</footer><!-- .post-footer -->
 	</article><!--post -->
 	<div class="page-nav fix">
@@ -408,7 +409,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <td>8</td>
 <td>9</td>
 <td>10</td>
-<td id="today"><a href="https://xiehang.com/blog/2022/08/11/" aria-label="Posts published on August 11, 2022">11</a></td>
+<td><a href="https://xiehang.com/blog/2022/08/11/" aria-label="Posts published on August 11, 2022">11</a></td>
 <td>12</td>
 <td>13</td>
 	</tr>
@@ -418,7 +419,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <td>16</td>
 <td>17</td>
 <td>18</td>
-<td>19</td>
+<td id="today"><a href="https://xiehang.com/blog/2022/08/19/" aria-label="Posts published on August 19, 2022">19</a></td>
 <td>20</td>
 	</tr>
 	<tr>
@@ -449,6 +450,9 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 		<h3 class="dbx-handle plain">Recent Posts</h3>
 		<ul>
 											<li>
+					<a href="https://xiehang.com/blog/2022/08/19/lol-google/">lol Google</a>
+									</li>
+											<li>
 					<a href="https://xiehang.com/blog/2022/08/11/security-is-about-balance/">Security is about balance</a>
 									</li>
 											<li>
@@ -459,9 +463,6 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 									</li>
 											<li>
 					<a href="https://xiehang.com/blog/2022/03/04/move-to-static-site/">Move to static site</a>
-									</li>
-											<li>
-					<a href="https://xiehang.com/blog/2018/12/22/moving-away-from-google/">Moving Away from Google</a>
 									</li>
 					</ul>
 
@@ -493,18 +494,18 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <a href="https://xiehang.com/blog/tag/apache/" class="tag-cloud-link tag-link-82 tag-link-position-4" style="font-size: 9.7872340425532pt;" aria-label="apache (7 items)">apache</a>
 <a href="https://xiehang.com/blog/tag/aws/" class="tag-cloud-link tag-link-256 tag-link-position-5" style="font-size: 12.914893617021pt;" aria-label="aws (12 items)">aws</a>
 <a href="https://xiehang.com/blog/tag/cassandra/" class="tag-cloud-link tag-link-155 tag-link-position-6" style="font-size: 9.7872340425532pt;" aria-label="cassandra (7 items)">cassandra</a>
-<a href="https://xiehang.com/blog/tag/cloud/" class="tag-cloud-link tag-link-210 tag-link-position-7" style="font-size: 8pt;" aria-label="cloud (5 items)">cloud</a>
-<a href="https://xiehang.com/blog/tag/computer/" class="tag-cloud-link tag-link-48 tag-link-position-8" style="font-size: 11.872340425532pt;" aria-label="computer (10 items)">computer</a>
-<a href="https://xiehang.com/blog/tag/development/" class="tag-cloud-link tag-link-47 tag-link-position-9" style="font-size: 20.36170212766pt;" aria-label="development (40 items)">development</a>
-<a href="https://xiehang.com/blog/tag/directshow/" class="tag-cloud-link tag-link-5 tag-link-position-10" style="font-size: 8pt;" aria-label="directshow (5 items)">directshow</a>
+<a href="https://xiehang.com/blog/tag/cloud/" class="tag-cloud-link tag-link-210 tag-link-position-7" style="font-size: 9.0425531914894pt;" aria-label="cloud (6 items)">cloud</a>
+<a href="https://xiehang.com/blog/tag/company/" class="tag-cloud-link tag-link-171 tag-link-position-8" style="font-size: 8pt;" aria-label="company (5 items)">company</a>
+<a href="https://xiehang.com/blog/tag/computer/" class="tag-cloud-link tag-link-48 tag-link-position-9" style="font-size: 11.872340425532pt;" aria-label="computer (10 items)">computer</a>
+<a href="https://xiehang.com/blog/tag/development/" class="tag-cloud-link tag-link-47 tag-link-position-10" style="font-size: 20.36170212766pt;" aria-label="development (40 items)">development</a>
 <a href="https://xiehang.com/blog/tag/e90/" class="tag-cloud-link tag-link-112 tag-link-position-11" style="font-size: 9.7872340425532pt;" aria-label="e90 (7 items)">e90</a>
 <a href="https://xiehang.com/blog/tag/ec2/" class="tag-cloud-link tag-link-259 tag-link-position-12" style="font-size: 9.7872340425532pt;" aria-label="ec2 (7 items)">ec2</a>
-<a href="https://xiehang.com/blog/tag/email/" class="tag-cloud-link tag-link-219 tag-link-position-13" style="font-size: 8pt;" aria-label="email (5 items)">email</a>
+<a href="https://xiehang.com/blog/tag/flash/" class="tag-cloud-link tag-link-245 tag-link-position-13" style="font-size: 8pt;" aria-label="flash (5 items)">flash</a>
 <a href="https://xiehang.com/blog/tag/free/" class="tag-cloud-link tag-link-39 tag-link-position-14" style="font-size: 12.914893617021pt;" aria-label="free (12 items)">free</a>
 <a href="https://xiehang.com/blog/tag/friend/" class="tag-cloud-link tag-link-34 tag-link-position-15" style="font-size: 10.531914893617pt;" aria-label="friend (8 items)">friend</a>
 <a href="https://xiehang.com/blog/tag/gnat/" class="tag-cloud-link tag-link-6 tag-link-position-16" style="font-size: 11.276595744681pt;" aria-label="gnat (9 items)">gnat</a>
 <a href="https://xiehang.com/blog/tag/godaddy/" class="tag-cloud-link tag-link-87 tag-link-position-17" style="font-size: 11.276595744681pt;" aria-label="godaddy (9 items)">godaddy</a>
-<a href="https://xiehang.com/blog/tag/google/" class="tag-cloud-link tag-link-26 tag-link-position-18" style="font-size: 11.276595744681pt;" aria-label="google (9 items)">google</a>
+<a href="https://xiehang.com/blog/tag/google/" class="tag-cloud-link tag-link-26 tag-link-position-18" style="font-size: 11.872340425532pt;" aria-label="google (10 items)">google</a>
 <a href="https://xiehang.com/blog/tag/hadoop/" class="tag-cloud-link tag-link-230 tag-link-position-19" style="font-size: 9.7872340425532pt;" aria-label="hadoop (7 items)">hadoop</a>
 <a href="https://xiehang.com/blog/tag/home/" class="tag-cloud-link tag-link-51 tag-link-position-20" style="font-size: 11.276595744681pt;" aria-label="home (9 items)">home</a>
 <a href="https://xiehang.com/blog/tag/hosting/" class="tag-cloud-link tag-link-266 tag-link-position-21" style="font-size: 9.0425531914894pt;" aria-label="hosting (6 items)">hosting</a>
@@ -521,12 +522,12 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <a href="https://xiehang.com/blog/tag/osx/" class="tag-cloud-link tag-link-16 tag-link-position-32" style="font-size: 12.914893617021pt;" aria-label="osx (12 items)">osx</a>
 <a href="https://xiehang.com/blog/tag/performance/" class="tag-cloud-link tag-link-141 tag-link-position-33" style="font-size: 9.7872340425532pt;" aria-label="performance (7 items)">performance</a>
 <a href="https://xiehang.com/blog/tag/php/" class="tag-cloud-link tag-link-72 tag-link-position-34" style="font-size: 13.957446808511pt;" aria-label="php (14 items)">php</a>
-<a href="https://xiehang.com/blog/tag/python/" class="tag-cloud-link tag-link-27 tag-link-position-35" style="font-size: 16.042553191489pt;" aria-label="python (20 items)">python</a>
-<a href="https://xiehang.com/blog/tag/test/" class="tag-cloud-link tag-link-28 tag-link-position-36" style="font-size: 11.872340425532pt;" aria-label="test (10 items)">test</a>
-<a href="https://xiehang.com/blog/tag/ubuntu/" class="tag-cloud-link tag-link-59 tag-link-position-37" style="font-size: 14.255319148936pt;" aria-label="ubuntu (15 items)">ubuntu</a>
-<a href="https://xiehang.com/blog/tag/upgrade/" class="tag-cloud-link tag-link-69 tag-link-position-38" style="font-size: 11.872340425532pt;" aria-label="upgrade (10 items)">upgrade</a>
-<a href="https://xiehang.com/blog/tag/vacation/" class="tag-cloud-link tag-link-74 tag-link-position-39" style="font-size: 9.0425531914894pt;" aria-label="vacation (6 items)">vacation</a>
-<a href="https://xiehang.com/blog/tag/virtualization/" class="tag-cloud-link tag-link-134 tag-link-position-40" style="font-size: 8pt;" aria-label="virtualization (5 items)">virtualization</a>
+<a href="https://xiehang.com/blog/tag/project/" class="tag-cloud-link tag-link-170 tag-link-position-35" style="font-size: 8pt;" aria-label="project (5 items)">project</a>
+<a href="https://xiehang.com/blog/tag/python/" class="tag-cloud-link tag-link-27 tag-link-position-36" style="font-size: 16.042553191489pt;" aria-label="python (20 items)">python</a>
+<a href="https://xiehang.com/blog/tag/test/" class="tag-cloud-link tag-link-28 tag-link-position-37" style="font-size: 11.872340425532pt;" aria-label="test (10 items)">test</a>
+<a href="https://xiehang.com/blog/tag/ubuntu/" class="tag-cloud-link tag-link-59 tag-link-position-38" style="font-size: 14.255319148936pt;" aria-label="ubuntu (15 items)">ubuntu</a>
+<a href="https://xiehang.com/blog/tag/upgrade/" class="tag-cloud-link tag-link-69 tag-link-position-39" style="font-size: 11.872340425532pt;" aria-label="upgrade (10 items)">upgrade</a>
+<a href="https://xiehang.com/blog/tag/vacation/" class="tag-cloud-link tag-link-74 tag-link-position-40" style="font-size: 9.0425531914894pt;" aria-label="vacation (6 items)">vacation</a>
 <a href="https://xiehang.com/blog/tag/weather/" class="tag-cloud-link tag-link-7 tag-link-position-41" style="font-size: 9.7872340425532pt;" aria-label="weather (7 items)">weather</a>
 <a href="https://xiehang.com/blog/tag/windows/" class="tag-cloud-link tag-link-38 tag-link-position-42" style="font-size: 11.872340425532pt;" aria-label="windows (10 items)">windows</a>
 <a href="https://xiehang.com/blog/tag/wordpress/" class="tag-cloud-link tag-link-32 tag-link-position-43" style="font-size: 14.255319148936pt;" aria-label="wordpress (15 items)">wordpress</a>
@@ -552,7 +553,7 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 		</table>
 	</div>
 </footer>
-<!-- 53 queries, 5MB in 0.050 seconds. -->
+<!-- 53 queries, 5MB in 0.055 seconds. -->
 </div>
 <!--/wrapper -->
 <!-- location footer -->

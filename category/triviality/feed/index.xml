@@ -12,7 +12,7 @@
 	<atom:link href="https://xiehang.com/blog/category/triviality/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Thu, 11 Aug 2022 15:38:10 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 20 Aug 2022 06:27:29 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,28 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
+		<title>lol Google</title>
+		<link>https://xiehang.com/blog/2022/08/19/lol-google/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 20 Aug 2022 06:27:29 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[iod]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1833</guid>
+
+					<description><![CDATA[The Announcement of Discontinuing Google Cloud IotT Core Service Stirs the Community and Customers from googlecloud Just lol, not sad, not even surprised.]]></description>
+										<content:encoded><![CDATA[<br />
+<blockquote class="reddit-card" ><p>      <a href="https://www.reddit.com/r/googlecloud/comments/wsa5fv/the_announcement_of_discontinuing_google_cloud/?ref_source=embed&amp;ref=share">The Announcement of Discontinuing Google Cloud IotT Core Service Stirs the Community and Customers</a> from      <a href="https://www.reddit.com/r/googlecloud/">googlecloud</a>    </p></blockquote>
+<p>    <script async src="https://embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script></p>
+<p>Just lol, not sad, not even surprised.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Security is about balance</title>
 		<link>https://xiehang.com/blog/2022/08/11/security-is-about-balance/</link>
 		
@@ -231,33 +253,6 @@
 										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">tcpdump -A -s 10240 'tcp port 8080' \
 | egrep --line-buffered "^........(GET |HTTP\/|POST |HEAD )|^[0-9][0-9]:[0-9][0-9]|^[A-Za-z0-9-]+: " \
 | sed -r 's/^........(GET |HTTP\/|POST |HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g'</pre>
-<p>&nbsp;</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Create animated GIF thumbnail from videos</title>
-		<link>https://xiehang.com/blog/2018/09/11/create-animated-gif-thumbnail-from-videos/</link>
-		
-		<dc:creator><![CDATA[Hang]]></dc:creator>
-		<pubDate>Wed, 12 Sep 2018 01:22:08 +0000</pubDate>
-				<category><![CDATA[Triviality]]></category>
-		<category><![CDATA[convert]]></category>
-		<category><![CDATA[ffmpeg]]></category>
-		<category><![CDATA[imagemagick]]></category>
-		<category><![CDATA[mp4]]></category>
-		<category><![CDATA[thumbnail]]></category>
-		<guid isPermaLink="false">https://xiehang.com/blog/?p=1786</guid>
-
-					<description><![CDATA[for D in *.mp4; do NAME=$(echo $D &#124; cut -f 1 -d \.) ffmpeg -i $D -vf fps=1/20 $NAME-%03d.jpg convert -resize 320x240 -delay 30 -loop 0 $NAME-*.jpg $NAME.gif rm $NAME-*.jpg done &#160;]]></description>
-										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">for D in *.mp4; do
-    NAME=$(echo $D | cut -f 1 -d \.)
-    ffmpeg -i $D -vf fps=1/20 $NAME-%03d.jpg
-    convert -resize 320x240 -delay 30 -loop 0 $NAME-*.jpg $NAME.gif
-    rm $NAME-*.jpg
-done</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
