@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Captcha	</title>
+	<atom:link href="https://xiehang.com/blog/2011/10/22/captcha/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2011/10/22/captcha/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 23 Oct 2011 02:12:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2011/10/22/captcha/comment-page-1/#comment-3413</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 23 Oct 2011 02:12:47 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1134#comment-3413</guid>
+
+					<description><![CDATA[I need to find a good plugin for WordPress for better code posting, so far the codes look really ugly ...]]></description>
+			<content:encoded><![CDATA[<p>I need to find a good plugin for WordPress for better code posting, so far the codes look really ugly &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2011/10/22/captcha/comment-page-1/#comment-3412</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 23 Oct 2011 02:03:08 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1134#comment-3412</guid>
+
+					<description><![CDATA[Forgot to post code ...
+
+&lt;pre&gt;
+&#060;?php
+session_start();
+
+$fonts = array(
+    &#039;/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf&#039;,
+    &#039;/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans-Bold.ttf&#039;,
+    &#039;/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf&#039;,
+    &#039;/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono-Bold.ttf&#039;,
+    &#039;/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf&#039;,
+    &#039;/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf&#039;,
+);
+
+$code = sprintf(&quot;%06d&quot;, rand(0,999999));
+$weird = imagecreatetruecolor(160, 30);
+
+$left = 5;
+for ($index=0; $index&#060;strlen($code); $index++) {
+    $size = rand(15, 20); // sizes are between 10 and 20
+    $angle = rand(0, 90) - 45; // angles are between -45 and 45 degrees
+    $base_height = rand(20, 25); // bottom line of the character are between 20 and 25
+    $color = imagecolorallocate($weird, rand(128,255), rand(128,255), rand(128,255)); // random color needs to be bright
+    $font = $fonts[rand(0, count($fonts)-1)];
+    $coords = imagettfbbox($size, $angle, $font, substr($code, $index, 1));
+    $left -= min($coords[0], $coords[6]);
+    imagettftext($weird, $size, $angle, $left, $base_height, $color, $font, substr($code, $index, 1));
+    $left += max($coords[2], $coords[4]);
+}
+
+for ($index=0; $index&#060;6; $index++) {
+    imageline($weird,rand(0,160),rand(0,30),rand(0,160),rand(0,30),imagecolorallocate($weird, rand(128,255), rand(128,255), rand(128,255)));
+}
+
+$_SESSION[&#039;secret&#039;] = md5($code);
+header(&quot;Content-type: image/png&quot;);
+imagepng($weird);
+?&#062;
+&lt;/pre&gt;]]></description>
+			<content:encoded><![CDATA[<p>Forgot to post code &#8230;</p>
+<pre>
+&lt;?php
+session_start();
+
+$fonts = array(
+    '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf',
+    '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans-Bold.ttf',
+    '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf',
+    '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono-Bold.ttf',
+    '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf',
+    '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf',
+);
+
+$code = sprintf("%06d", rand(0,999999));
+$weird = imagecreatetruecolor(160, 30);
+
+$left = 5;
+for ($index=0; $index&lt;strlen($code); $index++) {
+    $size = rand(15, 20); // sizes are between 10 and 20
+    $angle = rand(0, 90) - 45; // angles are between -45 and 45 degrees
+    $base_height = rand(20, 25); // bottom line of the character are between 20 and 25
+    $color = imagecolorallocate($weird, rand(128,255), rand(128,255), rand(128,255)); // random color needs to be bright
+    $font = $fonts[rand(0, count($fonts)-1)];
+    $coords = imagettfbbox($size, $angle, $font, substr($code, $index, 1));
+    $left -= min($coords[0], $coords[6]);
+    imagettftext($weird, $size, $angle, $left, $base_height, $color, $font, substr($code, $index, 1));
+    $left += max($coords[2], $coords[4]);
+}
+
+for ($index=0; $index&lt;6; $index++) {
+    imageline($weird,rand(0,160),rand(0,30),rand(0,160),rand(0,30),imagecolorallocate($weird, rand(128,255), rand(128,255), rand(128,255)));
+}
+
+$_SESSION['secret'] = md5($code);
+header("Content-type: image/png");
+imagepng($weird);
+?&gt;
+</pre>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

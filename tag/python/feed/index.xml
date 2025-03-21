@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>python &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/python/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 18 Sep 2014 15:32:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Get to start playing with tkinter</title>
+		<link>https://xiehang.com/blog/2014/09/18/get-to-start-playing-with-tkinter/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 18 Sep 2014 15:32:39 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[gui]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[tkinter]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1715</guid>
+
+					<description><![CDATA[I&#8217;m not sure what I&#8217;m going to build yet, but it should be something that could make my ops life easier, I don&#8217;t think it will be automation tool, as the best solution for automation is command line (script). Maybe something regarding to monitoring? Building up a dashboard will be interesting, though most people may <a href='https://xiehang.com/blog/2014/09/18/get-to-start-playing-with-tkinter/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m not sure what I&#8217;m going to build yet, but it should be something that could make my ops life easier, I don&#8217;t think it will be automation tool, as the best solution for automation is command line (script).</p>
+<p>Maybe something regarding to monitoring? Building up a dashboard will be interesting, though most people may use Web page instead.</p>
+<p>Still thinking &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Play with Python on Windows</title>
+		<link>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/</link>
+					<comments>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 17:59:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<category><![CDATA[virtualbox]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1583</guid>
+
+					<description><![CDATA[As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them. This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying <a href='https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them.</p>
+<p>This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying on HDD. However, I have different requirements for different types of VMs, like for Windows VM, I used to launch them in GUI mode so that I can use another Windows environment, but for Linux and other *nix machines I used to launch them in headless mode and use putty (another neat tool <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ) to access.<span id="more-1583"></span></p>
+<p>The problem is that VirtualBox&#8217;s console does not support starting VMs in headless mode, so I created some BAT files to do it, but this makes things complicated that I have to go to two places to do actually one thing.</p>
+<p>Now here comes Python, plus VirtualBox guys kindly released a Python SDK. It was for Python 2.x, but no wonder some smart guy <a title="vboxapi Python 3" href="https://github.com/jbuergel/vboxapi-py3" target="_blank">convert it to work with Python 3</a>. I was thinking of using win32 binding, but later on found Tkinter is good enough for this purpose. Codes posted below, feel free to take it as long as you can mention my name and link back to this post (I hate GPL &#8230; you can guess I&#8217;m a fan of BSD).</p>
+<p>I&#8217;ll do some more enhancement if I have to, but so far it can show button status based on VM state, and start/stop/reset the VMs, that&#8217;s pretty all I want at this moment. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+[python]<br />
+import sys<br />
+import tkinter<br />
+from tkinter import messagebox<br />
+import vboxapi<br />
+import time</p>
+<p>mgr = vboxapi.VirtualBoxManager(None, None)</p>
+<p>def list_vms():<br />
+    global mgr<br />
+    vm_list = []<br />
+    for vm in mgr.getArray(mgr.vbox, &#8216;machines&#8217;):<br />
+        vm_list.append(vm)<br />
+    vm_list = sorted(vm_list, key = lambda k: k.name)<br />
+    return vm_list</p>
+<p>def start_vm(vm_id):<br />
+    global mgr, root, button_list<br />
+    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # start the VM<br />
+        machine = mgr.vbox.FindMachine(vm_id)<br />
+        if mgr.vbox.getGuestOSType(machine.OSTypeId).familyId == &#8216;Windows&#8217;:<br />
+            start_type = &#8216;gui&#8217;<br />
+        else:<br />
+            start_type = &#8216;headless&#8217;<br />
+        progress = machine.launchVMProcess(session, start_type, &#8221;)<br />
+        progress.waitForCompletion(-1)</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def stop_vm(vm_id):<br />
+    global mgr, root<br />
+    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # stop (savestate) the VM<br />
+        mgr.vbox.FindMachine(vm_id).lockMachine(session, mgr.constants.LockType_Shared)<br />
+        session.console.saveState()</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.NORMAL)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def reset_vm(vm_id):<br />
+    global mgr, root<br />
+    if not messagebox.askyesno(&#8216;Reset VM&#8217;, &#8216;Are you sure?&#8217;, default=&#8217;no&#8217;):<br />
+        return</p>
+<p>    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # stop (savestate) the VM<br />
+        mgr.vbox.FindMachine(vm_id).lockMachine(session, mgr.constants.LockType_Shared)<br />
+        session.console.reset()</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def timer():<br />
+    pass<br />
+    global mgr, vm_list, button_list, timer_lbl, root</p>
+<p>    # update button status according to VM state<br />
+    for index in range(0, len(vm_list)):<br />
+        if vm_list[index].state == mgr.constants.MachineState_Running:<br />
+            # VM is running<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.NORMAL)<br />
+        elif vm_list[index].state == mgr.constants.MachineState_Saved or vm_list[index].state == mgr.constants.MachineState_PoweredOff or vm_list[index].state == mgr.constants.MachineState_Aborted:<br />
+            # VM is not running<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.NORMAL)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.DISABLED)<br />
+        else:<br />
+            # VM is in interim state<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.DISABLED)</p>
+<p>    # update clock<br />
+    timer_lbl.configure(text=time.strftime(&#8220;%Y-%m-%d %H:%M:%S&#8221;))<br />
+    root.after(1000, timer)</p>
+<p>vm_list = list_vms()<br />
+button_list = {}<br />
+root = tkinter.Tk()<br />
+timer_lbl = tkinter.Label(root, text=&#8221;, justify=tkinter.RIGHT)<br />
+timer_lbl.grid(row=0, columnspan=4, sticky=tkinter.N, padx=10, pady=10)<br />
+for index in range(0, len(vm_list)):<br />
+    if vm_list[index].state == mgr.constants.MachineState_Running:<br />
+        start_btn_state = tkinter.DISABLED<br />
+        stop_btn_state = tkinter.NORMAL<br />
+    else:<br />
+        start_btn_state = tkinter.NORMAL<br />
+        stop_btn_state = tkinter.DISABLED</p>
+<p>    # VM label<br />
+    lbl = tkinter.Label(root, text=vm_list[index].name)<br />
+    lbl.grid(row=index+1, sticky=tkinter.W, padx=5, pady=5)</p>
+<p>    # start button<br />
+    start_btn = tkinter.Button(root, text=&#8217;Start&#8217;, state=start_btn_state)<br />
+    start_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: start_vm(vm_id)<br />
+    start_btn.grid(row=index+1, column=1, padx=5, pady=5)</p>
+<p>    # stop (save state) button<br />
+    stop_btn = tkinter.Button(root, text=&#8217;Stop&#8217;, state=stop_btn_state)<br />
+    stop_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: stop_vm(vm_id)<br />
+    stop_btn.grid(row=index+1, column=2, padx=5, pady=5)</p>
+<p>    # reset (power recycle) button<br />
+    reset_btn = tkinter.Button(root, text=&#8217;Reset&#8217;, state=stop_btn_state)<br />
+    reset_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: reset_vm(vm_id)<br />
+    reset_btn.grid(row=index+1, column=3, padx=5, pady=5)</p>
+<p>    button_list[vm_list[index].id] = {&#8216;start&#8217;: start_btn, &#8216;stop&#8217;: stop_btn, &#8216;reset&#8217;: reset_btn}</p>
+<p>timer()<br />
+root.bind(&#8216;<Escape>&#8216;, lambda event: root.quit())<br />
+root.mainloop()<br />
+[/python]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Python vs. Perl</title>
+		<link>https://xiehang.com/blog/2013/08/22/python-vs-perl/</link>
+					<comments>https://xiehang.com/blog/2013/08/22/python-vs-perl/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 22 Aug 2013 20:19:43 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1576</guid>
+
+					<description><![CDATA[I&#8217;m working on a set of data refreshment scripts, which get data from file, do some transform, then send to a HTTP interface. Since the HTTP interface is kind of slow compare with reading and transforming data, I have several forked children processes to handle HTTP part. Everything was done by Perl about 6 months <a href='https://xiehang.com/blog/2013/08/22/python-vs-perl/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m working on a set of data refreshment scripts, which get data from file, do some transform, then send to a HTTP interface. Since the HTTP interface is kind of slow compare with reading and transforming data, I have several forked children processes to handle HTTP part.</p>
+<p>Everything was done by Perl about 6 months ago, and everything seems good &#8230; until I started picking up Python. First sight is that Pyhon program is about 50% of Perl in term of LOC, which makes it easier to read, but seriously I don&#8217;t care about this too much as the logic is quite simple, however, when I tested Python programs and found that they are at least 50% faster than Perl&#8217;s, I felt nervous.</p>
+<p>Two examples &#8211; Perl takes 13 seconds, Python takes 5, Perl takes 34 minutes, Python takes 10. Actually I&#8217;m really nervous at this moment thinking of my poor Python skills, I always worry if I made anything wrong with the translation (from Perl to Python), even I have verified result data for quite some times.</p>
+<p>Will dig in after converting all scripts to Python.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/22/python-vs-perl/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Should I move to GDChart?</title>
+		<link>https://xiehang.com/blog/2013/08/02/should-i-move-to-gdchart/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 23:19:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[gd2]]></category>
+		<category><![CDATA[gdchart]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phplot]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1565</guid>
+
+					<description><![CDATA[I think I&#8217;m going to play with Perl, PHP, and Python at almost the same time for some time, and thinking of the fact that dynamic graph is one of the most important feature for web pages, I think I need to find a cross-language solution. I&#8217;m happy with PHPlot and decide not to touch <a href='https://xiehang.com/blog/2013/08/02/should-i-move-to-gdchart/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think I&#8217;m going to play with Perl, PHP, and Python at almost the same time for some time, and thinking of the fact that dynamic graph is one of the most important feature for web pages, I think I need to find a cross-language solution.</p>
+<p>I&#8217;m happy with PHPlot and decide not to touch GD::Graph, and I came across GDChart which seems to be good in cross-platform/cross-language area. I will give it a try and will post the result here.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to solve problems</title>
+		<link>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/</link>
+					<comments>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jul 2013 22:54:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[geo]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[Plot]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[shapefile]]></category>
+		<category><![CDATA[shp. pyshp]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1551</guid>
+
+					<description><![CDATA[I was assigned to a Web project which is to present data analysis result to users. Original data came from Web log, plus some extra information, then headed to Hive, then populated statistics files after scientist&#8217;s analysis There are several interesting topics: geo graph, rendering another web page, and metrics graph, roughly speaking, I have no <a href='https://xiehang.com/blog/2013/07/19/how-to-solve-problems/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was assigned to a Web project which is to present data analysis result to users. Original data came from Web log, plus some extra information, then headed to Hive, then populated statistics files after scientist&#8217;s analysis There are several interesting topics: geo graph, rendering another web page, and metrics graph, roughly speaking, I have no idea of any of these at the beginning of the project.</p>
+<p>I think the best decision I made is to use GD based solution, actually that could be the only solution I can think about, I decided to use PHP for Web, plus Perl for batch processing, this actually seems not to be quite right as I&#8217;m migrating everything to PHP now as there is not much &#8220;real&#8221; batch processing, and everything could be done in shell. Also I decided to use server-side DOM model (read: PHP DOM) so not to slow down the project by my poor JS skills, actually my PHP skill is not that good but JS is definitely <strong>*poor*</strong>.<span id="more-1551"></span></p>
+<p>I started with looking for geo graph solution. It&#8217;s obvious that the most important thing is get data to draw a map, soon I found that everything on the Web is <a href="https://en.wikipedia.org/wiki/Shapefile">shapefile </a>based which need another round of search to get a workable dump solution. I didn&#8217;t spend too much time on this &#8230; at the beginning I was using the open source <a href="http://www.qgis.org/">Quantum GIS</a> software, later on changed to <a href="https://code.google.com/p/pyshp/">PyShp </a>which is much light weight &#8211; GIS software has lots of fancy features, but all that I want is read shapefile and dump coordinates.</p>
+<p>Once I have the coordinates data, geo graph becomes really simple, all that I need to do is read in data, use GD polygon feature to draw the map. Sure this needs to hook up with data, but I believe this is suitable to a high-school kid as a science project, or maybe middle school? I&#8217;m not sure <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Re-rendering an existing Web page is definitely a tough labor work, you don&#8217;t have to be smart but you need to be very careful, analyzing page structures, decided where to put something in and where to remove something so to make the final page as you want. The source Web site (another subsidiary of our company) has some interesting anti-abuse tricks, I have to put proxy calls to almost every requests to their resources. Other than this I cannot remember anything that needs deeply research. However, after I finished almost all these, I believe the right solution for this is doing everything in a JS plus CSS instead of PHP, but I don&#8217;t want to change it since I don&#8217;t want to step too deep into JS stuffs.</p>
+<p>The last thing is metric graphs. I started with Perl&#8217;s <a href="http://search.cpan.org/dist/GDGraph/Graph.pm">GD::Graph</a> which is OK, at least I can get everything done but took me too much time. Later on I found <a href="http://phplot.sourceforge.net/">PHPlot </a>and switched to this pure PHP solution. PHPlot is much easy to understand and also easy to debug (this is not because of PHP/Perl difference), I think I&#8217;m going to stick with PHPlot and never go back to GD::Graph.</p>
+<p>Some other thinking came to my mind while I was playing with all above. First, jQuery is something neat, makes my life much more easier and no wonder so many JS developers are using it and things similar, I&#8217;m going to dig more in especially try it out wiht PhoneGap, etc. to see if it can speed up mobile app development. Second, Python came to my view again, I think I will utilize it for my next sys admin task, and see how it can work with rest of my world, I&#8217;m more interested with its &#8220;glue&#8221; ability with C/C++ modules. Third, I got a weird idea of rewriting PHPLot in C/C++, for reason unknown :D, the performance is not a concern to me at this moment, but I just don&#8217;t like ~8000 lines of PHP codes in one file staying on my web server, but I believe this will be just an idea at least for near future.</p>
+<p>Perl needs to improve its ability to handle UTF8 characters, seriously.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Take a note about map</title>
+		<link>https://xiehang.com/blog/2013/07/17/take-a-note-about-map/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 17 Jul 2013 22:45:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[shapefile]]></category>
+		<category><![CDATA[shp]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1537</guid>
+
+					<description><![CDATA[Haven&#8217;t dig into legal issues yet, but for my hobby project I got everything regarding map from here: http://www.gadm.org/country After getting shp files from the web site, I use pyshp module: https://code.google.com/p/pyshp/ To extract data to plain text format so that other programs can read it directly. There is an old version of pyshp comes <a href='https://xiehang.com/blog/2013/07/17/take-a-note-about-map/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Haven&#8217;t dig into legal issues yet, but for my hobby project I got everything regarding map from here:</p>
+<p><a href="http://www.gadm.org/country">http://www.gadm.org/country</a></p>
+<p>After getting shp files from the web site, I use pyshp module:</p>
+<p><a href="https://code.google.com/p/pyshp/">https://code.google.com/p/pyshp/</a></p>
+<p>To extract data to plain text format so that other programs can read it directly. There is an old version of pyshp comes with Ubuntu, but it&#8217;s sufficient to me.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>OSX, python, thrift</title>
+		<link>https://xiehang.com/blog/2011/11/30/osx-python-thrift/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 30 Nov 2011 17:42:47 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[thrift]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1159</guid>
+
+					<description><![CDATA[After creating python binding for HBase thrift interfase, python modules should be put to /Library/Python/2.7/site-packages/ (2.7 is default for OSX Lion). Just a note.]]></description>
+										<content:encoded><![CDATA[<p>After creating python binding for HBase thrift interfase, python modules should be put to /Library/Python/2.7/site-packages/ (2.7 is default for OSX Lion).</p>
+<p>Just a note.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Relationship is the bottleneck</title>
+		<link>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/</link>
+					<comments>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2009 19:10:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=810</guid>
+
+					<description><![CDATA[Testing a prototype that uses Cassandra as the back end storage, the simple application is doing user authentication stuffs, it logs in and then get user&#8217;s profile and then show details on the web page. I hit performance problem with buddy related operation &#8211; every user may have 0~20 buddies, I want to show each <a href='https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Testing a prototype that uses Cassandra as the back end storage, the simple application is doing user authentication stuffs, it logs in and then get user&#8217;s profile and then show details on the web page.</p>
+<p>I hit performance problem with buddy related operation &#8211; every user may have 0~20 buddies, I want to show each buddy&#8217;s last login time on the result page, and actually I&#8217;ve retrieve everything for those buddies. The most direct implementation as I did first, is using user object to get data back, obviously this is not good as for every user object, client needs to access Cassandra cluster to get data back, the TCP round trip would be a pain.</p>
+<p>Then I added something to user object&#8217;s constructor, which load all buddies info in one shot (Cassandra&#8217;s multiget_slice API), things are getting better but this doesn&#8217;t seems reasonable to me as for most time, we don&#8217;t need buddy info (such as authentication), and getting buddies info back is just a waste of time.</p>
+<p>So I added a new method to the user class, called load_buddies, this will load buddies info on-demand. This makes authentication pretty fast, but still keep the ability of loading buddies info in batch mode.</p>
+<p>After all these the performance is &#8230; still not good, my test case is one login failure every ten requests, and for successfully logged user, I should buddy id and last access time, and also change the user&#8217;s last login time. The performance, with my current setting, the worst response time is about a second, while 90% request were done in less than 600ms.</p>
+<p>There must be something can be tuned, though VM could be the reason of slowness. I will check following stuffs:</p>
+<ul>
+<li>Apache HTTPd configuration, it seems prefork is performing better than worker, there may be more can be tuned include both HTTPd and wsgi</li>
+<li>Python class optimization, I will review the implementation of user class, as I don&#8217;t want to make user class too complicated to be used</li>
+<li>Cassandra performance, actually this is what I&#8217;m worrying about, as during the tests, Cassandra boxes&#8217; CPU utilization is about 80% &#8211; 70% on user, 10% on sys, roughly, it could be the bottleneck</li>
+</ul>
+<p>Without the buddy operation everything&#8217;s fine &#8211; the worst response time is about 600 ms while 90% requests are below 400ms. Relationship is a pain, it&#8217;s the bottleneck, but in this social era, there is no web application can live without relationship &#8230;</p>
+<p>BTW, my testing environment:</p>
+<ul>
+<li>Test client running on PowerBook, using ab &#8211; I will check if there is anything else can be useful</li>
+<li>Servers are all running on same physical box controlled by proxmox, this includes a web server, a LVS director (to load balance Cassandra nodes), and 3 Cassandra nodes</li>
+<li>The server box uses Ethernet, PowerBook is on wireless. I don&#8217;t think there is any issue for this as connect time is pretty low.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Reading python books</title>
+		<link>https://xiehang.com/blog/2009/11/30/reading-python-books/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 30 Nov 2009 17:40:02 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[life]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=788</guid>
+
+					<description><![CDATA[I just finished A Byte of Python, planning to read it again and then turn to Dive into Python, I&#8217;ve done some simple Python programs while I was reading, everything seems fine so far. A little girl though A Byte of Python is a scary book, she thought I mis-spelled &#8220;bite&#8221;, so the book I <a href='https://xiehang.com/blog/2009/11/30/reading-python-books/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I just finished A Byte of Python, planning to read it again and then turn to Dive into Python, I&#8217;ve done some simple Python programs while I was reading, everything seems fine so far.</p>
+<p>A little girl though A Byte of Python is a scary book, she thought I mis-spelled &#8220;bite&#8221;, so the book I read becomes &#8220;a bite of a big snake&#8221;, I know it&#8217;s scary :D. It took me sometime to got her understood Python is a computer programming language, I just wish I made it but anyway she stopped talking about the book and go back calling me &#8220;lobster killer&#8221;.</p>
+<p>Yes, I cooked another lobster for the last day of Thanks Giving holiday.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>I&#8217;m not that fast any more</title>
+		<link>https://xiehang.com/blog/2009/11/24/im-not-that-fast-any-more/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2009 17:59:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=765</guid>
+
+					<description><![CDATA[&#8220;not fast&#8221; is better than &#8220;slow&#8221;, so I think I&#8217;m making progress, better than before. Updates: I moved to proxmox which gives me better VM performance so that I can have more VMs for my test, it did take me some time to dig out a usable solution. Now I&#8217;m running 4 VMs so I <a href='https://xiehang.com/blog/2009/11/24/im-not-that-fast-any-more/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>&#8220;not fast&#8221; is better than &#8220;slow&#8221;, so I think I&#8217;m making progress, better than before.</p>
+<p>Updates:</p>
+<ul>
+<li>I moved to <a href="http://www.proxmox.com/">proxmox </a>which gives me better VM performance so that I can have more VMs for my test, it did take me some time to dig out a usable solution. Now I&#8217;m running 4 VMs so I can test fail-over and bootstrap etc.</li>
+<li>I moved to Python since PHP is not that popular now especially in all these new technology, I&#8217;m a code-by-sample guy, so while the whole world is writing codes in Java, Ruby, and Python, I don&#8217;t have many choices. I picked Python because I don&#8217;t want to run things like Tomcat, and built-in web servers does not convince me (I&#8217;m talking about Ruby).</li>
+<li>I&#8217;ve done some simple tests but dealing with columns, etc., the test environment gives me reasonable performance number &#8211; 8ms per read/write.</li>
+<li>I&#8217;m still learning Python and its web stuffs, seems not that hard to catch up though. I&#8217;m using web.py which seems to be the lightest framework, I may be wrong but I don&#8217;t want to dig in more at this moment.</li>
+</ul>
+<p>To-do list:</p>
+<ul>
+<li>I need to figure out if Ubuntu is still the way to go for my virtualization environment, I&#8217;m worrying proxmox is not a major player in this area so it may ruin my long term plan.</li>
+<li>I need to find out if there is any other better HTTP server, &#8220;better&#8221; here means: light, support wsgi.</li>
+<li>I&#8217;m going to compose some test scripts dealing with super column, which is what I need to use for the statistic project.</li>
+<li>Revisit original design, both schema and work flow may have some changes.</li>
+</ul>
+<p>I would like to say, everything is on the track, though I&#8217;m not that fast. I will post updates after this thanks giving as I doubt if I will have time coding during the holiday.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

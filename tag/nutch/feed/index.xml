@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nutch &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/nutch/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:10:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>nutch, solr, term vector, and so on</title>
+		<link>https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/</link>
+					<comments>https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2012 02:01:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[hadoop]]></category>
+		<category><![CDATA[mmseg4j]]></category>
+		<category><![CDATA[nutch]]></category>
+		<category><![CDATA[solr]]></category>
+		<category><![CDATA[term extraction]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1256</guid>
+
+					<description><![CDATA[Just finished a prototype of terminology extraction based on nutch and solr, check test page. I also have another (quick and dirty) script to inject new URLs into nutch and then solr, the whole demo is not finished yet since I need to put up something to remove outdated pages (what is outdated?). The work <a href='https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just finished a prototype of terminology extraction based on <a href="http://nutch.apache.org/">nutch</a> and <a href="http://lucene.apache.org/solr/">solr</a>, check <a href="http://solr.xiehang.com/solr/select/?&#038;qt=tvrh&#038;q=id%3Ahttp%5C%3A%2F%2Fnews.sohu.com%2F&#038;fl=content&#038;tv.tf_idf=true">test page</a>.</p>
+<p>I also have another (quick and dirty) script to inject new URLs into nutch and then solr, the whole demo is not finished yet since I need to put up something to remove outdated pages (what is outdated?).</p>
+<p>The work flow should be something like this:<span id="more-1256"></span></p>
+<ol>
+<li>Get URL from client&#8217;s request</li>
+<li>If the URL had been crawled and it is not outdated (not sure how to define this yet), return the terms and we are all set (exit 0!!! <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</li>
+<li>kick the URL to the crawl queue so that it can be crawled later on</li>
+<li>return an empty term list back to client (sorry, we don&#8217;t know too much about the page, yet</li>
+</ol>
+<p>Some improvements in my mind include:</p>
+<ol>
+<li>Whenever we haven&#8217;t crawled the page yet, the front end (JS in the web page) should be able to grab some keywords from the web page itself, the use them as terms
+<ul>
+<li>This may be resource consuming in browser, but I need to do some more tests</li>
+<li>The JS has to be run at the very last of the web page so that it can get most text from the page, this may slower down the business logic, and could not be acceptable</li>
+<li>Sure, we cannot put too many fancy logics in the JS so the result could be very bad</li>
+<li>Since JS is clear text to everyone so it (I mean the engine) can be fooled by the web page owner, whenever they have motivation (such as getting more money? I&#8217;m not sure)</i>
+</ul>
+</li>
+<li>The default TermVectorComponent does not give me sorted result, so sooner or later we need to have a customized class to handle this, I assume that we will deliver better result</li>
+<li>I&#8217;m using <a href="http://code.google.com/p/mmseg4j/">mmseg4j</a> as the tokenizer, this may not be the best solution but I have no choice so far (again, quick and dirty), in the future if we cannot find something better, we should at least revise the dictionary to make things work better</li>
+<li>I prefer a C/C++ solution for this but I don&#8217;t think I can get one, however, I will wrap everything into a C/C++ library so that it can fit into other systems easily</li>
+<li>My demo deployment is running on a AWS micro node, with nutch in local mode, based on requirements I got, this should be ok since I don&#8217;t care about inter-document (page) relationship, however, if this becomes a requirement, then I have to run in deploy mode which means I need a hadoop cluster</li>
+<li>On solr side, I will do some calculation to see if I need a hadoop or not. It was said we won&#8217;t get web pages more than 100 millions so it maybe good enough to leave it as-is, but then I have to think about redundancy and failover, disaster recovery, and so on.</li>
+</ol>
+<p>I guess I will still need a hadoop cluster, even it is small, at least I can handle part of my SLA problem to them >:) . </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>symfony &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/symfony/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 03 Jul 2009 15:12:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Symfony and Godaddy</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</link>
+					<comments>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2009 15:04:13 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527</guid>
+
+					<description><![CDATA[Though problems I&#8217;m going to discuss are for symfony 1.2, I guess it applicable to 1.0 and 1.1 as well. I finally got symfony works on godaddy shared hosting, I guess if I were running any sort of dedicated hosting, these problem could not have happened, as I have full control. The first problem hit <a href='https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Though problems I&#8217;m going to discuss are for symfony 1.2, I guess it applicable to 1.0 and 1.1 as well.</p>
+<p>I finally got symfony works on godaddy shared hosting, I guess if I were running any sort of dedicated hosting, these problem could not have happened, as I have full control.</p>
+<p>The first problem hit me is PHP version, symfony needs PHP5, and godaddy supports PHP5 &#8211; good. However, it seems godaddy&#8217;s default PHP is still PHP4 so have to set alias to make sure symfony script is interpreted by PHP5 instead of PHP4:</p>
+<blockquote><p>alias symfony=&#8217;/usr/local/php5/bin/php /path/to/symfony-1.2.7/data/bin/symfony&#8217;</p></blockquote>
+<p>after this, I got the problem, saying:</p>
+<blockquote><p>/usr/local/php5/bin/php: Symbol `client_errors&#8217; has different size in shared object, consider re-linking</p></blockquote>
+<p>and turned out it was because of mysql client lib problem &#8211; I don&#8217;t know the detail yet, but seems /usr/local/php5/bin/php and /web/cgi-bin/php5 are both linked to /usr/lib/mysql/libmysqlclient.so.15, which works for /web one but not the /usr one. I did some tests and found /usr/lib/libmysqlclient.so.14.0.0 works perfect with /usr/local/php5/bin/php, so put this into my .bash_profile:</p>
+<blockquote><p>LD_PRELOAD=/usr/lib/libmysqlclient.so.14.0.0</p></blockquote>
+<p>note that /usr/lib/libmysqlclient.so.10.0.0 doesn&#8217;t work well as it&#8217;s too old to support modern (new) password encrypt/authentication.</p>
+<p>By now I can use symfony do the development job, but problem are still there while I&#8217;m trying to browse from browser, the first thing is rewrite rules &#8211; these lines should be uncommented from web/.htaccess:</p>
+<blockquote><p>RewriteBase /<br />
+RewriteCond %{REQUEST_URI} \..+$<br />
+RewriteCond %{REQUEST_URI} !\.html$<br />
+RewriteRule .* &#8211; [L]</p></blockquote>
+<p>then I met the problem (which took me longest time to solve) with error:<br />
+Empty module and/or action after parsing the URL &#8220;/index.php&#8221; (/).<br />
+actually I should have got it solve earlier if I search on the web, there is <a href="http://www.codemassacre.com/2009/03/17/problems-hosting-symfony-12-sites-on-godaddy/">a great article talking about the solution</a>, and my problem got solved just after 1st part of solution mentioned by the blog &#8211; adding following lines to &#8220;all&#8221; section of apps/frontend/config/factories.yml:</p>
+<blockquote>
+<pre>request:
+  param:
+    path_info_key: REQUEST_URI</pre>
+</blockquote>
+<p>be careful with intending, original blog seems not doing the right thing and put &#8220;request&#8221; and &#8220;param&#8221; in same level, which is wrong.</p>
+<p>Alright, by this time you will be able to play with symfony on shared hosting with godaddy. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Doctrine vs. Propel</title>
+		<link>https://xiehang.com/blog/2009/06/29/doctrine-vs-propel/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2009 14:21:54 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[Doctrine]]></category>
+		<category><![CDATA[Propel]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=514</guid>
+
+					<description><![CDATA[I&#8217;m using symfony 1.2 now and it can work with both Doctrine and Propel. Frankly speaking, I don&#8217;t have any ideas of which one is better, but thinking of Doctrine was added in 1.2 while Propel was there since 1.0, I would assume Doctrine is better (otherwise, why bother?). Here are some &#8220;formal&#8221; evaluation of <a href='https://xiehang.com/blog/2009/06/29/doctrine-vs-propel/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m using symfony 1.2 now and it can work with both Doctrine and Propel. Frankly speaking, I don&#8217;t have any ideas of which one is better, but thinking of Doctrine was added in 1.2 while Propel was there since 1.0, I would assume Doctrine is better (otherwise, why bother?).</p>
+<p>Here are some &#8220;formal&#8221; evaluation of Doctrine and Propel, seems I made the right guess <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<ul>
+<li>http://blog.centresource.com/2007/04/10/doctrine-vs-propel-in-symfony/</li>
+<li>http://codeutopia.net/blog/2009/05/16/doctrine-vs-propel-2009-update/</li>
+</ul>
+<p>So you know, I&#8217;m using Doctrine in symfony now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>I miss my dedicated machine &#8230;</title>
+		<link>https://xiehang.com/blog/2009/06/27/i-miss-my-dedicated-machine/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 27 Jun 2009 20:06:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[setup]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=507</guid>
+
+					<description><![CDATA[Playing with Symfony, trying to deploy to godaddy, it&#8217;s way tooooooo troublesome, and I haven&#8217;t figure it out yet. I think I&#8217;m going to stop trying that and instead, doing all the tests on my home Ubuntu. It seems shared hosting (that&#8217;s what I&#8217;m using on godaddy) has LOT limitation makes it totally different from <a href='https://xiehang.com/blog/2009/06/27/i-miss-my-dedicated-machine/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Playing with Symfony, trying to deploy to godaddy, it&#8217;s way tooooooo troublesome, and I haven&#8217;t figure it out yet.</p>
+<p>I think I&#8217;m going to stop trying that and instead, doing all the tests on my home Ubuntu. It seems shared hosting (that&#8217;s what I&#8217;m using on godaddy) has LOT limitation makes it totally different from normal setup.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>symfony</title>
+		<link>https://xiehang.com/blog/2009/06/20/symfony/</link>
+					<comments>https://xiehang.com/blog/2009/06/20/symfony/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 21 Jun 2009 05:02:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[album]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=497</guid>
+
+					<description><![CDATA[I&#8217;m playing with symfony now, will try to build up a album application first. Ubuntu comes with 1.0, and seems things changed some (at least those admin commands) in v1.2, but I don&#8217;t think it matters too much. I&#8217;m working on home Ubuntu box and will move the application to the hosting server after tests.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m playing with <a href="http://www.symfony-project.org/">symfony</a> now, will try to build up a album application first.</p>
+<p>Ubuntu comes with 1.0, and seems things changed some (at least those admin commands) in v1.2, but I don&#8217;t think it matters too much.</p>
+<p>I&#8217;m working on home Ubuntu box and will move the application to the hosting server after tests.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/06/20/symfony/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

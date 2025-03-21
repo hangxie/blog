@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>word count. &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/word-count/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 31 Oct 2012 20:55:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Count Chinese words in UTF8</title>
+		<link>https://xiehang.com/blog/2012/10/31/count-chinese-word-in-utf8/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 31 Oct 2012 20:55:47 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[UTF8]]></category>
+		<category><![CDATA[word count.]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1421</guid>
+
+					<description><![CDATA[Need to rewrite the function to count Chinese words in UTF8 once I have time, and need to refer to this page which contains UTF8 characters. In short, here are Chinese related code blocks: U+2E80 &#8230; U+2EFF: CJK Radicals Supplement U+3000 &#8230; U+303F: CJK Symbols and Punctuation U+31C0 &#8230; U+31EF: CJK Strokes U+3200 &#8230; U+32FF: <a href='https://xiehang.com/blog/2012/10/31/count-chinese-word-in-utf8/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Need to rewrite the function to count Chinese words in UTF8 once I have time, and need to refer to <a href="http://www.utf8-chartable.de/unicode-utf8-table.pl">this page</a> which contains UTF8 characters.</p>
+<p>In short, here are Chinese related code blocks:</p>
+<ul>
+<li>U+2E80 &#8230; U+2EFF: CJK Radicals Supplement</li>
+<li>U+3000 &#8230; U+303F: CJK Symbols and Punctuation</li>
+<li>U+31C0 &#8230; U+31EF: CJK Strokes</li>
+<li>U+3200 &#8230; U+32FF: Enclosed CJK Letters and Months</li>
+<li>U+3300 &#8230; U+33FF: CJK Compatibility</li>
+<li>U+3400 &#8230; U+4DBF: CJK Unified Ideographs Extension A</li>
+<li>U+4E00 &#8230; U+9FFF: CJK Unified Ideographs</li>
+<li>U+F900 &#8230; U+FAFF: CJK Compatibility Ideographs</li>
+<li>U+FE30 &#8230; U+FE4F: CJK Compatibility Forms</li>
+<li>U+20000 &#8230; U+2A6DF: CJK Unified Ideographs Extension B</li>
+<li>U+2A700 &#8230; U+2B73F: CJK Unified Ideographs Extension C</li>
+<li>U+2B740 &#8230; U+2B81F: CJK Unified Ideographs Extension D</li>
+<li>U+2F800 &#8230; U+2FA1F: CJK Compatibility Ideographs Supplement</li>
+</ul>
+<p>For rest blocks &#8230; let&#8217;s simply take them as western characters, though they are not.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

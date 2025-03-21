@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Linux distro	</title>
+	<atom:link href="https://xiehang.com/blog/2009/08/26/linux-distro/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/08/26/linux-distro/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 27 Aug 2009 20:53:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/08/26/linux-distro/comment-page-1/#comment-2679</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 27 Aug 2009 20:53:01 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=641#comment-2679</guid>
+
+					<description><![CDATA[I found that Ubuntu and Debian by default open all ports to worldwide (no limitation in iptables), this is not good, though ubuntu declares that there is no service listening on external interface by default.]]></description>
+			<content:encoded><![CDATA[<p>I found that Ubuntu and Debian by default open all ports to worldwide (no limitation in iptables), this is not good, though ubuntu declares that there is no service listening on external interface by default.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/08/26/linux-distro/comment-page-1/#comment-2677</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 26 Aug 2009 22:26:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=641#comment-2677</guid>
+
+					<description><![CDATA[BTW, 4 core 6G is powerful :D - I still have enough memory to open a fat IE.]]></description>
+			<content:encoded><![CDATA[<p>BTW, 4 core 6G is powerful 😀 &#8211; I still have enough memory to open a fat IE.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

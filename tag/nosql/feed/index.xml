@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nosql &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/nosql/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 05 Mar 2010 21:00:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Haystack, MObStor, &#8230;</title>
+		<link>https://xiehang.com/blog/2010/03/05/haystack-mobstor/</link>
+					<comments>https://xiehang.com/blog/2010/03/05/haystack-mobstor/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 05 Mar 2010 21:00:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[open source]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=957</guid>
+
+					<description><![CDATA[Sigh &#8230; I got these two names by searching online and seems they are great products that can definitely solve some of headache I&#8217;m currently facing, however &#8230; Then I found out that they are not open source at all, people just publish those articles for &#8230; show up? Sigh &#8230;]]></description>
+										<content:encoded><![CDATA[<p>Sigh &#8230;</p>
+<p>I got these two names by searching online and seems they are great products that can definitely solve some of headache I&#8217;m currently facing, however &#8230;</p>
+<p>Then I found out that they are not open source at all, people just publish those articles for &#8230; show up?</p>
+<p>Sigh &#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/03/05/haystack-mobstor/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thinking of redesign</title>
+		<link>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/</link>
+					<comments>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 10 Dec 2009 02:28:23 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=813</guid>
+
+					<description><![CDATA[It seems current design cannot bypass the bottleneck from relationship, I think I need to re-think about the design. It was said doing denormalization at the write time is a good way, as these nosql data stores are really fast on write. However, it may be too much to do it. My current scenario is <a href='https://xiehang.com/blog/2009/12/09/thinking-of-redesign/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems current design cannot bypass the bottleneck from relationship, I think I need to re-think about the design.</p>
+<p>It was said doing denormalization at the write time is a good way, as these nosql data stores are really fast on write. However, it may be too much to do it. My current scenario is every user has 10~100 buddies, if I do the denormalization during the write time, it still not clear to me how to set up a schema to fit it.</p>
+<p>I found I&#8217;m still sort of in RDBMS world, need to jump into this nosql universe as soon as possible :P.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Relationship is the bottleneck</title>
+		<link>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/</link>
+					<comments>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2009 19:10:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=810</guid>
+
+					<description><![CDATA[Testing a prototype that uses Cassandra as the back end storage, the simple application is doing user authentication stuffs, it logs in and then get user&#8217;s profile and then show details on the web page. I hit performance problem with buddy related operation &#8211; every user may have 0~20 buddies, I want to show each <a href='https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Testing a prototype that uses Cassandra as the back end storage, the simple application is doing user authentication stuffs, it logs in and then get user&#8217;s profile and then show details on the web page.</p>
+<p>I hit performance problem with buddy related operation &#8211; every user may have 0~20 buddies, I want to show each buddy&#8217;s last login time on the result page, and actually I&#8217;ve retrieve everything for those buddies. The most direct implementation as I did first, is using user object to get data back, obviously this is not good as for every user object, client needs to access Cassandra cluster to get data back, the TCP round trip would be a pain.</p>
+<p>Then I added something to user object&#8217;s constructor, which load all buddies info in one shot (Cassandra&#8217;s multiget_slice API), things are getting better but this doesn&#8217;t seems reasonable to me as for most time, we don&#8217;t need buddy info (such as authentication), and getting buddies info back is just a waste of time.</p>
+<p>So I added a new method to the user class, called load_buddies, this will load buddies info on-demand. This makes authentication pretty fast, but still keep the ability of loading buddies info in batch mode.</p>
+<p>After all these the performance is &#8230; still not good, my test case is one login failure every ten requests, and for successfully logged user, I should buddy id and last access time, and also change the user&#8217;s last login time. The performance, with my current setting, the worst response time is about a second, while 90% request were done in less than 600ms.</p>
+<p>There must be something can be tuned, though VM could be the reason of slowness. I will check following stuffs:</p>
+<ul>
+<li>Apache HTTPd configuration, it seems prefork is performing better than worker, there may be more can be tuned include both HTTPd and wsgi</li>
+<li>Python class optimization, I will review the implementation of user class, as I don&#8217;t want to make user class too complicated to be used</li>
+<li>Cassandra performance, actually this is what I&#8217;m worrying about, as during the tests, Cassandra boxes&#8217; CPU utilization is about 80% &#8211; 70% on user, 10% on sys, roughly, it could be the bottleneck</li>
+</ul>
+<p>Without the buddy operation everything&#8217;s fine &#8211; the worst response time is about 600 ms while 90% requests are below 400ms. Relationship is a pain, it&#8217;s the bottleneck, but in this social era, there is no web application can live without relationship &#8230;</p>
+<p>BTW, my testing environment:</p>
+<ul>
+<li>Test client running on PowerBook, using ab &#8211; I will check if there is anything else can be useful</li>
+<li>Servers are all running on same physical box controlled by proxmox, this includes a web server, a LVS director (to load balance Cassandra nodes), and 3 Cassandra nodes</li>
+<li>The server box uses Ethernet, PowerBook is on wireless. I don&#8217;t think there is any issue for this as connect time is pretty low.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>LVS</title>
+		<link>https://xiehang.com/blog/2009/11/25/lvs/</link>
+					<comments>https://xiehang.com/blog/2009/11/25/lvs/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2009 07:46:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[lvs]]></category>
+		<category><![CDATA[nosql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=769</guid>
+
+					<description><![CDATA[Playing with LVS &#8211; so that I don&#8217;t have to connect to individual Cassandra server. What I planned for LVS: 192.168.1.99 will be VIP f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 😉 f1 (192.168.1.101) to f4 (192.168.1.104) will be real server will do DR mode (I think it <a href='https://xiehang.com/blog/2009/11/25/lvs/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Playing with LVS &#8211; so that I don&#8217;t have to connect to individual Cassandra server.</p>
+<p>What I planned for LVS:</p>
+<ul>
+<li>192.168.1.99 will be VIP</li>
+<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>f1 (192.168.1.101) to f4 (192.168.1.104) will be real server</li>
+<li>will do DR mode (I think it is called single-B on most L4 switches &#8230;)</li>
+</ul>
+<p>The configuration is actually pretty simple, as long as you get it right, on LVS director (f5):</p>
+<ul>
+<li>Configure VIP to eth0:0 as an alias, netmask should be 255.255.255.255, broadcast is VIP itself</li>
+<li>Add following rules with ipvsadm (yea &#8230; you need to install this package)<br />
+-A -t 192.168.1.99:9160 -s wlc<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.101:9160 -g -w 1<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.102:9160 -g -w 1<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.103:9160 -g -w 1<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.104:9160 -g -w 1</li>
+<li>Start LVS (after restart network to make sure VIP is effective) by &#8220;ipvsadm &#8211;start-daemon master&#8221;</li>
+<li>If you want to stop LVS you can do &#8220;ipvsadm &#8211;stop-daemon master&#8221;</li>
+</ul>
+<p>Now let&#8217;s turn to real servers &#8211; all real servers (f1~f4) are doing the same:</p>
+<ul>
+<li>Add these lines to /etc/sysctl.conf and then do a &#8220;sysctl -p&#8221;<br />
+net.ipv4.conf.dummy0.arp_ignore = 1<br />
+net.ipv4.conf.dummy0.arp_announce = 2<br />
+net.ipv4.conf.all.arp_ignore = 1<br />
+net.ipv4.conf.all.arp_announce = 2</li>
+<li>Configure VIP to dummy0 as an alias, netmask should be 255.255.255.255, broadcast is VIP itself</li>
+<li>Change ThriftAddress in storage-conf.xml for Cassandra, to 0.0.0.0 so that Thrift serves on all interfaces</li>
+<li>Remember to restart Cassandra so to make new configuration takes effect</li>
+</ul>
+<p>Now, launch your favorite client, connecting to 192.168.1.99:9160, you should get everything as if connect to individual server.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/25/lvs/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>I&#8217;m not that fast any more</title>
+		<link>https://xiehang.com/blog/2009/11/24/im-not-that-fast-any-more/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2009 17:59:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=765</guid>
+
+					<description><![CDATA[&#8220;not fast&#8221; is better than &#8220;slow&#8221;, so I think I&#8217;m making progress, better than before. Updates: I moved to proxmox which gives me better VM performance so that I can have more VMs for my test, it did take me some time to dig out a usable solution. Now I&#8217;m running 4 VMs so I <a href='https://xiehang.com/blog/2009/11/24/im-not-that-fast-any-more/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>&#8220;not fast&#8221; is better than &#8220;slow&#8221;, so I think I&#8217;m making progress, better than before.</p>
+<p>Updates:</p>
+<ul>
+<li>I moved to <a href="http://www.proxmox.com/">proxmox </a>which gives me better VM performance so that I can have more VMs for my test, it did take me some time to dig out a usable solution. Now I&#8217;m running 4 VMs so I can test fail-over and bootstrap etc.</li>
+<li>I moved to Python since PHP is not that popular now especially in all these new technology, I&#8217;m a code-by-sample guy, so while the whole world is writing codes in Java, Ruby, and Python, I don&#8217;t have many choices. I picked Python because I don&#8217;t want to run things like Tomcat, and built-in web servers does not convince me (I&#8217;m talking about Ruby).</li>
+<li>I&#8217;ve done some simple tests but dealing with columns, etc., the test environment gives me reasonable performance number &#8211; 8ms per read/write.</li>
+<li>I&#8217;m still learning Python and its web stuffs, seems not that hard to catch up though. I&#8217;m using web.py which seems to be the lightest framework, I may be wrong but I don&#8217;t want to dig in more at this moment.</li>
+</ul>
+<p>To-do list:</p>
+<ul>
+<li>I need to figure out if Ubuntu is still the way to go for my virtualization environment, I&#8217;m worrying proxmox is not a major player in this area so it may ruin my long term plan.</li>
+<li>I need to find out if there is any other better HTTP server, &#8220;better&#8221; here means: light, support wsgi.</li>
+<li>I&#8217;m going to compose some test scripts dealing with super column, which is what I need to use for the statistic project.</li>
+<li>Revisit original design, both schema and work flow may have some changes.</li>
+</ul>
+<p>I would like to say, everything is on the track, though I&#8217;m not that fast. I will post updates after this thanks giving as I doubt if I will have time coding during the holiday.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Late night &#8230; some progress</title>
+		<link>https://xiehang.com/blog/2009/11/19/late-night-some-progress/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2009 09:23:26 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=759</guid>
+
+					<description><![CDATA[I&#8217;ve made some progress, I want to write it down here so that I can follow up tomorrow (actually, today): Python is not that easy, but it is not that difficult, I&#8217;ve decided to use wsgi plus web.py to do my web development, I think wsgi is the right way to go, but web.py is <a href='https://xiehang.com/blog/2009/11/19/late-night-some-progress/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve made some progress, I want to write it down here so that I can follow up tomorrow (actually, today):</p>
+<ul>
+<li>Python is not that easy, but it is not that difficult, I&#8217;ve decided to use wsgi plus web.py to do my web development, I think wsgi is the right way to go, but web.py is still a question mark &#8211; I picked it up just because it is simple</li>
+<li>Tuned Apache configuration to make it support wsgi/web.py, actually I was thinking of finding something else which will be lighter, I still need to do some more research on that but since I&#8217;m using wsgi so I don&#8217;t think changing web server will affect anything, other than deployment.</li>
+<li>I found a place to host subversion, freely. Using version control can easily track changes, and remote repository will make sure my stuffs are safe. Free service does not guarantee 100% reliability, but thinking of I have local copy already, it&#8217;s acceptable</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Changes &#8230;</title>
+		<link>https://xiehang.com/blog/2009/11/17/changes/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 17 Nov 2009 21:56:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=752</guid>
+
+					<description><![CDATA[Here is the deal &#8211; I decided to drop PHP and moving to Python, so that I can spend less time on dealing with less-supported PHP (in this nosql wave), I&#8217;ve removed PHP from all dev/test environments and wish I won&#8217;t come back later. Actually I&#8217;ve made PHP works, but I&#8217;m just not feeling well <a href='https://xiehang.com/blog/2009/11/17/changes/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here is the deal &#8211; I decided to drop PHP and moving to Python, so that I can spend less time on dealing with less-supported PHP (in this nosql wave), I&#8217;ve removed PHP from all dev/test environments and wish I won&#8217;t come back later.</p>
+<p>Actually I&#8217;ve made PHP works, but I&#8217;m just not feeling well as not many people are using PHP and it seems hard to seek help whenever needed. Also, seems setting up Python with Apache (through wsgi) is not that difficult. It could be a good chance to lear Python as well, though I did some PyS60 a while ago (for Jabber on E90).</p>
+<p>BTW, I&#8217;ve upgraded all Fedora instances (3 of them) to Fedora 12, so far so good.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to build Thrift</title>
+		<link>https://xiehang.com/blog/2009/11/13/how-to-build-thrift/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Nov 2009 18:18:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[compile]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[nosql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=748</guid>
+
+					<description><![CDATA[Finally I had to build my own instead doing package installation, and building Thrift is not that difficult (after you go through it once &#8230;). You definitely need to read requirements for building Thrift, but things are not quite clear at the first glance, dependency list is not clear, so here are what I installed <a href='https://xiehang.com/blog/2009/11/13/how-to-build-thrift/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Finally I had to build my own instead doing package installation, and building Thrift is not that difficult (after you go through it once &#8230;).</p>
+<p>You definitely need to read <a href="http://wiki.apache.org/thrift/ThriftRequirements">requirements for building Thrift</a>, but things are not quite clear at the first glance, dependency list is not clear, so here are what I installed before &#8220;./bootstrap.sh; ./configure; make; sudo make install&#8221;, note that this is the package list for Fedora, but it should be similar to Ubuntu:</p>
+<ul>
+<li>subversion</li>
+<li>gcc-g++</li>
+<li>java-1.6.0-openjdk-devel</li>
+<li>perl-devel</li>
+<li>python-devel</li>
+<li>php-devel</li>
+<li>mono-devel</li>
+<li>boost-devel</li>
+<li>libtool</li>
+<li>bison</li>
+<li>flex</li>
+<li>perl-ExtUtils-MakeMaker</li>
+</ul>
+<p>After all these installed, it will work like a chime.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Update on research</title>
+		<link>https://xiehang.com/blog/2009/11/13/update-on-research/</link>
+					<comments>https://xiehang.com/blog/2009/11/13/update-on-research/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Nov 2009 18:06:27 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=745</guid>
+
+					<description><![CDATA[I&#8217;ve deployed Cassandra to my development environment, running on 4 servers with replica 2. I picked the number 4 and 2 because it&#8217;s more like a real world thing, and it is the requirement from my friend. I can test fail-over etc later on. I&#8217;ve also composed some scripts to do service stuffs &#8211; the <a href='https://xiehang.com/blog/2009/11/13/update-on-research/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve deployed Cassandra to my development environment, running on 4 servers with replica 2. I picked the number 4 and 2 because it&#8217;s more like a real world thing, and it is <a href="https://xiehang.com/blog/2009/11/09/question-from-a-friend/">the requirement from my friend</a>. I can test fail-over etc later on.</p>
+<p>I&#8217;ve also composed some scripts to do service stuffs &#8211; the script I composed can start/stop/restart Cassandra gracefully, it can also tell status of the node and the cluster, it&#8217;s a simple Shell script, I will make it a service under Fedora, and a init.d script under Ubuntu (I&#8217;m running only these two platform now). Cassandra was upgrade from 0.4.1 to 0.4.2 days ago, and I used that as a chance to test my deployment stuffs, seems pretty good. I think I just need to be careful with 0.4.x =&gt; 0.5.x upgrade since it may break compatibility on configuration and command line.</p>
+<p>I&#8217;ve converted my PowerBook to a dedicated client machine running Fedora &#8230; it&#8217;s a pretty old machine and seems Apple does not want to roll out new software (such as JDK 1.6) for it, so I did some survey around and picked Fedora (Ubuntu is not ppc friendly &#8211; the support is community based).</p>
+<p>And finally I have Thrift/PHP up and running. At the very beginning I was thinking I should use Java as the client but later one found that I have no idea how to develop Java based web application, and since Thrift mentioned it supports all C/C++, Java, Perl, PHP, Ruby, Python pretty well, I should just pick my favorite language to do the test and then let real clients pick what they  want to use (where is my client, BTW? <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
+<p>And yes, I confirmed the schema (though Cassandra is schema-less thing), I&#8217;m going to test the schema with PHP client today. After that I will have to find a place to hold all my codes/configuration, etc, in a subversion, and based on what I found so far, github.com is the best candidate.</p>
+<p>Will update here today or tomorrow.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/13/update-on-research/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Question from a friend</title>
+		<link>https://xiehang.com/blog/2009/11/09/question-from-a-friend/</link>
+					<comments>https://xiehang.com/blog/2009/11/09/question-from-a-friend/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2009 03:33:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[framework]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[nosql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=741</guid>
+
+					<description><![CDATA[One of my friends asked me if this service is doable: Every hour multiple machines (clients) will send ~1M actions records to the service Each action contains: user id, action, action result, start time, end time, and couple of user profile keys The service should be able to deliver reports for any given time frame <a href='https://xiehang.com/blog/2009/11/09/question-from-a-friend/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>One of my friends asked me if this service is doable:</p>
+<ul>
+<li>Every hour multiple machines (clients) will send ~1M actions records to the service</li>
+<li>Each action contains: user id, action, action result, start time, end time, and couple of user profile keys</li>
+<li>The service should be able to deliver reports for any given time frame (minutes), within 15 min after the period finishes. For example, report for 3pm~3:30pm should be available by 3:45pm</li>
+<li>Reports include: how many users did a specific action with specific result (during that time frame), how many actions does a specific user did, and top number of actions taken by others users who did the same action as the user (hard to understand, but think about Amazon, &#8220;Customers bought this item also bought&#8230;)</li>
+<li>Most important thing is: all these requirements should be done on no more than 4 machines, include redundancy, which means should be done on 2 or 3 machines</li>
+</ul>
+<p>I have to say, this is a pretty common requirements for online services (shopping, search, gaming,&#8230; could be anything), and if I can make it and make the solution linear, then it will be pretty much interesting (let&#8217;s say, 40 machines supporting 10M actions per hour, a lot already).</p>
+<p>I will do some research (the nosql stuffs could well fit into this one), and post thinking/design here.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/09/question-from-a-friend/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

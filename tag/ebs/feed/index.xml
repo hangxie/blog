@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ebs &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/ebs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 21 May 2012 07:08:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Performance of EC2 nodes</title>
+		<link>https://xiehang.com/blog/2012/05/21/performance-of-ec2-nodes/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 21 May 2012 07:08:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[disk]]></category>
+		<category><![CDATA[ebs]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[io]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1339</guid>
+
+					<description><![CDATA[I was running crawler-like application on my EC2 nodes, which grab a set of web pages, save them locally, then do some follow-ups, obviously I hit the bottleneck of the EC2 nodes. It seems EC2&#8217;s storage, at least EBS performs quite bad, I don&#8217;t have comparison in number, but for the follow-ups jobs, which are <a href='https://xiehang.com/blog/2012/05/21/performance-of-ec2-nodes/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was running crawler-like application on my EC2 nodes, which grab a set of web pages, save them locally, then do some follow-ups, obviously I hit the bottleneck of the EC2 nodes.</p>
+<p>It seems EC2&#8217;s storage, at least EBS performs quite bad, I don&#8217;t have comparison in number, but for the follow-ups jobs, which are nothing to do with network, EC2 is hundreds or thousands times slower than a regular modern machine.</p>
+<p>I guess traditional applications on EC2 don&#8217;t rely on EBS too much &#8211; most data write to S3/RDS/SDB, etc. However, I do have to pay more attention on this as there is a friend gets to run some critical jobs and I recommended EC2 &#8230; I will do some more tests and post result here if I find anything signaficant.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

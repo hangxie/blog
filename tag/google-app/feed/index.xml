@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>google app &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/google-app/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 13 Jan 2012 19:53:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Google App is a mess</title>
+		<link>https://xiehang.com/blog/2012/01/13/google-app-is-a-mess/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 19:53:53 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[domain]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[google app]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1202</guid>
+
+					<description><![CDATA[It used to be one of the most reliable and cute (or cool?) service on the Web, but seems not any more. I tried to move two of my sites to Google App, but had to give up because all sorts of troubles it gave to me. Yesterday I was able to move one site <a href='https://xiehang.com/blog/2012/01/13/google-app-is-a-mess/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It used to be one of the most reliable and cute (or cool?) service on the Web, but seems not any more.</p>
+<p>I tried to move two of my sites to Google App, but had to give up because all sorts of troubles it gave to me. Yesterday I was able to move one site to it, but at the last step (to activate my E-Mail account, I guess), it kept telling my my Google account was webmaster@gmail.com and I cannot change it. I tried to move to webmaster@mydomain.com but failed due to it had been registered, and if I want to hook up with this existing account it told me that I need to use webmaster@gmail.com. I was totally lost of what I should do, so I simply removed my domain from it.</p>
+<p>It seems Google needs sometime to finish the work of removing my site as I no longer can register it, so I tried another domain I own, which is currently running on some other service providers (free, as well). Now Google is doing much better &#8230; I mentioned much better because it simply give me &#8220;Server error&#8221; (I guess it is HTTP 5xx but I&#8217;m not sure), so I don&#8217;t have to go through all the registration process and stuck in some middle way, hehe.</p>
+<p>So, good-bye to Google App, for now, I will come back and check things out later on, maybe weeks, maybe months.</p>
+<p>BTW, it could be Google is not willing to provide free service any more, so Google&#8217;s technical team should not be blamed, isn&#8217;t it?</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

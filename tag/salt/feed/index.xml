@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>salt &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/salt/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 03 Jan 2015 23:38:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>These guys don&#8217;t know how to avoid race condition</title>
+		<link>https://xiehang.com/blog/2015/01/03/these-guys-dont-know-how-to-avoid-race-condition/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 03 Jan 2015 23:37:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[race condition]]></category>
+		<category><![CDATA[salt]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1729</guid>
+
+					<description><![CDATA[Actually it is not that hard to avoid race condition, as long as you have that concept in mind. I have to say, some people don&#8217;t know how to avoid race condition. I think the diff would be a better explanation. +import tempfile # Import salt libs import salt.crypt @@ -668,12 +669,15 @@ def _pillar(self, <a href='https://xiehang.com/blog/2015/01/03/these-guys-dont-know-how-to-avoid-race-condition/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Actually it is not that hard to avoid race condition, as long as you have that concept in mind. I have to say, some people don&#8217;t know how to avoid race condition.</p>
+<p>I think the diff would be a better explanation.</p>
+<pre>
++import tempfile
+ 
+ # Import salt libs
+ import salt.crypt
+ @@ -668,12 +669,15 @@ def _pillar(self, load):
+             if not os.path.isdir(cdir):
+                 os.makedirs(cdir)
+             datap = os.path.join(cdir, 'data.p')
+-            with salt.utils.fopen(datap, 'w+b') as fp_:
++            tmpfh, tmpfname = tempfile.mkstemp(dir=cdir)
++            os.close(tmpfh)
++            with salt.utils.fopen(tmpfname, 'w+b') as fp_:
+                 fp_.write(
+                         self.serial.dumps(
+                             {'grains': load['grains'],
+                              'pillar': data})
+                             )
++            os.rename(tmpfname, datap)
+         return data
+ </pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Code quality of saltstack is &#8230;</title>
+		<link>https://xiehang.com/blog/2014/10/08/code-quality-of-saltstack-is/</link>
+					<comments>https://xiehang.com/blog/2014/10/08/code-quality-of-saltstack-is/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 08 Oct 2014 15:48:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[salt]]></category>
+		<category><![CDATA[saltstack]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1719</guid>
+
+					<description><![CDATA[Subject says it all, I&#8217;m still playing with saltstack and AWS to get everything work. I made good progress, but every tiny step ahead gave me pain more than fun. It&#8217;s life though, have to live with it.]]></description>
+										<content:encoded><![CDATA[<p>Subject says it all, I&#8217;m still playing with saltstack and AWS to get everything work. I made good progress, but every tiny step ahead gave me pain more than fun.</p>
+<p>It&#8217;s life though, have to live with it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2014/10/08/code-quality-of-saltstack-is/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

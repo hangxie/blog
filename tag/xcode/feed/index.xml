@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>xcode &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/xcode/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 09 Jan 2013 21:27:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Xcode does not follow relative symlink</title>
+		<link>https://xiehang.com/blog/2013/01/09/xcode-does-not-follow-relative-symlink/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 09 Jan 2013 21:27:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cordova]]></category>
+		<category><![CDATA[phonegap]]></category>
+		<category><![CDATA[symlink]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1461</guid>
+
+					<description><![CDATA[I&#8217;m building app with PhoneGap/Cordova, it pretty much makes sense to share same html/cs/js across different forms, but this gave me quite some troublesome time &#8230; It turned out Xcode does not follow relative symlink as mentioned here, you should move down to Rachel&#8217;s comment to see the finding. I moved back to absolute symlink <a href='https://xiehang.com/blog/2013/01/09/xcode-does-not-follow-relative-symlink/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m building app with PhoneGap/Cordova, it pretty much makes sense to share same html/cs/js across different forms, but this gave me quite some troublesome time &#8230;</p>
+<p>It turned out Xcode does not follow relative symlink as mentioned <a href="http://www.tricedesigns.com/2012/02/16/linked-source-files-across-phonegap-projects-on-osx/">here</a>, you should move down to Rachel&#8217;s comment to see the finding.</p>
+<p>I moved back to absolute symlink (start from /) and everything&#8217;s working now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Played with Xcode and AWS for a while</title>
+		<link>https://xiehang.com/blog/2012/11/07/played-with-xcode-and-aws-for-a-while/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 08 Nov 2012 01:22:16 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1425</guid>
+
+					<description><![CDATA[Just upgraded Xcode to 4.5.2 through App Store, which has iOS6 support, I don&#8217;t know what else this new version includes though &#8230; And after the upgrade, I got some time playing with previous AWS project which list my stuffs on AWS, include S3 and EC2. Obviously, every time I access my old codes I <a href='https://xiehang.com/blog/2012/11/07/played-with-xcode-and-aws-for-a-while/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just upgraded Xcode to 4.5.2 through App Store, which has iOS6 support, I don&#8217;t know what else this new version includes though &#8230;</p>
+<p>And after the upgrade, I got some time playing with previous AWS project which list my stuffs on AWS, include S3 and EC2. Obviously, every time I access my old codes I could find something wrong, and there is no exception this time &#8211; at the time I was doing AWS project, I had only 2 instances staying in one region, and now I have multiple (5?) instances staying in two regions so previous logic does not work very well.</p>
+<p>Not many details to talk about here, I simply list all regions for AWS, and query instances targeting each endpoint, that&#8217;s it.</p>
+<p>Now my AWS app is working well again.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Upgrade to xcode 4.3.1</title>
+		<link>https://xiehang.com/blog/2012/03/19/upgrade-to-xcode-4-3-1/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 19 Mar 2012 20:26:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1292</guid>
+
+					<description><![CDATA[As I mentioned before, I accidently upgraded xcode, and obviously the upgrade (or something else caused by upgrade) broke my previous AWS app &#8211; at the beginning it does not build, and after tweak the project file, it refused to run. Instead of doing further more troubleshooting job, I just uninstall and reinstall the whole <a href='https://xiehang.com/blog/2012/03/19/upgrade-to-xcode-4-3-1/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>As I mentioned <a href="https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/">before</a>, I accidently upgraded xcode, and obviously the upgrade (or something else caused by upgrade) broke my previous AWS app &#8211; at the beginning it does not build, and after tweak the project file, it refused to run. Instead of doing further more troubleshooting job, I just uninstall and reinstall the whole xcode tool chain, and obviously this is the simple and quick solution (other than Giga data of download).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Don&#8217;t try to solve every single problem</title>
+		<link>https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/</link>
+					<comments>https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 17 Mar 2012 19:40:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cmake]]></category>
+		<category><![CDATA[focus]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[overture]]></category>
+		<category><![CDATA[piano]]></category>
+		<category><![CDATA[problem]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1290</guid>
+
+					<description><![CDATA[You have to admit that you are not a superman, so you could not solve every problem you met, even if they are in same/similar area. I was playing with MuseScore which is an open source alternative to Overture, however it kept crashing while open some specific ove files. After searching around and reading some <a href='https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>You have to admit that you are not a superman, so you could not solve every problem you met, even if they are in same/similar area.</p>
+<p>I was playing with <a href="http://musescore.org/">MuseScore</a> which is an open source alternative to Overture, however it kept crashing while open some specific ove files. After searching around and reading some posts, you must have guessed what I did &#8211; checkout source codes and start building.</p>
+<p>It&#8217;s fun, I guess that saying was correct &#8211; programmers used to want to face problems that hard to solve. Well, this does not mean I can solve the problem :D. After (accidently) upgraded Xcode to 4.3, I have to install a nightly build version of CMake to get rid of the &#8220;-buildstyle&#8221; problem, then spent quite some time on trying to build mscore from scratch, but so far no luck.</p>
+<p>This morning I asked myself, WHY? Let&#8217;s forget about what was being debated in my mind, but now I decided to give it up, at last before I can finish my term extraction project which can help me make living, for real.</p>
+<p>In the mean while, I will postpone all mobile development for several weeks. Actually I made pretty good progress with Windows Phone 7 development, and it won&#8217;t take me too long to finish a WP version for my AWS client, but I want to push it to late April.</p>
+<p>Focus please, you cannot solve every single problem you meet.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New toy</title>
+		<link>https://xiehang.com/blog/2011/11/07/new-toy-2/</link>
+					<comments>https://xiehang.com/blog/2011/11/07/new-toy-2/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 07 Nov 2011 10:57:16 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[fusion]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[macbook]]></category>
+		<category><![CDATA[virtual box]]></category>
+		<category><![CDATA[virtual machine]]></category>
+		<category><![CDATA[vmware]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1142</guid>
+
+					<description><![CDATA[Got an MacBook Pro 13&#8243;, but it&#8217;s an old model as the newest models are still pending on &#8220;regulator&#8217;s approval&#8221; in China, per Apple&#8217;s web site. I believe it&#8217;s the problem from the new Thunderbolt. Mine has 8G memory so I can run 3 VMs (under VirtualBox, each has 1G memory) plus all applications from <a href='https://xiehang.com/blog/2011/11/07/new-toy-2/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Got an MacBook Pro 13&#8243;, but it&#8217;s an old model as the newest models are still pending on &#8220;regulator&#8217;s approval&#8221; in China, per Apple&#8217;s web site. I believe it&#8217;s the problem from the new Thunderbolt.</p>
+<p>Mine has 8G memory so I can run 3 VMs (under VirtualBox, each has 1G memory) plus all applications from Microsoft Office (Word, Excel, PowerPoint, and Outlook), Safari, and several small utilities at the same time without any performance problem. For most time I only need to run 1 VM so it should be OK.</p>
+<p>VirtualBox rolls, while Parallele Desktop and VMWare Fusion both suck. Alright I know I&#8217;m not familiar with either so VirtualBox gained my respect, but thinking of VirtualBox is free, this simply kills those two.</p>
+<p>Installing Xcode was a nightmare &#8211; App Store in China didn&#8217;t work, at least for huge packages like Xcode (I installed some small stuffs without problem), finally I downloaded Xcode from Apple&#8217;s developer web site. There were not many to be installed as I can see, other than QQ and MPLayer. I&#8217;m trying to get Pidgin running now, but seems I have to run it under X11, and if this is the case I will move to Adium though I do want to have customized smileys. Maybe Adium got it already, need to check out.</p>
+<p>Overall speaking, MBP is a nice laptop, it&#8217;s quiet, cool (against HOT MBP ppc I had 8 years ago). The only problem is that I have to remove my watch while working on it as chain of the watch will scratch the shell.</p>
+<p>I ordered a keyboard screen and a bag for it, will get this week.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/11/07/new-toy-2/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hello world is always easy</title>
+		<link>https://xiehang.com/blog/2009/05/23/hello-world-is-always-easy/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 24 May 2009 06:07:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[objective c]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=413</guid>
+
+					<description><![CDATA[Finished HelloWorld with Objective-C on Mac using Xcode, everything seems fine, though I know hello world is always simple and easy. It seems to me Objective-C is something similar to smalltalk, but I&#8217;m not quite sure as I&#8217;m not familiar with smalltalk either. Anyway the syntax is sort of weird to me, as it does <a href='https://xiehang.com/blog/2009/05/23/hello-world-is-always-easy/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Finished HelloWorld with Objective-C on Mac using Xcode, everything seems fine, though I know hello world is always simple and easy.</p>
+<p>It seems to me Objective-C is something similar to smalltalk, but I&#8217;m not quite sure as I&#8217;m not familiar with smalltalk either. Anyway the syntax is sort of weird to me, as it does not like a procedure/function oriented language, but more like a functional one.</p>
+<p>I will keep play with Xcode for sometime during this long weekend, and back to my PPCam (Ada on Windows using GNAT) next week &#8211; again, it is not just as simple as hello world, get to spend more time to get things done.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Which application type is suitable for Mac?</title>
+		<link>https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 21 May 2009 19:41:22 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[carbon]]></category>
+		<category><![CDATA[cocoa]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[objective c]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/</guid>
+
+					<description><![CDATA[I don&#8217;t quite understand application types under Mac (OS X), I remember I stopped trying out XCode just because I cannot determine which one to use, and I also made wrong assumption that Java is the way to go as I can share (some) source codes cross platforms. Now I got a book talking about <a href='https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t quite understand application types under Mac (OS X), I remember I stopped trying out XCode just because I cannot determine which one to use, and I also made wrong assumption that Java is the way to go as I can share (some) source codes cross platforms.</p>
+<p>Now I got a book talking about how to build Mac applications with XCode, and it clearly stated:</p>
+<p>For Carbon:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">The Carbon template defines a pure Carbon application. Carbon is the C interfaces to Aqua and the legacy support for applications written using the APIs in Mac OS 9 and earlier. Use this template if you are porting an application from OS 9 to OS X, or you want to create native applications using only C or C++. The main.c file includes a skeletal application that loads the main.nib file, creates the application&#8217;s window, and starts the main event loop. See <a href="http://developer.apple.com/carbon/" target="_top"><span style="color: blue;">http://developer.apple.com/carbon/</span></a> for more information about Carbon applications.</span></p></blockquote>
+<p>For Java/Cocoa:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Mac OS X includes an extensive bridge between the Java programming language and the Objective-C APIs defined in the Cocoa framework. These Java proxy objects make it possible to use most of the Cocoa and Foundation frameworks as though they had been written in Java. If you need to create a native Cocoa application and prefer, or require, the Java programming language, create a Cocoa-Java application. The template sets up a Cocoa application whose native executable is the Cocoa-Java stub. This stub application creates a Java runtime, that loads and starts the Java classes which constitute the application. Read more about mixing Java and Cocoa at <a href="http://developer.apple.com/documentation/Cocoa/Java-date.html" target="_top"><span style="color: blue;">http://developer.apple.com/documentation/Cocoa/Java-date.html</span></a>. Apple has recently announced that it will no longer be updating in the Cocoa-Java bridge beyond Mac OS X 10.3, so the future of this technology is murky.<br />
+</span></p></blockquote>
+<p>For Cocoa:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Cocoa is the preferred application development technology for Mac OS X. It is based on the Objective-C programming language. The Cocoa framework is the Objective-C interfaces to Aqua and most other Apple technologies. If OS X has a &#8220;native&#8221; development environment, Objective-C and Cocoa are it. A few technologies are only available using Cocoa interfaces. The Cocoa template creates a minimal Cocoa application. The only functional part of the project is the main.m file which does nothing but create and start the generic </span><span style="font-size: 10pt; line-height: 115%; font-family: &quot;Courier New&quot;;">NSApplication</span><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"> object. It does provide generic handling of the About This Program menu item, but it does not include a Credits.rtf file. </span></p></blockquote>
+<p>From three paragraphs above, it is clearly Java is NOT the way to go, it will be dropped by Apple sometime in the future, also Carbon is for legacy applications.</p>
+<p>So, the right way is indeed doing Cocoa application with Objective-C, I get to read around to see if I can get some tests done.</p>
+<p>I&#8217;ve upgraded my PowerBook months back with latest OS X (Leopard), plus makek it 2G memory, so that I&#8217;ve been able to install XCode, however, the machine had been idle since the upgrade, I should do something so not to waste my money (I have enough time now, not using my time is just a waste).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: CFEngine and saltstack	</title>
+	<atom:link href="https://xiehang.com/blog/2014/09/18/cfengine-and-saltstack/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2014/09/18/cfengine-and-saltstack/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 12 Jul 2015 16:48:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2014/09/18/cfengine-and-saltstack/comment-page-1/#comment-11318</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 12 Jul 2015 16:48:28 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1717#comment-11318</guid>
+
+					<description><![CDATA[No.
+
+It took me 9 months to migrate everything to AWS, much longer than I thought.
+
+And I moved to another company after that, I don&#039;t think I&#039;m going to try anything to migrate saltstack to CFEngine at least in near future.]]></description>
+			<content:encoded><![CDATA[<p>No.</p>
+<p>It took me 9 months to migrate everything to AWS, much longer than I thought.</p>
+<p>And I moved to another company after that, I don&#8217;t think I&#8217;m going to try anything to migrate saltstack to CFEngine at least in near future.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: pandux		</title>
+		<link>https://xiehang.com/blog/2014/09/18/cfengine-and-saltstack/comment-page-1/#comment-11314</link>
+
+		<dc:creator><![CDATA[pandux]]></dc:creator>
+		<pubDate>Sat, 11 Jul 2015 22:26:29 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1717#comment-11314</guid>
+
+					<description><![CDATA[Did you manage move to CFEngine promise ?]]></description>
+			<content:encoded><![CDATA[<p>Did you manage move to CFEngine promise ?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

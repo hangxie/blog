@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Restricted bash	</title>
+	<atom:link href="https://xiehang.com/blog/2011/01/12/restricted-bash/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2011/01/12/restricted-bash/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 12 Jan 2011 09:13:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2011/01/12/restricted-bash/comment-page-1/#comment-3321</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 12 Jan 2011 09:13:03 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1066#comment-3321</guid>
+
+					<description><![CDATA[BTW, you need to do this only on legacy system like CentOS 5 (yes, CentOS 5 is too old), for modern systems like Ubuntu 10.10, rbash is part of bash package.]]></description>
+			<content:encoded><![CDATA[<p>BTW, you need to do this only on legacy system like CentOS 5 (yes, CentOS 5 is too old), for modern systems like Ubuntu 10.10, rbash is part of bash package.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

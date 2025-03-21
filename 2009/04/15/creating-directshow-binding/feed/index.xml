@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Creating DirectShow binding	</title>
+	<atom:link href="https://xiehang.com/blog/2009/04/15/creating-directshow-binding/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/04/15/creating-directshow-binding/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 01 May 2009 02:12:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/04/15/creating-directshow-binding/comment-page-1/#comment-34</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 16 Apr 2009 08:08:54 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=261#comment-34</guid>
+
+					<description><![CDATA[Tough - 3 more COM object to be added, I think I&#039;d better leave it to tomorrow.
+
+Heading to bed now.]]></description>
+			<content:encoded><![CDATA[<p>Tough &#8211; 3 more COM object to be added, I think I&#8217;d better leave it to tomorrow.</p>
+<p>Heading to bed now.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

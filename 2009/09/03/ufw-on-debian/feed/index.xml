@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: ufw on Debian	</title>
+	<atom:link href="https://xiehang.com/blog/2009/09/03/ufw-on-debian/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 03 Feb 2016 04:49:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: INSTALLING UFW (UNCOMPLICATED FIREWALL) IN DEBIAN-IT大道		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-11915</link>
+
+		<dc:creator><![CDATA[INSTALLING UFW (UNCOMPLICATED FIREWALL) IN DEBIAN-IT大道]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2016 04:49:58 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-11915</guid>
+
+					<description><![CDATA[[&#8230;] UFW to boot with tips from&#160;here:&#160;ln -fs /lib/ufw/ufw-init [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] UFW to boot with tips from&nbsp;here:&nbsp;ln -fs /lib/ufw/ufw-init [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mauro Andres		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-3386</link>
+
+		<dc:creator><![CDATA[Mauro Andres]]></dc:creator>
+		<pubDate>Sun, 24 Jul 2011 07:09:27 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-3386</guid>
+
+					<description><![CDATA[You no longer need to  download ufw from a separate site. It&#039;s in the Debian repositories now.  i documented two very detailed guides at http://mauroandres.wordpress.com/2009/12/14/build-a-secure-desktop-firewall-with-ufw-part-i/
+and 
+http://mauroandres.wordpress.com/2010/01/28/build-a-secure-desktop-firewall-with-ufw-part-ii/]]></description>
+			<content:encoded><![CDATA[<p>You no longer need to  download ufw from a separate site. It&#8217;s in the Debian repositories now.  i documented two very detailed guides at <a href="http://mauroandres.wordpress.com/2009/12/14/build-a-secure-desktop-firewall-with-ufw-part-i/" rel="nofollow ugc">http://mauroandres.wordpress.com/2009/12/14/build-a-secure-desktop-firewall-with-ufw-part-i/</a><br />
+and<br />
+<a href="http://mauroandres.wordpress.com/2010/01/28/build-a-secure-desktop-firewall-with-ufw-part-ii/" rel="nofollow ugc">http://mauroandres.wordpress.com/2010/01/28/build-a-secure-desktop-firewall-with-ufw-part-ii/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Installing UFW (Uncomplicated Firewall) in Debian Lenny &#124; Thoughts++		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-3364</link>
+
+		<dc:creator><![CDATA[Installing UFW (Uncomplicated Firewall) in Debian Lenny &#124; Thoughts++]]></dc:creator>
+		<pubDate>Sat, 26 Mar 2011 02:59:37 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-3364</guid>
+
+					<description><![CDATA[[...] UFW to boot with tips from here: ln -fs /lib/ufw/ufw-init [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] UFW to boot with tips from here: ln -fs /lib/ufw/ufw-init [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-2804</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2009 17:35:31 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-2804</guid>
+
+					<description><![CDATA[ufw is part of ubuntu 9.10, so ...]]></description>
+			<content:encoded><![CDATA[<p>ufw is part of ubuntu 9.10, so &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Build a secure desktop firewall with ufw-part I &#171; Le Blog de Maurice		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-2803</link>
+
+		<dc:creator><![CDATA[Build a secure desktop firewall with ufw-part I &#171; Le Blog de Maurice]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2009 16:33:00 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-2803</guid>
+
+					<description><![CDATA[[...] Debian specifics on ufw persistance post-reboot https://xiehang.com/blog/2009/09/03/ufw-on-debian/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Debian specifics on ufw persistance post-reboot <a href="https://xiehang.com/blog/2009/09/03/ufw-on-debian/" rel="nofollow ugc">https://xiehang.com/blog/2009/09/03/ufw-on-debian/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mhernandez		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-2721</link>
+
+		<dc:creator><![CDATA[mhernandez]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2009 11:58:36 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-2721</guid>
+
+					<description><![CDATA[In lenny and ufw 0.25+ (which is what i&#039;ve been using), you can do a
+
+ln -s /usr/share/ufw/ufw-init /etc/init.d/ufw
+
+and then a
+
+update-rc.d ufw defaults
+
+to make ufw start at boot time.]]></description>
+			<content:encoded><![CDATA[<p>In lenny and ufw 0.25+ (which is what i&#8217;ve been using), you can do a</p>
+<p>ln -s /usr/share/ufw/ufw-init /etc/init.d/ufw</p>
+<p>and then a</p>
+<p>update-rc.d ufw defaults</p>
+<p>to make ufw start at boot time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-2686</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 06 Sep 2009 22:42:57 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-2686</guid>
+
+					<description><![CDATA[Also should do a &quot;sudo ln -fs /lib/ufw/ufw-init /etc/init.d/ufw&quot;, and then do regular link to etc/rc?.d/ to make sure ufw is started during boot time.]]></description>
+			<content:encoded><![CDATA[<p>Also should do a &#8220;sudo ln -fs /lib/ufw/ufw-init /etc/init.d/ufw&#8221;, and then do regular link to etc/rc?.d/ to make sure ufw is started during boot time.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

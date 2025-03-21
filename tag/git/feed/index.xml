@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>git &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/git/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 23 Apr 2015 13:32:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>git rebase till the first commit</title>
+		<link>https://xiehang.com/blog/2015/04/08/git-rebase-till-the-first-commit/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2015 19:47:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[rebase]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1750</guid>
+
+					<description><![CDATA[git rebase -i --root develop]]></description>
+										<content:encoded><![CDATA[<p><code>git rebase -i --root develop</code></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Settled down</title>
+		<link>https://xiehang.com/blog/2014/07/06/settled-down/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 06 Jul 2014 21:07:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[career]]></category>
+		<category><![CDATA[cfengine]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[nagios]]></category>
+		<category><![CDATA[rackspace]]></category>
+		<category><![CDATA[saltstack]]></category>
+		<category><![CDATA[shinken]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1700</guid>
+
+					<description><![CDATA[I&#8217;m working for the big chip company now, sound a little bit weird, though 😉 . Anyway, I&#8217;m sitting in backend team focusing on DevOps, I guess I will be in this mixed role till we find a dedicated DevOps guy. I guess whenever that happens, I&#8217;ve already finished monitoring facility (plus logistical stuffs like <a href='https://xiehang.com/blog/2014/07/06/settled-down/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m working for the big chip company now, sound a little bit weird, though <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Anyway, I&#8217;m sitting in backend team focusing on DevOps, I guess I will be in this mixed role till we find a dedicated DevOps guy. I guess whenever that happens, I&#8217;ve already finished monitoring facility (plus logistical stuffs like on-call schedule, etc.), and should have finished the plan to migrate from Rackspace to AWS.</p>
+<p>Everything works smoothly so far except git &#8211; I admit current company is using git in a modern way, but I don&#8217;t think previous company was doing something wrong. Anyway, I believe people do have different ideas of how to use git, I just have to fit into the company&#8217;s style.</p>
+<p>I don&#8217;t quite like saltstack although I&#8217;m still trying to get familiar with it. However, before I raise this as a concern to the team, I&#8217;d like to make sure everything that saltstack is doing can be done by cfengine.</p>
+<p>Ah yea, also need to evaluate <a href="http://www.shinken-monitoring.org/">Shinken</a> as it&#8217;s a pure Python solution, and &#8220;we are a python house&#8221;.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Slowly, I&#8217;m moving to git</title>
+		<link>https://xiehang.com/blog/2013/10/03/slowly-im-moving-to-git/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 03 Oct 2013 20:19:56 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[migration]]></category>
+		<category><![CDATA[svn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1594</guid>
+
+					<description><![CDATA[I think it was in year 2005 or 2006 that I migrated everything from CVS to SVN, and it was the time that my company was doing that as well. Now I&#8217;m migrating to git, and of course, my current company is doing the same thing :P. Guess everybody knows the reason &#8230; let&#8217;s say <a href='https://xiehang.com/blog/2013/10/03/slowly-im-moving-to-git/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think it was in year 2005 or 2006 that I migrated everything from CVS to SVN, and it was the time that my company was doing that as well. Now I&#8217;m migrating to git, and of course, my current company is doing the same thing :P.</p>
+<p>Guess everybody knows the reason &#8230; let&#8217;s say it&#8217;s offline support, that you don&#8217;t have to connect to sever to do commit. Further more, subversion does not work well on VirtualBox&#8217;s shared folder, while git has no problem at all, I guess people like me who needs to work on both *ix and Windows platforms have to have this kind of support.</p>
+<p>And this is the time to see how many projects I have, WeirdBox is a great thing to keep thinking of I&#8217;ve play with the codes for several years, aws-browser is obviously another thing to keep thinking of it&#8217;s my first app on iOS and AWS (EC2 and S3), XMPP Mail Alert has to be migrated as I&#8217;m using it at this moment (for a friend&#8217;s web site). I cannot recall anything else but will post here if I find any.</p>
+<p>And I&#8217;m using github, because of feel like safe? At least it&#8217;s not that vulnerable as other small players.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>git branch</title>
+		<link>https://xiehang.com/blog/2013/08/28/git-branch/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 29 Aug 2013 04:46:04 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[branch]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[merge]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1581</guid>
+
+					<description><![CDATA[Just leave a note here since I cannot recall this from time to time &#8230; git branch new_branch git checkout new_branch git push origin new_branch (git commit, git push, &#8230;) git checkout master git merge new_branch git push Actually it&#8217;s pretty straightforward, but I just cannot memorize &#8230; especially step #3, sigh &#8230;]]></description>
+										<content:encoded><![CDATA[<p>Just leave a note here since I cannot recall this from time to time &#8230;</p>
+<ol>
+<li>git branch new_branch</li>
+<li>git checkout new_branch</li>
+<li>git push origin new_branch</li>
+<li>(git commit, git push, &#8230;)</li>
+<li>git checkout master</li>
+<li>git merge new_branch</li>
+<li>git push</li>
+</ol>
+<p>Actually it&#8217;s pretty straightforward, but I just cannot memorize &#8230; especially step #3, sigh &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

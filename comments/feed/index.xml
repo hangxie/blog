@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments for Flying Bug	</title>
+	<atom:link href="https://xiehang.com/blog/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 13 Apr 2022 03:00:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		Comment on Goland by Hang		</title>
+		<link>https://xiehang.com/blog/2022/04/02/goland/comment-page-1/#comment-13963</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 13 Apr 2022 03:00:16 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1822#comment-13963</guid>
+
+					<description><![CDATA[It turned out Goland does not play well with WSL, at least not as easy as VS code, I end up uninstalling Goland on my Windows laptop as anyway Mac is my main development platform.
+
+Goland works fine to me on a 27&quot; screen, the debug session layout is no longer crowded, I actually like Goland&#039;s style on unit test and debug, provide enough useful information though someone else may feel it&#039;s too verbose.]]></description>
+			<content:encoded><![CDATA[<p>It turned out Goland does not play well with WSL, at least not as easy as VS code, I end up uninstalling Goland on my Windows laptop as anyway Mac is my main development platform.</p>
+<p>Goland works fine to me on a 27&#8243; screen, the debug session layout is no longer crowded, I actually like Goland&#8217;s style on unit test and debug, provide enough useful information though someone else may feel it&#8217;s too verbose.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Symfony and Godaddy by oldiev		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-13611</link>
+
+		<dc:creator><![CDATA[oldiev]]></dc:creator>
+		<pubDate>Thu, 04 Oct 2018 06:34:41 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-13611</guid>
+
+					<description><![CDATA[Since you require composer installed on a server to install Symfony and other PHP frameworks, I don&#039;t think you can do that on shared servers. Because you don&#039;t get composer there. I wouldn&#039;t recommend shared server anyway because of lack of security and performance issues. A better option is some affordable dedicated server like DigitalOcean, unless you know how to set it up. If you don&#039;t have sysadmin experience for that, then you can use Cloudways &lt;a href=&quot;https://www.cloudways.com/en/php-cloud-hosting.php&quot; rel=&quot;nofollow&quot;&gt;PHP MySQL hosting&lt;/a&gt; platform where the server is configured automatically and you get managed digitalocean server. You also get composer pre-installed, so you can install any php framework or CMS you want.]]></description>
+			<content:encoded><![CDATA[<p>Since you require composer installed on a server to install Symfony and other PHP frameworks, I don&#8217;t think you can do that on shared servers. Because you don&#8217;t get composer there. I wouldn&#8217;t recommend shared server anyway because of lack of security and performance issues. A better option is some affordable dedicated server like DigitalOcean, unless you know how to set it up. If you don&#8217;t have sysadmin experience for that, then you can use Cloudways <a href="https://www.cloudways.com/en/php-cloud-hosting.php" rel="nofollow">PHP MySQL hosting</a> platform where the server is configured automatically and you get managed digitalocean server. You also get composer pre-installed, so you can install any php framework or CMS you want.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on How to delete a record from AWS Route53 by Hang		</title>
+		<link>https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/comment-page-1/#comment-13405</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 24 Sep 2017 03:47:30 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1780#comment-13405</guid>
+
+					<description><![CDATA[Error handling not included.]]></description>
+			<content:encoded><![CDATA[<p>Error handling not included.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on To-Do List by Hang		</title>
+		<link>https://xiehang.com/blog/2015/11/14/to-do-list-2/comment-page-1/#comment-13371</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 27 Jul 2017 19:29:44 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1771#comment-13371</guid>
+
+					<description><![CDATA[I didn&#039;t finish the migration of those 25K LOC python codes ... I just managed to migrate all Perl codes to golang, include mail alert, chat history backup, etc.]]></description>
+			<content:encoded><![CDATA[<p>I didn&#8217;t finish the migration of those 25K LOC python codes &#8230; I just managed to migrate all Perl codes to golang, include mail alert, chat history backup, etc.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Relationship is the bottleneck by friv		</title>
+		<link>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/comment-page-1/#comment-12368</link>
+
+		<dc:creator><![CDATA[friv]]></dc:creator>
+		<pubDate>Fri, 07 Oct 2016 08:57:51 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=810#comment-12368</guid>
+
+					<description><![CDATA[Have you made any modifications?]]></description>
+			<content:encoded><![CDATA[<p>Have you made any modifications?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on OpenStack cloud in a single box by bmullan		</title>
+		<link>https://xiehang.com/blog/2015/06/26/openstack-cloud-in-a-single-box/comment-page-1/#comment-12243</link>
+
+		<dc:creator><![CDATA[bmullan]]></dc:creator>
+		<pubDate>Sun, 26 Jun 2016 12:33:46 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1761#comment-12243</guid>
+
+					<description><![CDATA[Make sure you look at Adam Stoke&#039;s now &quot;conjure-up openstack&quot; installation for LXD &#038; Openstack.
+
+http://conjure-up.io/
+
+He was one of the authors of the previous &quot;single-installer&quot; but the new Conjure-Up works much faster/better with juju/LXD &#038; openstack]]></description>
+			<content:encoded><![CDATA[<p>Make sure you look at Adam Stoke&#8217;s now &#8220;conjure-up openstack&#8221; installation for LXD &amp; Openstack.</p>
+<p><a href="http://conjure-up.io/" rel="nofollow ugc">http://conjure-up.io/</a></p>
+<p>He was one of the authors of the previous &#8220;single-installer&#8221; but the new Conjure-Up works much faster/better with juju/LXD &amp; openstack</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on ufw on Debian by INSTALLING UFW (UNCOMPLICATED FIREWALL) IN DEBIAN-IT大道		</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/comment-page-1/#comment-11915</link>
+
+		<dc:creator><![CDATA[INSTALLING UFW (UNCOMPLICATED FIREWALL) IN DEBIAN-IT大道]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2016 04:49:58 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-11915</guid>
+
+					<description><![CDATA[[&#8230;] UFW to boot with tips from&#160;here:&#160;ln -fs /lib/ufw/ufw-init [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] UFW to boot with tips from&nbsp;here:&nbsp;ln -fs /lib/ufw/ufw-init [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Unattended Ubuntu VM installation with preseed by Hang		</title>
+		<link>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/comment-page-1/#comment-11632</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 15 Nov 2015 05:03:43 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1676#comment-11632</guid>
+
+					<description><![CDATA[And if you want to use your own account instead of root:
+
+&lt;code&gt;
+d-i passwd/root-login boolean false
+d-i passwd/make-user boolean true
+d-i passwd/user-fullname string Who am I
+d-i passwd/username string joe
+d-i passwd/user-password-crypted password ENCRYPTED
+d-i user-setup/encrypt-home boolean false
+&lt;/code&gt;]]></description>
+			<content:encoded><![CDATA[<p>And if you want to use your own account instead of root:</p>
+<p><code><br />
+d-i passwd/root-login boolean false<br />
+d-i passwd/make-user boolean true<br />
+d-i passwd/user-fullname string Who am I<br />
+d-i passwd/username string joe<br />
+d-i passwd/user-password-crypted password ENCRYPTED<br />
+d-i user-setup/encrypt-home boolean false<br />
+</code></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Unattended Ubuntu VM installation with preseed by Hang		</title>
+		<link>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/comment-page-1/#comment-11631</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 15 Nov 2015 05:02:37 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1676#comment-11631</guid>
+
+					<description><![CDATA[If you want to specify IP (instead of get it from DHCP):
+&lt;code&gt;
+     netcfg/disable_dhcp=true
+     netcfg/confirm_static=true
+     netcfg/get_ipaddress=192.168.0.101
+     netcfg/get_netmask=255.255.255.0
+     netcfg/get_gateway=192.168.0.1
+     netcfg/get_nameservers=8.8.8.8 8.8.8.4
+&lt;/code&gt;]]></description>
+			<content:encoded><![CDATA[<p>If you want to specify IP (instead of get it from DHCP):<br />
+<code><br />
+     netcfg/disable_dhcp=true<br />
+     netcfg/confirm_static=true<br />
+     netcfg/get_ipaddress=192.168.0.101<br />
+     netcfg/get_netmask=255.255.255.0<br />
+     netcfg/get_gateway=192.168.0.1<br />
+     netcfg/get_nameservers=8.8.8.8 8.8.8.4<br />
+</code></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Fedora, xrdp, and xfce by xrdp in Fedora 20 &#124; Andreas&#039; Blog		</title>
+		<link>https://xiehang.com/blog/2013/06/20/fedora-xrdp-and-xfce/comment-page-1/#comment-11396</link>
+
+		<dc:creator><![CDATA[xrdp in Fedora 20 &#124; Andreas&#039; Blog]]></dc:creator>
+		<pubDate>Tue, 11 Aug 2015 15:27:54 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1527#comment-11396</guid>
+
+					<description><![CDATA[[&#8230;] Fedora, xrdp, and xfce [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Fedora, xrdp, and xfce [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

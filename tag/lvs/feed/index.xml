@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>lvs &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/lvs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 30 Nov 2009 07:07:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>keepalived and ipvsadm</title>
+		<link>https://xiehang.com/blog/2009/11/26/keepalived-and-ipvsadm/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2009 15:24:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[lvs]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=774</guid>
+
+					<description><![CDATA[It seems ipvsadm does not do health check, etc., so I turned to keepalived. While keepalived is doing great job on adding live node back and removing dead node out, it does not have a good way to dump current rules and stats, also it has problem during startup time. I think latest keepalived may <a href='https://xiehang.com/blog/2009/11/26/keepalived-and-ipvsadm/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems ipvsadm does not do health check, etc., so I turned to keepalived. While keepalived is doing great job on adding live node back and removing dead node out, it does not have a good way to dump current rules and stats, also it has problem during startup time.</p>
+<p>I think latest keepalived may have solved the problem though I haven&#8217;t tried yet. If it works fine I will leave ipvsadm installed to be the utility tool only (i.e. disable service coming from ipvsadm).</p>
+<p>I will look around to see if there is anything else similar to keepalived or not, it should be, I think.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>LVS</title>
+		<link>https://xiehang.com/blog/2009/11/25/lvs/</link>
+					<comments>https://xiehang.com/blog/2009/11/25/lvs/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2009 07:46:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[lvs]]></category>
+		<category><![CDATA[nosql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=769</guid>
+
+					<description><![CDATA[Playing with LVS &#8211; so that I don&#8217;t have to connect to individual Cassandra server. What I planned for LVS: 192.168.1.99 will be VIP f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 😉 f1 (192.168.1.101) to f4 (192.168.1.104) will be real server will do DR mode (I think it <a href='https://xiehang.com/blog/2009/11/25/lvs/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Playing with LVS &#8211; so that I don&#8217;t have to connect to individual Cassandra server.</p>
+<p>What I planned for LVS:</p>
+<ul>
+<li>192.168.1.99 will be VIP</li>
+<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>f1 (192.168.1.101) to f4 (192.168.1.104) will be real server</li>
+<li>will do DR mode (I think it is called single-B on most L4 switches &#8230;)</li>
+</ul>
+<p>The configuration is actually pretty simple, as long as you get it right, on LVS director (f5):</p>
+<ul>
+<li>Configure VIP to eth0:0 as an alias, netmask should be 255.255.255.255, broadcast is VIP itself</li>
+<li>Add following rules with ipvsadm (yea &#8230; you need to install this package)<br />
+-A -t 192.168.1.99:9160 -s wlc<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.101:9160 -g -w 1<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.102:9160 -g -w 1<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.103:9160 -g -w 1<br />
+-a -t 192.168.1.99:9160 -r 192.168.1.104:9160 -g -w 1</li>
+<li>Start LVS (after restart network to make sure VIP is effective) by &#8220;ipvsadm &#8211;start-daemon master&#8221;</li>
+<li>If you want to stop LVS you can do &#8220;ipvsadm &#8211;stop-daemon master&#8221;</li>
+</ul>
+<p>Now let&#8217;s turn to real servers &#8211; all real servers (f1~f4) are doing the same:</p>
+<ul>
+<li>Add these lines to /etc/sysctl.conf and then do a &#8220;sysctl -p&#8221;<br />
+net.ipv4.conf.dummy0.arp_ignore = 1<br />
+net.ipv4.conf.dummy0.arp_announce = 2<br />
+net.ipv4.conf.all.arp_ignore = 1<br />
+net.ipv4.conf.all.arp_announce = 2</li>
+<li>Configure VIP to dummy0 as an alias, netmask should be 255.255.255.255, broadcast is VIP itself</li>
+<li>Change ThriftAddress in storage-conf.xml for Cassandra, to 0.0.0.0 so that Thrift serves on all interfaces</li>
+<li>Remember to restart Cassandra so to make new configuration takes effect</li>
+</ul>
+<p>Now, launch your favorite client, connecting to 192.168.1.99:9160, you should get everything as if connect to individual server.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/25/lvs/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

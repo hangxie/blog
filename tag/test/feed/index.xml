@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>test &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/test/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 19 Jan 2010 22:11:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Cassandra&#8217;s read performance</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/</link>
+					<comments>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 22:11:25 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907</guid>
+
+					<description><![CDATA[I setup a testing environment on couple of company boxes to see how Cassandra performs with real machines (real here means powerful enough to be a data node), here are details of the environment: Two client nodes, one server nodes, all are RHEL 4.x. I use two clients nodes as I found that during the <a href='https://xiehang.com/blog/2010/01/19/cassandras-read-performance/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I setup a testing environment on couple of company boxes to see how Cassandra performs with real machines (real here means powerful enough to be a data node), here are details of the environment:</p>
+<ul>
+<li>Two client nodes, one server nodes, all are RHEL 4.x. I use two clients nodes as I found that during the performance test, single client machine is unable to generate enough load</li>
+<li>All three machines are 8 cores/16G memory (well, memory is not a big deal for my tests)</li>
+<li>Running Cassandray 0.5.0 RC3 (built from svn last night)</li>
+<li>Client is using Python</li>
+</ul>
+<p>Here is the graph for simple request (single key lookup):<a href="https://xiehang.com/blog/wp-content/uploads/2010/01/simple.jpg"><img loading="lazy" class="size-medium wp-image-908    alignright" title="Simple lookup" src="https://xiehang.com/blog/wp-content/uploads/2010/01/simple-300x200.jpg" alt="" width="300" height="200" srcset="https://xiehang.com/blog/wp-content/uploads/2010/01/simple-300x200.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/01/simple.jpg 516w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>It seems the result is pretty encouraging &#8211; query per second of the server is growing almost linearly, at about 5,000 QPS, over CPU utilization is still under 40% (25% user, 12% sys), I cannot get more client boxes to test, but if it goes this way, and let&#8217;s make 80% is threshold of CPU utilization, then this kind of box can handle 10K QPS, roughly, with latency at around 3ms.</p>
+<p>Note that CPU utilization, QPS per client, and latency is not quite clear as the overall QPS is too high, but you can get some ideas from next graph &#8230;</p>
+<p>Here is the graph for application (login, which will do one user lookup, and then 10~100 user lookups, each lookup is to get one buddy&#8217;s information):<a href="https://xiehang.com/blog/wp-content/uploads/2010/01/app.jpg"><img loading="lazy" class="alignright size-medium wp-image-909" title="Login Operation" src="https://xiehang.com/blog/wp-content/uploads/2010/01/app-300x200.jpg" alt="" width="300" height="200" srcset="https://xiehang.com/blog/wp-content/uploads/2010/01/app-300x200.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/01/app.jpg 516w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The result is kind of worrying me, since the CPU utilization is 70% already (45% user and 25% sys), it seems 200 QPS is what the cluster can provide. However, thinking of the login operation is doing way too many table lookups (average 55 lookups per login), so just matches the simple lookup we discussed above (10K QPS per box), while latency is at around 80ms.</p>
+<p>Actually, 20% sys is pretty bad, means the kernel is busy switching (I didn&#8217;t check vmstat during that time, but this is a reasonable guess), but again, this may be reasonable since the machine is handling 16 active clients who are sending bunch of requests, while it has only 8 physical cores so context switching is unavoidable.</p>
+<p>Since everything&#8217;s linear, I can assume 4 cores boxes can offer 5,000 QPS with reasonable latency. I will do some similar tests with MySQL and memcached, and I will do similar test with multiple data nodes as well, since I got impression that multiple data nodes is far slower than single node (inter-node communication?).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Relationship is the bottleneck</title>
+		<link>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/</link>
+					<comments>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2009 19:10:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=810</guid>
+
+					<description><![CDATA[Testing a prototype that uses Cassandra as the back end storage, the simple application is doing user authentication stuffs, it logs in and then get user&#8217;s profile and then show details on the web page. I hit performance problem with buddy related operation &#8211; every user may have 0~20 buddies, I want to show each <a href='https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Testing a prototype that uses Cassandra as the back end storage, the simple application is doing user authentication stuffs, it logs in and then get user&#8217;s profile and then show details on the web page.</p>
+<p>I hit performance problem with buddy related operation &#8211; every user may have 0~20 buddies, I want to show each buddy&#8217;s last login time on the result page, and actually I&#8217;ve retrieve everything for those buddies. The most direct implementation as I did first, is using user object to get data back, obviously this is not good as for every user object, client needs to access Cassandra cluster to get data back, the TCP round trip would be a pain.</p>
+<p>Then I added something to user object&#8217;s constructor, which load all buddies info in one shot (Cassandra&#8217;s multiget_slice API), things are getting better but this doesn&#8217;t seems reasonable to me as for most time, we don&#8217;t need buddy info (such as authentication), and getting buddies info back is just a waste of time.</p>
+<p>So I added a new method to the user class, called load_buddies, this will load buddies info on-demand. This makes authentication pretty fast, but still keep the ability of loading buddies info in batch mode.</p>
+<p>After all these the performance is &#8230; still not good, my test case is one login failure every ten requests, and for successfully logged user, I should buddy id and last access time, and also change the user&#8217;s last login time. The performance, with my current setting, the worst response time is about a second, while 90% request were done in less than 600ms.</p>
+<p>There must be something can be tuned, though VM could be the reason of slowness. I will check following stuffs:</p>
+<ul>
+<li>Apache HTTPd configuration, it seems prefork is performing better than worker, there may be more can be tuned include both HTTPd and wsgi</li>
+<li>Python class optimization, I will review the implementation of user class, as I don&#8217;t want to make user class too complicated to be used</li>
+<li>Cassandra performance, actually this is what I&#8217;m worrying about, as during the tests, Cassandra boxes&#8217; CPU utilization is about 80% &#8211; 70% on user, 10% on sys, roughly, it could be the bottleneck</li>
+</ul>
+<p>Without the buddy operation everything&#8217;s fine &#8211; the worst response time is about 600 ms while 90% requests are below 400ms. Relationship is a pain, it&#8217;s the bottleneck, but in this social era, there is no web application can live without relationship &#8230;</p>
+<p>BTW, my testing environment:</p>
+<ul>
+<li>Test client running on PowerBook, using ab &#8211; I will check if there is anything else can be useful</li>
+<li>Servers are all running on same physical box controlled by proxmox, this includes a web server, a LVS director (to load balance Cassandra nodes), and 3 Cassandra nodes</li>
+<li>The server box uses Ethernet, PowerBook is on wireless. I don&#8217;t think there is any issue for this as connect time is pretty low.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Trying Proxmox</title>
+		<link>https://xiehang.com/blog/2009/11/20/trying-proxmox/</link>
+					<comments>https://xiehang.com/blog/2009/11/20/trying-proxmox/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2009 18:14:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[virtualization]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=763</guid>
+
+					<description><![CDATA[I recently spent lot of time on reading articles from Linux Magazine, as it always introduce pretty new (or not new, but less known) technology and products, this time it is Proxmox, an open source virtualization product. I&#8217;m running VMWare Go at home at this moment, but I failed to solve the license issue and <a href='https://xiehang.com/blog/2009/11/20/trying-proxmox/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I recently spent lot of time on reading articles from <a href="http://www.linux-mag.com/">Linux Magazine</a>, as it always introduce pretty new (or not new, but less known) technology and products, this time it is <a href="http://pve.proxmox.com/wiki/Main_Page">Proxmox</a>, an open source virtualization<em></em><a name="_15833662156934764065" href="http://feedproxy.google.com/%7Er/LinuxMagazine/%7E3/P90AiCVNdqk/"></a><em><a name="_15833662156934764065" href="http://feedproxy.google.com/%7Er/LinuxMagazine/%7E3/P90AiCVNdqk/"></a></em><strong></strong> product.</p>
+<p>I&#8217;m running VMWare Go at home at this moment, but I failed to solve the license issue and every 60 days I have to re-install everything. I guess I got the wrong ISO, so what I installed was actually for vSphere, but I just don&#8217;t want to spend too much time on digging it out as obviously VMWare does not want people get the right solution easily.</p>
+<p>Xen is another story, at least to me it is not easy to use, maybe next version will be easier (I should take a try either but I lack of machines &#8230;). Also, I still have this impression that running Ubuntu with Xen is painful as it is, kind of, tightly bundled with RedHat distro.</p>
+<p>Now here comes Proxmox which seems promising, I will take a try today (may be weekend as well) and then if it works I will stick with it, but if not &#8230; I will try out Xen.</p>
+<p>Let&#8217;s see.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/20/trying-proxmox/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Plan for NoSQL</title>
+		<link>https://xiehang.com/blog/2009/10/23/plan-for-nosql/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 23 Oct 2009 23:12:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=704</guid>
+
+					<description><![CDATA[I&#8217;ve read too many articles talking about this NoSQL stuffs, now I have to have a plan to proceed (with what? :-W). First of all, I&#8217;m going to remove MySQL and OpenLDAP installation in my testing environment :P. MySQL is kind of slow to me though I have pretty much experience in setting it up, <a href='https://xiehang.com/blog/2009/10/23/plan-for-nosql/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve read too many articles talking about this NoSQL stuffs, now I have to have a plan to proceed (with what? :-W).</p>
+<p>First of all, I&#8217;m going to remove MySQL and OpenLDAP installation in my testing environment :P. MySQL is kind of slow to me though I have pretty much experience in setting it up, include replication, etc, and I will check to see if all applications can be done in a key-value based data store (check below). OpenLDAP is another story, I still haven&#8217;t figure out how to set it up with replication &#8211; last time I tried was 2.2/2.3, but 2.4 introduces a whole new approach to do replication and I think I&#8217;m going to leave it untouched for now. Note that I still need to come back to LDAP later on since it is still perfect solution for running corporate-like application, such as what I did couple of times before &#8211; integrate mail, IM, wiki, blog, etc together with single user-id.</p>
+<p>OK, back to NoSQL, couple of things to do:</p>
+<ol>
+<li>Consistent hashing, I still need to read all those articles and try out different implementation, I don&#8217;t think I will compose my own, but I need something can work on Linux and Windows (OSX? Don&#8217;t think so), and support some major programming languages (C/C++, PHP/Python, Java). I also need to do test similar to <a href="https://xiehang.com/blog/2009/10/23/nosql-start-with-consistent-hashing/">what I&#8217;ve done</a> and understand how it affects deployment.</li>
+<li>Try out different engines, most likely I won&#8217;t try out things too fancy (read it &#8220;complicated&#8221;), for example, I will prefer Redis over memcachedb just because memcachedb&#8217;s replication is not that simple to me, I believe anything complicate in setup will be a headache in maintenance. I will also skip those so-called document store/graph store unless they can support simple key-value store in same performance (then those features will be a nice add-on). I don&#8217;t have the list so far, but I will get one in the coming weekend. Things to be tested include installation, replication, fail-over, backup and recovery, monitoring, etc. Also programming language supported will be another important factor, I wish a similar list to item #1.</li>
+<li>Application &#8230; I&#8217;m going to conclude &#8220;traditional&#8221; web features that involves data store, and check to see how to implement them in distributed key-value data store. For example, user registration, login, edit preference/profile is one of the fundamental features, and buddy related operation (add as buddy, blacklist, check online status, notify buddy for event/be notified by buddy) is another one. Things current in my mind include message feature (internal/external IM/mail), post features (threaded post like forum, vote/survey may be in this category as well), and maybe some search features. I don&#8217;t think I can come up with a full list in the coming days, but I will keep posting here.</li>
+</ol>
+<p>This is pretty much what&#8217;s in my mind. All these stuffs are seems to be new and almost none of them are well packaged, so after 4~5 years of using yum/apt, now I need to do what I used to do &#8211; build everything from scratch, if I have time, I will compose some packages so to ease my deployment.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>NoSQL &#8211; start with consistent hashing</title>
+		<link>https://xiehang.com/blog/2009/10/23/nosql-start-with-consistent-hashing/</link>
+					<comments>https://xiehang.com/blog/2009/10/23/nosql-start-with-consistent-hashing/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 23 Oct 2009 07:33:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=696</guid>
+
+					<description><![CDATA[Most NoSQL solutions are kind of caching, with persistent data store, with or without replication support. One of the key issue in production environment is using consistent hashing to avoid cache failure. I talked to a friend days ago about memcached deployment problem, he asked question about what to do with adding new memcached node <a href='https://xiehang.com/blog/2009/10/23/nosql-start-with-consistent-hashing/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Most NoSQL solutions are kind of caching, with persistent data store, with or without replication support. One of the key issue in production environment is using consistent hashing to avoid cache failure.</p>
+<p>I talked to a friend days ago about memcached deployment problem, he asked question about what to do with adding new memcached node to expand capacity, to avoid loading bunch of data from database to cache nodes. I told him I don&#8217;t have any experience, but if I encounter this problem, I will try to restart memcached client machines one by one, to use new configuration, so to avoid put massive load to database, also I will think about changing hashing function of memcached client, try to maximize entries that can keep partition unchanged.</p>
+<p>It turned out my second idea is correct (I should have read all those articles before talking to him :P). There are couple of articles discussing about this issue, and the good start point, of course, is <a href="http://en.wikipedia.org/wiki/Consistent_hashing">wikipedia</a>.</p>
+<p>I tried <a href="http://www.last.fm/user/RJ/journal/2007/04/10/rz_libketama_-_a_consistent_hashing_algo_for_memcache_clients">libketama</a>, seems pretty good in term of retention rate. I did some tests that could be (sort of) real world use case. Say, we have 4 weak (512M) nodes and want to replace them with all new nodes with double capacity (1G), I&#8217;m going to add new nodes to the cluster one by one, and then remove old nodes one by one, and here are what I got:</p>
+<table border="1" align="center">
+<tbody>
+<tr>
+<th>cluster</th>
+<th>capacity</th>
+<th>capacity<br />
+changed</th>
+<th>key moved</th>
+</tr>
+<tr>
+<td>4x512M</td>
+<td>2G</td>
+<td>0%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>4x512M<br />
+1x1G</td>
+<td>3G</td>
+<td>50%</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>4x512M<br />
+2x1G</td>
+<td>4G</td>
+<td>33%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>4x512M<br />
+3x1G</td>
+<td>5G</td>
+<td>25%</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>4x512M<br />
+4x1G</td>
+<td>6G</td>
+<td>20%</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>3x512M<br />
+4x1G</td>
+<td>5.5G</td>
+<td>8%</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>2x512M<br />
+4x1G</td>
+<td>5G</td>
+<td>9%</td>
+<td>13%</td>
+</tr>
+<tr>
+<td>1x512M<br />
+4x1G</td>
+<td>4.5G</td>
+<td>10%</td>
+<td>18%</td>
+</tr>
+<tr>
+<td>4x1G</td>
+<td>4G</td>
+<td>11%</td>
+<td>19%</td>
+</tr>
+</tbody>
+</table>
+<p>relatively, percentage of keys got moved to other partitions is close to capacity changes, which means it is close to the best number.</p>
+<p>And key distribution is pretty even (capacity/utilization, node #1~#4 are 512M, #5~38 are 1G):</p>
+<table border="1" align="center">
+<tbody>
+<tr>
+<th>node #1</th>
+<th>node #2</th>
+<th>node #3</th>
+<th>node #4</th>
+<th>node #5</th>
+<th>node #6</th>
+<th>node #7</th>
+<th>node #8</th>
+</tr>
+<tr>
+<td>25.0%</p>
+<p>25.6%</td>
+<td>25.0%</p>
+<p>21.7%</td>
+<td>25.0%</p>
+<p>24.7%</td>
+<td>25.0%</p>
+<p>28.0%</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>16.7%</p>
+<p>16.9%</td>
+<td>16.7%</p>
+<p>15.2%</td>
+<td>16.7%</p>
+<p>19.0%</td>
+<td>16.7%</p>
+<p>17.7%</td>
+<td>33.3%</p>
+<p>31.1%</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>12.5%</p>
+<p>13.5%</td>
+<td>12.5%</p>
+<p>10.8%</td>
+<td>12.5%</p>
+<p>13.7%</td>
+<td>12.5%</p>
+<p>12.7%</td>
+<td>25.0%</p>
+<p>24.5%</td>
+<td>25.0%</p>
+<p>24.8%</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>10.0%</p>
+<p>10.9%</td>
+<td>10.0%</p>
+<p>9.4%</td>
+<td>10.0%</p>
+<p>11.0%</td>
+<td>10.0%</p>
+<p>8.3%</td>
+<td>20.0%</p>
+<p>19.6%</td>
+<td>20.0%</p>
+<p>20.0%</td>
+<td>20.0%</p>
+<p>20.9%</td>
+<td>&#8211;</td>
+</tr>
+<tr>
+<td>8.3%</p>
+<p>8.9%</td>
+<td>8.3%</p>
+<p>8.3%</td>
+<td>8.3%</p>
+<p>8.1%</td>
+<td>8.3%</p>
+<p>7.0%</td>
+<td>16.7%</p>
+<p>16.7%</td>
+<td>16.7%</p>
+<p>17.1%</td>
+<td>16.7%</p>
+<p>17.9%</td>
+<td>16.7%</p>
+<p>16.1%</td>
+</tr>
+<tr>
+<td>&#8211;</td>
+<td>9.1%</p>
+<p>9.0%</td>
+<td>9.1%</p>
+<p>9.6%</td>
+<td>9.1%</p>
+<p>8.2%</td>
+<td>18.2%</p>
+<p>17.5%</td>
+<td>18.2%</p>
+<p>18.3%</td>
+<td>18.2%</p>
+<p>19.8%</td>
+<td>18.2%</p>
+<p>17.6%</td>
+</tr>
+<tr>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>10.0%</p>
+<p>9.7%</td>
+<td>10.0%</p>
+<p>8.9%</td>
+<td>20.0%</p>
+<p>20.3%</td>
+<td>20.0%</p>
+<p>20.5%</td>
+<td>20.0%</p>
+<p>21.9%</td>
+<td>20.0%</p>
+<p>18.6%</td>
+</tr>
+<tr>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>11.1%</p>
+<p>9.2%</td>
+<td>22.2%</p>
+<p>22.3%</td>
+<td>22.2%</p>
+<p>22.2%</td>
+<td>22.2%</p>
+<p>25.2%</td>
+<td>22.2%</p>
+<p>21.1%</td>
+</tr>
+<tr>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>25.0%</p>
+<p>24.2%</td>
+<td>25.0%</p>
+<p>24.5%</td>
+<td>25.0%</p>
+<p>27.2%</td>
+<td>25.0%</p>
+<p>24.1%</td>
+</tr>
+</tbody>
+</table>
+<p>I still need to try out fnv to see if it has better distribution and/or less key shakiness, from the article above it was said at least it has better performance.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/10/23/nosql-start-with-consistent-hashing/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Test progress</title>
+		<link>https://xiehang.com/blog/2009/09/25/test-progress/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 26 Sep 2009 05:23:13 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[vm]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=666</guid>
+
+					<description><![CDATA[There was not much progress with performance test as mentioned here. I first did test with LDAP vs. memcached, then found there was not much difference between those two, which is suspicious, so I started running test to compare pure database and memcached solution, which ideally should show lot of difference, but I failed. I <a href='https://xiehang.com/blog/2009/09/25/test-progress/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There was not much progress with performance test as mentioned <a href="https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/">here</a>.</p>
+<p>I first did test with LDAP vs. memcached, then found there was not much difference between those two, which is suspicious, so I started running test to compare pure database and memcached solution, which ideally should show lot of difference, but I failed.</p>
+<p>I still haven&#8217;t figured out what was the real cause, it seems VM is not that good to do this kind of test &#8211; thinking of limited resource (CPU, mem, network, disk, etc), all VMs will compete each other. Again, this is my guess and I will try to see what would be the best solution to get performance done in VM environment.</p>
+<p>Even if I failed, it shows that VM will not be good for performance testing, nice try <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Project killer</title>
+		<link>https://xiehang.com/blog/2009/09/10/project-killer/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 11 Sep 2009 05:46:01 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=663</guid>
+
+					<description><![CDATA[I think I&#8217;m a project/feature killer. Couple of months back I was asked to test performance of feature GMF, and since the performance was really bad (sorry, 10x times slower), so we have to remove that fancy feature from two major systems&#8217; roadmap; Couple of weeks ago I was asked to test performance of feature <a href='https://xiehang.com/blog/2009/09/10/project-killer/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think I&#8217;m a project/feature killer.</p>
+<p>Couple of months back I was asked to test performance of feature GMF, and since the performance was really bad (sorry, 10x times slower), so we have to remove that fancy feature from two major systems&#8217; roadmap;</p>
+<p>Couple of weeks ago I was asked to test performance of feature TRF, the resource utilization was not that cool (20~40% more resource), so we have to cancel the (again, fancy) feature from all roadmaps;</p>
+<p>Couple of hours ago I started to test the new (sure again, fancy) build system, seems the program does not run at all. I don&#8217;t want to predict anything but based on my past record &#8230; you know it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Keep all Linux installation up-to-date</title>
+		<link>https://xiehang.com/blog/2009/08/27/keep-all-linux-installation-up-to-date/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 27 Aug 2009 17:00:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=644</guid>
+
+					<description><![CDATA[I don&#8217;t run auto-update for all those machines, so I have to run these every couple of days: ssh -t ubuntu &#8220;sudo apt-get update &#38;&#38; sudo apt-get -y dist-upgrade&#8221; ssh -t debian &#8220;sudo apt-get update &#38;&#38; sudo apt-get -y dist-upgrade&#8221; ssh -t fedora &#8220;sudo yum -y update&#8221; ssh -t centos &#8220;sudo yum -y update&#8221; ssh <a href='https://xiehang.com/blog/2009/08/27/keep-all-linux-installation-up-to-date/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t run auto-update for all those machines, so I have to run these every couple of days:</p>
+<blockquote><p>ssh -t ubuntu &#8220;sudo apt-get update &amp;&amp; sudo apt-get -y dist-upgrade&#8221;<br />
+ssh -t debian &#8220;sudo apt-get update &amp;&amp; sudo apt-get -y dist-upgrade&#8221;<br />
+ssh -t fedora &#8220;sudo yum -y update&#8221;<br />
+ssh -t centos &#8220;sudo yum -y update&#8221;<br />
+ssh -t opensuse &#8220;sudo zypper -n update &#8221;<br />
+ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;force&#8221;</p></blockquote>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Smiley test</title>
+		<link>https://xiehang.com/blog/2009/06/19/smiley-test/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jun 2009 07:30:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[smiley]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=472</guid>
+
+					<description><![CDATA[Testing smilies. I think I got it fixed &#8211; the problem is that &#8220;/&#8221; is used as delimiter of regular expression, and if &#8220;/&#8221; is part of a smiley&#8217;s pattern, the whole thing is broken. So I&#8217;m defining a delimiter variable in wp-includes/functions.php, in function smilies_init(), and use a character that can never be used <a href='https://xiehang.com/blog/2009/06/19/smiley-test/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Testing smilies.</p>
+<p>I think I got it fixed &#8211; the problem is that &#8220;/&#8221; is used as delimiter of regular expression, and if &#8220;/&#8221; is part of a smiley&#8217;s pattern, the whole thing is broken.</p>
+<p>So I&#8217;m defining a delimiter variable in wp-includes/functions.php, in function smilies_init(), and use a character that can never be used (well, sort of) &#8211; I&#8217;m using &#8220;\001&#8221; for now. Then replace all occurrences of &#8220;/&#8221; with $delimiter while composing $wp_smiliessearch, and that&#8217;s it.</p>
+<p>Only open issue, which I don&#8217;t think it is related, is that two continuous #:-s will have only one shows up, still debugging &#8230;<span id="more-472"></span></p>
+<table border="1" align="center">
+<tr>
+<td>&#58;&#64;&#41;</td>
+<td align="center">:@)</td>
+<td>&#61;&#80;&#126;</td>
+<td align="center">=P~</td>
+<td>&#61;&#112;&#126;</td>
+<td align="center">=p~</td>
+<td>&#62;&#58;&#80;</td>
+<td align="center">&gt;:P</td>
+<td>&#62;&#58;&#112;</td>
+<td align="center">&gt;:p</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#47;</td>
+<td align="center">:-/</td>
+<td>&#64;&#45;&#41;</td>
+<td align="center">@-)</td>
+<td>&#58;&#45;&#34;</td>
+<td align="center">:-&#8220;</td>
+<td>&#37;&#45;&#40;</td>
+<td align="center">%-(</td>
+<td>&#91;&#45;&#88;</td>
+<td align="center">[-X</td>
+</tr>
+<tr>
+<td>&#91;&#45;&#120;</td>
+<td align="center">[-x</td>
+<td>&#58;&#45;&#64;</td>
+<td align="center">:-@</td>
+<td>&#58;&#68;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#100;</td>
+<td align="center">:d</td>
+<td>&#58;&#45;&#68;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+</tr>
+<tr>
+<td>&#58;&#45;&#100;</td>
+<td align="center">:-d</td>
+<td>&#58;&#124;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#124;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#61;&#41;&#41;</td>
+<td align="center">=))</td>
+<td>&#59;&#59;&#41;</td>
+<td align="center">;;)</td>
+</tr>
+<tr>
+<td>&#73;&#45;&#41;</td>
+<td align="center">I-)</td>
+<td>&#105;&#45;&#41;</td>
+<td align="center">i-)</td>
+<td>&#58;&#42;</td>
+<td align="center">:*</td>
+<td>&#58;&#45;&#42;</td>
+<td align="center">:-*</td>
+<td>&#58;&#34;&#62;</td>
+<td align="center">:&#8221;&gt;</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#38;</td>
+<td align="center">:-&#038;</td>
+<td>&#58;&#41;&#93;</td>
+<td align="center">:)]</td>
+<td>&#58;&#45;&#83;&#83;</td>
+<td align="center">:-SS</td>
+<td>&#58;&#45;&#115;&#115;</td>
+<td align="center">:-ss</td>
+<td>&#58;&#45;&#115;&#83;</td>
+<td align="center">:-sS</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#83;&#115;</td>
+<td align="center">:-Ss</td>
+<td>&#126;&#79;&#41;</td>
+<td align="center">~O)</td>
+<td>&#126;&#111;&#41;</td>
+<td align="center">~o)</td>
+<td>&#42;&#42;&#61;&#61;</td>
+<td align="center">**==</td>
+<td>&#64;&#125;&#59;&#45;</td>
+<td align="center">@};-</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#60;</td>
+<td align="center">:-&lt;</td>
+<td>&#62;&#58;&#41;</td>
+<td align="center">&gt;:)</td>
+<td>&#91;&#45;&#79;&#60;</td>
+<td align="center">[-O&lt;</td>
+<td>&#91;&#45;&#111;&#60;</td>
+<td align="center">[-o&lt;</td>
+<td>&#98;&#45;&#40;</td>
+<td align="center">b-(</td>
+</tr>
+<tr>
+<td>&#66;&#45;&#40;</td>
+<td align="center">B-(</td>
+<td>&#58;&#94;&#111;</td>
+<td align="center">:^o</td>
+<td>&#58;&#94;&#79;</td>
+<td align="center">:^O</td>
+<td>&#59;&#41;&#41;</td>
+<td align="center">;))</td>
+<td>&#58;&#45;&#119;</td>
+<td align="center">:-w</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#87;</td>
+<td align="center">:-W</td>
+<td>&#58;&#45;&#83;</td>
+<td align="center">:-S</td>
+<td>&#58;&#45;&#115;</td>
+<td align="center">:-s</td>
+<td>&#58;&#45;&#106;</td>
+<td align="center">:-j</td>
+<td>&#58;&#45;&#74;</td>
+<td align="center">:-J</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#116;</td>
+<td align="center">:-t</td>
+<td>&#58;&#45;&#84;</td>
+<td align="center">:-T</td>
+<td>&#62;&#58;&#68;&#60;</td>
+<td align="center">&gt;:D&lt;</td>
+<td>&#62;&#58;&#100;&#60;</td>
+<td align="center">&gt;:d&lt;</td>
+<td>&#40;&#37;&#41;</td>
+<td align="center">(%)</td>
+</tr>
+<tr>
+<td>&#79;&#58;&#41;</td>
+<td align="center">O:)</td>
+<td>&#111;&#58;&#41;</td>
+<td align="center">o:)</td>
+<td>&#79;&#58;&#45;&#41;</td>
+<td align="center">O:-)</td>
+<td>&#111;&#58;&#45;&#41;</td>
+<td align="center">o:-)</td>
+<td>&#76;&#45;&#41;</td>
+<td align="center">L-)</td>
+</tr>
+<tr>
+<td>&#108;&#45;&#41;</td>
+<td align="center">l-)</td>
+<td>&#37;&#37;&#45;</td>
+<td align="center">%%-</td>
+<td>&#58;&#41;&#41;</td>
+<td align="center">:))</td>
+<td>&#58;&#45;&#41;&#41;</td>
+<td align="center">:-))</td>
+<td>&#58;&#79;</td>
+<td align="center">:O</td>
+</tr>
+<tr>
+<td>&#58;&#111;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#79;</td>
+<td align="center">:-O</td>
+<td>&#58;&#45;&#111;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#111;&#61;&#62;</td>
+<td align="center">o=&gt;</td>
+<td>&#79;&#61;&#62;</td>
+<td align="center">O=&gt;</td>
+</tr>
+<tr>
+<td>&#58;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#66;</td>
+<td align="center">:-B</td>
+<td>&#58;&#45;&#98;</td>
+<td align="center">:-b</td>
+<td>&#40;&#126;&#126;&#41;</td>
+<td align="center">(~~)</td>
+</tr>
+<tr>
+<td>&#94;&#58;&#41;&#94;</td>
+<td align="center">^:)^</td>
+<td>&#61;&#59;</td>
+<td align="center">=;</td>
+<td>&#58;&#45;&#76;</td>
+<td align="center">:-L</td>
+<td>&#58;&#45;&#108;</td>
+<td align="center">:-l</td>
+<td>&#58;&#62;</td>
+<td align="center">:&gt;</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#62;</td>
+<td align="center">:-&gt;</td>
+<td>&#66;&#45;&#41;</td>
+<td align="center">B-)</td>
+<td>&#98;&#45;&#41;</td>
+<td align="center">b-)</td>
+<td>&#58;&#45;&#99;</td>
+<td align="center">:-c</td>
+<td>&#58;&#45;&#67;</td>
+<td align="center">:-C</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#63;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f615.png" alt="😕" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#40;&#42;&#41;</td>
+<td align="center">(*)</td>
+<td>&#60;&#41;&#58;&#41;</td>
+<td align="center">&lt;):)</td>
+<td>&#61;&#40;&#40;</td>
+<td align="center">=((</td>
+<td>&#58;&#45;&#104;</td>
+<td align="center">:-h</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#72;</td>
+<td align="center">:-H</td>
+<td>&#62;&#58;&#47;</td>
+<td align="center">&gt;:/</td>
+<td>&#61;&#58;&#41;</td>
+<td align="center">=:)</td>
+<td>&#58;&#111;&#51;</td>
+<td align="center">:o3</td>
+<td>&#58;&#79;&#51;</td>
+<td align="center">:O3</td>
+</tr>
+<tr>
+<td>&#56;&#45;&#62;</td>
+<td align="center">8-&gt;</td>
+<td>&#58;&#45;&#63;&#63;</td>
+<td align="center">:-??</td>
+<td>&#126;&#58;&#62;</td>
+<td align="center">~:&gt;</td>
+<td>&#91;&#45;&#40;</td>
+<td align="center">[-(</td>
+<td>&#58;&#79;&#41;</td>
+<td align="center">:O)</td>
+</tr>
+<tr>
+<td>&#58;&#111;&#41;</td>
+<td align="center">:o)</td>
+<td>&#47;&#58;&#41;</td>
+<td align="center">/:)</td>
+<td>&#35;&#58;&#45;&#115;</td>
+<td align="center">#:-s</td>
+<td>&#35;&#58;&#45;&#83;</td>
+<td align="center">#:-S</td>
+<td>&#56;&#45;&#124;</td>
+<td align="center">8-|</td>
+</tr>
+<tr>
+<td>&#56;&#45;&#125;</td>
+<td align="center">8-}</td>
+<td>&#58;&#80;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#112;</td>
+<td align="center">:p</td>
+<td>&#58;&#45;&#80;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#112;</td>
+<td align="center">:-p</td>
+</tr>
+<tr>
+<td>&#40;&#58;&#124;</td>
+<td align="center">(:|</td>
+<td>&#61;&#68;&#62;</td>
+<td align="center">=D&gt;</td>
+<td>&#61;&#100;&#62;</td>
+<td align="center">=d&gt;</td>
+<td>&#58;&#40;&#40;</td>
+<td align="center">:((</td>
+<td>&#58;&#45;&#40;&#40;</td>
+<td align="center">:-((</td>
+</tr>
+<tr>
+<td>&#58;&#40;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#40;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#41;&#62;&#45;</td>
+<td align="center">:)&gt;-</td>
+<td>&#92;&#58;&#68;&#47;</td>
+<td align="center">\:D/</td>
+<td>&#92;&#58;&#100;&#47;</td>
+<td align="center">\:d/</td>
+</tr>
+<tr>
+<td>&#51;&#58;&#45;&#79;</td>
+<td align="center">3:-O</td>
+<td>&#51;&#58;&#45;&#111;</td>
+<td align="center">3:-o</td>
+<td>&#62;&#45;&#41;</td>
+<td align="center">&gt;-)</td>
+<td>&#56;&#45;&#88;</td>
+<td align="center">8-X</td>
+<td>&#56;&#45;&#120;</td>
+<td align="center">8-x</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#36;</td>
+<td align="center">:-$</td>
+<td>&#36;&#45;&#41;</td>
+<td align="center">$-)</td>
+<td>&#58;&#40;&#124;&#41;</td>
+<td align="center">:(|)</td>
+<td>&#59;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#59;&#45;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+</tr>
+<tr>
+<td>&#60;&#58;&#45;&#80;</td>
+<td align="center">&lt;:-P</td>
+<td>&#60;&#58;&#45;&#112;</td>
+<td align="center">&lt;:-p</td>
+<td>&#58;&#120;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#88;</td>
+<td align="center">:X</td>
+<td>&#58;&#45;&#120;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+</tr>
+<tr>
+<td>&#58;&#45;&#88;</td>
+<td align="center">:-X</td>
+<td>&#88;&#40;</td>
+<td align="center">X(</td>
+<td>&#120;&#40;</td>
+<td align="center">x(</td>
+<td>&#88;&#45;&#40;</td>
+<td align="center">X-(</td>
+<td>&#120;&#45;&#40;</td>
+<td align="center">x-(</td>
+</tr>
+<tr>
+<td>&#111;&#45;&#62;</td>
+<td align="center">o-&gt;</td>
+<td>&#79;&#45;&#62;</td>
+<td align="center">O-&gt;</td>
+<td>&#42;&#45;&#58;&#41;</td>
+<td align="center">*-:)</td>
+<td>&#126;&#88;&#40;</td>
+<td align="center">~X(</td>
+<td>&#126;&#120;&#40;</td>
+<td align="center">~x(</td>
+</tr>
+<tr>
+<td>&#35;&#45;&#111;</td>
+<td align="center">#-o</td>
+<td>&#111;&#45;&#43;</td>
+<td align="center">o-+</td>
+<td>&#79;&#45;&#43;</td>
+<td align="center">O-+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Test from Yahoo Mail</title>
+		<link>https://xiehang.com/blog/2009/05/19/test-from-yahoo-mail/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 May 2009 15:50:16 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/05/19/test-from-yahoo-mail/</guid>
+
+					<description><![CDATA[Yahoo mail is trying to do something similar to Microsoft&#8217;s Live Writer, let&#8217;s see how it works &#8230;]]></description>
+										<content:encoded><![CDATA[<p>Yahoo mail is trying to do something similar to Microsoft&#8217;s Live Writer, let&#8217;s see how it works &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

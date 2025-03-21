@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>unix &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/unix/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 24 Aug 2009 03:31:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Concurrent Remote Desktop for Vista SP2</title>
+		<link>https://xiehang.com/blog/2009/08/23/concurrent-remote-desktop-for-vista-sp2/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 24 Aug 2009 03:31:10 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[unix]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=639</guid>
+
+					<description><![CDATA[Just to mark here &#8211; this is the only one works for me: http://www.technullogy.net/index.php/2009/06/22/multiple-remote-desktop-sessions-on-vista-sp2-x86-x64/ I&#8217;m trying to migrate some VMs to the Vista Ultimate so that I can utilize all those 4 cores and 6G memory. I need to test some mysql proxy and master/slave things, and better try it out in different environments.]]></description>
+										<content:encoded><![CDATA[<p>Just to mark here &#8211; this is the only one works for me:</p>
+<p><a href="http://www.technullogy.net/index.php/2009/06/22/multiple-remote-desktop-sessions-on-vista-sp2-x86-x64/">http://www.technullogy.net/index.php/2009/06/22/multiple-remote-desktop-sessions-on-vista-sp2-x86-x64/</a></p>
+<p>I&#8217;m trying to migrate some VMs to the Vista Ultimate so that I can utilize all those 4 cores and 6G memory.</p>
+<p>I need to test some mysql proxy and master/slave things, and better try it out in different environments.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>read for shell</title>
+		<link>https://xiehang.com/blog/2009/05/01/read-for-shell/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 01 May 2009 17:51:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[shell]]></category>
+		<category><![CDATA[unix]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=323</guid>
+
+					<description><![CDATA[Just want to write this done so that I don&#8217;t have to man again in the future: CC=; while [ 1 ] ; do read -s -t 1 -n 1 CC; if [ &#8220;$CC&#8221; = &#8216;q&#8217; ] ; then break; fi; clear; ls -als crtv_* &#124; tail -15 ; done -s is &#8220;don&#8217;t echo&#8221;, -t <a href='https://xiehang.com/blog/2009/05/01/read-for-shell/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just want to write this done so that I don&#8217;t have to man again in the future:</p>
+<p>CC=; while [ 1 ] ; do read -s -t 1 -n 1 CC; if [ &#8220;$CC&#8221; = &#8216;q&#8217; ] ; then break; fi; clear; ls -als crtv_* | tail -15 ; done</p>
+<p>-s is &#8220;don&#8217;t echo&#8221;, -t 1 is &#8220;timeout after 1 second&#8221;, -n 1 is &#8220;read one character only&#8221; (so don&#8217;t have to wait for enter.</p>
+<p>Pretty usefule, actually this can be used to do some interact applications with shell.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>vim tips</title>
+		<link>https://xiehang.com/blog/2009/04/27/vim-tips/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 27 Apr 2009 22:57:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[unix]]></category>
+		<category><![CDATA[vim]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/04/27/vim-tips/</guid>
+
+					<description><![CDATA[To install some new stuffs for vim, most likely you will have some vba file, run &#8220;sudo vim whatever.vba&#8221; and then do a &#8220;:so %&#8221;, things will be injected to system vim. Just did it on my ubuntu box &#8211; I&#8217;m going to start server side ppcam stuffs.]]></description>
+										<content:encoded><![CDATA[<p>To install some new stuffs for vim, most likely you will have some vba file, run &#8220;sudo vim whatever.vba&#8221; and then do a &#8220;:so %&#8221;, things will be injected to system vim.</p>
+<p>Just did it on my ubuntu box &#8211; I&#8217;m going to start server side ppcam stuffs.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Upgrade to Ubuntu 9.04</title>
+		<link>https://xiehang.com/blog/2009/04/26/upgrade-to-ubuntu-904/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 27 Apr 2009 02:46:05 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[unix]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=290</guid>
+
+					<description><![CDATA[Time to upgrade again, though I haven&#8217;t checked what&#8217;s new there. Ubuntu is doing better than Fetora in upgrade, though both are doing pretty good in update. &#8220;update&#8221; means keeping system patched within same release, while &#8220;upgrade&#8221; means upgrading from release to release. I guess I will stick with Uubuntu for sometime till I find <a href='https://xiehang.com/blog/2009/04/26/upgrade-to-ubuntu-904/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Time to upgrade again, though I haven&#8217;t checked what&#8217;s new there.</p>
+<p>Ubuntu is doing better than Fetora in upgrade, though both are doing pretty good in update. &#8220;update&#8221; means keeping system patched within same release, while &#8220;upgrade&#8221; means upgrading from release to release. I guess I will stick with Uubuntu for sometime till I find anything inconvenience or some fancy feature from other distro.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

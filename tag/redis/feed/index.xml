@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>redis &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/redis/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 29 Jul 2013 16:56:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Is redis much more stable than memcached?</title>
+		<link>https://xiehang.com/blog/2013/07/29/is-redis-much-more-stable-than-memcached/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 29 Jul 2013 16:56:26 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[memcached]]></category>
+		<category><![CDATA[memory]]></category>
+		<category><![CDATA[redis]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1558</guid>
+
+					<description><![CDATA[I got a weird feeling that redis is more stable than memcached &#8230; but I don&#8217;t have solid evidence for that. The case is, I migrated an application&#8217;s backend from memcached to redis, there were surely some other bug fixes and trivial performance tuning, but thinking of the memcached version had been running in production <a href='https://xiehang.com/blog/2013/07/29/is-redis-much-more-stable-than-memcached/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I got a weird feeling that redis is more stable than memcached &#8230; but I don&#8217;t have solid evidence for that.</p>
+<p>The case is, I migrated an application&#8217;s backend from memcached to redis, there were surely some other bug fixes and trivial performance tuning, but thinking of the memcached version had been running in production for more than 6 months without any significant problem, I wouldn&#8217;t think my changes make any big difference. Also, I changed my codes only, nothing to do with redis/memcached so I think it&#8217;s a fair comparison.</p>
+<p>memcached use to hit 6GB memory (VIRT) usage after a week to 10 days running, then for most cases it will crash cos ops people set RAM limitation. Ops people asked me to do a restart once the memory utilization hit a certain level, but I found that restart memcached will simply wipe out all my in-memory-only data like counter, which is not critical but will make the application looks weird (&#8220;no more visitor in the past 7 days???&#8221;), and this initiated the migration to redis.</p>
+<p>After migrated to redis, the memory utilization started from 4200MB, and one of the oldest instance had been running there since Jun 4 (50+ days till now), and memory is at 4300MB. I <strong><em>guess</em> </strong>the increment was due to data size growth instead of memory leak, though again, I don&#8217;t have evidence.</p>
+<p>Anyway, I&#8217;m not going to go back to memcached in the future, so the difference won&#8217;t bother me.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>DB store choices</title>
+		<link>https://xiehang.com/blog/2013/06/22/db-store-choices/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2013 18:11:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[Dada base]]></category>
+		<category><![CDATA[mongodb]]></category>
+		<category><![CDATA[redis]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1534</guid>
+
+					<description><![CDATA[I hit this while reading some articles and found it is really helpful, one should check it before making any data store decisions. To me there are several clear winners &#8211; redis/memcached for kv store, MongoDB for document store, and Oracle/MySQL for traditional RDBMS, and seems Oracle is a clear winner across corporations. I believe <a href='https://xiehang.com/blog/2013/06/22/db-store-choices/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I hit <a href="http://db-engines.com/en/ranking">this</a> while reading some articles and found it is really helpful, one should check it before making any data store decisions.</p>
+<p>To me there are several clear winners &#8211; redis/memcached for kv store, MongoDB for document store, and Oracle/MySQL for traditional RDBMS, and seems Oracle is a clear winner across corporations.</p>
+<p>I believe what I decided to use memcached and then migrate to redis were both wise decisions, but I still doubt decided to use mongodb was a right decision or not. I will dig into MongoDB a little bit more to see if it got improved in the past two years for the issues I care, especially memory management mechanism.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>PHPRedis</title>
+		<link>https://xiehang.com/blog/2012/08/15/phpredis/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 15 Aug 2012 20:31:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phpredis]]></category>
+		<category><![CDATA[predis]]></category>
+		<category><![CDATA[redis]]></category>
+		<category><![CDATA[rpm]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1397</guid>
+
+					<description><![CDATA[Need to play with PHP extension for redis for a while, and after reading several articles on the web, I decided to with PHPRedis instead of Predis because of performance. My goal is build up a webservice to proxy requests to backend redis servers, the web server is actually a proxy handling all routing related <a href='https://xiehang.com/blog/2012/08/15/phpredis/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Need to play with PHP extension for redis for a while, and after reading several articles on the web, I decided to with <a href="https://github.com/nicolasff/phpredis/">PHPRedis</a> instead of <a href="https://github.com/nrk/predis/">Predis</a> because of performance.</p>
+<p>My goal is build up a webservice to proxy requests to backend redis servers, the web server is actually a proxy handling all routing related issues, so that clients don&#8217;t have to worry about hashing, sharding, etc. So I do prefer something pretty fast, though I don&#8217;t know how fast I need.</p>
+<p>I dig out an article of <a href="http://supportex.net/2011/08/rpm-build-redis-library-package-php/">how to build up PHPRedis extension</a>, but need to get redis.ini from github to so that build won&#8217;t fail. However, if you are lazy you can just put &#8220;extension=redis.so&#8221; to redis.ini by yourself, anyway, all up to you. Determine name of tarball and directory in spec file is some sort of tricky, as it seems things changed every version. I was using nicolasff-phpredis-2.2.1-66-g89bdaf2.tar.gz and nicolasff-phpredis-89bdaf2, note that they are not identical though have some common parts.</p>
+<p>I&#8217;ve deployed the extension to one of my test box, and will do some tests later on.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

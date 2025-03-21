@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Weird day	</title>
+	<atom:link href="https://xiehang.com/blog/2009/10/13/weird-day/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/10/13/weird-day/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 14 Oct 2009 03:42:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/10/13/weird-day/comment-page-1/#comment-2723</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 14 Oct 2009 03:42:44 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=683#comment-2723</guid>
+
+					<description><![CDATA[Alright, and earthquake in the night (luckily, not late night).]]></description>
+			<content:encoded><![CDATA[<p>Alright, and earthquake in the night (luckily, not late night).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

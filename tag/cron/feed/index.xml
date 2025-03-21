@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cron &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/cron/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 05 Mar 2015 19:10:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>How many ways to disable a auto-start service on Ubuntu?</title>
+		<link>https://xiehang.com/blog/2015/03/05/how-many-ways-to-disable-a-auto-start-service-on-ubuntu/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 05 Mar 2015 19:10:41 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cron]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[update-rc.d]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1745</guid>
+
+					<description><![CDATA[I don&#8217;t like or dislike upstart or whatever system service management facility, however, I do hope Ubuntu can give me a single solution to handle system service. So to disable a service, you can try System-V style: update-rc.d apache2 disable or upstart style: echo manual > /etc/init/cron.override or try chkconfig though it&#8217;s less common on <a href='https://xiehang.com/blog/2015/03/05/how-many-ways-to-disable-a-auto-start-service-on-ubuntu/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t like or dislike upstart or whatever system service management facility, however, I do hope Ubuntu can give me a single solution to handle system service.</p>
+<p>So to disable a service, you can try System-V style:<br />
+<code>update-rc.d apache2 disable</code></p>
+<p>or upstart style:<br />
+<code>echo manual > /etc/init/cron.override</code></p>
+<p>or try  chkconfig though it&#8217;s less common on Ubuntu. Sure, you may want to check /etc/rc.local as well for auto-start services that are not system service.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

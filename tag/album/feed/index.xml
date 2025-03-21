@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>album &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/album/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 21 Jun 2009 05:02:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>symfony</title>
+		<link>https://xiehang.com/blog/2009/06/20/symfony/</link>
+					<comments>https://xiehang.com/blog/2009/06/20/symfony/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 21 Jun 2009 05:02:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[album]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=497</guid>
+
+					<description><![CDATA[I&#8217;m playing with symfony now, will try to build up a album application first. Ubuntu comes with 1.0, and seems things changed some (at least those admin commands) in v1.2, but I don&#8217;t think it matters too much. I&#8217;m working on home Ubuntu box and will move the application to the hosting server after tests.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m playing with <a href="http://www.symfony-project.org/">symfony</a> now, will try to build up a album application first.</p>
+<p>Ubuntu comes with 1.0, and seems things changed some (at least those admin commands) in v1.2, but I don&#8217;t think it matters too much.</p>
+<p>I&#8217;m working on home Ubuntu box and will move the application to the hosting server after tests.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/06/20/symfony/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

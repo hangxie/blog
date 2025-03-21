@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Thinking of redesign	</title>
+	<atom:link href="https://xiehang.com/blog/2009/12/09/thinking-of-redesign/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 16 Dec 2009 21:46:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/comment-page-1/#comment-2809</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 16 Dec 2009 21:46:50 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=813#comment-2809</guid>
+
+					<description><![CDATA[I finally gave up the idea of letting Cassandra determines the token for partition by itself, at least for those initial nodes. Obviously it is not doing that great and doing nodeprobe loadbalance later is painful.]]></description>
+			<content:encoded><![CDATA[<p>I finally gave up the idea of letting Cassandra determines the token for partition by itself, at least for those initial nodes. Obviously it is not doing that great and doing nodeprobe loadbalance later is painful.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/comment-page-1/#comment-2802</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2009 02:17:20 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=813#comment-2802</guid>
+
+					<description><![CDATA[I tried svn version of cassandra (so-called 5.0-beta2), which ... signaficantly improved key distribution, as well as the performance. These two improvement gave me much better result, though I need to figure out if there is anything that I can improved or not.]]></description>
+			<content:encoded><![CDATA[<p>I tried svn version of cassandra (so-called 5.0-beta2), which &#8230; signaficantly improved key distribution, as well as the performance. These two improvement gave me much better result, though I need to figure out if there is anything that I can improved or not.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/comment-page-1/#comment-2796</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 10 Dec 2009 07:41:43 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=813#comment-2796</guid>
+
+					<description><![CDATA[I found one problem ... which is pretty obvious but I didn&#039;t notice - my test data set is too big to fit into memory, so it start swapping which significantly slow down the system.
+
+I&#039;m tuning my data set now, while changing codes as well (for thread safe), will see.]]></description>
+			<content:encoded><![CDATA[<p>I found one problem &#8230; which is pretty obvious but I didn&#8217;t notice &#8211; my test data set is too big to fit into memory, so it start swapping which significantly slow down the system.</p>
+<p>I&#8217;m tuning my data set now, while changing codes as well (for thread safe), will see.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

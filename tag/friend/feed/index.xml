@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>friend &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/friend/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 23 Jul 2012 18:19:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>EOL Fedora 15</title>
+		<link>https://xiehang.com/blog/2012/07/23/eol-fedora-15/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 23 Jul 2012 18:19:56 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[fedora]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[hosting]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1365</guid>
+
+					<description><![CDATA[I failed to upgrade a friend&#8217;s Fedora 15 last year so I left it running there untouched, however, Fedora announced EOL of 15, which means I have to risk leaving it up and running without any further patches, or I have to do an on site upgrade. Personally I prefer an on site upgrade to <a href='https://xiehang.com/blog/2012/07/23/eol-fedora-15/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I failed to upgrade a friend&#8217;s Fedora 15 last year so I left it running there untouched, however, Fedora announced EOL of 15, which means I have to risk leaving it up and running without any further patches, or I have to do an on site upgrade.</p>
+<p>Personally I prefer an on site upgrade to make sure everything is up-to-date, but my friend may not like this as the rental (i.e. hosting) will be ended in less a year.</p>
+<p>Anyway, waiting for reply now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>There are always friends</title>
+		<link>https://xiehang.com/blog/2011/05/01/there-are-always-friends/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 01 May 2011 17:07:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[organization]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1105</guid>
+
+					<description><![CDATA[There are always friends willing to help whenever I&#8217;m in troubles :). Problem I have? Yea, quite some. However, the most important thing is that I spent too much time on the new team and lost control on current team, this is not good, but thanks Zane (he got this really weird name), who give <a href='https://xiehang.com/blog/2011/05/01/there-are-always-friends/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There are always friends willing to help whenever I&#8217;m in troubles :).</p>
+<p>Problem I have? Yea, quite some. However, the most important thing is that I spent too much time on the new team and lost control on current team, this is not good, but thanks Zane (he got this really weird name), who give me pretty good suggestion and I now can fix things before they are totally broken.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Storm and bar time with friend</title>
+		<link>https://xiehang.com/blog/2010/05/04/storm-and-bar-time-with-friend/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 04 May 2010 15:00:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[life]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1026</guid>
+
+					<description><![CDATA[Meet a friend in a bar after a storm, talked a lot, happy hour.]]></description>
+										<content:encoded><![CDATA[<p>Meet a friend in a bar after a storm, talked a lot, happy hour.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>It&#8217;s about time to change</title>
+		<link>https://xiehang.com/blog/2010/02/25/its-about-time-to-change/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 25 Feb 2010 20:57:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=940</guid>
+
+					<description><![CDATA[I believe it&#8217;s about time to change myself a little bit &#8211; it&#8217;s all about job/career, etc, but it may affect life as well. I don&#8217;t think this Microsoft deal has any impact on my feeling, and I don&#8217;t think current project involved even a little. The Microsoft deal is great, I&#8217;m not saying it <a href='https://xiehang.com/blog/2010/02/25/its-about-time-to-change/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I believe it&#8217;s about time to change myself a little bit &#8211; it&#8217;s all about job/career, etc, but it may affect life as well.</p>
+<p>I don&#8217;t think this Microsoft deal has any impact on my feeling, and I don&#8217;t think current project involved even a little. The Microsoft deal is great, I&#8217;m not saying it will bring any solid benefit to my company, but at least it leaves some room for my company to take a pause, re-think the whole strategy, and move on. My current project is kind of interesting &#8211; cloud computing is something hot, and data intensive cloud is not being well defined in current cloud/grid world.</p>
+<p>I feel like it&#8217;s about time to change just because &#8230; it seems less people care about me now :D. I like talking to friends, but slowly friends stopped pinging me for whatever reason, it could be because my life is so boring and nothing could interest them. I&#8217;m not getting new friends either, which is because I don&#8217;t have relationship with any groups around.</p>
+<p>So, it&#8217;s about time to change, at least I can make people start talking to/about me again. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Question from a friend</title>
+		<link>https://xiehang.com/blog/2009/11/09/question-from-a-friend/</link>
+					<comments>https://xiehang.com/blog/2009/11/09/question-from-a-friend/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2009 03:33:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[framework]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[nosql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=741</guid>
+
+					<description><![CDATA[One of my friends asked me if this service is doable: Every hour multiple machines (clients) will send ~1M actions records to the service Each action contains: user id, action, action result, start time, end time, and couple of user profile keys The service should be able to deliver reports for any given time frame <a href='https://xiehang.com/blog/2009/11/09/question-from-a-friend/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>One of my friends asked me if this service is doable:</p>
+<ul>
+<li>Every hour multiple machines (clients) will send ~1M actions records to the service</li>
+<li>Each action contains: user id, action, action result, start time, end time, and couple of user profile keys</li>
+<li>The service should be able to deliver reports for any given time frame (minutes), within 15 min after the period finishes. For example, report for 3pm~3:30pm should be available by 3:45pm</li>
+<li>Reports include: how many users did a specific action with specific result (during that time frame), how many actions does a specific user did, and top number of actions taken by others users who did the same action as the user (hard to understand, but think about Amazon, &#8220;Customers bought this item also bought&#8230;)</li>
+<li>Most important thing is: all these requirements should be done on no more than 4 machines, include redundancy, which means should be done on 2 or 3 machines</li>
+</ul>
+<p>I have to say, this is a pretty common requirements for online services (shopping, search, gaming,&#8230; could be anything), and if I can make it and make the solution linear, then it will be pretty much interesting (let&#8217;s say, 40 machines supporting 10M actions per hour, a lot already).</p>
+<p>I will do some research (the nosql stuffs could well fit into this one), and post thinking/design here.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/09/question-from-a-friend/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Last one is leaving</title>
+		<link>https://xiehang.com/blog/2009/10/21/last-one-is-leaving/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 22 Oct 2009 03:31:26 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=692</guid>
+
+					<description><![CDATA[All those who helped me moving from China to US are all leaving, actually I hesitated to say &#8220;all&#8221; as I know there is one who will never leave :). Let&#8217;s skip those non-techy people, then here where they went: one goes to eBay, running its biggest offshore R&#38;D center (at least one of the <a href='https://xiehang.com/blog/2009/10/21/last-one-is-leaving/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>All those who helped me moving from China to US are all leaving, actually I hesitated to say &#8220;all&#8221; as I know there is one who will never leave :).</p>
+<p>Let&#8217;s skip those non-techy people, then here where they went: one goes to eBay, running its biggest offshore R&amp;D center (at least one of the biggest, I&#8217;m not quite sure), another one goes to Microsoft (yea, lots of Yahoos went to Microsoft) running their data center division, and this one is said to go to China, though I don&#8217;t have any details yet.</p>
+<p>I now can say, I stay here longer than them, so ideally I can move on now &#8211; I short of one excuse to stay here.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Facebook</title>
+		<link>https://xiehang.com/blog/2009/06/29/facebook/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2009 14:29:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[facebook]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[kaixin001]]></category>
+		<category><![CDATA[linkedin]]></category>
+		<category><![CDATA[social network]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=516</guid>
+
+					<description><![CDATA[I agree social network is sort of virus, you were brought into the game just because one of your friends is there, and then later on you will find all of your friends are there. This is what I found today &#8211; I registered my account a year back I guess (by the time I <a href='https://xiehang.com/blog/2009/06/29/facebook/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I agree social network is sort of virus, you were brought into the game just because one of your friends is there, and then later on you will find all of your friends are there.</p>
+<p>This is what I found today &#8211; I registered my account a year back I guess (by the time I know kaixin001.com, and people mentioned it is just another facebook), and at that time there was not many friends playing there. When I checked again this morning, it seems 50% of my friends who regularly accesses internet has an account there.</p>
+<p>Now the question is &#8211; how many of them use it daily or even weekly? This is so-called active user, but it seems to me pretty low, maybe 1/10. Well someone would say 10% is really a good number, but I believe social network should have higher active rate.</p>
+<p>I don&#8217;t know how long I can play with this one, facebook is way too fun compare with linkedin, I get rid of kaixin001.com as I found it is just a social network, means other than play some games, I got nothing else, actually it was even not the good place to keep contact with friends, let&#8217;s see how facebook works,</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Backup</title>
+		<link>https://xiehang.com/blog/2009/05/18/backup/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 May 2009 05:24:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[friend]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=380</guid>
+
+					<description><![CDATA[Forgot to mention that I&#8217;ve setup timely DB backup on godaddy, now I need to figure out how to take secondary backup on a remote host, maybe on my home Ubuntu box. Tried to asked a friend to see if everything got backup there but got no response, I think I&#8217;m a little bit bothering <a href='https://xiehang.com/blog/2009/05/18/backup/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Forgot to mention that I&#8217;ve setup timely DB backup on godaddy, now I need to figure out how to take secondary backup on a remote host, maybe on my home Ubuntu box.</p>
+<p>Tried to asked a friend to see if everything got backup there but got no response, I think I&#8217;m a little bit bothering now, better keep silient :(.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

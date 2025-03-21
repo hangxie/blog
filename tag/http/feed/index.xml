@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>http &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/http/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 07 Nov 2018 17:19:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Reverse engineering HTTP requests</title>
+		<link>https://xiehang.com/blog/2018/11/07/reverse-engineering-http-requests/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2018 17:18:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1789</guid>
+
+					<description><![CDATA[tcpdump -A -s 10240 'tcp port 8080' \ &#124; egrep --line-buffered "^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )&#124;^[0-9][0-9]:[0-9][0-9]&#124;^[A-Za-z0-9-]+: " \ &#124; sed -r 's/^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g' &#160;]]></description>
+										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">tcpdump -A -s 10240 'tcp port 8080' \
+| egrep --line-buffered "^........(GET |HTTP\/|POST |HEAD )|^[0-9][0-9]:[0-9][0-9]|^[A-Za-z0-9-]+: " \
+| sed -r 's/^........(GET |HTTP\/|POST |HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g'</pre>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>B-Cookie</title>
+		<link>https://xiehang.com/blog/2013/01/31/b-cookie/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2013 23:40:01 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[extension]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[user tracking]]></category>
+		<category><![CDATA[web server]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1490</guid>
+
+					<description><![CDATA[I&#8217;ve done a mod_bcookie to setup browser cookie for Apache, now I&#8217;m working on same functionality for Nginx (should copy lots of codes from userid_module), after that I need to see how to do the same thing for Jetty, and with all containers have some sort of same architecture so that I don&#8217;t have to <a href='https://xiehang.com/blog/2013/01/31/b-cookie/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve done a mod_bcookie to setup browser cookie for Apache, now I&#8217;m working on same functionality for Nginx (should copy lots of codes from userid_module), after that I need to see how to do the same thing for Jetty, and with all containers have some sort of same architecture so that I don&#8217;t have to write one per container.</p>
+<p>And after that I need to implement the same thing to IIS, again, wish I can do something for all .Net versions and for all languages (C# and VB.Net, at least).</p>
+<p>I may be crazy, but this is a must since our clients are running all sort of HTTP servers, I wish there won&#8217;t be anything new  &#8211; there should be nobody running lighttpd as I heard of, since most of them migrated to Nginx, and there should be nobody running Tomcat or Resin as they migrated to Jetty. I wish nobody is running node.js but if there is someone &#8230; sigh, then I still have to deal with them.</p>
+<p>What about those wsgi/fastcgi servers? I don&#8217;t know so far, I wish they are not using a shared Nginx as load balancer, otherwise my life will be definitely doomed by writing all those extensions.</p>
+<p>Will post result here later on.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

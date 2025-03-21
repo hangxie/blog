@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mail &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/mail/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 13 Dec 2012 20:56:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>New Yahoo Mail UI</title>
+		<link>https://xiehang.com/blog/2012/12/13/new-yahoo-mail-ui/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 13 Dec 2012 20:56:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[UI]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1447</guid>
+
+					<description><![CDATA[I seldom like new UI of product I use, the extreme example is I HATE the new gmail UI whenever it was launched more than a year ago &#8211; it took me quite some time to figure out where is addressbook and where I can manage my domain. However, Yahoo Mail&#8217;s new UI is definitely <a href='https://xiehang.com/blog/2012/12/13/new-yahoo-mail-ui/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I seldom like new UI of product I use, the extreme example is I HATE the new gmail UI whenever it was launched more than a year ago &#8211; it took me quite some time to figure out where is addressbook and where I can manage my domain.</p>
+<p>However, Yahoo Mail&#8217;s new UI is definitely better than previous version, light, clean, and most things are still there &#8211; either it did not change, or it can be easily located.</p>
+<p>Well done, Yahoo.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>To-do list</title>
+		<link>https://xiehang.com/blog/2012/10/26/to-do-list/</link>
+					<comments>https://xiehang.com/blog/2012/10/26/to-do-list/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 26 Oct 2012 17:55:22 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[IM]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[search]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1418</guid>
+
+					<description><![CDATA[Here is the to-do list for the mail/IM setup: IM message archived to mysql, but need to compose session to mail and drop to mail box to make backup more reliable (mail will be automatically copy to some gmail account) mail alert is not done, current stage is that I need to determine the right <a href='https://xiehang.com/blog/2012/10/26/to-do-list/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here is the to-do list for the mail/IM setup:</p>
+<ol>
+<li>IM message archived to mysql, but need to compose session to mail and drop to mail box to make backup more reliable (mail will be automatically copy to some gmail account)</li>
+<li>mail alert is not done, current stage is that I need to determine the right XMPP message type to use, logic-wise I&#8217;ve done the design</li>
+<li>need a quick design on mail seaerch</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/10/26/to-do-list/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Oh ya</title>
+		<link>https://xiehang.com/blog/2012/10/19/oh-ya/</link>
+					<comments>https://xiehang.com/blog/2012/10/19/oh-ya/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 20 Oct 2012 05:35:03 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[IM]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[search]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1412</guid>
+
+					<description><![CDATA[I setup a mail server and an IM server, again &#8230; just for whatever reason. It&#8217;s fun though. I&#8217;m still with openldap, postfix, mysql, ejabberd, but use dovecot replaces courier for imap, amavisd integrated with spamassassin and clamav to replace previous spamassassin-only system, and roundcube replaces squirrelmail. Things are more or less easier to setup. <a href='https://xiehang.com/blog/2012/10/19/oh-ya/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I setup a mail server and an IM server, again &#8230; just for whatever reason. It&#8217;s fun though.</p>
+<p>I&#8217;m still with openldap, postfix, mysql, ejabberd, but use dovecot replaces courier for imap, amavisd integrated with spamassassin and clamav to replace previous spamassassin-only system, and roundcube replaces squirrelmail. Things are more or less easier to setup.</p>
+<p>There are two things left, one is that need to direct spams to spam folder, this was done by maildrop but since I&#8217;m away from courier, procmail may be a more reasonable choice but still need to evaluate. The other thing is that I want to send all incoming and outgoing mails to some other gmail accounts so that I can keep a copy of everything, but I haven&#8217;t decided what&#8217;s the better approach for this. Also, if it is possible to get XMPP messages backup somewhere, that will be great.</p>
+<p>I was thinking of building up a search feature for this mail system, I haven&#8217;t got exact design done yet, but some features are in my mind: close to realtime (tens of seconds latency), attachment friendly (dig into attachments to find context), and scriptable, i.e. core engine can be (or have to be) C/C++, but lots of external stuffs should be able to be done in PHP/Perl, etc.</p>
+<p>Let&#8217;s see.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/10/19/oh-ya/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Make everything else in the world a nail</title>
+		<link>https://xiehang.com/blog/2012/07/26/make-everything-else-in-the-world-a-nail/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 26 Jul 2012 16:42:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[mail]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1368</guid>
+
+					<description><![CDATA[We are in the design phrase of a new product, since there are lots of features and it seems they can group up to twitter-like, blog-like, forum-like, mail-like, and so on, so we started looking around for existing open source products to fit in. I was thinking about this while driving home last night, and <a href='https://xiehang.com/blog/2012/07/26/make-everything-else-in-the-world-a-nail/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>We are in the design phrase of a new product, since there are lots of features and it seems they can group up to twitter-like, blog-like, forum-like, mail-like, and so on, so we started looking around for existing open source products to fit in.</p>
+<p>I was thinking about this while driving home last night, and a interesting idea jumped into my mind &#8211; maybe I can use my knowledge on mail system to contribute some stuffs.</p>
+<p>Then this came to my mind &#8211; whenever all you have is a hammer, then everything else in the world would be a nail. I know this is not a praise, but I don&#8217;t care, I just want to do everything through an existing mail feature, or a little bit tweaked mail feature.</p>
+<p>I&#8217;m going to write a series to see if I can make everything popular in this world (SNS, Mobile, etc) built up mostly on a mail system, &#8220;mostly&#8221; means at least 80% of the features. I&#8217;m not going to try to replace systems/infrastructures that support mail running, like storage, authentication, etc, since that will make things ridicolous (chicken and egg problem). I&#8217;m going to assume that there is a running mail system already, and I&#8217;m going to try my best to build everything else based on mail.</p>
+<p>This is totally for fun, don&#8217;t follow this approach for your production system. ;-</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Too many stuffs in hand</title>
+		<link>https://xiehang.com/blog/2012/03/04/too-many-stuffs-in-hand/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 05 Mar 2012 06:16:24 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[battery]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[miscellaneous]]></category>
+		<category><![CDATA[mobile]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1278</guid>
+
+					<description><![CDATA[Several things that I need to do but failed (failed means didn&#8217;t finish or even not started yet), I tried my best during the weekend but the progress is not that pretty :(. I didn&#8217;t touch solr in the past week for the term vertor problem in distributed search, I&#8217;m going to try it out <a href='https://xiehang.com/blog/2012/03/04/too-many-stuffs-in-hand/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Several things that I need to do but failed (failed means didn&#8217;t finish or even not started yet), I tried my best during the weekend but the progress is not that pretty :(.</p>
+<p>I didn&#8217;t touch solr in the past week for the term vertor problem in distributed search, I&#8217;m going to try it out in the coming week but I have no confidence at all.</p>
+<p>I do try to set up Windows Phone development environment but obvious I need more resource (read: memory) on either the Windows laptop or Windows VM on MBP, I even upgraded my Windows laptop (an HP) to Windows 7. However, it seems memory is still the problem. My next step is raising the memory for VM on MBP to 4G (later 6G, maybe) to see if it works better, but that will make WP7 development really a occasional hobby as I cannot leave it up and running for all the time. Pity MBP supports 8G memory only, I think under 16G I will have enough headroom for everything.</p>
+<p>Playing with Android is still a fun, or maybe funny? hehe. I started working on that but Eclipse&#8217; or Android&#8217;s UI designer really sucks, I still need sometime to get used with it. I wish I can get this part done faster as this could be the only platform that I can try without cost.</p>
+<p>Since the mail team was kind of slow releasing whatever we want, so I started digging into alternatives to see if I can speed up a little bit &#8211; I constantly update and build Android clients and also tried to build up some backend features with open source projects, this involved Postfix, atmail/roundcube, solr, and so on. This part didn&#8217;t go well either, mostly because I stuck in the front end features, and turned me back to backend stuffs again, but that means I&#8217;m not that helpful to the current project since front end features are much more important, at least at this stage.</p>
+<p>Terminology extraction is much better than other projects, at least I finished a demo for JS extraction, it works wel for 95% cases, pity for those 5% leftovers, I cannot do anything about it since they have have either HTML mess up, or JS conflicts (well, maybe I can do something for later one, but not now since this is not a serious project so far).</p>
+<p>What else? hmmm &#8230; seems almost all batteries @ home are having problems, from cell phone to lawn mower, from blower to iRobot. I did a lot research in the past couple of days on Lead Acid, Ni-Cd, Li-Ion, 12V, 18V, 24V, purchase, recycling, and so on, but good thing is that I&#8217;ve put all necessary orders and now just want for those batteries arriving.</p>
+<p>Nothing else I think &#8230; the office will have network tuned in the coming week, probably I will have to run my own Wifi after that :-$</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Home-grown solutions, yes or no?</title>
+		<link>https://xiehang.com/blog/2011/03/19/home-grown-solutions-yes-or-no/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2011 14:33:46 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[share]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1100</guid>
+
+					<description><![CDATA[There are several teams that want to provide technical solution for my team in various area, and I&#8217;m thinking of adopting them or rejecting. There is no sure rule for that, basically I need to make sure: first they perform good enough to support my products, second, they need to be quite reliable which means <a href='https://xiehang.com/blog/2011/03/19/home-grown-solutions-yes-or-no/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There are several teams that want to provide technical solution for my team in various area, and I&#8217;m thinking of adopting them or rejecting.</p>
+<p>There is no sure rule for that, basically I need to make sure: first they perform good enough to support my products, second, they need to be quite reliable which means I will not worry about losing support, and third, they should focus on technical solution instead of trying to take product away from me.</p>
+<p>So far the only decision had been made is that I&#8217;m going to use cloud storage team&#8217;s solution (network disk), I will put attachment for outgoing mails there to support unlimited attachment, later on will put attachments for incoming mails there. Search team also wants me leverage their platform, but I have to say their solution is not good enough for me and quite ad-hoc, so someone from my team will use Lucene to build our first solution, then we can compare to see if we are going to migrate or not.</p>
+<p>I&#8217;m going to keep my team focus on mail/message area, thus meta data won&#8217;t be taken by anyone else. Also, anti-spam is key platform for my team so I won&#8217;t give up. For search and massive data storage in key-value pair format, I may give them out.</p>
+<p>Tough decision though, always need to convince my team members agree that we should focus on key features instead of doing everything all by ourselves. We are still a big company and share a common platform will give the whole company a good shape of look.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>I confused myself</title>
+		<link>https://xiehang.com/blog/2010/05/16/i-confused-myself/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 16 May 2010 09:18:11 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[life]]></category>
+		<category><![CDATA[mail]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2010/05/16/i-confused-myself/</guid>
+
+					<description><![CDATA[I believe I have confused myself already &#8230; I current own almost all xiehang@somedomain email address, and I also have 7 or 8 domains to maintain, I did some mail forwarding plus some pop3 access so to make my life easier (means I don&#8217;t have to check all mail accounts), but it seems I&#8217;ve already <a href='https://xiehang.com/blog/2010/05/16/i-confused-myself/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I believe I have confused myself already &#8230; I current own almost all xiehang@somedomain email address, and I also have 7 or 8 domains to maintain, I did some mail forwarding plus some pop3 access so to make my life easier (means I don&#8217;t have to check all mail accounts), but it seems I&#8217;ve already confused myself.</p>
+<p>I will check all my settings again, there should be 20 or so accounts to be checked. I wish after that I can have a tidy mail setup.</p>
+<p>By the way, I&#8217;m posting this with my iPad in a starbucks. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How many mails I received everyday?</title>
+		<link>https://xiehang.com/blog/2010/03/30/how-many-mails-i-received-everyday/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 30 Mar 2010 22:11:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=986</guid>
+
+					<description><![CDATA[I started collecting this information since Nov 2004, and here is the graph:I got ridiculous number of mails everyday while I was working for mail (which makes sense since it&#8217;s mail team, everything is a mail), which is around 10K daily, and after I move to current team it dropped to (sort of) reasonable number <a href='https://xiehang.com/blog/2010/03/30/how-many-mails-i-received-everyday/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I started collecting this information since Nov 2004, and here is the graph:<a href="https://xiehang.com/blog/wp-content/uploads/2010/03/mails.jpg"><img loading="lazy" class="aligncenter size-medium wp-image-987" title="Mails received per day" src="https://xiehang.com/blog/wp-content/uploads/2010/03/mails-300x176.jpg" alt="" width="300" height="176" srcset="https://xiehang.com/blog/wp-content/uploads/2010/03/mails-300x176.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/03/mails.jpg 835w" sizes="(max-width: 300px) 100vw, 300px" /></a>I got ridiculous number of mails everyday while I was working for mail (which makes sense since it&#8217;s mail team, everything is a mail), which is around 10K daily, and after I move to current team it dropped to (sort of) reasonable number which is couple of hundreds per day.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Finally Thunderbird fixed its problem</title>
+		<link>https://xiehang.com/blog/2010/03/22/finally-thunderbird-fixed-its-problem/</link>
+					<comments>https://xiehang.com/blog/2010/03/22/finally-thunderbird-fixed-its-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 23 Mar 2010 04:59:06 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[thunderbird]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=968</guid>
+
+					<description><![CDATA[It seems 3.0.3 is a good version, at least to me. I think I was one of the first batch that tried out TB3, however, it seems my mailbox does not fit into TB3 &#8211; I have ~600 mail folders, with ~110K mails and the biggest folder has about 8000 mails. Obvious old version of <a href='https://xiehang.com/blog/2010/03/22/finally-thunderbird-fixed-its-problem/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems 3.0.3 is a good version, at least to me.</p>
+<p>I think I was one of the first batch that tried out TB3, however, it seems my mailbox does not fit into TB3 &#8211; I have ~600 mail folders, with ~110K mails and the biggest folder has about 8000 mails. Obvious old version of TB3 cannot handle this &#8211; it popped up error message window from time to time and every time I started TB3 I have to wait for pretty long time to get everything sync&#8217;ed.</p>
+<p>Thanks 3.0.3, it works now.</p>
+<p>As a side note, corporate IT seems force me upgrade to TB3 for whatever reason I don&#8217;t know, so I put a shortcut on my desktop to downgrade to TB2 &#8211; I believe I&#8217;ve run this &#8220;downgrade&#8221; close to 50 times in the past 3 months, luckily I no longer need to do it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/03/22/finally-thunderbird-fixed-its-problem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The new thunderbird is cute</title>
+		<link>https://xiehang.com/blog/2009/12/16/the-new-thunderbird-is-cute/</link>
+					<comments>https://xiehang.com/blog/2009/12/16/the-new-thunderbird-is-cute/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 16 Dec 2009 18:01:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[thunderbird]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=821</guid>
+
+					<description><![CDATA[I don&#8217;t want to say it&#8217;s good, as I feel performance is not that great compare with the old version. However, the look-n-feel is neat, makes it a cute product and makes me thinking &#8211; the old version is too &#8220;formal&#8221;. It seems in now a day, people care UI more than functionality, if I <a href='https://xiehang.com/blog/2009/12/16/the-new-thunderbird-is-cute/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t want to say it&#8217;s good, as I feel performance is not that great compare with the old version. However, the look-n-feel is neat, makes it a cute product and makes me thinking &#8211; the old version is too &#8220;formal&#8221;.</p>
+<p>It seems in now a day, people care UI more than functionality, if I had the choice I would not upgrade to the new version so that I can keep my productivity, but it&#8217;s a pity it was set to upgrade automatically (I made the setting? not sure).</p>
+<p>Will (have to) keep using it till I get familiar, anyway I don&#8217;t have any other alternative, yet, or maybe it&#8217;s the time to look for alternative.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/16/the-new-thunderbird-is-cute/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>book &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/book/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 12 Nov 2011 13:25:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Need to go to bookstore tomorrow</title>
+		<link>https://xiehang.com/blog/2011/11/12/need-to-go-to-bookstore-tomorrow/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 12 Nov 2011 13:25:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[algoritm]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[book]]></category>
+		<category><![CDATA[iphone]]></category>
+		<category><![CDATA[mac]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1144</guid>
+
+					<description><![CDATA[I need to go to bookstore tomorrow for: Mac and iPhone development Android development Algorithms books in English I think I&#8217;m going to spend 200~300 RMB to get 3~4 books, wish me luck.]]></description>
+										<content:encoded><![CDATA[<p>I need to go to bookstore tomorrow for:</p>
+<ul>
+<li>Mac and iPhone development</li>
+<li>Android development</li>
+<li>Algorithms books in English</li>
+</ul>
+<p>I think I&#8217;m going to spend 200~300 RMB to get 3~4 books, wish me luck.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

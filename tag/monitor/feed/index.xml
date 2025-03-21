@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>monitor &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/monitor/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:09:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>How to get rid of Nagios alert</title>
+		<link>https://xiehang.com/blog/2012/08/01/how-to-get-rid-of-nagios-alert/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 01 Aug 2012 17:23:25 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[memcache]]></category>
+		<category><![CDATA[monitor]]></category>
+		<category><![CDATA[nagios]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1375</guid>
+
+					<description><![CDATA[Be aware this is a joke. 😀 I had alert from a memcached service that mentioning for all the time that hit rate was too low, after checking it I found it was actually because the traffic was too low (the site was not in production yet), so how to solve this problem? After thinking <a href='https://xiehang.com/blog/2012/08/01/how-to-get-rid-of-nagios-alert/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Be aware this is a joke. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I had alert from a memcached service that mentioning for all the time that hit rate was too low, after checking it I found it was actually because the traffic was too low (the site was not in production yet), so how to solve this problem?</p>
+<p>After thinking of various &#8220;serious&#8221; solutions, I finally turned to running a script, keep hitting the entries (actually, only one specific entry) in the cache, so to raise the hit rate to a level that makes Nagios stop alerting me.</p>
+<p>OK, OK, I know this is bad, but fun, isn&#8217;t it?</p>
+<p>Actually this causes another thinking &#8211; if there is a particular key having high miss rate, do we care? If we do then the monitoring mechanism won&#8217;t work for that case &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Notes on Nagios setup</title>
+		<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/</link>
+					<comments>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 31 Jul 2012 22:40:54 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[monitor]]></category>
+		<category><![CDATA[nagios]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1372</guid>
+
+					<description><![CDATA[Trying to setup Nagios to play with monitoring facilities, turned out there are way too many things are NOT running out of the box. I&#8217;m trying to write as much as I can remember, so that I don&#8217;t have to Google again next time I step into the setup task again. Sure, others may be <a href='https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Trying to setup Nagios to play with monitoring facilities, turned out there are way too many things are NOT running out of the box. I&#8217;m trying to write as much as I can remember, so that I don&#8217;t have to Google again next time I step into the setup task again. Sure, others may be befinited from this as well.</p>
+<p>A brief intro about the environment &#8211; I have my monitoring node in EC2 in east coast, another 3 servers to be monitored in EC2 west cost, all four are running Ubuntu 12.04, plus another physical box sitting in a IDC in Beijing, China, running Fedora 14 (the owner does not want to upgrade for some reason). Almost all servers are running classic applications for Web, such as Nginx, mysql, etc. Other than those public services I also need to monitor system status like disk space, memory utilization, ssh liveness, etc.<span id="more-1372"></span></p>
+<p>The installation was pretty straightforward, for anything mentioned here you can do apt-cache/yum search to find out the exact package to be installed. Just to mention that Fedora tends to separate plugins into LOTS of individual packages, while Ubuntu just group them up to several jumbo packages. Good or bad, it&#8217;s all up to you.</p>
+<p>Something new to me (last time I touched Nagios was 6 years ago) is that nrpe, with its help I can avoid setting up too many ACL holes to make monitoring works. I do encourage you take a look into this unless you have all servers stay in a same colocation, plus a firewall in front of all these boxes facing outside world.</p>
+<p>Here are several things I spent a little bit more time than other features:</p>
+<ul>
+<li>dont_blame_nrpe=1 for nrpe, so nrpe can take parameter from monitoring node</li>
+<li>some commands defined for nrpe:
+<pre>command[check_disk]=/usr/lib/nagios/plugins/check_disk -w $ARG1$ -c $ARG2$
+command[check_users]=/usr/lib/nagios/plugins/check_users -w $ARG1$ -c $ARG2$
+command[check_load]=/usr/lib/nagios/plugins/check_load -w $ARG1$ -c $ARG2$
+command[check_mysql]=/usr/lib/nagios/plugins/check_mysql -u $ARG1$ -p $ARG2$
+command[check_ntp]=/usr/lib/nagios/plugins/check_ntp -H localhost
+command[check_disk]=/usr/lib/nagios/plugins/check_disk -w $ARG1$ -c $ARG2$
+command[check_procs]=/usr/lib/nagios/plugins/check_procs -w $ARG1$ -c $ARG2$</pre>
+</li>
+<li>To get graphs, install nagiosgrapher on monitoring node, and change following settings in nagios.cfg
+<pre>process_performance_data=1
+service_perfdata_command=ngraph-process-service-perfdata-pipe</pre>
+</li>
+<li>Don&#8217;t forget change contact definition, so far I&#8217;m using email address, will dig in to see if there is any good and free services to do alerting stuffs</li>
+<li>Here is a tricky part to use white spaces in check_command definition:
+<pre># check mysql service
+define service {
+hostgroup_name              mysql-servers
+service_description         MySQL over NRPE
+check_command               check_nrpe!check_mysql!username\ pasword
+use                         generic-service
+notification_interval       0 ; set &gt; 0 if you want to be renotified
+}</pre>
+<p>Note that the white space needs to be escaped by backslash (\). It took me quite sometime to figure this out &#8230;</li>
+<li>Sometime you may want to issue the check manually (through the Web), or delete service comments. You have to enable external command in nagios.cfg:<br />
+check_external_commands=1<br />
+Also, due to Ubuntu&#8217;s <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=571801">packaging issue</a>, you need to issue two more commands to get permission problem fixed (with sudo, for sure):</p>
+<pre>dpkg-statoverride --update --add nagios www-data 2710 /var/lib/nagios3/rw
+dpkg-statoverride --update --add nagios nagios 751 /var/lib/nagios3</pre>
+</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

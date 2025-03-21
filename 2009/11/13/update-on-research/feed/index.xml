@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Update on research	</title>
+	<atom:link href="https://xiehang.com/blog/2009/11/13/update-on-research/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/11/13/update-on-research/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 15 Dec 2010 01:36:35 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/13/update-on-research/comment-page-1/#comment-2971</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 15 Dec 2010 01:36:35 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=745#comment-2971</guid>
+
+					<description><![CDATA[Here we go, it works with 0.6.4 at least, as I stopped playing with Cassandra after that. I cannot recall if I wrote the script all by myself or I actually changed an existing one from someone else, but anyway:
+
+&lt;pre&gt;
+#!/bin/sh
+#
+# cassandra     This shell script takes care of starting and stopping
+#               the Cassandra service.
+#
+# chkconfig: - 30 60
+# description: Cassandra is a highly scalable, eventually consistent,
+#              distributed, structured key-value store.
+# probe: true
+
+### BEGIN INIT INFO
+# Provides: cassandra
+# Required-Start: network autofs syslog
+# Should-Start: network autofs syslog
+# Required-Stop: $autofs $network $syslog
+# Should-Stop: $autofs $network $syslog
+# Default-Start:  2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Start up the Cassandra server sevice
+# Description: Cassandra is a highly scalable, eventually consistent,
+#              distributed, structured key-value store.
+### END INIT INFO
+
+CASSANDRA_HOME=/net/f5/shared/nosql/cassandra/current
+HOSTNAME=$(hostname)
+DATA_DIR=/var/lib/cassandra
+
+export JVM_OPTS=&quot; \
+        -Xrunjdwp:transport=dt_socket,server=y,address=8888,suspend=n \
+        -Xms256M \
+        -Xmx384M \
+        -XX:SurvivorRatio=8 \
+        -XX:TargetSurvivorRatio=90 \
+        -XX:+AggressiveOpts \
+        -XX:+UseParNewGC \
+        -XX:+UseConcMarkSweepGC \
+        -XX:CMSInitiatingOccupancyFraction=1 \
+        -XX:+CMSParallelRemarkEnabled \
+        -XX:+HeapDumpOnOutOfMemoryError \
+        -Dcom.sun.management.jmxremote.port=8080 \
+        -Dcom.sun.management.jmxremote.ssl=false \
+        -Dcom.sun.management.jmxremote.authenticate=false&quot;
+
+export CASSANDRA_CONF=/etc/cassandra
+export CASSANDRA_INCLUDE=/dev/null
+export CLASSPATH=$(find $CASSANDRA_HOME/lib -name \*.jar &#124; tr &quot;\n&quot; &quot;:&quot;)
+if [ -d $CASSANDRA_HOME/build/ ] ; then
+    export CLASSPATH=$CLASSPATH$(find $CASSANDRA_HOME/build/ -name \*.jar &#124; tr &quot;\n&quot; &quot;:&quot;)
+fi
+
+PATIENCE=30
+start() {
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+    if [ $? -eq 0 ] ; then
+        echo &quot;There is already an instance running&quot;
+        return
+    fi
+
+    $CASSANDRA_HOME/bin/cassandra -p $DATA_DIR/cassandra.pid &gt; $DATA_DIR/rc.log 2&gt;&amp;1
+    if [ $? -ne 0 ] ; then
+        echo &quot;Unable to start Cassandra&quot;
+        return
+    fi
+
+    echo -n Waiting for Cassandra warm up .
+    for RETRY in $(seq 1 $PATIENCE) ; do
+        $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+        [ $? -eq 0 ] &amp;&amp; break
+        echo -n .
+        sleep 1
+    done
+
+    echo
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+    if [ $? -eq 0 ] ; then
+        echo &quot;Cassandra started&quot;
+    else
+        echo &quot;Cassandra was not started&quot;
+    fi
+}
+
+stop() {
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+    if [ $? -ne 0 ] ; then
+        echo &quot;There is no instance running&quot;
+        return
+    fi
+
+    [ -f $DATA_DIR/cassandra.pid ] &amp;&amp; kill $(cat $DATA_DIR/cassandra.pid) &gt;/dev/null 2&gt;&amp;1
+    rm -f $DATA_DIR/cassandra.pid
+    lsof -P &#124; grep TCP &#124; grep :7000 &#124; grep LISTEN &#124; awk &#039;{print $2}&#039; &#124; xargs -r kill
+    echo -n Waiting for Cassandra terminate .
+    for RETRY in $(seq 1 $PATIENCE) ; do
+        $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+        [ $? -ne 0 ] &amp;&amp; break
+        echo -n .
+        sleep 1
+    done
+    echo
+
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+    if [ $? -eq 0 ] ; then
+       echo &quot;Cannot stop Cassandra&quot;
+    else
+       echo &quot;Cassandra stopped&quot;
+    fi
+}
+
+status() {
+    unset CASSANDRA_INCLUDE
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info &gt;/dev/null 2&gt;&amp;1
+    if [ $? -eq 0 ] ; then
+        $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME $1
+    else
+        echo &quot;Cassandra is not running&quot;
+    fi
+}
+
+case &quot;$1&quot; in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    status)
+        status info
+        ;;
+    ring)
+        status ring
+        ;;
+    *)
+        echo $&quot;Usage: $(basename $0) {start&#124;stop&#124;restart&#124;status&#124;ring}&quot;
+        exit 2
+esac
+&lt;/pre&gt;]]></description>
+			<content:encoded><![CDATA[<p>Here we go, it works with 0.6.4 at least, as I stopped playing with Cassandra after that. I cannot recall if I wrote the script all by myself or I actually changed an existing one from someone else, but anyway:</p>
+<pre>
+#!/bin/sh
+#
+# cassandra     This shell script takes care of starting and stopping
+#               the Cassandra service.
+#
+# chkconfig: - 30 60
+# description: Cassandra is a highly scalable, eventually consistent,
+#              distributed, structured key-value store.
+# probe: true
+
+### BEGIN INIT INFO
+# Provides: cassandra
+# Required-Start: network autofs syslog
+# Should-Start: network autofs syslog
+# Required-Stop: $autofs $network $syslog
+# Should-Stop: $autofs $network $syslog
+# Default-Start:  2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Start up the Cassandra server sevice
+# Description: Cassandra is a highly scalable, eventually consistent,
+#              distributed, structured key-value store.
+### END INIT INFO
+
+CASSANDRA_HOME=/net/f5/shared/nosql/cassandra/current
+HOSTNAME=$(hostname)
+DATA_DIR=/var/lib/cassandra
+
+export JVM_OPTS=" \
+        -Xrunjdwp:transport=dt_socket,server=y,address=8888,suspend=n \
+        -Xms256M \
+        -Xmx384M \
+        -XX:SurvivorRatio=8 \
+        -XX:TargetSurvivorRatio=90 \
+        -XX:+AggressiveOpts \
+        -XX:+UseParNewGC \
+        -XX:+UseConcMarkSweepGC \
+        -XX:CMSInitiatingOccupancyFraction=1 \
+        -XX:+CMSParallelRemarkEnabled \
+        -XX:+HeapDumpOnOutOfMemoryError \
+        -Dcom.sun.management.jmxremote.port=8080 \
+        -Dcom.sun.management.jmxremote.ssl=false \
+        -Dcom.sun.management.jmxremote.authenticate=false"
+
+export CASSANDRA_CONF=/etc/cassandra
+export CASSANDRA_INCLUDE=/dev/null
+export CLASSPATH=$(find $CASSANDRA_HOME/lib -name \*.jar | tr "\n" ":")
+if [ -d $CASSANDRA_HOME/build/ ] ; then
+    export CLASSPATH=$CLASSPATH$(find $CASSANDRA_HOME/build/ -name \*.jar | tr "\n" ":")
+fi
+
+PATIENCE=30
+start() {
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+    if [ $? -eq 0 ] ; then
+        echo "There is already an instance running"
+        return
+    fi
+
+    $CASSANDRA_HOME/bin/cassandra -p $DATA_DIR/cassandra.pid > $DATA_DIR/rc.log 2>&#038;1
+    if [ $? -ne 0 ] ; then
+        echo "Unable to start Cassandra"
+        return
+    fi
+
+    echo -n Waiting for Cassandra warm up .
+    for RETRY in $(seq 1 $PATIENCE) ; do
+        $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+        [ $? -eq 0 ] &#038;& break
+        echo -n .
+        sleep 1
+    done
+
+    echo
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+    if [ $? -eq 0 ] ; then
+        echo "Cassandra started"
+    else
+        echo "Cassandra was not started"
+    fi
+}
+
+stop() {
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+    if [ $? -ne 0 ] ; then
+        echo "There is no instance running"
+        return
+    fi
+
+    [ -f $DATA_DIR/cassandra.pid ] &#038;& kill $(cat $DATA_DIR/cassandra.pid) >/dev/null 2>&#038;1
+    rm -f $DATA_DIR/cassandra.pid
+    lsof -P | grep TCP | grep :7000 | grep LISTEN | awk '{print $2}' | xargs -r kill
+    echo -n Waiting for Cassandra terminate .
+    for RETRY in $(seq 1 $PATIENCE) ; do
+        $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+        [ $? -ne 0 ] &#038;& break
+        echo -n .
+        sleep 1
+    done
+    echo
+
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+    if [ $? -eq 0 ] ; then
+       echo "Cannot stop Cassandra"
+    else
+       echo "Cassandra stopped"
+    fi
+}
+
+status() {
+    unset CASSANDRA_INCLUDE
+    $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME info >/dev/null 2>&#038;1
+    if [ $? -eq 0 ] ; then
+        $CASSANDRA_HOME/bin/nodetool -h $HOSTNAME $1
+    else
+        echo "Cassandra is not running"
+    fi
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    status)
+        status info
+        ;;
+    ring)
+        status ring
+        ;;
+    *)
+        echo $"Usage: $(basename $0) {start|stop|restart|status|ring}"
+        exit 2
+esac
+</pre>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Mitchell		</title>
+		<link>https://xiehang.com/blog/2009/11/13/update-on-research/comment-page-1/#comment-2970</link>
+
+		<dc:creator><![CDATA[Scott Mitchell]]></dc:creator>
+		<pubDate>Tue, 14 Dec 2010 17:01:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=745#comment-2970</guid>
+
+					<description><![CDATA[Any chance that you can post the scripts that &quot;start/stop/restart Cassandra gracefully&quot;
+
+I am trying to do the same thing ... but having difficulty.
+
+Thanks in advance for any help you can provide.]]></description>
+			<content:encoded><![CDATA[<p>Any chance that you can post the scripts that &#8220;start/stop/restart Cassandra gracefully&#8221;</p>
+<p>I am trying to do the same thing &#8230; but having difficulty.</p>
+<p>Thanks in advance for any help you can provide.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

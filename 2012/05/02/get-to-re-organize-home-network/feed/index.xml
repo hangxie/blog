@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Get to re-organize home network	</title>
+	<atom:link href="https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 04 May 2012 18:25:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/comment-page-1/#comment-3604</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 04 May 2012 18:25:20 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1332#comment-3604</guid>
+
+					<description><![CDATA[Done with new ISP, new firmware for Linksys E1000 (DD-WRT), and new network arrangement (repeater mode), however the quality didn&#039;t change too much ... I need to locate a better place for the repeater, should close to garage as the bridge server is over there with always-poor-quality wifi signal.]]></description>
+			<content:encoded><![CDATA[<p>Done with new ISP, new firmware for Linksys E1000 (DD-WRT), and new network arrangement (repeater mode), however the quality didn&#8217;t change too much &#8230; I need to locate a better place for the repeater, should close to garage as the bridge server is over there with always-poor-quality wifi signal.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

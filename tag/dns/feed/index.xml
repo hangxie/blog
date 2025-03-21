@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dns &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/dns/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 11 Nov 2018 18:29:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Wildcard TLS certificate with Let&#8217;s Encrypt/certbot</title>
+		<link>https://xiehang.com/blog/2018/11/11/wildcard-tls-certificate-with-lets-encrypt-certbot/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 11 Nov 2018 18:27:05 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cert]]></category>
+		<category><![CDATA[certbot]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[letsencrypt]]></category>
+		<category><![CDATA[SSL]]></category>
+		<category><![CDATA[TLS]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1793</guid>
+
+					<description><![CDATA[certbot certonly \ --server https://acme-v02.api.letsencrypt.org/directory \ --manual \ --preferred-challenges dns \ -d 'xiehang.com,*.xiehang.com' &#160;]]></description>
+										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">certbot certonly \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --manual \
+    --preferred-challenges dns \
+    -d 'xiehang.com,*.xiehang.com'</pre>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Migrate domains to AWS</title>
+		<link>https://xiehang.com/blog/2018/11/07/migrate-domains-to-aws/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2018 17:21:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1791</guid>
+
+					<description><![CDATA[route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.]]></description>
+										<content:encoded><![CDATA[<p>route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Spiders &#8211; good and bad</title>
+		<link>https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/</link>
+					<comments>https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 25 Apr 2012 05:36:17 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[crawler]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[ttl]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1321</guid>
+
+					<description><![CDATA[While I was migrating my web sites from AWS US east to US west, it&#8217;s interesting to see behavior of those spiders, good and bad. I set TTL of my domain to 30 minutes, and after 12 hours some spiders are still NOT going to my new sites: Baidu &#8211; Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) Netease <a href='https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>While I was migrating my web sites from AWS US east to US west, it&#8217;s interesting to see behavior of those spiders, good and bad.</p>
+<p>I set TTL of my domain to 30 minutes, and after 12 hours some spiders are still NOT going to my new sites:<span id="more-1321"></span></p>
+<ul>
+<li>Baidu &#8211; Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)</li>
+<li>Netease &#8211; Mozilla/5.0 (compatible;YoudaoFeedFetcher/1.0;http://www.youdao.com/help/reader/faq/topic006/;1 subscribers;)</li>
+<li>Yandex &#8211; Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)</li>
+<li>Tencent &#8211; Sosospider+(+http://help.soso.com/webspider.htm)</li>
+</ul>
+<p>and among them Baidu and Netease were doing really agressive crawling for whatever reason &#8230; am I update my blog too frequently? <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>And here is the good list:</p>
+<ul>
+<li>Google &#8211; Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</li>
+<li>Google &#8211; Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 1 subscribers; feed-id=13667814432325378539)</li>
+<li>Bing &#8211; Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)</li>
+<li>What are these???
+<ul>
+<li>Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/2010040121 Firefox/3.0.19</li>
+<li>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)</li>
+<li>Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)</li>
+<li>BlogSearch/2 +http://www.icerocket.com/</li>
+<li>magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)/</li>
+</ul>
+</li>
+</ul>
+<p>Weird thing is that I didn&#8217;t see Sohu and Yahoo over there, maybe Yahoo had stopped crawling (replace homegrown technique with Microsoft&#8217;s Bing?). Also, it seems Tencent has deployment issue as it&#8217;s crawling both the new and old site, seems like its crawlers are not in sync.</p>
+<p>Will watch for another day then will shutdown the old box.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

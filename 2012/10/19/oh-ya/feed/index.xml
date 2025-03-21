@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Oh ya	</title>
+	<atom:link href="https://xiehang.com/blog/2012/10/19/oh-ya/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/10/19/oh-ya/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 26 Oct 2012 17:51:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/10/19/oh-ya/comment-page-1/#comment-3759</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 26 Oct 2012 17:51:17 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1412#comment-3759</guid>
+
+					<description><![CDATA[Dovecot support &lt;a href=&quot;http://wiki2.dovecot.org/PostLoginScripting&quot; rel=&quot;nofollow&quot;&gt;post-login script&lt;/a&gt; so tracking user&#039;s last login time is easy. However, I went to 1.x document site at the very beginning so it took me quite some time to figure out the configuration problem.
+
+Also, don&#039;t forget exec &quot;$@&quot; ... which could be the place that most mistakes come from.]]></description>
+			<content:encoded><![CDATA[<p>Dovecot support <a href="http://wiki2.dovecot.org/PostLoginScripting" rel="nofollow">post-login script</a> so tracking user&#8217;s last login time is easy. However, I went to 1.x document site at the very beginning so it took me quite some time to figure out the configuration problem.</p>
+<p>Also, don&#8217;t forget exec &#8220;$@&#8221; &#8230; which could be the place that most mistakes come from.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/10/19/oh-ya/comment-page-1/#comment-3756</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 21 Oct 2012 08:50:57 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1412#comment-3756</guid>
+
+					<description><![CDATA[BTW, outgoing mail backup is done as well, to the same place of incoming mailboxes.]]></description>
+			<content:encoded><![CDATA[<p>BTW, outgoing mail backup is done as well, to the same place of incoming mailboxes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/10/19/oh-ya/comment-page-1/#comment-3755</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 21 Oct 2012 08:33:48 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1412#comment-3755</guid>
+
+					<description><![CDATA[XMPP messages are now archived to mysql ... not that pretty but it works, thanks &lt;a href=&quot;http://www.ndl.kiev.ua/content/mod_archive_odbc-release&quot; rel=&quot;nofollow&quot;&gt;mod_archive_odbc&lt;/a&gt;, however, I still cannot make use of MySQL native server, so it is still based on libmyodbc.
+
+Information for this part is really limited, and erlang is not something that everyone can read and write, I will post some more details later on.]]></description>
+			<content:encoded><![CDATA[<p>XMPP messages are now archived to mysql &#8230; not that pretty but it works, thanks <a href="http://www.ndl.kiev.ua/content/mod_archive_odbc-release" rel="nofollow">mod_archive_odbc</a>, however, I still cannot make use of MySQL native server, so it is still based on libmyodbc.</p>
+<p>Information for this part is really limited, and erlang is not something that everyone can read and write, I will post some more details later on.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/10/19/oh-ya/comment-page-1/#comment-3754</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 21 Oct 2012 05:49:23 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1412#comment-3754</guid>
+
+					<description><![CDATA[Updates: I went back to maildrop as people are saying procmail is not that actively maintained and could fade away in the future.
+
+Status: now all incoming non-spam mails are copied to corresponding gmail accounts (don&#039;t want to use single one which may mess things up), and all spams went to spam folder (for IMAP/webmail).
+
+To-do: mail alert to XMPP client (how to avoid alert bombs?), XMPP message backup (should to go the same gmail account), and outgoing email backup.
+
+Stay tuned.]]></description>
+			<content:encoded><![CDATA[<p>Updates: I went back to maildrop as people are saying procmail is not that actively maintained and could fade away in the future.</p>
+<p>Status: now all incoming non-spam mails are copied to corresponding gmail accounts (don&#8217;t want to use single one which may mess things up), and all spams went to spam folder (for IMAP/webmail).</p>
+<p>To-do: mail alert to XMPP client (how to avoid alert bombs?), XMPP message backup (should to go the same gmail account), and outgoing email backup.</p>
+<p>Stay tuned.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

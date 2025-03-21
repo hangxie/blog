@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PPCam progress	</title>
+	<atom:link href="https://xiehang.com/blog/2009/04/01/ppcam-progress/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/04/01/ppcam-progress/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 02 Apr 2009 21:29:54 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/04/01/ppcam-progress/comment-page-1/#comment-26</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2009 21:29:54 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=193#comment-26</guid>
+
+					<description><![CDATA[&quot;use type&quot; is to make the code readable, so that we don&#039;t have to prefix package name, etc to the operator.]]></description>
+			<content:encoded><![CDATA[<p>&#8220;use type&#8221; is to make the code readable, so that we don&#8217;t have to prefix package name, etc to the operator.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/04/01/ppcam-progress/comment-page-1/#comment-25</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2009 04:52:07 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=193#comment-25</guid>
+
+					<description><![CDATA[Found the solution to eliminate command window, just add:
+
+pragma Linker_options(&quot;-mwindows&quot;);
+
+within the main procedure, it will look like a pure Windows application.
+
+I&#039;m going to check in tonight.]]></description>
+			<content:encoded><![CDATA[<p>Found the solution to eliminate command window, just add:</p>
+<p>pragma Linker_options(&#8220;-mwindows&#8221;);</p>
+<p>within the main procedure, it will look like a pure Windows application.</p>
+<p>I&#8217;m going to check in tonight.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/04/01/ppcam-progress/comment-page-1/#comment-24</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2009 04:05:21 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=193#comment-24</guid>
+
+					<description><![CDATA[I forgot to mention - it is a standalone application, or be more precisely, statically linked, so copy over to a Windows box it will just run, no installation, no DLL, no configuration, no registry.]]></description>
+			<content:encoded><![CDATA[<p>I forgot to mention &#8211; it is a standalone application, or be more precisely, statically linked, so copy over to a Windows box it will just run, no installation, no DLL, no configuration, no registry.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

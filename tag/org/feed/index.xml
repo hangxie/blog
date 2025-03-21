@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>org &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/org/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 12 Apr 2010 19:46:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>283 now</title>
+		<link>https://xiehang.com/blog/2010/04/12/283-now/</link>
+					<comments>https://xiehang.com/blog/2010/04/12/283-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 12 Apr 2010 19:46:37 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1006</guid>
+
+					<description><![CDATA[I still have headroom to grow, I think.]]></description>
+										<content:encoded><![CDATA[<p>I still have headroom to grow, I think.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/04/12/283-now/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>286 now</title>
+		<link>https://xiehang.com/blog/2010/03/22/286-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 22 Mar 2010 19:14:23 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=964</guid>
+
+					<description><![CDATA[I&#8217;m 286 now, compare with 290 a week ago &#8211; does it mean 4 people left in a week?]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m 286 now, compare with 290 a week ago &#8211; does it mean 4 people left in a week?</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>290 now</title>
+		<link>https://xiehang.com/blog/2010/02/22/290-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 22 Feb 2010 20:34:16 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=932</guid>
+
+					<description><![CDATA[Making good progress.]]></description>
+										<content:encoded><![CDATA[<p>Making good progress.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>300 now, congratuation!</title>
+		<link>https://xiehang.com/blog/2009/11/19/300-now-congratuation/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2009 18:54:01 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=761</guid>
+
+					<description><![CDATA[Alright, I&#8217;m 300 now, I think I reach my goal, though I need to check back if 300 is my goal or not.]]></description>
+										<content:encoded><![CDATA[<p>Alright, I&#8217;m 300 now, I think I reach my goal, though I need to check back if 300 is my goal or not.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>301 now</title>
+		<link>https://xiehang.com/blog/2009/11/06/301-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 07 Nov 2009 00:57:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=737</guid>
+
+					<description><![CDATA[Finally made some progress, I&#8217;m 301 now. BTW, there were lots of people left in the past couple of weeks, include Rasmus Lerdorf.]]></description>
+										<content:encoded><![CDATA[<p>Finally made some progress, I&#8217;m 301 now.</p>
+<p>BTW, there were lots of people left in the past couple of weeks, include Rasmus Lerdorf.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>302 now</title>
+		<link>https://xiehang.com/blog/2009/10/06/302-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2009 04:09:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=679</guid>
+
+					<description><![CDATA[Yes, making progress.]]></description>
+										<content:encoded><![CDATA[<p>Yes, making progress.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>303 now</title>
+		<link>https://xiehang.com/blog/2009/09/06/303-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 06 Sep 2009 16:07:08 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=657</guid>
+
+					<description><![CDATA[I didn&#8217;t check it for a while but obviously I made good progress, 303 :).]]></description>
+										<content:encoded><![CDATA[<p>I didn&#8217;t check it for a while but obviously I made good progress, 303 :).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>306 now</title>
+		<link>https://xiehang.com/blog/2009/07/30/306-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 30 Jul 2009 15:01:48 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=582</guid>
+
+					<description><![CDATA[Organization wise, I&#8217;m 306th employee now, my goal is getting to &#60;300 before I got kicked out, thinking of the changes happened recently, it could be a doable job.:D]]></description>
+										<content:encoded><![CDATA[<p>Organization wise, I&#8217;m 306th employee now, my goal is getting to &lt;300 before I got kicked out, thinking of the changes happened recently, it could be a doable job.:D</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>307 now</title>
+		<link>https://xiehang.com/blog/2009/07/14/307-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 14 Jul 2009 22:45:04 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=557</guid>
+
+					<description><![CDATA[I haven&#8217;t checked org page for couple of weeks, and found out I&#8217;m 307 now. Well done, let&#8217;s see if I can make &#60;300. 😀]]></description>
+										<content:encoded><![CDATA[<p>I haven&#8217;t checked org page for couple of weeks, and found out I&#8217;m 307 now.</p>
+<p>Well done, let&#8217;s see if I can make &lt;300. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>308 now</title>
+		<link>https://xiehang.com/blog/2009/06/22/308-now/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 22 Jun 2009 21:38:13 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[org]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=501</guid>
+
+					<description><![CDATA[Just read news that Kevin&#8217;s going to Microsoft, so I checked yorg site, no doubt, I&#8217;m 308 now compare with 309 couple of weeks back. Good luck Kevin. 🙂]]></description>
+										<content:encoded><![CDATA[<p>Just read news that Kevin&#8217;s going to Microsoft, so I checked yorg site, no doubt, I&#8217;m 308 now compare with 309 couple of weeks back.</p>
+<p>Good luck Kevin. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

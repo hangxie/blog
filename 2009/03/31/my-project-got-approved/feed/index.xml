@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: My project got approved	</title>
+	<atom:link href="https://xiehang.com/blog/2009/03/31/my-project-got-approved/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/03/31/my-project-got-approved/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 01 Apr 2009 05:29:14 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/03/31/my-project-got-approved/comment-page-1/#comment-23</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 01 Apr 2009 05:29:14 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=181#comment-23</guid>
+
+					<description><![CDATA[BTW, I&#039;m currently reading posts to comp.lang.ada (actually, comp.lang.lisp as well), interesting thread all around but, have to say, not that helpful as I was thinking.]]></description>
+			<content:encoded><![CDATA[<p>BTW, I&#8217;m currently reading posts to comp.lang.ada (actually, comp.lang.lisp as well), interesting thread all around but, have to say, not that helpful as I was thinking.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

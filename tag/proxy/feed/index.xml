@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>proxy &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/proxy/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 21 Mar 2014 16:34:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Squid&#8217;s outgoing IP round robin</title>
+		<link>https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/</link>
+					<comments>https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 21 Mar 2014 16:33:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[outgoing ip]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[round robin]]></category>
+		<category><![CDATA[squid]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1683</guid>
+
+					<description><![CDATA[Start from squid 3.2, as mentioned here, you can use random acl. This helps me achieve my goal to round-robin outgoing IP address as follow: [raw] acl one_fourth_1 random 1/4 acl one_fourth_2 random 1/3 acl one_fourth_3 random 1/2 acl one_fourth_4 random 1/1 tcp_outgoing_address xxx.xxx.xxx.203 one_fourth_1 tcp_outgoing_address xxx.xxx.xxx.204 one_fourth_2 tcp_outgoing_address xxx.xxx.xxx.205 one_fourth_3 tcp_outgoing_address xxx.xxx.xxx.206 one_fourth_4 [/raw] <a href='https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Start from squid 3.2, as mentioned <a href="http://wiki.squid-cache.org/Features/AclRandom">here</a>, you can use random acl. This helps me achieve my goal to round-robin outgoing IP address as follow:</p>
+<p>[raw]<br />
+acl one_fourth_1 random 1/4<br />
+acl one_fourth_2 random 1/3<br />
+acl one_fourth_3 random 1/2<br />
+acl one_fourth_4 random 1/1</p>
+<p>tcp_outgoing_address xxx.xxx.xxx.203 one_fourth_1<br />
+tcp_outgoing_address xxx.xxx.xxx.204 one_fourth_2<br />
+tcp_outgoing_address xxx.xxx.xxx.205 one_fourth_3<br />
+tcp_outgoing_address xxx.xxx.xxx.206 one_fourth_4<br />
+[/raw]</p>
+<p>Sure you need to have all these IPs configured on your server.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ProxySourceAddress under Apache HTTPd</title>
+		<link>https://xiehang.com/blog/2014/03/05/proxysourceaddress-under-apache-httpd/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Mar 2014 20:40:29 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[httpd]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[ProxySourceAddress]]></category>
+		<category><![CDATA[squid]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1674</guid>
+
+					<description><![CDATA[I just could not make it work although it seems pretty easy and straightforward. I have a machine with 4 IPs (216.x.x.203~206), and start Apache listening on 1203~1206 for each IP, then for each VirtualHost (such as 216.x.x.203:1203) I turn on ProxyRequests, and set ProxySourceAddress to that IP address, thus client connecting to 203 will <a href='https://xiehang.com/blog/2014/03/05/proxysourceaddress-under-apache-httpd/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I just could not make it work although it seems pretty easy and straightforward.</p>
+<p>I have a machine with 4 IPs (216.x.x.203~206), and start Apache listening on 1203~1206 for each IP, then for each VirtualHost (such as 216.x.x.203:1203) I turn on ProxyRequests, and set ProxySourceAddress to that IP address, thus client connecting to 203 will have their request go out through 203 as well.<span id="more-1674"></span></p>
+<p>It just didn&#8217;t work, I&#8217;m having this kind of messages in error_log:<br />
+<code><br />
+(98)Address already in use: [client 192.168.0.11:48822] AH00938: CONNECT: failed to bind socket to local address<br />
+</code></p>
+<p>Tried various configuration changes but didn&#8217;t make any difference. Since I was in a hurry to get my job done, so I switch to squid &#8211; everything was up and running as expected in ~15 min. Thinking of I never play with squid before, I have to say, squid is pretty user (read: admin) friendly.</p>
+<p>I&#8217;ve downloaded code from for httpd-2.4.7, and will dig in to see if it was because of my potential stupid mistakes, let&#8217;s see how things work. </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>tsocks on OSX</title>
+		<link>https://xiehang.com/blog/2012/04/18/tsocks-on-osx/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2012 19:49:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[segment fault]]></category>
+		<category><![CDATA[tsocks]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1312</guid>
+
+					<description><![CDATA[I installed tsocks on OSX through macport and it kept reporting &#8220;Segmentation fault: 11&#8221; for whatever command I issue, later on turned out I need to put &#8220;tordns_enable = false&#8221; in tsocks.conf to solve the problem. Don&#8217;t know why, and I told myself &#8211; don&#8217;t dig into things that don&#8217;t matter your core business, hehe.]]></description>
+										<content:encoded><![CDATA[<p>I installed tsocks on OSX through macport and it kept reporting &#8220;Segmentation fault: 11&#8221; for whatever command I issue, later on turned out I need to put &#8220;tordns_enable = false&#8221; in tsocks.conf to solve the problem.</p>
+<p>Don&#8217;t know why, and I told myself &#8211; don&#8217;t dig into things that don&#8217;t matter your core business, hehe.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>proxy through KR office</title>
+		<link>https://xiehang.com/blog/2009/07/05/proxy-through-kr-office/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 05 Jul 2009 23:08:56 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=542</guid>
+
+					<description><![CDATA[I was trying to get online last time and it was super slow, finally I picked to use proxy in KR which seems to be the best. So far seems things are working, it&#8217;s surely slow but obviously it&#8217;s acceptable.]]></description>
+										<content:encoded><![CDATA[<p>I was trying to get online last time and it was super slow, finally I picked to use proxy in KR which seems to be the best.</p>
+<p>So far seems things are working, it&#8217;s surely slow but obviously it&#8217;s acceptable.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

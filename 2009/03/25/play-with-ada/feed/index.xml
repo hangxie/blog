@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Play with Ada	</title>
+	<atom:link href="https://xiehang.com/blog/2009/03/25/play-with-ada/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/03/25/play-with-ada/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 27 Mar 2009 00:22:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/03/25/play-with-ada/comment-page-1/#comment-15</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 27 Mar 2009 00:22:48 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=140#comment-15</guid>
+
+					<description><![CDATA[Well, I got a P2P video chat program I wrote a while back with Delphi, I was thinking I lost it but just found it in a CVS repository while cleaning up one of the machines I maintained.
+
+I think this is a good place to start with, as the music player is a little bit more in terms of features. Also, converting things from Delphi (Pascal) to Ada should be easier compare with C/C++.]]></description>
+			<content:encoded><![CDATA[<p>Well, I got a P2P video chat program I wrote a while back with Delphi, I was thinking I lost it but just found it in a CVS repository while cleaning up one of the machines I maintained.</p>
+<p>I think this is a good place to start with, as the music player is a little bit more in terms of features. Also, converting things from Delphi (Pascal) to Ada should be easier compare with C/C++.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

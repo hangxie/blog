@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Notes on Nagios setup	</title>
+	<atom:link href="https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:09:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/comment-page-1/#comment-3640</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 02:05:42 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1372#comment-3640</guid>
+
+					<description><![CDATA[It seems check_dns.ncfg has a regex problem - \d should be [\.\d] otherwise it will take 0.011 second as 11 seconds.]]></description>
+			<content:encoded><![CDATA[<p>It seems check_dns.ncfg has a regex problem &#8211; \d should be [\.\d] otherwise it will take 0.011 second as 11 seconds.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/comment-page-1/#comment-3639</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Aug 2012 01:14:39 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1372#comment-3639</guid>
+
+					<description><![CDATA[Keep posting - I just enabled nagios check for php5-fpm service.
+
+First you need to enable status page for php5-fpm by uncommenting this in configuration:
+pm.status_path = /status
+
+Then grab &lt;a href=&quot;https://github.com/adoy/PHP-FastCGI-Client&quot; rel=&quot;nofollow&quot;&gt;fastcgi client library for php&lt;/a&gt;, then just several lines of code:
+
+&lt;pre&gt;$host = &#039;localhost&#039;;
+$port = 9000;
+$options = getopt(&#039;H:p:&#039;);
+if (isset($options[&#039;H&#039;]) &amp;&amp; !empty($options[&#039;H&#039;])) {
+    $host = $options[&#039;H&#039;];
+}
+if (isset($options[&#039;p&#039;]) &amp;&amp; !empty($options[&#039;p&#039;])) {
+    $port = $options[&#039;p&#039;];
+}
+
+$client = new FCGIClient($host, $port);
+$response = $client-&gt;request(
+                array(
+                    &#039;REQUEST_METHOD&#039; =&gt; &#039;GET&#039;,
+                    &#039;SCRIPT_FILENAME&#039; =&gt; &#039;/status&#039;,
+                    &#039;SCRIPT_NAME&#039; =&gt; &#039;/status&#039;,
+                    &#039;QUERY_STRING&#039; =&gt; &#039;&#039;
+                    ),
+                    &#039;&#039;
+                );
+echo str_replace(array(&quot;\r&quot;, &quot;\n&quot;), &quot; &quot;, $response);&lt;/pre&gt;
+
+and things are done. Sure you need to go through all configuration changes for nagios, nrpe, and grapher if you want.]]></description>
+			<content:encoded><![CDATA[<p>Keep posting &#8211; I just enabled nagios check for php5-fpm service.</p>
+<p>First you need to enable status page for php5-fpm by uncommenting this in configuration:<br />
+pm.status_path = /status</p>
+<p>Then grab <a href="https://github.com/adoy/PHP-FastCGI-Client" rel="nofollow">fastcgi client library for php</a>, then just several lines of code:</p>
+<pre>$host = 'localhost';
+$port = 9000;
+$options = getopt('H:p:');
+if (isset($options['H']) &#038;& !empty($options['H'])) {
+    $host = $options['H'];
+}
+if (isset($options['p']) &#038;& !empty($options['p'])) {
+    $port = $options['p'];
+}
+
+$client = new FCGIClient($host, $port);
+$response = $client->request(
+                array(
+                    'REQUEST_METHOD' => 'GET',
+                    'SCRIPT_FILENAME' => '/status',
+                    'SCRIPT_NAME' => '/status',
+                    'QUERY_STRING' => ''
+                    ),
+                    ''
+                );
+echo str_replace(array("\r", "\n"), " ", $response);</pre>
+<p>and things are done. Sure you need to go through all configuration changes for nagios, nrpe, and grapher if you want.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/comment-page-1/#comment-3638</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 02 Aug 2012 21:38:54 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1372#comment-3638</guid>
+
+					<description><![CDATA[And it seems service_name in nagios grapher&#039;s ncfg file have to match (partially is ok) service_name in nagios3&#039;s service configuration, otherwise it will be just simply ignored by grapher.]]></description>
+			<content:encoded><![CDATA[<p>And it seems service_name in nagios grapher&#8217;s ncfg file have to match (partially is ok) service_name in nagios3&#8217;s service configuration, otherwise it will be just simply ignored by grapher.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/comment-page-1/#comment-3635</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 02 Aug 2012 00:44:34 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1372#comment-3635</guid>
+
+					<description><![CDATA[Put some keywords here so that people can get help if they are searching online:
+
+No matching perfdata values found
+check_mysql
+check_mysql.ncfg
+nagios
+nagiosgrapher]]></description>
+			<content:encoded><![CDATA[<p>Put some keywords here so that people can get help if they are searching online:</p>
+<p>No matching perfdata values found<br />
+check_mysql<br />
+check_mysql.ncfg<br />
+nagios<br />
+nagiosgrapher</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/07/31/notes-on-nagios-setup/comment-page-1/#comment-3634</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 02 Aug 2012 00:42:22 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1372#comment-3634</guid>
+
+					<description><![CDATA[Here comes more about nagiosgrapher setup.
+
+After installation on Ubuntu, it seems several commonly used services were not added to default graph generation, include:
+
+&lt;ul&gt;
+&lt;li&gt;load&lt;/li&gt;
+&lt;li&gt;user&lt;/li&gt;
+&lt;li&gt;mysql&lt;/li&gt;
+&lt;/ul&gt;
+
+For load and user, it&#039;s pretty simple - copy corresponding check_*.ncfg files from /usr/share/nagiosgrapher/debian/cfg/ngraph.d/standard to /etc/nagiosgrapher/ngraph.d/standard, restart nagiosgrapher service, wait for all machines had done at least one check for both services (so that server&#039;s configuration under /etc/nagios3/conf.d/ngraph/serviceext got updated), then restart nagios3 service to make them show up in the web interface.
+
+mysql is a tricky thing, it seems check_mysql.ncfg has some problems so you need to tweak it (after copy to /etc/nagiosgrapher/ngraph.d/standard), include:
+
+&lt;ul&gt;
+&lt;li&gt;remove the first two sections as there is no such a thing in the stats talking about &quot;diff&quot;&lt;/li&gt;
+&lt;li&gt;rename all &#039;mysql-info&#039; to mysql&lt;/li&gt;
+&lt;li&gt;change Flushtables: to Flush tables: so it matches what exactly in the mysql status&lt;/li&gt;
+&lt;li&gt;change Opentables: to Open tables:, same reason as above&lt;/li&gt;
+&lt;li&gt;(I guess this is optional) change queries: to Slow queries:, and avg: to Queries per second avg:, I believe this is optional because the existing regular expression is runnable, though my changes make it easy to read&lt;/li&gt;
+&lt;/ul&gt;
+
+Then just do what I mentioned above for check_load and check_users, it should be there.
+
+Again there are something new in recent nagios - it can extract data from log (or status message) with graph_log_regex directive, while in the old days one can only read data from performance data parts. Sure you can still read data from value part with graph_perf_regex.]]></description>
+			<content:encoded><![CDATA[<p>Here comes more about nagiosgrapher setup.</p>
+<p>After installation on Ubuntu, it seems several commonly used services were not added to default graph generation, include:</p>
+<ul>
+<li>load</li>
+<li>user</li>
+<li>mysql</li>
+</ul>
+<p>For load and user, it&#8217;s pretty simple &#8211; copy corresponding check_*.ncfg files from /usr/share/nagiosgrapher/debian/cfg/ngraph.d/standard to /etc/nagiosgrapher/ngraph.d/standard, restart nagiosgrapher service, wait for all machines had done at least one check for both services (so that server&#8217;s configuration under /etc/nagios3/conf.d/ngraph/serviceext got updated), then restart nagios3 service to make them show up in the web interface.</p>
+<p>mysql is a tricky thing, it seems check_mysql.ncfg has some problems so you need to tweak it (after copy to /etc/nagiosgrapher/ngraph.d/standard), include:</p>
+<ul>
+<li>remove the first two sections as there is no such a thing in the stats talking about &#8220;diff&#8221;</li>
+<li>rename all &#8216;mysql-info&#8217; to mysql</li>
+<li>change Flushtables: to Flush tables: so it matches what exactly in the mysql status</li>
+<li>change Opentables: to Open tables:, same reason as above</li>
+<li>(I guess this is optional) change queries: to Slow queries:, and avg: to Queries per second avg:, I believe this is optional because the existing regular expression is runnable, though my changes make it easy to read</li>
+</ul>
+<p>Then just do what I mentioned above for check_load and check_users, it should be there.</p>
+<p>Again there are something new in recent nagios &#8211; it can extract data from log (or status message) with graph_log_regex directive, while in the old days one can only read data from performance data parts. Sure you can still read data from value part with graph_perf_regex.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>project &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/project/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 12 Jan 2012 00:30:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Free private Subversion hosting</title>
+		<link>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/</link>
+					<comments>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 12 Jan 2012 00:30:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[private]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1196</guid>
+
+					<description><![CDATA[Found this site is providing what I want &#8211; free subversion hosting for private projects: https://riouxsvn.com/]]></description>
+										<content:encoded><![CDATA[<p>Found this site is providing what I want &#8211; free subversion hosting for private projects:</p>
+<p><a href="https://riouxsvn.com/">https://riouxsvn.com/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>New project</title>
+		<link>https://xiehang.com/blog/2010/08/31/new-project/</link>
+					<comments>https://xiehang.com/blog/2010/08/31/new-project/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 01 Sep 2010 00:45:41 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[troubleshooting]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2010/08/31/new-project/</guid>
+
+					<description><![CDATA[Got another new project yesterday, I will have to improve the performance of registration letter, which has pretty high failure rate on gmail. Actually gmail has less than 10% market share but what I was told is that all gmail users are sort of “opinion leader”, which means they actively blogging, or as a journalist, <a href='https://xiehang.com/blog/2010/08/31/new-project/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Got another new project yesterday, I will have to improve the performance of registration letter, which has pretty high failure rate on gmail. Actually gmail has less than 10% market share but what I was told is that all gmail users are sort of “opinion leader”, which means they actively blogging, or as a journalist, or whatever.</p>
+<p>gmail believes they are cool, they don’t follow most of the conventions in this mail industry. However, since they take themselves as a hi-tech company, I’m going to solve this problem in hi-tech way.</p>
+<p>Or, maybe I’m wrong – to beat hi-tech companies, you always need to use low-tech skills <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/08/31/new-project/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Trouble with project management</title>
+		<link>https://xiehang.com/blog/2010/08/30/trouble-with-project-management/</link>
+					<comments>https://xiehang.com/blog/2010/08/30/trouble-with-project-management/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 31 Aug 2010 05:17:03 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[hiring]]></category>
+		<category><![CDATA[project]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2010/08/30/trouble-with-project-management/</guid>
+
+					<description><![CDATA[I’m having troubles in managing projects currently in my hands, I think I need to delegate some tasks so that I can focus on the most important thing, but who can do that? Supposedly there will be 3~4 people get on board in the coming month, and there should be one takes over product line, <a href='https://xiehang.com/blog/2010/08/30/trouble-with-project-management/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I’m having troubles in managing projects currently in my hands, I think I need to delegate some tasks so that I can focus on the most important thing, but who can do that?</p>
+<p>Supposedly there will be 3~4 people get on board in the coming month, and there should be one takes over product line, and the other can take over IT mail, and I will find another one (wish soon) covering consumer mail’s technical side, then I can step back to oversee everything.</p>
+<p>What I am doing now:</p>
+<ul>
+<li>The consumer mail, both production and technical and project management sides </li>
+<li>The IT (company’s) mail, technical side </li>
+<li>The universal message system, as a project manager </li>
+</ul>
+<p>and in each project there are several routes need to be taken care of …</p>
+<p>I’m lazy in hiring recently, I need to cheer myself up and back to energic.</p>
+<p>BTW, who’s still reading this blog, would you please post something so that I know I’m not talking to air?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/08/30/trouble-with-project-management/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Luck</title>
+		<link>https://xiehang.com/blog/2010/03/13/luck/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 13 Mar 2010 18:27:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[project]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=959</guid>
+
+					<description><![CDATA[I think I have luck, or 6th sense, or whatever, on technical areas. I used to learn something new just for fun, but later on this &#8220;something&#8221; helped me a lot on some serious projects. The most recent sample is Cassandra, I started playing with it since last Sep or Oct, it was just because <a href='https://xiehang.com/blog/2010/03/13/luck/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think I have luck, or 6th sense, or whatever, on technical areas. I used to learn something new just for fun, but later on this &#8220;something&#8221; helped me a lot on some serious projects.</p>
+<p>The most recent sample is Cassandra, I started playing with it since last Sep or Oct, it was just because I heard of this &#8220;NoSQL&#8221; idea and it was trying to solve the problem I&#8217;ve been working on for so long (BTW, I used to use LDAP). Then among all those NoSQL solutions, in couple of weeks I locked myself on Cassandra.</p>
+<p>Then my team switched from old project to the new one (start from Nov last year), and I got involved starting from this Jan (was doing transition prior to that). I heard about lot of different description about the project, but have no idea until Feb (yes, a month after I join the new project). Then, I found that knowledge I learn from Cassandra helped me really a lot, things like consistent hashing, dynamic deployment (adding/removing nodes, etc), and things like Avro (I don&#8217;t know how much Cassandra is using it, but it was the first time I heard of it).</p>
+<p>Actually there was another team was trying to use Cassandra for their new project, but executive (I&#8217;m not sure which level, maybe SVP or EVP) forced them moved to in-house solution, which is what we are working on, I don&#8217;t the story behind that, but you can definitely get the idea of how similar these two are.</p>
+<p>Anyway, I think it&#8217;s time to try something new as I need to prepare for my next project, it used to take 6 months or so.</p>
+<p>P.S. previous samples (for all those I can share with public):</p>
+<ul>
+<li>I started playing with HTTP/Socket, 8 months later I got a job from a web company. I was trying to let multiple clients using single mainframe connection (the whole office of ~15 people got only one connection as it was expensive and difficult to setup), it became a bridge based on TCP (TCP was still fancy at that time in my industry), then found that I can actually use it to serve queries over the web so I setup a Web server for that (over IIS I remember), etc.</li>
+<li>I started playing with Linux on my home machine, about 9 months later company officially announce that we are moving to RHEL. In the first 3 months of migration, I got huge number of pings from developers (FreeBSD experts) from different team over the IM, asking me this or that kind of question, and the most popular question is &#8220;how can I find out if this package got installed on my box?&#8221; and the answer is &#8220;rpm -qa | grep -i package-name&#8221; :-W &#8230;</li>
+<li>I started playing with MySQL (actually for a friend&#8217;s web site), 5 months later I became a heavy MySQL user/admin (I beat Oracle guys at that time, yeah)</li>
+<li>I started playing Windows SDK to do some desktop development, 3 months later one of my friends asked me to build a music player &#8211; that was a crazy project, I finished the first version in Delphi, my friend told me she can only find C++ developers, so I deliver a C++ Builder version, then she mentioned actually those developers know VC++ only (so there are lots of &#8220;C++&#8221; under Windows &gt;:) ), so the final version was actually VC++ Express</li>
+<li>and other 2~3 cases that I don&#8217;t think I can share as there are some internal terms which could be corporate trade secret &#8230;</li>
+</ul>
+<p>Sure there are some other negative cases, the most significant is Ada &#8211; I spent quite some time on GNAT, etc, did pretty much development, but so far I&#8217;m not seeing any possibility to utilize it in any projects.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Slowly warming up</title>
+		<link>https://xiehang.com/blog/2010/02/19/slowly-warming-up/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2010 18:40:10 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=930</guid>
+
+					<description><![CDATA[I think I had this problem for quite sometime &#8211; I&#8217;m really slow in warming up. This happened whenever I moved to a new group or a brand new project, that previous experience doesn&#8217;t help me. It seems I&#8217;m good at solving problems based on experience, so once experience becomes useless, I&#8217;m lost. I&#8217;ve been <a href='https://xiehang.com/blog/2010/02/19/slowly-warming-up/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think I had this problem for quite sometime &#8211; I&#8217;m really slow in warming up.</p>
+<p>This happened whenever I moved to a new group or a brand new project, that previous experience doesn&#8217;t help me. It seems I&#8217;m good at solving problems based on experience, so once experience becomes useless, I&#8217;m lost.</p>
+<p>I&#8217;ve been assigned to current project for months, and I started my &#8220;real&#8221; work about a month ago, but obviously only till now I can have some real ideas about what the system look like, and what we should do to make it works. I don&#8217;t think people like me in previous meetings as most time I was just sitting there listening, not much to present to the team (to help the project). Now the project is about to finish the design phrase, and seems I finally wake up :D. In the past two or three meetings I think I contribute a lot to the project.</p>
+<p>It could be another reason though &#8211; I may not be that interested with design stuffs, but once it becomes implementation I got my sense and become willing to do something.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

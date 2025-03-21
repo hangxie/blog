@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Pointer, template, performance, and memory leak	</title>
+	<atom:link href="https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 18 Apr 2012 06:21:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/comment-page-1/#comment-3591</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2012 06:21:43 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1306#comment-3591</guid>
+
+					<description><![CDATA[I decided to give up code tuning and turn on O2 only, STL is still about 40% slower than pointer, but with O2 I can make the library meets the performance requirement.]]></description>
+			<content:encoded><![CDATA[<p>I decided to give up code tuning and turn on O2 only, STL is still about 40% slower than pointer, but with O2 I can make the library meets the performance requirement.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

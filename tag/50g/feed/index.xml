@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>50G &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/50g/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 10 Jan 2013 16:29:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Ad: Media Fire</title>
+		<link>https://xiehang.com/blog/2013/01/10/ad-media-fire/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 10 Jan 2013 16:29:13 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[50G]]></category>
+		<category><![CDATA[cloud storage]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[media fire]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1466</guid>
+
+					<description><![CDATA[50G free space &#8211; http://www.mediafire.com./ I wish it can have a client like Google Drive or SkyDrive, that simply sync up a folder on the laptop, and I also wish it can have a iPad App (or HD, whatever) so that I don&#8217;t have to run iPhone app on my iPad, I wish it does <a href='https://xiehang.com/blog/2013/01/10/ad-media-fire/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>50G free space &#8211; http://www.mediafire.com./</p>
+<p>I wish it can have a client like Google Drive or SkyDrive, that simply sync up a folder on the laptop, and I also wish it can have a iPad App (or HD, whatever) so that I don&#8217;t have to run iPhone app on my iPad, I wish it does not set my uploads to public bu default, but &#8230;</p>
+<p>after all, it is still a great product thinking of 50G free storage, and it&#8217;s a developer friendly service that even I can understand their protocol <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>I&#8217;ve applied for a dev account and will try to build up either desktop app or ipad app for my own.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

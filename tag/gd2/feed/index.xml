@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gd2 &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/gd2/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 02 Aug 2013 23:19:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Should I move to GDChart?</title>
+		<link>https://xiehang.com/blog/2013/08/02/should-i-move-to-gdchart/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 23:19:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[gd2]]></category>
+		<category><![CDATA[gdchart]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phplot]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1565</guid>
+
+					<description><![CDATA[I think I&#8217;m going to play with Perl, PHP, and Python at almost the same time for some time, and thinking of the fact that dynamic graph is one of the most important feature for web pages, I think I need to find a cross-language solution. I&#8217;m happy with PHPlot and decide not to touch <a href='https://xiehang.com/blog/2013/08/02/should-i-move-to-gdchart/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think I&#8217;m going to play with Perl, PHP, and Python at almost the same time for some time, and thinking of the fact that dynamic graph is one of the most important feature for web pages, I think I need to find a cross-language solution.</p>
+<p>I&#8217;m happy with PHPlot and decide not to touch GD::Graph, and I came across GDChart which seems to be good in cross-platform/cross-language area. I will give it a try and will post the result here.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>smiley &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/smiley/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 20 Jun 2009 04:49:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Smiley test</title>
+		<link>https://xiehang.com/blog/2009/06/19/smiley-test/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jun 2009 07:30:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[smiley]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=472</guid>
+
+					<description><![CDATA[Testing smilies. I think I got it fixed &#8211; the problem is that &#8220;/&#8221; is used as delimiter of regular expression, and if &#8220;/&#8221; is part of a smiley&#8217;s pattern, the whole thing is broken. So I&#8217;m defining a delimiter variable in wp-includes/functions.php, in function smilies_init(), and use a character that can never be used <a href='https://xiehang.com/blog/2009/06/19/smiley-test/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Testing smilies.</p>
+<p>I think I got it fixed &#8211; the problem is that &#8220;/&#8221; is used as delimiter of regular expression, and if &#8220;/&#8221; is part of a smiley&#8217;s pattern, the whole thing is broken.</p>
+<p>So I&#8217;m defining a delimiter variable in wp-includes/functions.php, in function smilies_init(), and use a character that can never be used (well, sort of) &#8211; I&#8217;m using &#8220;\001&#8221; for now. Then replace all occurrences of &#8220;/&#8221; with $delimiter while composing $wp_smiliessearch, and that&#8217;s it.</p>
+<p>Only open issue, which I don&#8217;t think it is related, is that two continuous #:-s will have only one shows up, still debugging &#8230;<span id="more-472"></span></p>
+<table border="1" align="center">
+<tr>
+<td>&#58;&#64;&#41;</td>
+<td align="center">:@)</td>
+<td>&#61;&#80;&#126;</td>
+<td align="center">=P~</td>
+<td>&#61;&#112;&#126;</td>
+<td align="center">=p~</td>
+<td>&#62;&#58;&#80;</td>
+<td align="center">&gt;:P</td>
+<td>&#62;&#58;&#112;</td>
+<td align="center">&gt;:p</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#47;</td>
+<td align="center">:-/</td>
+<td>&#64;&#45;&#41;</td>
+<td align="center">@-)</td>
+<td>&#58;&#45;&#34;</td>
+<td align="center">:-&#8220;</td>
+<td>&#37;&#45;&#40;</td>
+<td align="center">%-(</td>
+<td>&#91;&#45;&#88;</td>
+<td align="center">[-X</td>
+</tr>
+<tr>
+<td>&#91;&#45;&#120;</td>
+<td align="center">[-x</td>
+<td>&#58;&#45;&#64;</td>
+<td align="center">:-@</td>
+<td>&#58;&#68;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#100;</td>
+<td align="center">:d</td>
+<td>&#58;&#45;&#68;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+</tr>
+<tr>
+<td>&#58;&#45;&#100;</td>
+<td align="center">:-d</td>
+<td>&#58;&#124;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#124;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#61;&#41;&#41;</td>
+<td align="center">=))</td>
+<td>&#59;&#59;&#41;</td>
+<td align="center">;;)</td>
+</tr>
+<tr>
+<td>&#73;&#45;&#41;</td>
+<td align="center">I-)</td>
+<td>&#105;&#45;&#41;</td>
+<td align="center">i-)</td>
+<td>&#58;&#42;</td>
+<td align="center">:*</td>
+<td>&#58;&#45;&#42;</td>
+<td align="center">:-*</td>
+<td>&#58;&#34;&#62;</td>
+<td align="center">:&#8221;&gt;</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#38;</td>
+<td align="center">:-&#038;</td>
+<td>&#58;&#41;&#93;</td>
+<td align="center">:)]</td>
+<td>&#58;&#45;&#83;&#83;</td>
+<td align="center">:-SS</td>
+<td>&#58;&#45;&#115;&#115;</td>
+<td align="center">:-ss</td>
+<td>&#58;&#45;&#115;&#83;</td>
+<td align="center">:-sS</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#83;&#115;</td>
+<td align="center">:-Ss</td>
+<td>&#126;&#79;&#41;</td>
+<td align="center">~O)</td>
+<td>&#126;&#111;&#41;</td>
+<td align="center">~o)</td>
+<td>&#42;&#42;&#61;&#61;</td>
+<td align="center">**==</td>
+<td>&#64;&#125;&#59;&#45;</td>
+<td align="center">@};-</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#60;</td>
+<td align="center">:-&lt;</td>
+<td>&#62;&#58;&#41;</td>
+<td align="center">&gt;:)</td>
+<td>&#91;&#45;&#79;&#60;</td>
+<td align="center">[-O&lt;</td>
+<td>&#91;&#45;&#111;&#60;</td>
+<td align="center">[-o&lt;</td>
+<td>&#98;&#45;&#40;</td>
+<td align="center">b-(</td>
+</tr>
+<tr>
+<td>&#66;&#45;&#40;</td>
+<td align="center">B-(</td>
+<td>&#58;&#94;&#111;</td>
+<td align="center">:^o</td>
+<td>&#58;&#94;&#79;</td>
+<td align="center">:^O</td>
+<td>&#59;&#41;&#41;</td>
+<td align="center">;))</td>
+<td>&#58;&#45;&#119;</td>
+<td align="center">:-w</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#87;</td>
+<td align="center">:-W</td>
+<td>&#58;&#45;&#83;</td>
+<td align="center">:-S</td>
+<td>&#58;&#45;&#115;</td>
+<td align="center">:-s</td>
+<td>&#58;&#45;&#106;</td>
+<td align="center">:-j</td>
+<td>&#58;&#45;&#74;</td>
+<td align="center">:-J</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#116;</td>
+<td align="center">:-t</td>
+<td>&#58;&#45;&#84;</td>
+<td align="center">:-T</td>
+<td>&#62;&#58;&#68;&#60;</td>
+<td align="center">&gt;:D&lt;</td>
+<td>&#62;&#58;&#100;&#60;</td>
+<td align="center">&gt;:d&lt;</td>
+<td>&#40;&#37;&#41;</td>
+<td align="center">(%)</td>
+</tr>
+<tr>
+<td>&#79;&#58;&#41;</td>
+<td align="center">O:)</td>
+<td>&#111;&#58;&#41;</td>
+<td align="center">o:)</td>
+<td>&#79;&#58;&#45;&#41;</td>
+<td align="center">O:-)</td>
+<td>&#111;&#58;&#45;&#41;</td>
+<td align="center">o:-)</td>
+<td>&#76;&#45;&#41;</td>
+<td align="center">L-)</td>
+</tr>
+<tr>
+<td>&#108;&#45;&#41;</td>
+<td align="center">l-)</td>
+<td>&#37;&#37;&#45;</td>
+<td align="center">%%-</td>
+<td>&#58;&#41;&#41;</td>
+<td align="center">:))</td>
+<td>&#58;&#45;&#41;&#41;</td>
+<td align="center">:-))</td>
+<td>&#58;&#79;</td>
+<td align="center">:O</td>
+</tr>
+<tr>
+<td>&#58;&#111;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#79;</td>
+<td align="center">:-O</td>
+<td>&#58;&#45;&#111;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#111;&#61;&#62;</td>
+<td align="center">o=&gt;</td>
+<td>&#79;&#61;&#62;</td>
+<td align="center">O=&gt;</td>
+</tr>
+<tr>
+<td>&#58;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#66;</td>
+<td align="center">:-B</td>
+<td>&#58;&#45;&#98;</td>
+<td align="center">:-b</td>
+<td>&#40;&#126;&#126;&#41;</td>
+<td align="center">(~~)</td>
+</tr>
+<tr>
+<td>&#94;&#58;&#41;&#94;</td>
+<td align="center">^:)^</td>
+<td>&#61;&#59;</td>
+<td align="center">=;</td>
+<td>&#58;&#45;&#76;</td>
+<td align="center">:-L</td>
+<td>&#58;&#45;&#108;</td>
+<td align="center">:-l</td>
+<td>&#58;&#62;</td>
+<td align="center">:&gt;</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#62;</td>
+<td align="center">:-&gt;</td>
+<td>&#66;&#45;&#41;</td>
+<td align="center">B-)</td>
+<td>&#98;&#45;&#41;</td>
+<td align="center">b-)</td>
+<td>&#58;&#45;&#99;</td>
+<td align="center">:-c</td>
+<td>&#58;&#45;&#67;</td>
+<td align="center">:-C</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#63;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f615.png" alt="😕" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#40;&#42;&#41;</td>
+<td align="center">(*)</td>
+<td>&#60;&#41;&#58;&#41;</td>
+<td align="center">&lt;):)</td>
+<td>&#61;&#40;&#40;</td>
+<td align="center">=((</td>
+<td>&#58;&#45;&#104;</td>
+<td align="center">:-h</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#72;</td>
+<td align="center">:-H</td>
+<td>&#62;&#58;&#47;</td>
+<td align="center">&gt;:/</td>
+<td>&#61;&#58;&#41;</td>
+<td align="center">=:)</td>
+<td>&#58;&#111;&#51;</td>
+<td align="center">:o3</td>
+<td>&#58;&#79;&#51;</td>
+<td align="center">:O3</td>
+</tr>
+<tr>
+<td>&#56;&#45;&#62;</td>
+<td align="center">8-&gt;</td>
+<td>&#58;&#45;&#63;&#63;</td>
+<td align="center">:-??</td>
+<td>&#126;&#58;&#62;</td>
+<td align="center">~:&gt;</td>
+<td>&#91;&#45;&#40;</td>
+<td align="center">[-(</td>
+<td>&#58;&#79;&#41;</td>
+<td align="center">:O)</td>
+</tr>
+<tr>
+<td>&#58;&#111;&#41;</td>
+<td align="center">:o)</td>
+<td>&#47;&#58;&#41;</td>
+<td align="center">/:)</td>
+<td>&#35;&#58;&#45;&#115;</td>
+<td align="center">#:-s</td>
+<td>&#35;&#58;&#45;&#83;</td>
+<td align="center">#:-S</td>
+<td>&#56;&#45;&#124;</td>
+<td align="center">8-|</td>
+</tr>
+<tr>
+<td>&#56;&#45;&#125;</td>
+<td align="center">8-}</td>
+<td>&#58;&#80;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#112;</td>
+<td align="center">:p</td>
+<td>&#58;&#45;&#80;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#112;</td>
+<td align="center">:-p</td>
+</tr>
+<tr>
+<td>&#40;&#58;&#124;</td>
+<td align="center">(:|</td>
+<td>&#61;&#68;&#62;</td>
+<td align="center">=D&gt;</td>
+<td>&#61;&#100;&#62;</td>
+<td align="center">=d&gt;</td>
+<td>&#58;&#40;&#40;</td>
+<td align="center">:((</td>
+<td>&#58;&#45;&#40;&#40;</td>
+<td align="center">:-((</td>
+</tr>
+<tr>
+<td>&#58;&#40;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#45;&#40;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#41;&#62;&#45;</td>
+<td align="center">:)&gt;-</td>
+<td>&#92;&#58;&#68;&#47;</td>
+<td align="center">\:D/</td>
+<td>&#92;&#58;&#100;&#47;</td>
+<td align="center">\:d/</td>
+</tr>
+<tr>
+<td>&#51;&#58;&#45;&#79;</td>
+<td align="center">3:-O</td>
+<td>&#51;&#58;&#45;&#111;</td>
+<td align="center">3:-o</td>
+<td>&#62;&#45;&#41;</td>
+<td align="center">&gt;-)</td>
+<td>&#56;&#45;&#88;</td>
+<td align="center">8-X</td>
+<td>&#56;&#45;&#120;</td>
+<td align="center">8-x</td>
+</tr>
+<tr>
+<td>&#58;&#45;&#36;</td>
+<td align="center">:-$</td>
+<td>&#36;&#45;&#41;</td>
+<td align="center">$-)</td>
+<td>&#58;&#40;&#124;&#41;</td>
+<td align="center">:(|)</td>
+<td>&#59;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#59;&#45;&#41;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+</tr>
+<tr>
+<td>&#60;&#58;&#45;&#80;</td>
+<td align="center">&lt;:-P</td>
+<td>&#60;&#58;&#45;&#112;</td>
+<td align="center">&lt;:-p</td>
+<td>&#58;&#120;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td>&#58;&#88;</td>
+<td align="center">:X</td>
+<td>&#58;&#45;&#120;</td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+</tr>
+<tr>
+<td>&#58;&#45;&#88;</td>
+<td align="center">:-X</td>
+<td>&#88;&#40;</td>
+<td align="center">X(</td>
+<td>&#120;&#40;</td>
+<td align="center">x(</td>
+<td>&#88;&#45;&#40;</td>
+<td align="center">X-(</td>
+<td>&#120;&#45;&#40;</td>
+<td align="center">x-(</td>
+</tr>
+<tr>
+<td>&#111;&#45;&#62;</td>
+<td align="center">o-&gt;</td>
+<td>&#79;&#45;&#62;</td>
+<td align="center">O-&gt;</td>
+<td>&#42;&#45;&#58;&#41;</td>
+<td align="center">*-:)</td>
+<td>&#126;&#88;&#40;</td>
+<td align="center">~X(</td>
+<td>&#126;&#120;&#40;</td>
+<td align="center">~x(</td>
+</tr>
+<tr>
+<td>&#35;&#45;&#111;</td>
+<td align="center">#-o</td>
+<td>&#111;&#45;&#43;</td>
+<td align="center">o-+</td>
+<td>&#79;&#45;&#43;</td>
+<td align="center">O-+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Upgrade problem all the places</title>
+		<link>https://xiehang.com/blog/2009/06/12/upgrade-problem-all-the-places/</link>
+					<comments>https://xiehang.com/blog/2009/06/12/upgrade-problem-all-the-places/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2009 03:51:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[fedora]]></category>
+		<category><![CDATA[smiley]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=459</guid>
+
+					<description><![CDATA[While I was trying to upgrade a friend&#8217;s Fedora machine from 10 to 11, I found that the yum got some problems with mirrorlist file, which had been addressed with Fedora/yum guys, but so there there is no fix, just a workaround. Then yesterday WordPress prompted there is a new version can be upgraded to, <a href='https://xiehang.com/blog/2009/06/12/upgrade-problem-all-the-places/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>While I was trying to upgrade a friend&#8217;s Fedora machine from 10 to 11, I found that the yum got some problems with mirrorlist file, which had been addressed with Fedora/yum guys, but so there there is no fix, just a workaround.</p>
+<p>Then yesterday WordPress prompted there is a new version can be upgraded to, so I did &#8230; everything went smoothly, automatic upgrade, so fancy, but after upgrade &#8211; hold on, all my posts became PHP error message.</p>
+<p>Obviously the new 2.8 does not support old smiley well, or at least it changed requirement of the smileys&#8217; pattern. I haven&#8217;t found the root cause yet so I don&#8217;t know what&#8217;s the workaround so far, so I just simply disabled smiley and seems it works fine to me, so far.</p>
+<p>I will post here later if I found anything.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/06/12/upgrade-problem-all-the-places/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

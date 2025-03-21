@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>apple &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/apple/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 06 Apr 2010 03:08:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Bankruptcy!</title>
+		<link>https://xiehang.com/blog/2010/04/05/bankruptcy/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2010 03:08:47 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[car]]></category>
+		<category><![CDATA[ipad]]></category>
+		<category><![CDATA[money]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=996</guid>
+
+					<description><![CDATA[It&#8217;s the month of spending for sure. Replaced 8 tires on two cars, cost me $1,200, will buy the iPad, which will take at least $500, air ticket will be another $500 or so, trip to LA, $2,000 or even $3,000 &#8230; Bankruptcy, I am heading to.]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s the month of spending for sure.</p>
+<p>Replaced 8 tires on two cars, cost me $1,200, will buy the iPad, which will take at least $500, air ticket will be another $500 or so, trip to LA, $2,000 or even $3,000 &#8230;</p>
+<p>Bankruptcy, I am heading to.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Moving the PowerBook back as a &#8230; PowerBook</title>
+		<link>https://xiehang.com/blog/2009/12/02/moving-the-powerbook-back-as-a-powerbook/</link>
+					<comments>https://xiehang.com/blog/2009/12/02/moving-the-powerbook-back-as-a-powerbook/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 02 Dec 2009 21:18:02 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[osx]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=795</guid>
+
+					<description><![CDATA[Since proxmox gives me great VM performance, I&#8217;m moving PowerBook (was running Fedora) back to be a PowerBoox, running OSX 10.5. It will be a client box still, but it will not be a dedicated dev related box.]]></description>
+										<content:encoded><![CDATA[<p>Since proxmox gives me great VM performance, I&#8217;m moving PowerBook (was running Fedora) back to be a PowerBoox, running OSX 10.5.</p>
+<p>It will be a client box still, but it will not be a dedicated dev related box.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/02/moving-the-powerbook-back-as-a-powerbook/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>GarageBand, OS X, and PowerBook</title>
+		<link>https://xiehang.com/blog/2009/08/17/garageband-os-x-and-powerbook/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 17 Aug 2009 17:42:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[music]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=630</guid>
+
+					<description><![CDATA[Some guy showed me how to use GarageBand to create fancy music thing during a open house event of a piano school, it was pretty impressive and he told me the software is free from Mac, so I decided to give it a try. Pity once I got home, after checking the PowerBook (but it&#8217;s <a href='https://xiehang.com/blog/2009/08/17/garageband-os-x-and-powerbook/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Some guy showed me how to use GarageBand to create fancy music thing during a open house event of a piano school, it was pretty impressive and he told me the software is free from Mac, so I decided to give it a try.</p>
+<p>Pity once I got home, after checking the PowerBook (but it&#8217;s running the latest Leopard), I found no GarageBand at all. It seems it&#8217;s part of iLife, which is not free &#8211; It could be free for new Mac buyers but obviously I&#8217;m not.</p>
+<p>Then someone post a review on Apple&#8217;s new Snow Leopard, there are only two things I got from the article &#8211; 64-bit support, and office usage. I don&#8217;t think my old PowerBook qualifies to either of them, so most likely it will run current Leopard forever.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Which application type is suitable for Mac?</title>
+		<link>https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 21 May 2009 19:41:22 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[carbon]]></category>
+		<category><![CDATA[cocoa]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[objective c]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/</guid>
+
+					<description><![CDATA[I don&#8217;t quite understand application types under Mac (OS X), I remember I stopped trying out XCode just because I cannot determine which one to use, and I also made wrong assumption that Java is the way to go as I can share (some) source codes cross platforms. Now I got a book talking about <a href='https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t quite understand application types under Mac (OS X), I remember I stopped trying out XCode just because I cannot determine which one to use, and I also made wrong assumption that Java is the way to go as I can share (some) source codes cross platforms.</p>
+<p>Now I got a book talking about how to build Mac applications with XCode, and it clearly stated:</p>
+<p>For Carbon:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">The Carbon template defines a pure Carbon application. Carbon is the C interfaces to Aqua and the legacy support for applications written using the APIs in Mac OS 9 and earlier. Use this template if you are porting an application from OS 9 to OS X, or you want to create native applications using only C or C++. The main.c file includes a skeletal application that loads the main.nib file, creates the application&#8217;s window, and starts the main event loop. See <a href="http://developer.apple.com/carbon/" target="_top"><span style="color: blue;">http://developer.apple.com/carbon/</span></a> for more information about Carbon applications.</span></p></blockquote>
+<p>For Java/Cocoa:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Mac OS X includes an extensive bridge between the Java programming language and the Objective-C APIs defined in the Cocoa framework. These Java proxy objects make it possible to use most of the Cocoa and Foundation frameworks as though they had been written in Java. If you need to create a native Cocoa application and prefer, or require, the Java programming language, create a Cocoa-Java application. The template sets up a Cocoa application whose native executable is the Cocoa-Java stub. This stub application creates a Java runtime, that loads and starts the Java classes which constitute the application. Read more about mixing Java and Cocoa at <a href="http://developer.apple.com/documentation/Cocoa/Java-date.html" target="_top"><span style="color: blue;">http://developer.apple.com/documentation/Cocoa/Java-date.html</span></a>. Apple has recently announced that it will no longer be updating in the Cocoa-Java bridge beyond Mac OS X 10.3, so the future of this technology is murky.<br />
+</span></p></blockquote>
+<p>For Cocoa:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Cocoa is the preferred application development technology for Mac OS X. It is based on the Objective-C programming language. The Cocoa framework is the Objective-C interfaces to Aqua and most other Apple technologies. If OS X has a &#8220;native&#8221; development environment, Objective-C and Cocoa are it. A few technologies are only available using Cocoa interfaces. The Cocoa template creates a minimal Cocoa application. The only functional part of the project is the main.m file which does nothing but create and start the generic </span><span style="font-size: 10pt; line-height: 115%; font-family: &quot;Courier New&quot;;">NSApplication</span><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"> object. It does provide generic handling of the About This Program menu item, but it does not include a Credits.rtf file. </span></p></blockquote>
+<p>From three paragraphs above, it is clearly Java is NOT the way to go, it will be dropped by Apple sometime in the future, also Carbon is for legacy applications.</p>
+<p>So, the right way is indeed doing Cocoa application with Objective-C, I get to read around to see if I can get some tests done.</p>
+<p>I&#8217;ve upgraded my PowerBook months back with latest OS X (Leopard), plus makek it 2G memory, so that I&#8217;ve been able to install XCode, however, the machine had been idle since the upgrade, I should do something so not to waste my money (I have enough time now, not using my time is just a waste).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

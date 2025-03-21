@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>flash &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/flash/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 14 Jan 2014 23:35:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>HTC Inspire 4G finally came back</title>
+		<link>https://xiehang.com/blog/2014/01/14/htc-inspire-4g-finally-came-back/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 14 Jan 2014 23:35:06 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[htc]]></category>
+		<category><![CDATA[rom]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1614</guid>
+
+					<description><![CDATA[It was flashed to various ROM then unable to have a stable version, and today I finally got a stable 4.0.4 and make it back to work again. Lucky day!]]></description>
+										<content:encoded><![CDATA[<p>It was flashed to various ROM then unable to have a stable version, and today I finally got a stable 4.0.4 and make it back to work again.</p>
+<p>Lucky day!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Flashed Kindle Fire with Jelly Bean</title>
+		<link>https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/</link>
+					<comments>https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 09 Aug 2013 00:03:27 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[jelly bean]]></category>
+		<category><![CDATA[kindle]]></category>
+		<category><![CDATA[kindle fire]]></category>
+		<category><![CDATA[rom]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1573</guid>
+
+					<description><![CDATA[It was just for fun, and this would be a good exercise for potential migrating my AT&#38;T phone to some other images &#8211; I need hotspot feature but it&#8217;s a premium feature from AT&#38;T &#8230; Back to Kindle Fire, the process was pretty simple &#8211; root it, flash with new root image and gapp, that&#8217;s <a href='https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It was just for fun, and this would be a good exercise for potential migrating my AT&amp;T phone to some other images &#8211; I need hotspot feature but it&#8217;s a premium feature from AT&amp;T &#8230;</p>
+<p>Back to Kindle Fire, the process was pretty simple &#8211; root it, flash with new root image and gapp, that&#8217;s it. However, after that it seems some Apps are not that stable, crash or slow respond from time to time, though some other Apps run smoothly. I&#8217;m not sure so far if it is problem from Apps (i.e. compatibility issue with Jelly Bean), or it is Jelly Bean I was using is having problem with Kindle Fire (incompatible or poor hardware). I will play with them for a while and post here if I see anything interesting.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Upgrade MK802III to rooted Android</title>
+		<link>https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-rooted-android/</link>
+					<comments>https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-rooted-android/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 17 Jan 2013 21:52:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[mk802III]]></category>
+		<category><![CDATA[rooted]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1474</guid>
+
+					<description><![CDATA[Refer to Recover a bricked MK802III for requirements, plus you need a micro SD to transfer the update file Download the zip file from here Unzip the zip file, you will see &#8220;update.zip&#8221;, copy it to micro SD Move the micro SD from your computer to MK802III, it will automatically recognize the update image. Follow <a href='https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-rooted-android/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Refer to <a href="https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/">Recover a bricked MK802III</a> for requirements, plus you need a micro SD to transfer the update file</p>
+<ol>
+<li>Download the zip file from <a href="http://www.rikomagic.co.uk/forum/viewtopic.php?f=9&amp;t=3193">here</a></li>
+<li>Unzip the zip file, you will see &#8220;update.zip&#8221;, copy it to micro SD</li>
+<li>Move the micro SD from your computer to MK802III, it will automatically recognize the update image.</li>
+<li>Follow instructions on the screen to finish the upgrade, this will take 3~5 minutes and the stick will reboot couple of times</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-rooted-android/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Recover a bricked MK802III</title>
+		<link>https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/</link>
+					<comments>https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 17 Jan 2013 21:51:03 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[bricked]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[mk802III]]></category>
+		<category><![CDATA[recovery]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1472</guid>
+
+					<description><![CDATA[What you need: Macbook Pro + Virtual Box + Windows XP VM Alright, I&#8217;m kidding … you just need a Windows machine, I tried Windows 7 and Windows 8 (using Windows 7 drivers) are both working, but in case you just have a Mac like me, VM is the way to go. You&#8217;d better map <a href='https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>What you need:</p>
+<ol>
+<li>Macbook Pro + Virtual Box + Windows XP VM<br />
+Alright, I&#8217;m kidding … you just need a Windows machine, I tried Windows 7 and Windows 8 (using Windows 7 drivers) are both working, but in case you just have a Mac like me, VM is the way to go. You&#8217;d better map all USB devices to the Windows VM since it changes name during regular boot+USB debugging, and recovery boot.</li>
+<li>Download the recovery kit from <a href="http://www.rikomagic.com/En/download.asp">here</a>, use the MK802III link, you will get a zip file. Unzip, launch RKBatchTool.exe and leave it running on your Windows machine.</li>
+<li>Unplug everything from MK802III, open the case of MK802III &#8211; nail is the best tool for me and it should work for you as well</li>
+<li>Follow the document (one in English and one in Chinese) to short circuit the two pins, and plug in the USB to your computer at the same time. I actually found there are two small dot beside the other side of the chip which is more easier if you have a flat metal piece instead of a tiny needle.</li>
+<li>If everything works smoothly, you will see one block in the RKBatchTool.exe interface changed to some other color (different color may have different meaning, but I really want to ignore it for now).</li>
+<li>Click the button with &#8220;…&#8221; on the top right corner of the RKBatchTool.exe interface, pick the img file from the zip archive (should be RKM802III_20121115Recovery.img), click &#8220;Upgrade&#8221; button (that&#8217;s the 2nd button from left, at the bottom of the interface), it will take 2~3 minutes.</li>
+<li>Power off/on the MK802III, you will get original official Android back running on the stick.</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thinking about Flash</title>
+		<link>https://xiehang.com/blog/2011/12/02/thinking-about-flash/</link>
+					<comments>https://xiehang.com/blog/2011/12/02/thinking-about-flash/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Dec 2011 10:31:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[adobe]]></category>
+		<category><![CDATA[flash]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1161</guid>
+
+					<description><![CDATA[I&#8217;m thinking of learning some basic Flash skill now, but is it good time? I don&#8217;t think so 😛 . Thinking of what Adobe had done recently.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m thinking of learning some basic Flash skill now, but is it good time?</p>
+<p>I don&#8217;t think so <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> . Thinking of what Adobe had done recently.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/12/02/thinking-about-flash/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

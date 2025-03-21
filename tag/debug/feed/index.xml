@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>debug &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/debug/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 07 Nov 2018 17:19:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Reverse engineering HTTP requests</title>
+		<link>https://xiehang.com/blog/2018/11/07/reverse-engineering-http-requests/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2018 17:18:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1789</guid>
+
+					<description><![CDATA[tcpdump -A -s 10240 'tcp port 8080' \ &#124; egrep --line-buffered "^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )&#124;^[0-9][0-9]:[0-9][0-9]&#124;^[A-Za-z0-9-]+: " \ &#124; sed -r 's/^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g' &#160;]]></description>
+										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">tcpdump -A -s 10240 'tcp port 8080' \
+| egrep --line-buffered "^........(GET |HTTP\/|POST |HEAD )|^[0-9][0-9]:[0-9][0-9]|^[A-Za-z0-9-]+: " \
+| sed -r 's/^........(GET |HTTP\/|POST |HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g'</pre>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>tsocks on OSX</title>
+		<link>https://xiehang.com/blog/2012/04/18/tsocks-on-osx/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2012 19:49:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[segment fault]]></category>
+		<category><![CDATA[tsocks]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1312</guid>
+
+					<description><![CDATA[I installed tsocks on OSX through macport and it kept reporting &#8220;Segmentation fault: 11&#8221; for whatever command I issue, later on turned out I need to put &#8220;tordns_enable = false&#8221; in tsocks.conf to solve the problem. Don&#8217;t know why, and I told myself &#8211; don&#8217;t dig into things that don&#8217;t matter your core business, hehe.]]></description>
+										<content:encoded><![CDATA[<p>I installed tsocks on OSX through macport and it kept reporting &#8220;Segmentation fault: 11&#8221; for whatever command I issue, later on turned out I need to put &#8220;tordns_enable = false&#8221; in tsocks.conf to solve the problem.</p>
+<p>Don&#8217;t know why, and I told myself &#8211; don&#8217;t dig into things that don&#8217;t matter your core business, hehe.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

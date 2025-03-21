@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>overture &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/overture/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 17 Mar 2012 19:40:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Don&#8217;t try to solve every single problem</title>
+		<link>https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/</link>
+					<comments>https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 17 Mar 2012 19:40:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cmake]]></category>
+		<category><![CDATA[focus]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[overture]]></category>
+		<category><![CDATA[piano]]></category>
+		<category><![CDATA[problem]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1290</guid>
+
+					<description><![CDATA[You have to admit that you are not a superman, so you could not solve every problem you met, even if they are in same/similar area. I was playing with MuseScore which is an open source alternative to Overture, however it kept crashing while open some specific ove files. After searching around and reading some <a href='https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>You have to admit that you are not a superman, so you could not solve every problem you met, even if they are in same/similar area.</p>
+<p>I was playing with <a href="http://musescore.org/">MuseScore</a> which is an open source alternative to Overture, however it kept crashing while open some specific ove files. After searching around and reading some posts, you must have guessed what I did &#8211; checkout source codes and start building.</p>
+<p>It&#8217;s fun, I guess that saying was correct &#8211; programmers used to want to face problems that hard to solve. Well, this does not mean I can solve the problem :D. After (accidently) upgraded Xcode to 4.3, I have to install a nightly build version of CMake to get rid of the &#8220;-buildstyle&#8221; problem, then spent quite some time on trying to build mscore from scratch, but so far no luck.</p>
+<p>This morning I asked myself, WHY? Let&#8217;s forget about what was being debated in my mind, but now I decided to give it up, at last before I can finish my term extraction project which can help me make living, for real.</p>
+<p>In the mean while, I will postpone all mobile development for several weeks. Actually I made pretty good progress with Windows Phone 7 development, and it won&#8217;t take me too long to finish a WP version for my AWS client, but I want to push it to late April.</p>
+<p>Focus please, you cannot solve every single problem you meet.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/03/17/dont-try-to-solve-every-single-problem/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

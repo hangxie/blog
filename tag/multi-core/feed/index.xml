@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>multi-core &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/multi-core/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 18 Jan 2010 21:29:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Cassandra and multi-core</title>
+		<link>https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/</link>
+					<comments>https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 18 Jan 2010 21:29:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[multi-core]]></category>
+		<category><![CDATA[multi-thread]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=900</guid>
+
+					<description><![CDATA[It seems Cassandra creates a big pile of threads for different tasks, I didn&#8217;t step into details, but I&#8217;m pretty sure it has more than 40 threads with default setting on a 2-nodes cluster. So multi core may not be a concern, as all these threads can run on different cores to fully utilize the <a href='https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems Cassandra creates a big pile of threads for different tasks, I didn&#8217;t step into details, but I&#8217;m pretty sure it has more than 40 threads with default setting on a 2-nodes cluster. So multi core may not be a concern, as all these threads can run on different cores to fully utilize the CPU resource.</p>
+<p>However, my tests show something really worry me &#8211; multi-node cluster performs worse than single node (due to inter-node communication I believe), and multi-cores deployment is slower than single-core deployment (this is something I don&#8217;t quite understand, may be because of L1/L2 cache?).</p>
+<p>I need some hardware to test it as well, as VM is not that good for this kind of test. Then I suddenly recall I still have some 8-core/16G boxes in company sitting idle there, I can use one or two to do the test for sure <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

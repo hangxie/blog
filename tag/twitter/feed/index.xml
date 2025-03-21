@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>twitter &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/twitter/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 22 Jan 2010 17:55:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Unfollowing</title>
+		<link>https://xiehang.com/blog/2010/01/22/unfollowing/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Jan 2010 17:55:19 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[couchdb]]></category>
+		<category><![CDATA[mongodb]]></category>
+		<category><![CDATA[twitter]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=920</guid>
+
+					<description><![CDATA[I &#8220;unfollowed&#8221; all Linux distros as they didn&#8217;t give me much useful information, I&#8217;m still following CouchDB, Cassandra, and MongoDB, so far their tweets are kind of helpful. Also I subscribed to Cassandra&#8217;s user mailing list, lots of interesting topics there.]]></description>
+										<content:encoded><![CDATA[<p>I &#8220;unfollowed&#8221; all Linux distros as they didn&#8217;t give me much useful information, I&#8217;m still following CouchDB, Cassandra, and MongoDB, so far their tweets are kind of helpful.</p>
+<p>Also I subscribed to Cassandra&#8217;s user mailing list, lots of interesting topics there.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Following but not being followed</title>
+		<link>https://xiehang.com/blog/2010/01/15/following-but-not-being-followed/</link>
+					<comments>https://xiehang.com/blog/2010/01/15/following-but-not-being-followed/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 15 Jan 2010 17:47:01 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[twitter]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=884</guid>
+
+					<description><![CDATA[After playing with twitter for couple of days by updating my status of &#8220;leaving office&#8221; or &#8220;arriving home&#8221;, I decided to play with twitter &#8220;by mouse&#8221; instead of &#8220;by keyboard&#8221;, which means I will stop tweeting, but start to follow others to get the info I want. What I&#8217;m follow now &#8211; all Linux distros <a href='https://xiehang.com/blog/2010/01/15/following-but-not-being-followed/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>After playing with twitter for couple of days by updating my status of &#8220;leaving office&#8221; or &#8220;arriving home&#8221;, I decided to play with twitter &#8220;by mouse&#8221; instead of &#8220;by keyboard&#8221;, which means I will stop tweeting, but start to follow others to get the info I want.</p>
+<p>What I&#8217;m follow now &#8211; all Linux distros (Fedora, CentOS, openSUSU, Ubuntu, etc), and some nosql stuffs like Cassandra and CouchDB. I will keep looking if there is anything else I can follow.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/01/15/following-but-not-being-followed/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

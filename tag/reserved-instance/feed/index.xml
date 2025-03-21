@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>reserved instance &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/reserved-instance/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 13 Jan 2012 19:11:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Dig into EC2&#8217;s offers</title>
+		<link>https://xiehang.com/blog/2012/01/13/dig-into-ec2s-offers/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 19:11:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[price]]></category>
+		<category><![CDATA[reserved instance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1199</guid>
+
+					<description><![CDATA[I&#8217;ve moved to Amazon EC2 as mentioned here and mentioned the monthly pay is $17, that was based on EC2 node&#8217;s cost is $14 I think, and after dig into EC2&#8217;s offers, I found something more useful, see below: Amazon has this Reserved Instance which is pretty good to Web servers that needs to be <a href='https://xiehang.com/blog/2012/01/13/dig-into-ec2s-offers/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve moved to Amazon EC2 as mentioned <a href="https://xiehang.com/blog/2012/01/04/evaluating-ec2/">here</a> and mentioned the monthly pay is $17, that was based on EC2 node&#8217;s cost is $14 I think, and after dig into EC2&#8217;s offers, I found something more useful, see below:</p>
+<p>Amazon has this <a href="">Reserved Instance</a> which is pretty good to Web servers that needs to be running for all the time, I did some calculation and here is the comparison for 1-year term:</p>
+<table align="center" border="1">
+<tr>
+<th>Plan</th>
+<th>One time</th>
+<th>Hourly</th>
+<th>Yearly</th>
+<th>Monthly (alloc.)</p>
+<tr>
+<td>On demand</td>
+<td align="right">0</td>
+<td align="right">0.020</td>
+<td align="right">175.20</td>
+<td align="right">14.60</td>
+</tr>
+<tr>
+<td>light</td>
+<td align="right">23</td>
+<td align="right">0.012</td>
+<td align="right">128.12</td>
+<td align="right">10.68</td>
+</tr>
+<tr>
+<td>medium</td>
+<td align="right">54</td>
+<td align="right">0.007</td>
+<td align="right">115.32</td>
+<td align="right">9.61</td>
+</tr>
+<tr>
+<td>heavy</td>
+<td align="right">62</td>
+<td align="right">0.005</td>
+<td align="right">105.80</td>
+<td align="right">8.82</td>
+</tr>
+</table>
+<p>Although 3-years term may save more, I don&#8217;t want to sign such a long contract as $8.82 per month is good enough to me now.</p>
+<p>I will move to the heavy one after my free tier expires.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sleep &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/sleep/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 06 Feb 2012 21:51:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Slept 14+ hours &#8230;</title>
+		<link>https://xiehang.com/blog/2012/02/06/slept-14-hours/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 06 Feb 2012 21:51:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[sleep]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1251</guid>
+
+					<description><![CDATA[I went to bed at before 5pm yesterday (while watching super bowl 🙁 ), and got up on 7am this morning. It was a nice sleep that I woke up for only once at around 3am (to check where I was &#8230;), I think I&#8217;ve recovered from long-time state of lacking of sleep.]]></description>
+										<content:encoded><![CDATA[<p>I went to bed at before 5pm yesterday (while watching super bowl <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ), and got up on 7am this morning.</p>
+<p>It was a nice sleep that I woke up for only once at around 3am (to check where I was &#8230;), I think I&#8217;ve recovered from long-time state of lacking of sleep.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

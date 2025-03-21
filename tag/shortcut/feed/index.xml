@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shortcut &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/shortcut/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 22 Feb 2012 18:00:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Take screen shot on OSX</title>
+		<link>https://xiehang.com/blog/2012/02/22/take-screen-shot-on-osx/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2012 18:00:39 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[screen shot]]></category>
+		<category><![CDATA[shortcut]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1272</guid>
+
+					<description><![CDATA[Never had this requirement before, but had to do it just now, with this solution, in short, Control-Command-Shift-4 and drag the right area.]]></description>
+										<content:encoded><![CDATA[<p>Never had this requirement before, but had to do it just now, with <a href="http://docs.info.apple.com/article.html?artnum=61544">this solution</a>, in short, Control-Command-Shift-4 and drag the right area.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

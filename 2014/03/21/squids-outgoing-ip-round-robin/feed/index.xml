@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Squid&#8217;s outgoing IP round robin	</title>
+	<atom:link href="https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 08 Oct 2014 14:42:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Alexandru		</title>
+		<link>https://xiehang.com/blog/2014/03/21/squids-outgoing-ip-round-robin/comment-page-1/#comment-9786</link>
+
+		<dc:creator><![CDATA[Alexandru]]></dc:creator>
+		<pubDate>Wed, 08 Oct 2014 14:42:58 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1683#comment-9786</guid>
+
+					<description><![CDATA[Thanks mate,  this just saved me from a lot of work. I&#039;ve been looking for a way to forward my ips with squid and the multiple_ip_balance option wasn&#039;t good enough.]]></description>
+			<content:encoded><![CDATA[<p>Thanks mate,  this just saved me from a lot of work. I&#8217;ve been looking for a way to forward my ips with squid and the multiple_ip_balance option wasn&#8217;t good enough.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

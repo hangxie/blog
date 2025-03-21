@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Evaluating EC2	</title>
+	<atom:link href="https://xiehang.com/blog/2012/01/04/evaluating-ec2/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 19 Jan 2012 01:49:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/comment-page-1/#comment-3495</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 19 Jan 2012 01:49:03 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1189#comment-3495</guid>
+
+					<description><![CDATA[I&#039;ve cancelled Linode hosting, let&#039;s see how Amazon EC2 behaves.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve cancelled Linode hosting, let&#8217;s see how Amazon EC2 behaves.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Flying Bug &#187; Dig into EC2&#8242;s offers		</title>
+		<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/comment-page-1/#comment-3490</link>
+
+		<dc:creator><![CDATA[Flying Bug &#187; Dig into EC2&#8242;s offers]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 19:11:15 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1189#comment-3490</guid>
+
+					<description><![CDATA[[...] moved to Amazon EC2 as mentioned here and mentioned the monthly pay is $17, that was based on EC2 node&#8217;s cost is $14 I think, and [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] moved to Amazon EC2 as mentioned here and mentioned the monthly pay is $17, that was based on EC2 node&#8217;s cost is $14 I think, and [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/comment-page-1/#comment-3479</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 06 Jan 2012 23:27:05 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1189#comment-3479</guid>
+
+					<description><![CDATA[I still need to dig out how to setup Hadoop/Hive on EC2+S3, will post later once I find anything - weekend&#039;s coming, lots of stuffs to be done.]]></description>
+			<content:encoded><![CDATA[<p>I still need to dig out how to setup Hadoop/Hive on EC2+S3, will post later once I find anything &#8211; weekend&#8217;s coming, lots of stuffs to be done.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/comment-page-1/#comment-3478</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 06 Jan 2012 23:21:26 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1189#comment-3478</guid>
+
+					<description><![CDATA[I enabled PPTP on EC2 node so that I can totally retire Linode host whenever possible, everything seems good so far and have to post several things here so that I wont forget what to do next time:
+
+1. enable net.ipv4.ip_forward
+2. put &quot;/sbin/iptables -t nat -A POSTROUTING -j MASQUERADE&quot; to /etc/rc.local, note that ufw is not enabled by default on EC2, so cannot rely on ufw.
+
+and sure, need to change /etc/pptpd.conf, /etc/ppp/chap-secrets, and /etc/ppp/pptpd-options.]]></description>
+			<content:encoded><![CDATA[<p>I enabled PPTP on EC2 node so that I can totally retire Linode host whenever possible, everything seems good so far and have to post several things here so that I wont forget what to do next time:</p>
+<p>1. enable net.ipv4.ip_forward<br />
+2. put &#8220;/sbin/iptables -t nat -A POSTROUTING -j MASQUERADE&#8221; to /etc/rc.local, note that ufw is not enabled by default on EC2, so cannot rely on ufw.</p>
+<p>and sure, need to change /etc/pptpd.conf, /etc/ppp/chap-secrets, and /etc/ppp/pptpd-options.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/comment-page-1/#comment-3476</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 04 Jan 2012 22:49:25 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1189#comment-3476</guid>
+
+					<description><![CDATA[BTW, another factor to watch is accessibility from China, you know ... GFW thing ...]]></description>
+			<content:encoded><![CDATA[<p>BTW, another factor to watch is accessibility from China, you know &#8230; GFW thing &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/04/evaluating-ec2/comment-page-1/#comment-3475</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 04 Jan 2012 22:43:20 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1189#comment-3475</guid>
+
+					<description><![CDATA[Oh ya, now what you are reading are coming from EC2.]]></description>
+			<content:encoded><![CDATA[<p>Oh ya, now what you are reading are coming from EC2.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

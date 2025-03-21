@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: ejabberd cluster	</title>
+	<atom:link href="https://xiehang.com/blog/2013/10/14/ejabberd-cluster/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2013/10/14/ejabberd-cluster/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 19 Jan 2015 13:48:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: m88		</title>
+		<link>https://xiehang.com/blog/2013/10/14/ejabberd-cluster/comment-page-1/#comment-10703</link>
+
+		<dc:creator><![CDATA[m88]]></dc:creator>
+		<pubDate>Mon, 19 Jan 2015 13:48:38 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1601#comment-10703</guid>
+
+					<description><![CDATA[What&#039;s up, I log on to your blog daily. Your writing style is awesome, 
+keep it up!]]></description>
+			<content:encoded><![CDATA[<p>What&#8217;s up, I log on to your blog daily. Your writing style is awesome,<br />
+keep it up!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/10/14/ejabberd-cluster/comment-page-1/#comment-4173</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2013 18:22:31 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1601#comment-4173</guid>
+
+					<description><![CDATA[To remove a node from the cluster, first stop ejabberd on that node, then on all other nodes:
+
+mnesia:del_table_copy(schema, &#039;node_to_be_removed&#039;).
+
+Got it from http://www.blinkenlights.ch/ccms/linux/ejabberd.html]]></description>
+			<content:encoded><![CDATA[<p>To remove a node from the cluster, first stop ejabberd on that node, then on all other nodes:</p>
+<p>mnesia:del_table_copy(schema, &#8216;node_to_be_removed&#8217;).</p>
+<p>Got it from <a href="http://www.blinkenlights.ch/ccms/linux/ejabberd.html" rel="nofollow ugc">http://www.blinkenlights.ch/ccms/linux/ejabberd.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/10/14/ejabberd-cluster/comment-page-1/#comment-4162</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 29 Oct 2013 00:45:02 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1601#comment-4162</guid>
+
+					<description><![CDATA[Refer to this for changing table storage to local:
+
+[{Tb, mnesia:add_table_copy(Tb, node(), Type)} &#124;&#124; {Tb, [{&#039;NODE_NAME&#039;, Type}]} &lt;- [{T, mnesia:table_info(T, where_to_commit)} &#124;&#124; T &lt;- mnesia:system_info(tables)]].
+
+What I was wrong is trying to do a change_table_type while table is not here yet. :)]]></description>
+			<content:encoded><![CDATA[<p>Refer to this for changing table storage to local:</p>
+<p>[{Tb, mnesia:add_table_copy(Tb, node(), Type)} || {Tb, [{&#8216;NODE_NAME&#8217;, Type}]} <- [{T, mnesia:table_info(T, where_to_commit)} || T <- mnesia:system_info(tables)]].
+
+What I was wrong is trying to do a change_table_type while table is not here yet. 🙂
+</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/10/14/ejabberd-cluster/comment-page-1/#comment-4142</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 16 Oct 2013 22:44:05 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1601#comment-4142</guid>
+
+					<description><![CDATA[Finally I decided to go with HAProxy which can do proxy works for all ports, and it&#039;s easier to deployment than LVS (IPVS) and faster than Nginx.
+
+I&#039;m injecting users now, target is to get 5M registrants and I&#039;m @ 1.5M after half a day (with ejabberdctl, got no time to dig into my own codes). Also, I picked SleekXMPP and python for my next step testing.]]></description>
+			<content:encoded><![CDATA[<p>Finally I decided to go with HAProxy which can do proxy works for all ports, and it&#8217;s easier to deployment than LVS (IPVS) and faster than Nginx.</p>
+<p>I&#8217;m injecting users now, target is to get 5M registrants and I&#8217;m @ 1.5M after half a day (with ejabberdctl, got no time to dig into my own codes). Also, I picked SleekXMPP and python for my next step testing.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/10/14/ejabberd-cluster/comment-page-1/#comment-4138</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 15 Oct 2013 17:22:45 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1601#comment-4138</guid>
+
+					<description><![CDATA[CentOS6 is a little bit different (packages from epel) - /etc/default/ejabberd becomes /etc/ejabberd/ejabberdctl.cfg, and mnesia DB located at /var/lib/ejabberd/spool.]]></description>
+			<content:encoded><![CDATA[<p>CentOS6 is a little bit different (packages from epel) &#8211; /etc/default/ejabberd becomes /etc/ejabberd/ejabberdctl.cfg, and mnesia DB located at /var/lib/ejabberd/spool.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

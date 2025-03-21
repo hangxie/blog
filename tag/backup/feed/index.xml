@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>backup &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/backup/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 30 Apr 2012 21:26:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Wish GMail will be secure enough</title>
+		<link>https://xiehang.com/blog/2012/04/30/wish-gmail-will-be-secure-enough/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 30 Apr 2012 21:26:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1330</guid>
+
+					<description><![CDATA[I just removed a primary backup from Amazon S3 after putting it into GMail, I just wish GMail will be secure enough &#8211; whenever I&#8217;m saying secure, I mean mails won&#8217;t be deleted without being notified in advance, either purposely or not. I still have backups on other places but none of them are primary, <a href='https://xiehang.com/blog/2012/04/30/wish-gmail-will-be-secure-enough/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I just removed a primary backup from Amazon S3 after putting it into GMail, I just wish GMail will be secure enough &#8211; whenever I&#8217;m saying secure, I mean mails won&#8217;t be deleted without being notified in advance, either purposely or not.</p>
+<p>I still have backups on other places but none of them are primary, that is, they can be deleted without any reason, and without carefully being watched.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Free online storage</title>
+		<link>https://xiehang.com/blog/2012/01/24/free-online-storage/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 24 Jan 2012 19:37:21 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[online storage]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1214</guid>
+
+					<description><![CDATA[This may not be a complete list, but so far I&#8217;m playing with all of them: URL Space http://www.adrive.com/ 30G http://www.4shared.com/ 10G http://www.cx.com/ 10G http://www.mimedia.com/ 7G http://www.opendrive.com/ 5G http://pogoplug.com/ 5G http://www.idrive.com/ 5G http://one.ubuntu.com/ 5G http://www.box.net/ 5G https://devices.live.com/ 5G https://www.free-hidrive.com/ 5G http://www.memopal.com/ 3G]]></description>
+										<content:encoded><![CDATA[<p>This may not be a complete list, but so far I&#8217;m playing with all of them:</p>
+<table align="center" border="1">
+<tr>
+<th>URL</th>
+<th>Space</th>
+</tr>
+<tr>
+<td><a href="http://www.adrive.com/">http://www.adrive.com/</a></td>
+<td>30G</td>
+</tr>
+<tr>
+<td><a href="http://www.4shared.com/">http://www.4shared.com/</a></td>
+<td>10G</td>
+</tr>
+<tr>
+<td><a href="http://www.cx.com/">http://www.cx.com/</a></td>
+<td>10G</td>
+</tr>
+<tr>
+<td><a href="http://www.mimedia.com/">http://www.mimedia.com/</a></td>
+<td>7G</td>
+</tr>
+<tr>
+<td><a href="http://www.opendrive.com/">http://www.opendrive.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://pogoplug.com/">http://pogoplug.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://www.idrive.com/">http://www.idrive.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://one.ubuntu.com/">http://one.ubuntu.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://www.box.net/">http://www.box.net/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="https://devices.live.com/">https://devices.live.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="https://www.free-hidrive.com/">https://www.free-hidrive.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://www.memopal.com/">http://www.memopal.com/</a></td>
+<td>3G</td>
+</tr>
+</table>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Moving to Amazon S3 now</title>
+		<link>https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/</link>
+					<comments>https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 31 Dec 2011 16:14:39 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1183</guid>
+
+					<description><![CDATA[I&#8217;m in the middle of moving some stuffs to Amazon AWS, and the first project is moving back up of my friend&#8217;s web site to Amazon as it gets no online access and data volume is not that big. The test seems good so far with my (first year) free AWS S3, I will stop <a href='https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m in the middle of moving some stuffs to Amazon AWS, and the first project is moving back up of my friend&#8217;s web site to Amazon as it gets no online access and data volume is not that big. The test seems good so far with my (first year) free AWS S3, I will stop current backup plan which sending data to my personal server in a week or two.</p>
+<p>Amazon did great job to ease usage of AWS at least for S3, and based on my limited experience on EC2 it is not that hard to deploy but I still need to figure out how difficult it is to deploy multiple instances in a programable way as this will be the most reasonable way to get things done.</p>
+<p>I&#8217;m currently on <a href="http://aws.amazon.com/free/">AWS Free Usage Tier</a>, good way to evaluate how much I&#8217;m going to spend in a serious project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Backup</title>
+		<link>https://xiehang.com/blog/2009/05/18/backup/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 May 2009 05:24:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[friend]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=380</guid>
+
+					<description><![CDATA[Forgot to mention that I&#8217;ve setup timely DB backup on godaddy, now I need to figure out how to take secondary backup on a remote host, maybe on my home Ubuntu box. Tried to asked a friend to see if everything got backup there but got no response, I think I&#8217;m a little bit bothering <a href='https://xiehang.com/blog/2009/05/18/backup/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Forgot to mention that I&#8217;ve setup timely DB backup on godaddy, now I need to figure out how to take secondary backup on a remote host, maybe on my home Ubuntu box.</p>
+<p>Tried to asked a friend to see if everything got backup there but got no response, I think I&#8217;m a little bit bothering now, better keep silient :(.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

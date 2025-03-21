@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: usenet helps	</title>
+	<atom:link href="https://xiehang.com/blog/2009/07/03/usenet-helps/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/07/03/usenet-helps/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 06 Jul 2009 02:07:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/usenet-helps/comment-page-1/#comment-2528</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 06 Jul 2009 02:07:42 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=535#comment-2528</guid>
+
+					<description><![CDATA[Actually, you can use &quot;/&quot; in case you don&#039;t like c-style &quot;\\&quot;. :)]]></description>
+			<content:encoded><![CDATA[<p>Actually, you can use &#8220;/&#8221; in case you don&#8217;t like c-style &#8220;\\&#8221;. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/usenet-helps/comment-page-1/#comment-2527</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 06 Jul 2009 01:21:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=535#comment-2527</guid>
+
+					<description><![CDATA[Forgot to mention - to let CLisp scan the asdf directory, recursively: (let&#039;s see how much smiley will mess up this comment)
+
+(dolist
+   (dir-candidate (directory #P&quot;\\path\\to\asdf-registry\\**\\&quot;))
+      (let ((asd-candidate (merge-pathnames &quot;*.asd&quot; dir-candidate)))
+           (when (directory asd-candidate)
+                 (push dir-candidate asdf:*central-registry*))))]]></description>
+			<content:encoded><![CDATA[<p>Forgot to mention &#8211; to let CLisp scan the asdf directory, recursively: (let&#8217;s see how much smiley will mess up this comment)</p>
+<p>(dolist<br />
+   (dir-candidate (directory #P&#8221;\\path\\to\asdf-registry\\**\\&#8221;))<br />
+      (let ((asd-candidate (merge-pathnames &#8220;*.asd&#8221; dir-candidate)))<br />
+           (when (directory asd-candidate)<br />
+                 (push dir-candidate asdf:*central-registry*))))</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/usenet-helps/comment-page-1/#comment-2339</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2009 21:07:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=535#comment-2339</guid>
+
+					<description><![CDATA[I decided to add base directory under CLisp&#039;s installation path to my own PATH variable so that I don&#039;t have to worry about it during development time.]]></description>
+			<content:encoded><![CDATA[<p>I decided to add base directory under CLisp&#8217;s installation path to my own PATH variable so that I don&#8217;t have to worry about it during development time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/usenet-helps/comment-page-1/#comment-2331</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2009 19:31:45 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=535#comment-2331</guid>
+
+					<description><![CDATA[well, smiley problem again.]]></description>
+			<content:encoded><![CDATA[<p>well, smiley problem again.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/usenet-helps/comment-page-1/#comment-2330</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2009 19:29:26 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=535#comment-2330</guid>
+
+					<description><![CDATA[Hmmm ... I guess I&#039;d better post full command here, first, finish what you want to do, such as hello world:
+
+(defun main () (format t &quot;~%Hello World!~%&quot;))
+
+then save an executable image:
+
+(ext:saveinitmem &quot;hw&quot; :quiet t :init-function (lambda () (main) (ext:quit)) :verbose t :norc t :documentation &quot;This is a Common Lisp &#039;hello world&#039; sample.&quot; :executable t)
+
+and that&#039;s it.]]></description>
+			<content:encoded><![CDATA[<p>Hmmm &#8230; I guess I&#8217;d better post full command here, first, finish what you want to do, such as hello world:</p>
+<p>(defun main () (format t &#8220;~%Hello World!~%&#8221;))</p>
+<p>then save an executable image:</p>
+<p>(ext:saveinitmem &#8220;hw&#8221; :quiet t :init-function (lambda () (main) (ext:quit)) :verbose t :norc t :documentation &#8220;This is a Common Lisp &#8216;hello world&#8217; sample.&#8221; :executable t)</p>
+<p>and that&#8217;s it.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

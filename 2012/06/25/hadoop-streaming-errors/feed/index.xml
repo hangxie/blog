@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Hadoop streaming errors	</title>
+	<atom:link href="https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 27 Jun 2012 23:18:35 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/comment-page-1/#comment-3623</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 Jun 2012 23:18:35 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1358#comment-3623</guid>
+
+					<description><![CDATA[Needless to say, setting reduce.tasks to 0 will leave results in multiple files since there is no reducer at all, but this is not a problem to me as Hive&#039;s LOAD DATA supports filename wildcards.]]></description>
+			<content:encoded><![CDATA[<p>Needless to say, setting reduce.tasks to 0 will leave results in multiple files since there is no reducer at all, but this is not a problem to me as Hive&#8217;s LOAD DATA supports filename wildcards.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/comment-page-1/#comment-3622</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 Jun 2012 22:46:27 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1358#comment-3622</guid>
+
+					<description><![CDATA[Since I don&#039;t have a reducer so setting -Dmapred.reduce.tasks=0 reduced the running time from ~30 min to ~2 min.
+
+It makes sense, right? Why bother to sort and shuffle data whenever you don&#039;t want to do any processing work?]]></description>
+			<content:encoded><![CDATA[<p>Since I don&#8217;t have a reducer so setting -Dmapred.reduce.tasks=0 reduced the running time from ~30 min to ~2 min.</p>
+<p>It makes sense, right? Why bother to sort and shuffle data whenever you don&#8217;t want to do any processing work?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/comment-page-1/#comment-3621</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 Jun 2012 21:54:34 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1358#comment-3621</guid>
+
+					<description><![CDATA[As a side note here, data volumn in different steps are:
+
+item list (5MBytes, gzipped) =&gt; context to be analyzed (12GBytes, gzipped) =&gt; analysis result (11GBytes, plain) =&gt; hive table (253M records)]]></description>
+			<content:encoded><![CDATA[<p>As a side note here, data volumn in different steps are:</p>
+<p>item list (5MBytes, gzipped) => context to be analyzed (12GBytes, gzipped) => analysis result (11GBytes, plain) => hive table (253M records)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/comment-page-1/#comment-3620</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 Jun 2012 21:22:56 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1358#comment-3620</guid>
+
+					<description><![CDATA[And to read input from gzipped file, put -Dstream.recordreader.compression=gzip in the command line.
+
+Also you can exchange data between Hive and Hadoop directly, like:
+
+INSERT OVERWRITE DIRECTORY &#039;hdfs://path/to/hdfs/directory/&#039; SELECT ....
+LOAD DATA INPATH &#039;hdfs://path/to/hdfs/file&#039; OVERWRITE INTO TABLE the_table ...
+
+I&#039;m trying to move as much as I can to Hadoop/Hive now so to speed up the processing. So far I&#039;ve lowerred down the context analysis time from ~5 hours (4 hours or processing, 1 hour for copying results to Hive gateway) to ~30 minutes.]]></description>
+			<content:encoded><![CDATA[<p>And to read input from gzipped file, put -Dstream.recordreader.compression=gzip in the command line.</p>
+<p>Also you can exchange data between Hive and Hadoop directly, like:</p>
+<p>INSERT OVERWRITE DIRECTORY &#8216;hdfs://path/to/hdfs/directory/&#8217; SELECT &#8230;.<br />
+LOAD DATA INPATH &#8216;hdfs://path/to/hdfs/file&#8217; OVERWRITE INTO TABLE the_table &#8230;</p>
+<p>I&#8217;m trying to move as much as I can to Hadoop/Hive now so to speed up the processing. So far I&#8217;ve lowerred down the context analysis time from ~5 hours (4 hours or processing, 1 hour for copying results to Hive gateway) to ~30 minutes.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/06/25/hadoop-streaming-errors/comment-page-1/#comment-3619</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 Jun 2012 06:34:36 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1358#comment-3619</guid>
+
+					<description><![CDATA[I was thinking of using Python to do Hadoop streaming, which makes it easy to change codes in production environment, however I failed because of ctyes module is not there in Python 2.4.x, which is the standard deployment of CentOS 5.
+
+Now I turned to write a JUMBO C++ program to get everything done, it is jumbo because almost everything is statically linked. The executable was built on CentOS5, so it can be run on CentOS6 as well.
+
+It seems I need to deliver Java version of my stuffs ASAP, if I still have to run things on Hadoop.]]></description>
+			<content:encoded><![CDATA[<p>I was thinking of using Python to do Hadoop streaming, which makes it easy to change codes in production environment, however I failed because of ctyes module is not there in Python 2.4.x, which is the standard deployment of CentOS 5.</p>
+<p>Now I turned to write a JUMBO C++ program to get everything done, it is jumbo because almost everything is statically linked. The executable was built on CentOS5, so it can be run on CentOS6 as well.</p>
+<p>It seems I need to deliver Java version of my stuffs ASAP, if I still have to run things on Hadoop.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

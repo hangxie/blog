@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>package &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/package/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 22 Mar 2015 18:15:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>&#8220;Lock&#8221; a package on Ubuntu</title>
+		<link>https://xiehang.com/blog/2015/03/22/lock-a-package-on-ubuntu/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 22 Mar 2015 18:15:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apt]]></category>
+		<category><![CDATA[package]]></category>
+		<category><![CDATA[ppa]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1748</guid>
+
+					<description><![CDATA[echo package-name hold &#124; sudo dpkg --set-selections So that it will not be upgraded. Reason: a package&#8217;s ppa has a brand new version that is not compatible with previous version, but since the new version is there so Ubuntu downloaded and installed the new version, and it made almost everything on my system broken. Have <a href='https://xiehang.com/blog/2015/03/22/lock-a-package-on-ubuntu/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p><code>echo package-name hold | sudo dpkg --set-selections</code></p>
+<p>So that it will not be upgraded.</p>
+<p>Reason: a package&#8217;s ppa has a brand new version that is not compatible with previous version, but since the new version is there so Ubuntu downloaded and installed the new version, and it made almost everything on my system broken.</p>
+<p>Have to lock down that package, unless I&#8217;m so sure I can upgrade it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Finally I found a &#8220;readable&#8221; debian package how-to</title>
+		<link>https://xiehang.com/blog/2013/04/08/finally-i-found-a-readable-debian-package-how-to/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2013 23:11:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[deb]]></category>
+		<category><![CDATA[debian]]></category>
+		<category><![CDATA[dpkg]]></category>
+		<category><![CDATA[how-to]]></category>
+		<category><![CDATA[package]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1512</guid>
+
+					<description><![CDATA[Finally I found this Debian Binary Package Building HOWTO. Actually I&#8217;ve been searching online for sometime, however, most search results lead me to Ubuntu or Debian Wiki which are totally useless, thinking of they are using lots of (and different) tools plus need user interact with it. On the other hand, the how-to page mentioned <a href='https://xiehang.com/blog/2013/04/08/finally-i-found-a-readable-debian-package-how-to/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Finally I found this <a href="http://tldp.org/HOWTO/html_single/Debian-Binary-Package-Building-HOWTO/">Debian Binary Package Building HOWTO</a>.</p>
+<p>Actually I&#8217;ve been searching online for sometime, however, most search results lead me to Ubuntu or Debian Wiki which are totally useless, thinking of they are using lots of (and different) tools plus need user interact with it.</p>
+<p>On the other hand, the how-to page mentioned above did a clear step-by-step turtorial, without any fancy tools. Surely you still need dpkg package and lintian.</p>
+<p>I&#8217;m also learning how to write a good how-to like this one, it seems learn by sample is always easier.</p>
+<p>I guess now I understand why I don&#8217;t want to go to school again.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Moving to Windows Phone now	</title>
+	<atom:link href="https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 16 Feb 2012 05:32:18 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/comment-page-1/#comment-3517</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2012 05:32:18 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1262#comment-3517</guid>
+
+					<description><![CDATA[Done with main screen - it seems the UIViewController cannot get rotation enabled by Interface Builder, you have to subclass it.
+
+And now I found actually I have another thing left - localization, will spend another day on that :(]]></description>
+			<content:encoded><![CDATA[<p>Done with main screen &#8211; it seems the UIViewController cannot get rotation enabled by Interface Builder, you have to subclass it.</p>
+<p>And now I found actually I have another thing left &#8211; localization, will spend another day on that 🙁</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/comment-page-1/#comment-3516</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 15 Feb 2012 17:47:20 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1262#comment-3516</guid>
+
+					<description><![CDATA[Well, it seems not that hard and I&#039;ve made it, mostly. All UIViewController subclasses now have these lines:
+
+&lt;pre language=&quot;objc&quot;&gt;
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown;
+}
+&lt;/pre&gt;
+
+I just need to get the start screen done which does not reflect to any customized subclasses ...]]></description>
+			<content:encoded><![CDATA[<p>Well, it seems not that hard and I&#8217;ve made it, mostly. All UIViewController subclasses now have these lines:</p>
+<pre language="objc">
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown;
+}
+</pre>
+<p>I just need to get the start screen done which does not reflect to any customized subclasses &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/comment-page-1/#comment-3514</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 15 Feb 2012 05:33:00 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1262#comment-3514</guid>
+
+					<description><![CDATA[Actually I found that I haven&#039;t done the rotation stuff ... will update to another version to get this done on iOS.]]></description>
+			<content:encoded><![CDATA[<p>Actually I found that I haven&#8217;t done the rotation stuff &#8230; will update to another version to get this done on iOS.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/comment-page-1/#comment-3512</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 15 Feb 2012 00:04:16 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1262#comment-3512</guid>
+
+					<description><![CDATA[BTW, I forgot to mention (or I did before?) that I&#039;ve upgraded my VM on Mac from Windows XP to Windows 7 so that I can run development tools. I believe people will jump up if Microsoft did this before, but after Apple made it as a common case (they need latest OSX to run latest development tools, may not be exactly the latest, but similar), people no longer yelling at this.
+
+Poor Microsoft.]]></description>
+			<content:encoded><![CDATA[<p>BTW, I forgot to mention (or I did before?) that I&#8217;ve upgraded my VM on Mac from Windows XP to Windows 7 so that I can run development tools. I believe people will jump up if Microsoft did this before, but after Apple made it as a common case (they need latest OSX to run latest development tools, may not be exactly the latest, but similar), people no longer yelling at this.</p>
+<p>Poor Microsoft.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

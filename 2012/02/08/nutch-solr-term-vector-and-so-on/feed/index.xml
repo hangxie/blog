@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: nutch, solr, term vector, and so on	</title>
+	<atom:link href="https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:10:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/08/nutch-solr-term-vector-and-so-on/comment-page-1/#comment-3509</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2012 04:51:51 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1256#comment-3509</guid>
+
+					<description><![CDATA[Just found that smiley&#039;s no longer working with patterns having &quot;&gt;&quot; or &quot;&lt;&quot;, seems wordpress changed something recently, or maybe long ago but I never noticed.]]></description>
+			<content:encoded><![CDATA[<p>Just found that smiley&#8217;s no longer working with patterns having &#8220;>&#8221; or &#8220;<", seems wordpress changed something recently, or maybe long ago but I never noticed.
+</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

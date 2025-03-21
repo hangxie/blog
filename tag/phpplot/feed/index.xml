@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>phpplot &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/phpplot/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 19 Jul 2013 01:31:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Trying PHPlot</title>
+		<link>https://xiehang.com/blog/2013/07/18/trying-phplot/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jul 2013 00:52:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phpplot]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1545</guid>
+
+					<description><![CDATA[PHPlot looks better than Perl&#8217;s GD::Graph &#8230; I don&#8217;t know how to exactly describe the difference, but feel like: neat, easy to understand, easy to control, and better default values. I&#8217;m migrating some BI sites to PHPlot so to get rid of Perl stuffs, so to make things purely PHP based, thus other PHP guys <a href='https://xiehang.com/blog/2013/07/18/trying-phplot/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>PHPlot looks better than Perl&#8217;s GD::Graph &#8230; I don&#8217;t know how to exactly describe the difference, but feel like: neat, easy to understand, easy to control, and better default values.</p>
+<p>I&#8217;m migrating some BI sites to PHPlot so to get rid of Perl stuffs, so to make things purely PHP based, thus other PHP guys can take over it easily.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

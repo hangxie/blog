@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Jumping among programming languages	</title>
+	<atom:link href="https://xiehang.com/blog/2012/05/15/jumping-among-programming-languages/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/05/15/jumping-among-programming-languages/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 18 May 2012 04:42:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/05/15/jumping-among-programming-languages/comment-page-1/#comment-3610</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 18 May 2012 04:42:36 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1335#comment-3610</guid>
+
+					<description><![CDATA[Now I&#039;m not just reading Java codes, but also need to write Java codes for Hive&#039;s UDF ...]]></description>
+			<content:encoded><![CDATA[<p>Now I&#8217;m not just reading Java codes, but also need to write Java codes for Hive&#8217;s UDF &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

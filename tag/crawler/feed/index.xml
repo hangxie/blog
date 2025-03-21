@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>crawler &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/crawler/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:10:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Get rendered HTML</title>
+		<link>https://xiehang.com/blog/2014/01/15/get-rendered-html/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 16 Jan 2014 02:11:55 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[crawler]]></category>
+		<category><![CDATA[phantomjs]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1616</guid>
+
+					<description><![CDATA[Search team is doing crawling and some web sites are heavily using JavaScript to generate content. Whenever I said &#8220;heavily&#8221; I mean none of the UI elements was from HTML, instead, JavaScript runs after the page loaded, then shown to users. I&#8217;m doing a prototype so that they can take as a reference and later <a href='https://xiehang.com/blog/2014/01/15/get-rendered-html/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Search team is doing crawling and some web sites are heavily using JavaScript to generate content. Whenever I said &#8220;heavily&#8221; I mean none of the UI elements was from HTML, instead, JavaScript runs after the page loaded, then shown to users.</p>
+<p>I&#8217;m doing a prototype so that they can take as a reference and later on do something fit into their system better. The prototype as based on <a href="http://phantomjs.org/">PhantomJS</a>, it was in Ubuntu (12.04 LTS) repository which makes my life much easier. Again, I need to install xvfb so that I can run X-based application in command line.<span id="more-1616"></span></p>
+<p>After everything got installed, simply edit a JS file like this:<br />
+<code><br />
+var page = require('webpage').create();<br />
+page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36';<br />
+page.open('https://www.google.com/webhp?hl=zh-CN&sourceid=cnhp#hl=zh-CN&q=%E5%BE%B7%E4%BC%AF%E5%AE%B6%E7%9A%84%E8%8B%94%E4%B8%9D&safe=strict', function(status) {<br />
+    if (status !== 'success') {<br />
+        console.log('Unable to access network');<br />
+    } else {<br />
+        window.setTimeout(function() {<br />
+            var dyn_content = page.evaluate(function() {<br />
+                return document.getElementById('rhs_block').innerHTML;<br />
+            });<br />
+            console.log(dyn_content);<br />
+            phantom.exit();<br />
+        }, 1000);<br />
+        console.log('time again');<br />
+    }<br />
+});<br />
+</code></p>
+<p>Then the element will be printed out on the screen &#8230;</p>
+<p>I still need to figure out a better way to get rid of codes like &#8220;setTimeout(&#8230;, 1000)&#8221; as I believe it slows down the processing quite a lot, but anyway, it&#8217;s a prototype &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Consolidate EC2 hosts</title>
+		<link>https://xiehang.com/blog/2013/02/06/consolidate-ec2-host/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 06 Feb 2013 15:26:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[crawler]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[hosting]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1492</guid>
+
+					<description><![CDATA[I&#8217;m trying my best to use as less EC2 hosts as possible, and seems I successfully made all of my stuffs running on &#8230; one micro instance 😀 . Actually it surprised me a little thinking that I was running 2 large, 1 small, and 3 micro back to last September, obviously I spent too <a href='https://xiehang.com/blog/2013/02/06/consolidate-ec2-host/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m trying my best to use as less EC2 hosts as possible, and seems I successfully made all of my stuffs running on &#8230; one micro instance <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Actually it surprised me a little thinking that I was running 2 large, 1 small, and 3 micro back to last September, obviously I spent too much on &#8220;playing&#8221; <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Now I&#8217;m waiting all crawlers heading to the new machine, I found some crawlers are really &#8230; stupid? They didn&#8217;t move to the new machine even after the DNS had been update for more than 12 hours.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Spiders &#8211; good and bad</title>
+		<link>https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/</link>
+					<comments>https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 25 Apr 2012 05:36:17 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[crawler]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[ttl]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1321</guid>
+
+					<description><![CDATA[While I was migrating my web sites from AWS US east to US west, it&#8217;s interesting to see behavior of those spiders, good and bad. I set TTL of my domain to 30 minutes, and after 12 hours some spiders are still NOT going to my new sites: Baidu &#8211; Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) Netease <a href='https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>While I was migrating my web sites from AWS US east to US west, it&#8217;s interesting to see behavior of those spiders, good and bad.</p>
+<p>I set TTL of my domain to 30 minutes, and after 12 hours some spiders are still NOT going to my new sites:<span id="more-1321"></span></p>
+<ul>
+<li>Baidu &#8211; Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)</li>
+<li>Netease &#8211; Mozilla/5.0 (compatible;YoudaoFeedFetcher/1.0;http://www.youdao.com/help/reader/faq/topic006/;1 subscribers;)</li>
+<li>Yandex &#8211; Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)</li>
+<li>Tencent &#8211; Sosospider+(+http://help.soso.com/webspider.htm)</li>
+</ul>
+<p>and among them Baidu and Netease were doing really agressive crawling for whatever reason &#8230; am I update my blog too frequently? <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>And here is the good list:</p>
+<ul>
+<li>Google &#8211; Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</li>
+<li>Google &#8211; Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 1 subscribers; feed-id=13667814432325378539)</li>
+<li>Bing &#8211; Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)</li>
+<li>What are these???
+<ul>
+<li>Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/2010040121 Firefox/3.0.19</li>
+<li>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)</li>
+<li>Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)</li>
+<li>BlogSearch/2 +http://www.icerocket.com/</li>
+<li>magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)/</li>
+</ul>
+</li>
+</ul>
+<p>Weird thing is that I didn&#8217;t see Sohu and Yahoo over there, maybe Yahoo had stopped crawling (replace homegrown technique with Microsoft&#8217;s Bing?). Also, it seems Tencent has deployment issue as it&#8217;s crawling both the new and old site, seems like its crawlers are not in sync.</p>
+<p>Will watch for another day then will shutdown the old box.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/04/24/spiders-good-and-bad/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

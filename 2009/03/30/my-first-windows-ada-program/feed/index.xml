@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: My first Windows Ada program	</title>
+	<atom:link href="https://xiehang.com/blog/2009/03/30/my-first-windows-ada-program/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/03/30/my-first-windows-ada-program/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 31 Mar 2009 04:12:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/03/30/my-first-windows-ada-program/comment-page-1/#comment-19</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 31 Mar 2009 04:12:19 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=164#comment-19</guid>
+
+					<description><![CDATA[Here&#039;s how to solve Chinese displaying comments and strings problem in gps, other languages may use similar solution: in gps, from menu Edit -&gt; Preferences, in General, make sure Character set is GB2312, in Editor -&gt; Fonts &amp; Colors, use Chinese fonts for &quot;Comments&quot; and &quot;Strings&quot;, fonts like MingLiu, SimSun, SimHei, etc.
+
+I won&#039;t use Chinese for identifiers so I don&#039;t need anything else to be Chinese enabled.]]></description>
+			<content:encoded><![CDATA[<p>Here&#8217;s how to solve Chinese displaying comments and strings problem in gps, other languages may use similar solution: in gps, from menu Edit -> Preferences, in General, make sure Character set is GB2312, in Editor -> Fonts &#038; Colors, use Chinese fonts for &#8220;Comments&#8221; and &#8220;Strings&#8221;, fonts like MingLiu, SimSun, SimHei, etc.</p>
+<p>I won&#8217;t use Chinese for identifiers so I don&#8217;t need anything else to be Chinese enabled.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/03/30/my-first-windows-ada-program/comment-page-1/#comment-18</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 31 Mar 2009 00:56:21 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=164#comment-18</guid>
+
+					<description><![CDATA[Too bad, I run into this problem again - seems WordPress does not support codes quite well, I have to dig out how to make it looks better, but later. :)]]></description>
+			<content:encoded><![CDATA[<p>Too bad, I run into this problem again &#8211; seems WordPress does not support codes quite well, I have to dig out how to make it looks better, but later. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

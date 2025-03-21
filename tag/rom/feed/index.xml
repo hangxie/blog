@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rom &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/rom/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 14 Jan 2014 23:35:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>HTC Inspire 4G finally came back</title>
+		<link>https://xiehang.com/blog/2014/01/14/htc-inspire-4g-finally-came-back/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 14 Jan 2014 23:35:06 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[htc]]></category>
+		<category><![CDATA[rom]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1614</guid>
+
+					<description><![CDATA[It was flashed to various ROM then unable to have a stable version, and today I finally got a stable 4.0.4 and make it back to work again. Lucky day!]]></description>
+										<content:encoded><![CDATA[<p>It was flashed to various ROM then unable to have a stable version, and today I finally got a stable 4.0.4 and make it back to work again.</p>
+<p>Lucky day!</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Flashed Kindle Fire with Jelly Bean</title>
+		<link>https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/</link>
+					<comments>https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 09 Aug 2013 00:03:27 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[jelly bean]]></category>
+		<category><![CDATA[kindle]]></category>
+		<category><![CDATA[kindle fire]]></category>
+		<category><![CDATA[rom]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1573</guid>
+
+					<description><![CDATA[It was just for fun, and this would be a good exercise for potential migrating my AT&#38;T phone to some other images &#8211; I need hotspot feature but it&#8217;s a premium feature from AT&#38;T &#8230; Back to Kindle Fire, the process was pretty simple &#8211; root it, flash with new root image and gapp, that&#8217;s <a href='https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It was just for fun, and this would be a good exercise for potential migrating my AT&amp;T phone to some other images &#8211; I need hotspot feature but it&#8217;s a premium feature from AT&amp;T &#8230;</p>
+<p>Back to Kindle Fire, the process was pretty simple &#8211; root it, flash with new root image and gapp, that&#8217;s it. However, after that it seems some Apps are not that stable, crash or slow respond from time to time, though some other Apps run smoothly. I&#8217;m not sure so far if it is problem from Apps (i.e. compatibility issue with Jelly Bean), or it is Jelly Bean I was using is having problem with Kindle Fire (incompatible or poor hardware). I will play with them for a while and post here if I see anything interesting.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/08/flashed-kindle-fire-with-jelly-bean/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Upgrade MK802III to Bob&#8217;s Finless ROM</title>
+		<link>https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-bobs-finless-rom/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 17 Jan 2013 21:55:53 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[bob's finless]]></category>
+		<category><![CDATA[mk802III]]></category>
+		<category><![CDATA[rom]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1477</guid>
+
+					<description><![CDATA[You have to have a rooted Android installed Download the zip file from here, the version is 1.7 at time I&#8217;m working on that Install some sort of terminal emulator on MK802III Launch &#8220;ROM Flash Tool.exe&#8221; from the zip archive you downloaded in step #2, it will tell you &#8220;No Found PKAndroid rock usb&#8221; (What <a href='https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-bobs-finless-rom/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<ol>
+<li>You have to <a href="https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-rooted-android/">have a rooted Android installed</a></li>
+<li>Download the zip file from <a href="http://www.freaktab.com/showthread.php?2632-NEW-UG802-2dark4u-Finless-custom-ROM-version-1-7-true-1080-and-overclock-AND-best-performance-ever!">here</a>, the version is 1.7 at time I&#8217;m working on that</li>
+<li>Install some sort of terminal emulator on MK802III</li>
+<li>Launch &#8220;ROM Flash Tool.exe&#8221; from the zip archive you downloaded in step #2, it will tell you &#8220;No Found PKAndroid rock usb&#8221; (What a horrible English!!!!)</li>
+<li>Launch the terminal emulator on MK802III, run &#8220;su&#8221; then &#8220;reboot book loader&#8221; while it is connecting to your computer (the micro USB port on MK802III side), the MK802III will get into boot loader mode and the &#8220;ROM Flash Tool.exe&#8221; should show &#8220;Found PKAndroid Loader Rock Usb&#8221;</li>
+<li>Just click the &#8220;Flash ROM&#8221; button, it will take 2~3 minutes, and after it&#8217;s done, MK802III will automatically reboot, now you have the new ROM running</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mount &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/mount/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 20 Mar 2014 14:00:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Mount qemu VM image</title>
+		<link>https://xiehang.com/blog/2014/02/05/mount-qemu-vm-image/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Feb 2014 21:30:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[mount]]></category>
+		<category><![CDATA[raw]]></category>
+		<category><![CDATA[vm]]></category>
+		<category><![CDATA[volume]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1667</guid>
+
+					<description><![CDATA[I accidentally changed some configuration of a VM and it refused to start after reboot, I know I can simply revert what I changed to make it works again so to avoid recovery process, and I found this great article which described exactly what I want. I&#8217;m going to repeat the steps here as I <a href='https://xiehang.com/blog/2014/02/05/mount-qemu-vm-image/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I accidentally changed some configuration of a VM and it refused to start after reboot, I know I can simply revert what I changed to make it works again so to avoid recovery process, and I found <a href="http://alexeytorkhov.blogspot.com/2009/09/mounting-raw-and-qcow2-vm-disk-images.html">this great article</a> which described exactly what I want. I&#8217;m going to repeat the steps here as I also need to write steps to unmount. Note that you need to have kpartx installed.<span id="more-1667"></span></p>
+<p>Most VMs are in volume group, so here are steps to mount the VM image:<br />
+[shell]<br />
+sudo losetup /dev/loop0 /home/VM/vm1/disk.img<br />
+sudo kpartx -a /dev/loop0<br />
+sudo vgscan<br />
+sudo vgchange -ay<br />
+sudo vgscan<br />
+# figure out name of the volume group by comparing output of two vgscan<br />
+sudo mount /dev/vg_name/lv_root /mnt<br />
+# now you can go to /mnt/etc to edit those configurations, then<br />
+sudo umount /mnt<br />
+sudo vgchange -an vg_name<br />
+sudo kpartx -d /dev/loop0<br />
+sudo losetup -d /dev/loop0<br />
+[/shell]</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

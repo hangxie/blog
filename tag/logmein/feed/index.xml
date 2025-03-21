@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>logmein &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/logmein/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 14 Aug 2009 17:24:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>logmein is cool</title>
+		<link>https://xiehang.com/blog/2009/08/14/logmein-is-cool/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 14 Aug 2009 17:24:11 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[logmein]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=616</guid>
+
+					<description><![CDATA[When I was in Beijing I installed logmein on my mother&#8217;s desktop, and obviously this is a smart move. Yesterday she got some problem with her computer (missing the shortcut to the camera folder), usually, it would take me quite a while talking to her to know what&#8217;s happening there and then spend half an <a href='https://xiehang.com/blog/2009/08/14/logmein-is-cool/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>When I was in Beijing I installed <a href="http://www.logmein.com/">logmein</a> on my mother&#8217;s desktop, and obviously this is a smart move.</p>
+<p>Yesterday she got some problem with her computer (missing the shortcut to the camera folder), usually, it would take me quite a while talking to her to know what&#8217;s happening there and then spend half an hour or even more to get her understand what should be done to get things fixed.</p>
+<p>Now, it becomes super easy &#8211; she knows how to enable logmein, and once she did that, I can get to her machine to check around and fix it right away (you know how easy it is, right?), and at the same time she can see what I have done to her machine so just in case she wants to learn some, she can ask questions and I can answer them right away.</p>
+<p>This is a nice product, a great free service, I know big companies like Adobe, Microsoft, Cisco are all having similar products, just wish logmein can survive in the competition so that we can keep using it.</p>
+<p>BTW, it supports Windows and Mac,both are running well.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

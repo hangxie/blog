@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>recovery &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/recovery/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 23 Jan 2013 19:23:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Recover a bricked MK802III</title>
+		<link>https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/</link>
+					<comments>https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 17 Jan 2013 21:51:03 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[bricked]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[mk802III]]></category>
+		<category><![CDATA[recovery]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1472</guid>
+
+					<description><![CDATA[What you need: Macbook Pro + Virtual Box + Windows XP VM Alright, I&#8217;m kidding … you just need a Windows machine, I tried Windows 7 and Windows 8 (using Windows 7 drivers) are both working, but in case you just have a Mac like me, VM is the way to go. You&#8217;d better map <a href='https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>What you need:</p>
+<ol>
+<li>Macbook Pro + Virtual Box + Windows XP VM<br />
+Alright, I&#8217;m kidding … you just need a Windows machine, I tried Windows 7 and Windows 8 (using Windows 7 drivers) are both working, but in case you just have a Mac like me, VM is the way to go. You&#8217;d better map all USB devices to the Windows VM since it changes name during regular boot+USB debugging, and recovery boot.</li>
+<li>Download the recovery kit from <a href="http://www.rikomagic.com/En/download.asp">here</a>, use the MK802III link, you will get a zip file. Unzip, launch RKBatchTool.exe and leave it running on your Windows machine.</li>
+<li>Unplug everything from MK802III, open the case of MK802III &#8211; nail is the best tool for me and it should work for you as well</li>
+<li>Follow the document (one in English and one in Chinese) to short circuit the two pins, and plug in the USB to your computer at the same time. I actually found there are two small dot beside the other side of the chip which is more easier if you have a flat metal piece instead of a tiny needle.</li>
+<li>If everything works smoothly, you will see one block in the RKBatchTool.exe interface changed to some other color (different color may have different meaning, but I really want to ignore it for now).</li>
+<li>Click the button with &#8220;…&#8221; on the top right corner of the RKBatchTool.exe interface, pick the img file from the zip archive (should be RKM802III_20121115Recovery.img), click &#8220;Upgrade&#8221; button (that&#8217;s the 2nd button from left, at the bottom of the interface), it will take 2~3 minutes.</li>
+<li>Power off/on the MK802III, you will get original official Android back running on the stick.</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/01/17/recover-a-bricked-mk802iii/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>work &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/work/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:08:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Hello, World!</title>
+		<link>https://xiehang.com/blog/2012/09/25/hello-world/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 25 Sep 2012 07:56:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[update]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1404</guid>
+
+					<description><![CDATA[Just found that last post was back to Aug 15, which was 40 days ago (or more), guess I need to post something. There is not much to update though, good thing is that two guys pinged me the other day, asking why I&#8217;m no longer update my blog, also mentioned that it&#8217;s really impressive <a href='https://xiehang.com/blog/2012/09/25/hello-world/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just found that last post was back to Aug 15, which was 40 days ago (or more), guess I need to post something.</p>
+<p>There is not much to update though, good thing is that two guys pinged me the other day, asking why I&#8217;m no longer update my blog, also mentioned that it&#8217;s really impressive that I was working on so many different stuffs.</p>
+<p>Another update is that I have $1.81 on my AdSense account now, if you believe my articles do help, please click ads on the page. My target is to get $10 AdSense income within a year, so please help me.<span id="more-1404"></span></p>
+<p>Other than these &#8230; I was pretty busy on a company&#8217;s project, which is fun in term of business but no that fun (to me) in term of technology. There are some interesting parts in the project, but I&#8217;m not working on them, instead, I&#8217;m working on PHP codes now, doing something that I believe most open source ORM had done pretty well. Yea you got it, I&#8217;m packaging all DB and other storage access codes so that frond end guys don&#8217;t have to know details, thus in the future if there is anything wrong, such as performance problem we can re-implement the backend.</p>
+<p>I just cannot believe I&#8217;ve wrote thousands of junk codes and luckily, majority part passed all unit tests start from just now:</p>
+<pre>$ time ./batch-book.sh
+all tests passed [6050771]
+all tests passed [50000478]
+all tests passed [287] [288]
+all tests passed [126]
+all tests passed [12864-54321-1348559036]
+all tests passed
+all tests passed [114]
+all tests passed [115]
+all tests passed [6050772] [50000479,50000480,50000481,50000482,50000483,50000484,50000485,50000486,50000487,50000488,50000489,50000490,50000491,50000492,50000493,50000494,50000495,50000496,50000497,50000498]
+all tests passed [6050773] [289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308]
+all tests passed [6050774] [15158,15159,15160,15161,15162,15163,15164,15165,15166,15167,15168,15169,15170,15171,15172,15173,15174,15175,15176,15177]
+all tests passed [6050775] [123-6050775-1348559424,1234-6050775-1348559426,12345-6050775-1348559427,123456-6050775-1348559429]
+all tests passed [50000499] [127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146]
+all tests passed [309] [310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329]
+
+real    10m9.161s
+user    0m0.768s
+sys    0m5.493s</pre>
+<p>There are some more to be done, and goal is to release the first workable version by the end of this week.<br />
+Wish me luck.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>OT</title>
+		<link>https://xiehang.com/blog/2011/11/19/ot/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 20 Nov 2011 05:41:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[over time]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1149</guid>
+
+					<description><![CDATA[I believe this is the first time in my life that my team members are working hard on something even during the weekend, but I&#8217;m doing nothing. Feeling weird, but I still believe leave them &#8220;as-is&#8221; is the best way to all of us.]]></description>
+										<content:encoded><![CDATA[<p>I believe this is the first time in my life that my team members are working hard on something even during the weekend, but I&#8217;m doing nothing.</p>
+<p>Feeling weird, but I still believe leave them &#8220;as-is&#8221; is the best way to all of us.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Time to go back work</title>
+		<link>https://xiehang.com/blog/2011/10/05/time-to-go-back-work/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Oct 2011 16:59:21 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[holiday]]></category>
+		<category><![CDATA[learning]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1127</guid>
+
+					<description><![CDATA[It&#8217;s time to go back work, National Day long holiday is ending. At least I had some good sleep during the long holiday, also get some sort of &#8220;inner peace&#8221; after having the good sleep :). It seems labor work (most of them are yard work) helps a lot to get me good sleep, I <a href='https://xiehang.com/blog/2011/10/05/time-to-go-back-work/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s time to go back work, National Day long holiday is ending.</p>
+<p>At least I had some good sleep during the long holiday, also get some sort of &#8220;inner peace&#8221; after having the good sleep :). It seems labor work (most of them are yard work) helps a lot to get me good sleep, I will see if I can get some labor work or body exercise whenever I get back to Shanghai.</p>
+<p>It will be a tough month to me as I need to finish some hard steps to re-org the team, some stuffs had been done and it seems really hurt, but like it or not, I need to get rest done in a week or two, and make everyone in the team to focus on new business.</p>
+<p>To myself actually this is a good opportunity to practice those skills though I had tried before, painful learning curve.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Java time again?</title>
+		<link>https://xiehang.com/blog/2011/07/21/java-time-again/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Jul 2011 01:04:34 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1113</guid>
+
+					<description><![CDATA[It seems to me it&#8217;s my Java time again &#8211; several things are pushing to try out Java although the company is still moving forward to C/C++ and PHP. First problem is Android, this is a platform that EVERY application needs to think about, and obviously Java is the only way to get things done <a href='https://xiehang.com/blog/2011/07/21/java-time-again/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems to me it&#8217;s my Java time again &#8211; several things are pushing to try out Java although the company is still moving forward to C/C++ and PHP.</p>
+<p>First problem is Android, this is a platform that <strong>EVERY</strong> application needs to think about, and obviously Java is the only way to get things done (I heard of NDK, but it seems it is not a full function development kit).</p>
+<p>The next one is migration, I&#8217;m seriously thinking about migrating all my Java Web sites to PHP so that we can leverage resources within the company, such as resource pool. I need to dig into some sample applications to see how much effort we need to get this done, but since Java developers won&#8217;t like this idea (although they know about it), I don&#8217;t expect they are going to give me reasonable evaluation, so I have to be hands-on.</p>
+<p>Nothing else, I still don&#8217;t believe Java is a good choice for any applications other than e-commerce, and this makes me sick as it does sound like &#8220;COBOL is the excellent choice for business system&#8221; &#8230;</p>
+<p>Yes, Java is heavy and fat, it does not fit into my world :).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Long time no see</title>
+		<link>https://xiehang.com/blog/2011/07/21/long-time-no-see-2/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 21 Jul 2011 12:36:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[company]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1111</guid>
+
+					<description><![CDATA[Actually it was not that long, but I was super busy thus I guess it made me feel like long. Alright, back to the topic &#8211; I&#8217;m trying my best to sort things out and obviously I&#8217;m making progress although it was not that fast. OA team is going smoothly (thank my boss who took <a href='https://xiehang.com/blog/2011/07/21/long-time-no-see-2/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Actually it was not that long, but I was super busy thus I guess it made me feel like long.</p>
+<p>Alright, back to the topic &#8211; I&#8217;m trying my best to sort things out and obviously I&#8217;m making progress although it was not that fast. OA team is going smoothly (thank my boss who took lot of effort to babysit OA), and wireless team is hiring (I guess this could be the only thing they can do at this moment, may last for a month or so), the manager of infrastructure team finally got on board and I&#8217;ve already thrown everything to him, and the manager of mail team will be on board soon so pretty much I can hand over all routine stuffs to him.</p>
+<p>What&#8217;s next? Focus on products. Mail and Mailing List are two products are under heavily improvement, and they have to be successful to make the mail team survive. Infrastructure team needs to think about what kind of products they are going to deliver, and what&#8217;s the working model with other project teams. Architect team&#8217;s task is to set up a proper workflow for architecture review, architect community, and so on, and wireless team, for sure, is hiring those die-hard Android and iPhone gurus.</p>
+<p>I was no chaos in the past 6 or 8 months, I wish (and I believe) things are getting better now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>It&#8217;s just a mailing list</title>
+		<link>https://xiehang.com/blog/2011/05/27/its-just-a-mailing-list/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 28 May 2011 02:49:03 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1107</guid>
+
+					<description><![CDATA[Yes, it&#8217;s just a mailing list, but it&#8217;s my first product facing public internet users &#8230; http://o.sdo.com/]]></description>
+										<content:encoded><![CDATA[<p>Yes, it&#8217;s just a mailing list, but it&#8217;s my first product facing public internet users &#8230;</p>
+<p>http://o.sdo.com/</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>There are always friends</title>
+		<link>https://xiehang.com/blog/2011/05/01/there-are-always-friends/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 01 May 2011 17:07:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[organization]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1105</guid>
+
+					<description><![CDATA[There are always friends willing to help whenever I&#8217;m in troubles :). Problem I have? Yea, quite some. However, the most important thing is that I spent too much time on the new team and lost control on current team, this is not good, but thanks Zane (he got this really weird name), who give <a href='https://xiehang.com/blog/2011/05/01/there-are-always-friends/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There are always friends willing to help whenever I&#8217;m in troubles :).</p>
+<p>Problem I have? Yea, quite some. However, the most important thing is that I spent too much time on the new team and lost control on current team, this is not good, but thanks Zane (he got this really weird name), who give me pretty good suggestion and I now can fix things before they are totally broken.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Home-grown solutions, yes or no?</title>
+		<link>https://xiehang.com/blog/2011/03/19/home-grown-solutions-yes-or-no/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2011 14:33:46 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[share]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1100</guid>
+
+					<description><![CDATA[There are several teams that want to provide technical solution for my team in various area, and I&#8217;m thinking of adopting them or rejecting. There is no sure rule for that, basically I need to make sure: first they perform good enough to support my products, second, they need to be quite reliable which means <a href='https://xiehang.com/blog/2011/03/19/home-grown-solutions-yes-or-no/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There are several teams that want to provide technical solution for my team in various area, and I&#8217;m thinking of adopting them or rejecting.</p>
+<p>There is no sure rule for that, basically I need to make sure: first they perform good enough to support my products, second, they need to be quite reliable which means I will not worry about losing support, and third, they should focus on technical solution instead of trying to take product away from me.</p>
+<p>So far the only decision had been made is that I&#8217;m going to use cloud storage team&#8217;s solution (network disk), I will put attachment for outgoing mails there to support unlimited attachment, later on will put attachments for incoming mails there. Search team also wants me leverage their platform, but I have to say their solution is not good enough for me and quite ad-hoc, so someone from my team will use Lucene to build our first solution, then we can compare to see if we are going to migrate or not.</p>
+<p>I&#8217;m going to keep my team focus on mail/message area, thus meta data won&#8217;t be taken by anyone else. Also, anti-spam is key platform for my team so I won&#8217;t give up. For search and massive data storage in key-value pair format, I may give them out.</p>
+<p>Tough decision though, always need to convince my team members agree that we should focus on key features instead of doing everything all by ourselves. We are still a big company and share a common platform will give the whole company a good shape of look.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Long time no see</title>
+		<link>https://xiehang.com/blog/2010/08/13/long-time-no-see/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 14 Aug 2010 04:19:05 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[life]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1055</guid>
+
+					<description><![CDATA[Hey guys, long time no see. I was really really really busy in the past month &#8211; yea, it is almost a full month. What happened in the past month? Too many to tell all of them, but overall speaking, everything&#8217;s going well. I got a small team (will grow to a full size team <a href='https://xiehang.com/blog/2010/08/13/long-time-no-see/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Hey guys, long time no see. I was really really really busy in the past month &#8211; yea, it is almost a full month.</p>
+<p>What happened in the past month? Too many to tell all of them, but overall speaking, everything&#8217;s going well. I got a small team (will grow to a full size team in near future, at least I wish), product plan got orally approved, and contract had been settled.</p>
+<p>It was a tough month actually, too many things to handle in parallel, by now I cannot recall what was the exact feeling, but I&#8217;m pretty sure it was exhausted or depressed.</p>
+<p>Let&#8217;s move on to see what&#8217;s coming, I believe &#8211; yes I still believe &#8211; things will get better and better.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Review meeting again</title>
+		<link>https://xiehang.com/blog/2010/07/11/review-meeting-again/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 12 Jul 2010 01:44:56 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[meeting]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1048</guid>
+
+					<description><![CDATA[It&#8217;s 4th or 5th review meeting for my product plan, made great progress for sure, and people are getting bored as well :D. And each presentation shrinked from 30 pages PPT in the first meeting to 6 pages for next meeting (will happen in 20 min or so), and people who were in the meeting <a href='https://xiehang.com/blog/2010/07/11/review-meeting-again/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s 4th or 5th review meeting for my product plan, made great progress for sure, and people are getting bored as well :D.</p>
+<p>And each presentation shrinked from 30 pages PPT in the first meeting to 6 pages for next meeting (will happen in 20 min or so), and people who were in the meeting reduced from more than 10 down to 4 last time (guess we will have a little bit more today as it&#8217;s Monday). Topic wise, I believe everybody found that there is nothing to talk about strategy now, and time to go down to execution plan so it will be boring as most senior management people don&#8217;t care about how many days each feature will take, right?</p>
+<p>So this is why I have only 6 pages for the meeting, and I wish it can finish in 30 minutes. There is another product in my hands and I&#8217;m planning to migrate the platform to Mail product as well, let&#8217;s see.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

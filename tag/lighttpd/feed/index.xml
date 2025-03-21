@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>lighttpd &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/lighttpd/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 12 Jun 2009 05:57:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>django, lighttpd, &#8230;</title>
+		<link>https://xiehang.com/blog/2009/06/11/django-lighttpd/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 12 Jun 2009 05:57:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[django]]></category>
+		<category><![CDATA[lighttpd]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=457</guid>
+
+					<description><![CDATA[I&#8217;m trying to study Django more, this needs to get rid of the limitation of running test locally. I was doing port forwarding and then I thought, &#8220;anyway I will try deployment later on, why not just start the trial from now?&#8221; So, I started looking around, of course first thing came to mind is <a href='https://xiehang.com/blog/2009/06/11/django-lighttpd/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m trying to study Django more, this needs to get rid of the limitation of running test locally.</p>
+<p>I was doing port forwarding and then I thought, &#8220;anyway I will try deployment later on, why not just start the trial from now?&#8221;</p>
+<p>So, I started looking around, of course first thing came to mind is mod_python with apache httpd, but my Ubuntu has lighttpd running already (I have no idea when and why I deployed it), and then I thought, &#8220;yea, apache httpd is way too heavy, let me try lighttpd&#8221;.</p>
+<p>It turned out lighttpd is not perfect in administration though it may get me some performance gain. I have to launch fastcgi by myself, and in a real production environment it means I need to write some monitoring (parent) process to make sure the fastcgi server is running for all the time.</p>
+<p>Anyway I make django running on lighttpd, there are some URL mess and I still haven&#8217;t figured everything out, it seems django+lighttpd prefer application-per-domain instead of application-per-URI, I will check more to see if it is the case or not.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

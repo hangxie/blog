@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>blog &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 22 Feb 2015 19:01:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>fail2ban</title>
+		<link>https://xiehang.com/blog/2015/02/22/fail2ban/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 22 Feb 2015 19:01:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[abuse]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[fail2ban]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1741</guid>
+
+					<description><![CDATA[I need to find out a good configuration to fail2ban attackers who targeting my blog, I checked log and found that 404 may not be a good indicator as some themes have 404 for all the time, I will check to see if I can use non-media resources to do rate-limit like solution.]]></description>
+										<content:encoded><![CDATA[<p>I need to find out a good configuration to fail2ban attackers who targeting my blog, I checked log and found that 404 may not be a good indicator as some themes have 404 for all the time, I will check to see if I can use non-media resources to do rate-limit like solution.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>My site is back</title>
+		<link>https://xiehang.com/blog/2011/10/27/my-site-is-back/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 28 Oct 2011 01:15:54 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[block]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[china telecom]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1137</guid>
+
+					<description><![CDATA[There were some problems with China Telecom in the past several days, I could not access my blog site for almost a week. However, there was no problem if I went through China Mobile or China Unicom. It seems China Telecom blocked access to several the GoDaddy DNS servers, I don&#8217;t know the exact reason <a href='https://xiehang.com/blog/2011/10/27/my-site-is-back/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There were some problems with China Telecom in the past several days, I could not access my blog site for almost a week. However, there was no problem if I went through China Mobile or China Unicom.</p>
+<p>It seems China Telecom blocked access to several the GoDaddy DNS servers, I don&#8217;t know the exact reason behind the scene, but obviously there were something &#8230;</p>
+<p>Anyway, good to see my site&#8217;s back.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New domain</title>
+		<link>https://xiehang.com/blog/2009/12/11/new-domain/</link>
+					<comments>https://xiehang.com/blog/2009/12/11/new-domain/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2009 23:42:41 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[domain]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=816</guid>
+
+					<description><![CDATA[Got a new domain (transferred from previous Windows Live free domain registry), but not sure what I&#8217;m going to do with it. Could be another blog and some testing &#8211; after I started doing this English blogging, I found that less Chinese came to read. There are still some good technology that I want to <a href='https://xiehang.com/blog/2009/12/11/new-domain/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Got a new domain (transferred from previous Windows Live free domain registry), but not sure what I&#8217;m going to do with it.</p>
+<p>Could be another blog and some testing &#8211; after I started doing this English blogging, I found that less Chinese came to read. There are still some good technology that I want to discuss in Chinese, or let&#8217;s say, get them to be known in China, so running a Chinese blog could be a good idea.</p>
+<p>Anything else than that does not make too much sense at this moment. Godaddy&#8217;s Python is still at 2.4, I don&#8217;t think I can play with Python there, and I don&#8217;t have any other hosting plan yet, maybe I should shop around.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/11/new-domain/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Test from Yahoo Mail</title>
+		<link>https://xiehang.com/blog/2009/05/19/test-from-yahoo-mail/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 May 2009 15:50:16 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/05/19/test-from-yahoo-mail/</guid>
+
+					<description><![CDATA[Yahoo mail is trying to do something similar to Microsoft&#8217;s Live Writer, let&#8217;s see how it works &#8230;]]></description>
+										<content:encoded><![CDATA[<p>Yahoo mail is trying to do something similar to Microsoft&#8217;s Live Writer, let&#8217;s see how it works &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

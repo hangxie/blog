@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ypserv &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/ypserv/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 08 Aug 2012 07:47:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>ypserv does not take newly changed password</title>
+		<link>https://xiehang.com/blog/2012/08/08/ypserv-does-not-take-newly-changed-password/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 08 Aug 2012 07:47:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[nis]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[ypserv]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1387</guid>
+
+					<description><![CDATA[A colleague setup an NIS server to centralize the authentication, but on client side, after using yppasswd changed password, it never takes effect (i.e. still have to use old password), but restart ypserv make data sync up. Quickly google and found this article, then adding &#8220;host 127.0.0.1&#8221; to /var/yp/securenets then restart (for the last time) <a href='https://xiehang.com/blog/2012/08/08/ypserv-does-not-take-newly-changed-password/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>A colleague setup an NIS server to centralize the authentication, but on client side, after using yppasswd changed password, it never takes effect (i.e. still have to use old password), but restart ypserv make data sync up.</p>
+<p>Quickly google and found <a href="http://wiki.xdroop.com/space/Linux/ypserv+doesn%27t+get+notified+when+yppasswdd+changes+a+password">this article</a>, then adding &#8220;host 127.0.0.1&#8221; to /var/yp/securenets then restart (for the last time) ypserv gets this solved.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

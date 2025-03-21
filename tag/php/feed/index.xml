@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>php &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/php/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 21 Apr 2014 16:41:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Fixes applied after upgrading to 14.04 LTS</title>
+		<link>https://xiehang.com/blog/2014/04/21/fixes-applied-after-upgrading-to-14-04-lts/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 21 Apr 2014 16:40:36 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[ejabberd]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[roundcube]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1691</guid>
+
+					<description><![CDATA[Several issues found after upgrade various version of Ubuntu to latest 14.04 LTS, luckily things are not that hard to fix. ejabberd does not work, turned to be ejabberd was trying to get rid of asn1, and there were some problem caused by that. Though ejabberd fixed the problem right away, it seems Ubuntu took <a href='https://xiehang.com/blog/2014/04/21/fixes-applied-after-upgrading-to-14-04-lts/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Several issues found after upgrade various version of Ubuntu to latest 14.04 LTS, luckily things are not that hard to fix.</p>
+<p>ejabberd does not work, turned to be ejabberd was trying to get rid of asn1, and there were some problem caused by that. Though ejabberd fixed the problem right away, it seems Ubuntu took the wrong version. What you should do is upgrade ejabberd from 2.1.11 to 2.1.12 (later version may work as well, but I didn&#8217;t try), <span id="more-1691"></span></p>
+<p>and if you don&#8217;t know how to play with erl => beam compilation like me, you can just setup a Fedora VM and install ejabberd over there and copy eldap.beam from ejabberd package (NOTE: not the eldap.beam from ejabberd-eldap package) to the Ubuntu box.</p>
+<p>RoundCube web mail does not work, it was cause by several issues. First, apach2 now only takes *.conf from site-enabled/ directory instead of former configuration of taking anything (I could have wrong impression on old release, but this is the cause). Second, dovecot&#8217;s configuration needs some tweak &#8211; you just need add a new section to 10-mail.conf with namespace inbox defined, which has inbox = yes inside. The last thing is, you need to enable mcrypt.ini in PHP&#8217;s apache configuration, you can do whatever you want, I just symlink mcrypy.ini from mods-available/ to apache/ and that&#8217;s it.</p>
+<p>The new RoundCube interface looks good, I&#8217;m going to dig around to see if there is any other theme with different color, I always prefer light-blue/light-gray style.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Should I move to GDChart?</title>
+		<link>https://xiehang.com/blog/2013/08/02/should-i-move-to-gdchart/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 23:19:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[gd2]]></category>
+		<category><![CDATA[gdchart]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phplot]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1565</guid>
+
+					<description><![CDATA[I think I&#8217;m going to play with Perl, PHP, and Python at almost the same time for some time, and thinking of the fact that dynamic graph is one of the most important feature for web pages, I think I need to find a cross-language solution. I&#8217;m happy with PHPlot and decide not to touch <a href='https://xiehang.com/blog/2013/08/02/should-i-move-to-gdchart/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I think I&#8217;m going to play with Perl, PHP, and Python at almost the same time for some time, and thinking of the fact that dynamic graph is one of the most important feature for web pages, I think I need to find a cross-language solution.</p>
+<p>I&#8217;m happy with PHPlot and decide not to touch GD::Graph, and I came across GDChart which seems to be good in cross-platform/cross-language area. I will give it a try and will post the result here.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to solve problems</title>
+		<link>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/</link>
+					<comments>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jul 2013 22:54:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[geo]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[Plot]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[shapefile]]></category>
+		<category><![CDATA[shp. pyshp]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1551</guid>
+
+					<description><![CDATA[I was assigned to a Web project which is to present data analysis result to users. Original data came from Web log, plus some extra information, then headed to Hive, then populated statistics files after scientist&#8217;s analysis There are several interesting topics: geo graph, rendering another web page, and metrics graph, roughly speaking, I have no <a href='https://xiehang.com/blog/2013/07/19/how-to-solve-problems/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was assigned to a Web project which is to present data analysis result to users. Original data came from Web log, plus some extra information, then headed to Hive, then populated statistics files after scientist&#8217;s analysis There are several interesting topics: geo graph, rendering another web page, and metrics graph, roughly speaking, I have no idea of any of these at the beginning of the project.</p>
+<p>I think the best decision I made is to use GD based solution, actually that could be the only solution I can think about, I decided to use PHP for Web, plus Perl for batch processing, this actually seems not to be quite right as I&#8217;m migrating everything to PHP now as there is not much &#8220;real&#8221; batch processing, and everything could be done in shell. Also I decided to use server-side DOM model (read: PHP DOM) so not to slow down the project by my poor JS skills, actually my PHP skill is not that good but JS is definitely <strong>*poor*</strong>.<span id="more-1551"></span></p>
+<p>I started with looking for geo graph solution. It&#8217;s obvious that the most important thing is get data to draw a map, soon I found that everything on the Web is <a href="https://en.wikipedia.org/wiki/Shapefile">shapefile </a>based which need another round of search to get a workable dump solution. I didn&#8217;t spend too much time on this &#8230; at the beginning I was using the open source <a href="http://www.qgis.org/">Quantum GIS</a> software, later on changed to <a href="https://code.google.com/p/pyshp/">PyShp </a>which is much light weight &#8211; GIS software has lots of fancy features, but all that I want is read shapefile and dump coordinates.</p>
+<p>Once I have the coordinates data, geo graph becomes really simple, all that I need to do is read in data, use GD polygon feature to draw the map. Sure this needs to hook up with data, but I believe this is suitable to a high-school kid as a science project, or maybe middle school? I&#8217;m not sure <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Re-rendering an existing Web page is definitely a tough labor work, you don&#8217;t have to be smart but you need to be very careful, analyzing page structures, decided where to put something in and where to remove something so to make the final page as you want. The source Web site (another subsidiary of our company) has some interesting anti-abuse tricks, I have to put proxy calls to almost every requests to their resources. Other than this I cannot remember anything that needs deeply research. However, after I finished almost all these, I believe the right solution for this is doing everything in a JS plus CSS instead of PHP, but I don&#8217;t want to change it since I don&#8217;t want to step too deep into JS stuffs.</p>
+<p>The last thing is metric graphs. I started with Perl&#8217;s <a href="http://search.cpan.org/dist/GDGraph/Graph.pm">GD::Graph</a> which is OK, at least I can get everything done but took me too much time. Later on I found <a href="http://phplot.sourceforge.net/">PHPlot </a>and switched to this pure PHP solution. PHPlot is much easy to understand and also easy to debug (this is not because of PHP/Perl difference), I think I&#8217;m going to stick with PHPlot and never go back to GD::Graph.</p>
+<p>Some other thinking came to my mind while I was playing with all above. First, jQuery is something neat, makes my life much more easier and no wonder so many JS developers are using it and things similar, I&#8217;m going to dig more in especially try it out wiht PhoneGap, etc. to see if it can speed up mobile app development. Second, Python came to my view again, I think I will utilize it for my next sys admin task, and see how it can work with rest of my world, I&#8217;m more interested with its &#8220;glue&#8221; ability with C/C++ modules. Third, I got a weird idea of rewriting PHPLot in C/C++, for reason unknown :D, the performance is not a concern to me at this moment, but I just don&#8217;t like ~8000 lines of PHP codes in one file staying on my web server, but I believe this will be just an idea at least for near future.</p>
+<p>Perl needs to improve its ability to handle UTF8 characters, seriously.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Trying PHPlot</title>
+		<link>https://xiehang.com/blog/2013/07/18/trying-phplot/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jul 2013 00:52:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phpplot]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1545</guid>
+
+					<description><![CDATA[PHPlot looks better than Perl&#8217;s GD::Graph &#8230; I don&#8217;t know how to exactly describe the difference, but feel like: neat, easy to understand, easy to control, and better default values. I&#8217;m migrating some BI sites to PHPlot so to get rid of Perl stuffs, so to make things purely PHP based, thus other PHP guys <a href='https://xiehang.com/blog/2013/07/18/trying-phplot/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>PHPlot looks better than Perl&#8217;s GD::Graph &#8230; I don&#8217;t know how to exactly describe the difference, but feel like: neat, easy to understand, easy to control, and better default values.</p>
+<p>I&#8217;m migrating some BI sites to PHPlot so to get rid of Perl stuffs, so to make things purely PHP based, thus other PHP guys can take over it easily.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>apache_note() in PHP is sweet</title>
+		<link>https://xiehang.com/blog/2013/01/25/apache_note-in-php-is-sweet/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 25 Jan 2013 21:01:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[apache_note]]></category>
+		<category><![CDATA[customized]]></category>
+		<category><![CDATA[log]]></category>
+		<category><![CDATA[php]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1485</guid>
+
+					<description><![CDATA[I was asked to find a solution to write customized Apache log entry (in Apache access log, not error log), other requirements include easy to use, which implicitly means &#8220;PHP friendly&#8221;, and flexible, which means &#8220;free format&#8221; and &#8220;may or may not have the value&#8221;. Seriously, the first thing jumped into my mind was an <a href='https://xiehang.com/blog/2013/01/25/apache_note-in-php-is-sweet/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was asked to find a solution to write customized Apache log entry (in Apache access log, not error log), other requirements include easy to use, which implicitly means &#8220;PHP friendly&#8221;, and flexible, which means &#8220;free format&#8221; and &#8220;may or may not have the value&#8221;.</p>
+<p>Seriously, the first thing jumped into my mind was an Apache module (let&#8217;s hack mod_log!) or a PHP extension, but later on I found that &#8230; I don&#8217;t want to maintain another orphan project especially it will be orphan since nobody want to touch it after it&#8217;s up and running (I have one already, which does some cookie stuffs). So I move on to Google &#8230;</p>
+<p>Then I found <a href="http://php.net/manual/en/function.apache-note.php">apache_note()</a>, plus <a href="http://httpd.apache.org/docs/2.2/mod/mod_log_config.html">mod_log_config</a> (search for <code>%{<var>Foobar</var>}n</code>), all that I need to do is tell PHP guys to call this function, and tell ops guys to setup Apache log properly, we are all set.</p>
+<p>It&#8217;s good to see apache_note can change the note as many times as you want, whenever the request is finished on server side, the final data will be written to log.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Hello, World!</title>
+		<link>https://xiehang.com/blog/2012/09/25/hello-world/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 25 Sep 2012 07:56:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[update]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1404</guid>
+
+					<description><![CDATA[Just found that last post was back to Aug 15, which was 40 days ago (or more), guess I need to post something. There is not much to update though, good thing is that two guys pinged me the other day, asking why I&#8217;m no longer update my blog, also mentioned that it&#8217;s really impressive <a href='https://xiehang.com/blog/2012/09/25/hello-world/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just found that last post was back to Aug 15, which was 40 days ago (or more), guess I need to post something.</p>
+<p>There is not much to update though, good thing is that two guys pinged me the other day, asking why I&#8217;m no longer update my blog, also mentioned that it&#8217;s really impressive that I was working on so many different stuffs.</p>
+<p>Another update is that I have $1.81 on my AdSense account now, if you believe my articles do help, please click ads on the page. My target is to get $10 AdSense income within a year, so please help me.<span id="more-1404"></span></p>
+<p>Other than these &#8230; I was pretty busy on a company&#8217;s project, which is fun in term of business but no that fun (to me) in term of technology. There are some interesting parts in the project, but I&#8217;m not working on them, instead, I&#8217;m working on PHP codes now, doing something that I believe most open source ORM had done pretty well. Yea you got it, I&#8217;m packaging all DB and other storage access codes so that frond end guys don&#8217;t have to know details, thus in the future if there is anything wrong, such as performance problem we can re-implement the backend.</p>
+<p>I just cannot believe I&#8217;ve wrote thousands of junk codes and luckily, majority part passed all unit tests start from just now:</p>
+<pre>$ time ./batch-book.sh
+all tests passed [6050771]
+all tests passed [50000478]
+all tests passed [287] [288]
+all tests passed [126]
+all tests passed [12864-54321-1348559036]
+all tests passed
+all tests passed [114]
+all tests passed [115]
+all tests passed [6050772] [50000479,50000480,50000481,50000482,50000483,50000484,50000485,50000486,50000487,50000488,50000489,50000490,50000491,50000492,50000493,50000494,50000495,50000496,50000497,50000498]
+all tests passed [6050773] [289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308]
+all tests passed [6050774] [15158,15159,15160,15161,15162,15163,15164,15165,15166,15167,15168,15169,15170,15171,15172,15173,15174,15175,15176,15177]
+all tests passed [6050775] [123-6050775-1348559424,1234-6050775-1348559426,12345-6050775-1348559427,123456-6050775-1348559429]
+all tests passed [50000499] [127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146]
+all tests passed [309] [310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329]
+
+real    10m9.161s
+user    0m0.768s
+sys    0m5.493s</pre>
+<p>There are some more to be done, and goal is to release the first workable version by the end of this week.<br />
+Wish me luck.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>PHPRedis</title>
+		<link>https://xiehang.com/blog/2012/08/15/phpredis/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 15 Aug 2012 20:31:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[phpredis]]></category>
+		<category><![CDATA[predis]]></category>
+		<category><![CDATA[redis]]></category>
+		<category><![CDATA[rpm]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1397</guid>
+
+					<description><![CDATA[Need to play with PHP extension for redis for a while, and after reading several articles on the web, I decided to with PHPRedis instead of Predis because of performance. My goal is build up a webservice to proxy requests to backend redis servers, the web server is actually a proxy handling all routing related <a href='https://xiehang.com/blog/2012/08/15/phpredis/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Need to play with PHP extension for redis for a while, and after reading several articles on the web, I decided to with <a href="https://github.com/nicolasff/phpredis/">PHPRedis</a> instead of <a href="https://github.com/nrk/predis/">Predis</a> because of performance.</p>
+<p>My goal is build up a webservice to proxy requests to backend redis servers, the web server is actually a proxy handling all routing related issues, so that clients don&#8217;t have to worry about hashing, sharding, etc. So I do prefer something pretty fast, though I don&#8217;t know how fast I need.</p>
+<p>I dig out an article of <a href="http://supportex.net/2011/08/rpm-build-redis-library-package-php/">how to build up PHPRedis extension</a>, but need to get redis.ini from github to so that build won&#8217;t fail. However, if you are lazy you can just put &#8220;extension=redis.so&#8221; to redis.ini by yourself, anyway, all up to you. Determine name of tarball and directory in spec file is some sort of tricky, as it seems things changed every version. I was using nicolasff-phpredis-2.2.1-66-g89bdaf2.tar.gz and nicolasff-phpredis-89bdaf2, note that they are not identical though have some common parts.</p>
+<p>I&#8217;ve deployed the extension to one of my test box, and will do some tests later on.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Captcha</title>
+		<link>https://xiehang.com/blog/2011/10/22/captcha/</link>
+					<comments>https://xiehang.com/blog/2011/10/22/captcha/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 23 Oct 2011 02:02:07 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[captcha]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[shopping]]></category>
+		<category><![CDATA[spam]]></category>
+		<category><![CDATA[truetype]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1134</guid>
+
+					<description><![CDATA[I built a captcha for a friend a while back for a shopping site, obviously it was too simple to be corrupted so I built this new one last night. It was not perfect though, as I don&#8217;t have enough knowledge to create dynamic fonts. Under Ubuntu it is easy to get things work &#8211; <a href='https://xiehang.com/blog/2011/10/22/captcha/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I built a <a href="http://en.wikipedia.org/wiki/Captcha">captcha</a> for a friend a while back for a shopping site, obviously it was too simple to be corrupted so I built this <a href="https://xiehang.com/code.php">new one</a> last night. It was not perfect though, as I don&#8217;t have enough knowledge to create dynamic fonts.</p>
+<p>Under Ubuntu it is easy to get things work &#8211; install php5-gd, luckily it brought couple of fonts and then the script works like a charm. Under my friend&#8217;s machine I need to install some extra packages to get TrueType fonts, but it is not that hard.</p>
+<p>Let&#8217;s see how this works, I believe the captcha is a little bit hard to be read, but it can block spammers.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/10/22/captcha/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>I&#8217;m not that fast any more</title>
+		<link>https://xiehang.com/blog/2009/11/24/im-not-that-fast-any-more/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2009 17:59:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=765</guid>
+
+					<description><![CDATA[&#8220;not fast&#8221; is better than &#8220;slow&#8221;, so I think I&#8217;m making progress, better than before. Updates: I moved to proxmox which gives me better VM performance so that I can have more VMs for my test, it did take me some time to dig out a usable solution. Now I&#8217;m running 4 VMs so I <a href='https://xiehang.com/blog/2009/11/24/im-not-that-fast-any-more/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>&#8220;not fast&#8221; is better than &#8220;slow&#8221;, so I think I&#8217;m making progress, better than before.</p>
+<p>Updates:</p>
+<ul>
+<li>I moved to <a href="http://www.proxmox.com/">proxmox </a>which gives me better VM performance so that I can have more VMs for my test, it did take me some time to dig out a usable solution. Now I&#8217;m running 4 VMs so I can test fail-over and bootstrap etc.</li>
+<li>I moved to Python since PHP is not that popular now especially in all these new technology, I&#8217;m a code-by-sample guy, so while the whole world is writing codes in Java, Ruby, and Python, I don&#8217;t have many choices. I picked Python because I don&#8217;t want to run things like Tomcat, and built-in web servers does not convince me (I&#8217;m talking about Ruby).</li>
+<li>I&#8217;ve done some simple tests but dealing with columns, etc., the test environment gives me reasonable performance number &#8211; 8ms per read/write.</li>
+<li>I&#8217;m still learning Python and its web stuffs, seems not that hard to catch up though. I&#8217;m using web.py which seems to be the lightest framework, I may be wrong but I don&#8217;t want to dig in more at this moment.</li>
+</ul>
+<p>To-do list:</p>
+<ul>
+<li>I need to figure out if Ubuntu is still the way to go for my virtualization environment, I&#8217;m worrying proxmox is not a major player in this area so it may ruin my long term plan.</li>
+<li>I need to find out if there is any other better HTTP server, &#8220;better&#8221; here means: light, support wsgi.</li>
+<li>I&#8217;m going to compose some test scripts dealing with super column, which is what I need to use for the statistic project.</li>
+<li>Revisit original design, both schema and work flow may have some changes.</li>
+</ul>
+<p>I would like to say, everything is on the track, though I&#8217;m not that fast. I will post updates after this thanks giving as I doubt if I will have time coding during the holiday.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Changes &#8230;</title>
+		<link>https://xiehang.com/blog/2009/11/17/changes/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 17 Nov 2009 21:56:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=752</guid>
+
+					<description><![CDATA[Here is the deal &#8211; I decided to drop PHP and moving to Python, so that I can spend less time on dealing with less-supported PHP (in this nosql wave), I&#8217;ve removed PHP from all dev/test environments and wish I won&#8217;t come back later. Actually I&#8217;ve made PHP works, but I&#8217;m just not feeling well <a href='https://xiehang.com/blog/2009/11/17/changes/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here is the deal &#8211; I decided to drop PHP and moving to Python, so that I can spend less time on dealing with less-supported PHP (in this nosql wave), I&#8217;ve removed PHP from all dev/test environments and wish I won&#8217;t come back later.</p>
+<p>Actually I&#8217;ve made PHP works, but I&#8217;m just not feeling well as not many people are using PHP and it seems hard to seek help whenever needed. Also, seems setting up Python with Apache (through wsgi) is not that difficult. It could be a good chance to lear Python as well, though I did some PyS60 a while ago (for Jabber on E90).</p>
+<p>BTW, I&#8217;ve upgraded all Fedora instances (3 of them) to Fedora 12, so far so good.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

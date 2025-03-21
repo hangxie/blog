@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Online backup	</title>
+	<atom:link href="https://xiehang.com/blog/2009/10/28/online-backup/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/10/28/online-backup/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 29 Oct 2009 04:16:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/10/28/online-backup/comment-page-1/#comment-2740</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2009 04:16:07 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=721#comment-2740</guid>
+
+					<description><![CDATA[Just found one thing - I can actually use my PowerBook as backup as it has 50G+ free space for now, and I don&#039;t think I&#039;m going to put any significant amount of data over there.]]></description>
+			<content:encoded><![CDATA[<p>Just found one thing &#8211; I can actually use my PowerBook as backup as it has 50G+ free space for now, and I don&#8217;t think I&#8217;m going to put any significant amount of data over there.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

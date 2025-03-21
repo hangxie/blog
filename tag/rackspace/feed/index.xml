@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rackspace &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/rackspace/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 18 Sep 2014 02:30:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Settled down</title>
+		<link>https://xiehang.com/blog/2014/07/06/settled-down/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 06 Jul 2014 21:07:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[career]]></category>
+		<category><![CDATA[cfengine]]></category>
+		<category><![CDATA[git]]></category>
+		<category><![CDATA[nagios]]></category>
+		<category><![CDATA[rackspace]]></category>
+		<category><![CDATA[saltstack]]></category>
+		<category><![CDATA[shinken]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1700</guid>
+
+					<description><![CDATA[I&#8217;m working for the big chip company now, sound a little bit weird, though 😉 . Anyway, I&#8217;m sitting in backend team focusing on DevOps, I guess I will be in this mixed role till we find a dedicated DevOps guy. I guess whenever that happens, I&#8217;ve already finished monitoring facility (plus logistical stuffs like <a href='https://xiehang.com/blog/2014/07/06/settled-down/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m working for the big chip company now, sound a little bit weird, though <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Anyway, I&#8217;m sitting in backend team focusing on DevOps, I guess I will be in this mixed role till we find a dedicated DevOps guy. I guess whenever that happens, I&#8217;ve already finished monitoring facility (plus logistical stuffs like on-call schedule, etc.), and should have finished the plan to migrate from Rackspace to AWS.</p>
+<p>Everything works smoothly so far except git &#8211; I admit current company is using git in a modern way, but I don&#8217;t think previous company was doing something wrong. Anyway, I believe people do have different ideas of how to use git, I just have to fit into the company&#8217;s style.</p>
+<p>I don&#8217;t quite like saltstack although I&#8217;m still trying to get familiar with it. However, before I raise this as a concern to the team, I&#8217;d like to make sure everything that saltstack is doing can be done by cfengine.</p>
+<p>Ah yea, also need to evaluate <a href="http://www.shinken-monitoring.org/">Shinken</a> as it&#8217;s a pure Python solution, and &#8220;we are a python house&#8221;.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

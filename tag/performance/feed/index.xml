@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>performance &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/performance/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 22 Aug 2013 20:19:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Python vs. Perl</title>
+		<link>https://xiehang.com/blog/2013/08/22/python-vs-perl/</link>
+					<comments>https://xiehang.com/blog/2013/08/22/python-vs-perl/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 22 Aug 2013 20:19:43 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1576</guid>
+
+					<description><![CDATA[I&#8217;m working on a set of data refreshment scripts, which get data from file, do some transform, then send to a HTTP interface. Since the HTTP interface is kind of slow compare with reading and transforming data, I have several forked children processes to handle HTTP part. Everything was done by Perl about 6 months <a href='https://xiehang.com/blog/2013/08/22/python-vs-perl/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m working on a set of data refreshment scripts, which get data from file, do some transform, then send to a HTTP interface. Since the HTTP interface is kind of slow compare with reading and transforming data, I have several forked children processes to handle HTTP part.</p>
+<p>Everything was done by Perl about 6 months ago, and everything seems good &#8230; until I started picking up Python. First sight is that Pyhon program is about 50% of Perl in term of LOC, which makes it easier to read, but seriously I don&#8217;t care about this too much as the logic is quite simple, however, when I tested Python programs and found that they are at least 50% faster than Perl&#8217;s, I felt nervous.</p>
+<p>Two examples &#8211; Perl takes 13 seconds, Python takes 5, Perl takes 34 minutes, Python takes 10. Actually I&#8217;m really nervous at this moment thinking of my poor Python skills, I always worry if I made anything wrong with the translation (from Perl to Python), even I have verified result data for quite some times.</p>
+<p>Will dig in after converting all scripts to Python.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/22/python-vs-perl/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>To-do list with glusterfs</title>
+		<link>https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/</link>
+					<comments>https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 23 Jul 2013 00:41:31 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[glusterfs]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1555</guid>
+
+					<description><![CDATA[Playing with GlusterFS now, here&#8217;s the to-do list: Installation and basic configuration, plus getting familiar with command line utilities Set up RAID-10-like configuration, with geo-replication if it is possible Regular routine maintenance, haven&#8217;t got clear idea yet, but should include: expand a volume, shrink a volume, replace a brick in volume, re-balance data, convert another <a href='https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Playing with <a href="http://www.gluster.org/">GlusterFS </a>now, here&#8217;s the to-do list:</p>
+<ol>
+<li><span style="line-height: 13px;">Installation and basic configuration, plus getting familiar with command line utilities</span></li>
+<li>Set up RAID-10-like configuration, with geo-replication if it is possible</li>
+<li>Regular routine maintenance, haven&#8217;t got clear idea yet, but should include: expand a volume, shrink a volume, replace a brick in volume, re-balance data, convert another fs to glusterfs, recover from various disasters, etc.</li>
+<li>Performance testing with various scenarios, even people have certain number with them, include: mail server with maildir (large number of small files with small amount of concurrent access), file server (medium number of files and medium size with almost no concurrent access), video server (small number of large files with large amount of concurrent access), file based database like SQLite and BerkeleyDB (concurrent access with lots of seek operation), and RDBMS like mysql/postgre.</li>
+</ol>
+<p>Sound like a great plan, right :D? Let&#8217;s see.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Performance of EC2 nodes</title>
+		<link>https://xiehang.com/blog/2012/05/21/performance-of-ec2-nodes/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 21 May 2012 07:08:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[disk]]></category>
+		<category><![CDATA[ebs]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[io]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1339</guid>
+
+					<description><![CDATA[I was running crawler-like application on my EC2 nodes, which grab a set of web pages, save them locally, then do some follow-ups, obviously I hit the bottleneck of the EC2 nodes. It seems EC2&#8217;s storage, at least EBS performs quite bad, I don&#8217;t have comparison in number, but for the follow-ups jobs, which are <a href='https://xiehang.com/blog/2012/05/21/performance-of-ec2-nodes/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was running crawler-like application on my EC2 nodes, which grab a set of web pages, save them locally, then do some follow-ups, obviously I hit the bottleneck of the EC2 nodes.</p>
+<p>It seems EC2&#8217;s storage, at least EBS performs quite bad, I don&#8217;t have comparison in number, but for the follow-ups jobs, which are nothing to do with network, EC2 is hundreds or thousands times slower than a regular modern machine.</p>
+<p>I guess traditional applications on EC2 don&#8217;t rely on EBS too much &#8211; most data write to S3/RDS/SDB, etc. However, I do have to pay more attention on this as there is a friend gets to run some critical jobs and I recommended EC2 &#8230; I will do some more tests and post result here if I find anything signaficant.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>CentOS 6 vs. CentOS 5</title>
+		<link>https://xiehang.com/blog/2012/04/17/centos-6-vs-centos-5/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2012 06:20:02 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gcc]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1309</guid>
+
+					<description><![CDATA[I&#8217;m talking about performance here, same program, same compiler options, gcc on CentOS6 generate much better executable than gcc on CentOS5, the gap is 10~15%. I think gcc makes the most difference, as changing glibc etc. does not make too many difference. It seems gcc did pretty good job from 4.1 to 4.4, I will <a href='https://xiehang.com/blog/2012/04/17/centos-6-vs-centos-5/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m talking about performance here, same program, same compiler options, gcc on CentOS6 generate much better executable than gcc on CentOS5, the gap is 10~15%.</p>
+<p>I think gcc makes the most difference, as changing glibc etc. does not make too many difference. It seems gcc did pretty good job from 4.1 to 4.4, I will dig into details whenever I have time.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Pointer, template, performance, and memory leak</title>
+		<link>https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/</link>
+					<comments>https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 17 Apr 2012 19:29:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[c++]]></category>
+		<category><![CDATA[memory leak]]></category>
+		<category><![CDATA[optimize]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[stl]]></category>
+		<category><![CDATA[template]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1306</guid>
+
+					<description><![CDATA[I&#8217;m a strong supporter to STL since ideally you can get rid of new/delete and malloc/free so not worry about memory leakage, sure you still need to think about resource leak but that&#8217;s much easier to debug to me. However, I&#8217;m stuck in performance issue not with STL, I know STL does a lot of <a href='https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m a strong supporter to STL since ideally you can get rid of new/delete and malloc/free so not worry about memory leakage, sure you still need to think about resource leak but that&#8217;s much easier to debug to me.</p>
+<p>However, I&#8217;m stuck in performance issue not with STL, I know STL does a lot of copy operation but I never imagine the performance is this bad, I think the main reason is that I use too many std::string and that kind of copy takes time, but what else can I do, move to char *? That will get back to new/delete again.</p>
+<p>I&#8217;m running oprofile now to see if there is anything else to me optimized &#8211; the goal is 400K bytes/second, and I&#8217;m at 310K, while old pointer-rich implementation was no less than 500K. If there is nothing to to tuned I will just drop this branch and keep previous ugly but efficient codes.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/04/17/pointer-template-performance-and-memory-leak/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cassandra&#8217;s read performance</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/</link>
+					<comments>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 22:11:25 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[performance]]></category>
+		<category><![CDATA[test]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907</guid>
+
+					<description><![CDATA[I setup a testing environment on couple of company boxes to see how Cassandra performs with real machines (real here means powerful enough to be a data node), here are details of the environment: Two client nodes, one server nodes, all are RHEL 4.x. I use two clients nodes as I found that during the <a href='https://xiehang.com/blog/2010/01/19/cassandras-read-performance/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I setup a testing environment on couple of company boxes to see how Cassandra performs with real machines (real here means powerful enough to be a data node), here are details of the environment:</p>
+<ul>
+<li>Two client nodes, one server nodes, all are RHEL 4.x. I use two clients nodes as I found that during the performance test, single client machine is unable to generate enough load</li>
+<li>All three machines are 8 cores/16G memory (well, memory is not a big deal for my tests)</li>
+<li>Running Cassandray 0.5.0 RC3 (built from svn last night)</li>
+<li>Client is using Python</li>
+</ul>
+<p>Here is the graph for simple request (single key lookup):<a href="https://xiehang.com/blog/wp-content/uploads/2010/01/simple.jpg"><img loading="lazy" class="size-medium wp-image-908    alignright" title="Simple lookup" src="https://xiehang.com/blog/wp-content/uploads/2010/01/simple-300x200.jpg" alt="" width="300" height="200" srcset="https://xiehang.com/blog/wp-content/uploads/2010/01/simple-300x200.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/01/simple.jpg 516w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>It seems the result is pretty encouraging &#8211; query per second of the server is growing almost linearly, at about 5,000 QPS, over CPU utilization is still under 40% (25% user, 12% sys), I cannot get more client boxes to test, but if it goes this way, and let&#8217;s make 80% is threshold of CPU utilization, then this kind of box can handle 10K QPS, roughly, with latency at around 3ms.</p>
+<p>Note that CPU utilization, QPS per client, and latency is not quite clear as the overall QPS is too high, but you can get some ideas from next graph &#8230;</p>
+<p>Here is the graph for application (login, which will do one user lookup, and then 10~100 user lookups, each lookup is to get one buddy&#8217;s information):<a href="https://xiehang.com/blog/wp-content/uploads/2010/01/app.jpg"><img loading="lazy" class="alignright size-medium wp-image-909" title="Login Operation" src="https://xiehang.com/blog/wp-content/uploads/2010/01/app-300x200.jpg" alt="" width="300" height="200" srcset="https://xiehang.com/blog/wp-content/uploads/2010/01/app-300x200.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/01/app.jpg 516w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The result is kind of worrying me, since the CPU utilization is 70% already (45% user and 25% sys), it seems 200 QPS is what the cluster can provide. However, thinking of the login operation is doing way too many table lookups (average 55 lookups per login), so just matches the simple lookup we discussed above (10K QPS per box), while latency is at around 80ms.</p>
+<p>Actually, 20% sys is pretty bad, means the kernel is busy switching (I didn&#8217;t check vmstat during that time, but this is a reasonable guess), but again, this may be reasonable since the machine is handling 16 active clients who are sending bunch of requests, while it has only 8 physical cores so context switching is unavoidable.</p>
+<p>Since everything&#8217;s linear, I can assume 4 cores boxes can offer 5,000 QPS with reasonable latency. I will do some similar tests with MySQL and memcached, and I will do similar test with multiple data nodes as well, since I got impression that multiple data nodes is far slower than single node (inter-node communication?).</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Thinking of redesign</title>
+		<link>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/</link>
+					<comments>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 10 Dec 2009 02:28:23 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[performance]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=813</guid>
+
+					<description><![CDATA[It seems current design cannot bypass the bottleneck from relationship, I think I need to re-think about the design. It was said doing denormalization at the write time is a good way, as these nosql data stores are really fast on write. However, it may be too much to do it. My current scenario is <a href='https://xiehang.com/blog/2009/12/09/thinking-of-redesign/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems current design cannot bypass the bottleneck from relationship, I think I need to re-think about the design.</p>
+<p>It was said doing denormalization at the write time is a good way, as these nosql data stores are really fast on write. However, it may be too much to do it. My current scenario is every user has 10~100 buddies, if I do the denormalization during the write time, it still not clear to me how to set up a schema to fit it.</p>
+<p>I found I&#8217;m still sort of in RDBMS world, need to jump into this nosql universe as soon as possible :P.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/09/thinking-of-redesign/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

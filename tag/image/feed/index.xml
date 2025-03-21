@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>image &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/image/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 25 Mar 2014 03:42:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Nice online tool for GIF editing</title>
+		<link>https://xiehang.com/blog/2014/03/24/nice-online-tool-for-gif-editing/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 25 Mar 2014 03:42:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[editing]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[gif]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[online]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1686</guid>
+
+					<description><![CDATA[lunapic.com is a nice tool to do image editing, though I just tested animated GIF editing job, if you don&#8217;t have a good native software in hand, this could be your best choice.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://lunapic.com/">lunapic.com</a> is a nice tool to do image editing, though I just tested animated GIF editing job, if you don&#8217;t have a good native software in hand, this could be your best choice.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Mount qemu VM image</title>
+		<link>https://xiehang.com/blog/2014/02/05/mount-qemu-vm-image/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Feb 2014 21:30:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[mount]]></category>
+		<category><![CDATA[raw]]></category>
+		<category><![CDATA[vm]]></category>
+		<category><![CDATA[volume]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1667</guid>
+
+					<description><![CDATA[I accidentally changed some configuration of a VM and it refused to start after reboot, I know I can simply revert what I changed to make it works again so to avoid recovery process, and I found this great article which described exactly what I want. I&#8217;m going to repeat the steps here as I <a href='https://xiehang.com/blog/2014/02/05/mount-qemu-vm-image/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I accidentally changed some configuration of a VM and it refused to start after reboot, I know I can simply revert what I changed to make it works again so to avoid recovery process, and I found <a href="http://alexeytorkhov.blogspot.com/2009/09/mounting-raw-and-qcow2-vm-disk-images.html">this great article</a> which described exactly what I want. I&#8217;m going to repeat the steps here as I also need to write steps to unmount. Note that you need to have kpartx installed.<span id="more-1667"></span></p>
+<p>Most VMs are in volume group, so here are steps to mount the VM image:<br />
+[shell]<br />
+sudo losetup /dev/loop0 /home/VM/vm1/disk.img<br />
+sudo kpartx -a /dev/loop0<br />
+sudo vgscan<br />
+sudo vgchange -ay<br />
+sudo vgscan<br />
+# figure out name of the volume group by comparing output of two vgscan<br />
+sudo mount /dev/vg_name/lv_root /mnt<br />
+# now you can go to /mnt/etc to edit those configurations, then<br />
+sudo umount /mnt<br />
+sudo vgchange -an vg_name<br />
+sudo kpartx -d /dev/loop0<br />
+sudo losetup -d /dev/loop0<br />
+[/shell]</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>hmmm &#8230; php and apache are still much more easier</title>
+		<link>https://xiehang.com/blog/2009/06/24/hmmm-php-and-apache-are-still-much-more-easier/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 25 Jun 2009 04:25:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[php]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=503</guid>
+
+					<description><![CDATA[I have about 2,600 photos uploaded to one of my web sites, and I compose couple of quick PHP scripts to help me browse them. There is a img.php to resize the photo for different purpose (such as thumb view for listing page, medium size for view online, and full size for downloading), but whenever <a href='https://xiehang.com/blog/2009/06/24/hmmm-php-and-apache-are-still-much-more-easier/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I have about 2,600 photos uploaded to one of my web sites, and I compose couple of quick PHP scripts to help me browse them. There is a img.php to resize the photo for different purpose (such as thumb view for listing page, medium size for view online, and full size for downloading), but whenever I try to download the photo, I found it&#8217;s tough as it always prompt to save as &#8220;img.php.jpeg&#8221;.</p>
+<p>So, instead of doing any PHP stuff, I changed .htaccess under the folder, let apache do rewrite for me, in couple of minutes everything works like a chime.</p>
+<p>These are really simple tasks, I guess it can be done with anything else (lighttpd, python, blar blar), but obviously I&#8217;m still familiar with PHP and Apache httpd, guess I should stick on that till something else can be this easy to me, just as years back I switched from qmail to postfix &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Performance of VMs	</title>
+	<atom:link href="https://xiehang.com/blog/2009/11/18/performance-of-vms/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/11/18/performance-of-vms/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 23 Nov 2009 18:40:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/18/performance-of-vms/comment-page-1/#comment-2768</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2009 18:40:04 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=755#comment-2768</guid>
+
+					<description><![CDATA[Alright, I got two articles that have same conclusion as I got:
+
+http://www.workswithu.com/2009/04/27/kvm-vs-vmware-a-case-study/
+
+http://www.linux-kvm.com/content/kvm-vs-vmware-esx-which-can-run-more-virtual-machines
+
+roughly, on same hardware, number of VMs that they can support is 5 (KVM) vs. 3 (VMWare), which is close to mine (4 vs. 2).
+
+It seems the reason is KVM (which proxmox is using) is doing much more better than VMWare.]]></description>
+			<content:encoded><![CDATA[<p>Alright, I got two articles that have same conclusion as I got:</p>
+<p><a href="http://www.workswithu.com/2009/04/27/kvm-vs-vmware-a-case-study/" rel="nofollow ugc">http://www.workswithu.com/2009/04/27/kvm-vs-vmware-a-case-study/</a></p>
+<p><a href="http://www.linux-kvm.com/content/kvm-vs-vmware-esx-which-can-run-more-virtual-machines" rel="nofollow ugc">http://www.linux-kvm.com/content/kvm-vs-vmware-esx-which-can-run-more-virtual-machines</a></p>
+<p>roughly, on same hardware, number of VMs that they can support is 5 (KVM) vs. 3 (VMWare), which is close to mine (4 vs. 2).</p>
+<p>It seems the reason is KVM (which proxmox is using) is doing much more better than VMWare.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/18/performance-of-vms/comment-page-1/#comment-2767</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2009 18:25:26 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=755#comment-2767</guid>
+
+					<description><![CDATA[Obviously Proxmox is doing much better than VMWare ESX, though I don&#039;t know where the difference comes from.
+
+I created 4 VMs under proxmox, each with 1 CPU, 512M mem, and 10G disk, then I launched Cassandra on all these four, and started my load generation client (simple write), average response time is about 8ms/write (tested with 100K writes), but the number I got from VMWare ESX with 2 VMs was ... 25ms/write, and with 4 VMs it was ~50ms.
+
+I think VMWare ESX is doing something seriously wrong, or both are using totally different technology that it does not make sense to compare them at all. Anyway, I will stick with proxmox which has much better performance and, no more license issues.]]></description>
+			<content:encoded><![CDATA[<p>Obviously Proxmox is doing much better than VMWare ESX, though I don&#8217;t know where the difference comes from.</p>
+<p>I created 4 VMs under proxmox, each with 1 CPU, 512M mem, and 10G disk, then I launched Cassandra on all these four, and started my load generation client (simple write), average response time is about 8ms/write (tested with 100K writes), but the number I got from VMWare ESX with 2 VMs was &#8230; 25ms/write, and with 4 VMs it was ~50ms.</p>
+<p>I think VMWare ESX is doing something seriously wrong, or both are using totally different technology that it does not make sense to compare them at all. Anyway, I will stick with proxmox which has much better performance and, no more license issues.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/18/performance-of-vms/comment-page-1/#comment-2766</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2009 08:26:08 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=755#comment-2766</guid>
+
+					<description><![CDATA[I need to do another test to prove what I mentioned above is correct - it seems VM matters, at least ProxMox is doing better than VMWare ESX, but this is just feeling for now, I will get clear picture after I get the test done.
+
+BTW, the test will be my first Python program on Linux :P]]></description>
+			<content:encoded><![CDATA[<p>I need to do another test to prove what I mentioned above is correct &#8211; it seems VM matters, at least ProxMox is doing better than VMWare ESX, but this is just feeling for now, I will get clear picture after I get the test done.</p>
+<p>BTW, the test will be my first Python program on Linux 😛</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

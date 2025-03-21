@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Xen vs. kvm	</title>
+	<atom:link href="https://xiehang.com/blog/2010/01/17/xen-vs-kvm/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2010/01/17/xen-vs-kvm/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 18 Jan 2010 06:40:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2010/01/17/xen-vs-kvm/comment-page-1/#comment-2849</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 18 Jan 2010 06:40:28 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=894#comment-2849</guid>
+
+					<description><![CDATA[Alright, from what I have read from all web pages:
+
+&lt;ul&gt;
+&lt;li&gt;xen is mature than kvm so supposedly has less bugs, though both are not as reliable as commercial products like VMWare, Virtual Box, and Hyper-V, etc&lt;/li&gt;
+&lt;li&gt;maintaining xen&#039;s kernel is way too painful, as kvm has been accepted by kernel team so it will be always up-to-date&lt;/li&gt;
+&lt;li&gt;performance wise xen is (a little bit) faster than kvm, but kvm is catching up&lt;/li&gt;
+&lt;li&gt;Obviously xen used to have more supports from those big companies, but this becomes a question mark since companies are moving to kvm (such as Red Hat and Ubuntu) and moving on, unless xen can be accepted by kernel team, kvm will gain more from xen&lt;/li&gt;
+&lt;li&gt;guest support is almost the same, i.e. almost all OS are supported as guest&lt;/li&gt;
+&lt;li&gt;utilities(tools)-wise, xen is a winner for now (mid year 2009), but again kvm is catching up. xen is really hard to deploy, as it is not part of kernel&lt;/li&gt;
+&lt;/ul&gt;
+
+What I got is that:
+&lt;ul&gt;
+&lt;li&gt;if you want to deploy to production for now, xen is the way to go&lt;/li&gt;
+&lt;li&gt;if you are only doing virtualization in development/testing environment, or will only hit production in year 2011 or later, kvm could be a better bet&lt;/li&gt;
+&lt;/ul&gt;
+
+So, I&#039;m going to go with kvm (from ProxMox).]]></description>
+			<content:encoded><![CDATA[<p>Alright, from what I have read from all web pages:</p>
+<ul>
+<li>xen is mature than kvm so supposedly has less bugs, though both are not as reliable as commercial products like VMWare, Virtual Box, and Hyper-V, etc</li>
+<li>maintaining xen&#8217;s kernel is way too painful, as kvm has been accepted by kernel team so it will be always up-to-date</li>
+<li>performance wise xen is (a little bit) faster than kvm, but kvm is catching up</li>
+<li>Obviously xen used to have more supports from those big companies, but this becomes a question mark since companies are moving to kvm (such as Red Hat and Ubuntu) and moving on, unless xen can be accepted by kernel team, kvm will gain more from xen</li>
+<li>guest support is almost the same, i.e. almost all OS are supported as guest</li>
+<li>utilities(tools)-wise, xen is a winner for now (mid year 2009), but again kvm is catching up. xen is really hard to deploy, as it is not part of kernel</li>
+</ul>
+<p>What I got is that:</p>
+<ul>
+<li>if you want to deploy to production for now, xen is the way to go</li>
+<li>if you are only doing virtualization in development/testing environment, or will only hit production in year 2011 or later, kvm could be a better bet</li>
+</ul>
+<p>So, I&#8217;m going to go with kvm (from ProxMox).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

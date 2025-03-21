@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>home &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/home/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 18 Jan 2013 19:56:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Time to upgrade</title>
+		<link>https://xiehang.com/blog/2013/01/18/time-to-upgrade/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 18 Jan 2013 19:46:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[recycle]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1479</guid>
+
+					<description><![CDATA[There was a e-waste recycling event close to my house and I successfully dumped these: an HP jet printer, an IBM ThinkPad (the very first Windows tablet, or in some other name), an HP desktop (Pentium 4!!!), some keyboards and mouses (actually this is some sort of illegal I guess? As they mentioned &#8220;anything with <a href='https://xiehang.com/blog/2013/01/18/time-to-upgrade/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There was a e-waste recycling event close to my house and I successfully dumped these: an HP jet printer, an IBM ThinkPad (the very first Windows tablet, or in some other name), an HP desktop (Pentium 4!!!), some keyboards and mouses (actually this is some sort of illegal I guess? As they mentioned &#8220;anything with a plug&#8221; but anyway &#8230;), a DVD player (I&#8217;m pretty sure it stopped working for quite some time). There are some other stuffs I hesitated to recycle because of this or that &#8211; a 1 mega pixel digital camera, 2 random brand cell phones (feature phone with color screen), two iPods, one camcorder, 2 LCD displays.</p>
+<p>It seems the time to upgrade &#8211; the main desktop @ home is not performing quite well after upgrade to Windows 8, I&#8217;m thinking of replacing with a iMac, or a Windows 8 laptop &#8230; I don&#8217;t have enough machines to test cluster now and was thinking of virtual machine, but it seems better use some sort of mini PC so that I can test home automation as well (my dream &#8230; hard to come true without buying stuffs :D).</p>
+<p>There may be more to come, let&#8217;s see.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Get to re-organize home network</title>
+		<link>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/</link>
+					<comments>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 03 May 2012 00:12:55 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cisco]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[dd-wrt]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[linksys]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[wifi]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1332</guid>
+
+					<description><![CDATA[For getting better network connection quality, I&#8217;m going to flash a Cisco Linksys E1000 to DD-WRT and then use it as a repeater, will get this done tomorrow after somebody from Comcast cabling my house. &#160;]]></description>
+										<content:encoded><![CDATA[<p>For getting better network connection quality, I&#8217;m going to flash a Cisco Linksys E1000 to DD-WRT and then use it as a repeater, will get this done tomorrow after somebody from Comcast cabling my house.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dream of a 8-core machine &#8230; but why?</title>
+		<link>https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/</link>
+					<comments>https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 27 Nov 2009 18:03:10 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[home]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=779</guid>
+
+					<description><![CDATA[Trying to search online for an affordable 8-cores machine, but now I&#8217;m asking myself &#8211; why? Well, one of the most obviously reason is that if I can have one powerful machine, I can retire 2 or 3 machines at home, include one P4 desktop from year 2003, one PowerBook from year 2004, and one <a href='https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Trying to search online for an affordable 8-cores machine, but now I&#8217;m asking myself &#8211; why?</p>
+<p>Well, one of the most obviously reason is that if I can have one powerful machine, I can retire 2 or 3 machines at home, include one P4 desktop from year 2003, one PowerBook from year 2004, and one P4 laptop from year 2005 (this one is actually in question).</p>
+<p>I found out that I need this many machines just because I need to test all those multiple host development and deployment. What could be ideal to me, is that I can have 8~10 hosts running in two separated network, so I can test more than what I&#8217;m playing now.</p>
+<p>Actually I should not expect for a 8-core box as it will be pretty expensive (haven&#8217;t locked down price yet), based on my experience with current dual-core machine, it seems a 4-core box can satisfy me &#8211; it will be able to run 8~10 VMs but I need at least 8G memory, and if it is 12G then all data VMs can run at 1G mem which will be more like a real world.</p>
+<p>So I should forget about 8-core machine unless someday Intel or AMD roll out a single 8-core CPU for desktop. It seems to me the most reasonable plan to consolidate computers at home is getting a new iMac, let it be the home desktop, running all photo/video editing, storage massive data, etc, and take the current home desktop (which is a 4-core desktop) and then retire the PowerBook (maybe leave it running somewhere? Anyway it does not occupy too much space) and the P4 box, and turning current dual-core machine as the second Window machine at home, pity I don&#8217;t think it can run Windows 7.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Online backup</title>
+		<link>https://xiehang.com/blog/2009/10/28/online-backup/</link>
+					<comments>https://xiehang.com/blog/2009/10/28/online-backup/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2009 04:12:05 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[home]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=721</guid>
+
+					<description><![CDATA[I believe I will need to re-install bunch of dev/testing nodes @ home in near future, so I need a online backup service, better be free (I just need it for ~2 weeks), with ~10G space, supporting rsync. Will dig around to see any luck, what I got earlier is 2G for free, but there <a href='https://xiehang.com/blog/2009/10/28/online-backup/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I believe I will need to re-install bunch of dev/testing nodes @ home in near future, so I need a online backup service, better be free (I just need it for ~2 weeks), with ~10G space, supporting rsync.</p>
+<p>Will dig around to see any luck, what I got earlier is 2G for free, but there is no rsync support.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/10/28/online-backup/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Recent changes &#8230;</title>
+		<link>https://xiehang.com/blog/2009/09/25/recent-changes/</link>
+					<comments>https://xiehang.com/blog/2009/09/25/recent-changes/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 26 Sep 2009 05:31:58 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[life]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=668</guid>
+
+					<description><![CDATA[I know I didn&#8217;t post a lot on what got changed in my daily life, I was just too busy (on some B.S. projects) to mentioned them. Well, let&#8217;s see what&#8217;s new in the past month or so: A guinea pig, his name is &#8220;Snowy&#8221; as he&#8217;s pure white, I know he does not like <a href='https://xiehang.com/blog/2009/09/25/recent-changes/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I know I didn&#8217;t post a lot on what got changed in my daily life, I was just too busy (on some B.S. projects) to mentioned them.</p>
+<p>Well, let&#8217;s see what&#8217;s new in the past month or so:</p>
+<ul>
+<li>A guinea pig, his name is &#8220;Snowy&#8221; as he&#8217;s pure white, I know he does not like me too much as I went to sleep very late recently, and all light and my steps bothered his sleep for sure</li>
+<li>Nikon D3000 &#8211; finally started DSLR life, and though I was thinking I will play with basic len for a year or so, I now want to have another len &#8230; proved people are greedy, for all the time</li>
+<li>iRobot Roomba &#8211; the robot vacuum which will keep the house clean, especially after Snowy&#8217;s here, or ya, Snowy is just couple of months old, he does not have good habit to keep his place tidy</li>
+<li>Wii Sport Resort &#8211; I like swordplay the most <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+</ul>
+<p>OK pretty much.</p>
+<p>I think I started shopping season earlier than others <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/09/25/recent-changes/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Unlucky, again</title>
+		<link>https://xiehang.com/blog/2009/08/17/unlucky-again/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 17 Aug 2009 17:36:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[desktop]]></category>
+		<category><![CDATA[home]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=627</guid>
+
+					<description><![CDATA[I believed the old video card from the HP desktop I purchased last year has no use at all so I threw it away about a week back just after I came back from vacation, but obviously I did something wrong. Today I got a mail from HP saying that I can get that one <a href='https://xiehang.com/blog/2009/08/17/unlucky-again/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I believed the old video card from the HP desktop I purchased last year has no use at all so I threw it away about a week back just after I came back from vacation, but obviously I did something wrong.</p>
+<p>Today I got a mail from HP saying that I can get that one replaced, pity I don&#8217;t have it any more, and have to mention &#8211; I did this while I kept telling myself &#8220;be patient&#8221;.</p>
+<p>Unlucky again, but I will be more patient in the future to make sure I won&#8217;t make similar mistakes again, in other more important pieces of my life.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Watering</title>
+		<link>https://xiehang.com/blog/2009/08/05/watering/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Aug 2009 16:40:01 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[home]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=586</guid>
+
+					<description><![CDATA[Thanks my neighbour for watering everyday &#8211; I don&#8217;t know what happened yet but obviously the automatica watering system stopped working from the day we left. I&#8217;m still checking :(.]]></description>
+										<content:encoded><![CDATA[<p>Thanks my neighbour for watering everyday &#8211; I don&#8217;t know what happened yet but obviously the automatica watering system stopped working from the day we left.</p>
+<p>I&#8217;m still checking :(.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>17 hours on the plane</title>
+		<link>https://xiehang.com/blog/2009/07/05/17-hours-on-the-plane/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 05 Jul 2009 22:59:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[delay]]></category>
+		<category><![CDATA[flight]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[weather]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=539</guid>
+
+					<description><![CDATA[Well, all because of thunderstorm in Beijing, so we spent 5 hours in Hohhot. It is said it was one of the worst day for Beijing airport, as Tianjin was full of the flights targeting Beijing, then Hohhot, then Shijiazhuang, and then Jinan, and at the same time we don&#8217;t know how many domestic flights <a href='https://xiehang.com/blog/2009/07/05/17-hours-on-the-plane/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Well, all because of thunderstorm in Beijing, so we spent 5 hours in Hohhot. It is said it was one of the worst day for Beijing airport, as Tianjin was full of the flights targeting Beijing, then Hohhot, then Shijiazhuang, and then Jinan, and at the same time we don&#8217;t know how many domestic flights just didn&#8217;t take off.</p>
+<p>Crazy day, but good to be home, at last <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>WFH today</title>
+		<link>https://xiehang.com/blog/2009/05/27/wfh-today/</link>
+					<comments>https://xiehang.com/blog/2009/05/27/wfh-today/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 May 2009 20:41:28 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[desk]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[workshop]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=425</guid>
+
+					<description><![CDATA[Working from home today, and found that I should post this photo here so that people know how I work at home :D. Actually I have only two machines on the desk &#8211; on the left is the company-issued laptop that I still need to check some bookmarks (sorry, I&#8217;m still surfing libre there which <a href='https://xiehang.com/blog/2009/05/27/wfh-today/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="alignright size-medium wp-image-424" title="My Workshop" src="https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-300x225.jpg" alt="My Workshop" width="300" height="225" srcset="https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-300x225.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />Working from home today, and found that I should post this photo here so that people know how I work at home :D.</p>
+<p>Actually I have only two machines on the desk &#8211; on the left is the company-issued laptop that I still need to check some bookmarks (sorry, I&#8217;m still surfing <a href="http://libre.adacore.com/">libre</a> there which supposedly not to be), other two monitors are for my desktop machine, the one in the middle is a 17&#8243; LCD, dedicated for the virtual machine (a Windows XP) for all those risky stuffs, such as surfing BBS site (virus, etc), and installing some test software. The one on the right is a 19&#8243; LCD which is actually the working environment, running putty, Thunderbird, Firefox and Yahoo Messenger.</p>
+<p>I think I can shutdown the laptop at home, from tomorrow, as almost everything is there on the desktop now. I also found not using laptop at home will make my life healthy, as I won&#8217;t hold it the minute before I go to sleep, and I won&#8217;t capture it once I get up.</p>
+<p>Though, I think I will turn my blackberry to be the laptop, bring it to my bed and grab it once I wake up <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> its screen is way too small and is killing my eyes, I should find something bigger, maybe &#8230; E90 or Nokia&#8217;s next flagship phone <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/05/27/wfh-today/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

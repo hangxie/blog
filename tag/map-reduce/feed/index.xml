@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>map reduce &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/map-reduce/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 17 Nov 2011 15:46:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Playing with Hive</title>
+		<link>https://xiehang.com/blog/2011/11/17/playing-with-hive/</link>
+					<comments>https://xiehang.com/blog/2011/11/17/playing-with-hive/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 17 Nov 2011 15:46:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[hadoop]]></category>
+		<category><![CDATA[log]]></category>
+		<category><![CDATA[macbook]]></category>
+		<category><![CDATA[map reduce]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1147</guid>
+
+					<description><![CDATA[I got 700K lines of apache log files from a friend&#8217;s web server and imported them to the testing Hadoop instance running on my MacBoox, following the instructions listed here I successfully run some analysis. Note, the last section in the article talking about the Apache Weblog Data doesn&#8217;t seem to be correct &#8211; it <a href='https://xiehang.com/blog/2011/11/17/playing-with-hive/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I got 700K lines of apache log files from a friend&#8217;s web server and imported them to the testing Hadoop instance running on my MacBoox, following the instructions listed <a href="https://cwiki.apache.org/confluence/display/Hive/GettingStarted">here</a> I successfully run some analysis.</p>
+<p>Note, the last section in the article talking about the </i>Apache Weblog Data</i> doesn&#8217;t seem to be correct &#8211; it lacks of some space (&#8221; &#8220;) after ^ and it gave me quite some headache since I&#8217;m not familiar with Java regular expressions. Luckily <a href="https://issues.apache.org/jira/browse/HIVE-662">Hive issue 662</a> mentioned in the article gave me the correct regex to get things done.</p>
+<p>It seems I can only learn to play with Hive/Hadoop cos Hadoop running on MacBook is still a single node installation which is &#8230; <b>SLOW</b>, but so far I&#8217;m fine with it as I don&#8217;t have high volume of data to be processed. As a reference, getting top accessed IPs (which I used to figure out potential abusers) took 83 seconds. The HSQL is simple, something like &#8220;select host, count(*) cc from apachelog group by host order by cc desc limit 10;&#8221;.</p>
+<p>Hadoop is a richmen&#8217;s game, seems it only improve the performance whenever you have lots of nodes as it can well distributed tasks.</p>
+<p>BTW, <i>Hadoop: The Definitive Guide</i> is a good book <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/11/17/playing-with-hive/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

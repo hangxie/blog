@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>outage &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/outage/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 18 Sep 2014 02:28:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>GoDaddy outage</title>
+		<link>https://xiehang.com/blog/2014/09/01/godaddy-outage/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 01 Sep 2014 19:58:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[outage]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1703</guid>
+
+					<description><![CDATA[Last night I could not access my site, it seems problem from GoDaddy, and someone else encountered this problem as well :-W . Should I switch to Route51?]]></description>
+										<content:encoded><![CDATA[<p>Last night I could not access my site, it seems problem from GoDaddy, and someone else encountered this problem as well :-W .</p>
+<p>Should I switch to Route51?</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

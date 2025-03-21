@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>virtual box &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/virtual-box/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 07 Nov 2011 10:57:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>New toy</title>
+		<link>https://xiehang.com/blog/2011/11/07/new-toy-2/</link>
+					<comments>https://xiehang.com/blog/2011/11/07/new-toy-2/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 07 Nov 2011 10:57:16 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[fusion]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[macbook]]></category>
+		<category><![CDATA[virtual box]]></category>
+		<category><![CDATA[virtual machine]]></category>
+		<category><![CDATA[vmware]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1142</guid>
+
+					<description><![CDATA[Got an MacBook Pro 13&#8243;, but it&#8217;s an old model as the newest models are still pending on &#8220;regulator&#8217;s approval&#8221; in China, per Apple&#8217;s web site. I believe it&#8217;s the problem from the new Thunderbolt. Mine has 8G memory so I can run 3 VMs (under VirtualBox, each has 1G memory) plus all applications from <a href='https://xiehang.com/blog/2011/11/07/new-toy-2/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Got an MacBook Pro 13&#8243;, but it&#8217;s an old model as the newest models are still pending on &#8220;regulator&#8217;s approval&#8221; in China, per Apple&#8217;s web site. I believe it&#8217;s the problem from the new Thunderbolt.</p>
+<p>Mine has 8G memory so I can run 3 VMs (under VirtualBox, each has 1G memory) plus all applications from Microsoft Office (Word, Excel, PowerPoint, and Outlook), Safari, and several small utilities at the same time without any performance problem. For most time I only need to run 1 VM so it should be OK.</p>
+<p>VirtualBox rolls, while Parallele Desktop and VMWare Fusion both suck. Alright I know I&#8217;m not familiar with either so VirtualBox gained my respect, but thinking of VirtualBox is free, this simply kills those two.</p>
+<p>Installing Xcode was a nightmare &#8211; App Store in China didn&#8217;t work, at least for huge packages like Xcode (I installed some small stuffs without problem), finally I downloaded Xcode from Apple&#8217;s developer web site. There were not many to be installed as I can see, other than QQ and MPLayer. I&#8217;m trying to get Pidgin running now, but seems I have to run it under X11, and if this is the case I will move to Adium though I do want to have customized smileys. Maybe Adium got it already, need to check out.</p>
+<p>Overall speaking, MBP is a nice laptop, it&#8217;s quiet, cool (against HOT MBP ppc I had 8 years ago). The only problem is that I have to remove my watch while working on it as chain of the watch will scratch the shell.</p>
+<p>I ordered a keyboard screen and a bag for it, will get this week.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/11/07/new-toy-2/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

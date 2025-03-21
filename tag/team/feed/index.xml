@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>team &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/team/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 21 Jul 2011 12:36:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Long time no see</title>
+		<link>https://xiehang.com/blog/2011/07/21/long-time-no-see-2/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 21 Jul 2011 12:36:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[company]]></category>
+		<category><![CDATA[team]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1111</guid>
+
+					<description><![CDATA[Actually it was not that long, but I was super busy thus I guess it made me feel like long. Alright, back to the topic &#8211; I&#8217;m trying my best to sort things out and obviously I&#8217;m making progress although it was not that fast. OA team is going smoothly (thank my boss who took <a href='https://xiehang.com/blog/2011/07/21/long-time-no-see-2/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Actually it was not that long, but I was super busy thus I guess it made me feel like long.</p>
+<p>Alright, back to the topic &#8211; I&#8217;m trying my best to sort things out and obviously I&#8217;m making progress although it was not that fast. OA team is going smoothly (thank my boss who took lot of effort to babysit OA), and wireless team is hiring (I guess this could be the only thing they can do at this moment, may last for a month or so), the manager of infrastructure team finally got on board and I&#8217;ve already thrown everything to him, and the manager of mail team will be on board soon so pretty much I can hand over all routine stuffs to him.</p>
+<p>What&#8217;s next? Focus on products. Mail and Mailing List are two products are under heavily improvement, and they have to be successful to make the mail team survive. Infrastructure team needs to think about what kind of products they are going to deliver, and what&#8217;s the working model with other project teams. Architect team&#8217;s task is to set up a proper workflow for architecture review, architect community, and so on, and wireless team, for sure, is hiring those die-hard Android and iPhone gurus.</p>
+<p>I was no chaos in the past 6 or 8 months, I wish (and I believe) things are getting better now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

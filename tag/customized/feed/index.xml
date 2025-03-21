@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>customized &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/customized/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 25 Jan 2013 21:01:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>apache_note() in PHP is sweet</title>
+		<link>https://xiehang.com/blog/2013/01/25/apache_note-in-php-is-sweet/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 25 Jan 2013 21:01:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[apache_note]]></category>
+		<category><![CDATA[customized]]></category>
+		<category><![CDATA[log]]></category>
+		<category><![CDATA[php]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1485</guid>
+
+					<description><![CDATA[I was asked to find a solution to write customized Apache log entry (in Apache access log, not error log), other requirements include easy to use, which implicitly means &#8220;PHP friendly&#8221;, and flexible, which means &#8220;free format&#8221; and &#8220;may or may not have the value&#8221;. Seriously, the first thing jumped into my mind was an <a href='https://xiehang.com/blog/2013/01/25/apache_note-in-php-is-sweet/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was asked to find a solution to write customized Apache log entry (in Apache access log, not error log), other requirements include easy to use, which implicitly means &#8220;PHP friendly&#8221;, and flexible, which means &#8220;free format&#8221; and &#8220;may or may not have the value&#8221;.</p>
+<p>Seriously, the first thing jumped into my mind was an Apache module (let&#8217;s hack mod_log!) or a PHP extension, but later on I found that &#8230; I don&#8217;t want to maintain another orphan project especially it will be orphan since nobody want to touch it after it&#8217;s up and running (I have one already, which does some cookie stuffs). So I move on to Google &#8230;</p>
+<p>Then I found <a href="http://php.net/manual/en/function.apache-note.php">apache_note()</a>, plus <a href="http://httpd.apache.org/docs/2.2/mod/mod_log_config.html">mod_log_config</a> (search for <code>%{<var>Foobar</var>}n</code>), all that I need to do is tell PHP guys to call this function, and tell ops guys to setup Apache log properly, we are all set.</p>
+<p>It&#8217;s good to see apache_note can change the note as many times as you want, whenever the request is finished on server side, the final data will be written to log.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

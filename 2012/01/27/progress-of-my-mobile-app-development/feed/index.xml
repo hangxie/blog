@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Progress of my mobile app development	</title>
+	<atom:link href="https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 28 Jan 2012 06:28:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/comment-page-1/#comment-3499</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 28 Jan 2012 06:28:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1227#comment-3499</guid>
+
+					<description><![CDATA[Well, seems Wordpress&#039; default image attaching setting didn&#039;t work too well with my images, but you can get rough idea so I won&#039;t spend time to correct them ...]]></description>
+			<content:encoded><![CDATA[<p>Well, seems WordPress&#8217; default image attaching setting didn&#8217;t work too well with my images, but you can get rough idea so I won&#8217;t spend time to correct them &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

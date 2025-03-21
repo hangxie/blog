@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>desk &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/desk/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 27 May 2009 20:41:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>WFH today</title>
+		<link>https://xiehang.com/blog/2009/05/27/wfh-today/</link>
+					<comments>https://xiehang.com/blog/2009/05/27/wfh-today/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 May 2009 20:41:28 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[computer]]></category>
+		<category><![CDATA[desk]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[workshop]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=425</guid>
+
+					<description><![CDATA[Working from home today, and found that I should post this photo here so that people know how I work at home :D. Actually I have only two machines on the desk &#8211; on the left is the company-issued laptop that I still need to check some bookmarks (sorry, I&#8217;m still surfing libre there which <a href='https://xiehang.com/blog/2009/05/27/wfh-today/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="alignright size-medium wp-image-424" title="My Workshop" src="https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-300x225.jpg" alt="My Workshop" width="300" height="225" srcset="https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-300x225.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />Working from home today, and found that I should post this photo here so that people know how I work at home :D.</p>
+<p>Actually I have only two machines on the desk &#8211; on the left is the company-issued laptop that I still need to check some bookmarks (sorry, I&#8217;m still surfing <a href="http://libre.adacore.com/">libre</a> there which supposedly not to be), other two monitors are for my desktop machine, the one in the middle is a 17&#8243; LCD, dedicated for the virtual machine (a Windows XP) for all those risky stuffs, such as surfing BBS site (virus, etc), and installing some test software. The one on the right is a 19&#8243; LCD which is actually the working environment, running putty, Thunderbird, Firefox and Yahoo Messenger.</p>
+<p>I think I can shutdown the laptop at home, from tomorrow, as almost everything is there on the desktop now. I also found not using laptop at home will make my life healthy, as I won&#8217;t hold it the minute before I go to sleep, and I won&#8217;t capture it once I get up.</p>
+<p>Though, I think I will turn my blackberry to be the laptop, bring it to my bed and grab it once I wake up <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> its screen is way too small and is killing my eyes, I should find something bigger, maybe &#8230; E90 or Nokia&#8217;s next flagship phone <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/05/27/wfh-today/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

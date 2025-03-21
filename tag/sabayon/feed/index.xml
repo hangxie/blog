@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sabayon &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/sabayon/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 30 Dec 2009 08:26:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>New to Gentoo &#8230;</title>
+		<link>https://xiehang.com/blog/2009/12/30/new-to-gentoo/</link>
+					<comments>https://xiehang.com/blog/2009/12/30/new-to-gentoo/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2009 08:26:25 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gentoo]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[sabayon]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=834</guid>
+
+					<description><![CDATA[Brand new 😀 Playing with Sabayon now, an &#8220;out-of-box&#8221; gentoo, seems fun, but I have to write down something as I never touched this before: rc-update/rc-status to add/list current enabled services &#8220;emerge &#8211;sync&#8221; to sync package meta data, and &#8220;emerge &#8211;search&#8221; to search, then &#8220;emerge pkg&#8221; to install package &#8220;pkg&#8221; &#8211; it takes some time <a href='https://xiehang.com/blog/2009/12/30/new-to-gentoo/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Brand new <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Playing with Sabayon now, an &#8220;out-of-box&#8221; gentoo, seems fun, but I have to write down something as I never touched this before:</p>
+<ul>
+<li>rc-update/rc-status to add/list current enabled services</li>
+<li>&#8220;emerge &#8211;sync&#8221; to sync package meta data, and &#8220;emerge &#8211;search&#8221; to search, then &#8220;emerge pkg&#8221; to install package &#8220;pkg&#8221; &#8211; it takes some time as everything will be built from source</li>
+<li>change /boot/grub/menu.lst, vga=normal to avoid loading system with graphics</li>
+</ul>
+<p>Could be more, will post then.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/30/new-to-gentoo/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>parallels &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/parallels/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 27 Apr 2022 04:58:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Ubuntu 22.04</title>
+		<link>https://xiehang.com/blog/2022/04/26/ubuntu-22-04/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 27 Apr 2022 04:58:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[debian]]></category>
+		<category><![CDATA[distro]]></category>
+		<category><![CDATA[fedora]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[parallels]]></category>
+		<category><![CDATA[rocky]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<category><![CDATA[utm]]></category>
+		<category><![CDATA[virtualization]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1826</guid>
+
+					<description><![CDATA[Ubuntu 22.04 was just released, I managed to upgrade my WordPress site (running on VM and only publish static site), it was not as smooth as I thought, there were quite some small problems here and there, but eventually it worked after like 4 hours of troubleshooting, and so on. As a side note, I <a href='https://xiehang.com/blog/2022/04/26/ubuntu-22-04/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Ubuntu 22.04 was <a href="https://ubuntu.com/blog/ubuntu-22-04-lts-released">just released</a>, I managed to upgrade my WordPress site (running on VM and only <a href="https://xiehang.com/blog/2022/03/04/move-to-static-site/">publish static site</a>), it was not as smooth as I thought, there were quite some small problems here and there, but eventually it worked after like 4 hours of troubleshooting, and so on.</p>
+<p>As a side note, I no longer running Parallels since I found it tricked me to subscription which involves $79.99 per year, luckily I noticed the weird charge on my credit card so was able to cancel it the same day. I&#8217;m running my VM on <a href="https://mac.getutm.app/">UTM</a> now, I didn&#8217;t notice performance difference between UTM and Parallels, though Parallels does provide more convenient features like desktop integration, snapshot, etc.</p>
+<p>I think I&#8217;ve been running Ubuntu since 10.04, but I&#8217;m seriously thinking of moving away from it now due to snap, there are more and more applications over Ubuntu dropped deb support and are solely on snap only, I don&#8217;t mind a distro changes its package management tool like yum to dnf, but I just don&#8217;t want to have 2 package management mechanism at the same time.</p>
+<p>I may not run Fedora as I need LTS, I cannot choose Rocky as it (actually RHEL) lacks of aarch64 support. Most likely I&#8217;m going to play with Debian or Arch.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

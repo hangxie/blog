@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sysadmin &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/sysadmin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:04:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Play with Python on Windows</title>
+		<link>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/</link>
+					<comments>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 17:59:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<category><![CDATA[virtualbox]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1583</guid>
+
+					<description><![CDATA[As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them. This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying <a href='https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them.</p>
+<p>This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying on HDD. However, I have different requirements for different types of VMs, like for Windows VM, I used to launch them in GUI mode so that I can use another Windows environment, but for Linux and other *nix machines I used to launch them in headless mode and use putty (another neat tool <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ) to access.<span id="more-1583"></span></p>
+<p>The problem is that VirtualBox&#8217;s console does not support starting VMs in headless mode, so I created some BAT files to do it, but this makes things complicated that I have to go to two places to do actually one thing.</p>
+<p>Now here comes Python, plus VirtualBox guys kindly released a Python SDK. It was for Python 2.x, but no wonder some smart guy <a title="vboxapi Python 3" href="https://github.com/jbuergel/vboxapi-py3" target="_blank">convert it to work with Python 3</a>. I was thinking of using win32 binding, but later on found Tkinter is good enough for this purpose. Codes posted below, feel free to take it as long as you can mention my name and link back to this post (I hate GPL &#8230; you can guess I&#8217;m a fan of BSD).</p>
+<p>I&#8217;ll do some more enhancement if I have to, but so far it can show button status based on VM state, and start/stop/reset the VMs, that&#8217;s pretty all I want at this moment. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+[python]<br />
+import sys<br />
+import tkinter<br />
+from tkinter import messagebox<br />
+import vboxapi<br />
+import time</p>
+<p>mgr = vboxapi.VirtualBoxManager(None, None)</p>
+<p>def list_vms():<br />
+    global mgr<br />
+    vm_list = []<br />
+    for vm in mgr.getArray(mgr.vbox, &#8216;machines&#8217;):<br />
+        vm_list.append(vm)<br />
+    vm_list = sorted(vm_list, key = lambda k: k.name)<br />
+    return vm_list</p>
+<p>def start_vm(vm_id):<br />
+    global mgr, root, button_list<br />
+    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # start the VM<br />
+        machine = mgr.vbox.FindMachine(vm_id)<br />
+        if mgr.vbox.getGuestOSType(machine.OSTypeId).familyId == &#8216;Windows&#8217;:<br />
+            start_type = &#8216;gui&#8217;<br />
+        else:<br />
+            start_type = &#8216;headless&#8217;<br />
+        progress = machine.launchVMProcess(session, start_type, &#8221;)<br />
+        progress.waitForCompletion(-1)</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def stop_vm(vm_id):<br />
+    global mgr, root<br />
+    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # stop (savestate) the VM<br />
+        mgr.vbox.FindMachine(vm_id).lockMachine(session, mgr.constants.LockType_Shared)<br />
+        session.console.saveState()</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.NORMAL)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def reset_vm(vm_id):<br />
+    global mgr, root<br />
+    if not messagebox.askyesno(&#8216;Reset VM&#8217;, &#8216;Are you sure?&#8217;, default=&#8217;no&#8217;):<br />
+        return</p>
+<p>    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # stop (savestate) the VM<br />
+        mgr.vbox.FindMachine(vm_id).lockMachine(session, mgr.constants.LockType_Shared)<br />
+        session.console.reset()</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def timer():<br />
+    pass<br />
+    global mgr, vm_list, button_list, timer_lbl, root</p>
+<p>    # update button status according to VM state<br />
+    for index in range(0, len(vm_list)):<br />
+        if vm_list[index].state == mgr.constants.MachineState_Running:<br />
+            # VM is running<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.NORMAL)<br />
+        elif vm_list[index].state == mgr.constants.MachineState_Saved or vm_list[index].state == mgr.constants.MachineState_PoweredOff or vm_list[index].state == mgr.constants.MachineState_Aborted:<br />
+            # VM is not running<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.NORMAL)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.DISABLED)<br />
+        else:<br />
+            # VM is in interim state<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.DISABLED)</p>
+<p>    # update clock<br />
+    timer_lbl.configure(text=time.strftime(&#8220;%Y-%m-%d %H:%M:%S&#8221;))<br />
+    root.after(1000, timer)</p>
+<p>vm_list = list_vms()<br />
+button_list = {}<br />
+root = tkinter.Tk()<br />
+timer_lbl = tkinter.Label(root, text=&#8221;, justify=tkinter.RIGHT)<br />
+timer_lbl.grid(row=0, columnspan=4, sticky=tkinter.N, padx=10, pady=10)<br />
+for index in range(0, len(vm_list)):<br />
+    if vm_list[index].state == mgr.constants.MachineState_Running:<br />
+        start_btn_state = tkinter.DISABLED<br />
+        stop_btn_state = tkinter.NORMAL<br />
+    else:<br />
+        start_btn_state = tkinter.NORMAL<br />
+        stop_btn_state = tkinter.DISABLED</p>
+<p>    # VM label<br />
+    lbl = tkinter.Label(root, text=vm_list[index].name)<br />
+    lbl.grid(row=index+1, sticky=tkinter.W, padx=5, pady=5)</p>
+<p>    # start button<br />
+    start_btn = tkinter.Button(root, text=&#8217;Start&#8217;, state=start_btn_state)<br />
+    start_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: start_vm(vm_id)<br />
+    start_btn.grid(row=index+1, column=1, padx=5, pady=5)</p>
+<p>    # stop (save state) button<br />
+    stop_btn = tkinter.Button(root, text=&#8217;Stop&#8217;, state=stop_btn_state)<br />
+    stop_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: stop_vm(vm_id)<br />
+    stop_btn.grid(row=index+1, column=2, padx=5, pady=5)</p>
+<p>    # reset (power recycle) button<br />
+    reset_btn = tkinter.Button(root, text=&#8217;Reset&#8217;, state=stop_btn_state)<br />
+    reset_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: reset_vm(vm_id)<br />
+    reset_btn.grid(row=index+1, column=3, padx=5, pady=5)</p>
+<p>    button_list[vm_list[index].id] = {&#8216;start&#8217;: start_btn, &#8216;stop&#8217;: stop_btn, &#8216;reset&#8217;: reset_btn}</p>
+<p>timer()<br />
+root.bind(&#8216;<Escape>&#8216;, lambda event: root.quit())<br />
+root.mainloop()<br />
+[/python]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

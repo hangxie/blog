@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Moving the PowerBook back as a &#8230; PowerBook	</title>
+	<atom:link href="https://xiehang.com/blog/2009/12/02/moving-the-powerbook-back-as-a-powerbook/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/12/02/moving-the-powerbook-back-as-a-powerbook/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 04 Dec 2009 19:00:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/12/02/moving-the-powerbook-back-as-a-powerbook/comment-page-1/#comment-2788</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 04 Dec 2009 19:00:46 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=795#comment-2788</guid>
+
+					<description><![CDATA[I need to install logmein on the PowerBook, so that I can have remote access, also I may have to look for a good battery for it, but may not be that necessary :).]]></description>
+			<content:encoded><![CDATA[<p>I need to install logmein on the PowerBook, so that I can have remote access, also I may have to look for a good battery for it, but may not be that necessary :).</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

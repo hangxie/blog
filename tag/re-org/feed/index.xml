@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>re-org &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/re-org/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 25 Mar 2010 20:43:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>re-org</title>
+		<link>https://xiehang.com/blog/2010/03/25/re-org/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 25 Mar 2010 20:43:10 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[re-org]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=983</guid>
+
+					<description><![CDATA[Re-org time again, let me see if I can make things clear, I know I&#8217;m not good at it anyway :D. My boss&#8217; boss will no longer be a people manager, he&#8217;s going to work for my boss&#8217; boss&#8217; boss&#8217; boss to be a chief architect, definitely a promotion My boss will have a new <a href='https://xiehang.com/blog/2010/03/25/re-org/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Re-org time again, let me see if I can make things clear, I know I&#8217;m not good at it anyway :D.</p>
+<ul>
+<li>My boss&#8217; boss will no longer be a people manager, he&#8217;s going to work for my boss&#8217; boss&#8217; boss&#8217; boss to be a chief architect, definitely a promotion</li>
+<li>My boss will have a new boss who&#8217;s not on board yet, and the new comer will no longer report to my boss&#8217; boss&#8217; boss, instead, he&#8217;s going to report to another VP which is the same level as my boss&#8217; boss&#8217; boss</li>
+<li>Nothing else changed yet, but could be, however, who cares <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+</ul>
+<p>To make things clear, <a href="https://xiehang.com/blog/wp-content/uploads/2010/03/re-org.jpg"><img loading="lazy" class="alignright size-medium wp-image-984" title="re-org" src="https://xiehang.com/blog/wp-content/uploads/2010/03/re-org-300x196.jpg" alt="" width="300" height="196" srcset="https://xiehang.com/blog/wp-content/uploads/2010/03/re-org-300x196.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/03/re-org.jpg 660w" sizes="(max-width: 300px) 100vw, 300px" /></a>I composed a org-chart shown on the right. The left part of the diagram is what&#8217;s now, and the right part is what&#8217;s going to be. Note that &#8220;Director R&#8221; at the left changed to &#8220;Chief Architect R&#8221; on right, and a new &#8220;Director C&#8221; is added to the right.</p>
+<p>Any questions please comment to this post, I will try my best to answer any kind of questions.</p>
+<p>But why do you care? <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jetty &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/jetty/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 26 Mar 2013 19:06:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Updates</title>
+		<link>https://xiehang.com/blog/2013/03/26/updates/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2013 19:06:45 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[cookie]]></category>
+		<category><![CDATA[http filter]]></category>
+		<category><![CDATA[iis]]></category>
+		<category><![CDATA[jetty]]></category>
+		<category><![CDATA[net]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[tomcat]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1508</guid>
+
+					<description><![CDATA[Well, one and half month passed and I never post even a single word &#8230; yes I was busy but main reason is &#8230; I was lazy. Alright, some updates &#8211; I successfully migrate the bcookie module from Apache HTTPd to nginx, things were really tough at the very beginning whenever all you understand is <a href='https://xiehang.com/blog/2013/03/26/updates/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Well, one and half month passed and I never post even a single word &#8230; yes I was busy but main reason is &#8230; I was lazy.</p>
+<p>Alright, some updates &#8211; I successfully migrate the bcookie module from Apache HTTPd to nginx, things were really tough at the very beginning whenever all you understand is Apache. However, at this stage I would like to say nginx is kind of neat and elegant, expanding it is not that hard though you have to build everything  in one shot (i.e. no dso allowed), I&#8217;d like to dig in why they have design like this as this is really uncommon in modern era.</p>
+<p>And I&#8217;m moving to .Net now, again I have no idea so far, but I believe I need to write a filter in C# (YAY!), but before that I need get IIS up and running, and determine if there is any compatibility issues between different version of IIS (and .Net Framework).</p>
+<p>Stay tuned, I will post whenever I make any progress and most likely that will be the time I move to Java container part &#8211; Jetty or Tomcat, not sure so far.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

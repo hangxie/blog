@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cheese &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/cheese/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 29 Jun 2009 02:49:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Cheese and wine</title>
+		<link>https://xiehang.com/blog/2009/06/28/cheese-and-wine/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2009 02:49:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cheese]]></category>
+		<category><![CDATA[food]]></category>
+		<category><![CDATA[wine]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=511</guid>
+
+					<description><![CDATA[Perfect taste. I used to try various food with wine, but obvious cheese wins for (almost) all the time, some red meat won once or twice, such a well cooked steak, but since I cannot enjoy too much red meat, obviously cheese is the best choice. It seems like wine always be good with some <a href='https://xiehang.com/blog/2009/06/28/cheese-and-wine/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Perfect taste.</p>
+<p>I used to try various food with wine, but obvious cheese wins for (almost) all the time, some red meat won once or twice, such a well cooked steak, but since I cannot enjoy too much red meat, obviously cheese is the best choice.</p>
+<p>It seems like wine always be good with some heavy/rich food, this is why it did not work well with fish or chicken.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

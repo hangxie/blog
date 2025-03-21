@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Nagiosgraph is not updating	</title>
+	<atom:link href="https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 08 Jan 2014 22:05:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/comment-page-1/#comment-4346</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 08 Jan 2014 22:05:56 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1579#comment-4346</guid>
+
+					<description><![CDATA[I&#039;m not 100% sure but most likely I should take back my words - the reason that nagiosgraph didn&#039;t get updated was because of embedded Perl problem mentioned &lt;a href=&quot;http://sourceforge.net/apps/mediawiki/nagiosgraph/index.php?title=Main_Page#Embedded_PERL_.28ePN.29_returns_errors.__What_is_wrong.3F&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt; or &lt;a href=&quot;http://sourceforge.net/p/nagiosgraph/discussion/394748/thread/68879070&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;, the solution is change command definition (usually objects/commands.cfg) from /usr/libexec/nagiosgraph/insert.pl to /usr/bin/perl /usr/libexec/nagiosgraph/insert.pl.
+
+At least it works for now.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m not 100% sure but most likely I should take back my words &#8211; the reason that nagiosgraph didn&#8217;t get updated was because of embedded Perl problem mentioned <a href="http://sourceforge.net/apps/mediawiki/nagiosgraph/index.php?title=Main_Page#Embedded_PERL_.28ePN.29_returns_errors.__What_is_wrong.3F" rel="nofollow">here</a> or <a href="http://sourceforge.net/p/nagiosgraph/discussion/394748/thread/68879070" rel="nofollow">here</a>, the solution is change command definition (usually objects/commands.cfg) from /usr/libexec/nagiosgraph/insert.pl to /usr/bin/perl /usr/libexec/nagiosgraph/insert.pl.</p>
+<p>At least it works for now.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

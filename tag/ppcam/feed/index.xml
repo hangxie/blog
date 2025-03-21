@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PPCam &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/ppcam/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 25 Jun 2009 04:36:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>SBCL and Win32</title>
+		<link>https://xiehang.com/blog/2009/06/24/sbcl-and-win32/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 25 Jun 2009 04:36:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[gnat]]></category>
+		<category><![CDATA[PPCam]]></category>
+		<category><![CDATA[SBCL]]></category>
+		<category><![CDATA[Win32]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=505</guid>
+
+					<description><![CDATA[Found something cute &#8211; Here is a ASDF interface of Win32 for SBCL, seems I can create Win32 application easily with it. So, I&#8217;m kind of away from Ada now since the new GNAT 2009 did not solve the Win32 binding issue, my work on Ada became a interpretter, that is, reading C/C++ specification of <a href='https://xiehang.com/blog/2009/06/24/sbcl-and-win32/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Found something cute &#8211; Here is a <a href="http://www.lisphacker.com/blog/display/some-sbclwin32-hacking">ASDF interface of Win32</a> for SBCL, seems I can create Win32 application easily with it.</p>
+<p>So, I&#8217;m kind of away from Ada now since the new GNAT 2009 did not solve the Win32 binding issue, my work on Ada became a interpretter, that is, reading C/C++ specification of Win32 APIs, and then use Ada to rewrite them, I&#8217;m pretty sure I was bored with it so I slowered down the development.</p>
+<p>Lisp &#8230; seems like a different story, the community is a lot more active (based on discussion in USENET), also there are more than one compiler/interpreter providers vs. one from Ada (yes, GNAT is great, but it&#8217;s GNAT only), I can see SBCL and CMUCL are pretty promissing, while a lot other providers are coming up.</p>
+<p>I may go write the PPCam program again, with Lisp, I know I&#8217;m stubborn, but I just want to get it done, with any non-Microsoft, and non-Borland software.</p>
+<p>BTW, I gave up the idea of finding an IDE, I&#8217;ll work on command line to build a GUI application <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

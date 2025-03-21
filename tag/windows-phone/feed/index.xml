@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>windows phone &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/windows-phone/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 25 May 2012 05:24:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Frastrated</title>
+		<link>https://xiehang.com/blog/2012/05/24/frastrated/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 25 May 2012 05:24:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[photo]]></category>
+		<category><![CDATA[windows phone]]></category>
+		<category><![CDATA[zune]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1342</guid>
+
+					<description><![CDATA[Zune, or Windows Phone make me mad. There is no simple way to drag and drop the photos in the phone to a PC, and the phone cannot act like an USB drive, I mean there may be some way to make it but definitely not easy and direct. I searched online and found Library/Pictures/&#60;Device <a href='https://xiehang.com/blog/2012/05/24/frastrated/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Zune, or Windows Phone make me mad.</p>
+<p>There is no simple way to drag and drop the photos in the phone to a PC, and the phone cannot act like an USB drive, I mean there may be some way to make it but definitely not easy and direct. I searched online and found Library/Pictures/&lt;Device Name&gt; is the place &#8230;</p>
+<p>I also tried to enable Internet Sharing so that I can upload those photos to Windows Live site and then access from there, but I failed because Internet sharing cannot be enabled without mobile data connection enabled. What H***? I have wifi access, why bother to ask me turn on expensive mobile data network?</p>
+<p>Actually I know it may not be all Windows Phone&#8217;s problem. I&#8217;m not in good mode in the past several days as frastrated by all sort of technical support kind of tasks, wish things can be better in the coming days.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Moving to Windows Phone now</title>
+		<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/</link>
+					<comments>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 14 Feb 2012 23:43:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[windows phone]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1262</guid>
+
+					<description><![CDATA[The AWS App on iOS is pretty much done, at least I have made readonly part of S3 and EC2 works, and I don&#8217;t think write operations (create, update, delete, etc) are feasible to mobile phones. I&#8217;m moving to Windows Phone now, trying to build up similar App in term of functionality &#8211; I&#8217;m not <a href='https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>The AWS App on iOS is pretty much done, at least I have made readonly part of S3 and EC2 works, and I don&#8217;t think write operations (create, update, delete, etc) are feasible to mobile phones.</p>
+<p>I&#8217;m moving to Windows Phone now, trying to build up similar App in term of functionality &#8211; I&#8217;m not sure if I can build things with similar UI since different app store may have totally different tastes/rules on UI standard, better follow what they asked for.</p>
+<p>I wish Windows Phone development will be easier thinking of I&#8217;ve done .Net/Visual Studio development before, let&#8217;s see &#8211; I give myself 2 weeks, and will spend no more than an hour per day.</p>
+<p>Actually I tried both Android and Windows Phone the other day, trying to get basic idea of development. Obviously I don&#8217;t like Android, either because of I&#8217;m not a Java fan, or because of ugly interface of Eclipse &#8211; it may only be that ugly on OSX though, but I don&#8217;t have space (read: memory) to launch such a fat IDE in my Windows VM so leave it to the last.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>All new electronics from the Christmas</title>
+		<link>https://xiehang.com/blog/2011/12/27/all-new-electronics-from-the-christmas/</link>
+					<comments>https://xiehang.com/blog/2011/12/27/all-new-electronics-from-the-christmas/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 27 Dec 2011 10:43:17 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[kindle]]></category>
+		<category><![CDATA[mobile]]></category>
+		<category><![CDATA[windows phone]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1172</guid>
+
+					<description><![CDATA[Let&#8217;s see what we have now from the Christmas &#8211; a Bambook, a Kindle, a Kindle Fire, a Samsung phone (running Windows Phone), pretty much all popular mobile devices are in my house now (yes, iPhone and iPad came from last year). I can say all mobile OS&#8217;s are good enough, though iOS is having <a href='https://xiehang.com/blog/2011/12/27/all-new-electronics-from-the-christmas/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Let&#8217;s see what we have now from the Christmas &#8211; a Bambook, a Kindle, a Kindle Fire, a Samsung phone (running Windows Phone), pretty much all popular mobile devices are in my house now (yes, iPhone and iPad came from last year).</p>
+<p>I can say all mobile OS&#8217;s are good enough, though iOS is having better operational features, Aneroid is rich of free Apps, and Windows Phone is just &#8230; cute? Sorry I don&#8217;t know what can exactly describe it, but its look and feel is nice.</p>
+<p>I think I need to spend some time follow Windows Phone while playing with iOS and Android, will be busy.</p>
+<p>(This post was sent from Kindle Fire with WordPress App for Android.)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/12/27/all-new-electronics-from-the-christmas/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

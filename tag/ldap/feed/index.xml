@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ldap &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/ldap/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 09 Sep 2009 13:16:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>mysql+memcached vs. openldap</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/</link>
+					<comments>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 09 Sep 2009 13:16:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[ldap]]></category>
+		<category><![CDATA[memcached]]></category>
+		<category><![CDATA[mysql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661</guid>
+
+					<description><![CDATA[I&#8217;m going to test two types of authentication system, one is what seems to be common in current days which utilizes database and cache, the popular combination is mysql+memcached, and the other is what I recommended to others for authentication system for all the time &#8211; LDAP, and surely openldap is the first choice (Fedora <a href='https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m going to test two types of authentication system, one is what seems to be common in current days which utilizes database and cache, the popular combination is mysql+memcached, and the other is what I recommended to others for authentication system for all the time &#8211; LDAP, and surely openldap is the first choice (Fedora DS is not available on other platforms, though seems it&#8217;s easier to manage).</p>
+<p>I compose couple of items describing the tests I&#8217;m going to take, and I will review this couple of times while I&#8217;m doing the setup.</p>
+<p>First, application. I had some assumption based on my past experience, that is:</p>
+<ul>
+<li>Good user</li>
+</ul>
+<ul>
+<blockquote>
+<li>1 authentication (login with right username and password)</li>
+<li>10 look up, getting user&#8217;s attributes (for showing them on some pages, note that reading these attributes needs to go through couple of tables)</li>
+<li>1 edit, such as changing profile</li>
+</blockquote>
+</ul>
+<ul>
+<li>Bad user</li>
+<blockquote>
+<li>1 authentication (login with incorrect username or password)</li>
+</blockquote>
+</ul>
+<p>and the ratio of good vs. bad user is 1:5 (yea, lots of abuse &#8230;).</p>
+<p>There will be 1M registered users, but the &#8220;good user&#8221; will only include 100K of them, which reflects 10% active users rate, actually this is already high. There will be 3 PHP pages: login.php to do authentication, pref.php retrieve preferences of the user, and edit.php try to change user&#8217;s profile. All these take GET query strings so to make test easier.</p>
+<p>Environment:</p>
+<ul>
+<li>database testing environment</li>
+<blockquote>
+<li>debian acts as web server, running apache and PHP</li>
+<li>freebsd acts as client, generating load with apache&#8217;s ab</li>
+<li>centos is mysql&#8217;s master, handling both read and write</li>
+<li>opensuse is mysql&#8217;s slave, handling read only, note that we are not using mysql-proxy as it seems to me it is far away from production quality so far</li>
+<li>ubuntu and fedora run memcached, in TCP mode with 64M cache memory each</li>
+<li>I&#8217;m going to post database schema later on</li>
+</blockquote>
+<li>ldap testing environment</li>
+<blockquote>
+<li>debian acts as web server, running apache and PHP</li>
+<li>freebsd acts as client, generating load with apache&#8217;s ab</li>
+<li>ubuntu and fedora are running openldap in mirror mode</li>
+<li>again, schema will be posted here later on</li>
+</blockquote>
+</ul>
+<p>maybe the only unreal part above is openldap will run in mirror mode, which is not extensible &#8211; I will check to see what kind of openldap replication is suitable for production deployment.</p>
+<p>Pretty much that&#8217;s it, will update once I review this plan.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

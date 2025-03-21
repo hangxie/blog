@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>moto &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/moto/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 08 Jul 2011 15:42:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>New toy</title>
+		<link>https://xiehang.com/blog/2011/07/08/new-toy/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 08 Jul 2011 15:42:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amdroid]]></category>
+		<category><![CDATA[moto]]></category>
+		<category><![CDATA[toy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2011/07/08/new-toy/</guid>
+
+					<description><![CDATA[I got a Moto ME502 which is a cute small toy, it runs Android and mostly important, it has a qwerty keyboard. The screen sucks with only 240&#215;320, but it is enough to me as I&#8217;m using it for email and text heavily app like blog and twitter only.]]></description>
+										<content:encoded><![CDATA[<p>I got a Moto ME502 which is a cute small toy, it runs Android and mostly important, it has a qwerty keyboard.</p>
+<p>The screen sucks with only 240&#215;320, but it is enough to me as I&#8217;m using it for email and text heavily app like blog and twitter only.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

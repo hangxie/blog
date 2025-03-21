@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: New domain	</title>
+	<atom:link href="https://xiehang.com/blog/2009/12/11/new-domain/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/12/11/new-domain/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 12 Dec 2009 06:07:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/12/11/new-domain/comment-page-1/#comment-2801</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2009 06:07:11 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=816#comment-2801</guid>
+
+					<description><![CDATA[Checked around, seems too troublesome and people also mentioned performance is almost the same.
+
+Give up, using MySQL instead.]]></description>
+			<content:encoded><![CDATA[<p>Checked around, seems too troublesome and people also mentioned performance is almost the same.</p>
+<p>Give up, using MySQL instead.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/12/11/new-domain/comment-page-1/#comment-2800</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2009 00:12:16 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=816#comment-2800</guid>
+
+					<description><![CDATA[BTW, I&#039;m going to try SQLite with wordpress - Godaddy&#039;s shared mysql server is way toooooooo slow.]]></description>
+			<content:encoded><![CDATA[<p>BTW, I&#8217;m going to try SQLite with wordpress &#8211; Godaddy&#8217;s shared mysql server is way toooooooo slow.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

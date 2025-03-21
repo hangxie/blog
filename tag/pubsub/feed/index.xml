@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pubsub &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/pubsub/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:03:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Slowly making progress on XMPP</title>
+		<link>https://xiehang.com/blog/2013/10/31/slowly-making-progress-on-xmpp/</link>
+					<comments>https://xiehang.com/blog/2013/10/31/slowly-making-progress-on-xmpp/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 01 Nov 2013 00:36:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cluster]]></category>
+		<category><![CDATA[ejabberd]]></category>
+		<category><![CDATA[pubsub]]></category>
+		<category><![CDATA[sleekxmpp]]></category>
+		<category><![CDATA[websocket]]></category>
+		<category><![CDATA[xmpp]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1605</guid>
+
+					<description><![CDATA[Alright, a quick summary on XMPP before Halloween 😉 ejabberd is up and running with 3 nodes in the cluster, and having data replicated to all 3 nodes thus service will be up and running as long as there is at least one node alive. With SleekXMPP created 5M which is much faster then ejabberdctl, <a href='https://xiehang.com/blog/2013/10/31/slowly-making-progress-on-xmpp/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Alright, a quick summary on XMPP before Halloween <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>ejabberd is up and running with 3 nodes in the cluster, and having data replicated to all 3 nodes thus service will be up and running as long as there is at least one node alive. With SleekXMPP created 5M which is much faster then ejabberdctl, created 10,000 pubsub nodes so that I can do announcement to user groups, but seems I need to recreate them as they are currently all belong to admin account, which does not fit into real world. pubsub is working as well, but I need to find another solution with better performance &#8211; it&#8217;s current about 1 subscribe/second, and seems most time was spent on authentication, so I need a feature of &#8220;subscribe for others&#8221; to speed up the test deployment, though this is not necessary in real production. I haven&#8217;t test publishing information yet.<span id="more-1605"></span></p>
+<p>Next step I need to do information publishing, for online and offline users, plus test how many messages I can queue, and who can do the announcement. Also, or more important, I need to test mnesia fragment which will make the cluster truly expandable. I think I&#8217;m going to create some &#8220;core&#8221; nodes to store fragmented data, and some other non-core nodes to handle connections. Once this is tested I believe everything is good for production.</p>
+<p>I won&#8217;t do anything regarding websockets as target client will be an App, also standard for XMPP over websocket is still quite unstable thus it could waste more if I work on it more.</p>
+<p>Pretty much everything&#8217;s here &#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/10/31/slowly-making-progress-on-xmpp/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

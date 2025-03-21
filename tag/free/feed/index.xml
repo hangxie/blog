@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>free &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/free/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 19 Feb 2016 16:39:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Move to HTTPS</title>
+		<link>https://xiehang.com/blog/2016/02/19/move-to-https/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2016 16:39:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[HTTPS]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1774</guid>
+
+					<description><![CDATA[Thanks Let&#8217;s Encrypt, I&#8217;m running HTTPS now.]]></description>
+										<content:encoded><![CDATA[<p>Thanks <a href="https://letsencrypt.org/">Let&#8217;s Encrypt</a>, I&#8217;m running HTTPS now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Need to research these online IDEs</title>
+		<link>https://xiehang.com/blog/2014/03/25/need-to-research-these-online-ides/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 25 Mar 2014 16:24:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[coding]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[ide]]></category>
+		<category><![CDATA[online]]></category>
+		<category><![CDATA[pad]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1688</guid>
+
+					<description><![CDATA[Suddenly got requirement to do IDE (edit, compile, debug, etc) online, i.e. without native software installed, then came across this site, haven&#8217;t read through, though. I think one of the most important feature to me is it has to work with Pad, that will make one&#8217;s life really interesting.]]></description>
+										<content:encoded><![CDATA[<p>Suddenly got requirement to do IDE (edit, compile, debug, etc) online, i.e. without native software installed, then came across <a href="http://www.hongkiat.com/blog/cloud-ide-developers/">this site</a>, haven&#8217;t read through, though.</p>
+<p>I think one of the most important feature to me is it has to work with Pad, that will make one&#8217;s life really interesting.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Nice online tool for GIF editing</title>
+		<link>https://xiehang.com/blog/2014/03/24/nice-online-tool-for-gif-editing/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 25 Mar 2014 03:42:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[editing]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[gif]]></category>
+		<category><![CDATA[image]]></category>
+		<category><![CDATA[online]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1686</guid>
+
+					<description><![CDATA[lunapic.com is a nice tool to do image editing, though I just tested animated GIF editing job, if you don&#8217;t have a good native software in hand, this could be your best choice.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://lunapic.com/">lunapic.com</a> is a nice tool to do image editing, though I just tested animated GIF editing job, if you don&#8217;t have a good native software in hand, this could be your best choice.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Free online storage</title>
+		<link>https://xiehang.com/blog/2012/01/24/free-online-storage/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 24 Jan 2012 19:37:21 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[online storage]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1214</guid>
+
+					<description><![CDATA[This may not be a complete list, but so far I&#8217;m playing with all of them: URL Space http://www.adrive.com/ 30G http://www.4shared.com/ 10G http://www.cx.com/ 10G http://www.mimedia.com/ 7G http://www.opendrive.com/ 5G http://pogoplug.com/ 5G http://www.idrive.com/ 5G http://one.ubuntu.com/ 5G http://www.box.net/ 5G https://devices.live.com/ 5G https://www.free-hidrive.com/ 5G http://www.memopal.com/ 3G]]></description>
+										<content:encoded><![CDATA[<p>This may not be a complete list, but so far I&#8217;m playing with all of them:</p>
+<table align="center" border="1">
+<tr>
+<th>URL</th>
+<th>Space</th>
+</tr>
+<tr>
+<td><a href="http://www.adrive.com/">http://www.adrive.com/</a></td>
+<td>30G</td>
+</tr>
+<tr>
+<td><a href="http://www.4shared.com/">http://www.4shared.com/</a></td>
+<td>10G</td>
+</tr>
+<tr>
+<td><a href="http://www.cx.com/">http://www.cx.com/</a></td>
+<td>10G</td>
+</tr>
+<tr>
+<td><a href="http://www.mimedia.com/">http://www.mimedia.com/</a></td>
+<td>7G</td>
+</tr>
+<tr>
+<td><a href="http://www.opendrive.com/">http://www.opendrive.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://pogoplug.com/">http://pogoplug.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://www.idrive.com/">http://www.idrive.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://one.ubuntu.com/">http://one.ubuntu.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://www.box.net/">http://www.box.net/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="https://devices.live.com/">https://devices.live.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="https://www.free-hidrive.com/">https://www.free-hidrive.com/</a></td>
+<td>5G</td>
+</tr>
+<tr>
+<td><a href="http://www.memopal.com/">http://www.memopal.com/</a></td>
+<td>3G</td>
+</tr>
+</table>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Google App is a mess</title>
+		<link>https://xiehang.com/blog/2012/01/13/google-app-is-a-mess/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2012 19:53:53 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[domain]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[google app]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1202</guid>
+
+					<description><![CDATA[It used to be one of the most reliable and cute (or cool?) service on the Web, but seems not any more. I tried to move two of my sites to Google App, but had to give up because all sorts of troubles it gave to me. Yesterday I was able to move one site <a href='https://xiehang.com/blog/2012/01/13/google-app-is-a-mess/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It used to be one of the most reliable and cute (or cool?) service on the Web, but seems not any more.</p>
+<p>I tried to move two of my sites to Google App, but had to give up because all sorts of troubles it gave to me. Yesterday I was able to move one site to it, but at the last step (to activate my E-Mail account, I guess), it kept telling my my Google account was webmaster@gmail.com and I cannot change it. I tried to move to webmaster@mydomain.com but failed due to it had been registered, and if I want to hook up with this existing account it told me that I need to use webmaster@gmail.com. I was totally lost of what I should do, so I simply removed my domain from it.</p>
+<p>It seems Google needs sometime to finish the work of removing my site as I no longer can register it, so I tried another domain I own, which is currently running on some other service providers (free, as well). Now Google is doing much better &#8230; I mentioned much better because it simply give me &#8220;Server error&#8221; (I guess it is HTTP 5xx but I&#8217;m not sure), so I don&#8217;t have to go through all the registration process and stuck in some middle way, hehe.</p>
+<p>So, good-bye to Google App, for now, I will come back and check things out later on, maybe weeks, maybe months.</p>
+<p>BTW, it could be Google is not willing to provide free service any more, so Google&#8217;s technical team should not be blamed, isn&#8217;t it?</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Free private Subversion hosting</title>
+		<link>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/</link>
+					<comments>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 12 Jan 2012 00:30:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[private]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1196</guid>
+
+					<description><![CDATA[Found this site is providing what I want &#8211; free subversion hosting for private projects: https://riouxsvn.com/]]></description>
+										<content:encoded><![CDATA[<p>Found this site is providing what I want &#8211; free subversion hosting for private projects:</p>
+<p><a href="https://riouxsvn.com/">https://riouxsvn.com/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Late night &#8230; some progress</title>
+		<link>https://xiehang.com/blog/2009/11/19/late-night-some-progress/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2009 09:23:26 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=759</guid>
+
+					<description><![CDATA[I&#8217;ve made some progress, I want to write it down here so that I can follow up tomorrow (actually, today): Python is not that easy, but it is not that difficult, I&#8217;ve decided to use wsgi plus web.py to do my web development, I think wsgi is the right way to go, but web.py is <a href='https://xiehang.com/blog/2009/11/19/late-night-some-progress/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve made some progress, I want to write it down here so that I can follow up tomorrow (actually, today):</p>
+<ul>
+<li>Python is not that easy, but it is not that difficult, I&#8217;ve decided to use wsgi plus web.py to do my web development, I think wsgi is the right way to go, but web.py is still a question mark &#8211; I picked it up just because it is simple</li>
+<li>Tuned Apache configuration to make it support wsgi/web.py, actually I was thinking of finding something else which will be lighter, I still need to do some more research on that but since I&#8217;m using wsgi so I don&#8217;t think changing web server will affect anything, other than deployment.</li>
+<li>I found a place to host subversion, freely. Using version control can easily track changes, and remote repository will make sure my stuffs are safe. Free service does not guarantee 100% reliability, but thinking of I have local copy already, it&#8217;s acceptable</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>VMWare ESXi and VMWare vSphere</title>
+		<link>https://xiehang.com/blog/2009/08/31/vmware-esxi-and-vmware-vsphere/</link>
+					<comments>https://xiehang.com/blog/2009/08/31/vmware-esxi-and-vmware-vsphere/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 31 Aug 2009 22:37:43 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[vmware]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=649</guid>
+
+					<description><![CDATA[At the first glance VMWare ESXi is the right way to go for VM stuffs, but later on once I found out vSphere is actually not free, I got hit, after I reimaged the Vista box and turned it to a dedicated VM box. After going through various sources, I decided to stay with ESXi <a href='https://xiehang.com/blog/2009/08/31/vmware-esxi-and-vmware-vsphere/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>At the first glance VMWare ESXi is the right way to go for VM stuffs, but later on once I found out vSphere is actually not free, I got hit, after I reimaged the Vista box and turned it to a dedicated VM box.</p>
+<p>After going through various sources, I decided to stay with ESXi for a while, because:</p>
+<ol>
+<li>It will be free to me for 60 days (well, another 58 days indeed)</li>
+<li>Xen is not that easy to be setup as I can see, need to learn more</li>
+<li>VMWare Go just announced today and I will take a try later on to see how it works</li>
+</ol>
+<p>So far, running 6 VMs on a dual-core/3G mem machine is acceptable, I&#8217;m going to launch more tests on this box and will remove my VMs on Virtual box soon.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/08/31/vmware-esxi-and-vmware-vsphere/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Microsoft stopped offering free domain</title>
+		<link>https://xiehang.com/blog/2009/08/05/microsoft-stopped-offering-free-domain/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Aug 2009 22:49:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[domain]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=589</guid>
+
+					<description><![CDATA[Got a mail from MSN saying that they are going to stop offering free domain (registration and hosting) which comes from Windows Live. It says I need to pay $15 a year to get private registration, hosting, and something else, I guess I don&#8217;t want it so just let it be. Actually I believe Microsoft <a href='https://xiehang.com/blog/2009/08/05/microsoft-stopped-offering-free-domain/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Got a mail from MSN saying that they are going to stop offering free domain (registration and hosting) which comes from Windows Live.</p>
+<p>It says I need to pay $15 a year to get private registration, hosting, and something else, I guess I don&#8217;t want it so just let it be.</p>
+<p>Actually I believe Microsoft was wasting money &#8211; I register a domain a while back but never used it, at all.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Waiting for GNAT GPL 2009</title>
+		<link>https://xiehang.com/blog/2009/05/20/waiting-for-gnat-gpl-2009/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 21 May 2009 02:47:46 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[gnat]]></category>
+		<category><![CDATA[open source]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=387</guid>
+
+					<description><![CDATA[There are some promising features, the most important one to me is generate Ada specification based on C/C++ header files, this will give me a break on creating my own bindings. Let&#8217;s see &#8211; their web site mentioned late May, so it could be just couple of days ahead.]]></description>
+										<content:encoded><![CDATA[<p>There are some promising features, the most important one to me is generate Ada specification based on C/C++ header files, this will give me a break on creating my own bindings.</p>
+<p>Let&#8217;s see &#8211; their web site mentioned late May, so it could be just couple of days ahead.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

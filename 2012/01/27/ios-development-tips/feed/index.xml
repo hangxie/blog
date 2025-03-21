@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: iOS development tips	</title>
+	<atom:link href="https://xiehang.com/blog/2012/01/27/ios-development-tips/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:11:14 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/comment-page-1/#comment-3506</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 06 Feb 2012 21:20:06 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1222#comment-3506</guid>
+
+					<description><![CDATA[Switched to the new theme.]]></description>
+			<content:encoded><![CDATA[<p>Switched to the new theme.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/comment-page-1/#comment-3505</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 06 Feb 2012 21:08:59 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1222#comment-3505</guid>
+
+					<description><![CDATA[I expanded width of the content column from 500+ pixels to 700+ pixels, which makes the whole page 900+ pixels width, seems workable. I will keep this one running before find a good theme (better with flexible width).]]></description>
+			<content:encoded><![CDATA[<p>I expanded width of the content column from 500+ pixels to 700+ pixels, which makes the whole page 900+ pixels width, seems workable. I will keep this one running before find a good theme (better with flexible width).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/comment-page-1/#comment-3504</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 06 Feb 2012 21:06:12 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1222#comment-3504</guid>
+
+					<description><![CDATA[I updated my post (format only) after installing a code syntax plugin, it doesn&#039;t work quite well with line break, but highlight thing is good.
+
+I should find a new theme now to make my page wider - thinking of most people in the world should be using a machine with wide screen (wide means wider than 800 pixels.]]></description>
+			<content:encoded><![CDATA[<p>I updated my post (format only) after installing a code syntax plugin, it doesn&#8217;t work quite well with line break, but highlight thing is good.</p>
+<p>I should find a new theme now to make my page wider &#8211; thinking of most people in the world should be using a machine with wide screen (wide means wider than 800 pixels.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Flying Bug &#187; ios development tips #2		</title>
+		<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/comment-page-1/#comment-3501</link>
+
+		<dc:creator><![CDATA[Flying Bug &#187; ios development tips #2]]></dc:creator>
+		<pubDate>Mon, 30 Jan 2012 20:37:16 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1222#comment-3501</guid>
+
+					<description><![CDATA[[...] comes the second part of ios development tips which follows first part, I&#8217;m starting over the number now so to ease my [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] comes the second part of ios development tips which follows first part, I&#8217;m starting over the number now so to ease my [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/comment-page-1/#comment-3498</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 28 Jan 2012 06:20:52 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1222#comment-3498</guid>
+
+					<description><![CDATA[I DO NEED TO FIND A PLUGIN FOR PASTING CODES TO WORDPRESS NOW!!!!
+
+Alright, I know this could be my 3rd or 4th time mentioning this, but never got it done ...]]></description>
+			<content:encoded><![CDATA[<p>I DO NEED TO FIND A PLUGIN FOR PASTING CODES TO WORDPRESS NOW!!!!</p>
+<p>Alright, I know this could be my 3rd or 4th time mentioning this, but never got it done &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

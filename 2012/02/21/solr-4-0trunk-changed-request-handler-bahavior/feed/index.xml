@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Solr 4.0/trunk changed request handler bahavior	</title>
+	<atom:link href="https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 10 Mar 2012 09:52:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/comment-page-1/#comment-3552</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 09:52:08 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1269#comment-3552</guid>
+
+					<description><![CDATA[Submitted &lt;a href=&quot;https://issues.apache.org/jira/browse/SOLR-3229&quot; rel=&quot;nofollow&quot;&gt;SOLR-3229&lt;/a&gt;, not sure when it will be taken.
+
+I believe it works for 3.x, though I didn&#039;t try it out.]]></description>
+			<content:encoded><![CDATA[<p>Submitted <a href="https://issues.apache.org/jira/browse/SOLR-3229" rel="nofollow">SOLR-3229</a>, not sure when it will be taken.</p>
+<p>I believe it works for 3.x, though I didn&#8217;t try it out.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/comment-page-1/#comment-3550</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 09 Mar 2012 08:17:17 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1269#comment-3550</guid>
+
+					<description><![CDATA[Late but at least I got it done - I&#039;ve done my first version of patch on TermVectorComponent.java, and it works (well, at least to me) in distributed environment, what I need to do next are: test in distributed and non-distributed environment, with single result, multiple results, etc., to make sure it is a good patch, and then I need to make decision of how the result will be presented especially whenever there are multiple documents returned from the search, and at last submit the patch to solr, to see if it will be accepted or not.
+
+However, I will post the patch here despite of it will be accepted by solr community or not, at least it will help some others who want this.]]></description>
+			<content:encoded><![CDATA[<p>Late but at least I got it done &#8211; I&#8217;ve done my first version of patch on TermVectorComponent.java, and it works (well, at least to me) in distributed environment, what I need to do next are: test in distributed and non-distributed environment, with single result, multiple results, etc., to make sure it is a good patch, and then I need to make decision of how the result will be presented especially whenever there are multiple documents returned from the search, and at last submit the patch to solr, to see if it will be accepted or not.</p>
+<p>However, I will post the patch here despite of it will be accepted by solr community or not, at least it will help some others who want this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/comment-page-1/#comment-3520</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 24 Feb 2012 00:49:23 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1269#comment-3520</guid>
+
+					<description><![CDATA[I found the problem was due to distributedProcess has some side-effect or incompatibility with TermVector, or the distributedProcess was not properly written in TermVectorComponent. I&#039;m still reading the code, trying to figure out a solution.]]></description>
+			<content:encoded><![CDATA[<p>I found the problem was due to distributedProcess has some side-effect or incompatibility with TermVector, or the distributedProcess was not properly written in TermVectorComponent. I&#8217;m still reading the code, trying to figure out a solution.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/comment-page-1/#comment-3519</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 23 Feb 2012 06:09:16 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1269#comment-3519</guid>
+
+					<description><![CDATA[Made no progress :( .
+
+I&#039;m kind of slow recently, feel like too many things happy in parallel which made me could not concerntrate.]]></description>
+			<content:encoded><![CDATA[<p>Made no progress 🙁 .</p>
+<p>I&#8217;m kind of slow recently, feel like too many things happy in parallel which made me could not concerntrate.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

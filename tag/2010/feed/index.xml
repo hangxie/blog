@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>2010 &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/2010/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 07 Jan 2010 21:16:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Bad password</title>
+		<link>https://xiehang.com/blog/2010/01/07/bad-password/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 07 Jan 2010 21:16:36 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[2010]]></category>
+		<category><![CDATA[password]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=862</guid>
+
+					<description><![CDATA[New year again so I changed my password, but this time seems I picked a bad one. 6 characters need to be input by left hand on keyboard, while only 3 are on right hand side, and left hand is not that good at inputting :(. However, I cannot come up with any other good <a href='https://xiehang.com/blog/2010/01/07/bad-password/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>New year again so I changed my password, but this time seems I picked a bad one.</p>
+<p>6 characters need to be input by left hand on keyboard, while only 3 are on right hand side, and left hand is not that good at inputting :(. However, I cannot come up with any other good idea for a password so I have to leave it as-is for sometime.</p>
+<p>Maybe after a while once I&#8217;ve input enough times, I will feel better.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Plan for the new year</title>
+		<link>https://xiehang.com/blog/2009/12/15/plan-for-the-new-year/</link>
+					<comments>https://xiehang.com/blog/2009/12/15/plan-for-the-new-year/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 15 Dec 2009 18:50:55 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[2010]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[plan]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=818</guid>
+
+					<description><![CDATA[2009 is a tough year to everybody, I just wish world becomes better in year 2010. My plan for year 2010 &#8211; let&#8217;s make this a leisure talk, I don&#8217;t want to promise anything since this is a way too dynamic time that everything can be changed in days. However, if things moving smoothly, I <a href='https://xiehang.com/blog/2009/12/15/plan-for-the-new-year/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>2009 is a tough year to everybody, I just wish world becomes better in year 2010.</p>
+<p>My plan for year 2010 &#8211; let&#8217;s make this a leisure talk, I don&#8217;t want to promise anything since this is a way too dynamic time that everything can be changed in days. However, if things moving smoothly, I wish I can:</p>
+<p>Try to find something interesting to do as my job &#8230; no detail yet. I wish I can still be here with my current company, but just in case it becomes impossible, I may think about some different industry.</p>
+<p>Next comes to my mind is re-arrange development environment at home, whenever I said &#8220;re-arrange&#8221; I actually meant &#8230; more :D. In a ideal world (though the world can never be ideal) I will retire the P4 box, use a iMac replace it, and get a 8 cores machines as my dedicated testing environment which is currently running on a dual core desktop, and then I will upgrade the 4-core desktop to Windows 7, and retires the PowerBook and the Asus laptop (1.1G &#8230;) as well. In this way I will have only 5 machines at home, but with 8 more cores.</p>
+<p>If I can get a 8 core box, I will run 10~15 VMs on the machine, so that I can testing all sort of cluster ideas. Also, I&#8217;m going to use different distro (again), include CentOS/Fedora, Debian/Ubuntu.</p>
+<p>I wish I can get familiar with Python on web development, I should evaluate a framework though I don&#8217;t think I&#8217;m going to use it anyway, but if there is any chance, I should build up a site with the framework, to make it my RAD solution for web development :). As for Python, I also need to try out doing extension with C/C++, so that in case there is any performance bottleneck comes from Python I can get over it.</p>
+<p>I don&#8217;t know if I will have interest do desktop development again, if I have it could be the time to try Delphi again, but I can imagine after couple of days excitement, I will move to Visual C++ because of Delphi&#8217;s buggy system (please, Delphi, please make yourself better, or just workable). I don&#8217;t have any specific project so far, but if I can at least re-write the P2P webcam thing. Java can also be an alternative for desktop development, I will definitely NOT use Java on Web as it is just horrible, but it may fit into desktop, who knows.</p>
+<p>Hobby study &#8211; get to try Ada and Lisp (yea, again). I will check to see if I can make Ada a server side programming language, and try to do some small client side applications. I don&#8217;t have confidence on working on these two, but whenever I have time, I will always do something.</p>
+<p>There are something purely for learning, as I don&#8217;t want to put money on trying them out &#8211; all those cloud services like Amazon S3, Ec2, Google App Engine, and maybe something from Microsoft, etc. I need to at least understand how these things are working (i.e. operation related stuffs), so that once I need them, I won&#8217;t run into blind. I may also try out Ubuntu&#8217;s private cloud (is this its name?) and see how it can fit into an enterprise environment.</p>
+<p>I don&#8217;t want to put any personal/family/friend plan here, it&#8217;s too hard to plan and also involves privacy issue :D, but roughly speaking, I wish I can spend more time with people around me, make them happy. I want to get some amount of money to pay off part of my mortgage, or get a new car, but I never had a good plan of how to getting money other than salary, so it could be just a wish.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/15/plan-for-the-new-year/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

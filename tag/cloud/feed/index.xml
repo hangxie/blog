@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cloud &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/cloud/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 07 Nov 2018 17:21:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Migrate domains to AWS</title>
+		<link>https://xiehang.com/blog/2018/11/07/migrate-domains-to-aws/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2018 17:21:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1791</guid>
+
+					<description><![CDATA[route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.]]></description>
+										<content:encoded><![CDATA[<p>route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Move to GCE</title>
+		<link>https://xiehang.com/blog/2017/07/27/move-to-gce/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 27 Jul 2017 18:16:47 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1777</guid>
+
+					<description><![CDATA[Google offers life time free tier: https://cloud.google.com/free/ Running this and couple of other websites on GCE now, saves me several bucks a month 😀]]></description>
+										<content:encoded><![CDATA[<p>Google offers life time free tier: <a href="https://cloud.google.com/free/">https://cloud.google.com/free/</a></p>
+<p>Running this and couple of other websites on GCE now, saves me several bucks a month <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>OpenStack cloud in a single box</title>
+		<link>https://xiehang.com/blog/2015/06/26/openstack-cloud-in-a-single-box/</link>
+					<comments>https://xiehang.com/blog/2015/06/26/openstack-cloud-in-a-single-box/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 27 Jun 2015 05:48:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[openstack]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1761</guid>
+
+					<description><![CDATA[Great post: http://docs.openstack.org/developer/devstack/guides/single-machine.html And now I&#8217;m running a private cloud on my server, it&#8217;s good enough to test OpenStack stuffs.]]></description>
+										<content:encoded><![CDATA[<p>Great post: <a href="http://docs.openstack.org/developer/devstack/guides/single-machine.html">http://docs.openstack.org/developer/devstack/guides/single-machine.html</a></p>
+<p>And now I&#8217;m running a private cloud on my server, it&#8217;s good enough to test OpenStack stuffs.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2015/06/26/openstack-cloud-in-a-single-box/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sort out my EC2 hosting</title>
+		<link>https://xiehang.com/blog/2012/12/13/sort-out-my-ec2-hosting/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 13 Dec 2012 18:58:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[hosting]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1445</guid>
+
+					<description><![CDATA[After last time fire sale I have 3 micro instances running on EC2, one in east coast and two in west. I got a mail the other day, saying my free tier is expiring so I need to make decision if I need to keep it running or not. It did take me quite some <a href='https://xiehang.com/blog/2012/12/13/sort-out-my-ec2-hosting/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>After last time fire sale I have 3 micro instances running on EC2, one in east coast and two in west. I got a mail the other day, saying my free tier is expiring so I need to make decision if I need to keep it running or not.</p>
+<p>It did take me quite some time to figure our which one is free tier, which one is the reserved instance and which one is the left &#8211; I have to blame myself as it&#8217;s me who made the configuration this messy. Anyway, it seems my major site is running on the free tier (w1), and my reseved instance is actually idle (w2), and the secondary site is on a pay-as-you-go instance (w3).</p>
+<p>Anyway, since the free tire will be expired by the end of this month and the reserved instance will be expired in mid January, I decided doing nothing by now. Once the reserved (idle) instace on east cost expired, I will shut it down.</p>
+<p>I will keep pay-as-you-go as I got feeling that I may switch to other service providers later on, at least I should try out those Amazon competiters.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Home-grown solutions, yes or no?</title>
+		<link>https://xiehang.com/blog/2011/03/19/home-grown-solutions-yes-or-no/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2011 14:33:46 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[share]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1100</guid>
+
+					<description><![CDATA[There are several teams that want to provide technical solution for my team in various area, and I&#8217;m thinking of adopting them or rejecting. There is no sure rule for that, basically I need to make sure: first they perform good enough to support my products, second, they need to be quite reliable which means <a href='https://xiehang.com/blog/2011/03/19/home-grown-solutions-yes-or-no/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>There are several teams that want to provide technical solution for my team in various area, and I&#8217;m thinking of adopting them or rejecting.</p>
+<p>There is no sure rule for that, basically I need to make sure: first they perform good enough to support my products, second, they need to be quite reliable which means I will not worry about losing support, and third, they should focus on technical solution instead of trying to take product away from me.</p>
+<p>So far the only decision had been made is that I&#8217;m going to use cloud storage team&#8217;s solution (network disk), I will put attachment for outgoing mails there to support unlimited attachment, later on will put attachments for incoming mails there. Search team also wants me leverage their platform, but I have to say their solution is not good enough for me and quite ad-hoc, so someone from my team will use Lucene to build our first solution, then we can compare to see if we are going to migrate or not.</p>
+<p>I&#8217;m going to keep my team focus on mail/message area, thus meta data won&#8217;t be taken by anyone else. Also, anti-spam is key platform for my team so I won&#8217;t give up. For search and massive data storage in key-value pair format, I may give them out.</p>
+<p>Tough decision though, always need to convince my team members agree that we should focus on key features instead of doing everything all by ourselves. We are still a big company and share a common platform will give the whole company a good shape of look.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

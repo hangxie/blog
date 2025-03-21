@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>music &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/music/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 17 Aug 2009 17:42:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>GarageBand, OS X, and PowerBook</title>
+		<link>https://xiehang.com/blog/2009/08/17/garageband-os-x-and-powerbook/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 17 Aug 2009 17:42:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[music]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=630</guid>
+
+					<description><![CDATA[Some guy showed me how to use GarageBand to create fancy music thing during a open house event of a piano school, it was pretty impressive and he told me the software is free from Mac, so I decided to give it a try. Pity once I got home, after checking the PowerBook (but it&#8217;s <a href='https://xiehang.com/blog/2009/08/17/garageband-os-x-and-powerbook/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Some guy showed me how to use GarageBand to create fancy music thing during a open house event of a piano school, it was pretty impressive and he told me the software is free from Mac, so I decided to give it a try.</p>
+<p>Pity once I got home, after checking the PowerBook (but it&#8217;s running the latest Leopard), I found no GarageBand at all. It seems it&#8217;s part of iLife, which is not free &#8211; It could be free for new Mac buyers but obviously I&#8217;m not.</p>
+<p>Then someone post a review on Apple&#8217;s new Snow Leopard, there are only two things I got from the article &#8211; 64-bit support, and office usage. I don&#8217;t think my old PowerBook qualifies to either of them, so most likely it will run current Leopard forever.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

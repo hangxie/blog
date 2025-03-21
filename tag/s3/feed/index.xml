@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>s3 &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/s3/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 30 Apr 2012 21:26:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Wish GMail will be secure enough</title>
+		<link>https://xiehang.com/blog/2012/04/30/wish-gmail-will-be-secure-enough/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 30 Apr 2012 21:26:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1330</guid>
+
+					<description><![CDATA[I just removed a primary backup from Amazon S3 after putting it into GMail, I just wish GMail will be secure enough &#8211; whenever I&#8217;m saying secure, I mean mails won&#8217;t be deleted without being notified in advance, either purposely or not. I still have backups on other places but none of them are primary, <a href='https://xiehang.com/blog/2012/04/30/wish-gmail-will-be-secure-enough/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I just removed a primary backup from Amazon S3 after putting it into GMail, I just wish GMail will be secure enough &#8211; whenever I&#8217;m saying secure, I mean mails won&#8217;t be deleted without being notified in advance, either purposely or not.</p>
+<p>I still have backups on other places but none of them are primary, that is, they can be deleted without any reason, and without carefully being watched.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Moving to Windows Phone now</title>
+		<link>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/</link>
+					<comments>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 14 Feb 2012 23:43:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[android]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[windows phone]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1262</guid>
+
+					<description><![CDATA[The AWS App on iOS is pretty much done, at least I have made readonly part of S3 and EC2 works, and I don&#8217;t think write operations (create, update, delete, etc) are feasible to mobile phones. I&#8217;m moving to Windows Phone now, trying to build up similar App in term of functionality &#8211; I&#8217;m not <a href='https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>The AWS App on iOS is pretty much done, at least I have made readonly part of S3 and EC2 works, and I don&#8217;t think write operations (create, update, delete, etc) are feasible to mobile phones.</p>
+<p>I&#8217;m moving to Windows Phone now, trying to build up similar App in term of functionality &#8211; I&#8217;m not sure if I can build things with similar UI since different app store may have totally different tastes/rules on UI standard, better follow what they asked for.</p>
+<p>I wish Windows Phone development will be easier thinking of I&#8217;ve done .Net/Visual Studio development before, let&#8217;s see &#8211; I give myself 2 weeks, and will spend no more than an hour per day.</p>
+<p>Actually I tried both Android and Windows Phone the other day, trying to get basic idea of development. Obviously I don&#8217;t like Android, either because of I&#8217;m not a Java fan, or because of ugly interface of Eclipse &#8211; it may only be that ugly on OSX though, but I don&#8217;t have space (read: memory) to launch such a fat IDE in my Windows VM so leave it to the last.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>aws s3 development tips</title>
+		<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/</link>
+					<comments>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 01 Feb 2012 19:48:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[tips]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1238</guid>
+
+					<description><![CDATA[This may not be useful to others, but it bothered me quite some time, so I&#8217;d like to write it down in case some others stuck at the same place as I did. getMetadataForKey calls from aws-ios-sdk, actually it: returns user defined meta data, nothing to do with s3&#8217;s meta data the key used here <a href='https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>This may not be useful to others, but it bothered me quite some time, so I&#8217;d like to write it down in case some others stuck at the same place as I did.</p>
+<p>getMetadataForKey calls from aws-ios-sdk, actually it:</p>
+<ol>
+<li>returns user defined meta data, nothing to do with s3&#8217;s meta data</li>
+<li>the key used here will be prepended a &#8220;x-aws-meta-&#8220;, that is, in aws console, we will see a meta data entry keyed with &#8220;x-aws-meta-hahaha&#8221;, but in ios app you need to use &#8220;hahaha&#8221; to get the value</li>
+</ol>
+<p>some other interesting stuffs &#8230; don&#8217;t use S3GetObjectRequest/Response call to get object&#8217;s header information, as it will indeed download the object. Instead, you should use S3GetObjectMetadataRequest/Response.</p>
+<p>To get &#8220;Expiry Date&#8221; and  &#8220;Lifecycle Rule&#8221; information as they are shown on aws console, you need to use response&#8221;s valueForHTTPHeaderField method with key &#8220;x-amz-expiration&#8221;, the parse it &#8230; I guess there should be something more easier but havenn&#8217;t figured out how. Both &#8220;expiry-date&#8221; and &#8220;rule-id&#8221; are there so you can use them, note that they can be empty so better prepare for that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Moving to Amazon S3 now</title>
+		<link>https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/</link>
+					<comments>https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 31 Dec 2011 16:14:39 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[amazon]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[backup]]></category>
+		<category><![CDATA[ec2]]></category>
+		<category><![CDATA[s3]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1183</guid>
+
+					<description><![CDATA[I&#8217;m in the middle of moving some stuffs to Amazon AWS, and the first project is moving back up of my friend&#8217;s web site to Amazon as it gets no online access and data volume is not that big. The test seems good so far with my (first year) free AWS S3, I will stop <a href='https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m in the middle of moving some stuffs to Amazon AWS, and the first project is moving back up of my friend&#8217;s web site to Amazon as it gets no online access and data volume is not that big. The test seems good so far with my (first year) free AWS S3, I will stop current backup plan which sending data to my personal server in a week or two.</p>
+<p>Amazon did great job to ease usage of AWS at least for S3, and based on my limited experience on EC2 it is not that hard to deploy but I still need to figure out how difficult it is to deploy multiple instances in a programable way as this will be the most reasonable way to get things done.</p>
+<p>I&#8217;m currently on <a href="http://aws.amazon.com/free/">AWS Free Usage Tier</a>, good way to evaluate how much I&#8217;m going to spend in a serious project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/12/31/moving-to-amazon-s3-now/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

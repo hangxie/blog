@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Time to consolidate	</title>
+	<atom:link href="https://xiehang.com/blog/2012/04/20/time-to-consolidate/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/04/20/time-to-consolidate/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 27 Apr 2012 20:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/04/20/time-to-consolidate/comment-page-1/#comment-3601</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 27 Apr 2012 20:52:52 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1316#comment-3601</guid>
+
+					<description><![CDATA[I took my words back - after carefully checking the test environment I found that the latency of 20 ms came majorily from network due to result being sent between the test client and HBase server, and after making them closer (same switch) the latency dramically went down to ~0.8 ms.
+
+Tune original testing environment by pick up non-existent keys gave me ~4 ms latency, it&#039;s higher than the number above due to thrift interface sends lot of data I guess.
+
+Anyway, stick on HBase for now unless I found anything abnormal in the coming days.]]></description>
+			<content:encoded><![CDATA[<p>I took my words back &#8211; after carefully checking the test environment I found that the latency of 20 ms came majorily from network due to result being sent between the test client and HBase server, and after making them closer (same switch) the latency dramically went down to ~0.8 ms.</p>
+<p>Tune original testing environment by pick up non-existent keys gave me ~4 ms latency, it&#8217;s higher than the number above due to thrift interface sends lot of data I guess.</p>
+<p>Anyway, stick on HBase for now unless I found anything abnormal in the coming days.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/04/20/time-to-consolidate/comment-page-1/#comment-3598</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 26 Apr 2012 00:31:30 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1316#comment-3598</guid>
+
+					<description><![CDATA[HBase performance sucks, single thread client got latency at ~20 ms, which is in sync with test results from others, I get to find another solution for my project.
+
+Mayby it&#039;s still suitable for something else, people are telling me use cache to speed up, but then why don&#039;t I go to redis or memcacheDB?
+
+Oh ya, need to figure out how well do redis support replication and/or cluster, it was not good a while back, but should have some improvement recently.]]></description>
+			<content:encoded><![CDATA[<p>HBase performance sucks, single thread client got latency at ~20 ms, which is in sync with test results from others, I get to find another solution for my project.</p>
+<p>Mayby it&#8217;s still suitable for something else, people are telling me use cache to speed up, but then why don&#8217;t I go to redis or memcacheDB?</p>
+<p>Oh ya, need to figure out how well do redis support replication and/or cluster, it was not good a while back, but should have some improvement recently.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

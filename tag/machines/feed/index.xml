@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>machines &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/machines/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 07 Feb 2011 09:34:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Re-arrange servers</title>
+		<link>https://xiehang.com/blog/2011/02/06/re-arrange-servers/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 07 Feb 2011 05:29:44 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[machines]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1077</guid>
+
+					<description><![CDATA[GoDaddy&#8217;s VPS (running CentOS) is my production machine for all public web sites (too many, cannot list all of them here), and will be the server for running PHP/C/C++ based applications. Ubuntu @ Shanghai home will be the primary machine for playing with Python, I&#8217;m going to spend some time on django. Machine @ US <a href='https://xiehang.com/blog/2011/02/06/re-arrange-servers/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>GoDaddy&#8217;s VPS (running CentOS) is my production machine for all public web sites (too many, cannot list all of them here), and will be the server for running PHP/C/C++ based applications.</p>
+<p>Ubuntu @ Shanghai home will be the primary machine for playing with Python, I&#8217;m going to spend some time on django.</p>
+<p>Machine @ US home will be the machine for cluster testing, especially cloud-like stuffs like Cassandra, MongoDB, etc.</p>
+<p>PowerBook will be retired soon (actually it is just lying down there without powered on), however, I will put Lisp related stuffs there to see how far I can go with Lisp.</p>
+<p>I don&#8217;t have any further machines, and probably I don&#8217;t have time to take care of more.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

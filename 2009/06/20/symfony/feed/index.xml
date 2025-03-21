@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: symfony	</title>
+	<atom:link href="https://xiehang.com/blog/2009/06/20/symfony/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/06/20/symfony/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 22 Jun 2009 00:39:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/06/20/symfony/comment-page-1/#comment-1811</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 22 Jun 2009 00:39:17 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=497#comment-1811</guid>
+
+					<description><![CDATA[It seems Apache HTTPd comes with Ubuntu does not have rewrite module enabled by default, this cost me hours to figure out why &quot;no_script&quot; doesn&#039;t work.]]></description>
+			<content:encoded><![CDATA[<p>It seems Apache HTTPd comes with Ubuntu does not have rewrite module enabled by default, this cost me hours to figure out why &#8220;no_script&#8221; doesn&#8217;t work.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

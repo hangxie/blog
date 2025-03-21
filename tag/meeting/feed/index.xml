@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>meeting &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/meeting/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 12 Jul 2010 01:44:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Review meeting again</title>
+		<link>https://xiehang.com/blog/2010/07/11/review-meeting-again/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 12 Jul 2010 01:44:56 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[meeting]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1048</guid>
+
+					<description><![CDATA[It&#8217;s 4th or 5th review meeting for my product plan, made great progress for sure, and people are getting bored as well :D. And each presentation shrinked from 30 pages PPT in the first meeting to 6 pages for next meeting (will happen in 20 min or so), and people who were in the meeting <a href='https://xiehang.com/blog/2010/07/11/review-meeting-again/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s 4th or 5th review meeting for my product plan, made great progress for sure, and people are getting bored as well :D.</p>
+<p>And each presentation shrinked from 30 pages PPT in the first meeting to 6 pages for next meeting (will happen in 20 min or so), and people who were in the meeting reduced from more than 10 down to 4 last time (guess we will have a little bit more today as it&#8217;s Monday). Topic wise, I believe everybody found that there is nothing to talk about strategy now, and time to go down to execution plan so it will be boring as most senior management people don&#8217;t care about how many days each feature will take, right?</p>
+<p>So this is why I have only 6 pages for the meeting, and I wish it can finish in 30 minutes. There is another product in my hands and I&#8217;m planning to migrate the platform to Mail product as well, let&#8217;s see.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

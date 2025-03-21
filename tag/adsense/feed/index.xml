@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>adsense &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/adsense/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:08:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>AdSense is having problem on my site, or with my IP &#8230;</title>
+		<link>https://xiehang.com/blog/2013/08/02/adsense-is-having-problem-on-my-site-or-with-my-ip/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 17:10:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ad]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1561</guid>
+
+					<description><![CDATA[I could not see ads from Google AdSense in the past several weeks, but weird enough, I still have revenue :P. I changed to another AdSense plugin but it&#8217;s still the same. I don&#8217;t think Google&#8217;s service is having problem, especially for this long, so it could be either my account is having problem, or <a href='https://xiehang.com/blog/2013/08/02/adsense-is-having-problem-on-my-site-or-with-my-ip/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I could not see ads from Google AdSense in the past several weeks, but weird enough, I still have revenue :P. I changed to another AdSense plugin but it&#8217;s still the same. I don&#8217;t think Google&#8217;s service is having problem, especially for this long, so it could be either my account is having problem, or Google knows it&#8217;s me so refuse to show me ads, or my IP is blacklisted (both office and home? cannot be &#8230;).</p>
+<p>Anyway, will keep watching this for some time but it&#8217;s definitely not urgent and important &#8230; I think all I&#8217;ve got from Google for more than a year is less than $10, sure, it&#8217;s not Google&#8217;s problem, it&#8217;s me not getting the site popular :D.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Hello, World!</title>
+		<link>https://xiehang.com/blog/2012/09/25/hello-world/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 25 Sep 2012 07:56:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[update]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1404</guid>
+
+					<description><![CDATA[Just found that last post was back to Aug 15, which was 40 days ago (or more), guess I need to post something. There is not much to update though, good thing is that two guys pinged me the other day, asking why I&#8217;m no longer update my blog, also mentioned that it&#8217;s really impressive <a href='https://xiehang.com/blog/2012/09/25/hello-world/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just found that last post was back to Aug 15, which was 40 days ago (or more), guess I need to post something.</p>
+<p>There is not much to update though, good thing is that two guys pinged me the other day, asking why I&#8217;m no longer update my blog, also mentioned that it&#8217;s really impressive that I was working on so many different stuffs.</p>
+<p>Another update is that I have $1.81 on my AdSense account now, if you believe my articles do help, please click ads on the page. My target is to get $10 AdSense income within a year, so please help me.<span id="more-1404"></span></p>
+<p>Other than these &#8230; I was pretty busy on a company&#8217;s project, which is fun in term of business but no that fun (to me) in term of technology. There are some interesting parts in the project, but I&#8217;m not working on them, instead, I&#8217;m working on PHP codes now, doing something that I believe most open source ORM had done pretty well. Yea you got it, I&#8217;m packaging all DB and other storage access codes so that frond end guys don&#8217;t have to know details, thus in the future if there is anything wrong, such as performance problem we can re-implement the backend.</p>
+<p>I just cannot believe I&#8217;ve wrote thousands of junk codes and luckily, majority part passed all unit tests start from just now:</p>
+<pre>$ time ./batch-book.sh
+all tests passed [6050771]
+all tests passed [50000478]
+all tests passed [287] [288]
+all tests passed [126]
+all tests passed [12864-54321-1348559036]
+all tests passed
+all tests passed [114]
+all tests passed [115]
+all tests passed [6050772] [50000479,50000480,50000481,50000482,50000483,50000484,50000485,50000486,50000487,50000488,50000489,50000490,50000491,50000492,50000493,50000494,50000495,50000496,50000497,50000498]
+all tests passed [6050773] [289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308]
+all tests passed [6050774] [15158,15159,15160,15161,15162,15163,15164,15165,15166,15167,15168,15169,15170,15171,15172,15173,15174,15175,15176,15177]
+all tests passed [6050775] [123-6050775-1348559424,1234-6050775-1348559426,12345-6050775-1348559427,123456-6050775-1348559429]
+all tests passed [50000499] [127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146]
+all tests passed [309] [310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329]
+
+real    10m9.161s
+user    0m0.768s
+sys    0m5.493s</pre>
+<p>There are some more to be done, and goal is to release the first workable version by the end of this week.<br />
+Wish me luck.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Playing with AdSense now</title>
+		<link>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/</link>
+					<comments>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 14 Mar 2012 04:23:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[term extraction]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1286</guid>
+
+					<description><![CDATA[This is to see how things are working, and try to get some idea to help my term extraction work. There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please 😛 <a href='https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>This is to see how things are working, and try to get some idea to help my term extraction work.</p>
+<p>There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

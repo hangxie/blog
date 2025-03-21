@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: mysql+memcached vs. openldap	</title>
+	<atom:link href="https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 09 Jan 2011 09:03:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: ehcache.net		</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/comment-page-1/#comment-3313</link>
+
+		<dc:creator><![CDATA[ehcache.net]]></dc:creator>
+		<pubDate>Sun, 09 Jan 2011 09:03:43 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661#comment-3313</guid>
+
+					<description><![CDATA[&lt;strong&gt;mysql+memcached vs. openldap...&lt;/strong&gt;
+
+I’m going to test two types of authentication system, one is what seems to be common in current days which utilizes database and cache, the popular combination is mysql+memcached, and the other is what I recommended to others for authentication system ...]]></description>
+			<content:encoded><![CDATA[<p><strong>mysql+memcached vs. openldap&#8230;</strong></p>
+<p>I’m going to test two types of authentication system, one is what seems to be common in current days which utilizes database and cache, the popular combination is mysql+memcached, and the other is what I recommended to others for authentication system &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/comment-page-1/#comment-2799</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2009 23:27:12 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661#comment-2799</guid>
+
+					<description><![CDATA[I moved to nosql solution as mentioned &lt;a href=&quot;https://xiehang.com/blog/2009/10/21/nosql-something-im-thinking-of/&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;, as LDAP cannot do more than what nosql does (key-value pair, replication, dynamic schema, ...).
+
+Of cause, if you are working on an enterprise service/product, then you may have no choice other than LDAP, but if that&#039;s the case, I don&#039;t think you need to think about mysql at all.]]></description>
+			<content:encoded><![CDATA[<p>I moved to nosql solution as mentioned <a href="https://xiehang.com/blog/2009/10/21/nosql-something-im-thinking-of/" rel="nofollow">here</a>, as LDAP cannot do more than what nosql does (key-value pair, replication, dynamic schema, &#8230;).</p>
+<p>Of cause, if you are working on an enterprise service/product, then you may have no choice other than LDAP, but if that&#8217;s the case, I don&#8217;t think you need to think about mysql at all.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tom		</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/comment-page-1/#comment-2798</link>
+
+		<dc:creator><![CDATA[Tom]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2009 12:02:50 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661#comment-2798</guid>
+
+					<description><![CDATA[Not sure you can compare LDAP &#038; memcache in this case.
+
+LDAP is good if you need to get your data from different points.
+
+Also, if ur data will be often updated, LDAP is not good.
+
+Do u have any result of ur test yet?]]></description>
+			<content:encoded><![CDATA[<p>Not sure you can compare LDAP &amp; memcache in this case.</p>
+<p>LDAP is good if you need to get your data from different points.</p>
+<p>Also, if ur data will be often updated, LDAP is not good.</p>
+<p>Do u have any result of ur test yet?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Flying Bug &#187; Test progress		</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/comment-page-1/#comment-2705</link>
+
+		<dc:creator><![CDATA[Flying Bug &#187; Test progress]]></dc:creator>
+		<pubDate>Sat, 26 Sep 2009 05:23:18 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661#comment-2705</guid>
+
+					<description><![CDATA[[...] There was not much progress with performance test as mentioned here. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] There was not much progress with performance test as mentioned here. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/comment-page-1/#comment-2695</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 12 Sep 2009 14:53:11 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661#comment-2695</guid>
+
+					<description><![CDATA[Here is the schema:
+
+  - create table user (
+        id int unsigned auto_increment primary key,
+        username varchar(32) not null,
+        password varchar(32) not null,
+        displayname varchar(32),
+        language smallint unsigned not null, /* reference to language table */
+        location int unsigned not null, /* reference to location table */
+        birthday date not null,
+        gender char(1) not null, /* M for male, F for female, N for neutral */
+        last_ip varchar(15) not null,
+        last_time timestamp not null,
+        status char(1), /* E for enabled, D for user disabled, A for abuse disabled, P for admin placeholder */
+        unique key idx_user_username (username),
+        key idx_user_displayname (displayname),
+        key idx_user_language (language),
+        key idx_user_location (location),
+        key idx_user_birthday (birthday),
+        key idx_user_last_time (last_time)
+    ) engine=innodb character set=utf8;
+  - create table hobby (
+        id int unsigned auto_increment primary key,
+        user int unsigned not null, /* reference to user table */
+        item varchar(32) not null, /* make things simple by avoiding another lookup */
+        unique key idx_hobby_user_item (user, item)
+    ) engine=innodb character set=utf8;
+  - create table language (
+        id smallint unsigned auto_increment primary key,
+        name varchar(32) not null,
+        unique key idx_language_name (name)
+    ) engine=innodb character set=utf8;
+  - create table location (
+        id int unsigned auto_increment primary key,
+        country varchar(255) not null,
+        state varchar(255) not null,
+        city varchar(255) not null,
+        key idx_location_country (country),
+        key idx_location_state (state),
+        key idx_location_city (city)
+    ) engine=innodb character set=utf8;]]></description>
+			<content:encoded><![CDATA[<p>Here is the schema:</p>
+<p>  &#8211; create table user (<br />
+        id int unsigned auto_increment primary key,<br />
+        username varchar(32) not null,<br />
+        password varchar(32) not null,<br />
+        displayname varchar(32),<br />
+        language smallint unsigned not null, /* reference to language table */<br />
+        location int unsigned not null, /* reference to location table */<br />
+        birthday date not null,<br />
+        gender char(1) not null, /* M for male, F for female, N for neutral */<br />
+        last_ip varchar(15) not null,<br />
+        last_time timestamp not null,<br />
+        status char(1), /* E for enabled, D for user disabled, A for abuse disabled, P for admin placeholder */<br />
+        unique key idx_user_username (username),<br />
+        key idx_user_displayname (displayname),<br />
+        key idx_user_language (language),<br />
+        key idx_user_location (location),<br />
+        key idx_user_birthday (birthday),<br />
+        key idx_user_last_time (last_time)<br />
+    ) engine=innodb character set=utf8;<br />
+  &#8211; create table hobby (<br />
+        id int unsigned auto_increment primary key,<br />
+        user int unsigned not null, /* reference to user table */<br />
+        item varchar(32) not null, /* make things simple by avoiding another lookup */<br />
+        unique key idx_hobby_user_item (user, item)<br />
+    ) engine=innodb character set=utf8;<br />
+  &#8211; create table language (<br />
+        id smallint unsigned auto_increment primary key,<br />
+        name varchar(32) not null,<br />
+        unique key idx_language_name (name)<br />
+    ) engine=innodb character set=utf8;<br />
+  &#8211; create table location (<br />
+        id int unsigned auto_increment primary key,<br />
+        country varchar(255) not null,<br />
+        state varchar(255) not null,<br />
+        city varchar(255) not null,<br />
+        key idx_location_country (country),<br />
+        key idx_location_state (state),<br />
+        key idx_location_city (city)<br />
+    ) engine=innodb character set=utf8;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

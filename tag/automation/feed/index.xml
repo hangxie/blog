@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>automation &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/automation/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 18 Sep 2014 02:30:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Virtualization, GlusterFS, and automation</title>
+		<link>https://xiehang.com/blog/2014/01/27/virtualization-glusterfs-and-automation/</link>
+					<comments>https://xiehang.com/blog/2014/01/27/virtualization-glusterfs-and-automation/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 28 Jan 2014 00:55:10 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[centos]]></category>
+		<category><![CDATA[gluster]]></category>
+		<category><![CDATA[glusterfs]]></category>
+		<category><![CDATA[kickstart]]></category>
+		<category><![CDATA[libvirt]]></category>
+		<category><![CDATA[virt-install]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1619</guid>
+
+					<description><![CDATA[Finally I got some time playing with GlusterFS and libvirt. I&#8217;m not going to step into GlusterFS setup as it&#8217;s really easy and straight forward, I did CentOS kickstart (non-attendance) installation as well since it may help me in future deployment. Note that I assume you have glusterd running the host node, other all localhost <a href='https://xiehang.com/blog/2014/01/27/virtualization-glusterfs-and-automation/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Finally I got some time playing with GlusterFS and libvirt.</p>
+<p>I&#8217;m not going to step into GlusterFS setup as it&#8217;s really easy and straight forward, I did CentOS kickstart (non-attendance) installation as well since it may help me in future deployment. Note that I assume you have glusterd running the host node, other all localhost below should be replaced by the hostname that is running glusterd.<span id="more-1619"></span></p>
+<p>First, create the kickstart file somewhere accessible through HTTP, assuming it is http://192.168.0.1/kickstart.txt:<br />
+[raw]<br />
+install<br />
+cdrom<br />
+text<br />
+lang en_US.UTF-8<br />
+keyboard us<br />
+network &#8211;onboot yes &#8211;device eth0 &#8211;bootproto dhcp &#8211;noipv6<br />
+timezone &#8211;utc America/Los_Angeles<br />
+rootpw  &#8211;iscrypted SOMETHING-COPIED-FROM-/ETC/SHADDOW<br />
+selinux &#8211;disabled<br />
+authconfig &#8211;enableshadow &#8211;passalgo=sha512<br />
+firewall &#8211;service=ssh<br />
+poweroff</p>
+<p>zerombr yes<br />
+clearpart &#8211;linux &#8211;drives=vda<br />
+part /boot &#8211;fstype ext4 &#8211;size 512<br />
+part swap &#8211;recommended<br />
+part / &#8211;fstype ext4 &#8211;size 4096 &#8211;grow</p>
+<p>bootloader &#8211;location=mbr &#8211;timeout=5 &#8211;append=&#8221;rhgb quiet console=ttyS0&#8243;</p>
+<p>%packages &#8211;nobase<br />
+sudo<br />
+ypbind<br />
+nfs-utils<br />
+ntp<br />
+bind-utils<br />
+%end<br />
+[/raw]</p>
+<p>I&#8217;m not going to explain configuration options one by one as you can get more detailed explanation from <a href="http://www.centos.org/docs/5/html/Installation_Guide-en-US/s1-kickstart2-options.html">CentOS&#8217;s kickstart documentation site</a>.</p>
+<p>Then, create the image file (raw format) on GlusterFS volume, you can do it on fuse mounted place at this moment since there won&#8217;t be any significant amount data to be written:<br />
+[shell]<br />
+sudo truncate -s 100G /mnt/glusterfs/VM/test-vm/disk.img<br />
+[/shell]</p>
+<p>Or you prefer qemu-img way:<br />
+[shell]<br />
+sudo qemu-img create -f raw gluster://localhost:24007/glusterfs_vol_name/VM/test-vm/disk.img 100G<br />
+[/shell]</p>
+<p>Either one will create a sparsed file size 100G.</p>
+<p>Now, if you&#8217;ve downloaded the installation ISO to somewhere, do this:<br />
+[shell]<br />
+sudo virt-install &#8211;name test-vm &#8211;ram 1024 &#8211;vcpus 2 &#8211;disk path=/mnt/glusterfs/VM/test-vm/disk.img,size=100 &#8211;network bridge=br1 &#8211;os-variant rhel6 &#8211;accelerate &#8211;location /path/to/CentOS-6.2-x86_64-bin-DVD1.iso &#8211;graphics none -x &#8220;ks=http://192.168.0.1/kickstart.txt console=ttyS0&#8221;<br />
+[/shell]</p>
+<p>or if you prefer do a network installation:<br />
+[shell]<br />
+sudo virt-install &#8211;name test-vm &#8211;ram 1024 &#8211;vcpus 2 &#8211;disk path=/mnt/glusterfs/VM/test-vm/disk.img,size=100 &#8211;network bridge=br1 &#8211;os-variant rhel6 &#8211;accelerate &#8211;location http://mirror.stanford.edu/yum/pub/centos/6/os/x86_64/ &#8211;graphics none -x &#8220;ks=http://192.168.0.1/kickstart.txt console=ttyS0&#8221;<br />
+[/shell]</p>
+<p>After the installation, the machine should be powered-off, if for whatever reason it does not, do a poweroff, then do:<br />
+<code><br />
+sudo virsh list --all<br />
+</code></p>
+<p>to make sure test-vm is not running, then edit the VM&#8217;s configuration by:<br />
+[shell]<br />
+sudo virsh edit test-vm<br />
+[/shell]</p>
+<p>The only thing needs to be changed is the location of the disk image, it should be:<br />
+[xml]<br />
+    <disk type='file' device='disk'><br />
+      <driver name='qemu' type='raw' cache='none'/><source file='/mnt/glusterfs/VM/test-vm/disk.img'/><target dev='vda' bus='virtio'/></p>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x04' function='0x0'/>
+    </disk><br />
+[/xml]</p>
+<p>and need to be changed to:</p>
+<p>[xml]<br />
+    <disk type='network' device='disk'><br />
+      <driver name='qemu' type='raw' cache='none'/><source protocol='gluster' name='glusterfs_vol_name/VM/test-vm/disk.img'><host name='localhost' port='24007'/><br />
+      </source><br />
+      <target dev='vda' bus='virtio'/></p>
+<address type='pci' domain='0x0000' bus='0x00' slot='0x04' function='0x0'/>
+    </disk><br />
+[/xml]</p>
+<p>Remember double check ownership of the disk.img file &#8211; it should be owned by qemu:qemu, otherwise you are going to run into disk IO problem (in VM).</p>
+<p>Now, start the VM:<br />
+[shell]<br />
+sudo virsh start &#8211;console test-vm<br />
+[/shell]</p>
+<p>and everything should be there <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>If you have problem with the VM and want to start over, you can:<br />
+[shell]sudo virsh reset test-vm[/shell]<br />
+to power-cycle the VM,<br />
+[shell]sudo virsh destroy test-vm[/shell],<br />
+to power-off the VM<br />
+[shell]sudo virsh undefine test-vm[/shell],<br />
+to remove the VM from libvirt&#8217;s repository.</p>
+<p>I did some performance test on disk, putting the disk image on GlusterFS makes disk I/O slow for sure, but I think it is still acceptable:<br />
+[shell]<br />
+glusterfs-fuse   1048576000 bytes (1.0 GB) copied, 192.922 s, 5.4 MB/s<br />
+glusterfs-api    1048576000 bytes (1.0 GB) copied, 33.0347 s, 31.7 MB/s<br />
+local-filesystem 1048576000 bytes (1.0 GB) copied, 5.70798 s, 184 MB/s<br />
+[/shell]</p>
+<p>The test command was:<br />
+[shell]<br />
+dd if=/dev/zero of=/tmp/dd-test bs=1M count=1000<br />
+[/shell]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2014/01/27/virtualization-glusterfs-and-automation/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Play with Python on Windows</title>
+		<link>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/</link>
+					<comments>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 17:59:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<category><![CDATA[virtualbox]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1583</guid>
+
+					<description><![CDATA[As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them. This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying <a href='https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them.</p>
+<p>This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying on HDD. However, I have different requirements for different types of VMs, like for Windows VM, I used to launch them in GUI mode so that I can use another Windows environment, but for Linux and other *nix machines I used to launch them in headless mode and use putty (another neat tool <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ) to access.<span id="more-1583"></span></p>
+<p>The problem is that VirtualBox&#8217;s console does not support starting VMs in headless mode, so I created some BAT files to do it, but this makes things complicated that I have to go to two places to do actually one thing.</p>
+<p>Now here comes Python, plus VirtualBox guys kindly released a Python SDK. It was for Python 2.x, but no wonder some smart guy <a title="vboxapi Python 3" href="https://github.com/jbuergel/vboxapi-py3" target="_blank">convert it to work with Python 3</a>. I was thinking of using win32 binding, but later on found Tkinter is good enough for this purpose. Codes posted below, feel free to take it as long as you can mention my name and link back to this post (I hate GPL &#8230; you can guess I&#8217;m a fan of BSD).</p>
+<p>I&#8217;ll do some more enhancement if I have to, but so far it can show button status based on VM state, and start/stop/reset the VMs, that&#8217;s pretty all I want at this moment. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+[python]<br />
+import sys<br />
+import tkinter<br />
+from tkinter import messagebox<br />
+import vboxapi<br />
+import time</p>
+<p>mgr = vboxapi.VirtualBoxManager(None, None)</p>
+<p>def list_vms():<br />
+    global mgr<br />
+    vm_list = []<br />
+    for vm in mgr.getArray(mgr.vbox, &#8216;machines&#8217;):<br />
+        vm_list.append(vm)<br />
+    vm_list = sorted(vm_list, key = lambda k: k.name)<br />
+    return vm_list</p>
+<p>def start_vm(vm_id):<br />
+    global mgr, root, button_list<br />
+    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # start the VM<br />
+        machine = mgr.vbox.FindMachine(vm_id)<br />
+        if mgr.vbox.getGuestOSType(machine.OSTypeId).familyId == &#8216;Windows&#8217;:<br />
+            start_type = &#8216;gui&#8217;<br />
+        else:<br />
+            start_type = &#8216;headless&#8217;<br />
+        progress = machine.launchVMProcess(session, start_type, &#8221;)<br />
+        progress.waitForCompletion(-1)</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def stop_vm(vm_id):<br />
+    global mgr, root<br />
+    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # stop (savestate) the VM<br />
+        mgr.vbox.FindMachine(vm_id).lockMachine(session, mgr.constants.LockType_Shared)<br />
+        session.console.saveState()</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.NORMAL)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def reset_vm(vm_id):<br />
+    global mgr, root<br />
+    if not messagebox.askyesno(&#8216;Reset VM&#8217;, &#8216;Are you sure?&#8217;, default=&#8217;no&#8217;):<br />
+        return</p>
+<p>    root.config(cursor=&#8217;clock&#8217;)<br />
+    session = mgr.mgr.getSessionObject(mgr.vbox)<br />
+    try:<br />
+        # stop (savestate) the VM<br />
+        mgr.vbox.FindMachine(vm_id).lockMachine(session, mgr.constants.LockType_Shared)<br />
+        session.console.reset()</p>
+<p>        # change UI<br />
+        button_list[vm_id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+        button_list[vm_id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+    except Exception as e:<br />
+        messagebox.showerror(&#8216;Error Happened&#8217;, e)<br />
+    finally:<br />
+        if session.state == mgr.constants.SessionState_Locked:<br />
+            session.unlockMachine()<br />
+        root.config(cursor=&#8221;)</p>
+<p>def timer():<br />
+    pass<br />
+    global mgr, vm_list, button_list, timer_lbl, root</p>
+<p>    # update button status according to VM state<br />
+    for index in range(0, len(vm_list)):<br />
+        if vm_list[index].state == mgr.constants.MachineState_Running:<br />
+            # VM is running<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.NORMAL)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.NORMAL)<br />
+        elif vm_list[index].state == mgr.constants.MachineState_Saved or vm_list[index].state == mgr.constants.MachineState_PoweredOff or vm_list[index].state == mgr.constants.MachineState_Aborted:<br />
+            # VM is not running<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.NORMAL)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.DISABLED)<br />
+        else:<br />
+            # VM is in interim state<br />
+            button_list[vm_list[index].id][&#8216;start&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;stop&#8217;].config(state=tkinter.DISABLED)<br />
+            button_list[vm_list[index].id][&#8216;reset&#8217;].config(state=tkinter.DISABLED)</p>
+<p>    # update clock<br />
+    timer_lbl.configure(text=time.strftime(&#8220;%Y-%m-%d %H:%M:%S&#8221;))<br />
+    root.after(1000, timer)</p>
+<p>vm_list = list_vms()<br />
+button_list = {}<br />
+root = tkinter.Tk()<br />
+timer_lbl = tkinter.Label(root, text=&#8221;, justify=tkinter.RIGHT)<br />
+timer_lbl.grid(row=0, columnspan=4, sticky=tkinter.N, padx=10, pady=10)<br />
+for index in range(0, len(vm_list)):<br />
+    if vm_list[index].state == mgr.constants.MachineState_Running:<br />
+        start_btn_state = tkinter.DISABLED<br />
+        stop_btn_state = tkinter.NORMAL<br />
+    else:<br />
+        start_btn_state = tkinter.NORMAL<br />
+        stop_btn_state = tkinter.DISABLED</p>
+<p>    # VM label<br />
+    lbl = tkinter.Label(root, text=vm_list[index].name)<br />
+    lbl.grid(row=index+1, sticky=tkinter.W, padx=5, pady=5)</p>
+<p>    # start button<br />
+    start_btn = tkinter.Button(root, text=&#8217;Start&#8217;, state=start_btn_state)<br />
+    start_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: start_vm(vm_id)<br />
+    start_btn.grid(row=index+1, column=1, padx=5, pady=5)</p>
+<p>    # stop (save state) button<br />
+    stop_btn = tkinter.Button(root, text=&#8217;Stop&#8217;, state=stop_btn_state)<br />
+    stop_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: stop_vm(vm_id)<br />
+    stop_btn.grid(row=index+1, column=2, padx=5, pady=5)</p>
+<p>    # reset (power recycle) button<br />
+    reset_btn = tkinter.Button(root, text=&#8217;Reset&#8217;, state=stop_btn_state)<br />
+    reset_btn[&#8216;command&#8217;] = lambda vm_id = vm_list[index].id: reset_vm(vm_id)<br />
+    reset_btn.grid(row=index+1, column=3, padx=5, pady=5)</p>
+<p>    button_list[vm_list[index].id] = {&#8216;start&#8217;: start_btn, &#8216;stop&#8217;: stop_btn, &#8216;reset&#8217;: reset_btn}</p>
+<p>timer()<br />
+root.bind(&#8216;<Escape>&#8216;, lambda event: root.quit())<br />
+root.mainloop()<br />
+[/python]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

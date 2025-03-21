@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: aws s3 development tips	</title>
+	<atom:link href="https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 17 Apr 2012 03:18:51 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Douglas Schmidt		</title>
+		<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/comment-page-1/#comment-3590</link>
+
+		<dc:creator><![CDATA[Douglas Schmidt]]></dc:creator>
+		<pubDate>Tue, 17 Apr 2012 03:18:51 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1238#comment-3590</guid>
+
+					<description><![CDATA[Hi Hang!
+Thanks for the response.
+
+It is right, and I was doing it the right way also. The problem was in Amazon permissions. But the strange warning keeps showing. Maybe its a version incompatibility bug, or a pre-compiler error, don&#039;t know. The important think is that its working now :)]]></description>
+			<content:encoded><![CDATA[<p>Hi Hang!<br />
+Thanks for the response.</p>
+<p>It is right, and I was doing it the right way also. The problem was in Amazon permissions. But the strange warning keeps showing. Maybe its a version incompatibility bug, or a pre-compiler error, don&#8217;t know. The important think is that its working now 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/comment-page-1/#comment-3582</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 11 Apr 2012 20:31:29 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1238#comment-3582</guid>
+
+					<description><![CDATA[Are you sure you got the right line for the error? I feel like that you were trying to use &quot;metadata&quot; to make a call and that causes the problem.
+
+And I have almost exacxtly the same code as you do (for this line) without any problem, and I pasted here in case you want to do a double check:
+
+        S3GetObjectMetadataRequest * getObjectMetadataRequest = [[S3GetObjectMetadataRequest alloc] initWithKey:objectName withBucket:bucketName];
+
+Or maybe you want to post some more code plus errors so that we can look into.]]></description>
+			<content:encoded><![CDATA[<p>Are you sure you got the right line for the error? I feel like that you were trying to use &#8220;metadata&#8221; to make a call and that causes the problem.</p>
+<p>And I have almost exacxtly the same code as you do (for this line) without any problem, and I pasted here in case you want to do a double check:</p>
+<p>        S3GetObjectMetadataRequest * getObjectMetadataRequest = [[S3GetObjectMetadataRequest alloc] initWithKey:objectName withBucket:bucketName];</p>
+<p>Or maybe you want to post some more code plus errors so that we can look into.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Douglas Schmidt		</title>
+		<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/comment-page-1/#comment-3580</link>
+
+		<dc:creator><![CDATA[Douglas Schmidt]]></dc:creator>
+		<pubDate>Wed, 11 Apr 2012 12:34:18 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1238#comment-3580</guid>
+
+					<description><![CDATA[Hi. I found your blog post when searching for a solution for my problem. Your post help me in finding the right direction but I&#039;m still stuck trying to get the etag of the file without having to download it first.
+Using the S3GetObjectMetadataRequest seems to be the right way, buuut, trying to initialize the object gives me a serious warning, and later after getting the metadata response the object is empty.
+The initializing is this: 
+S3GetObjectMetadataRequest *metadata = [[S3GetObjectMetadataRequest alloc] initWithKey:key withBucket:bucket];
+
+and the warning is:
+Incompatible Objective-C types initializing &#039;struct S3GetObjectRequest *&#039;, expected &#039;struct S3GetObjectMetadataRequest *&#039;
+
+using cast doesn&#039;t fix it.
+
+I would be very glad to you if you could help me finding a solution.
+Thanks you advance and congrats for your blog.]]></description>
+			<content:encoded><![CDATA[<p>Hi. I found your blog post when searching for a solution for my problem. Your post help me in finding the right direction but I&#8217;m still stuck trying to get the etag of the file without having to download it first.<br />
+Using the S3GetObjectMetadataRequest seems to be the right way, buuut, trying to initialize the object gives me a serious warning, and later after getting the metadata response the object is empty.<br />
+The initializing is this:<br />
+S3GetObjectMetadataRequest *metadata = [[S3GetObjectMetadataRequest alloc] initWithKey:key withBucket:bucket];</p>
+<p>and the warning is:<br />
+Incompatible Objective-C types initializing &#8216;struct S3GetObjectRequest *&#8217;, expected &#8216;struct S3GetObjectMetadataRequest *&#8217;</p>
+<p>using cast doesn&#8217;t fix it.</p>
+<p>I would be very glad to you if you could help me finding a solution.<br />
+Thanks you advance and congrats for your blog.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

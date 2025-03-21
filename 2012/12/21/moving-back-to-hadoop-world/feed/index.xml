@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Moving back to Hadoop world	</title>
+	<atom:link href="https://xiehang.com/blog/2012/12/21/moving-back-to-hadoop-world/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/12/21/moving-back-to-hadoop-world/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 11 Jan 2013 18:00:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/12/21/moving-back-to-hadoop-world/comment-page-1/#comment-3832</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 11 Jan 2013 18:00:12 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1452#comment-3832</guid>
+
+					<description><![CDATA[Another company full of former Yahoo! guys ... but this makes sense thinking of it&#039;s a Hadoop company :D .]]></description>
+			<content:encoded><![CDATA[<p>Another company full of former Yahoo! guys &#8230; but this makes sense thinking of it&#8217;s a Hadoop company 😀 .</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: xiayu		</title>
+		<link>https://xiehang.com/blog/2012/12/21/moving-back-to-hadoop-world/comment-page-1/#comment-3825</link>
+
+		<dc:creator><![CDATA[xiayu]]></dc:creator>
+		<pubDate>Thu, 10 Jan 2013 09:41:50 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1452#comment-3825</guid>
+
+					<description><![CDATA[Now, I am using Hortonworks Data Platform (http://hortonworks.com/). This applies to a wide range of? Especially commercial?
+
+Attached to:  Hortonworks Data Platform (HDP) is a pure open source Apache Hadoop distribution.   It is ideal for organizations that want to combine the power and cost-effectiveness of Apache Hadoop with the advanced services and reliability required for enterprise deployments.]]></description>
+			<content:encoded><![CDATA[<p>Now, I am using Hortonworks Data Platform (<a href="http://hortonworks.com/" rel="nofollow ugc">http://hortonworks.com/</a>). This applies to a wide range of? Especially commercial?</p>
+<p>Attached to:  Hortonworks Data Platform (HDP) is a pure open source Apache Hadoop distribution.   It is ideal for organizations that want to combine the power and cost-effectiveness of Apache Hadoop with the advanced services and reliability required for enterprise deployments.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

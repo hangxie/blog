@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Moving ubuntu to garage	</title>
+	<atom:link href="https://xiehang.com/blog/2009/03/11/moving-ubuntu-to-garage/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/03/11/moving-ubuntu-to-garage/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 19 Mar 2009 08:10:29 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/03/11/moving-ubuntu-to-garage/comment-page-1/#comment-8</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 12 Mar 2009 18:39:35 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/03/11/moving-ubuntu-to-garage/#comment-8</guid>
+
+					<description><![CDATA[Actually I start to worry about summer time - it will be pretty hot during summer in Pleasanton, and garage will be hotter as there is nothing can cool it down.
+
+I&#039;m thinking of some better solutions, maybe put the ubuntu box onto the roof :D]]></description>
+			<content:encoded><![CDATA[<p>Actually I start to worry about summer time &#8211; it will be pretty hot during summer in Pleasanton, and garage will be hotter as there is nothing can cool it down.</p>
+<p>I&#8217;m thinking of some better solutions, maybe put the ubuntu box onto the roof 😀</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

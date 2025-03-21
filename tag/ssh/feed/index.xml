@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ssh &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/ssh/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 18 Apr 2012 23:12:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Connect to production servers</title>
+		<link>https://xiehang.com/blog/2012/04/18/connect-to-production-servers/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2012 23:12:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[shell]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1314</guid>
+
+					<description><![CDATA[Here&#8217;s the whole command, with IP address masked: ssh -A -t 111.111.111.111 "LD_PRELOAD= ssh -A -p 58422 222.222.222.222 -t \"SSH_AUTH_SOCK=\\\$(find /tmp -user xiehang -a -type s 2>/dev/null &#124; xargs ls -tr &#124; tail -1) ssh -p 58422 -l root $@\"" where 111.111.111.111 is jump host in office, and 222.222.222.222 is jump host in the IDC. <a href='https://xiehang.com/blog/2012/04/18/connect-to-production-servers/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here&#8217;s the whole command, with IP address masked:</p>
+<p><code><br />
+ssh -A -t 111.111.111.111 "LD_PRELOAD= ssh -A -p 58422 222.222.222.222 -t \"SSH_AUTH_SOCK=\\\$(find /tmp -user xiehang -a -type s 2>/dev/null | xargs ls -tr | tail -1) ssh -p 58422 -l root $@\""<br />
+</code></p>
+<p>where 111.111.111.111 is jump host in office, and 222.222.222.222 is jump host in the IDC.</p>
+<p>Tricks here: jump host in office is running tsocks, so I have to reset LD_PRELOAD to disable it, and jump host in IDC set default shell to eash (for audit) so I have to setup the ssh agent manually.</p>
+<p>It took me 20 minutes to figure out all quotes and backslashes <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

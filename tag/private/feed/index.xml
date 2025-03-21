@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>private &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/private/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 12 Jan 2012 00:30:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Free private Subversion hosting</title>
+		<link>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/</link>
+					<comments>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 12 Jan 2012 00:30:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[private]]></category>
+		<category><![CDATA[project]]></category>
+		<category><![CDATA[subversion]]></category>
+		<category><![CDATA[svn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1196</guid>
+
+					<description><![CDATA[Found this site is providing what I want &#8211; free subversion hosting for private projects: https://riouxsvn.com/]]></description>
+										<content:encoded><![CDATA[<p>Found this site is providing what I want &#8211; free subversion hosting for private projects:</p>
+<p><a href="https://riouxsvn.com/">https://riouxsvn.com/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/01/11/free-private-subversion-hosting/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

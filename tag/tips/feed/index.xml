@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tips &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/tips/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 01 Feb 2012 20:55:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>ios development tips #3</title>
+		<link>https://xiehang.com/blog/2012/02/01/ios-development-tips-3/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 01 Feb 2012 20:55:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[tips]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1242</guid>
+
+					<description><![CDATA[Here comes 3rd wave &#8230; 1. compare strings It seems NSString did not overload the compare operator (==), or maybe Object-C does not have this kind of idea, so don&#8217;t use == to compare strings, instead, you need to use compare: or caseInsensitiveCompare: and their dialects. 2. catching cell selection event in a table view <a href='https://xiehang.com/blog/2012/02/01/ios-development-tips-3/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here comes 3rd wave &#8230;</p>
+<p>1. compare strings<br />
+   It seems NSString did not overload the compare operator (==), or maybe Object-C does not have this kind of idea, so don&#8217;t use == to compare strings, instead, you need to use compare: or caseInsensitiveCompare: and their dialects.</p>
+<p>2. catching cell selection event in a table view<br />
+   I was trying to subclass <a href="http://developer.apple.com/library/IOs/#documentation/UIKit/Reference/UITableViewCell_Class/Reference/Reference.html">UITableViewCell</a> to make it works, but actually don&#8217;t have to be this complicated &#8211; all that I need to do is deal with &#8220;- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath&#8221; in the table view, and this saves me a lot of effort as I don&#8217;t have to go through all the difficulties to get storyboard, etc with codes within a Cell class.</p>
+<p>3. singleton, property or method?<br />
+   I created a singleton class, then found in Object-C, it&#8217;s better to static method (if you can) instead of property. It takes quite a lot keystrokes to use a property, while using method is not that hard.</p>
+<p>4. passing data to a view controller in a storyboard based application<br />
+   &#8211; define a property of the child view controller for holding data<br />
+   &#8211; in parent view controller&#8217;s prepareForSegue, set the property of the child controller<br />
+   &#8211; that&#8217;s it &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>aws s3 development tips</title>
+		<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/</link>
+					<comments>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 01 Feb 2012 19:48:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[s3]]></category>
+		<category><![CDATA[tips]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1238</guid>
+
+					<description><![CDATA[This may not be useful to others, but it bothered me quite some time, so I&#8217;d like to write it down in case some others stuck at the same place as I did. getMetadataForKey calls from aws-ios-sdk, actually it: returns user defined meta data, nothing to do with s3&#8217;s meta data the key used here <a href='https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>This may not be useful to others, but it bothered me quite some time, so I&#8217;d like to write it down in case some others stuck at the same place as I did.</p>
+<p>getMetadataForKey calls from aws-ios-sdk, actually it:</p>
+<ol>
+<li>returns user defined meta data, nothing to do with s3&#8217;s meta data</li>
+<li>the key used here will be prepended a &#8220;x-aws-meta-&#8220;, that is, in aws console, we will see a meta data entry keyed with &#8220;x-aws-meta-hahaha&#8221;, but in ios app you need to use &#8220;hahaha&#8221; to get the value</li>
+</ol>
+<p>some other interesting stuffs &#8230; don&#8217;t use S3GetObjectRequest/Response call to get object&#8217;s header information, as it will indeed download the object. Instead, you should use S3GetObjectMetadataRequest/Response.</p>
+<p>To get &#8220;Expiry Date&#8221; and  &#8220;Lifecycle Rule&#8221; information as they are shown on aws console, you need to use response&#8221;s valueForHTTPHeaderField method with key &#8220;x-amz-expiration&#8221;, the parse it &#8230; I guess there should be something more easier but havenn&#8217;t figured out how. Both &#8220;expiry-date&#8221; and &#8220;rule-id&#8221; are there so you can use them, note that they can be empty so better prepare for that.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ios development tips #2</title>
+		<link>https://xiehang.com/blog/2012/01/30/ios-development-tips-2/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 30 Jan 2012 20:37:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[tips]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1234</guid>
+
+					<description><![CDATA[Here comes the second part of ios development tips which follows first part, I&#8217;m starting over the number now so to ease my life. 1. How to navigate to a view in another view &#8211; original post is here: * dealing with views in a storyboard based application * some other helpful discussions are here: <a href='https://xiehang.com/blog/2012/01/30/ios-development-tips-2/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here comes the second part of ios development tips which follows <a href="https://xiehang.com/blog/2012/01/27/ios-development-tips/">first part</a>, I&#8217;m starting over the number now so to ease my life.</p>
+<p>1. How to navigate to a view in another view<br />
+   &#8211; original post is here:<br />
+     * <a href="http://stackoverflow.com/questions/8221787/perform-segue-on-viewdidload">dealing with views in a storyboard based application</a><br />
+     * some other helpful discussions are here: <a href="http://stackoverflow.com/questions/8348109/how-can-i-manually-switch-between-uiviewcontrollers-in-storyboard">manually switch view controllers in storyboard</a>, and <a href="http://how-can-i-manually-switch-between-uiv.8348109.ccqq.net/">another similar topic</a><br />
+   &#8211; idea<br />
+     * actually the basic idea is pretty simple and straightforward &#8211; you create a new view (the one you want to display), and push it to the top of the navigationcontroller (which actually is a stack), that&#8217;s it &#8230;<br />
+     * tricky part #1: this cannot be done in a viewDidLoad event as view was not fully loaded at that time so you can nothing, the place I found that is workable is viewDidAppear event<br />
+     * tricky part #2: ViewController&#8217;s initWithNibName does not work &#8230; I haven&#8217;t figure out the exact reason yet but you have to use instantiateViewControllerWithIdentifier comes from storyboard<br />
+     * tricky part #3: nibname &#8230; gave me QUITE A LOT headache, it should be &#8220;UIViewController-<View Controller's Object ID>&#8220;, you can get the object ID from Interface Builder, in the identity inspector tab</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Dream of a 8-core machine &#8230; but why?	</title>
+	<atom:link href="https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 31 May 2013 01:31:52 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/27/dream-of-a-8-core-machine-but-why/comment-page-1/#comment-3944</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 31 May 2013 01:31:52 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=779#comment-3944</guid>
+
+					<description><![CDATA[After 3 and half years waiting, now I have a 8-core laptop, though it was actually a 4-core i7 with HT enabled ...]]></description>
+			<content:encoded><![CDATA[<p>After 3 and half years waiting, now I have a 8-core laptop, though it was actually a 4-core i7 with HT enabled &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

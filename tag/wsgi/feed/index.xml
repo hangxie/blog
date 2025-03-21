@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wsgi &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/wsgi/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 01 Dec 2009 20:32:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Thread &#8230; sigh</title>
+		<link>https://xiehang.com/blog/2009/12/01/thread-sigh/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 01 Dec 2009 20:32:45 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[thread]]></category>
+		<category><![CDATA[wsgi]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=791</guid>
+
+					<description><![CDATA[It seems by default wsgi use 15 threads per daemon process, it sounds like a cool feature at the very beginning, but later it turned to nightmare to me. I&#8217;m working on testing user authentication system with Cassandra as backend, obviously establishing connection to Cassandra for every request doesn&#8217;t make sense at all, so I&#8217;m <a href='https://xiehang.com/blog/2009/12/01/thread-sigh/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems by default wsgi use 15 threads per daemon process, it sounds like a cool feature at the very beginning, but later it turned to nightmare to me.</p>
+<p>I&#8217;m working on testing user authentication system with Cassandra as backend, obviously establishing connection to Cassandra for every request doesn&#8217;t make sense at all, so I&#8217;m trying to do some persistent connection stuffs.</p>
+<p>The quick and easy solution for me is, establishing the connection in class level, so at least requests handled by same process can share the connection. So I created a class member to hold the connection, and __init__ of every class instance, I &#8220;ping&#8221; the connection by describe_keyspace (assume it access meta data only which would be fast). If there is anything wrong during the &#8220;ping&#8221;, I will shutdown current connection and establish a new one.</p>
+<p>Too bad with default wsgi configuration &#8211; it runs in thread model, so by the time I close/re-open connection for the class (process), there could be other threads using the connection. It seems I can only run with some kind lock mechanism to avoid this from happening, which is tough and frankly speaking, I don&#8217;t know how to make it efficient.</p>
+<p>So I changed wsgi configuration, make it one thread per process, by doing so I can be sure while I&#8217;m doing the &#8220;ping&#8221; there is only one request for this class (process), so I can safely do whatever I want, as within the class (process) there is no parallel execution.</p>
+<p>The performance is pretty good, I will tune to see how many processes I should run for the wsgi daemon, but with 5 processes, I can reach 190 ms average/250 ms maximum for 10 concurrent clients, 380/450 for 20 concurrent clients, and550/650 for 30, pretty linear in term of average response time.</p>
+<p>It seems, to me at least, thread is not a great idea always, I cannot tell how much performance gain can it gives me, but it at least makes things complicated.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

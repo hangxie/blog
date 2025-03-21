@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>auto-negotiation &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/auto-negotiation/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 20 Mar 2014 14:01:15 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>It&#8217;s the cable problem, D***!</title>
+		<link>https://xiehang.com/blog/2014/01/30/its-the-cable-problem-d/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 30 Jan 2014 20:36:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[100M]]></category>
+		<category><![CDATA[auto-negotiation]]></category>
+		<category><![CDATA[cat6]]></category>
+		<category><![CDATA[ethernet]]></category>
+		<category><![CDATA[gig5]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1664</guid>
+
+					<description><![CDATA[I had two servers that always run at 100Mbps, which was OK but whenever I turned them to GlusterFS bricks, things became obviously not working. It sounds like simple, right? Yea, I tried ethtool to force them running on GigE, didn&#8217;t work; I tried to change to another switch port, didn&#8217;t work &#8230; after blocking <a href='https://xiehang.com/blog/2014/01/30/its-the-cable-problem-d/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I had two servers that always run at 100Mbps, which was OK but whenever I turned them to GlusterFS bricks, things became obviously not working.</p>
+<p>It sounds like simple, right? Yea, I tried ethtool to force them running on GigE, didn&#8217;t work; I tried to change to another switch port, didn&#8217;t work &#8230; after blocking myself from the servers for several times (ethtool!), I finally decided to change to use 2nd NIC on those two servers. They were good, running at GigE immediately after plugging into the switch.<span id="more-1664"></span></p>
+<p>Then today, I was thinking of doing cabling in the server room, since those 1st NIC still have cables on them, I decided to move those cables to the 2nd NICs which means I don&#8217;t have to change notes on switch ports. Well, interesting things happened &#8211; those two port run at 100Mbps again &#8230;</p>
+<p>Well, everyone knows where the problem now, right? I swapped out those two cables and everything looks perfect, I think I will switch back to 1st NIC later on but that&#8217;s not a big deal.</p>
+<p>I hate cables.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

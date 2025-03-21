@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Trying Proxmox	</title>
+	<atom:link href="https://xiehang.com/blog/2009/11/20/trying-proxmox/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/11/20/trying-proxmox/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 25 Nov 2009 23:13:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/20/trying-proxmox/comment-page-1/#comment-2778</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 25 Nov 2009 23:13:06 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=763#comment-2778</guid>
+
+					<description><![CDATA[Pretty good, I&#039;m running 5 VMs over there now with pretty good performance, 4 of them are 1 CPU, 512M mem, and 10G disk, working as Cassandra server, and the 5th is 1 CPU, 256M mem, 10G disk which running as LVS director.
+
+Looks good :P]]></description>
+			<content:encoded><![CDATA[<p>Pretty good, I&#8217;m running 5 VMs over there now with pretty good performance, 4 of them are 1 CPU, 512M mem, and 10G disk, working as Cassandra server, and the 5th is 1 CPU, 256M mem, 10G disk which running as LVS director.</p>
+<p>Looks good 😛</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/20/trying-proxmox/comment-page-1/#comment-2764</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 21 Nov 2009 06:17:32 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=763#comment-2764</guid>
+
+					<description><![CDATA[I installed proxmox and things are running well so far, I will leave it running there for some time for some days before checking back.]]></description>
+			<content:encoded><![CDATA[<p>I installed proxmox and things are running well so far, I will leave it running there for some time for some days before checking back.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

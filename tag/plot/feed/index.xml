@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Plot &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/plot/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:06:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>How to solve problems</title>
+		<link>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/</link>
+					<comments>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 19 Jul 2013 22:54:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[gd::graph]]></category>
+		<category><![CDATA[geo]]></category>
+		<category><![CDATA[map]]></category>
+		<category><![CDATA[perl]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[Plot]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[shapefile]]></category>
+		<category><![CDATA[shp. pyshp]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1551</guid>
+
+					<description><![CDATA[I was assigned to a Web project which is to present data analysis result to users. Original data came from Web log, plus some extra information, then headed to Hive, then populated statistics files after scientist&#8217;s analysis There are several interesting topics: geo graph, rendering another web page, and metrics graph, roughly speaking, I have no <a href='https://xiehang.com/blog/2013/07/19/how-to-solve-problems/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was assigned to a Web project which is to present data analysis result to users. Original data came from Web log, plus some extra information, then headed to Hive, then populated statistics files after scientist&#8217;s analysis There are several interesting topics: geo graph, rendering another web page, and metrics graph, roughly speaking, I have no idea of any of these at the beginning of the project.</p>
+<p>I think the best decision I made is to use GD based solution, actually that could be the only solution I can think about, I decided to use PHP for Web, plus Perl for batch processing, this actually seems not to be quite right as I&#8217;m migrating everything to PHP now as there is not much &#8220;real&#8221; batch processing, and everything could be done in shell. Also I decided to use server-side DOM model (read: PHP DOM) so not to slow down the project by my poor JS skills, actually my PHP skill is not that good but JS is definitely <strong>*poor*</strong>.<span id="more-1551"></span></p>
+<p>I started with looking for geo graph solution. It&#8217;s obvious that the most important thing is get data to draw a map, soon I found that everything on the Web is <a href="https://en.wikipedia.org/wiki/Shapefile">shapefile </a>based which need another round of search to get a workable dump solution. I didn&#8217;t spend too much time on this &#8230; at the beginning I was using the open source <a href="http://www.qgis.org/">Quantum GIS</a> software, later on changed to <a href="https://code.google.com/p/pyshp/">PyShp </a>which is much light weight &#8211; GIS software has lots of fancy features, but all that I want is read shapefile and dump coordinates.</p>
+<p>Once I have the coordinates data, geo graph becomes really simple, all that I need to do is read in data, use GD polygon feature to draw the map. Sure this needs to hook up with data, but I believe this is suitable to a high-school kid as a science project, or maybe middle school? I&#8217;m not sure <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Re-rendering an existing Web page is definitely a tough labor work, you don&#8217;t have to be smart but you need to be very careful, analyzing page structures, decided where to put something in and where to remove something so to make the final page as you want. The source Web site (another subsidiary of our company) has some interesting anti-abuse tricks, I have to put proxy calls to almost every requests to their resources. Other than this I cannot remember anything that needs deeply research. However, after I finished almost all these, I believe the right solution for this is doing everything in a JS plus CSS instead of PHP, but I don&#8217;t want to change it since I don&#8217;t want to step too deep into JS stuffs.</p>
+<p>The last thing is metric graphs. I started with Perl&#8217;s <a href="http://search.cpan.org/dist/GDGraph/Graph.pm">GD::Graph</a> which is OK, at least I can get everything done but took me too much time. Later on I found <a href="http://phplot.sourceforge.net/">PHPlot </a>and switched to this pure PHP solution. PHPlot is much easy to understand and also easy to debug (this is not because of PHP/Perl difference), I think I&#8217;m going to stick with PHPlot and never go back to GD::Graph.</p>
+<p>Some other thinking came to my mind while I was playing with all above. First, jQuery is something neat, makes my life much more easier and no wonder so many JS developers are using it and things similar, I&#8217;m going to dig more in especially try it out wiht PhoneGap, etc. to see if it can speed up mobile app development. Second, Python came to my view again, I think I will utilize it for my next sys admin task, and see how it can work with rest of my world, I&#8217;m more interested with its &#8220;glue&#8221; ability with C/C++ modules. Third, I got a weird idea of rewriting PHPLot in C/C++, for reason unknown :D, the performance is not a concern to me at this moment, but I just don&#8217;t like ~8000 lines of PHP codes in one file staying on my web server, but I believe this will be just an idea at least for near future.</p>
+<p>Perl needs to improve its ability to handle UTF8 characters, seriously.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/07/19/how-to-solve-problems/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

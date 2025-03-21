@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>godaddy &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/godaddy/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 07 Nov 2018 17:21:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Migrate domains to AWS</title>
+		<link>https://xiehang.com/blog/2018/11/07/migrate-domains-to-aws/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2018 17:21:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[dns]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1791</guid>
+
+					<description><![CDATA[route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.]]></description>
+										<content:encoded><![CDATA[<p>route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>GoDaddy outage</title>
+		<link>https://xiehang.com/blog/2014/09/01/godaddy-outage/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 01 Sep 2014 19:58:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[outage]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1703</guid>
+
+					<description><![CDATA[Last night I could not access my site, it seems problem from GoDaddy, and someone else encountered this problem as well :-W . Should I switch to Route51?]]></description>
+										<content:encoded><![CDATA[<p>Last night I could not access my site, it seems problem from GoDaddy, and someone else encountered this problem as well :-W .</p>
+<p>Should I switch to Route51?</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godaddy vs Linode</title>
+		<link>https://xiehang.com/blog/2011/02/12/godaddy-vs-linode/</link>
+					<comments>https://xiehang.com/blog/2011/02/12/godaddy-vs-linode/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 13 Feb 2011 06:10:43 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[linode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1081</guid>
+
+					<description><![CDATA[NOTE: I did this WITHOUT any serious numbers, though I have some numbers, and it was the test for specific areas, so if you disagree with me, it&#8217;s fine and I&#8217;d like to see your opinions here. Environment: Godaddy Virtual Dedicate Server Economy Linux CentOS vs. Linode 512 plan (hosting in Fremont), I&#8217;m not sure <a href='https://xiehang.com/blog/2011/02/12/godaddy-vs-linode/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>NOTE: I did this WITHOUT any serious numbers, though I have some numbers, and it was the test for specific areas, so if you disagree with me, it&#8217;s fine and I&#8217;d like to see your opinions here.</p>
+<p>Environment: Godaddy Virtual Dedicate Server Economy Linux CentOS vs. Linode 512 plan (hosting in Fremont), I&#8217;m not sure where Godaddy is hosting my service and I cannot choose.</p>
+<p>Network quality &#8211; I cannot tell who&#8217;s better as it needs more research and I used to be a junior ops so I don&#8217;t think I can do it. I tested latency and packet lost rate with mtr (running for about 30 minutes), from China Telecom in Shanghai with 2M DSL:</p>
+<ul>
+<li>Godaddy: 184ms / 2.6% / 55KBps</li>
+<li>Linode: 146ms / 4.9% / 240KBps (I think I reach the limit of my 2M DSL)</li>
+</ul>
+<p>and from China Unicom in Beijing with a hosting service&#8217;s colocation:</p>
+<ul>
+<li>Godaddy: 224ms / 0.5% / 3MBps</li>
+<li>Linode: 190ms / 0.5% / 4MBps</li>
+</ul>
+<p>actually the download speed from Chine Unicom is quite unstable, both numbers are peak, while Linode can stay @ about 3MBps, and Godaddy is actually around 1.5MBps.</p>
+<p>My site is not bandwidth sensitive (no much traffic) so download speed doesn&#8217;t make too much sense to me, while latency and packet lost rate is sort of important since I do prefer stable and fast SSH connection while doing maintenance and VPN &#8211; both have acceptable quality to me.</p>
+<p>For customer service, both Godaddy and Linode are doing great job, especially in mail response. Godaddy&#8217;s online chat feature is cool, but everytime I have to wait way too long to get someone responding me.</p>
+<p>Now comes the best part from Linode &#8211; it is Xen based virtual server so I can run VPN server on it (PPTP), while Godaddy can do nothing, either PPTP or OpenVPN. Also, Linode supports more recent Linux Distros like Ubuntu 10.10 and Fedora 14, and it can be easily re-imaged. Godaddy is running OpenVZ, so &#8230;</p>
+<p>Anyway, I would like to test longer to check stability, last time my hosting with Godaddy went down for about 3 hours (I guess it was network problem but haven&#8217;t heard any official explanation from them), that&#8217;s the reason I started testing Linode.</p>
+<p>I will comment here in a week or two after I get some basic idea with stability, for now, I&#8217;d like to suggest Linode.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/02/12/godaddy-vs-linode/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Migrating to new server</title>
+		<link>https://xiehang.com/blog/2011/02/01/migrating-to-new-server/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 01 Feb 2011 12:21:28 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1069</guid>
+
+					<description><![CDATA[I’m migrating all my servers from shared hosting to virtual dedicated server, things look good so far, except I found I have way too many (useless?) domains to maintain. I’m moving to virtual dedicated server because I want to do some development tests that can only happen on a host that I have better control, <a href='https://xiehang.com/blog/2011/02/01/migrating-to-new-server/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I’m migrating all my servers from shared hosting to virtual dedicated server, things look good so far, except I found I have way too many (useless?) domains to maintain.</p>
+<p>I’m moving to virtual dedicated server because I want to do some development tests that can only happen on a host that I have better control, let’s see how things go in near future (I signed up for 6 months.)</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New domain</title>
+		<link>https://xiehang.com/blog/2009/12/11/new-domain/</link>
+					<comments>https://xiehang.com/blog/2009/12/11/new-domain/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2009 23:42:41 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[domain]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=816</guid>
+
+					<description><![CDATA[Got a new domain (transferred from previous Windows Live free domain registry), but not sure what I&#8217;m going to do with it. Could be another blog and some testing &#8211; after I started doing this English blogging, I found that less Chinese came to read. There are still some good technology that I want to <a href='https://xiehang.com/blog/2009/12/11/new-domain/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Got a new domain (transferred from previous Windows Live free domain registry), but not sure what I&#8217;m going to do with it.</p>
+<p>Could be another blog and some testing &#8211; after I started doing this English blogging, I found that less Chinese came to read. There are still some good technology that I want to discuss in Chinese, or let&#8217;s say, get them to be known in China, so running a Chinese blog could be a good idea.</p>
+<p>Anything else than that does not make too much sense at this moment. Godaddy&#8217;s Python is still at 2.4, I don&#8217;t think I can play with Python there, and I don&#8217;t have any other hosting plan yet, maybe I should shop around.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/12/11/new-domain/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Godaddy is unstable</title>
+		<link>https://xiehang.com/blog/2009/09/30/godaddy-is-unstable/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2009 05:50:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=676</guid>
+
+					<description><![CDATA[Couple of sites hosted in godaddy is having problem now, it seems the problem comes from database instead of web, still waiting.]]></description>
+										<content:encoded><![CDATA[<p>Couple of sites hosted in godaddy is having problem now, it seems the problem comes from database instead of web, still waiting.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godaddy&#8217;s having problem</title>
+		<link>https://xiehang.com/blog/2009/08/15/godaddys-having-problem/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 16 Aug 2009 06:07:34 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=624</guid>
+
+					<description><![CDATA[Someone was (or may be still) getting crazy traffic on my shared host, and makes the system totally unusable. Load was at ridiculous 500+, hehe.]]></description>
+										<content:encoded><![CDATA[<p>Someone was (or may be still) getting crazy traffic on my shared host, and makes the system totally unusable.</p>
+<p>Load was at ridiculous 500+, hehe.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Symfony and Godaddy</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</link>
+					<comments>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2009 15:04:13 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527</guid>
+
+					<description><![CDATA[Though problems I&#8217;m going to discuss are for symfony 1.2, I guess it applicable to 1.0 and 1.1 as well. I finally got symfony works on godaddy shared hosting, I guess if I were running any sort of dedicated hosting, these problem could not have happened, as I have full control. The first problem hit <a href='https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Though problems I&#8217;m going to discuss are for symfony 1.2, I guess it applicable to 1.0 and 1.1 as well.</p>
+<p>I finally got symfony works on godaddy shared hosting, I guess if I were running any sort of dedicated hosting, these problem could not have happened, as I have full control.</p>
+<p>The first problem hit me is PHP version, symfony needs PHP5, and godaddy supports PHP5 &#8211; good. However, it seems godaddy&#8217;s default PHP is still PHP4 so have to set alias to make sure symfony script is interpreted by PHP5 instead of PHP4:</p>
+<blockquote><p>alias symfony=&#8217;/usr/local/php5/bin/php /path/to/symfony-1.2.7/data/bin/symfony&#8217;</p></blockquote>
+<p>after this, I got the problem, saying:</p>
+<blockquote><p>/usr/local/php5/bin/php: Symbol `client_errors&#8217; has different size in shared object, consider re-linking</p></blockquote>
+<p>and turned out it was because of mysql client lib problem &#8211; I don&#8217;t know the detail yet, but seems /usr/local/php5/bin/php and /web/cgi-bin/php5 are both linked to /usr/lib/mysql/libmysqlclient.so.15, which works for /web one but not the /usr one. I did some tests and found /usr/lib/libmysqlclient.so.14.0.0 works perfect with /usr/local/php5/bin/php, so put this into my .bash_profile:</p>
+<blockquote><p>LD_PRELOAD=/usr/lib/libmysqlclient.so.14.0.0</p></blockquote>
+<p>note that /usr/lib/libmysqlclient.so.10.0.0 doesn&#8217;t work well as it&#8217;s too old to support modern (new) password encrypt/authentication.</p>
+<p>By now I can use symfony do the development job, but problem are still there while I&#8217;m trying to browse from browser, the first thing is rewrite rules &#8211; these lines should be uncommented from web/.htaccess:</p>
+<blockquote><p>RewriteBase /<br />
+RewriteCond %{REQUEST_URI} \..+$<br />
+RewriteCond %{REQUEST_URI} !\.html$<br />
+RewriteRule .* &#8211; [L]</p></blockquote>
+<p>then I met the problem (which took me longest time to solve) with error:<br />
+Empty module and/or action after parsing the URL &#8220;/index.php&#8221; (/).<br />
+actually I should have got it solve earlier if I search on the web, there is <a href="http://www.codemassacre.com/2009/03/17/problems-hosting-symfony-12-sites-on-godaddy/">a great article talking about the solution</a>, and my problem got solved just after 1st part of solution mentioned by the blog &#8211; adding following lines to &#8220;all&#8221; section of apps/frontend/config/factories.yml:</p>
+<blockquote>
+<pre>request:
+  param:
+    path_info_key: REQUEST_URI</pre>
+</blockquote>
+<p>be careful with intending, original blog seems not doing the right thing and put &#8220;request&#8221; and &#8220;param&#8221; in same level, which is wrong.</p>
+<p>Alright, by this time you will be able to play with symfony on shared hosting with godaddy. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>I miss my dedicated machine &#8230;</title>
+		<link>https://xiehang.com/blog/2009/06/27/i-miss-my-dedicated-machine/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 27 Jun 2009 20:06:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[setup]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=507</guid>
+
+					<description><![CDATA[Playing with Symfony, trying to deploy to godaddy, it&#8217;s way tooooooo troublesome, and I haven&#8217;t figure it out yet. I think I&#8217;m going to stop trying that and instead, doing all the tests on my home Ubuntu. It seems shared hosting (that&#8217;s what I&#8217;m using on godaddy) has LOT limitation makes it totally different from <a href='https://xiehang.com/blog/2009/06/27/i-miss-my-dedicated-machine/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Playing with Symfony, trying to deploy to godaddy, it&#8217;s way tooooooo troublesome, and I haven&#8217;t figure it out yet.</p>
+<p>I think I&#8217;m going to stop trying that and instead, doing all the tests on my home Ubuntu. It seems shared hosting (that&#8217;s what I&#8217;m using on godaddy) has LOT limitation makes it totally different from normal setup.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>web site &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/web-site/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 12 Feb 2013 07:29:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>&#8220;Lovely&#8221; MySQL official web site</title>
+		<link>https://xiehang.com/blog/2013/02/12/lovely-mysql-official-web-site/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 12 Feb 2013 07:29:53 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[db]]></category>
+		<category><![CDATA[down]]></category>
+		<category><![CDATA[mariadb]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[web site]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1495</guid>
+
+					<description><![CDATA[It seems mysql.com went down again, this is the second time to me in no more than 3 months. I don&#8217;t know what&#8217;s happening behind that but definitely I&#8217;m thinking about alternatives now, just in case some day Oracle shutdown MySQL (or at least the open source version) totally. MariaDB would be the right one <a href='https://xiehang.com/blog/2013/02/12/lovely-mysql-official-web-site/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems mysql.com went down again, this is the second time to me in no more than 3 months.</p>
+<p>I don&#8217;t know what&#8217;s happening behind that but definitely I&#8217;m thinking about alternatives now, just in case some day Oracle shutdown MySQL (or at least the open source version) totally.</p>
+<p><a href="https://mariadb.org/en/">MariaDB</a> would be the right one to go, but I need to do some more tests.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

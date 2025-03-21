@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Dada base &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/dada-base/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 22 Jun 2013 18:12:18 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>DB store choices</title>
+		<link>https://xiehang.com/blog/2013/06/22/db-store-choices/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2013 18:11:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[Dada base]]></category>
+		<category><![CDATA[mongodb]]></category>
+		<category><![CDATA[redis]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1534</guid>
+
+					<description><![CDATA[I hit this while reading some articles and found it is really helpful, one should check it before making any data store decisions. To me there are several clear winners &#8211; redis/memcached for kv store, MongoDB for document store, and Oracle/MySQL for traditional RDBMS, and seems Oracle is a clear winner across corporations. I believe <a href='https://xiehang.com/blog/2013/06/22/db-store-choices/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I hit <a href="http://db-engines.com/en/ranking">this</a> while reading some articles and found it is really helpful, one should check it before making any data store decisions.</p>
+<p>To me there are several clear winners &#8211; redis/memcached for kv store, MongoDB for document store, and Oracle/MySQL for traditional RDBMS, and seems Oracle is a clear winner across corporations.</p>
+<p>I believe what I decided to use memcached and then migrate to redis were both wise decisions, but I still doubt decided to use mongodb was a right decision or not. I will dig into MongoDB a little bit more to see if it got improved in the past two years for the issues I care, especially memory management mechanism.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

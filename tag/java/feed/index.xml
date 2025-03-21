@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>java &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/java/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 13 Jul 2015 05:26:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Install Cassandra on Ubuntu</title>
+		<link>https://xiehang.com/blog/2015/05/25/install-cassandra-on-ubuntu/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 26 May 2015 00:57:19 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[installation]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1757</guid>
+
+					<description><![CDATA[Just to remind myself in case I get lost again: Install Oracle JRE 7, at least for now JRE 8 is not recommended Edit /etc/apt/sources.list.d/webupd8team-java.list with these lines: deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main Import GPG sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886 Install sudo apt-get update sudo apt-get install oracle-java7-installer Install Cassandra Edit <a href='https://xiehang.com/blog/2015/05/25/install-cassandra-on-ubuntu/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just to remind myself in case I get lost again:</p>
+<ul>
+<li>Install Oracle JRE 7, at least for now JRE 8 is not recommended
+<ul>
+<li>Edit /etc/apt/sources.list.d/webupd8team-java.list with these lines:
+<pre class="EnlighterJSRAW" data-enlighter-language="null">deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main               
+deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main</pre>
+</li>
+<li>Import GPG
+<pre class="EnlighterJSRAW" data-enlighter-language="shell">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886</pre>
+</li>
+<li>Install
+<pre class="EnlighterJSRAW" data-enlighter-language="shell">sudo apt-get update
+sudo apt-get install oracle-java7-installer</pre>
+</li>
+</ul>
+</li>
+<li>Install Cassandra
+<ul>
+<li>Edit /etc/apt/sources.list.d/cassandra.source.list with these lines
+<pre class="EnlighterJSRAW" data-enlighter-language="null">deb http://debian.datastax.com/community 2.1 main
+deb-src http://debian.datastax.com/community 2.1 main</pre>
+</li>
+<li>Import keys
+<pre class="EnlighterJSRAW" data-enlighter-language="shell">curl -L http://debian.datastax.com/debian/repo_key | sudo apt-key add -</pre>
+</li>
+<li>Install
+<pre class="EnlighterJSRAW" data-enlighter-language="shell">sudo apt-get update
+sudo apt-get install cassandra</pre>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Hadoop &#8211; java.io.IOException: error=12, Cannot allocate memory</title>
+		<link>https://xiehang.com/blog/2012/02/07/hadoop-java-io-ioexception-error12-cannot-allocate-memory/</link>
+					<comments>https://xiehang.com/blog/2012/02/07/hadoop-java-io-ioexception-error12-cannot-allocate-memory/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 07 Feb 2012 23:18:20 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[hadoop]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[memory]]></category>
+		<category><![CDATA[swap]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1254</guid>
+
+					<description><![CDATA[I hit this problem in my project which is hadoop-based: Cannot run program "chmod": java.io.IOException: error=12, Cannot allocate memory Did some research but found nothing useful &#8211; everybody mentioned it&#8217;s JDK&#8217;s problem not using fork()+exec() which caused excessive memory allocated during spawning new process for running shell command. However, it&#8217;s weird that I hit this <a href='https://xiehang.com/blog/2012/02/07/hadoop-java-io-ioexception-error12-cannot-allocate-memory/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I hit this problem in my project which is hadoop-based:</p>
+<pre>
+Cannot run program "chmod": java.io.IOException: error=12, Cannot allocate memory
+</pre>
+<p>Did some research but found nothing useful &#8211; everybody mentioned it&#8217;s JDK&#8217;s problem not using fork()+exec() which caused excessive memory allocated during spawning new process for running shell command. However, it&#8217;s weird that I hit this problem on my AWS micro instance only, not on my MacBook, so I moved on to check some more &#8211;</p>
+<p>It turned out swap is a problem, my micro instance in AWS does not have swap enabled (i.e. zero swap space), after add 1G swap everything&#8217;s fine now.</p>
+<p>I&#8217;m a Java newbie, so my question is, though it got solved, did I do something properly?</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/02/07/hadoop-java-io-ioexception-error12-cannot-allocate-memory/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Java time again?</title>
+		<link>https://xiehang.com/blog/2011/07/21/java-time-again/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Jul 2011 01:04:34 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[web]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1113</guid>
+
+					<description><![CDATA[It seems to me it&#8217;s my Java time again &#8211; several things are pushing to try out Java although the company is still moving forward to C/C++ and PHP. First problem is Android, this is a platform that EVERY application needs to think about, and obviously Java is the only way to get things done <a href='https://xiehang.com/blog/2011/07/21/java-time-again/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems to me it&#8217;s my Java time again &#8211; several things are pushing to try out Java although the company is still moving forward to C/C++ and PHP.</p>
+<p>First problem is Android, this is a platform that <strong>EVERY</strong> application needs to think about, and obviously Java is the only way to get things done (I heard of NDK, but it seems it is not a full function development kit).</p>
+<p>The next one is migration, I&#8217;m seriously thinking about migrating all my Java Web sites to PHP so that we can leverage resources within the company, such as resource pool. I need to dig into some sample applications to see how much effort we need to get this done, but since Java developers won&#8217;t like this idea (although they know about it), I don&#8217;t expect they are going to give me reasonable evaluation, so I have to be hands-on.</p>
+<p>Nothing else, I still don&#8217;t believe Java is a good choice for any applications other than e-commerce, and this makes me sick as it does sound like &#8220;COBOL is the excellent choice for business system&#8221; &#8230;</p>
+<p>Yes, Java is heavy and fat, it does not fit into my world :).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Start from scratch &#8211; Java</title>
+		<link>https://xiehang.com/blog/2010/07/13/start-from-scratch-java/</link>
+					<comments>https://xiehang.com/blog/2010/07/13/start-from-scratch-java/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 14 Jul 2010 02:45:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[eclipse]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[struts]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1052</guid>
+
+					<description><![CDATA[Time to get hands dirty in Java mud 😀 Lots of projects here are Java based, plus something like Struts, Spring, Hibernate, etc. I don&#8217; t like the structure much but I have to understand how to get things done, or at least I need to be able to read those codes and configurations (I hate <a href='https://xiehang.com/blog/2010/07/13/start-from-scratch-java/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Time to get hands dirty in Java mud <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Lots of projects here are Java based, plus something like Struts, Spring, Hibernate, etc. I don&#8217; t like the structure much but I have to understand how to get things done, or at least I need to be able to read those codes and configurations (I hate so many configuration files in Java world).</p>
+<p>I was trying to setup Eclipse with Struts2 and Tomcat, I was so amazed by memory management in Java VM, want to know my impression? In one world, MESS. &gt;:) After dealing with this and that kind of all sort of &#8220;MaxXXXSize&#8221; configuration directives (or command line parameters), I finally figured out &#8220;-XX:MaxNewSize=128m&#8221; and &#8220;-XX:MaxPermSize=128m&#8221; are two of the most important parameter to make Eclipse stop reporting &#8220;PermGen Space&#8221; error.</p>
+<p>Thinking of setting up such an IDE really takes time, I was thinking maybe I should go back to my vim time &#8230;</p>
+<p>BTW, people here developing software on local machine (I mean desktop), Java is cute in this case &#8211; write once and run everywhere.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/07/13/start-from-scratch-java/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Update on research</title>
+		<link>https://xiehang.com/blog/2009/11/13/update-on-research/</link>
+					<comments>https://xiehang.com/blog/2009/11/13/update-on-research/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Nov 2009 18:06:27 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[nosql]]></category>
+		<category><![CDATA[php]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=745</guid>
+
+					<description><![CDATA[I&#8217;ve deployed Cassandra to my development environment, running on 4 servers with replica 2. I picked the number 4 and 2 because it&#8217;s more like a real world thing, and it is the requirement from my friend. I can test fail-over etc later on. I&#8217;ve also composed some scripts to do service stuffs &#8211; the <a href='https://xiehang.com/blog/2009/11/13/update-on-research/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve deployed Cassandra to my development environment, running on 4 servers with replica 2. I picked the number 4 and 2 because it&#8217;s more like a real world thing, and it is <a href="https://xiehang.com/blog/2009/11/09/question-from-a-friend/">the requirement from my friend</a>. I can test fail-over etc later on.</p>
+<p>I&#8217;ve also composed some scripts to do service stuffs &#8211; the script I composed can start/stop/restart Cassandra gracefully, it can also tell status of the node and the cluster, it&#8217;s a simple Shell script, I will make it a service under Fedora, and a init.d script under Ubuntu (I&#8217;m running only these two platform now). Cassandra was upgrade from 0.4.1 to 0.4.2 days ago, and I used that as a chance to test my deployment stuffs, seems pretty good. I think I just need to be careful with 0.4.x =&gt; 0.5.x upgrade since it may break compatibility on configuration and command line.</p>
+<p>I&#8217;ve converted my PowerBook to a dedicated client machine running Fedora &#8230; it&#8217;s a pretty old machine and seems Apple does not want to roll out new software (such as JDK 1.6) for it, so I did some survey around and picked Fedora (Ubuntu is not ppc friendly &#8211; the support is community based).</p>
+<p>And finally I have Thrift/PHP up and running. At the very beginning I was thinking I should use Java as the client but later one found that I have no idea how to develop Java based web application, and since Thrift mentioned it supports all C/C++, Java, Perl, PHP, Ruby, Python pretty well, I should just pick my favorite language to do the test and then let real clients pick what they  want to use (where is my client, BTW? <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
+<p>And yes, I confirmed the schema (though Cassandra is schema-less thing), I&#8217;m going to test the schema with PHP client today. After that I will have to find a place to hold all my codes/configuration, etc, in a subversion, and based on what I found so far, github.com is the best candidate.</p>
+<p>Will update here today or tomorrow.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/13/update-on-research/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Time to Java again</title>
+		<link>https://xiehang.com/blog/2009/08/07/time-to-java-again/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 07 Aug 2009 12:46:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=591</guid>
+
+					<description><![CDATA[It seems time to do some Java stuff again. The new project may have to support both C/C++ and Java thinking of the popularity of (stupid) Java in the company. So, let&#8217;s have some fun with Java.]]></description>
+										<content:encoded><![CDATA[<p>It seems time to do some Java stuff again. </p>
+<p> The new project may have to support both C/C++ and Java thinking of the popularity of (stupid) Java in the company. </p>
+<p> So, let&#8217;s have some fun with Java. </p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Which application type is suitable for Mac?</title>
+		<link>https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 21 May 2009 19:41:22 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[carbon]]></category>
+		<category><![CDATA[cocoa]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[objective c]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/</guid>
+
+					<description><![CDATA[I don&#8217;t quite understand application types under Mac (OS X), I remember I stopped trying out XCode just because I cannot determine which one to use, and I also made wrong assumption that Java is the way to go as I can share (some) source codes cross platforms. Now I got a book talking about <a href='https://xiehang.com/blog/2009/05/21/which-application-type-is-suitable-for-mac/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I don&#8217;t quite understand application types under Mac (OS X), I remember I stopped trying out XCode just because I cannot determine which one to use, and I also made wrong assumption that Java is the way to go as I can share (some) source codes cross platforms.</p>
+<p>Now I got a book talking about how to build Mac applications with XCode, and it clearly stated:</p>
+<p>For Carbon:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">The Carbon template defines a pure Carbon application. Carbon is the C interfaces to Aqua and the legacy support for applications written using the APIs in Mac OS 9 and earlier. Use this template if you are porting an application from OS 9 to OS X, or you want to create native applications using only C or C++. The main.c file includes a skeletal application that loads the main.nib file, creates the application&#8217;s window, and starts the main event loop. See <a href="http://developer.apple.com/carbon/" target="_top"><span style="color: blue;">http://developer.apple.com/carbon/</span></a> for more information about Carbon applications.</span></p></blockquote>
+<p>For Java/Cocoa:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Mac OS X includes an extensive bridge between the Java programming language and the Objective-C APIs defined in the Cocoa framework. These Java proxy objects make it possible to use most of the Cocoa and Foundation frameworks as though they had been written in Java. If you need to create a native Cocoa application and prefer, or require, the Java programming language, create a Cocoa-Java application. The template sets up a Cocoa application whose native executable is the Cocoa-Java stub. This stub application creates a Java runtime, that loads and starts the Java classes which constitute the application. Read more about mixing Java and Cocoa at <a href="http://developer.apple.com/documentation/Cocoa/Java-date.html" target="_top"><span style="color: blue;">http://developer.apple.com/documentation/Cocoa/Java-date.html</span></a>. Apple has recently announced that it will no longer be updating in the Cocoa-Java bridge beyond Mac OS X 10.3, so the future of this technology is murky.<br />
+</span></p></blockquote>
+<p>For Cocoa:</p>
+<blockquote><p><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Cocoa is the preferred application development technology for Mac OS X. It is based on the Objective-C programming language. The Cocoa framework is the Objective-C interfaces to Aqua and most other Apple technologies. If OS X has a &#8220;native&#8221; development environment, Objective-C and Cocoa are it. A few technologies are only available using Cocoa interfaces. The Cocoa template creates a minimal Cocoa application. The only functional part of the project is the main.m file which does nothing but create and start the generic </span><span style="font-size: 10pt; line-height: 115%; font-family: &quot;Courier New&quot;;">NSApplication</span><span style="font-size: 12pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"> object. It does provide generic handling of the About This Program menu item, but it does not include a Credits.rtf file. </span></p></blockquote>
+<p>From three paragraphs above, it is clearly Java is NOT the way to go, it will be dropped by Apple sometime in the future, also Carbon is for legacy applications.</p>
+<p>So, the right way is indeed doing Cocoa application with Objective-C, I get to read around to see if I can get some tests done.</p>
+<p>I&#8217;ve upgraded my PowerBook months back with latest OS X (Leopard), plus makek it 2G memory, so that I&#8217;ve been able to install XCode, however, the machine had been idle since the upgrade, I should do something so not to waste my money (I have enough time now, not using my time is just a waste).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Google App Engine</title>
+		<link>https://xiehang.com/blog/2009/05/20/google-app-engine/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 20 May 2009 15:00:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=383</guid>
+
+					<description><![CDATA[Boss asked me check out Google&#8217;s App Engine, and said that&#8217;s cool and could be the direction that we are going to move to, though we may only serve internal customers. I&#8217;m still playing with it &#8211; I&#8217;m not familiar with Python no Java, and I don&#8217;t like them too much, but I can try. <a href='https://xiehang.com/blog/2009/05/20/google-app-engine/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Boss asked me check out Google&#8217;s App Engine, and said that&#8217;s cool and could be the direction that we are going to move to, though we may only serve internal customers.</p>
+<p>I&#8217;m still playing with it &#8211; I&#8217;m not familiar with Python no Java, and I don&#8217;t like them too much, but I can try.</p>
+<p>Is grid/cloud the right thing to go? Doubt, but since there are so many experts take it seriously as future, let&#8217;s assume it is the direction. It may like &#8220;open system&#8221;, or &#8220;client servr&#8221;, or &#8220;3-tiers achitect&#8221;, or &#8220;go web&#8221;, or &#8220;virtualization&#8221; &#8211; all these words used to be fancy or cool, but later on they just become our daily life in development. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

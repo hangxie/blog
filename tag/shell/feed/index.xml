@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shell &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/shell/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 24 Sep 2017 03:46:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>How to delete a record from AWS Route53</title>
+		<link>https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/</link>
+					<comments>https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 24 Sep 2017 03:46:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[shell]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1780</guid>
+
+					<description><![CDATA[aws route53 change-resource-record-sets --hosted-zone-id $(aws route53 list-hosted-zones &#124; grep -B 1 '"xiehang.com."' &#124; grep '"Id"' &#124; cut -f 4 -d \" &#124; cut -f 3 -d /) --change-batch file://&#60;(echo '{"Changes":[{"Action": "DELETE","ResourceRecordSet":' $(aws route53 list-resource-record-sets --hosted-zone-id $(aws route53 list-hosted-zones &#124; grep -B 1 '"xiehang.com."' &#124; grep '"Id"' &#124; cut -f 4 -d \" &#124; cut -f <a href='https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">aws route53 change-resource-record-sets --hosted-zone-id $(aws route53 list-hosted-zones | grep -B 1 '"xiehang.com."' | grep '"Id"' | cut -f 4 -d \" | cut -f 3 -d /) --change-batch file://&lt;(echo '{"Changes":[{"Action": "DELETE","ResourceRecordSet":' $(aws route53 list-resource-record-sets --hosted-zone-id $(aws route53 list-hosted-zones | grep -B 1 '"xiehang.com."' | grep '"Id"' | cut -f 4 -d \" | cut -f 3 -d /) --query "ResourceRecordSets[?Name == 'to-be-deleted.xiehang.com.']" --max-items 1| egrep -v '^\[|^\]')'}]}')</pre>
+<p>Or as a script:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="shell">ZONE_ID=$(aws route53 list-hosted-zones | grep -B 1 '"xiehang.com."' | grep '"Id"' | cut -f 4 -d \" | cut -f 3 -d /)
+RECORD=$(aws route53 list-resource-record-sets --hosted-zone-id ${ZONE_ID} --query "ResourceRecordSets[?Name == 'to-be-deleted.xiehang.com.']" | egrep -v '^\[|^\]' --max-items 1)
+JSON='{"Changes":[{"Action": "DELETE","ResourceRecordSet":'${RECORD}'}]}'
+aws route53 change-resource-record-sets --hosted-zone-id ${ZONE_ID} --change-batch file://&lt;(echo ${JSON})</pre>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Connect to production servers</title>
+		<link>https://xiehang.com/blog/2012/04/18/connect-to-production-servers/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2012 23:12:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[shell]]></category>
+		<category><![CDATA[ssh]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1314</guid>
+
+					<description><![CDATA[Here&#8217;s the whole command, with IP address masked: ssh -A -t 111.111.111.111 "LD_PRELOAD= ssh -A -p 58422 222.222.222.222 -t \"SSH_AUTH_SOCK=\\\$(find /tmp -user xiehang -a -type s 2>/dev/null &#124; xargs ls -tr &#124; tail -1) ssh -p 58422 -l root $@\"" where 111.111.111.111 is jump host in office, and 222.222.222.222 is jump host in the IDC. <a href='https://xiehang.com/blog/2012/04/18/connect-to-production-servers/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Here&#8217;s the whole command, with IP address masked:</p>
+<p><code><br />
+ssh -A -t 111.111.111.111 "LD_PRELOAD= ssh -A -p 58422 222.222.222.222 -t \"SSH_AUTH_SOCK=\\\$(find /tmp -user xiehang -a -type s 2>/dev/null | xargs ls -tr | tail -1) ssh -p 58422 -l root $@\""<br />
+</code></p>
+<p>where 111.111.111.111 is jump host in office, and 222.222.222.222 is jump host in the IDC.</p>
+<p>Tricks here: jump host in office is running tsocks, so I have to reset LD_PRELOAD to disable it, and jump host in IDC set default shell to eash (for audit) so I have to setup the ssh agent manually.</p>
+<p>It took me 20 minutes to figure out all quotes and backslashes <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>read for shell</title>
+		<link>https://xiehang.com/blog/2009/05/01/read-for-shell/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 01 May 2009 17:51:12 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[shell]]></category>
+		<category><![CDATA[unix]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=323</guid>
+
+					<description><![CDATA[Just want to write this done so that I don&#8217;t have to man again in the future: CC=; while [ 1 ] ; do read -s -t 1 -n 1 CC; if [ &#8220;$CC&#8221; = &#8216;q&#8217; ] ; then break; fi; clear; ls -als crtv_* &#124; tail -15 ; done -s is &#8220;don&#8217;t echo&#8221;, -t <a href='https://xiehang.com/blog/2009/05/01/read-for-shell/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Just want to write this done so that I don&#8217;t have to man again in the future:</p>
+<p>CC=; while [ 1 ] ; do read -s -t 1 -n 1 CC; if [ &#8220;$CC&#8221; = &#8216;q&#8217; ] ; then break; fi; clear; ls -als crtv_* | tail -15 ; done</p>
+<p>-s is &#8220;don&#8217;t echo&#8221;, -t 1 is &#8220;timeout after 1 second&#8221;, -n 1 is &#8220;read one character only&#8221; (so don&#8217;t have to wait for enter.</p>
+<p>Pretty usefule, actually this can be used to do some interact applications with shell.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

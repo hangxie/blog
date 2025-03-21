@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>operation &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/operation/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 03 Oct 2013 20:25:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Planning GlusterFS</title>
+		<link>https://xiehang.com/blog/2013/10/03/planning-glusterfs-2/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 03 Oct 2013 20:25:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[gluster]]></category>
+		<category><![CDATA[operation]]></category>
+		<category><![CDATA[replace-brick]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1596</guid>
+
+					<description><![CDATA[Learnt from the mailing list that I should not export mounting point as a brick directly, instead I should create a sub-directory under the mounting point and take it as brick, this will make life much easier later on whenever you have to do migration or re-organization (like changing replica). Developers of GlusterFS are thinking <a href='https://xiehang.com/blog/2013/10/03/planning-glusterfs-2/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Learnt from the mailing list that I should not export mounting point as a brick directly, instead I should create a sub-directory under the mounting point and take it as brick, this will make life much easier later on whenever you have to do migration or re-organization (like changing replica).</p>
+<p>Developers of GlusterFS are thinking of retiring replace-brick, from the mailing list I can see they have good point to do so (especially existing codes for replace-brick is too bad to be improved :P), however, as a (sort of) ops guy, I still prefer they can keep it since it makes ops&#8217; life much more easier, but obviously they don&#8217;t quite agree with all requests/challenges to keep it. Anyway, it seems life will not end, it will just become a little bit troublesome, and if this is the trade-off for stability and/or performance, I&#8217;m fine with it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Questions about cassandra</title>
+		<link>https://xiehang.com/blog/2010/01/13/questions-about-cassandra/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 13 Jan 2010 19:48:29 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cassandra]]></category>
+		<category><![CDATA[operation]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=880</guid>
+
+					<description><![CDATA[I have some questions about cassandra that haven&#8217;t got answer yet, I&#8217;m writing them done now to make sure I won&#8217;t forget them in the future, all these questions are pretty critical for operation: How does cassandra utilize multi-core? Does it have multiple threads internally, handling different requests in different threads? If the answer is <a href='https://xiehang.com/blog/2010/01/13/questions-about-cassandra/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I have some questions about cassandra that haven&#8217;t got answer yet, I&#8217;m writing them done now to make sure I won&#8217;t forget them in the future, all these questions are pretty critical for operation:</p>
+<ul>
+<li>How does cassandra utilize multi-core? Does it have multiple threads internally, handling different requests in different threads? If the answer is no then it will be pretty ugly since I have to run multiple cassandra instances on one machine</li>
+<li>Is cassandra (maybe Java) capable to handle large memory? Make it clear, can it fully utilize 64-bit machine&#8217;s memory (8G/16G/64G)? Again if the answer is no I have to run multiple instances per machine.</li>
+<li>I know cassandra can replicate data from one colo to another colo, but what I understand is that they are virtually same cluster &#8211; is it possible to make two colos both have full data set, and for client request it only return data from local node?</li>
+<li>Is it possible to stream updates to cassandra to another source? What I want is capturing a live data set in another data store (such as RDBMS) for other purpose, so prefer a plug-in type of implementation so that I can grab updates and send to different downstream.</li>
+</ul>
+<p>Will post more once there is anything jump into my mind, and will post answers (separated blog) if I hear of any.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

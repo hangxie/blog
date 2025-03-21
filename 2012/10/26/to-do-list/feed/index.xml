@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: To-do list	</title>
+	<atom:link href="https://xiehang.com/blog/2012/10/26/to-do-list/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/10/26/to-do-list/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 02 Nov 2012 07:15:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/10/26/to-do-list/comment-page-1/#comment-3760</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Nov 2012 07:15:27 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1418#comment-3760</guid>
+
+					<description><![CDATA[IM message archive is done with writing message to mysql, and a cron take ended sessions and compose a mail sending to mail, while maildrop deliver the mail to IM history folder (determined by mail X- header), and at the same time mails are cc&#039;ed to gmail.
+
+Also tweak roundcube&#039;s password plugin to help people changing password in mail (the only web UI the site has at this moment). What I&#039;ve changed is enable anonymous binding and searching.
+
+Will start working on mail alert in the coming week.]]></description>
+			<content:encoded><![CDATA[<p>IM message archive is done with writing message to mysql, and a cron take ended sessions and compose a mail sending to mail, while maildrop deliver the mail to IM history folder (determined by mail X- header), and at the same time mails are cc&#8217;ed to gmail.</p>
+<p>Also tweak roundcube&#8217;s password plugin to help people changing password in mail (the only web UI the site has at this moment). What I&#8217;ve changed is enable anonymous binding and searching.</p>
+<p>Will start working on mail alert in the coming week.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>real-time &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/real-time/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 03 Jan 2010 06:35:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Time to work</title>
+		<link>https://xiehang.com/blog/2010/01/02/time-to-work/</link>
+					<comments>https://xiehang.com/blog/2010/01/02/time-to-work/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2010 06:35:07 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[real-time]]></category>
+		<category><![CDATA[statistics]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=842</guid>
+
+					<description><![CDATA[I&#8217;ve played enough with setup and test stuffs, and now it&#8217;s time to move to real work &#8211; the real-time statistics. I&#8217;m reading my (simple) design documentation now and after review, I will start working on coding.]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve played enough with setup and test stuffs, and now it&#8217;s time to move to real work &#8211; the real-time statistics.</p>
+<p>I&#8217;m reading my (simple) design documentation now and after review, I will start working on coding.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2010/01/02/time-to-work/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

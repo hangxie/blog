@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>symlink &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/symlink/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 09 Jan 2013 21:27:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Xcode does not follow relative symlink</title>
+		<link>https://xiehang.com/blog/2013/01/09/xcode-does-not-follow-relative-symlink/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 09 Jan 2013 21:27:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cordova]]></category>
+		<category><![CDATA[phonegap]]></category>
+		<category><![CDATA[symlink]]></category>
+		<category><![CDATA[xcode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1461</guid>
+
+					<description><![CDATA[I&#8217;m building app with PhoneGap/Cordova, it pretty much makes sense to share same html/cs/js across different forms, but this gave me quite some troublesome time &#8230; It turned out Xcode does not follow relative symlink as mentioned here, you should move down to Rachel&#8217;s comment to see the finding. I moved back to absolute symlink <a href='https://xiehang.com/blog/2013/01/09/xcode-does-not-follow-relative-symlink/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m building app with PhoneGap/Cordova, it pretty much makes sense to share same html/cs/js across different forms, but this gave me quite some troublesome time &#8230;</p>
+<p>It turned out Xcode does not follow relative symlink as mentioned <a href="http://www.tricedesigns.com/2012/02/16/linked-source-files-across-phonegap-projects-on-osx/">here</a>, you should move down to Rachel&#8217;s comment to see the finding.</p>
+<p>I moved back to absolute symlink (start from /) and everything&#8217;s working now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

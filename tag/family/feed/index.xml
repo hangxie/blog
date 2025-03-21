@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>family &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/family/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 18 Feb 2012 01:08:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>No, no family topics here</title>
+		<link>https://xiehang.com/blog/2012/02/17/no-no-family-topics-here/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 18 Feb 2012 01:08:51 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[family]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1265</guid>
+
+					<description><![CDATA[Someone asked me why I don&#8217;t post topics about family here, I said, no, no family topics here. The problem is that now a world there are way too many ways to leak personal information to the public, I don&#8217;t want to add on one more possibility to hurt my family, though potentially. So, I <a href='https://xiehang.com/blog/2012/02/17/no-no-family-topics-here/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Someone asked me why I don&#8217;t post topics about family here, I said, no, no family topics here.</p>
+<p>The problem is that now a world there are way too many ways to leak personal information to the public, I don&#8217;t want to add on one more possibility to hurt my family, though potentially.</p>
+<p>So, I wish I made it clear, and let&#8217;s go back to geek (or, nerd) world.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

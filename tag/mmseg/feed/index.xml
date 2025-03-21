@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mmseg &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/mmseg/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 23 Mar 2012 06:28:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>mmseq for different languages</title>
+		<link>https://xiehang.com/blog/2012/03/22/mmseq-for-different-languages/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 23 Mar 2012 06:28:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[mmseg]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1294</guid>
+
+					<description><![CDATA[Obviously mmseg4j if great for Java, while libmmseg seems promising for C++, and for PHP &#8230; sigh. I waste lot of time on xsplit, and found that it was doing great marketing as it shows up in almost all search result pages, but to me it just doesn&#8217;t work, and some others complained the same <a href='https://xiehang.com/blog/2012/03/22/mmseq-for-different-languages/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Obviously <a href="http://code.google.com/p/mmseg4j/">mmseg4j</a> if great for Java, while <a href="http://www.coreseek.cn/opensource/mmseg/">libmmseg</a> seems promising for C++, and for PHP &#8230; sigh.</p>
+<p>I waste lot of time on <a href="http://code.google.com/p/xsplit/">xsplit</a>, and found that it was doing great marketing as it shows up in almost all search result pages, but to me it just doesn&#8217;t work, and some others complained the same thing.</p>
+<p>I found <a href="https://github.com/anjuke/php-mmseg/blob/master/mmseg.cpp">php-mmseg</a> is working well, though it was no long active. Actually I believe well-written codes would need less maintenance (think about qmail), so as long as it works I don&#8217;t care too much.</p>
+<p>Now I&#8217;m trying to move from Java to PHP to do the term extraction job, nutch and solr are great, but just too heavy to fit into my world.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>linksys &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/linksys/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 03 May 2012 00:12:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Get to re-organize home network</title>
+		<link>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/</link>
+					<comments>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 03 May 2012 00:12:55 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cisco]]></category>
+		<category><![CDATA[comcast]]></category>
+		<category><![CDATA[dd-wrt]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[linksys]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[wifi]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1332</guid>
+
+					<description><![CDATA[For getting better network connection quality, I&#8217;m going to flash a Cisco Linksys E1000 to DD-WRT and then use it as a repeater, will get this done tomorrow after somebody from Comcast cabling my house. &#160;]]></description>
+										<content:encoded><![CDATA[<p>For getting better network connection quality, I&#8217;m going to flash a Cisco Linksys E1000 to DD-WRT and then use it as a repeater, will get this done tomorrow after somebody from Comcast cabling my house.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/05/02/get-to-re-organize-home-network/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Saving my home network</title>
+		<link>https://xiehang.com/blog/2011/12/28/saving-my-home-network/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 29 Dec 2011 05:58:57 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linksys]]></category>
+		<category><![CDATA[mobile phone]]></category>
+		<category><![CDATA[wifi]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1178</guid>
+
+					<description><![CDATA[I spent almost two hours to sort out what&#8217;s the best wifi network solution for me &#8211; I have two Linksys and one Airport Express, obviously too many options gave me too much troubles to do all tests. Finally I turn one (older), Linksys WRT54G2, running 802.11 B and G, and the other one (newer), <a href='https://xiehang.com/blog/2011/12/28/saving-my-home-network/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I spent almost two hours to sort out what&#8217;s the best wifi network solution for me &#8211; I have two Linksys and one Airport Express, obviously too many options gave me too much troubles to do all tests.</p>
+<p>Finally I turn one (older), Linksys WRT54G2, running 802.11 B and G, and the other one (newer), E1000, running 802.11 N, it looks good so far.</p>
+<p>I had to take the Kindle Fire all around the house to figure out the signal strength is good enough everywhere that I used to stay, it&#8217;s amazing that now we have so many mobile devices to deal with all sort of stuffs.</p>
+<p>Also I found that I have way to many wireless devices at home &#8211; 3 laptops, 4 mobile phones, 2 eReaders (Kindle and Bambook), 2 game consoles, 2 Pads (iPad and Kindle Fire) and 1 television. I wish I didn&#8217;t miss anything. I&#8217;ve already raise the limit of DHCP client from 20 to 50 to avoid potential boost clients in case of party time or something similar, wish everybody comes in only with one mobile phone, hehe.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

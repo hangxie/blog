@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>google &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/google/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 05 Mar 2022 00:39:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Move to static site</title>
+		<link>https://xiehang.com/blog/2022/03/04/move-to-static-site/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 05 Mar 2022 00:39:21 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1816</guid>
+
+					<description><![CDATA[Several things happened in the past a couple years so I moved this blog site to static, some major issues lead to this change: Google is no longer my preferred service provider, so I&#8217;m moving away from AdSense and Analytics I&#8217;m no longer actively writing so I don&#8217;t expect people interact with me through this <a href='https://xiehang.com/blog/2022/03/04/move-to-static-site/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Several things happened in the past a couple years so I moved this blog site to static, some major issues lead to this change:</p>
+<ul>
+<li>Google is no longer my preferred service provider, so I&#8217;m moving away from AdSense and Analytics</li>
+<li>I&#8217;m no longer actively writing so I don&#8217;t expect people interact with me through this site</li>
+<li>Google is going to stop G Suite legacy so I assume they will stop GCE free tier soon, which I&#8217;m running this site at</li>
+</ul>
+<p>For now I have an VM running Ubuntu with WordPress installed, I launch the VM whenever I want to write something, then using <a href="https://www.simplystatic.co/">Simply Static</a> to generate pure static pages then copy to an Nginx server. The Nginx is still running on GCE but since everything&#8217;s static, I can easily port it to anywhere cheap whenever needed.</p>
+<p>I&#8217;ve disabled most dynamic features during this process, like search, comment, AdSense, Analytics, etc. There may be some features that are currently broken, I will fix them whenever I know.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Moving Away from Google</title>
+		<link>https://xiehang.com/blog/2018/12/22/moving-away-from-google/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 22 Dec 2018 18:30:59 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[mozilla]]></category>
+		<category><![CDATA[privacy]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1808</guid>
+
+					<description><![CDATA[Moved to Firefox, and looking for other service providers so I can move away from Google.]]></description>
+										<content:encoded><![CDATA[
+<p>Moved to Firefox, and looking for other service providers so I can move away from Google.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Move to GCE</title>
+		<link>https://xiehang.com/blog/2017/07/27/move-to-gce/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 27 Jul 2017 18:16:47 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1777</guid>
+
+					<description><![CDATA[Google offers life time free tier: https://cloud.google.com/free/ Running this and couple of other websites on GCE now, saves me several bucks a month 😀]]></description>
+										<content:encoded><![CDATA[<p>Google offers life time free tier: <a href="https://cloud.google.com/free/">https://cloud.google.com/free/</a></p>
+<p>Running this and couple of other websites on GCE now, saves me several bucks a month <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>AdSense is having problem on my site, or with my IP &#8230;</title>
+		<link>https://xiehang.com/blog/2013/08/02/adsense-is-having-problem-on-my-site-or-with-my-ip/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 17:10:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ad]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1561</guid>
+
+					<description><![CDATA[I could not see ads from Google AdSense in the past several weeks, but weird enough, I still have revenue :P. I changed to another AdSense plugin but it&#8217;s still the same. I don&#8217;t think Google&#8217;s service is having problem, especially for this long, so it could be either my account is having problem, or <a href='https://xiehang.com/blog/2013/08/02/adsense-is-having-problem-on-my-site-or-with-my-ip/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I could not see ads from Google AdSense in the past several weeks, but weird enough, I still have revenue :P. I changed to another AdSense plugin but it&#8217;s still the same. I don&#8217;t think Google&#8217;s service is having problem, especially for this long, so it could be either my account is having problem, or Google knows it&#8217;s me so refuse to show me ads, or my IP is blacklisted (both office and home? cannot be &#8230;).</p>
+<p>Anyway, will keep watching this for some time but it&#8217;s definitely not urgent and important &#8230; I think all I&#8217;ve got from Google for more than a year is less than $10, sure, it&#8217;s not Google&#8217;s problem, it&#8217;s me not getting the site popular :D.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Playing with AdSense now</title>
+		<link>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/</link>
+					<comments>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 14 Mar 2012 04:23:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[adsense]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[term extraction]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1286</guid>
+
+					<description><![CDATA[This is to see how things are working, and try to get some idea to help my term extraction work. There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please 😛 <a href='https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>This is to see how things are working, and try to get some idea to help my term extraction work.</p>
+<p>There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Google is breaking eco system in silicon valley</title>
+		<link>https://xiehang.com/blog/2009/12/03/google-is-breaking-eco-system-in-silicon-valley/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 03 Dec 2009 19:18:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[startup]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=803</guid>
+
+					<description><![CDATA[Reading the post about Google DNS service, it seems it&#8217;s breaking the eco system in silicon valley. I used to believe silicon valley has good eco system for start-ups, that is, start-up companies try all sort of new ideas, and once proved working, they can go IPO or get acquired by a big company, so <a href='https://xiehang.com/blog/2009/12/03/google-is-breaking-eco-system-in-silicon-valley/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Reading the <a href="http://www.techcrunch.com/2009/12/03/google-dns-opendns/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29&amp;utm_content=My+Yahoo">post about Google DNS service</a>, it seems it&#8217;s breaking the eco system in silicon valley.</p>
+<p>I used to believe silicon valley has good eco system for start-ups, that is, start-up companies try all sort of new ideas, and once proved working, they can go IPO or get acquired by a big company, so investors can get return, as well as founders get financial benifit.</p>
+<p>Story is different in China, small companies try all new ideas, and once proved working, big companies become copycat, using their massive audience base kill the start-ups.</p>
+<p>Pity I&#8217;m seeing Google is following the second route now.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Why not google?</title>
+		<link>https://xiehang.com/blog/2009/10/08/why-not-google/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 09 Oct 2009 04:06:35 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=681</guid>
+
+					<description><![CDATA[A friend mentioned to me Google is hiring and lots of Yahoo!s are jumping off the sinking ship and heading to google, so I should try. Well, maybe &#8230; but no, there are some difficulties I need to overcome before I can be google: I can hardly believe I can pass any interviews there, thinking <a href='https://xiehang.com/blog/2009/10/08/why-not-google/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>A friend mentioned to me Google is hiring and lots of Yahoo!s are jumping off the sinking ship and heading to google, so I should try.</p>
+<p>Well, maybe &#8230; but no, there are some difficulties I need to overcome before I can be google:</p>
+<ul>
+<li>I can hardly believe I can pass any interviews there, thinking of they like talking about algorithms so much.</li>
+<li>I&#8217;m less confident on my educational background, all that I heard of is they prefer master/PhD from famous universities and I have nothing to do with these two</li>
+<li>I believe their culture is for youth, who can live in campus for days or weeks without leaving, while I want to have my family life</li>
+<li>I will be absolutely abnormal if I still don&#8217;t have lunch even if the company provides free lunch</li>
+</ul>
+<p>So the conclusion is that I will stay here for some time, even I move on in the future, google can hardly be my destination.</p>
+<p>Pity to google &#8211; I have some friends in China are really good in this area, but none of them works for google, could be because of any reasons above <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Android goes to netbook</title>
+		<link>https://xiehang.com/blog/2009/06/02/android-goes-to-netbook/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 02 Jun 2009 17:42:28 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[netbook]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=438</guid>
+
+					<description><![CDATA[It was said Acer is shipping netbook with Google&#8217;s Android now. I&#8217;m happy to see Google steps into the area that Intel and Microsoft are competing, and maybe Nokia. I will be more happy to see Google gets defeated 😉]]></description>
+										<content:encoded><![CDATA[<p>It was said Acer is shipping netbook with Google&#8217;s Android now.</p>
+<p>I&#8217;m happy to see Google steps into the area that Intel and Microsoft are competing, and maybe Nokia. I will be more happy to see Google gets defeated <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Google App Engine</title>
+		<link>https://xiehang.com/blog/2009/05/20/google-app-engine/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 20 May 2009 15:00:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=383</guid>
+
+					<description><![CDATA[Boss asked me check out Google&#8217;s App Engine, and said that&#8217;s cool and could be the direction that we are going to move to, though we may only serve internal customers. I&#8217;m still playing with it &#8211; I&#8217;m not familiar with Python no Java, and I don&#8217;t like them too much, but I can try. <a href='https://xiehang.com/blog/2009/05/20/google-app-engine/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Boss asked me check out Google&#8217;s App Engine, and said that&#8217;s cool and could be the direction that we are going to move to, though we may only serve internal customers.</p>
+<p>I&#8217;m still playing with it &#8211; I&#8217;m not familiar with Python no Java, and I don&#8217;t like them too much, but I can try.</p>
+<p>Is grid/cloud the right thing to go? Doubt, but since there are so many experts take it seriously as future, let&#8217;s assume it is the direction. It may like &#8220;open system&#8221;, or &#8220;client servr&#8221;, or &#8220;3-tiers achitect&#8221;, or &#8220;go web&#8221;, or &#8220;virtualization&#8221; &#8211; all these words used to be fancy or cool, but later on they just become our daily life in development. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

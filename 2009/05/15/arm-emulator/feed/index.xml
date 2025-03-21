@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: ARM emulator	</title>
+	<atom:link href="https://xiehang.com/blog/2009/05/15/arm-emulator/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/05/15/arm-emulator/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 16 May 2009 05:34:41 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/05/15/arm-emulator/comment-page-1/#comment-911</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 16 May 2009 05:34:41 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=368#comment-911</guid>
+
+					<description><![CDATA[BTW, I haven&#039;t figured out how to shutdown the VM gracefully, I understand ACPI, etc are not supported so poweroff command doesn&#039;t stop the VM completely, I have to launch another terminal to kill the process.]]></description>
+			<content:encoded><![CDATA[<p>BTW, I haven&#8217;t figured out how to shutdown the VM gracefully, I understand ACPI, etc are not supported so poweroff command doesn&#8217;t stop the VM completely, I have to launch another terminal to kill the process.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

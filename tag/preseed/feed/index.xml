@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>preseed &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/preseed/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 20 Mar 2014 13:59:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Unattended Ubuntu VM installation with preseed</title>
+		<link>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/</link>
+					<comments>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 12 Mar 2014 20:42:44 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[admin]]></category>
+		<category><![CDATA[preseed]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[unattended installation]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1676</guid>
+
+					<description><![CDATA[This article discussed how to install CentOS VM automatically with kickstart. I tried to do similar thing for Ubuntu as well but failed so many times. It seems kickstart works with RedHat families pretty well which makes perfect sense, while Ubuntu does not like that way too much. So I turned to preseed, which was <a href='https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p><a href="https://xiehang.com/blog/2014/01/27/virtualization-glusterfs-and-automation/">This article</a> discussed how to install CentOS VM automatically with <a href="http://en.wikipedia.org/wiki/Kickstart_(Linux)">kickstart</a>. I tried to do similar thing for Ubuntu as well but failed so many times. It seems kickstart works with RedHat families pretty well which makes perfect sense, while Ubuntu does not like that way too much.<span id="more-1676"></span></p>
+<p>So I turned to <a href="http://en.wikipedia.org/wiki/Preseed">preseed</a>, which was from Debian but works for its derivatives as well. After dig around here comes the preseed file:<br />
+[raw]<br />
+## Options to set on the command line<br />
+d-i debian-installer/locale string en_US<br />
+d-i console-setup/ask_detect boolean false<br />
+d-i console-setup/layoutcode string us</p>
+<p>d-i netcfg/choose_interface select eth0</p>
+<p>d-i base-installer/kernel/override-image string linux-server<br />
+d-i clock-setup/utc-auto boolean true<br />
+d-i clock-setup/utc boolean true<br />
+d-i time/zone string US/Pacific<br />
+d-i clock-setup/ntp boolean true</p>
+<p>d-i mirror/country string US<br />
+d-i mirror/http/proxy string<br />
+d-i mirror/http/mirror select mirror.facebook.net<br />
+d-i pkgsel/install-language-support boolean false<br />
+d-i pkgsel/update-policy select none<br />
+d-i tasksel/first select OpenSSH server</p>
+<p>d-i partman-auto/disk string /dev/vda<br />
+d-i partman-auto/method string regular<br />
+d-i partman-auto/choose_recipe select atomic<br />
+d-i partman/default_filesystem string ext4<br />
+d-i partman/confirm_write_new_label boolean true<br />
+d-i partman/choose_partition select finish<br />
+d-i partman/confirm boolean true<br />
+d-i partman/confirm_nooverwrite boolean true</p>
+<p>d-i passwd/make-user boolean false<br />
+d-i passwd/root-password-crypted password i-wont-tell-you-for-sure<br />
+d-i passwd/root-login boolean true<br />
+d-i user-setup/encrypt-home boolean false</p>
+<p>d-i grub-installer/only_debian boolean true<br />
+d-i grub-installer/with_other_os boolean true<br />
+d-i finish-install/reboot_in_progress note<br />
+[/raw]</p>
+<p>and launch the installation by:<br />
+[shell]<br />
+sudo virt-install &#8211;name ubuntu-test \<br />
+  &#8211;ram 1024 &#8211;vcpus 1 \<br />
+  &#8211;disk path=/tmp/test.img,size=20 \<br />
+  &#8211;bridge=br2 \<br />
+  &#8211;os-variant rhel6 &#8211;accelerate \<br />
+  &#8211;location http://mirror.facebook.net/ubuntu/dists/trusty/main/installer-amd64 \<br />
+  &#8211;graphics none \<br />
+  -x &#8221;<br />
+     preseed/url=http://192.168.0.11/preseed.cfg<br />
+     console=ttyS0<br />
+     locale=en_US<br />
+     console-keymaps-at/keymap=us<br />
+     console-setup/ask_detect=false<br />
+     console-setup/layoutcode=us<br />
+     keyboard-configuration/layout=USA<br />
+     keyboard-configuration/variant=USA<br />
+     hostname=some-special-name<br />
+     domain=your.domain<br />
+     &#8221;<br />
+[/shell]</p>
+<p>After the unattended installation finished, you will have:</p>
+<ul>
+<li>Ubuntu 14.04 (trusty) from facebook.net mirror</li>
+<li>whole disk partitioned in to / and swap</li>
+<li>root is the only user to allowed to login with encrypted password</li>
+<li>host name set to some-special-name if DHCP does not provide valid one</li>
+</ul>
+<p>To make things better, you can configure your DHCP server to have MAC address map to some good name and IP address, then add &#8220;&#8211;mac=52:54:00:xx:xx:xx&#8221; to virt-install command line, the host name and domain from the DHCP server will have higher priority.</p>
+<p>Play with it, you will like it. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

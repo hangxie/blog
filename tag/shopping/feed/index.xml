@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>shopping &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/shopping/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 23 Oct 2011 02:02:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Captcha</title>
+		<link>https://xiehang.com/blog/2011/10/22/captcha/</link>
+					<comments>https://xiehang.com/blog/2011/10/22/captcha/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 23 Oct 2011 02:02:07 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[captcha]]></category>
+		<category><![CDATA[gd]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[shopping]]></category>
+		<category><![CDATA[spam]]></category>
+		<category><![CDATA[truetype]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1134</guid>
+
+					<description><![CDATA[I built a captcha for a friend a while back for a shopping site, obviously it was too simple to be corrupted so I built this new one last night. It was not perfect though, as I don&#8217;t have enough knowledge to create dynamic fonts. Under Ubuntu it is easy to get things work &#8211; <a href='https://xiehang.com/blog/2011/10/22/captcha/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I built a <a href="http://en.wikipedia.org/wiki/Captcha">captcha</a> for a friend a while back for a shopping site, obviously it was too simple to be corrupted so I built this <a href="https://xiehang.com/code.php">new one</a> last night. It was not perfect though, as I don&#8217;t have enough knowledge to create dynamic fonts.</p>
+<p>Under Ubuntu it is easy to get things work &#8211; install php5-gd, luckily it brought couple of fonts and then the script works like a charm. Under my friend&#8217;s machine I need to install some extra packages to get TrueType fonts, but it is not that hard.</p>
+<p>Let&#8217;s see how this works, I believe the captcha is a little bit hard to be read, but it can block spammers.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/10/22/captcha/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Shopping list</title>
+		<link>https://xiehang.com/blog/2009/11/27/shopping-list/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 28 Nov 2009 00:01:09 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[holiday]]></category>
+		<category><![CDATA[life]]></category>
+		<category><![CDATA[shopping]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=784</guid>
+
+					<description><![CDATA[What I&#8217;ve bought in the past couple of days, all under the name of &#8220;Thanks Giving shopping&#8221;: A Sony HandyCam, now I can formally retire my Casio Exim A set of JA Hanckels knives for kitchen &#8230; you will be cut even just look at it Mario Kart for my Wii! Yes, I like racing <a href='https://xiehang.com/blog/2009/11/27/shopping-list/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>What I&#8217;ve bought in the past couple of days, all under the name of &#8220;Thanks Giving shopping&#8221;:</p>
+<ul>
+<li>A Sony HandyCam, now I can formally retire my Casio Exim</li>
+<li>A set of JA Hanckels knives for kitchen &#8230; you will be cut even just look at it</li>
+<li>Mario Kart for my Wii! Yes, I like racing game for all the time, even if it is childish</li>
+</ul>
+<p>will play with these stuffs for sometime, having fun, and enjoying life. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

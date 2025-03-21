@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: NoSQL data stores	</title>
+	<atom:link href="https://xiehang.com/blog/2009/10/26/nosql-data-stores/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/10/26/nosql-data-stores/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 28 Oct 2009 16:49:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/10/26/nosql-data-stores/comment-page-1/#comment-2738</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 28 Oct 2009 16:49:38 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=711#comment-2738</guid>
+
+					<description><![CDATA[I think I got some idea about what&#039;s my requirement:
+&lt;ul&gt;
+&lt;li&gt;Surely performance is one of the key factor, but as long as it&#039;s much faster than MySQL (I&#039;m talking about 2X~10X) then it is acceptable&lt;/li&gt;
+&lt;li&gt;Query feature, key/value pair is good enough, but if it has further support on (kind of) complicated queries without performance lost, then it becomes a plus&lt;/li&gt;
+&lt;li&gt;Reliable persistent storage. It does not have to consistent for all the time, but eventually it should be. Also, reliable means it won&#039;t lose writes (rejection write is ok).&lt;/li&gt;
+&lt;li&gt;Built-in replication is a must, and if it is easy to setup/monitor, then it will be a better choice, if it has automatic failover feature, then it becomes great.&lt;/li&gt;
+&lt;li&gt;Sharding, better on server. If it is in client side, then language supported will be a key factor - I know I&#039;m going to need C/C++, Perl, PHP, Python, and Java&lt;/li&gt;
+&lt;li&gt;Language used to develop server. This is less important, but if it is done by some language I&#039;m familiar with, then a plus, right now I&#039;m seeing C/C++, Java, and Erlang, and my preference is exactly the above.&lt;/li&gt;
+&lt;li&gt;Misc features, just nice to have - authentication, statistics, packaging (RPM and deb), any big names are using it, etc.&lt;li&gt;
+&lt;/ul&gt;
+
+I will quickly rule out some projects mentioned here and then focus on only candidates with good potential.]]></description>
+			<content:encoded><![CDATA[<p>I think I got some idea about what&#8217;s my requirement:</p>
+<ul>
+<li>Surely performance is one of the key factor, but as long as it&#8217;s much faster than MySQL (I&#8217;m talking about 2X~10X) then it is acceptable</li>
+<li>Query feature, key/value pair is good enough, but if it has further support on (kind of) complicated queries without performance lost, then it becomes a plus</li>
+<li>Reliable persistent storage. It does not have to consistent for all the time, but eventually it should be. Also, reliable means it won&#8217;t lose writes (rejection write is ok).</li>
+<li>Built-in replication is a must, and if it is easy to setup/monitor, then it will be a better choice, if it has automatic failover feature, then it becomes great.</li>
+<li>Sharding, better on server. If it is in client side, then language supported will be a key factor &#8211; I know I&#8217;m going to need C/C++, Perl, PHP, Python, and Java</li>
+<li>Language used to develop server. This is less important, but if it is done by some language I&#8217;m familiar with, then a plus, right now I&#8217;m seeing C/C++, Java, and Erlang, and my preference is exactly the above.</li>
+<li>Misc features, just nice to have &#8211; authentication, statistics, packaging (RPM and deb), any big names are using it, etc.</li>
+<li>
+</li>
+</ul>
+<p>I will quickly rule out some projects mentioned here and then focus on only candidates with good potential.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/10/26/nosql-data-stores/comment-page-1/#comment-2736</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 27 Oct 2009 19:47:38 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=711#comment-2736</guid>
+
+					<description><![CDATA[Seems &lt;a href=&quot;http://00f.net/2009/an-overview-of-modern-sql-free-databases&quot; rel=&quot;nofollow&quot;&gt;this blog&lt;/a&gt; is doing better than I did, and I should do some evaluation on these:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://labs.gree.jp/Top/OpenSource/Flare-en.html&quot; rel=&quot;nofollow&quot;&gt;Flare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://opensource.plurk.com/LightCloud/&quot; rel=&quot;nofollow&quot;&gt;LightCloud&lt;/a&gt;, it is based on Tokyo Tyrant&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.iinteractive.com/kiokudb/&quot; rel=&quot;nofollow&quot;&gt;KiokuDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.persvr.org/&quot; rel=&quot;nofollow&quot;&gt;Persevere&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://getcloudkit.com/&quot; rel=&quot;nofollow&quot;&gt;CloudKit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://luxio.sourceforge.net/&quot; rel=&quot;nofollow&quot;&gt;Lux IO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;]]></description>
+			<content:encoded><![CDATA[<p>Seems <a href="http://00f.net/2009/an-overview-of-modern-sql-free-databases" rel="nofollow">this blog</a> is doing better than I did, and I should do some evaluation on these:</p>
+<ul>
+<li><a href="http://labs.gree.jp/Top/OpenSource/Flare-en.html" rel="nofollow">Flare</a></li>
+<li><a href="http://opensource.plurk.com/LightCloud/" rel="nofollow">LightCloud</a>, it is based on Tokyo Tyrant</li>
+<li><a href="http://www.iinteractive.com/kiokudb/" rel="nofollow">KiokuDB</a></li>
+<li><a href="http://www.persvr.org/" rel="nofollow">Persevere</a></li>
+<li><a href="http://getcloudkit.com/" rel="nofollow">CloudKit</a></li>
+<li><a href="http://luxio.sourceforge.net/" rel="nofollow">Lux IO</a></li>
+</ul>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>food &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/food/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 09 Jul 2010 01:56:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Good food? Maybe &#8230;</title>
+		<link>https://xiehang.com/blog/2010/07/08/good-food-maybe/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 09 Jul 2010 01:56:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[food]]></category>
+		<category><![CDATA[italian]]></category>
+		<category><![CDATA[shanghai]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1044</guid>
+
+					<description><![CDATA[Reading from some web site saying it&#8217;s one of the best Italian restaurant in this area, so I went there to try out those dishes recommended by other people, the result is &#8230; not that good, at least. The environment is just OK, not many people there but this could also prove that they are <a href='https://xiehang.com/blog/2010/07/08/good-food-maybe/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Reading from some web site saying it&#8217;s one of the best Italian  restaurant in this area, so I went there to try out those dishes  recommended by other people, the result is &#8230; not that good, at least.</p>
+<p>The environment is just OK, not many people there but this could also prove that they are not doing their business well. People there are just ok, not that professional, not that friendly, but they didn&#8217;t make any mistakes which made the dinner experience not that bad.</p>
+<p>Food is not good at all, it could be the worst bread I ever had in a Italian restaurant. Salad is good, but too little to even feed one person. Soup is so so, I agree I don&#8217;t have good taste on soup so let&#8217;s ignore this part. What else? All dishes are kind of horrible, I don&#8217;t think it is even worse than what I can cook.</p>
+<p>Never mind then, I will stop trying western food in the coming weeks or months. I guess some place may have something good during winter time, so I will try them again later on.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Cheese and wine</title>
+		<link>https://xiehang.com/blog/2009/06/28/cheese-and-wine/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2009 02:49:00 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[cheese]]></category>
+		<category><![CDATA[food]]></category>
+		<category><![CDATA[wine]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=511</guid>
+
+					<description><![CDATA[Perfect taste. I used to try various food with wine, but obvious cheese wins for (almost) all the time, some red meat won once or twice, such a well cooked steak, but since I cannot enjoy too much red meat, obviously cheese is the best choice. It seems like wine always be good with some <a href='https://xiehang.com/blog/2009/06/28/cheese-and-wine/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Perfect taste.</p>
+<p>I used to try various food with wine, but obvious cheese wins for (almost) all the time, some red meat won once or twice, such a well cooked steak, but since I cannot enjoy too much red meat, obviously cheese is the best choice.</p>
+<p>It seems like wine always be good with some heavy/rich food, this is why it did not work well with fish or chicken.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

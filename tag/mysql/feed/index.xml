@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mysql &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/mysql/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 12 Feb 2013 07:29:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>&#8220;Lovely&#8221; MySQL official web site</title>
+		<link>https://xiehang.com/blog/2013/02/12/lovely-mysql-official-web-site/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 12 Feb 2013 07:29:53 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[db]]></category>
+		<category><![CDATA[down]]></category>
+		<category><![CDATA[mariadb]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[web site]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1495</guid>
+
+					<description><![CDATA[It seems mysql.com went down again, this is the second time to me in no more than 3 months. I don&#8217;t know what&#8217;s happening behind that but definitely I&#8217;m thinking about alternatives now, just in case some day Oracle shutdown MySQL (or at least the open source version) totally. MariaDB would be the right one <a href='https://xiehang.com/blog/2013/02/12/lovely-mysql-official-web-site/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems mysql.com went down again, this is the second time to me in no more than 3 months.</p>
+<p>I don&#8217;t know what&#8217;s happening behind that but definitely I&#8217;m thinking about alternatives now, just in case some day Oracle shutdown MySQL (or at least the open source version) totally.</p>
+<p><a href="https://mariadb.org/en/">MariaDB</a> would be the right one to go, but I need to do some more tests.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Now I know why MySQL refused to use the index</title>
+		<link>https://xiehang.com/blog/2012/10/05/now-i-know-why-mysql-refused-to-use-the-index/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 05 Oct 2012 19:25:44 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[index]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[stupid]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1408</guid>
+
+					<description><![CDATA[A book table like this: ... PRIMARY KEY (`bookid`), KEY `authorid` (`authorid`) ... and the query is something like this: SELECT * FROM book WHERE authorid = 123 but MySQL refused to use authorid index, instead, it did a full table scan, how stupid! However, later on it turned to be how stupid I AM. <a href='https://xiehang.com/blog/2012/10/05/now-i-know-why-mysql-refused-to-use-the-index/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>A book table like this:<br />
+<code><br />
+...<br />
+PRIMARY KEY (`bookid`),<br />
+KEY `authorid` (`authorid`)<br />
+...<br />
+</code><br />
+and the query is something like this:<br />
+<code><br />
+SELECT * FROM book WHERE authorid = 123<br />
+</code><br />
+but MySQL refused to use authorid index, instead, it did a full table scan, how stupid!</p>
+<p>However, later on it turned to be how stupid I AM. The authorid column was, by whatever reason, defined as varchar instead of int, so MySQL decided not to use the index.</p>
+<p>Anyway, I was stupid, but MySQL is stubborn.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>MySQL was down for 2 days &#8230;</title>
+		<link>https://xiehang.com/blog/2012/05/30/mysql-was-down-for-2-days/</link>
+					<comments>https://xiehang.com/blog/2012/05/30/mysql-was-down-for-2-days/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 31 May 2012 04:56:24 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[down]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[site]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1348</guid>
+
+					<description><![CDATA[It&#8217;s my fault not checking the status after upgrading the system, but obviously mysql upgrade on Ubuntu hit some problems and stopped in the middle leave the mysql totally inaccessible, which means, my site was down for two days. Well, I was really busy on job related stuffs, dealing contextual algorithms while playing with network, <a href='https://xiehang.com/blog/2012/05/30/mysql-was-down-for-2-days/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s my fault not checking the status after upgrading the system, but obviously mysql upgrade on Ubuntu hit some problems and stopped in the middle leave the mysql totally inaccessible, which means, my site was down for two days.</p>
+<p>Well, I was really busy on job related stuffs, dealing contextual algorithms while playing with network, but this is not the real cause &#8211; I do need a monitoring tool to make sure my site is up and running, though it is not that critical.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/05/30/mysql-was-down-for-2-days/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>mysql+memcached vs. openldap</title>
+		<link>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/</link>
+					<comments>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 09 Sep 2009 13:16:33 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[ldap]]></category>
+		<category><![CDATA[memcached]]></category>
+		<category><![CDATA[mysql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=661</guid>
+
+					<description><![CDATA[I&#8217;m going to test two types of authentication system, one is what seems to be common in current days which utilizes database and cache, the popular combination is mysql+memcached, and the other is what I recommended to others for authentication system for all the time &#8211; LDAP, and surely openldap is the first choice (Fedora <a href='https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m going to test two types of authentication system, one is what seems to be common in current days which utilizes database and cache, the popular combination is mysql+memcached, and the other is what I recommended to others for authentication system for all the time &#8211; LDAP, and surely openldap is the first choice (Fedora DS is not available on other platforms, though seems it&#8217;s easier to manage).</p>
+<p>I compose couple of items describing the tests I&#8217;m going to take, and I will review this couple of times while I&#8217;m doing the setup.</p>
+<p>First, application. I had some assumption based on my past experience, that is:</p>
+<ul>
+<li>Good user</li>
+</ul>
+<ul>
+<blockquote>
+<li>1 authentication (login with right username and password)</li>
+<li>10 look up, getting user&#8217;s attributes (for showing them on some pages, note that reading these attributes needs to go through couple of tables)</li>
+<li>1 edit, such as changing profile</li>
+</blockquote>
+</ul>
+<ul>
+<li>Bad user</li>
+<blockquote>
+<li>1 authentication (login with incorrect username or password)</li>
+</blockquote>
+</ul>
+<p>and the ratio of good vs. bad user is 1:5 (yea, lots of abuse &#8230;).</p>
+<p>There will be 1M registered users, but the &#8220;good user&#8221; will only include 100K of them, which reflects 10% active users rate, actually this is already high. There will be 3 PHP pages: login.php to do authentication, pref.php retrieve preferences of the user, and edit.php try to change user&#8217;s profile. All these take GET query strings so to make test easier.</p>
+<p>Environment:</p>
+<ul>
+<li>database testing environment</li>
+<blockquote>
+<li>debian acts as web server, running apache and PHP</li>
+<li>freebsd acts as client, generating load with apache&#8217;s ab</li>
+<li>centos is mysql&#8217;s master, handling both read and write</li>
+<li>opensuse is mysql&#8217;s slave, handling read only, note that we are not using mysql-proxy as it seems to me it is far away from production quality so far</li>
+<li>ubuntu and fedora run memcached, in TCP mode with 64M cache memory each</li>
+<li>I&#8217;m going to post database schema later on</li>
+</blockquote>
+<li>ldap testing environment</li>
+<blockquote>
+<li>debian acts as web server, running apache and PHP</li>
+<li>freebsd acts as client, generating load with apache&#8217;s ab</li>
+<li>ubuntu and fedora are running openldap in mirror mode</li>
+<li>again, schema will be posted here later on</li>
+</blockquote>
+</ul>
+<p>maybe the only unreal part above is openldap will run in mirror mode, which is not extensible &#8211; I will check to see what kind of openldap replication is suitable for production deployment.</p>
+<p>Pretty much that&#8217;s it, will update once I review this plan.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>finished mysql replication</title>
+		<link>https://xiehang.com/blog/2009/08/28/finished-mysql-replication/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 28 Aug 2009 07:15:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[mysql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=647</guid>
+
+					<description><![CDATA[Now I have 5 Linux VMs up and running with mysql replication configured and tested &#8211; this is a single master setup. I did some research around and found that dual/multiple masters is still not a good solution thinking of the potential conflicts. It seems auto increment will not be a big issue as if <a href='https://xiehang.com/blog/2009/08/28/finished-mysql-replication/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Now I have 5 Linux VMs up and running with mysql replication configured and tested &#8211; this is a single master setup.</p>
+<p>I did some research around and found that dual/multiple masters is still not a good solution thinking of the potential conflicts. It seems auto increment will not be a big issue as if end user does not have direct mysql access, then they will not be able to change auto_increment_increment and auto_increment_offset. However, it is still possible that two or more masters get updates for the same record at same or close time, which will cause a tricky question &#8211; what should be the last status of the record? It&#8217;s not totally rely on when the client (of mysql) triggered the update, it also depends on how fast the replication goes.</p>
+<p>Some people/application may not care about this too much &#8211; such as user update profile information, if it&#8217;s user him/herself edit the record from two browsers and hit submit at almost the same time, it&#8217;s up to him/her to take the risk. However, this is extrem dangerous if this is a transaction system, that something to do with money, so again, it&#8217;s up to developer to decide using dual/multiple masters or not. If the application itself can guarantee different clients won&#8217;t write to same record at the same or close time (or better be never), such as data are geo-related, then multiple master is still a good solution.</p>
+<p>Anyway, since dual/multiple masters won&#8217;t give me any benifit (no performance gain, no improvement on reliability), so I will leave the test to the future. For now, I will just leave the replication there (well, will add some monitoring stuffs) and go with mysql proxy test.</p>
+<p>Also</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Symfony and Godaddy</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</link>
+					<comments>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2009 15:04:13 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[godaddy]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[symfony]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527</guid>
+
+					<description><![CDATA[Though problems I&#8217;m going to discuss are for symfony 1.2, I guess it applicable to 1.0 and 1.1 as well. I finally got symfony works on godaddy shared hosting, I guess if I were running any sort of dedicated hosting, these problem could not have happened, as I have full control. The first problem hit <a href='https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Though problems I&#8217;m going to discuss are for symfony 1.2, I guess it applicable to 1.0 and 1.1 as well.</p>
+<p>I finally got symfony works on godaddy shared hosting, I guess if I were running any sort of dedicated hosting, these problem could not have happened, as I have full control.</p>
+<p>The first problem hit me is PHP version, symfony needs PHP5, and godaddy supports PHP5 &#8211; good. However, it seems godaddy&#8217;s default PHP is still PHP4 so have to set alias to make sure symfony script is interpreted by PHP5 instead of PHP4:</p>
+<blockquote><p>alias symfony=&#8217;/usr/local/php5/bin/php /path/to/symfony-1.2.7/data/bin/symfony&#8217;</p></blockquote>
+<p>after this, I got the problem, saying:</p>
+<blockquote><p>/usr/local/php5/bin/php: Symbol `client_errors&#8217; has different size in shared object, consider re-linking</p></blockquote>
+<p>and turned out it was because of mysql client lib problem &#8211; I don&#8217;t know the detail yet, but seems /usr/local/php5/bin/php and /web/cgi-bin/php5 are both linked to /usr/lib/mysql/libmysqlclient.so.15, which works for /web one but not the /usr one. I did some tests and found /usr/lib/libmysqlclient.so.14.0.0 works perfect with /usr/local/php5/bin/php, so put this into my .bash_profile:</p>
+<blockquote><p>LD_PRELOAD=/usr/lib/libmysqlclient.so.14.0.0</p></blockquote>
+<p>note that /usr/lib/libmysqlclient.so.10.0.0 doesn&#8217;t work well as it&#8217;s too old to support modern (new) password encrypt/authentication.</p>
+<p>By now I can use symfony do the development job, but problem are still there while I&#8217;m trying to browse from browser, the first thing is rewrite rules &#8211; these lines should be uncommented from web/.htaccess:</p>
+<blockquote><p>RewriteBase /<br />
+RewriteCond %{REQUEST_URI} \..+$<br />
+RewriteCond %{REQUEST_URI} !\.html$<br />
+RewriteRule .* &#8211; [L]</p></blockquote>
+<p>then I met the problem (which took me longest time to solve) with error:<br />
+Empty module and/or action after parsing the URL &#8220;/index.php&#8221; (/).<br />
+actually I should have got it solve earlier if I search on the web, there is <a href="http://www.codemassacre.com/2009/03/17/problems-hosting-symfony-12-sites-on-godaddy/">a great article talking about the solution</a>, and my problem got solved just after 1st part of solution mentioned by the blog &#8211; adding following lines to &#8220;all&#8221; section of apps/frontend/config/factories.yml:</p>
+<blockquote>
+<pre>request:
+  param:
+    path_info_key: REQUEST_URI</pre>
+</blockquote>
+<p>be careful with intending, original blog seems not doing the right thing and put &#8220;request&#8221; and &#8220;param&#8221; in same level, which is wrong.</p>
+<p>Alright, by this time you will be able to play with symfony on shared hosting with godaddy. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

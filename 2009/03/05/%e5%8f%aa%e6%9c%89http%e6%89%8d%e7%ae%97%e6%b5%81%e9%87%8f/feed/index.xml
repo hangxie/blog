@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: 只有HTTP才算流量	</title>
+	<atom:link href="https://xiehang.com/blog/2009/03/05/%E5%8F%AA%E6%9C%89http%E6%89%8D%E7%AE%97%E6%B5%81%E9%87%8F/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/03/05/%e5%8f%aa%e6%9c%89http%e6%89%8d%e7%ae%97%e6%b5%81%e9%87%8f/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 19 Mar 2009 08:10:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+</channel>
+</rss>

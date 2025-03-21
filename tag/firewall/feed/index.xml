@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>firewall &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/firewall/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:06:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Fedora, xrdp, and xfce</title>
+		<link>https://xiehang.com/blog/2013/06/20/fedora-xrdp-and-xfce/</link>
+					<comments>https://xiehang.com/blog/2013/06/20/fedora-xrdp-and-xfce/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 21 Jun 2013 01:43:39 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[fedora]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[systemctl]]></category>
+		<category><![CDATA[xfce]]></category>
+		<category><![CDATA[xrdp]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1527</guid>
+
+					<description><![CDATA[Actually this should apply to all &#8220;non-standard&#8221; window managers on Fedora &#8211; let&#8217;s assume KDE and gnome (maybe twm as well) are all standard WM per Fedora. I&#8217;ve been away from Fedora for some time &#8211; left by 16 and came back by 18, I have to say, Fedora is moving more and more closer <a href='https://xiehang.com/blog/2013/06/20/fedora-xrdp-and-xfce/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Actually this should apply to all &#8220;non-standard&#8221; window managers on Fedora &#8211; let&#8217;s assume KDE and gnome (maybe twm as well) are all standard WM per Fedora.</p>
+<p>I&#8217;ve been away from Fedora for some time &#8211; left by 16 and came back by 18, I have to say, Fedora is moving more and more closer to Windows and away from Unix. Why? Think about it changed from service/chkconfig to systemctl, the only advance to me is that someone who&#8217;s relying on service has to migrate do systemctl, and developers have to maintain all these, and why don&#8217;t you take iptables and use firewall instead? I didn&#8217;t see the logic behind that, except &#8211; it&#8217;s building lots of &#8220;new features&#8221; to add to so-called feature list or selling point.</p>
+<p>Anyway, let&#8217;s come back to xrdp. Although setup xrdp on Ubuntu is almost nothing, it takes me almost a day to get everything done on Fedora. Here are some hints:<span id="more-1527"></span></p>
+<ol>
+<li>remember do a &#8220;sudo firewall-cmd &#8211;add-port 3389/tcp &#8211;permanent so that &#8220;dynamically managed firewall&#8221; can allow network traffic goes through, sound familiar? Yea, more or less like the Windows firewall.</li>
+<li>edit (most likely you need to create) /etc/sysconfig/desktop, with this line: PREFERRED=startxfce4, this tells X that xfce IS a windows manager &#8230;</li>
+</ol>
+<p>And here is related pages for these issues:</p>
+<p><a href="https://mknowles.com.au/wordpress/2013/02/15/installing-xrdp-on-fedora-18-with-mate-desktop/">https://mknowles.com.au/wordpress/2013/02/15/installing-xrdp-on-fedora-18-with-mate-desktop/</a></p>
+<p><a href="https://bugzilla.redhat.com/show_bug.cgi?id=904248">https://bugzilla.redhat.com/show_bug.cgi?id=904248</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/06/20/fedora-xrdp-and-xfce/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Setup PPTP on Ubuntu</title>
+		<link>https://xiehang.com/blog/2011/02/12/setup-pptp-on-ubuntu/</link>
+					<comments>https://xiehang.com/blog/2011/02/12/setup-pptp-on-ubuntu/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 13 Feb 2011 06:28:38 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[pptp]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[ufw]]></category>
+		<category><![CDATA[vpn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1083</guid>
+
+					<description><![CDATA[Searched online and here comes what I did: Install pptpd, ufw change /etc/pptpd.conf to enable localip and remoteip change /etc/ppp/chap-secrets to add user name and password change /etc/ppp/pptpd-options to enable ms-dns change sysctl.conf to set net.ipv4.ip_forward=1 change /etc/default/ufw to set DEFAULT_FORWARD_POLICY=&#8221;ACCEPT&#8221; change /etc/ufw/before.rules # nat Table rules *nat :POSTROUTING ACCEPT [0:0] # Allow forward traffic <a href='https://xiehang.com/blog/2011/02/12/setup-pptp-on-ubuntu/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Searched online and here comes what I did:</p>
+<ol>
+<li>Install pptpd, ufw</li>
+<li>change /etc/pptpd.conf to enable localip and remoteip</li>
+<li>change /etc/ppp/chap-secrets to add user name and password</li>
+<li>change /etc/ppp/pptpd-options to enable ms-dns</li>
+<li>change sysctl.conf to set net.ipv4.ip_forward=1</li>
+<li>change /etc/default/ufw to set DEFAULT_FORWARD_POLICY=&#8221;ACCEPT&#8221;</li>
+<li>change /etc/ufw/before.rules
+<pre># nat Table rules
+*nat
+:POSTROUTING ACCEPT [0:0]
+
+# Allow forward traffic from eth0:0 to eth0
+-A POSTROUTING -s 172.16.123.0/24 -o eth0 -j MASQUERADE
+
+COMMIT</pre>
+</li>
+<li>ufw allow TCP connection on port 47 and 1723 (surely you want to enable others if you run other services like HTTPd on this host as well)</li>
+</ol>
+<p>pretty much this is what I have done, restart, and everything should be up and running.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2011/02/12/setup-pptp-on-ubuntu/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>ufw on Debian</title>
+		<link>https://xiehang.com/blog/2009/09/03/ufw-on-debian/</link>
+					<comments>https://xiehang.com/blog/2009/09/03/ufw-on-debian/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 03 Sep 2009 23:51:41 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[firewall]]></category>
+		<category><![CDATA[linux]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=654</guid>
+
+					<description><![CDATA[Debian does not come with a good (I mean, easy to use :D) firewall, and to me ufw on Ubuntu is pretty cool so searched around, found this link: http://blog.ropetin.com/?p=94 and copy some words here in case someday that URL becomes inaccessible: # sudo apt-get install python # wget http://people.ubuntu.com/~jamie/ufw/ufw-0.25.tar.gz # tar -xzvf ufw-0.25.tar.gz # <a href='https://xiehang.com/blog/2009/09/03/ufw-on-debian/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Debian does not come with a good (I mean, easy to use :D) firewall, and to me ufw on Ubuntu is pretty cool so searched around, found this link:</p>
+<p>http://blog.ropetin.com/?p=94</p>
+<p>and copy some words here in case someday that URL becomes inaccessible:</p>
+<p style="padding-left: 30px;"><code># sudo apt-get install python<br />
+# wget http://people.ubuntu.com/~jamie/ufw/ufw-0.25.tar.gz<br />
+# tar -xzvf ufw-0.25.tar.gz<br />
+# cd ufw-0.25<br />
+# sudo python ./setup.py install</code></p>
+<p>Once installed it needs to be configured, which really depends on your requirements.  A basic setup that allows SSH access, while blocking most other access can be configured by;</p>
+<p style="padding-left: 30px;"><code># sudo ufw logging on<br />
+# sudo ufw default deny<br />
+# sudo ufw allow proto tcp from any to any port 22<br />
+# sudo ufw enable</code></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/09/03/ufw-on-debian/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

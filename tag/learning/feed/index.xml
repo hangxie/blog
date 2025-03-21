@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>learning &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/learning/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 05 Oct 2011 16:59:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Time to go back work</title>
+		<link>https://xiehang.com/blog/2011/10/05/time-to-go-back-work/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 05 Oct 2011 16:59:21 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[holiday]]></category>
+		<category><![CDATA[learning]]></category>
+		<category><![CDATA[work]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1127</guid>
+
+					<description><![CDATA[It&#8217;s time to go back work, National Day long holiday is ending. At least I had some good sleep during the long holiday, also get some sort of &#8220;inner peace&#8221; after having the good sleep :). It seems labor work (most of them are yard work) helps a lot to get me good sleep, I <a href='https://xiehang.com/blog/2011/10/05/time-to-go-back-work/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It&#8217;s time to go back work, National Day long holiday is ending.</p>
+<p>At least I had some good sleep during the long holiday, also get some sort of &#8220;inner peace&#8221; after having the good sleep :). It seems labor work (most of them are yard work) helps a lot to get me good sleep, I will see if I can get some labor work or body exercise whenever I get back to Shanghai.</p>
+<p>It will be a tough month to me as I need to finish some hard steps to re-org the team, some stuffs had been done and it seems really hurt, but like it or not, I need to get rest done in a week or two, and make everyone in the team to focus on new business.</p>
+<p>To myself actually this is a good opportunity to practice those skills though I had tried before, painful learning curve.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>My random programming life</title>
+		<link>https://xiehang.com/blog/2009/05/30/my-random-programming-life/</link>
+					<comments>https://xiehang.com/blog/2009/05/30/my-random-programming-life/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 31 May 2009 05:36:30 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[learning]]></category>
+		<category><![CDATA[plan]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=434</guid>
+
+					<description><![CDATA[I&#8217;m randomly looking around to see what I can do with my current spare time, as I&#8217;m not making good progress with PPCam project and this makes me feel bad. This becomes a good excuse to get something new :). There are really enough stuffs that I&#8217;m interested at, and I&#8217;m currently &#8220;evaluating&#8221; following areas: <a href='https://xiehang.com/blog/2009/05/30/my-random-programming-life/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m randomly looking around to see what I can do with my current spare time, as I&#8217;m not making good progress with PPCam project and this makes me feel bad. This becomes a good excuse to get something new :).</p>
+<p>There are really enough stuffs that I&#8217;m interested at, and I&#8217;m currently &#8220;evaluating&#8221; following areas:</p>
+<ol>
+<li>embedded system &#8211; pure hardware oriented, such as robot, ARM, etc</li>
+<li>Mobile &#8211; Windows CE, Symbian, embedded Linux (haven&#8217;t determined which Linux to go now :D), iPhone</li>
+<li>Mac OSX &#8211; focus on pure native OSX application done by Objective-C along with Cocoa</li>
+<li>Windows &#8211; focus on multimedia area with DirectShow, etc</li>
+<li>Ada &#8211; this is just for language, other than PPCam I haven&#8217;t figure out what to do</li>
+<li>Python &#8211; trying to see how to do Web development with it, then desktop</li>
+<li>Lisp &#8211; sorry I still want to do something with it</li>
+<li>Some weird stuffs like encryption, P2P, AI, etc, they can only be done with something above</li>
+</ol>
+<p>I may put some sort of priority to these items and then pick one or two, I will post my thinking later with comments.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/05/30/my-random-programming-life/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

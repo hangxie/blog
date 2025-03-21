@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>httpd filter &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/httpd-filter/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:04:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Making progress</title>
+		<link>https://xiehang.com/blog/2013/10/10/making-progress/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 10 Oct 2013 21:54:48 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[httpd filter]]></category>
+		<category><![CDATA[iis]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[nginx]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1599</guid>
+
+					<description><![CDATA[After several days stuck in various problems, it seems I&#8217;m making progress now. First good news came from financial side &#8230; I found this site which is good for on-demand Mac &#8220;rental&#8221;, and obviously it saved me at least $200 (if I was to go with a refurbished Mac Mini). Now I just leave $30 <a href='https://xiehang.com/blog/2013/10/10/making-progress/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>After several days stuck in various problems, it seems I&#8217;m making progress now.</p>
+<p>First good news came from financial side &#8230; I found <a href="http://www.MacInCloud.com/">this site</a> which is good for on-demand Mac &#8220;rental&#8221;, and obviously it saved me at least $200 (if I was to go with a refurbished Mac Mini). Now I just leave $30 in my account, and occasionally log on to build my Apps. It was said that you have to log in at least every 60 days, or your money will be gone, this makes sense to me and does not bother me at all.<span id="more-1599"></span></p>
+<p>Here comes things regarding development. AWS changed something, AWSiOSSDK became legacy and people should go with each individual framework for EC2, S3, and so on. Also, universal credential is no longer preferred and should create different virtual users for different access (this is really a great news!). I had made some changes to the aws-manager code, made EC2 works but S3 part still has some problem that I haven&#8217;t figured out why, but anyhow, this is a great progress, I just need to spend another hour or two to get this fixed.</p>
+<p>ISAPI filter is making great progress, at least my simple filter works now, although it just does an unconditional redirect. Actually this should have been working at least a week ago, but &#8230; I stupidly change Visual Studio Express&#8217; setting, made a Debug build actually output everything to a Release directory, so all my efforts to make things work doesn&#8217;t make sense at all. I still could not recall why I made the change, but most likely at the time I started play with VS and I&#8217;m not that familiar with it. However, all the time spent on the debug was not a waste, as there are so many things I learnt <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; 32bit filter on 64bit IIS, attach to debug, different APIs, and so on.</p>
+<p>I also complete conditional setting for Nginx filter, this was done in Apache module quite a while back but I was just too lazy to add the feature to Nginx. It was actually less then 20 lines of code, though.</p>
+<p>Another thing is not so great but anyhow a good news, is that I decided to play with Scala and will be using Lift as the web framework. I will spend some time on this to get familiar with Java Web, then I can write my filter for Servlet Containers.</p>
+<p>Maybe I can make all filters up and running by the end of this month? Let&#8217;s see :).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

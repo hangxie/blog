@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: I&#8217;m really slow now	</title>
+	<atom:link href="https://xiehang.com/blog/2009/11/07/im-really-slow-now/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/11/07/im-really-slow-now/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 13 Nov 2009 08:02:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/11/07/im-really-slow-now/comment-page-1/#comment-2757</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 13 Nov 2009 08:02:49 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=739#comment-2757</guid>
+
+					<description><![CDATA[Alright, someone did a great comparison for me :D
+
+http://www.rackspacecloud.com/blog/2009/11/09/nosql-ecosystem/
+
+Obviously I made same conclusion as he did, at least Cassandra scored the highest.
+
+People commented to the blog mentioning MongoDB becomes distributed now, I don&#039;t think I have time testing though ... but once I have time I will test MongoDB instead of CouchDB.
+
+Again tough decision to choose where to go, I will settle done Cassandra first.]]></description>
+			<content:encoded><![CDATA[<p>Alright, someone did a great comparison for me 😀</p>
+<p><a href="http://www.rackspacecloud.com/blog/2009/11/09/nosql-ecosystem/" rel="nofollow ugc">http://www.rackspacecloud.com/blog/2009/11/09/nosql-ecosystem/</a></p>
+<p>Obviously I made same conclusion as he did, at least Cassandra scored the highest.</p>
+<p>People commented to the blog mentioning MongoDB becomes distributed now, I don&#8217;t think I have time testing though &#8230; but once I have time I will test MongoDB instead of CouchDB.</p>
+<p>Again tough decision to choose where to go, I will settle done Cassandra first.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

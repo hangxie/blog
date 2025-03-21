@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vscode &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/vscode/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sat, 02 Apr 2022 15:11:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Goland</title>
+		<link>https://xiehang.com/blog/2022/04/02/goland/</link>
+					<comments>https://xiehang.com/blog/2022/04/02/goland/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 02 Apr 2022 15:11:06 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[goland]]></category>
+		<category><![CDATA[ide]]></category>
+		<category><![CDATA[vscode]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1822</guid>
+
+					<description><![CDATA[Read from reddit that JetBrains offer free license of their IDE to FOSS projects, applied, got approved in a couple of day, and I&#8217;m playing with Goland now. The process could be even faster if I expose my email over github.com, so JetBrains did not have to reach out to me for the verification (licenses <a href='https://xiehang.com/blog/2022/04/02/goland/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Read from reddit that JetBrains offer <a href="https://sales.jetbrains.com/hc/en-gb/articles/360016581839-What-is-an-OSS-development-license-and-who-qualifies-for-one-">free license of their IDE to FOSS projects</a>, applied, got approved in a couple of day, and I&#8217;m playing with Goland now. The process could be even faster if I expose my email over github.com, so JetBrains did not have to reach out to me for the verification (licenses bound to email).</p>
+<p>I just used it for a day and still trying to change my mindset from VS Code to Goland although both are quite alike, something made me feel weird when I started with Goland includes it collapses &#8220;import&#8221; section by default, it feels so &#8220;java-ish&#8221;, and it does not automatically add/remove import whenever code changes, I also missed vim compatible mode as I use vim more than any other editors include VS code.</p>
+<p>The screen looks a bit crowded especially when I launched debug, which is understandable as 1. there are lots of details to be shown during debug, and 2. I&#8217;m on my 13 inch Macbook Air. I&#8217;m going to try this on a larger screen and I&#8217;m also going to try if license works for Windows as well.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2022/04/02/goland/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

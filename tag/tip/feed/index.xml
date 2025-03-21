@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tip &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/tip/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:11:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>iOS development tips</title>
+		<link>https://xiehang.com/blog/2012/01/27/ios-development-tips/</link>
+					<comments>https://xiehang.com/blog/2012/01/27/ios-development-tips/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 28 Jan 2012 04:22:18 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[tip]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1222</guid>
+
+					<description><![CDATA[I have to write down all tips to save time in the future, some may look like naive but thinking of I&#8217;m such a newbie in iOS development, nothing was easy to me. Hide keyboard whenever background touched in a storyboard original posts are here: hide keyboard get current first responder idea: Change the specific <a href='https://xiehang.com/blog/2012/01/27/ios-development-tips/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I have to write down all tips to save time in the future, some may look like naive but thinking of I&#8217;m such a newbie in iOS development, nothing was easy to me.</p>
+<ol>
+<li>Hide keyboard whenever background touched in a storyboard<span id="more-1222"></span>
+<ul>
+<li>original posts are here:
+<ul>
+<li><a href="http://www.techotopia.com/index.php/Writing_iOS_5_Code_to_Hide_the_iPhone_Keyboard">hide keyboard</a></li>
+<li><a href="http://stackoverflow.com/questions/1823317/how-do-i-legally-get-the-current-first-responder-on-the-screen-on-an-iphone">get current first responder</a></li>
+</ul>
+</li>
+<li>idea:
+<ul>
+<li>Change the specific view from UIView to UIControl so to enable interactive, this has to be done by selecting the view from docking area instead of the Interface Builder to me</li>
+<li>add a method to resignFirstResponder for current first responder</li>
+<li>link the event to the method, this can be done in Connection inspector, click and drag the &#8220;+&#8221; sign on the right of &#8220;Touch Down&#8221; event to the view controller, then in the pop-up window choose the method you created just now</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Save and load simple application settings
+<ul>
+<li>original post is here:
+<ul>
+<li><a href="http://www.iphonedevsdk.com/forum/iphone-sdk-development/1613-read-write-create-data-files.html">read/write data file</a></li>
+</ul>
+</li>
+<li>idea:
+<ul>
+<li>I decided to create an object class to manipulate registries as I need to use it more than one place</li>
+<li>form a file name for registry
+<pre lang="objc">    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *registryFile = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"registry.file"];</pre>
+</li>
+<li>save to registry</li>
+<pre lang="objc">    NSMutableDictionary *dict = [[NSMutableDictionary alloc]  init];
+    [dict setValue:[textfield1 text] forKey:@"key1"];
+    [dict setValue:[textfield2 text] forKey:@"key2"];
+
+    [dict writeToFile:[self registryFileName] atomically:YES];</pre>
+<li>load from registry
+<pre lang="objc">    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:[self registryFileName]]</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>create a right button on a UINavigationItem
+<ul>
+<li>original post is here:
+<ul>
+<li><a href="http://stackoverflow.com/questions/2504351/how-to-add-a-button-to-uinavigationbar">add a button to uinavigationbar</a></li>
+</ul>
+</li>
+<li>idea
+<ul>
+<li>add the button after view loaded (viewDidLoad)
+<pre lang="objc">    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                              initWithTitle:@"Save"
+                                              style:UIBarButtonItemStyleBordered
+                                              target:self
+                                              action:@selector(saveKeys:)];</pre>
+</li>
+<li>remember create a &#8220;saveKeys&#8221; method to finish whatever you want to do, but don&#8217;t forget this: (to emulate the &#8220;Back&#8221; action since I want to close the view after &#8220;Save&#8221;)
+<pre lang="objc">    [self.navigationController popViewControllerAnimated:YES];</pre>
+</li>
+<li>and reset the button while view is unloaded (viewDidUnload)
+<pre lang="objc">    self.navigationItem.rightBarButtonItem = nil;</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>singleton
+<ul>
+<li>original post is here:
+<ul>
+<li><a href="http://iphone.galloway.me.uk/iphone-sdktutorials/singleton-classes/">ios singleton class</a></li>
+</ul>
+</li>
+<li>idea
+<ul>
+<li>dig out the concept by yourself!</li>
+<li>too much code, haven&#8217;t figured out what should be posted here</li>
+</ul>
+</li>
+</ul>
+<p>I will post more here after sort couple of things out.</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2012/01/27/ios-development-tips/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

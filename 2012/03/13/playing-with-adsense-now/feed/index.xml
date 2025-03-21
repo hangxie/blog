@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Playing with AdSense now	</title>
+	<atom:link href="https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 16 Mar 2012 14:45:41 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/comment-page-1/#comment-3563</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 16 Mar 2012 14:45:41 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1286#comment-3563</guid>
+
+					<description><![CDATA[hmmm ... suddenly ads started showing on my side, it seems my site is no longer down to google, what was the problem???]]></description>
+			<content:encoded><![CDATA[<p>hmmm &#8230; suddenly ads started showing on my side, it seems my site is no longer down to google, what was the problem???</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/comment-page-1/#comment-3562</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 16 Mar 2012 06:30:15 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1286#comment-3562</guid>
+
+					<description><![CDATA[They responded me:
+&lt;q cite=&quot;&quot;&gt;
+Difficult site navigation: While reviewing your site, we found that it
+was down. Google ads may not be published on a site that is not fully
+launched, functioning, or easily navigable. Once your site is
+functioning and has enough content for our specialists to review, we
+will be happy to reconsider your application. If there is a typo in the
+URL submitted, you can resubmit your application with the correct site
+by following the directions below.
+&lt;/q&gt;
+
+Cannot blame them - I need to have some facility to monitor my site, maybe time for AWS again?]]></description>
+			<content:encoded><![CDATA[<p>They responded me:<br />
+<q cite=""><br />
+Difficult site navigation: While reviewing your site, we found that it<br />
+was down. Google ads may not be published on a site that is not fully<br />
+launched, functioning, or easily navigable. Once your site is<br />
+functioning and has enough content for our specialists to review, we<br />
+will be happy to reconsider your application. If there is a typo in the<br />
+URL submitted, you can resubmit your application with the correct site<br />
+by following the directions below.<br />
+</q></p>
+<p>Cannot blame them &#8211; I need to have some facility to monitor my site, maybe time for AWS again?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

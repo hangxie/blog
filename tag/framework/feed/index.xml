@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>framework &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/framework/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 10 Nov 2009 03:33:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Question from a friend</title>
+		<link>https://xiehang.com/blog/2009/11/09/question-from-a-friend/</link>
+					<comments>https://xiehang.com/blog/2009/11/09/question-from-a-friend/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2009 03:33:32 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[framework]]></category>
+		<category><![CDATA[friend]]></category>
+		<category><![CDATA[nosql]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=741</guid>
+
+					<description><![CDATA[One of my friends asked me if this service is doable: Every hour multiple machines (clients) will send ~1M actions records to the service Each action contains: user id, action, action result, start time, end time, and couple of user profile keys The service should be able to deliver reports for any given time frame <a href='https://xiehang.com/blog/2009/11/09/question-from-a-friend/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>One of my friends asked me if this service is doable:</p>
+<ul>
+<li>Every hour multiple machines (clients) will send ~1M actions records to the service</li>
+<li>Each action contains: user id, action, action result, start time, end time, and couple of user profile keys</li>
+<li>The service should be able to deliver reports for any given time frame (minutes), within 15 min after the period finishes. For example, report for 3pm~3:30pm should be available by 3:45pm</li>
+<li>Reports include: how many users did a specific action with specific result (during that time frame), how many actions does a specific user did, and top number of actions taken by others users who did the same action as the user (hard to understand, but think about Amazon, &#8220;Customers bought this item also bought&#8230;)</li>
+<li>Most important thing is: all these requirements should be done on no more than 4 machines, include redundancy, which means should be done on 2 or 3 machines</li>
+</ul>
+<p>I have to say, this is a pretty common requirements for online services (shopping, search, gaming,&#8230; could be anything), and if I can make it and make the solution linear, then it will be pretty much interesting (let&#8217;s say, 40 machines supporting 10M actions per hour, a lot already).</p>
+<p>I will do some research (the nosql stuffs could well fit into this one), and post thinking/design here.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/11/09/question-from-a-friend/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why do I use a framework?</title>
+		<link>https://xiehang.com/blog/2009/06/21/why-do-i-use-a-framework/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 22 Jun 2009 01:06:44 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[framework]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=499</guid>
+
+					<description><![CDATA[Lots of people (include myself) said framework does not fit big web sites, whatever it is based on Ruby, Python, or PHP, then why do I still use a framework? Quick answer &#8211; I need something in web development like Visual Basic. Let me explain some more &#8211; while I&#8217;m trying to build a Windows <a href='https://xiehang.com/blog/2009/06/21/why-do-i-use-a-framework/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Lots of people (include myself) said framework does not fit big web sites, whatever it is based on Ruby, Python, or PHP, then why do I still use a framework?</p>
+<p>Quick answer &#8211; I need something in web development like Visual Basic.</p>
+<p>Let me explain some more &#8211; while I&#8217;m trying to build a Windows application, if it is simple or it is just for prototype, I can use Visual Basic (maybe Delphi now to get rid of troubles caused by .Net). On Unix I use Perl/shell to archieve the same goal. However, I don&#8217;t have anything in hands, till now, on web development, so I need something, which framework seems promising.</p>
+<p>I don&#8217;t think I will build any big web sites with the framework, but there are way too many small web sites/applications that I want to get them done within a week. Building a perfect achitecture is not that fast, even with PHP frontend and C/C++ backend. Almost all this kind of applications are database oriented, with less complex logic but needs to be fancy in UI. Thinking of most frameworks work AJAX UI, this seems to be the best choice.</p>
+<p>Sure, once the application needs to be turned to a real web site, performance, capacity, and security, etc. will become critical, and at that time I would like to change the whole platform from a framework to a solid achitecture. I still believe none of the existing framework can provide the performance that big web sites want.</p>
+<p>I post here to answer questions like:</p>
+<ul>
+<li>Is framework good to build a big web site?</li>
+<li>You mentioned you don&#8217;t like framework, but why are you still using them?</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Back to PHP</title>
+		<link>https://xiehang.com/blog/2009/06/14/back-to-php/</link>
+					<comments>https://xiehang.com/blog/2009/06/14/back-to-php/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 15 Jun 2009 00:14:50 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[framework]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=461</guid>
+
+					<description><![CDATA[It seems godaddy supports PHP only so I&#8217;m thinking of stop learning Python for now even it has better framework. There are some widely used PHP framework that I can take to deploy to godaddy, which is more convenience. Currently I&#8217;m comparing Zend, CakePHP, and Symfony. I guess I won&#8217;t try Zend as it sound <a href='https://xiehang.com/blog/2009/06/14/back-to-php/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>It seems godaddy supports PHP only so I&#8217;m thinking of stop learning Python for now even it has better framework. There are some widely used PHP framework that I can take to deploy to godaddy, which is more convenience.</p>
+<p>Currently I&#8217;m comparing Zend, CakePHP, and Symfony. I guess I won&#8217;t try Zend as it sound like too old, and does not support application generation. People mentioned CakePHP<strong></strong> lack os real model support, while Symfony is sort of too complicated to start with.</p>
+<p>I will focus on CakePHP and Symfony, I get a feeling that I will stick with CakePHP without any reason, but sure I will do serious research on Symfony as well.</p>
+<p>Again, I will post my findings here.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/06/14/back-to-php/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

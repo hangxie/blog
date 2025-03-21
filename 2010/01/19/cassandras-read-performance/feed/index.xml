@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Cassandra&#8217;s read performance	</title>
+	<atom:link href="https://xiehang.com/blog/2010/01/19/cassandras-read-performance/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 22 Dec 2010 13:50:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: nutchtutorial.com		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-3054</link>
+
+		<dc:creator><![CDATA[nutchtutorial.com]]></dc:creator>
+		<pubDate>Wed, 22 Dec 2010 13:50:03 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-3054</guid>
+
+					<description><![CDATA[&lt;strong&gt;Cassandra’s read performance - cassandra query performance...&lt;/strong&gt;
+
+I setup a testing environment on couple of company boxes to see how Cassandra performs with real machines (real here means powerful enough to be a data node), here are details of the environment: Two client nodes, one server nodes, all are RHEL 4.x. I ...]]></description>
+			<content:encoded><![CDATA[<p><strong>Cassandra’s read performance &#8211; cassandra query performance&#8230;</strong></p>
+<p>I setup a testing environment on couple of company boxes to see how Cassandra performs with real machines (real here means powerful enough to be a data node), here are details of the environment: Two client nodes, one server nodes, all are RHEL 4.x. I &#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2864</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 31 Jan 2010 22:49:06 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2864</guid>
+
+					<description><![CDATA[I take my works back - &quot;login&quot; is not a just key-value lookup, as it needs to go through buddies in the buddy list, and do table look up again, I&#039;m using same application logic for both Cassandra and MySQL.
+
+However, denormalization is a problem for this case, if I store buddy&#039;s information within a user record, it means every time a user changes his/her profile, I have to go though all users that having him/her in buddy list to update, this will be something like twitter - I may trigger hundreds or even thousands of updates for a simple change.
+
+Maybe this kind of application may not be suitable for Cassandra, those pure key-value pair data stores may do better.]]></description>
+			<content:encoded><![CDATA[<p>I take my works back &#8211; &#8220;login&#8221; is not a just key-value lookup, as it needs to go through buddies in the buddy list, and do table look up again, I&#8217;m using same application logic for both Cassandra and MySQL.</p>
+<p>However, denormalization is a problem for this case, if I store buddy&#8217;s information within a user record, it means every time a user changes his/her profile, I have to go though all users that having him/her in buddy list to update, this will be something like twitter &#8211; I may trigger hundreds or even thousands of updates for a simple change.</p>
+<p>Maybe this kind of application may not be suitable for Cassandra, those pure key-value pair data stores may do better.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2863</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 31 Jan 2010 22:42:31 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2863</guid>
+
+					<description><![CDATA[I will try out those configurations.
+
+I don&#039;t think denormalization is a concern here, as &quot;login&quot; application is just a key-value lookup, that is, looking for the user based on user name, verify password, that&#039;s all.]]></description>
+			<content:encoded><![CDATA[<p>I will try out those configurations.</p>
+<p>I don&#8217;t think denormalization is a concern here, as &#8220;login&#8221; application is just a key-value lookup, that is, looking for the user based on user name, verify password, that&#8217;s all.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jonathan Ellis		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2860</link>
+
+		<dc:creator><![CDATA[Jonathan Ellis]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2010 22:23:18 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2860</guid>
+
+					<description><![CDATA[With 0.5 you should increase KeysCachedFraction to 0.2 or even more, depending on how many rows you have and how &quot;hot&quot; they are.  The default of 0.01 is too conservative for many cases.
+
+Also, try to denormalize as much as possible; Cassandra will not perform well if you just try to port a MySQL schema to it straight across.
+
+Let us know on irc or the mailing list if you have any other questions!]]></description>
+			<content:encoded><![CDATA[<p>With 0.5 you should increase KeysCachedFraction to 0.2 or even more, depending on how many rows you have and how &#8220;hot&#8221; they are.  The default of 0.01 is too conservative for many cases.</p>
+<p>Also, try to denormalize as much as possible; Cassandra will not perform well if you just try to port a MySQL schema to it straight across.</p>
+<p>Let us know on irc or the mailing list if you have any other questions!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Flying Bug &#187; Playing with the performance again		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2857</link>
+
+		<dc:creator><![CDATA[Flying Bug &#187; Playing with the performance again]]></dc:creator>
+		<pubDate>Thu, 21 Jan 2010 20:55:54 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2857</guid>
+
+					<description><![CDATA[[...] believe previous test was using a data set that is too small &#8211; it has only 100K records and volume is about 120M [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] believe previous test was using a data set that is too small &#8211; it has only 100K records and volume is about 120M [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2855</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 20 Jan 2010 07:54:11 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2855</guid>
+
+					<description><![CDATA[I think I need to check out CouchDB and/or MongoDB for online feature (replication and cluster are two major concerns), and will check if Cassandara can work as offline processing (log processing?).]]></description>
+			<content:encoded><![CDATA[<p>I think I need to check out CouchDB and/or MongoDB for online feature (replication and cluster are two major concerns), and will check if Cassandara can work as offline processing (log processing?).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2854</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 20 Jan 2010 07:29:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2854</guid>
+
+					<description><![CDATA[Same box running un-tuned mysql give me 10X throughput for login operation - 128 concurrent clients, overall QPS is about 2,800, latency is about 45ms.
+
+It seems Cassandra is more like a solution for scalability, whenever data volume is not that big, mysql would be a better solution in term of speed.]]></description>
+			<content:encoded><![CDATA[<p>Same box running un-tuned mysql give me 10X throughput for login operation &#8211; 128 concurrent clients, overall QPS is about 2,800, latency is about 45ms.</p>
+<p>It seems Cassandra is more like a solution for scalability, whenever data volume is not that big, mysql would be a better solution in term of speed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/comment-page-1/#comment-2853</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2010 22:41:36 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=907#comment-2853</guid>
+
+					<description><![CDATA[Did a quick test and it seems 2-nodes (ReplicationFactor=2) cluster is getting 10% performance lost compare with single node cluster, and it seems the performance lost is growing along with number of concurrent clients growth.
+
+Now, weird thing - with ReplicationFactor=1, the performance went down another 8~10%. It seems I have to read codes to see how Cassandra deals with multiple replica as the behavior looks inconsistent.]]></description>
+			<content:encoded><![CDATA[<p>Did a quick test and it seems 2-nodes (ReplicationFactor=2) cluster is getting 10% performance lost compare with single node cluster, and it seems the performance lost is growing along with number of concurrent clients growth.</p>
+<p>Now, weird thing &#8211; with ReplicationFactor=1, the performance went down another 8~10%. It seems I have to read codes to see how Cassandra deals with multiple replica as the behavior looks inconsistent.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

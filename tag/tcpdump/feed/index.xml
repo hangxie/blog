@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tcpdump &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/tcpdump/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 07 Nov 2018 17:19:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Reverse engineering HTTP requests</title>
+		<link>https://xiehang.com/blog/2018/11/07/reverse-engineering-http-requests/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 07 Nov 2018 17:18:52 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[debug]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[tcpdump]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1789</guid>
+
+					<description><![CDATA[tcpdump -A -s 10240 'tcp port 8080' \ &#124; egrep --line-buffered "^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )&#124;^[0-9][0-9]:[0-9][0-9]&#124;^[A-Za-z0-9-]+: " \ &#124; sed -r 's/^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g' &#160;]]></description>
+										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">tcpdump -A -s 10240 'tcp port 8080' \
+| egrep --line-buffered "^........(GET |HTTP\/|POST |HEAD )|^[0-9][0-9]:[0-9][0-9]|^[A-Za-z0-9-]+: " \
+| sed -r 's/^........(GET |HTTP\/|POST |HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g'</pre>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

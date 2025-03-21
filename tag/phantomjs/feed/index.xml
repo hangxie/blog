@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>phantomjs &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/phantomjs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 28 Jan 2014 18:02:25 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Get rendered HTML</title>
+		<link>https://xiehang.com/blog/2014/01/15/get-rendered-html/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 16 Jan 2014 02:11:55 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[crawler]]></category>
+		<category><![CDATA[phantomjs]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1616</guid>
+
+					<description><![CDATA[Search team is doing crawling and some web sites are heavily using JavaScript to generate content. Whenever I said &#8220;heavily&#8221; I mean none of the UI elements was from HTML, instead, JavaScript runs after the page loaded, then shown to users. I&#8217;m doing a prototype so that they can take as a reference and later <a href='https://xiehang.com/blog/2014/01/15/get-rendered-html/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Search team is doing crawling and some web sites are heavily using JavaScript to generate content. Whenever I said &#8220;heavily&#8221; I mean none of the UI elements was from HTML, instead, JavaScript runs after the page loaded, then shown to users.</p>
+<p>I&#8217;m doing a prototype so that they can take as a reference and later on do something fit into their system better. The prototype as based on <a href="http://phantomjs.org/">PhantomJS</a>, it was in Ubuntu (12.04 LTS) repository which makes my life much easier. Again, I need to install xvfb so that I can run X-based application in command line.<span id="more-1616"></span></p>
+<p>After everything got installed, simply edit a JS file like this:<br />
+<code><br />
+var page = require('webpage').create();<br />
+page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36';<br />
+page.open('https://www.google.com/webhp?hl=zh-CN&sourceid=cnhp#hl=zh-CN&q=%E5%BE%B7%E4%BC%AF%E5%AE%B6%E7%9A%84%E8%8B%94%E4%B8%9D&safe=strict', function(status) {<br />
+    if (status !== 'success') {<br />
+        console.log('Unable to access network');<br />
+    } else {<br />
+        window.setTimeout(function() {<br />
+            var dyn_content = page.evaluate(function() {<br />
+                return document.getElementById('rhs_block').innerHTML;<br />
+            });<br />
+            console.log(dyn_content);<br />
+            phantom.exit();<br />
+        }, 1000);<br />
+        console.log('time again');<br />
+    }<br />
+});<br />
+</code></p>
+<p>Then the element will be printed out on the screen &#8230;</p>
+<p>I still need to figure out a better way to get rid of codes like &#8220;setTimeout(&#8230;, 1000)&#8221; as I believe it slows down the processing quite a lot, but anyway, it&#8217;s a prototype &#8230;</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

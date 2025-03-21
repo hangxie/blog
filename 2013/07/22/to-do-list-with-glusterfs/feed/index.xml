@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: To-do list with glusterfs	</title>
+	<atom:link href="https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 02 Aug 2013 17:15:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/comment-page-1/#comment-3985</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 17:15:55 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1555#comment-3985</guid>
+
+					<description><![CDATA[I decided to give up btrfs after playing with it a day or two, it&#039;s quite unstable to me as my simplest setup (4 disks striped) print lots of error messages in kern.log. This is one out of 4 machines I used for testing, which means the failure rate is 25%, and I cannot fix the disk (thanks fsck.btrfs) so the only way to get disks usable again is to nuke them.
+
+I&#039;m moving to xfs now, at least it&#039;s what GlusterFS recommended and per history, it&#039;s much more stable than btrfs, the root fs is still btrfs, I&#039;ll stick with it too see if single disk performs better.
+
+BTW, nothing to blame btrfs, they definitely told you this is unstable.]]></description>
+			<content:encoded><![CDATA[<p>I decided to give up btrfs after playing with it a day or two, it&#8217;s quite unstable to me as my simplest setup (4 disks striped) print lots of error messages in kern.log. This is one out of 4 machines I used for testing, which means the failure rate is 25%, and I cannot fix the disk (thanks fsck.btrfs) so the only way to get disks usable again is to nuke them.</p>
+<p>I&#8217;m moving to xfs now, at least it&#8217;s what GlusterFS recommended and per history, it&#8217;s much more stable than btrfs, the root fs is still btrfs, I&#8217;ll stick with it too see if single disk performs better.</p>
+<p>BTW, nothing to blame btrfs, they definitely told you this is unstable.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2013/07/22/to-do-list-with-glusterfs/comment-page-1/#comment-3974</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 29 Jul 2013 17:01:58 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1555#comment-3974</guid>
+
+					<description><![CDATA[I&#039;m going to play with btrfs first to make sure data on local system is reliable and expandable, then will move to glusterfs for colo-wise expansion.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m going to play with btrfs first to make sure data on local system is reliable and expandable, then will move to glusterfs for colo-wise expansion.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

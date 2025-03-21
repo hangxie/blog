@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dinner &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/dinner/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Mon, 12 Jul 2010 01:50:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Weird dinner last Friday</title>
+		<link>https://xiehang.com/blog/2010/07/11/weird-dinner-last-friday/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 12 Jul 2010 01:50:11 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[dinner]]></category>
+		<category><![CDATA[management]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1050</guid>
+
+					<description><![CDATA[I recalled it was a weird dinner last Friday &#8230; One guy from US came to visit Shanghai so we had dinner together, during the dinner I found 4 people there are: myself, my ex-boss who&#8217;s working for Microsoft now, my ex-boss&#8217; boss (the visitor, and will move to Microsoft in September), and my ex-boss&#8217; <a href='https://xiehang.com/blog/2010/07/11/weird-dinner-last-friday/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I recalled it was a weird dinner last Friday &#8230;</p>
+<p>One guy from US came to visit Shanghai so we had dinner together, during the dinner I found 4 people there are: myself, my ex-boss who&#8217;s working for Microsoft now, my ex-boss&#8217; boss (the visitor, and will move to Microsoft in September), and my ex-boss&#8217; boss&#8217; boss (that&#8217;s my boss now).</p>
+<p>Glad to see I got upraded &#8211; my current boss was my boss&#8217; boss in my last project, and he was my boss&#8217; boss&#8217; boss in the my project prior to that. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

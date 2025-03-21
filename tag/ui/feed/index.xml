@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>UI &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/ui/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 31 May 2013 01:28:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Moved (back) to Windows</title>
+		<link>https://xiehang.com/blog/2013/05/30/moved-back-to-windows/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 31 May 2013 01:28:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mac]]></category>
+		<category><![CDATA[osx]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[UI]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1521</guid>
+
+					<description><![CDATA[Give up MacBook Pro to someone else, and moved back to PC laptop. I was thinking of running Ubuntu on the new laptop so to fully utilize the 16G memory and 4-core i7 processor. However, after two days&#8217; painful trial, I finally gave up and moved back to Windows, and you can image &#8211; I <a href='https://xiehang.com/blog/2013/05/30/moved-back-to-windows/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Give up MacBook Pro to someone else, and moved back to PC laptop.</p>
+<p>I was thinking of running Ubuntu on the new laptop so to fully utilize the 16G memory and 4-core i7 processor. However, after two days&#8217; painful trial, I finally gave up and moved back to Windows, and you can image &#8211; I moved back to Windows 7 instead of 8.</p>
+<p>The problem with Ubuntu and Windows 8 are similar, they were not designed by following people&#8217;s common sense, or direct sense, whatever you want to name it. I, personally, believe the usability is OSX &gt; Windows 7 (Windows XP as well) &gt; Ubuntu (Windows Vista is almost the same) &gt; Windows 8.</p>
+<p>Heard of Windows 8 is to be upgraded to have something like start button and program folders, etc. though it is still rumor so far. Shall we just name these changes as &#8220;graceful downgrade&#8221; in case they are really true? <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>BTW, I turned on Hyper-Thread on i7 processor so logically, I&#8217;m running a 8-core machine with 16G memory &#8211; this is my dreaming machine several years ago <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New Yahoo Mail UI</title>
+		<link>https://xiehang.com/blog/2012/12/13/new-yahoo-mail-ui/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 13 Dec 2012 20:56:49 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[mail]]></category>
+		<category><![CDATA[UI]]></category>
+		<category><![CDATA[yahoo]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1447</guid>
+
+					<description><![CDATA[I seldom like new UI of product I use, the extreme example is I HATE the new gmail UI whenever it was launched more than a year ago &#8211; it took me quite some time to figure out where is addressbook and where I can manage my domain. However, Yahoo Mail&#8217;s new UI is definitely <a href='https://xiehang.com/blog/2012/12/13/new-yahoo-mail-ui/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I seldom like new UI of product I use, the extreme example is I HATE the new gmail UI whenever it was launched more than a year ago &#8211; it took me quite some time to figure out where is addressbook and where I can manage my domain.</p>
+<p>However, Yahoo Mail&#8217;s new UI is definitely better than previous version, light, clean, and most things are still there &#8211; either it did not change, or it can be easily located.</p>
+<p>Well done, Yahoo.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

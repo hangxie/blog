@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nagiosgraph &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/nagiosgraph/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Wed, 28 Aug 2013 23:34:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Nagiosgraph is not updating</title>
+		<link>https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/</link>
+					<comments>https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 23:34:48 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[nagios]]></category>
+		<category><![CDATA[nagiosgraph]]></category>
+		<category><![CDATA[process_performance_data]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1579</guid>
+
+					<description><![CDATA[Per history, this had been there for several months, seems nagiosgraph&#8217;s rrd data updated  sometime, and it seems this related to upgrade. I never paid too much attention on this as nobody else, except me, watching those performance data graphs. However, today I do need to solve this as it&#8217;s always bothering that you cannot <a href='https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Per history, this had been there for several months, seems nagiosgraph&#8217;s rrd data updated  <strong>sometime</strong>, and it seems this related to upgrade.</p>
+<p>I never paid too much attention on this as nobody else, except me, watching those performance data graphs. However, today I do need to solve this as it&#8217;s always bothering that you cannot get data whenever you do need it.</p>
+<p>Long story short &#8211; and stupid me, obvious a while back whenever I applied my patch to nagios.cfg, I didn&#8217;t comment out the first process_performance_data=0, and obviously second process_performance_data=1 didn&#8217;t overwrite the first one. Also, even with process_performance_data=0 which disable performance data processing, nagios still processes performance data every time it got restarted, and this cause all mysterious problems.</p>
+<p>I do believe nagios behaves wrong in this case &#8211; it&#8217;s a common sense that configuration can be overwritten by later one with same key, and if configuration tells you don&#8217;t do something, DON&#8217;T do it even in edge cases, otherwise people will get confused and made debugging really difficult.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2013/08/28/nagiosgraph-is-not-updating/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

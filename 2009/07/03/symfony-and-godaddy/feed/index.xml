@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Symfony and Godaddy	</title>
+	<atom:link href="https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 04 Oct 2018 06:34:41 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>
+		By: oldiev		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-13611</link>
+
+		<dc:creator><![CDATA[oldiev]]></dc:creator>
+		<pubDate>Thu, 04 Oct 2018 06:34:41 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-13611</guid>
+
+					<description><![CDATA[Since you require composer installed on a server to install Symfony and other PHP frameworks, I don&#039;t think you can do that on shared servers. Because you don&#039;t get composer there. I wouldn&#039;t recommend shared server anyway because of lack of security and performance issues. A better option is some affordable dedicated server like DigitalOcean, unless you know how to set it up. If you don&#039;t have sysadmin experience for that, then you can use Cloudways &lt;a href=&quot;https://www.cloudways.com/en/php-cloud-hosting.php&quot; rel=&quot;nofollow&quot;&gt;PHP MySQL hosting&lt;/a&gt; platform where the server is configured automatically and you get managed digitalocean server. You also get composer pre-installed, so you can install any php framework or CMS you want.]]></description>
+			<content:encoded><![CDATA[<p>Since you require composer installed on a server to install Symfony and other PHP frameworks, I don&#8217;t think you can do that on shared servers. Because you don&#8217;t get composer there. I wouldn&#8217;t recommend shared server anyway because of lack of security and performance issues. A better option is some affordable dedicated server like DigitalOcean, unless you know how to set it up. If you don&#8217;t have sysadmin experience for that, then you can use Cloudways <a href="https://www.cloudways.com/en/php-cloud-hosting.php" rel="nofollow">PHP MySQL hosting</a> platform where the server is configured automatically and you get managed digitalocean server. You also get composer pre-installed, so you can install any php framework or CMS you want.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Problems Hosting Symfony 1.2 (!) sites on Godaddy? &#171; Richtermeister&#8217;s Code - Massacre		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-3827</link>
+
+		<dc:creator><![CDATA[Problems Hosting Symfony 1.2 (!) sites on Godaddy? &#171; Richtermeister&#8217;s Code - Massacre]]></dc:creator>
+		<pubDate>Thu, 10 Jan 2013 18:07:17 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-3827</guid>
+
+					<description><![CDATA[[...] Addendum: Hang from Flying Bug blog just posted some other interesting godaddy tweaks and corrected an indentation error in my original post. Much appreciated - go check out his blog as well: https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Addendum: Hang from Flying Bug blog just posted some other interesting godaddy tweaks and corrected an indentation error in my original post. Much appreciated &#8211; go check out his blog as well: <a href="https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/" rel="nofollow ugc">https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-3595</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 25 Apr 2012 05:43:36 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-3595</guid>
+
+					<description><![CDATA[Found this article from search engine, one of the hotest article from my blog ...
+
+I moved to Amazon AWS several months back (cannot recall the exact date, try search my blog for why, hehe), and I&#039;m going to evaluate Symfony again for a hobby project :-P.]]></description>
+			<content:encoded><![CDATA[<p>Found this article from search engine, one of the hotest article from my blog &#8230;</p>
+<p>I moved to Amazon AWS several months back (cannot recall the exact date, try search my blog for why, hehe), and I&#8217;m going to evaluate Symfony again for a hobby project :-P.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-3368</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 30 Apr 2011 16:05:53 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-3368</guid>
+
+					<description><![CDATA[Guys, I moved to Linode and here is &lt;a href=&quot;https://xiehang.com/blog/2011/02/12/godaddy-vs-linode/&quot; rel=&quot;nofollow&quot;&gt;why&lt;/a&gt;, since Linode offer pretty good VPS in a reasonable price, I no longer have to fight with problems coming from shared Web hosting.
+
+However, still thanks everybody here for your comments.]]></description>
+			<content:encoded><![CDATA[<p>Guys, I moved to Linode and here is <a href="https://xiehang.com/blog/2011/02/12/godaddy-vs-linode/" rel="nofollow">why</a>, since Linode offer pretty good VPS in a reasonable price, I no longer have to fight with problems coming from shared Web hosting.</p>
+<p>However, still thanks everybody here for your comments.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Irvin Gomez		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-3367</link>
+
+		<dc:creator><![CDATA[Irvin Gomez]]></dc:creator>
+		<pubDate>Fri, 08 Apr 2011 05:09:08 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-3367</guid>
+
+					<description><![CDATA[Thanks! this post was very helpful, but besides changing factories.yml, I also had to change file extensions on GoDaddy, so .php used PHP 5.x instead of PHP 5.x FastCGI. 
+
+I got that hint from the following link:
+http://cegeekbook.blogspot.com/2010/07/php-no-input-file-specified-godaddy.html
+
+Hope it helps.]]></description>
+			<content:encoded><![CDATA[<p>Thanks! this post was very helpful, but besides changing factories.yml, I also had to change file extensions on GoDaddy, so .php used PHP 5.x instead of PHP 5.x FastCGI. </p>
+<p>I got that hint from the following link:<br />
+<a href="http://cegeekbook.blogspot.com/2010/07/php-no-input-file-specified-godaddy.html" rel="nofollow ugc">http://cegeekbook.blogspot.com/2010/07/php-no-input-file-specified-godaddy.html</a></p>
+<p>Hope it helps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vks		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-2969</link>
+
+		<dc:creator><![CDATA[vks]]></dc:creator>
+		<pubDate>Fri, 26 Nov 2010 06:17:54 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-2969</guid>
+
+					<description><![CDATA[Thanks for your comment, I did all the thinks you specified here.But Still i have the same issue.
+Empty module and/or action after parsing the URL]]></description>
+			<content:encoded><![CDATA[<p>Thanks for your comment, I did all the thinks you specified here.But Still i have the same issue.<br />
+Empty module and/or action after parsing the URL</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-2882</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Wed, 03 Mar 2010 05:17:17 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-2882</guid>
+
+					<description><![CDATA[Geeze ... I&#039;ve been away from symfony for quite some time.
+
+Seriously, I don&#039;t know the answer, and I don&#039;t have time to dig into it now, wish you luck to get answer from somewhere else.]]></description>
+			<content:encoded><![CDATA[<p>Geeze &#8230; I&#8217;ve been away from symfony for quite some time.</p>
+<p>Seriously, I don&#8217;t know the answer, and I don&#8217;t have time to dig into it now, wish you luck to get answer from somewhere else.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tiago Carvalho		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-2880</link>
+
+		<dc:creator><![CDATA[Tiago Carvalho]]></dc:creator>
+		<pubDate>Wed, 03 Mar 2010 02:05:45 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-2880</guid>
+
+					<description><![CDATA[Hi!
+
+Thanks a lot for your tips! It all worked for me except for one thing.. I can access my site through the dev interface (both frontend_dev.php and backend_dev.php). But I can&#039;t access it via the production environment... It just keeps returning me a non-symfony &quot;404 page not found&quot; page... I guess it must have to be something in .htaccess.. A
+
+Any ideas?
+
+Thanks in advance!]]></description>
+			<content:encoded><![CDATA[<p>Hi!</p>
+<p>Thanks a lot for your tips! It all worked for me except for one thing.. I can access my site through the dev interface (both frontend_dev.php and backend_dev.php). But I can&#8217;t access it via the production environment&#8230; It just keeps returning me a non-symfony &#8220;404 page not found&#8221; page&#8230; I guess it must have to be something in .htaccess.. A</p>
+<p>Any ideas?</p>
+<p>Thanks in advance!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Hang		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-2701</link>
+
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Mon, 21 Sep 2009 02:37:17 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-2701</guid>
+
+					<description><![CDATA[I guess the error message from your first problem is misleading - does it mean &quot;you should launch symfony in symfony directory&quot;?]]></description>
+			<content:encoded><![CDATA[<p>I guess the error message from your first problem is misleading &#8211; does it mean &#8220;you should launch symfony in symfony directory&#8221;?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Abhinav		</title>
+		<link>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-2699</link>
+
+		<dc:creator><![CDATA[Abhinav]]></dc:creator>
+		<pubDate>Fri, 18 Sep 2009 11:28:05 +0000</pubDate>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-2699</guid>
+
+					<description><![CDATA[Hello, and thanks for the help. Actually putting the second fix in seems to be causing the relinking error, and that error goes away when I remove LD_PRELOAD from .bash_profile. However, in both cases, I get this error - 
+
+&quot;You must launch symfony command line with the symfony script&quot;
+
+I did a bit of digging, and this is the first fail case message in symfony.php, supposed to be displayed when $sf_lib_dir is not set.
+
+Part two of my deployment headache is that the empty action/module error refuses to go away, even with the REQUEST_URI solution. However, when I check Symfony settings on the error page, I notice that the sf_lib_dir is correctly set.
+
+Any help would be welcome. Thanks]]></description>
+			<content:encoded><![CDATA[<p>Hello, and thanks for the help. Actually putting the second fix in seems to be causing the relinking error, and that error goes away when I remove LD_PRELOAD from .bash_profile. However, in both cases, I get this error &#8211; </p>
+<p>&#8220;You must launch symfony command line with the symfony script&#8221;</p>
+<p>I did a bit of digging, and this is the first fail case message in symfony.php, supposed to be displayed when $sf_lib_dir is not set.</p>
+<p>Part two of my deployment headache is that the empty action/module error refuses to go away, even with the REQUEST_URI solution. However, when I check Symfony settings on the error page, I notice that the sf_lib_dir is correctly set.</p>
+<p>Any help would be welcome. Thanks</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

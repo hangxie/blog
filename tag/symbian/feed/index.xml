@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>symbian &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/symbian/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Sun, 09 Aug 2009 03:40:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Python for Symbian</title>
+		<link>https://xiehang.com/blog/2009/08/08/python-for-symbian/</link>
+					<comments>https://xiehang.com/blog/2009/08/08/python-for-symbian/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 09 Aug 2009 03:40:06 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[e90]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[symbian]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=600</guid>
+
+					<description><![CDATA[Now &#8230; Python time again, since it seems to be the easiest way to develope some leisure stuffs for my new E90. So here are things to be installed: ActivePython for Windows, at this moment need to use 2.5.x ensymble for Windows, I&#8217;m using 0.28 (for Python 2.5) openssl for Windows, remember download openssl.zip pys60, <a href='https://xiehang.com/blog/2009/08/08/python-for-symbian/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Now &#8230; Python time again, since it seems to be the easiest way to develope some leisure stuffs for my new E90.</p>
+<p>So here are things to be installed:</p>
+<ul>
+<li><a href="http://www.activestate.com/activepython/downloads/">ActivePython</a> for Windows, at this moment need to use 2.5.x</li>
+<li><a href="http://code.google.com/p/ensymble/downloads/list">ensymble</a> for Windows, I&#8217;m using 0.28 (for Python 2.5)</li>
+<li><a href="http://www.stunnel.org/download/binaries.html">openssl</a> for Windows, remember download openssl.zip</li>
+<li><a href="https://garage.maemo.org/frs/?group_id=854&amp;release_id=2763">pys60</a>, current version is 1.9.7, this (the sis file) is for installing to my handset</li>
+</ul>
+<p>Install pys60 to handset is pretty straight forward, except you may have to deal with certificate, etc. &#8211; check those Symbian forum please, I don&#8217;t think my solution is the best (allow to install any software and don&#8217;t check certificate at all).</p>
+<p>Now, install ActivePython on Windows box by following instruction, then create a directory for ensymble (let&#8217;s say C:\Ensymble), unzip the openssl.zip to that directory (all 3 files in total), and then the ensymble_xxx.py &#8211; I changed the name to ensymble.py so that I need to type less whenever I want to use it. As the last step, put C:\Ensymble to your environment variable PATH.</p>
+<p>After everything&#8217;s done, let&#8217;s try the first Python application for Symbian &#8211; pick an open source application from <a href="http://wiki.opensource.nokia.com/projects/PyS60_applications">PyS60 Application Directory</a>, and build it. I was using <a href="http://code.google.com/p/magicvideo/">Magic Video</a> as my first test, download the py file, put it somewhere and then run:</p>
+<p>ensymble.py py2sis &#8211;uid=0x98765432 &#8211;appname=&#8221;MagicVideo&#8221; &#8211;caption=&#8221;Magic Video&#8221; &#8211;version=1.0.0 magicvideo.py magicvideo</p>
+<p>you will get a .sis file in the current directory and that can be installed to handset.</p>
+<p>Remember use uid &gt;0x7fffffff, I didn&#8217;t pay attention to the warning message on the screen and this costed me almost half an hour to figure out why the application cannot be installed.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/08/08/python-for-symbian/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

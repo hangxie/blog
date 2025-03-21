@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>directshow &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/directshow/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 01 May 2009 02:14:29 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<item>
+		<title>Finally, I can preview my video now</title>
+		<link>https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/</link>
+					<comments>https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 16 Apr 2009 21:41:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[directshow]]></category>
+		<category><![CDATA[gnat]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=263</guid>
+
+					<description><![CDATA[After some tough time dealing with DirectShow stuffs, finally I can preview video from my own web cam now. There will be something to be tuned at this moment, like how to arrange the command area and video areas, but I believe I&#8217;ve overcome one of the most difficult stuff. There are still three potential <a href='https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>After some tough time dealing with DirectShow stuffs, finally I can preview video from my own web cam now.</p>
+<p>There will be something to be tuned at this moment, like how to arrange the command area and video areas, but I believe I&#8217;ve overcome one of the most difficult stuff.</p>
+<p>There are still three potential headache ahead:</p>
+<ol>
+<li>P2P communication, theoratically it won&#8217;t be hard as I did it before, but with Ada I have to deal with those UDP stuffs again, just now sure how easy Ada can handle it</li>
+<li>Stream video out, means I need to have my own filter, or, maybe I can find an existing one doing that, but again, I&#8217;m not sure</li>
+<li>Showing streamed video from the other side (the remote window), have no idea so far</li>
+</ol>
+<p>A friend told me I can rely on existing protocols like RSTP or MMS, I have the concerns of violating copyright/patents, but I do some research before picking the protocol I&#8217;m going to use. At this moment I prefer some cross platform protocol, maybe all of them are, but again (yes, again and again), I&#8217;m not sure.</p>
+<p>I will try to see if there anyone who can give me some hints on how to do the layout, by now, I will pause the development for couple of days, take some rest, as I&#8217;ve made what I promised (preview video by the end of this week). <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Creating DirectShow binding</title>
+		<link>https://xiehang.com/blog/2009/04/15/creating-directshow-binding/</link>
+					<comments>https://xiehang.com/blog/2009/04/15/creating-directshow-binding/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 16 Apr 2009 06:01:54 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[directshow]]></category>
+		<category><![CDATA[gnat]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=261</guid>
+
+					<description><![CDATA[I guess I&#8217;ve got all necessary functions from DirectShow for PPCam project, and created a DirectShow binding. It is still partial as I didn&#8217;t check other APIs that are unrelated to PPCam project. I keyed ~1,800 lines of codes today (include blank and comment lines), what I did is reading MSDN, dig out what kind <a href='https://xiehang.com/blog/2009/04/15/creating-directshow-binding/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I guess I&#8217;ve got all necessary functions from DirectShow for PPCam project, and created a DirectShow binding. It is still partial as I didn&#8217;t check other APIs that are unrelated to PPCam project.</p>
+<p>I keyed ~1,800 lines of codes today (include blank and comment lines), what I did is reading MSDN, dig out what kind of APIs I need to use, then check Windows SDK to get the C version of declaration, and write binding. There is <a href="http://www.adapower.org/os/com-simple.html">a great sample</a> from adapower.org, which taught me how to make it.</p>
+<p>Actually this is a nice exercise, using Ada doing DirectShow stuffs is actually using C interface. DirectShow is purely COM based so using OO language, especially C++ is the most natual way, but, I still believe using C is the best way to understand what&#8217;s inside, and this helps me know more about the whole structure, and do help implementing good programs.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/04/15/creating-directshow-binding/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Capture video with  DirectShow</title>
+		<link>https://xiehang.com/blog/2009/04/11/capture-video-with-directshow/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 12 Apr 2009 05:22:34 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[directshow]]></category>
+		<category><![CDATA[gnat]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=238</guid>
+
+					<description><![CDATA[I got a sample from Windows SDK that uses DirectShow to capture video from webcam, it works for now but I&#8217;m still reading, just need to know how much it can fit into my PPCam project. The problem is, I need to make the C program works for me to capture video and put an <a href='https://xiehang.com/blog/2009/04/11/capture-video-with-directshow/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I got a sample from Windows SDK that uses DirectShow to capture video from webcam, it works for now but I&#8217;m still reading, just need to know how much it can fit into my PPCam project.</p>
+<p>The problem is, I need to make the C program works for me to capture video and put an extra filter to grab data and send to the other end, and after that I need to convert the program from C to Ada. Or, I should start from the sample provided by the SDK and convert it to Ada, then see how to get the extra filter.</p>
+<p>I just made the decision to go with the #2 option, it will make more activities in PPCam project, and would let me think more in Ada way.</p>
+<p>By the way, I got all my useful search results from Yahoo, it seems to me Yahoo is not that far away from Google in web search, guess we can slowly get market share back.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Checked in new codes</title>
+		<link>https://xiehang.com/blog/2009/04/04/checked-in-new-codes/</link>
+					<comments>https://xiehang.com/blog/2009/04/04/checked-in-new-codes/#comments</comments>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 05 Apr 2009 07:24:29 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[directshow]]></category>
+		<category><![CDATA[gnat]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=209</guid>
+
+					<description><![CDATA[I just checked in new codes of PPCam to SVN on sourceforge.net, I guess I won&#8217;t spend too much time on visual effect in the future, so what we have now is most likely what we have all the time: no Windows gadget, i.e. no toolbox, no menu, no border, no title bar semi-transparent effect, <a href='https://xiehang.com/blog/2009/04/04/checked-in-new-codes/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I just checked in new codes of PPCam to <a href="http://ppcam.svn.sourceforge.net/viewvc/ppcam/trunk/client/">SVN on sourceforge.net</a>, I guess I won&#8217;t spend too much time on visual effect in the future, so what we have now is most likely what we have all the time:</p>
+<ul>
+<li>no Windows gadget, i.e. no toolbox, no menu, no border, no title bar</li>
+<li>semi-transparent effect, means you can still read content on windows below PPCam</li>
+<li>Moving by any point, means you can click on any position of the window and drag &amp; drop the window to the new place, this is a must as it does not have title bar for this</li>
+</ul>
+<p>Note that this is data driven <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , I learnt the idea from previous music player project &#8211; you can just provide a bmp file, and the application will take top-left point as &#8220;transparent sample&#8221;, then any points in the bmp that has the same color as top-left point will be treated as transparent. This feature makes really easier to change the look and feel.</p>
+<p>Other than these visible changes, that are some codes related changes, may or may not be that interesting:</p>
+<ul>
+<li>Added win32api.ads to include those Win32 APIs that the project needs to use, but are missing in win32ada binding</li>
+<li>PPCam now becomes a dummy top level package, it used to have those data conversion functions but obviously I can use those from win32ada</li>
+<li>Added a bmp to the source, this is the bmp I used to debug/demo</li>
+<li>I&#8217;m trying to turn some functions to procedures whenever I don&#8217;t need a return code, I think this is another C habit needs to be changed</li>
+</ul>
+<p>There will be couple of parts of features to be done in the coming days</p>
+<ol>
+<li>Include vfw features, I haven&#8217;t got any idea so far</li>
+<li>Pop-up menus for the interface to let user enter user name/password/server name, etc</li>
+<li>Network, UDP only, then later on I need to have P2P based on it</li>
+<li>Server, another GNAT Ada program that will be running on a server to handle authentication, port discovery, etc</li>
+</ol>
+<p>I believe this project will be running pretty long thinking of how much I have to learn, if I can make a workable version by June I will be super happy.</p>
+<p>I will try to check in at least every week so to make the project active, I will also post documents (svn first, web site later) so to make it possible for others to understand the whole project well.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://xiehang.com/blog/2009/04/04/checked-in-new-codes/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Writing my own binding</title>
+		<link>https://xiehang.com/blog/2009/04/04/writing-my-own-binding/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 04 Apr 2009 19:27:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[ada]]></category>
+		<category><![CDATA[directshow]]></category>
+		<category><![CDATA[gnat]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/2009/04/04/writing-my-own-binding/</guid>
+
+					<description><![CDATA[Slowly, I found more and more evidence that win32ada is based on really old Win32 APIs, be more precisely, it may support Windows 95 but definitely not Windows NT 4.0. I believe the mainstream Windows platform today is XP, with some Vista, so win32ada misses a lot. I was thinking to create a new package <a href='https://xiehang.com/blog/2009/04/04/writing-my-own-binding/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Slowly, I found more and more evidence that win32ada is based on really old Win32 APIs, be more precisely, it may support Windows 95 but definitely not Windows NT 4.0. I believe the mainstream Windows platform today is XP, with some Vista, so win32ada misses a lot.</p>
+<p>I was thinking to create a new package to include those missing APIs that are necessary to my project, but turned out sometime it is impossible &#8211; some structures are not 4.0 compatible, so most likely I am still programming for Windows 95.</p>
+<p>Now I am, seriously, thinking about creating my own binding, which supports modern Windows APIs, either Vista, or 2008. I can start with manually creating bindings that my project needs, then after making sure I&#8217;m doing the right thing, I can run those tools to create full set binding in a (semi-) automatic way.</p>
+<p>I will try to avoid layered packages, as I don&#8217;t want to do &#8220;use&#8221; unless it is really necessary (such as &#8220;use type&#8221; for operators), but remembering where the definition comes from is really tough &#8211; WinUser? WinDef? WinGDI? I think they are just C functions stay in same name space, so should be safe to put them in same package.</p>
+<p>I know it will be a super big package, but I don&#8217;t think people even want to know about it.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
