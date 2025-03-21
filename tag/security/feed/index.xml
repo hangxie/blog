@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>security &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/security/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Thu, 11 Aug 2022 15:38:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<item>
+		<title>Security is about balance</title>
+		<link>https://xiehang.com/blog/2022/08/11/security-is-about-balance/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Thu, 11 Aug 2022 15:38:10 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1831</guid>
+
+					<description><![CDATA[Someone from security team explained why security is so important, I cannot post original presentation or words here but the rough idea: If security issues cause 25% loss of our revenue, it will be $250K when we make $1M, and it will be $250M whenever we reach $1B revenue, so we should keep improving our <a href='https://xiehang.com/blog/2022/08/11/security-is-about-balance/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Someone from security team explained why security is so important, I cannot post original presentation or words here but the rough idea:</p>
+<blockquote><p>If security issues cause 25% loss of our revenue, it will be $250K when we make $1M, and it will be $250M whenever we reach $1B revenue, so we should keep improving our security figures, like reduce the loss from 25% to 0.25% so we will &#8220;just&#8221; lose $2.5M when we are at $1B.</p></blockquote>
+<p>Makes sense, right?</p>
+<p>Not exactly to me especially thinking how security team deal with &#8220;improvement&#8221;, they tend to make changes without notifying teams being affected, they roll out new stuffs without discussing with teams being affected, they are running in &#8220;god mode&#8221; that nobody can challenge them and/or change their decision.</p>
+<p>Let me make a similar statement:</p>
+<blockquote><p>If security issues cause 25% loss of our revenue now and 0.25% loss in a year, with the impact that our revenue growth 1000x to 10x, our revenue in a year, subtract loss, will be $9.975M instead of $750M, is that a good deal?</p></blockquote>
+<p>Neither is perfect, security is about balance, I&#8217;m not a security expert but I think the most secure system is that has no functionality, store zero data, and offer no interface to access it, in this way it will not be breached, data will not be leaked, and so on. Is that secure enough? Yes for sure, but is that what business wants to be? Not at all.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
