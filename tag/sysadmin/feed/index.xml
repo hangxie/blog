@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Play with Python on Windows</title>
 		<link>https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/</link>
@@ -36,10 +36,10 @@
 
 					<description><![CDATA[As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them. This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying <a href='https://xiehang.com/blog/2013/08/30/play-with-python-on-windows/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>As I mentioned &#8211; I&#8217;m migrating my sysadm tasks from Perl to Python, and Windows is just one of them.</p>
-<p>This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying on HDD. However, I have different requirements for different types of VMs, like for Windows VM, I used to launch them in GUI mode so that I can use another Windows environment, but for Linux and other *nix machines I used to launch them in headless mode and use putty (another neat tool <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ) to access.<span id="more-1583"></span></p>
+<p>This is a real case, I like VirtualBox as a neat visualization container, and spending lot of time on using it, actually there are always 2~3 VMs running on my laptop while another 4~5 lying on HDD. However, I have different requirements for different types of VMs, like for Windows VM, I used to launch them in GUI mode so that I can use another Windows environment, but for Linux and other *nix machines I used to launch them in headless mode and use putty (another neat tool <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ) to access.<span id="more-1583"></span></p>
 <p>The problem is that VirtualBox&#8217;s console does not support starting VMs in headless mode, so I created some BAT files to do it, but this makes things complicated that I have to go to two places to do actually one thing.</p>
 <p>Now here comes Python, plus VirtualBox guys kindly released a Python SDK. It was for Python 2.x, but no wonder some smart guy <a title="vboxapi Python 3" href="https://github.com/jbuergel/vboxapi-py3" target="_blank">convert it to work with Python 3</a>. I was thinking of using win32 binding, but later on found Tkinter is good enough for this purpose. Codes posted below, feel free to take it as long as you can mention my name and link back to this post (I hate GPL &#8230; you can guess I&#8217;m a fan of BSD).</p>
-<p>I&#8217;ll do some more enhancement if I have to, but so far it can show button status based on VM state, and start/stop/reset the VMs, that&#8217;s pretty all I want at this moment. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+<p>I&#8217;ll do some more enhancement if I have to, but so far it can show button status based on VM state, and start/stop/reset the VMs, that&#8217;s pretty all I want at this moment. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
 [python]<br />
 import sys<br />
 import tkinter<br />

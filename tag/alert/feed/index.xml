@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Geeze, long time no see</title>
 		<link>https://xiehang.com/blog/2011/09/18/geeze-long-time-no-see/</link>
@@ -34,7 +34,7 @@
 					<description><![CDATA[Just found that I&#8217;ve been away from here or more than a month. Hmmm &#8230; actually I don&#8217;t have much to update. I was busy with all legacy systems, putting on monitoring facilities, establish deployment processes, and sort out oncall schedule, etc. People HATE this &#8211; yes you didn&#8217;t hear wrong, people hate this. One <a href='https://xiehang.com/blog/2011/09/18/geeze-long-time-no-see/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>Just found that I&#8217;ve been away from here or more than a month.</p>
 <p>Hmmm &#8230; actually I don&#8217;t have much to update. I was busy with all legacy systems, putting on monitoring facilities, establish deployment processes, and sort out oncall schedule, etc. People HATE this &#8211; yes you didn&#8217;t hear wrong, people hate this. One of them mentioned this in a IM conference, saying &#8220;after launched monitoring facilities, I never got good sleep, and was always panic on phone call and SMS&#8221;.</p>
-<p>These systems never been monitored, so nobody knows if there is anything with it <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> . In old days, the only way project team got notified about system problem was either customer care ring NOC, or another service relies on the system yelling at them. It seems people feel better with that kind of escallation. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>These systems never been monitored, so nobody knows if there is anything with it <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> . In old days, the only way project team got notified about system problem was either customer care ring NOC, or another service relies on the system yelling at them. It seems people feel better with that kind of escallation. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Anyway, they are doing something more aggressive now which I have to stop them from time to time &#8211; since they want to know potential problem of the system, they put lots of monitoring facilities on, and some of them generate hundreds or even thousands of alerts daily. You should already know the problem &#8211; since there are way too many alerts, so people choose to ignore ALL of them, which turn the monitoring stuffs totally uesless other than wasting money (bandwith and SMS cost).</p>
 <p>There is still a long way to go to get people understand what&#8217;s the right way to do monitoring. I don&#8217;t think I have enough time to do this &#8230; pity.</p>
 ]]></content:encoded>

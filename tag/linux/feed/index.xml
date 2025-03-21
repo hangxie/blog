@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Ubuntu 22.04</title>
 		<link>https://xiehang.com/blog/2022/04/26/ubuntu-22-04/</link>
@@ -76,7 +76,7 @@ focus down<br />
 screen -t s4 4 ssh s4<br />
 focus top</p></blockquote>
 <p>And you can see the screen shot at right.</p>
-<p>This is exactly what I want. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>This is exactly what I want. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -156,7 +156,7 @@ alias update=&#8217;sudo portmanager -u&#8217;</li>
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=834</guid>
 
 					<description><![CDATA[Brand new 😀 Playing with Sabayon now, an &#8220;out-of-box&#8221; gentoo, seems fun, but I have to write down something as I never touched this before: rc-update/rc-status to add/list current enabled services &#8220;emerge &#8211;sync&#8221; to sync package meta data, and &#8220;emerge &#8211;search&#8221; to search, then &#8220;emerge pkg&#8221; to install package &#8220;pkg&#8221; &#8211; it takes some time <a href='https://xiehang.com/blog/2009/12/30/new-to-gentoo/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Brand new <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Brand new <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Playing with Sabayon now, an &#8220;out-of-box&#8221; gentoo, seems fun, but I have to write down something as I never touched this before:</p>
 <ul>
 <li>rc-update/rc-status to add/list current enabled services</li>
@@ -271,7 +271,7 @@ alias update=&#8217;sudo portmanager -u&#8217;</li>
 <p>What I planned for LVS:</p>
 <ul>
 <li>192.168.1.99 will be VIP</li>
-<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
 <li>f1 (192.168.1.101) to f4 (192.168.1.104) will be real server</li>
 <li>will do DR mode (I think it is called single-B on most L4 switches &#8230;)</li>
 </ul>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Virtualization, GlusterFS, and automation</title>
 		<link>https://xiehang.com/blog/2014/01/27/virtualization-glusterfs-and-automation/</link>
@@ -114,7 +114,7 @@ sudo virsh edit test-vm<br />
 [shell]<br />
 sudo virsh start &#8211;console test-vm<br />
 [/shell]</p>
-<p>and everything should be there <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>and everything should be there <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 <p>If you have problem with the VM and want to start over, you can:<br />
 [shell]sudo virsh reset test-vm[/shell]<br />
 to power-cycle the VM,<br />

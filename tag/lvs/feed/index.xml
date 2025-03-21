@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>keepalived and ipvsadm</title>
 		<link>https://xiehang.com/blog/2009/11/26/keepalived-and-ipvsadm/</link>
@@ -57,7 +57,7 @@
 <p>What I planned for LVS:</p>
 <ul>
 <li>192.168.1.99 will be VIP</li>
-<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
 <li>f1 (192.168.1.101) to f4 (192.168.1.104) will be real server</li>
 <li>will do DR mode (I think it is called single-B on most L4 switches &#8230;)</li>
 </ul>

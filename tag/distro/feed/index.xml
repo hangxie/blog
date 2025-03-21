@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Ubuntu 22.04</title>
 		<link>https://xiehang.com/blog/2022/04/26/ubuntu-22-04/</link>
@@ -116,7 +116,7 @@ alias update=&#8217;sudo portmanager -u&#8217;</li>
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=641</guid>
 
 					<description><![CDATA[I&#8217;m trying to test mysql replication and mysql proxy, and later on will try some grid thing to see how current web sites setup their environment. This is a great chance to me to try out different Linux distro, running in VirtualBox on my home Vista machine (4 core 6G mem 😉 ). I did <a href='https://xiehang.com/blog/2009/08/26/linux-distro/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>I&#8217;m trying to test mysql replication and mysql proxy, and later on will try some grid thing to see how current web sites setup their environment. This is a great chance to me to try out different Linux distro, running in VirtualBox on my home Vista machine (4 core 6G mem <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
+										<content:encoded><![CDATA[<p>I&#8217;m trying to test mysql replication and mysql proxy, and later on will try some grid thing to see how current web sites setup their environment. This is a great chance to me to try out different Linux distro, running in VirtualBox on my home Vista machine (4 core 6G mem <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
 <p>I did some research around and tried to figure out what are the most popular distro, after trying <a href="http://www.wikipedia.com/">wikipedia</a>, <a href="http://distrowatch.com/">distrowatch</a>, and some other sites, I listed candidates here (by priority):</p>
 <ul>
 <li>Ubuntu and Debian</li>
@@ -127,7 +127,7 @@ alias update=&#8217;sudo portmanager -u&#8217;</li>
 <li>Mandriva</li>
 </ul>
 <p>Soon I gave up Gentoo as it may take too long to build up the system, though I&#8217;m not quite sure, and I believe small start-up cannot afford the time. I tried Slackware which &#8230; I cannot figure out how to proceed installation, I believe I&#8217;m just to stupid to dig things out but obviously it is not what I want. Mandriva finally became one (I can install 6 distro in total), though it is not that easy to find its 64-bit free edition.</p>
-<p>Alright, time to install &#8211; all these distro are really friendly on installation. Put a disc in, boot machines up, and instruction after that were all clear enough. All these distro have both graphical and text mode, and I used to choose text mode. Mandriva and openSUSE don&#8217;t have SSH server installed by default, which is not that good, and their firewall setup by default does not open for SSH (sure thing as SSH server is not installed). Ubuntu/Debian and Fedora/CentOS by default installed quite a lot packages that I don&#8217;t want them at all, but anyway it&#8217;s better than missing packages <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> . All distro asked for my own account but at least Mandriva didn&#8217;t install sudo for me, which is tricky. I have to say, Ubuntu is doing great job on these stuffs, almost made everything I want on the default installation.</p>
+<p>Alright, time to install &#8211; all these distro are really friendly on installation. Put a disc in, boot machines up, and instruction after that were all clear enough. All these distro have both graphical and text mode, and I used to choose text mode. Mandriva and openSUSE don&#8217;t have SSH server installed by default, which is not that good, and their firewall setup by default does not open for SSH (sure thing as SSH server is not installed). Ubuntu/Debian and Fedora/CentOS by default installed quite a lot packages that I don&#8217;t want them at all, but anyway it&#8217;s better than missing packages <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> . All distro asked for my own account but at least Mandriva didn&#8217;t install sudo for me, which is tricky. I have to say, Ubuntu is doing great job on these stuffs, almost made everything I want on the default installation.</p>
 <p>Now, after installation, I want to do couple of things:</p>
 <ol>
 <li>Remove unrelated packages</li>
@@ -139,7 +139,7 @@ alias update=&#8217;sudo portmanager -u&#8217;</li>
 <p>openSUSE got another problem is that CD/DVD is by default in the distro repository (guess it is because I installed from DVD), so without removing the repo, every time it would ask me put the installation disc in, which is too bad. Luckily, zypper clearly told me how to remove a repo entry and things worked perfectly after that.</p>
 <p>Mandriva has the same problem as openSUSE and removing CD/DVD from repository is not supported by urpmi, but find out the configuration file is not that hard, and &#8220;#&#8221; is the standard way to comment entries out, which is fair enough.</p>
 <p>I haven&#8217;t tested more yet, but based on my experience playing with couple of distros, I would like to rate Ubuntu and Debian as the best, Fedora is really close to these two, Mandriva and openSUSE is a little bit behind, and CentOS is something better to avoid.</p>
-<p>All about installation, nothing else. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>All about installation, nothing else. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/08/26/linux-distro/feed/</wfw:commentRss>

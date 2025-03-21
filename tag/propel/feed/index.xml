@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Doctrine vs. Propel</title>
 		<link>https://xiehang.com/blog/2009/06/29/doctrine-vs-propel/</link>
@@ -33,7 +33,7 @@
 
 					<description><![CDATA[I&#8217;m using symfony 1.2 now and it can work with both Doctrine and Propel. Frankly speaking, I don&#8217;t have any ideas of which one is better, but thinking of Doctrine was added in 1.2 while Propel was there since 1.0, I would assume Doctrine is better (otherwise, why bother?). Here are some &#8220;formal&#8221; evaluation of <a href='https://xiehang.com/blog/2009/06/29/doctrine-vs-propel/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>I&#8217;m using symfony 1.2 now and it can work with both Doctrine and Propel. Frankly speaking, I don&#8217;t have any ideas of which one is better, but thinking of Doctrine was added in 1.2 while Propel was there since 1.0, I would assume Doctrine is better (otherwise, why bother?).</p>
-<p>Here are some &#8220;formal&#8221; evaluation of Doctrine and Propel, seems I made the right guess <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Here are some &#8220;formal&#8221; evaluation of Doctrine and Propel, seems I made the right guess <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <ul>
 <li>http://blog.centresource.com/2007/04/10/doctrine-vs-propel-in-symfony/</li>
 <li>http://codeutopia.net/blog/2009/05/16/doctrine-vs-propel-2009-update/</li>

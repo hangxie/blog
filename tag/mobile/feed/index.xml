@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Cordova</title>
 		<link>https://xiehang.com/blog/2013/01/06/cordova/</link>
@@ -206,7 +206,7 @@ BTW, I checked 900 in a Microsoft store &#8211; doesn&#8217;t seem to be a great
 <p>I upgraded my Windows VM from XP to 7 so that I can install full set of Visual Studio Express tools thus I can develop Windows Phone 7 applications, at the same time, I moved back to Eclipse from NetBeans for Android. Also, I did some research (little to none, though), found <a href="http://monodevelop.com/">MonoDevelop</a> seems like a pretty promising tool though plugins for mobile platforms are not free.</p>
 <p>I don&#8217;t have enough time to do serious development &#8230; Client side software development is still a headache to me. I have to recall how I made the music player last time &#8211; it took me more than a year to did everything but at least I had a runnable version within a month, which is not that bad.</p>
 <p>My current plan is build up a Amazon AWS console for all three major platforms (did I mention this before?), wish I can get things done in a month or two.</p>
-<p>I just spend too much time on the way to the office, need to think about a solution. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I just spend too much time on the way to the office, need to think about a solution. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -254,7 +254,7 @@ BTW, I checked 900 in a Microsoft store &#8211; doesn&#8217;t seem to be a great
 
 					<description><![CDATA[This is an old model, but I&#8217;ve been expecting for it for quite some time. Now I have one in my hand, it is pretty much what I want for all these years 😛 &#8211; QWERTY keyboard, wireless and cellular connection, display is big enough, and, phone is big enough :D. Pity it does not <a href='https://xiehang.com/blog/2009/07/18/nokia-e90/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>This is an old model, but I&#8217;ve been expecting for it for quite some time.</p>
-<p>Now I have one in my hand, it is pretty much what I want for all these years <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; QWERTY keyboard, wireless and cellular connection, display is big enough, and, phone is big enough :D. Pity it does not support 3G on AT&amp;T, but I guess EDGE will be good enough since I was on it with my blackberry.</p>
+<p>Now I have one in my hand, it is pretty much what I want for all these years <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; QWERTY keyboard, wireless and cellular connection, display is big enough, and, phone is big enough :D. Pity it does not support 3G on AT&amp;T, but I guess EDGE will be good enough since I was on it with my blackberry.</p>
 <p>I haven&#8217;t found enough software for it, but at least I have putty now so anything else could be delayed (yes, I&#8217;m still looking). Now I want a good connection manager (say, switch between wifi and cellular network automatically), some games (boring games to kill time), and I need a good Jabber client (or a multiple protocol client). Sure I wish all these can be free, but I will pay some if they are good.</p>
 <p>It&#8217;s weird to me that Microsoft has their messenger client on Symbian, while Yahoo and Google don&#8217;t have one. If I understand correctly, Symbian is one of the major competitor of Windows Mobile, so what&#8217;s the logic behind all these?</p>
 ]]></content:encoded>

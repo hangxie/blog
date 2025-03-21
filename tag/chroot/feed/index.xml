@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Keep playing yum, rpmbuild, and chroot</title>
 		<link>https://xiehang.com/blog/2012/12/14/keep-playing-yum-rpmbuild-and-chroot/</link>
@@ -36,7 +36,7 @@
 
 					<description><![CDATA[It&#8217;s pretty fun, now I can create a job in jenkins, then launch two build script, one for CentOS5 and the other for CentOS6, both of them will build x86_64 and i386 packages. setarch is my friend to save my effort on creating 32-bit images over 64-bit system 😛 , however, I still need to <a href='https://xiehang.com/blog/2012/12/14/keep-playing-yum-rpmbuild-and-chroot/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>It&#8217;s pretty fun, now I can create a job in jenkins, then launch two build script, one for CentOS5 and the other for CentOS6, both of them will build x86_64 and i386 packages.</p>
-<p>setarch is my friend to save my effort on creating 32-bit images over 64-bit system <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , however, I still need to verify if the 32-bit packages is actually working for 32-bit platform.</p>
+<p>setarch is my friend to save my effort on creating 32-bit images over 64-bit system <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , however, I still need to verify if the 32-bit packages is actually working for 32-bit platform.</p>
 ]]></content:encoded>
 					
 		
@@ -59,7 +59,7 @@
 										<content:encoded><![CDATA[<p>My colleague setup a jenkins to do nightly and on demand build, it works perfect till last week, whenever we decided to move some components to rpm based packaging so to ease the production deployment and to reproduce the bug.</p>
 <p>The problem is, whenever you have multiple jobs in jenkins, you cannot yum/rpm install packages in different versions. A simple case for us is that we are running boost-1.44, while some team who replies on us requested a new version of boost, we cannot build two set of jobs at same time.<span id="more-1437"></span></p>
 <p>So I came up with a idea of setting something that can islolate jenkins jobs. Actually I was thinking of OpenVZ at very beginning, but later on I figured out it may be too complicate to us at least at this stage. I&#8217;m still keeping an eye on OpenVZ, just in case we meet some chroot-cannot-solve problem I may give it a try.</p>
-<p>Back to original topic &#8211; I need to have a way to setup an isolated environment for jenkins, it should be easy to create/destroy, while use all standard (CentOS) tools to manage packages. I guess what I did works in Debin/Ubuntu as well &#8211; you just need to replace all yum with apt, and rpm with dpkg <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Back to original topic &#8211; I need to have a way to setup an isolated environment for jenkins, it should be easy to create/destroy, while use all standard (CentOS) tools to manage packages. I guess what I did works in Debin/Ubuntu as well &#8211; you just need to replace all yum with apt, and rpm with dpkg <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>First let&#8217;s create a snapshot of CentOS image first, you don&#8217;t have to create the image if you don&#8217;t care of the speed and network traffic too much, what&#8217;s being done here can put into jenkins jobs but in my case the speed is about 10 times faster by using a snapshot, and definitely it reduce the network data flow (my image has minimum set of development packages, even it installed limited packages, it still need to pull ~300M data from CentOS repo, but sure if you have setup your own repo, that&#8217;s another story).</p>
 <p>You should have some common sense of replacing versions/locations below to meet your need, and of course all commands need to be run as root (sudo please):</p>
 <ol>

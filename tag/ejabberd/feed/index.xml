@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Fixes applied after upgrading to 14.04 LTS</title>
 		<link>https://xiehang.com/blog/2014/04/21/fixes-applied-after-upgrading-to-14-04-lts/</link>
@@ -62,7 +62,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1605</guid>
 
 					<description><![CDATA[Alright, a quick summary on XMPP before Halloween 😉 ejabberd is up and running with 3 nodes in the cluster, and having data replicated to all 3 nodes thus service will be up and running as long as there is at least one node alive. With SleekXMPP created 5M which is much faster then ejabberdctl, <a href='https://xiehang.com/blog/2013/10/31/slowly-making-progress-on-xmpp/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Alright, a quick summary on XMPP before Halloween <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Alright, a quick summary on XMPP before Halloween <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>ejabberd is up and running with 3 nodes in the cluster, and having data replicated to all 3 nodes thus service will be up and running as long as there is at least one node alive. With SleekXMPP created 5M which is much faster then ejabberdctl, created 10,000 pubsub nodes so that I can do announcement to user groups, but seems I need to recreate them as they are currently all belong to admin account, which does not fit into real world. pubsub is working as well, but I need to find another solution with better performance &#8211; it&#8217;s current about 1 subscribe/second, and seems most time was spent on authentication, so I need a feature of &#8220;subscribe for others&#8221; to speed up the test deployment, though this is not necessary in real production. I haven&#8217;t test publishing information yet.<span id="more-1605"></span></p>
 <p>Next step I need to do information publishing, for online and offline users, plus test how many messages I can queue, and who can do the announcement. Also, or more important, I need to test mnesia fragment which will make the cluster truly expandable. I think I&#8217;m going to create some &#8220;core&#8221; nodes to store fragmented data, and some other non-core nodes to handle connections. Once this is tested I believe everything is good for production.</p>
 <p>I won&#8217;t do anything regarding websockets as target client will be an App, also standard for XMPP over websocket is still quite unstable thus it could waste more if I work on it more.</p>

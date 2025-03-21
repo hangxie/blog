@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Upgrade MK802III to Bob&#8217;s Finless ROM</title>
 		<link>https://xiehang.com/blog/2013/01/17/upgrade-mk802iii-to-bobs-finless-rom/</link>
@@ -121,7 +121,7 @@ Alright, I&#8217;m kidding … you just need a Windows machine, I tried Windows 
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1469</guid>
 
 					<description><![CDATA[Playing with this neat tiny computer and was trying to run Ubuntu on it but hit all sort of problem, and, at last, I think I bricked it. 😀 Now to take it back, I need a Windows machine (sigh&#8230;) to flush the ROM as I cannot find something similiar to RKAndroidTool.exe for Mac. I <a href='https://xiehang.com/blog/2013/01/15/mk802iii/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Playing with this neat tiny computer and was trying to run Ubuntu on it but hit all sort of problem, and, at last, I think I bricked it. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Playing with this neat tiny computer and was trying to run Ubuntu on it but hit all sort of problem, and, at last, I think I bricked it. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Now to take it back, I need a Windows machine (sigh&#8230;) to flush the ROM as I cannot find something similiar to RKAndroidTool.exe for Mac. I suspect it&#8217;s some sort of TFTP clients but just don&#8217;t want to dig in more.</p>
 <p>Later on I found a Windows 8 machine running there but again I cannot play with MK802III as driver could not be found, search the Web &#8230; it was said <a href="http://vondroid.com/threads/rk3066-drivers-for-windows-8.830/">Windows 7 driver should work</a>, but you have to <a href="http://laslow.net/2012/03/14/disable-driver-signature-enforcement-in-windows-8/">disable Windows 8&#8217;s driver signature enforcement</a>. During the search I also found something pretty useful, to <a href="http://www.lostintechnology.com/windows/how-to-find-drivers-for-unknown-devices-in-windows/">dig out unknown devices on Windows</a>.</p>
 <p>Will play with MK802III again tonight.</p>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>&#8220;Lovely&#8221; MySQL official web site</title>
 		<link>https://xiehang.com/blog/2013/02/12/lovely-mysql-official-web-site/</link>
@@ -224,7 +224,7 @@ actually I should have got it solve earlier if I search on the web, there is <a 
     path_info_key: REQUEST_URI</pre>
 </blockquote>
 <p>be careful with intending, original blog seems not doing the right thing and put &#8220;request&#8221; and &#8220;param&#8221; in same level, which is wrong.</p>
-<p>Alright, by this time you will be able to play with symfony on shared hosting with godaddy. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Alright, by this time you will be able to play with symfony on shared hosting with godaddy. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/feed/</wfw:commentRss>

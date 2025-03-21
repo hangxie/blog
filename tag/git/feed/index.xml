@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>git rebase till the first commit</title>
 		<link>https://xiehang.com/blog/2015/04/08/git-rebase-till-the-first-commit/</link>
@@ -55,7 +55,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1700</guid>
 
 					<description><![CDATA[I&#8217;m working for the big chip company now, sound a little bit weird, though 😉 . Anyway, I&#8217;m sitting in backend team focusing on DevOps, I guess I will be in this mixed role till we find a dedicated DevOps guy. I guess whenever that happens, I&#8217;ve already finished monitoring facility (plus logistical stuffs like <a href='https://xiehang.com/blog/2014/07/06/settled-down/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>I&#8217;m working for the big chip company now, sound a little bit weird, though <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+										<content:encoded><![CDATA[<p>I&#8217;m working for the big chip company now, sound a little bit weird, though <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 <p>Anyway, I&#8217;m sitting in backend team focusing on DevOps, I guess I will be in this mixed role till we find a dedicated DevOps guy. I guess whenever that happens, I&#8217;ve already finished monitoring facility (plus logistical stuffs like on-call schedule, etc.), and should have finished the plan to migrate from Rackspace to AWS.</p>
 <p>Everything works smoothly so far except git &#8211; I admit current company is using git in a modern way, but I don&#8217;t think previous company was doing something wrong. Anyway, I believe people do have different ideas of how to use git, I just have to fit into the company&#8217;s style.</p>
 <p>I don&#8217;t quite like saltstack although I&#8217;m still trying to get familiar with it. However, before I raise this as a concern to the team, I&#8217;d like to make sure everything that saltstack is doing can be done by cfengine.</p>

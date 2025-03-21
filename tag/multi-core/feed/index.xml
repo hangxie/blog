@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Cassandra and multi-core</title>
 		<link>https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/</link>
@@ -35,7 +35,7 @@
 					<description><![CDATA[It seems Cassandra creates a big pile of threads for different tasks, I didn&#8217;t step into details, but I&#8217;m pretty sure it has more than 40 threads with default setting on a 2-nodes cluster. So multi core may not be a concern, as all these threads can run on different cores to fully utilize the <a href='https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>It seems Cassandra creates a big pile of threads for different tasks, I didn&#8217;t step into details, but I&#8217;m pretty sure it has more than 40 threads with default setting on a 2-nodes cluster. So multi core may not be a concern, as all these threads can run on different cores to fully utilize the CPU resource.</p>
 <p>However, my tests show something really worry me &#8211; multi-node cluster performs worse than single node (due to inter-node communication I believe), and multi-cores deployment is slower than single-core deployment (this is something I don&#8217;t quite understand, may be because of L1/L2 cache?).</p>
-<p>I need some hardware to test it as well, as VM is not that good for this kind of test. Then I suddenly recall I still have some 8-core/16G boxes in company sitting idle there, I can use one or two to do the test for sure <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I need some hardware to test it as well, as VM is not that good for this kind of test. Then I suddenly recall I still have some 8-core/16G boxes in company sitting idle there, I can use one or two to do the test for sure <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2010/01/18/cassandra-and-multi-core/feed/</wfw:commentRss>

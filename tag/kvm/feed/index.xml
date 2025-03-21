@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Virtualization again</title>
 		<link>https://xiehang.com/blog/2012/08/07/virtualization-again/</link>
@@ -33,7 +33,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1382</guid>
 
 					<description><![CDATA[Time to play with Virutalization again, this time I&#8217;m using kvm on CentOS 6, which has pretty many documentation but do need to pay more attention on details &#8211; I was locked out of the box last night after changing the network setting (with mistakes for sure 🙁 ), this should be avoided for anyone <a href='https://xiehang.com/blog/2012/08/07/virtualization-again/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Time to play with Virutalization again, this time I&#8217;m using kvm on CentOS 6, which has pretty many documentation but do need to pay more attention on details &#8211; I was locked out of the box last night after changing the network setting (with mistakes for sure <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ), this should be avoided for anyone who&#8217;s going to do this. Again, stay beside your machine whenever you are to do the initial setup.</p>
+										<content:encoded><![CDATA[<p>Time to play with Virutalization again, this time I&#8217;m using kvm on CentOS 6, which has pretty many documentation but do need to pay more attention on details &#8211; I was locked out of the box last night after changing the network setting (with mistakes for sure <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ), this should be avoided for anyone who&#8217;s going to do this. Again, stay beside your machine whenever you are to do the initial setup.</p>
 <p>After network setup is done, everything else is pretty smoothy, just need to read lots of man pages to know syntax of those qemu and virt-* commands. I repeated several times by virt-install, then virsh destroy and virsh undefine, etc., then virt-install again. There should be some better way to change configuration for existing VMs but for me, it&#8217;s much more easier to run from scratch.</p>
 <p>Now I have 4 VMs running on a 8-cores/32G box, it seems everything&#8217;s OK so far, but I need to do some more tests &#8211; especially performance test &#8211; before carrying on.</p>
 <p>BTW, a VNC viewer plus ssh tunnel is a must to do the setup, since I still haven&#8217;t figure out how to auto-installation, i.e. touchless, or installation without manually involve the process.</p>

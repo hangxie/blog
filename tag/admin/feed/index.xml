@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Unattended Ubuntu VM installation with preseed</title>
 		<link>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/</link>
@@ -99,7 +99,7 @@ sudo virt-install &#8211;name ubuntu-test \<br />
 <li>host name set to some-special-name if DHCP does not provide valid one</li>
 </ul>
 <p>To make things better, you can configure your DHCP server to have MAC address map to some good name and IP address, then add &#8220;&#8211;mac=52:54:00:xx:xx:xx&#8221; to virt-install command line, the host name and domain from the DHCP server will have higher priority.</p>
-<p>Play with it, you will like it. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Play with it, you will like it. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/feed/</wfw:commentRss>

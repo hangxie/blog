@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Keep playing yum, rpmbuild, and chroot</title>
 		<link>https://xiehang.com/blog/2012/12/14/keep-playing-yum-rpmbuild-and-chroot/</link>
@@ -36,7 +36,7 @@
 
 					<description><![CDATA[It&#8217;s pretty fun, now I can create a job in jenkins, then launch two build script, one for CentOS5 and the other for CentOS6, both of them will build x86_64 and i386 packages. setarch is my friend to save my effort on creating 32-bit images over 64-bit system 😛 , however, I still need to <a href='https://xiehang.com/blog/2012/12/14/keep-playing-yum-rpmbuild-and-chroot/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>It&#8217;s pretty fun, now I can create a job in jenkins, then launch two build script, one for CentOS5 and the other for CentOS6, both of them will build x86_64 and i386 packages.</p>
-<p>setarch is my friend to save my effort on creating 32-bit images over 64-bit system <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , however, I still need to verify if the 32-bit packages is actually working for 32-bit platform.</p>
+<p>setarch is my friend to save my effort on creating 32-bit images over 64-bit system <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , however, I still need to verify if the 32-bit packages is actually working for 32-bit platform.</p>
 ]]></content:encoded>
 					
 		

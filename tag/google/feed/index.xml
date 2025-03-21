@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Move to static site</title>
 		<link>https://xiehang.com/blog/2022/03/04/move-to-static-site/</link>
@@ -79,7 +79,7 @@
 
 					<description><![CDATA[Google offers life time free tier: https://cloud.google.com/free/ Running this and couple of other websites on GCE now, saves me several bucks a month 😀]]></description>
 										<content:encoded><![CDATA[<p>Google offers life time free tier: <a href="https://cloud.google.com/free/">https://cloud.google.com/free/</a></p>
-<p>Running this and couple of other websites on GCE now, saves me several bucks a month <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Running this and couple of other websites on GCE now, saves me several bucks a month <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -121,7 +121,7 @@
 
 					<description><![CDATA[This is to see how things are working, and try to get some idea to help my term extraction work. There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please 😛 <a href='https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>This is to see how things are working, and try to get some idea to help my term extraction work.</p>
-<p>There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>There will be some blank areas from now (till Google team approves my adsense account), don&#8217;t feel weird if you see so, and in the future, once you see an ad, click it please <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2012/03/13/playing-with-adsense-now/feed/</wfw:commentRss>
@@ -171,7 +171,7 @@
 <li>I will be absolutely abnormal if I still don&#8217;t have lunch even if the company provides free lunch</li>
 </ul>
 <p>So the conclusion is that I will stay here for some time, even I move on in the future, google can hardly be my destination.</p>
-<p>Pity to google &#8211; I have some friends in China are really good in this area, but none of them works for google, could be because of any reasons above <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Pity to google &#8211; I have some friends in China are really good in this area, but none of them works for google, could be because of any reasons above <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 		
@@ -190,7 +190,7 @@
 
 					<description><![CDATA[It was said Acer is shipping netbook with Google&#8217;s Android now. I&#8217;m happy to see Google steps into the area that Intel and Microsoft are competing, and maybe Nokia. I will be more happy to see Google gets defeated 😉]]></description>
 										<content:encoded><![CDATA[<p>It was said Acer is shipping netbook with Google&#8217;s Android now.</p>
-<p>I&#8217;m happy to see Google steps into the area that Intel and Microsoft are competing, and maybe Nokia. I will be more happy to see Google gets defeated <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I&#8217;m happy to see Google steps into the area that Intel and Microsoft are competing, and maybe Nokia. I will be more happy to see Google gets defeated <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -213,7 +213,7 @@
 					<description><![CDATA[Boss asked me check out Google&#8217;s App Engine, and said that&#8217;s cool and could be the direction that we are going to move to, though we may only serve internal customers. I&#8217;m still playing with it &#8211; I&#8217;m not familiar with Python no Java, and I don&#8217;t like them too much, but I can try. <a href='https://xiehang.com/blog/2009/05/20/google-app-engine/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>Boss asked me check out Google&#8217;s App Engine, and said that&#8217;s cool and could be the direction that we are going to move to, though we may only serve internal customers.</p>
 <p>I&#8217;m still playing with it &#8211; I&#8217;m not familiar with Python no Java, and I don&#8217;t like them too much, but I can try.</p>
-<p>Is grid/cloud the right thing to go? Doubt, but since there are so many experts take it seriously as future, let&#8217;s assume it is the direction. It may like &#8220;open system&#8221;, or &#8220;client servr&#8221;, or &#8220;3-tiers achitect&#8221;, or &#8220;go web&#8221;, or &#8220;virtualization&#8221; &#8211; all these words used to be fancy or cool, but later on they just become our daily life in development. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Is grid/cloud the right thing to go? Doubt, but since there are so many experts take it seriously as future, let&#8217;s assume it is the direction. It may like &#8220;open system&#8221;, or &#8220;client servr&#8221;, or &#8220;3-tiers achitect&#8221;, or &#8220;go web&#8221;, or &#8220;virtualization&#8221; &#8211; all these words used to be fancy or cool, but later on they just become our daily life in development. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Finally, I can preview my video now</title>
 		<link>https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/</link>
@@ -42,7 +42,7 @@
 <li>Showing streamed video from the other side (the remote window), have no idea so far</li>
 </ol>
 <p>A friend told me I can rely on existing protocols like RSTP or MMS, I have the concerns of violating copyright/patents, but I do some research before picking the protocol I&#8217;m going to use. At this moment I prefer some cross platform protocol, maybe all of them are, but again (yes, again and again), I&#8217;m not sure.</p>
-<p>I will try to see if there anyone who can give me some hints on how to do the layout, by now, I will pause the development for couple of days, take some rest, as I&#8217;ve made what I promised (preview video by the end of this week). <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I will try to see if there anyone who can give me some hints on how to do the layout, by now, I will pause the development for couple of days, take some rest, as I&#8217;ve made what I promised (preview video by the end of this week). <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/feed/</wfw:commentRss>
@@ -116,7 +116,7 @@
 <li>semi-transparent effect, means you can still read content on windows below PPCam</li>
 <li>Moving by any point, means you can click on any position of the window and drag &amp; drop the window to the new place, this is a must as it does not have title bar for this</li>
 </ul>
-<p>Note that this is data driven <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , I learnt the idea from previous music player project &#8211; you can just provide a bmp file, and the application will take top-left point as &#8220;transparent sample&#8221;, then any points in the bmp that has the same color as top-left point will be treated as transparent. This feature makes really easier to change the look and feel.</p>
+<p>Note that this is data driven <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , I learnt the idea from previous music player project &#8211; you can just provide a bmp file, and the application will take top-left point as &#8220;transparent sample&#8221;, then any points in the bmp that has the same color as top-left point will be treated as transparent. This feature makes really easier to change the look and feel.</p>
 <p>Other than these visible changes, that are some codes related changes, may or may not be that interesting:</p>
 <ul>
 <li>Added win32api.ads to include those Win32 APIs that the project needs to use, but are missing in win32ada binding</li>

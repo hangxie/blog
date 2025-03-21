@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Start from scratch &#8211; Java</title>
 		<link>https://xiehang.com/blog/2010/07/13/start-from-scratch-java/</link>
@@ -34,7 +34,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1052</guid>
 
 					<description><![CDATA[Time to get hands dirty in Java mud 😀 Lots of projects here are Java based, plus something like Struts, Spring, Hibernate, etc. I don&#8217; t like the structure much but I have to understand how to get things done, or at least I need to be able to read those codes and configurations (I hate <a href='https://xiehang.com/blog/2010/07/13/start-from-scratch-java/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Time to get hands dirty in Java mud <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Time to get hands dirty in Java mud <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Lots of projects here are Java based, plus something like Struts, Spring, Hibernate, etc. I don&#8217; t like the structure much but I have to understand how to get things done, or at least I need to be able to read those codes and configurations (I hate so many configuration files in Java world).</p>
 <p>I was trying to setup Eclipse with Struts2 and Tomcat, I was so amazed by memory management in Java VM, want to know my impression? In one world, MESS. &gt;:) After dealing with this and that kind of all sort of &#8220;MaxXXXSize&#8221; configuration directives (or command line parameters), I finally figured out &#8220;-XX:MaxNewSize=128m&#8221; and &#8220;-XX:MaxPermSize=128m&#8221; are two of the most important parameter to make Eclipse stop reporting &#8220;PermGen Space&#8221; error.</p>
 <p>Thinking of setting up such an IDE really takes time, I was thinking maybe I should go back to my vim time &#8230;</p>

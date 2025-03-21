@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Migrate domains to AWS</title>
 		<link>https://xiehang.com/blog/2018/11/07/migrate-domains-to-aws/</link>
@@ -52,7 +52,7 @@
 
 					<description><![CDATA[Google offers life time free tier: https://cloud.google.com/free/ Running this and couple of other websites on GCE now, saves me several bucks a month 😀]]></description>
 										<content:encoded><![CDATA[<p>Google offers life time free tier: <a href="https://cloud.google.com/free/">https://cloud.google.com/free/</a></p>
-<p>Running this and couple of other websites on GCE now, saves me several bucks a month <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Running this and couple of other websites on GCE now, saves me several bucks a month <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		

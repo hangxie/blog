@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>windows RK3066 &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/windows-rk3066/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Tue, 15 Jan 2013 17:31:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<item>
+		<title>MK802III</title>
+		<link>https://xiehang.com/blog/2013/01/15/mk802iii/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Tue, 15 Jan 2013 17:31:40 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[bricked]]></category>
+		<category><![CDATA[mk802III]]></category>
+		<category><![CDATA[windows RK3066]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1469</guid>
+
+					<description><![CDATA[Playing with this neat tiny computer and was trying to run Ubuntu on it but hit all sort of problem, and, at last, I think I bricked it. 😀 Now to take it back, I need a Windows machine (sigh&#8230;) to flush the ROM as I cannot find something similiar to RKAndroidTool.exe for Mac. I <a href='https://xiehang.com/blog/2013/01/15/mk802iii/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>Playing with this neat tiny computer and was trying to run Ubuntu on it but hit all sort of problem, and, at last, I think I bricked it. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Now to take it back, I need a Windows machine (sigh&#8230;) to flush the ROM as I cannot find something similiar to RKAndroidTool.exe for Mac. I suspect it&#8217;s some sort of TFTP clients but just don&#8217;t want to dig in more.</p>
+<p>Later on I found a Windows 8 machine running there but again I cannot play with MK802III as driver could not be found, search the Web &#8230; it was said <a href="http://vondroid.com/threads/rk3066-drivers-for-windows-8.830/">Windows 7 driver should work</a>, but you have to <a href="http://laslow.net/2012/03/14/disable-driver-signature-enforcement-in-windows-8/">disable Windows 8&#8217;s driver signature enforcement</a>. During the search I also found something pretty useful, to <a href="http://www.lostintechnology.com/windows/how-to-find-drivers-for-unknown-devices-in-windows/">dig out unknown devices on Windows</a>.</p>
+<p>Will play with MK802III again tonight.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

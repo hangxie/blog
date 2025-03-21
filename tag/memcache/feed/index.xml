@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>How to get rid of Nagios alert</title>
 		<link>https://xiehang.com/blog/2012/08/01/how-to-get-rid-of-nagios-alert/</link>
@@ -32,7 +32,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1375</guid>
 
 					<description><![CDATA[Be aware this is a joke. 😀 I had alert from a memcached service that mentioning for all the time that hit rate was too low, after checking it I found it was actually because the traffic was too low (the site was not in production yet), so how to solve this problem? After thinking <a href='https://xiehang.com/blog/2012/08/01/how-to-get-rid-of-nagios-alert/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Be aware this is a joke. <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Be aware this is a joke. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>I had alert from a memcached service that mentioning for all the time that hit rate was too low, after checking it I found it was actually because the traffic was too low (the site was not in production yet), so how to solve this problem?</p>
 <p>After thinking of various &#8220;serious&#8221; solutions, I finally turned to running a script, keep hitting the entries (actually, only one specific entry) in the cache, so to raise the hit rate to a level that makes Nagios stop alerting me.</p>
 <p>OK, OK, I know this is bad, but fun, isn&#8217;t it?</p>

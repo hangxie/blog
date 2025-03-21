@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.9.3</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 	<item>
 		<title>Move to static site</title>
 		<link>https://xiehang.com/blog/2022/03/04/move-to-static-site/</link>
@@ -58,8 +58,8 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1492</guid>
 
 					<description><![CDATA[I&#8217;m trying my best to use as less EC2 hosts as possible, and seems I successfully made all of my stuffs running on &#8230; one micro instance 😀 . Actually it surprised me a little thinking that I was running 2 large, 1 small, and 3 micro back to last September, obviously I spent too <a href='https://xiehang.com/blog/2013/02/06/consolidate-ec2-host/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>I&#8217;m trying my best to use as less EC2 hosts as possible, and seems I successfully made all of my stuffs running on &#8230; one micro instance <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
-<p>Actually it surprised me a little thinking that I was running 2 large, 1 small, and 3 micro back to last September, obviously I spent too much on &#8220;playing&#8221; <img src="https://s.w.org/images/core/emoji/13.1.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+										<content:encoded><![CDATA[<p>I&#8217;m trying my best to use as less EC2 hosts as possible, and seems I successfully made all of my stuffs running on &#8230; one micro instance <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Actually it surprised me a little thinking that I was running 2 large, 1 small, and 3 micro back to last September, obviously I spent too much on &#8220;playing&#8221; <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 <p>Now I&#8217;m waiting all crawlers heading to the new machine, I found some crawlers are really &#8230; stupid? They didn&#8217;t move to the new machine even after the DNS had been update for more than 12 hours.</p>
 ]]></content:encoded>
 					
