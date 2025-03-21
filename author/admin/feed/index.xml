@@ -12,14 +12,35 @@
 	<atom:link href="https://xiehang.com/blog/author/admin/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Sat, 20 Aug 2022 06:27:29 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 12 Nov 2022 17:10:36 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1</generator>
 	<item>
+		<title>parquet-tools</title>
+		<link>https://xiehang.com/blog/2022/11/12/parquet-tools/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sat, 12 Nov 2022 17:10:36 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[go]]></category>
+		<category><![CDATA[open source]]></category>
+		<category><![CDATA[parquet]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1836</guid>
+
+					<description><![CDATA[I just found out that I never mentioned project that I&#8217;ve been working on for a while here: https://github.com/hangxie/parquet-tools Not perfect but definitely useful.]]></description>
+										<content:encoded><![CDATA[<p>I just found out that I never mentioned project that I&#8217;ve been working on for a while here:</p>
+<p><a href="https://github.com/hangxie/parquet-tools">https://github.com/hangxie/parquet-tools</a></p>
+<p>Not perfect but definitely useful.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>lol Google</title>
 		<link>https://xiehang.com/blog/2022/08/19/lol-google/</link>
 		
@@ -232,28 +253,6 @@
 
 					<description><![CDATA[route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.]]></description>
 										<content:encoded><![CDATA[<p>route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Reverse engineering HTTP requests</title>
-		<link>https://xiehang.com/blog/2018/11/07/reverse-engineering-http-requests/</link>
-		
-		<dc:creator><![CDATA[Hang]]></dc:creator>
-		<pubDate>Wed, 07 Nov 2018 17:18:52 +0000</pubDate>
-				<category><![CDATA[Triviality]]></category>
-		<category><![CDATA[debug]]></category>
-		<category><![CDATA[http]]></category>
-		<category><![CDATA[tcpdump]]></category>
-		<guid isPermaLink="false">https://xiehang.com/blog/?p=1789</guid>
-
-					<description><![CDATA[tcpdump -A -s 10240 'tcp port 8080' \ &#124; egrep --line-buffered "^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )&#124;^[0-9][0-9]:[0-9][0-9]&#124;^[A-Za-z0-9-]+: " \ &#124; sed -r 's/^........(GET &#124;HTTP\/&#124;POST &#124;HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g' &#160;]]></description>
-										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">tcpdump -A -s 10240 'tcp port 8080' \
-| egrep --line-buffered "^........(GET |HTTP\/|POST |HEAD )|^[0-9][0-9]:[0-9][0-9]|^[A-Za-z0-9-]+: " \
-| sed -r 's/^........(GET |HTTP\/|POST |HEAD )/\1/g; s/^([0-9:\.]*) IP .*/\n\1/g'</pre>
-<p>&nbsp;</p>
 ]]></content:encoded>
 					
 		

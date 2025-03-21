@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1</generator>
 	<item>
 		<title>Ubuntu 22.04</title>
 		<link>https://xiehang.com/blog/2022/04/26/ubuntu-22-04/</link>
@@ -61,7 +61,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=948</guid>
 
 					<description><![CDATA[This is my .screenrc: startup_message off vbell off split screen -t s1 1 ssh s1 split -v focus down screen -t s2 2 ssh s2 focus down screen -t s3 3 ssh s3 split -v focus down screen -t s4 4 ssh s4 focus top And you can see the screen shot at right. This <a href='https://xiehang.com/blog/2010/03/05/screenrc/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p><a href="https://xiehang.com/blog/wp-content/uploads/2010/03/screen.jpg"></a><a href="https://xiehang.com/blog/wp-content/uploads/2010/03/screen.jpg"><img loading="lazy" class="alignright size-medium wp-image-954" title="screen" src="https://xiehang.com/blog/wp-content/uploads/2010/03/screen-300x185.jpg" alt="" width="300" height="185" srcset="https://xiehang.com/blog/wp-content/uploads/2010/03/screen-300x185.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/03/screen-1024x633.jpg 1024w, https://xiehang.com/blog/wp-content/uploads/2010/03/screen.jpg 1082w" sizes="(max-width: 300px) 100vw, 300px" /></a>This is my .screenrc:</p>
+										<content:encoded><![CDATA[<p><a href="https://xiehang.com/blog/wp-content/uploads/2010/03/screen.jpg"></a><a href="https://xiehang.com/blog/wp-content/uploads/2010/03/screen.jpg"><img decoding="async" loading="lazy" class="alignright size-medium wp-image-954" title="screen" src="https://xiehang.com/blog/wp-content/uploads/2010/03/screen-300x185.jpg" alt="" width="300" height="185" srcset="https://xiehang.com/blog/wp-content/uploads/2010/03/screen-300x185.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2010/03/screen-1024x633.jpg 1024w, https://xiehang.com/blog/wp-content/uploads/2010/03/screen.jpg 1082w" sizes="(max-width: 300px) 100vw, 300px" /></a>This is my .screenrc:</p>
 <blockquote><p>startup_message off<br />
 vbell off<br />
 split<br />

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1</generator>
 	<item>
 		<title>Take screen shot on OSX</title>
 		<link>https://xiehang.com/blog/2012/02/22/take-screen-shot-on-osx/</link>
@@ -53,8 +53,8 @@
 
 					<description><![CDATA[Here are two (and actually, ALL) of my app&#8217;s screen shots &#8230; for iOS only. I&#8217;m kind of slow now, need to speed up so not to eat my words.]]></description>
 										<content:encoded><![CDATA[<p>
-<a href='https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/keys/'><img width="150" height="150" src="https://xiehang.com/blog/wp-content/uploads/2012/01/keys-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" /></a>
-<a href='https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/start/'><img width="150" height="150" src="https://xiehang.com/blog/wp-content/uploads/2012/01/start-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" /></a>
+<a href='https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/keys/'><img width="150" height="150" src="https://xiehang.com/blog/wp-content/uploads/2012/01/keys-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" /></a>
+<a href='https://xiehang.com/blog/2012/01/27/progress-of-my-mobile-app-development/start/'><img width="150" height="150" src="https://xiehang.com/blog/wp-content/uploads/2012/01/start-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" /></a>
 Here are two (and actually, ALL) of my app&#8217;s screen shots &#8230; for iOS only.</p>
 <p>I&#8217;m kind of slow now, need to speed up so not to eat my words.</p>
 ]]></content:encoded>
