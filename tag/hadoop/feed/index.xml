@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Moving back to Hadoop world</title>
 		<link>https://xiehang.com/blog/2012/12/21/moving-back-to-hadoop-world/</link>
@@ -106,7 +106,7 @@ at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1428)</p>
 <p>The work flow should be something like this:<span id="more-1256"></span></p>
 <ol>
 <li>Get URL from client&#8217;s request</li>
-<li>If the URL had been crawled and it is not outdated (not sure how to define this yet), return the terms and we are all set (exit 0!!! <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</li>
+<li>If the URL had been crawled and it is not outdated (not sure how to define this yet), return the terms and we are all set (exit 0!!! <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</li>
 <li>kick the URL to the crawl queue so that it can be crawled later on</li>
 <li>return an empty term list back to client (sorry, we don&#8217;t know too much about the page, yet</li>
 </ol>
@@ -206,7 +206,7 @@ Cannot run program "chmod": java.io.IOException: error=12, Cannot allocate memor
 <p>Note, the last section in the article talking about the </i>Apache Weblog Data</i> doesn&#8217;t seem to be correct &#8211; it lacks of some space (&#8221; &#8220;) after ^ and it gave me quite some headache since I&#8217;m not familiar with Java regular expressions. Luckily <a href="https://issues.apache.org/jira/browse/HIVE-662">Hive issue 662</a> mentioned in the article gave me the correct regex to get things done.</p>
 <p>It seems I can only learn to play with Hive/Hadoop cos Hadoop running on MacBook is still a single node installation which is &#8230; <b>SLOW</b>, but so far I&#8217;m fine with it as I don&#8217;t have high volume of data to be processed. As a reference, getting top accessed IPs (which I used to figure out potential abusers) took 83 seconds. The HSQL is simple, something like &#8220;select host, count(*) cc from apachelog group by host order by cc desc limit 10;&#8221;.</p>
 <p>Hadoop is a richmen&#8217;s game, seems it only improve the performance whenever you have lots of nodes as it can well distributed tasks.</p>
-<p>BTW, <i>Hadoop: The Definitive Guide</i> is a good book <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>BTW, <i>Hadoop: The Definitive Guide</i> is a good book <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2011/11/17/playing-with-hive/feed/</wfw:commentRss>

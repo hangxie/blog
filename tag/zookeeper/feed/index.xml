@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>I&#8217;m not sure how this works &#8230;</title>
 		<link>https://xiehang.com/blog/2012/02/21/im-not-sure-how-this-works/</link>
@@ -31,7 +31,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1267</guid>
 
 					<description><![CDATA[I setup a Solr Cloud but I&#8217;m not quite sure how it works &#8230; 😀 It seems the problem came from ZooKeeper &#8211; the first node which is running ZooKeeper needs to upload configuration files to ZK, so it takes sometime, however, in my rc script I cannot determined the right way to check if <a href='https://xiehang.com/blog/2012/02/21/im-not-sure-how-this-works/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>I setup a <a href="http://wiki.apache.org/solr/SolrCloud">Solr Cloud</a> but I&#8217;m not quite sure how it works &#8230; <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>I setup a <a href="http://wiki.apache.org/solr/SolrCloud">Solr Cloud</a> but I&#8217;m not quite sure how it works &#8230; <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>It seems the problem came from ZooKeeper &#8211; the first node which is running ZooKeeper needs to upload configuration files to ZK, so it takes sometime, however, in my rc script I cannot determined the right way to check if the configuration files are there or not in ZK (I do check ZK port, though), so every time if I start from scratch (means clean up everything) if won&#8217;t work.</p>
 <p>Luckily starting from an empty box is not a common case, and even that&#8217;s the case, simple shutdown the cluster (4 solr nodes) and restart it will make everything works.</p>
 <p>It seems in real production world, something need to be done to make all nodes coordinate properly, or, better run a standalone ZK cluster (ZooKeeper ensemble).</p>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Formally finished focal review</title>
 		<link>https://xiehang.com/blog/2010/03/22/formally-finished-focal-review/</link>
@@ -32,7 +32,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=971</guid>
 
 					<description><![CDATA[Signed the review material online and formally, I&#8217;m done with focal review for year 2009, my 10th focal in this company. 🙂]]></description>
-										<content:encoded><![CDATA[<p>Signed the review material online and formally, I&#8217;m done with focal review for year 2009, my 10th focal in this company. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Signed the review material online and formally, I&#8217;m done with focal review for year 2009, my 10th focal in this company. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -92,7 +92,7 @@
 
 					<description><![CDATA[Yesterday (actually, May 27) I encountered a pretty long &#8220;glitch&#8221; on http://libre.adacore.com,/ and was wondering either there were too many downloads that brought down the site, or AdaCore gurus were working on the site for the coming release. I&#8217;m genius 😀 &#8211; it turned out GNAT GPL 2009 is ready today, I&#8217;ve been waiting for <a href='https://xiehang.com/blog/2009/05/29/gnat-gpl-2009-is-out-finally/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>Yesterday (actually, May 27) I encountered a pretty long &#8220;glitch&#8221; on <a href="http://libre.adacore.com/">http://libre.adacore.com/</a>, and was wondering either there were too many downloads that brought down the site, or AdaCore gurus were working on the site for the coming release.</p>
-<p>I&#8217;m genius <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; it turned out GNAT GPL 2009 is ready today, I&#8217;ve been waiting for this version for quite some time, most because of the new feature that can generate Ada specification based on C/C++ header files.</p>
+<p>I&#8217;m genius <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; it turned out GNAT GPL 2009 is ready today, I&#8217;ve been waiting for this version for quite some time, most because of the new feature that can generate Ada specification based on C/C++ header files.</p>
 <p>I&#8217;m going to see if I can get Ada specification files for DirectShow stuffs, I believe this kind of feature works fine on *nix, but for Windows &#8230; I don&#8217;t have much confidence as Windows is at the bottom of the supporting list in open source world.</p>
 <p>Let&#8217;s see.</p>
 ]]></content:encoded>

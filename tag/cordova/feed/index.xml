@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Xcode does not follow relative symlink</title>
 		<link>https://xiehang.com/blog/2013/01/09/xcode-does-not-follow-relative-symlink/</link>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>SBCL and Win32</title>
 		<link>https://xiehang.com/blog/2009/06/24/sbcl-and-win32/</link>
@@ -38,7 +38,7 @@
 <p>So, I&#8217;m kind of away from Ada now since the new GNAT 2009 did not solve the Win32 binding issue, my work on Ada became a interpretter, that is, reading C/C++ specification of Win32 APIs, and then use Ada to rewrite them, I&#8217;m pretty sure I was bored with it so I slowered down the development.</p>
 <p>Lisp &#8230; seems like a different story, the community is a lot more active (based on discussion in USENET), also there are more than one compiler/interpreter providers vs. one from Ada (yes, GNAT is great, but it&#8217;s GNAT only), I can see SBCL and CMUCL are pretty promissing, while a lot other providers are coming up.</p>
 <p>I may go write the PPCam program again, with Lisp, I know I&#8217;m stubborn, but I just want to get it done, with any non-Microsoft, and non-Borland software.</p>
-<p>BTW, I gave up the idea of finding an IDE, I&#8217;ll work on command line to build a GUI application <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>BTW, I gave up the idea of finding an IDE, I&#8217;ll work on command line to build a GUI application <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -58,7 +58,7 @@
 
 					<description><![CDATA[Yesterday (actually, May 27) I encountered a pretty long &#8220;glitch&#8221; on http://libre.adacore.com,/ and was wondering either there were too many downloads that brought down the site, or AdaCore gurus were working on the site for the coming release. I&#8217;m genius 😀 &#8211; it turned out GNAT GPL 2009 is ready today, I&#8217;ve been waiting for <a href='https://xiehang.com/blog/2009/05/29/gnat-gpl-2009-is-out-finally/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>Yesterday (actually, May 27) I encountered a pretty long &#8220;glitch&#8221; on <a href="http://libre.adacore.com/">http://libre.adacore.com/</a>, and was wondering either there were too many downloads that brought down the site, or AdaCore gurus were working on the site for the coming release.</p>
-<p>I&#8217;m genius <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; it turned out GNAT GPL 2009 is ready today, I&#8217;ve been waiting for this version for quite some time, most because of the new feature that can generate Ada specification based on C/C++ header files.</p>
+<p>I&#8217;m genius <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> &#8211; it turned out GNAT GPL 2009 is ready today, I&#8217;ve been waiting for this version for quite some time, most because of the new feature that can generate Ada specification based on C/C++ header files.</p>
 <p>I&#8217;m going to see if I can get Ada specification files for DirectShow stuffs, I believe this kind of feature works fine on *nix, but for Windows &#8230; I don&#8217;t have much confidence as Windows is at the bottom of the supporting list in open source world.</p>
 <p>Let&#8217;s see.</p>
 ]]></content:encoded>
@@ -110,7 +110,7 @@
 <li>Showing streamed video from the other side (the remote window), have no idea so far</li>
 </ol>
 <p>A friend told me I can rely on existing protocols like RSTP or MMS, I have the concerns of violating copyright/patents, but I do some research before picking the protocol I&#8217;m going to use. At this moment I prefer some cross platform protocol, maybe all of them are, but again (yes, again and again), I&#8217;m not sure.</p>
-<p>I will try to see if there anyone who can give me some hints on how to do the layout, by now, I will pause the development for couple of days, take some rest, as I&#8217;ve made what I promised (preview video by the end of this week). <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I will try to see if there anyone who can give me some hints on how to do the layout, by now, I will pause the development for couple of days, take some rest, as I&#8217;ve made what I promised (preview video by the end of this week). <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/04/16/finally-i-can-preview-my-video-now/feed/</wfw:commentRss>
@@ -208,7 +208,7 @@
 <li>semi-transparent effect, means you can still read content on windows below PPCam</li>
 <li>Moving by any point, means you can click on any position of the window and drag &amp; drop the window to the new place, this is a must as it does not have title bar for this</li>
 </ul>
-<p>Note that this is data driven <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , I learnt the idea from previous music player project &#8211; you can just provide a bmp file, and the application will take top-left point as &#8220;transparent sample&#8221;, then any points in the bmp that has the same color as top-left point will be treated as transparent. This feature makes really easier to change the look and feel.</p>
+<p>Note that this is data driven <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> , I learnt the idea from previous music player project &#8211; you can just provide a bmp file, and the application will take top-left point as &#8220;transparent sample&#8221;, then any points in the bmp that has the same color as top-left point will be treated as transparent. This feature makes really easier to change the look and feel.</p>
 <p>Other than these visible changes, that are some codes related changes, may or may not be that interesting:</p>
 <ul>
 <li>Added win32api.ads to include those Win32 APIs that the project needs to use, but are missing in win32ada binding</li>

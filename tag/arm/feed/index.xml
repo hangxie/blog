@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>ARM emulator</title>
 		<link>https://xiehang.com/blog/2009/05/15/arm-emulator/</link>
@@ -51,7 +51,7 @@ qemu-system-arm -M versatilepb -kernel vmlinuz-2.6.18-6-versatile -initrd initrd
 <p>$ uname -a<br />
 Linux ubuntu 2.6.28-11-generic #42-Ubuntu SMP Fri Apr 17 01:57:59 UTC 2009 i686 GNU/Linux</p>
 <p>It does not have full Ubuntu packages, I&#8217;m trying to do cross compiling (using GNAT) as I want to use Ada for all its development.</p>
-<p>Once everything works I will get a dev board <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Once everything works I will get a dev board <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/05/15/arm-emulator/feed/</wfw:commentRss>

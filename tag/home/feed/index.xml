@@ -12,14 +12,86 @@
 	<atom:link href="https://xiehang.com/blog/tag/home/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Fri, 18 Jan 2013 19:56:55 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 22 Nov 2024 10:47:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
+		<title>v2ray</title>
+		<link>https://xiehang.com/blog/2024/11/22/v2ray/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Nov 2024 10:40:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[GFW]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[v2ray]]></category>
+		<category><![CDATA[vpn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1849</guid>
+
+					<description><![CDATA[The diagram can be found at github, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked. v2ray config: { "log": { "loglevel": "warning" }, "inbounds": [ { "port": 20000, "protocol": "vmess", "settings": { "clients": [ { "id": "UUIDv4", "alterId": <a href='https://xiehang.com/blog/2024/11/22/v2ray/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>The diagram can be found at <a href="https://gist.github.com/hangxie/9553c38ff595048222f65e516c0d4083">github</a>, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked.</p>
+<p>v2ray config:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 20000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "UUIDv4",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "kcp",
+        "kcpSettings": {
+          "uplinkCapacity": 5,
+          "downlinkCapacity": 100,
+          "congestion": true,
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
+</pre>
+<p>and to start v2ray server:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">docker run -d --rm \
+    --name v2ray \
+    --network host \
+    -v /path/to/v2ray/config.json:/etc/v2ray/config.json \
+    v2fly/v2fly-core run -config /etc/v2ray/config.json
+</pre>
+<p>Note that the service is running at non-privileged port so it does not need to be run as root, you can also do port forwarding if you cannot run host networking for a reason.</p>
+<p>There are a couple of TODO though I&#8217;m not sure if I have time to get them done:</p>
+<ol>
+<li>Packaging latest v2ray, the priority is container (amd64 and arm), deb, rpm</li>
+<li>set it up on Raspberry Pi with Cloudflare tunnel, this is for T-Mobile Home Internet which does not provide port forwarding feature.</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Time to upgrade</title>
 		<link>https://xiehang.com/blog/2013/01/18/time-to-upgrade/</link>
 		
@@ -134,10 +206,10 @@
 <li>A guinea pig, his name is &#8220;Snowy&#8221; as he&#8217;s pure white, I know he does not like me too much as I went to sleep very late recently, and all light and my steps bothered his sleep for sure</li>
 <li>Nikon D3000 &#8211; finally started DSLR life, and though I was thinking I will play with basic len for a year or so, I now want to have another len &#8230; proved people are greedy, for all the time</li>
 <li>iRobot Roomba &#8211; the robot vacuum which will keep the house clean, especially after Snowy&#8217;s here, or ya, Snowy is just couple of months old, he does not have good habit to keep his place tidy</li>
-<li>Wii Sport Resort &#8211; I like swordplay the most <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>Wii Sport Resort &#8211; I like swordplay the most <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
 </ul>
 <p>OK pretty much.</p>
-<p>I think I started shopping season earlier than others <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>I think I started shopping season earlier than others <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/09/25/recent-changes/feed/</wfw:commentRss>
@@ -198,7 +270,7 @@
 
 					<description><![CDATA[Well, all because of thunderstorm in Beijing, so we spent 5 hours in Hohhot. It is said it was one of the worst day for Beijing airport, as Tianjin was full of the flights targeting Beijing, then Hohhot, then Shijiazhuang, and then Jinan, and at the same time we don&#8217;t know how many domestic flights <a href='https://xiehang.com/blog/2009/07/05/17-hours-on-the-plane/' class='excerpt-more'>[...]</a>]]></description>
 										<content:encoded><![CDATA[<p>Well, all because of thunderstorm in Beijing, so we spent 5 hours in Hohhot. It is said it was one of the worst day for Beijing airport, as Tianjin was full of the flights targeting Beijing, then Hohhot, then Shijiazhuang, and then Jinan, and at the same time we don&#8217;t know how many domestic flights just didn&#8217;t take off.</p>
-<p>Crazy day, but good to be home, at last <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Crazy day, but good to be home, at last <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		
@@ -222,7 +294,7 @@
 										<content:encoded><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignright size-medium wp-image-424" title="My Workshop" src="https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-300x225.jpg" alt="My Workshop" width="300" height="225" srcset="https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-300x225.jpg 300w, https://xiehang.com/blog/wp-content/uploads/2009/05/cimg2403-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />Working from home today, and found that I should post this photo here so that people know how I work at home :D.</p>
 <p>Actually I have only two machines on the desk &#8211; on the left is the company-issued laptop that I still need to check some bookmarks (sorry, I&#8217;m still surfing <a href="http://libre.adacore.com/">libre</a> there which supposedly not to be), other two monitors are for my desktop machine, the one in the middle is a 17&#8243; LCD, dedicated for the virtual machine (a Windows XP) for all those risky stuffs, such as surfing BBS site (virus, etc), and installing some test software. The one on the right is a 19&#8243; LCD which is actually the working environment, running putty, Thunderbird, Firefox and Yahoo Messenger.</p>
 <p>I think I can shutdown the laptop at home, from tomorrow, as almost everything is there on the desktop now. I also found not using laptop at home will make my life healthy, as I won&#8217;t hold it the minute before I go to sleep, and I won&#8217;t capture it once I get up.</p>
-<p>Though, I think I will turn my blackberry to be the laptop, bring it to my bed and grab it once I wake up <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> its screen is way too small and is killing my eyes, I should find something bigger, maybe &#8230; E90 or Nokia&#8217;s next flagship phone <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Though, I think I will turn my blackberry to be the laptop, bring it to my bed and grab it once I wake up <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> its screen is way too small and is killing my eyes, I should find something bigger, maybe &#8230; E90 or Nokia&#8217;s next flagship phone <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2009/05/27/wfh-today/feed/</wfw:commentRss>

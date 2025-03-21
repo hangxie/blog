@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Haystack, MObStor, &#8230;</title>
 		<link>https://xiehang.com/blog/2010/03/05/haystack-mobstor/</link>
@@ -126,7 +126,7 @@
 <p>What I planned for LVS:</p>
 <ul>
 <li>192.168.1.99 will be VIP</li>
-<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>f5 (192.168.1.205) will be LVS director &#8230; you are right, its name is f5 <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
 <li>f1 (192.168.1.101) to f4 (192.168.1.104) will be real server</li>
 <li>will do DR mode (I think it is called single-B on most L4 switches &#8230;)</li>
 </ul>
@@ -298,7 +298,7 @@ net.ipv4.conf.all.arp_announce = 2</li>
 										<content:encoded><![CDATA[<p>I&#8217;ve deployed Cassandra to my development environment, running on 4 servers with replica 2. I picked the number 4 and 2 because it&#8217;s more like a real world thing, and it is <a href="https://xiehang.com/blog/2009/11/09/question-from-a-friend/">the requirement from my friend</a>. I can test fail-over etc later on.</p>
 <p>I&#8217;ve also composed some scripts to do service stuffs &#8211; the script I composed can start/stop/restart Cassandra gracefully, it can also tell status of the node and the cluster, it&#8217;s a simple Shell script, I will make it a service under Fedora, and a init.d script under Ubuntu (I&#8217;m running only these two platform now). Cassandra was upgrade from 0.4.1 to 0.4.2 days ago, and I used that as a chance to test my deployment stuffs, seems pretty good. I think I just need to be careful with 0.4.x =&gt; 0.5.x upgrade since it may break compatibility on configuration and command line.</p>
 <p>I&#8217;ve converted my PowerBook to a dedicated client machine running Fedora &#8230; it&#8217;s a pretty old machine and seems Apple does not want to roll out new software (such as JDK 1.6) for it, so I did some survey around and picked Fedora (Ubuntu is not ppc friendly &#8211; the support is community based).</p>
-<p>And finally I have Thrift/PHP up and running. At the very beginning I was thinking I should use Java as the client but later one found that I have no idea how to develop Java based web application, and since Thrift mentioned it supports all C/C++, Java, Perl, PHP, Ruby, Python pretty well, I should just pick my favorite language to do the test and then let real clients pick what they  want to use (where is my client, BTW? <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
+<p>And finally I have Thrift/PHP up and running. At the very beginning I was thinking I should use Java as the client but later one found that I have no idea how to develop Java based web application, and since Thrift mentioned it supports all C/C++, Java, Perl, PHP, Ruby, Python pretty well, I should just pick my favorite language to do the test and then let real clients pick what they  want to use (where is my client, BTW? <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
 <p>And yes, I confirmed the schema (though Cassandra is schema-less thing), I&#8217;m going to test the schema with PHP client today. After that I will have to find a place to hold all my codes/configuration, etc, in a subversion, and based on what I found so far, github.com is the best candidate.</p>
 <p>Will update here today or tomorrow.</p>
 ]]></content:encoded>

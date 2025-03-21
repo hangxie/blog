@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>New to Gentoo &#8230;</title>
 		<link>https://xiehang.com/blog/2009/12/30/new-to-gentoo/</link>
@@ -33,7 +33,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=834</guid>
 
 					<description><![CDATA[Brand new 😀 Playing with Sabayon now, an &#8220;out-of-box&#8221; gentoo, seems fun, but I have to write down something as I never touched this before: rc-update/rc-status to add/list current enabled services &#8220;emerge &#8211;sync&#8221; to sync package meta data, and &#8220;emerge &#8211;search&#8221; to search, then &#8220;emerge pkg&#8221; to install package &#8220;pkg&#8221; &#8211; it takes some time <a href='https://xiehang.com/blog/2009/12/30/new-to-gentoo/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Brand new <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Brand new <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Playing with Sabayon now, an &#8220;out-of-box&#8221; gentoo, seems fun, but I have to write down something as I never touched this before:</p>
 <ul>
 <li>rc-update/rc-status to add/list current enabled services</li>

@@ -12,14 +12,86 @@
 	<atom:link href="https://xiehang.com/blog/tag/network/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Thu, 09 Aug 2012 20:11:16 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 22 Nov 2024 10:47:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
+		<title>v2ray</title>
+		<link>https://xiehang.com/blog/2024/11/22/v2ray/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Nov 2024 10:40:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[GFW]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[v2ray]]></category>
+		<category><![CDATA[vpn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1849</guid>
+
+					<description><![CDATA[The diagram can be found at github, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked. v2ray config: { "log": { "loglevel": "warning" }, "inbounds": [ { "port": 20000, "protocol": "vmess", "settings": { "clients": [ { "id": "UUIDv4", "alterId": <a href='https://xiehang.com/blog/2024/11/22/v2ray/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>The diagram can be found at <a href="https://gist.github.com/hangxie/9553c38ff595048222f65e516c0d4083">github</a>, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked.</p>
+<p>v2ray config:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 20000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "UUIDv4",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "kcp",
+        "kcpSettings": {
+          "uplinkCapacity": 5,
+          "downlinkCapacity": 100,
+          "congestion": true,
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
+</pre>
+<p>and to start v2ray server:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">docker run -d --rm \
+    --name v2ray \
+    --network host \
+    -v /path/to/v2ray/config.json:/etc/v2ray/config.json \
+    v2fly/v2fly-core run -config /etc/v2ray/config.json
+</pre>
+<p>Note that the service is running at non-privileged port so it does not need to be run as root, you can also do port forwarding if you cannot run host networking for a reason.</p>
+<p>There are a couple of TODO though I&#8217;m not sure if I have time to get them done:</p>
+<ol>
+<li>Packaging latest v2ray, the priority is container (amd64 and arm), deb, rpm</li>
+<li>set it up on Raspberry Pi with Cloudflare tunnel, this is for T-Mobile Home Internet which does not provide port forwarding feature.</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Troublesome NetworkManager</title>
 		<link>https://xiehang.com/blog/2012/08/09/troublesome-networkmanager-2/</link>
 		
@@ -56,7 +128,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1382</guid>
 
 					<description><![CDATA[Time to play with Virutalization again, this time I&#8217;m using kvm on CentOS 6, which has pretty many documentation but do need to pay more attention on details &#8211; I was locked out of the box last night after changing the network setting (with mistakes for sure 🙁 ), this should be avoided for anyone <a href='https://xiehang.com/blog/2012/08/07/virtualization-again/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Time to play with Virutalization again, this time I&#8217;m using kvm on CentOS 6, which has pretty many documentation but do need to pay more attention on details &#8211; I was locked out of the box last night after changing the network setting (with mistakes for sure <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ), this should be avoided for anyone who&#8217;s going to do this. Again, stay beside your machine whenever you are to do the initial setup.</p>
+										<content:encoded><![CDATA[<p>Time to play with Virutalization again, this time I&#8217;m using kvm on CentOS 6, which has pretty many documentation but do need to pay more attention on details &#8211; I was locked out of the box last night after changing the network setting (with mistakes for sure <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ), this should be avoided for anyone who&#8217;s going to do this. Again, stay beside your machine whenever you are to do the initial setup.</p>
 <p>After network setup is done, everything else is pretty smoothy, just need to read lots of man pages to know syntax of those qemu and virt-* commands. I repeated several times by virt-install, then virsh destroy and virsh undefine, etc., then virt-install again. There should be some better way to change configuration for existing VMs but for me, it&#8217;s much more easier to run from scratch.</p>
 <p>Now I have 4 VMs running on a 8-cores/32G box, it seems everything&#8217;s OK so far, but I need to do some more tests &#8211; especially performance test &#8211; before carrying on.</p>
 <p>BTW, a VNC viewer plus ssh tunnel is a must to do the setup, since I still haven&#8217;t figure out how to auto-installation, i.e. touchless, or installation without manually involve the process.</p>

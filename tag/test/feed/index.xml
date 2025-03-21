@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Cassandra&#8217;s read performance</title>
 		<link>https://xiehang.com/blog/2010/01/19/cassandras-read-performance/</link>
@@ -422,7 +422,7 @@ changed</th>
 										<content:encoded><![CDATA[<p>There was not much progress with performance test as mentioned <a href="https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/">here</a>.</p>
 <p>I first did test with LDAP vs. memcached, then found there was not much difference between those two, which is suspicious, so I started running test to compare pure database and memcached solution, which ideally should show lot of difference, but I failed.</p>
 <p>I still haven&#8217;t figured out what was the real cause, it seems VM is not that good to do this kind of test &#8211; thinking of limited resource (CPU, mem, network, disk, etc), all VMs will compete each other. Again, this is my guess and I will try to see what would be the best solution to get performance done in VM environment.</p>
-<p>Even if I failed, it shows that VM will not be good for performance testing, nice try <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Even if I failed, it shows that VM will not be good for performance testing, nice try <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 		
@@ -520,19 +520,19 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <td>&#58;&#45;&#64;</td>
 <td align="center">:-@</td>
 <td>&#58;&#68;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#100;</td>
 <td align="center">:d</td>
 <td>&#58;&#45;&#68;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 </tr>
 <tr>
 <td>&#58;&#45;&#100;</td>
 <td align="center">:-d</td>
 <td>&#58;&#124;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#45;&#124;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f610.png" alt="😐" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#61;&#41;&#41;</td>
 <td align="center">=))</td>
 <td>&#59;&#59;&#41;</td>
@@ -648,11 +648,11 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 </tr>
 <tr>
 <td>&#58;&#111;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#45;&#79;</td>
 <td align="center">:-O</td>
 <td>&#58;&#45;&#111;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f62e.png" alt="😮" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#111;&#61;&#62;</td>
 <td align="center">o=&gt;</td>
 <td>&#79;&#61;&#62;</td>
@@ -660,9 +660,9 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 </tr>
 <tr>
 <td>&#58;&#41;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#45;&#41;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#45;&#66;</td>
 <td align="center">:-B</td>
 <td>&#58;&#45;&#98;</td>
@@ -696,7 +696,7 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 </tr>
 <tr>
 <td>&#58;&#45;&#63;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f615.png" alt="😕" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f615.png" alt="😕" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#40;&#42;&#41;</td>
 <td align="center">(*)</td>
 <td>&#60;&#41;&#58;&#41;</td>
@@ -746,11 +746,11 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <td>&#56;&#45;&#125;</td>
 <td align="center">8-}</td>
 <td>&#58;&#80;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#112;</td>
 <td align="center">:p</td>
 <td>&#58;&#45;&#80;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#45;&#112;</td>
 <td align="center">:-p</td>
 </tr>
@@ -768,9 +768,9 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 </tr>
 <tr>
 <td>&#58;&#40;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#45;&#40;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#41;&#62;&#45;</td>
 <td align="center">:)&gt;-</td>
 <td>&#92;&#58;&#68;&#47;</td>
@@ -798,9 +798,9 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <td>&#58;&#40;&#124;&#41;</td>
 <td align="center">:(|)</td>
 <td>&#59;&#41;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#59;&#45;&#41;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 </tr>
 <tr>
 <td>&#60;&#58;&#45;&#80;</td>
@@ -808,11 +808,11 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <td>&#60;&#58;&#45;&#112;</td>
 <td align="center">&lt;:-p</td>
 <td>&#58;&#120;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 <td>&#58;&#88;</td>
 <td align="center">:X</td>
 <td>&#58;&#45;&#120;</td>
-<td align="center"><img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
+<td align="center"><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f621.png" alt="😡" class="wp-smiley" style="height: 1em; max-height: 1em;" /></td>
 </tr>
 <tr>
 <td>&#58;&#45;&#88;</td>

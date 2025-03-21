@@ -12,14 +12,86 @@
 	<atom:link href="https://xiehang.com/blog/category/triviality/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Sun, 07 Jan 2024 22:53:42 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 22 Nov 2024 10:47:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
+		<title>v2ray</title>
+		<link>https://xiehang.com/blog/2024/11/22/v2ray/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Nov 2024 10:40:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[GFW]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[v2ray]]></category>
+		<category><![CDATA[vpn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1849</guid>
+
+					<description><![CDATA[The diagram can be found at github, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked. v2ray config: { "log": { "loglevel": "warning" }, "inbounds": [ { "port": 20000, "protocol": "vmess", "settings": { "clients": [ { "id": "UUIDv4", "alterId": <a href='https://xiehang.com/blog/2024/11/22/v2ray/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>The diagram can be found at <a href="https://gist.github.com/hangxie/9553c38ff595048222f65e516c0d4083">github</a>, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked.</p>
+<p>v2ray config:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 20000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "UUIDv4",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "kcp",
+        "kcpSettings": {
+          "uplinkCapacity": 5,
+          "downlinkCapacity": 100,
+          "congestion": true,
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
+</pre>
+<p>and to start v2ray server:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">docker run -d --rm \
+    --name v2ray \
+    --network host \
+    -v /path/to/v2ray/config.json:/etc/v2ray/config.json \
+    v2fly/v2fly-core run -config /etc/v2ray/config.json
+</pre>
+<p>Note that the service is running at non-privileged port so it does not need to be run as root, you can also do port forwarding if you cannot run host networking for a reason.</p>
+<p>There are a couple of TODO though I&#8217;m not sure if I have time to get them done:</p>
+<ol>
+<li>Packaging latest v2ray, the priority is container (amd64 and arm), deb, rpm</li>
+<li>set it up on Raspberry Pi with Cloudflare tunnel, this is for T-Mobile Home Internet which does not provide port forwarding feature.</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Migrate domains to CloudFlare</title>
 		<link>https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/</link>
 		
@@ -32,9 +104,9 @@
 		<category><![CDATA[domain]]></category>
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=1839</guid>
 
-					<description><![CDATA[I&#8217;m cheap 🙂 Route 53 charges $0.50 per hosted zone on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare. The only concern for now is that CloudFlare is still young and losing money, people showed their <a href='https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>I&#8217;m cheap <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-<p>Route 53 charges $0.50 per hosted zone on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare.</p>
+					<description><![CDATA[I&#8217;m cheap 🙂 Route 53 charges $0.50 per hosted zone per month on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare. The only concern for now is that CloudFlare is still young and losing money, people <a href='https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m cheap <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Route 53 charges $0.50 per hosted zone per month on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare.</p>
 <p>The only concern for now is that CloudFlare is still young and losing money, people showed their concern that CloudFlare may change its pricing modal in the future, but I think I can worry it later when it happens, as none of these domains are critical to me now.</p>
 <p>Also I migrated WordPress site to Mac under UTM, still with simply-static.</p>
 ]]></content:encoded>
@@ -229,33 +301,6 @@
 					<description><![CDATA[Running Plex Media Server and now I can stream videos to any devices at home. I used to use nginx server to serve HTTP traffic which works fine for all laptop/pad/phones, but PS3/PS4 don&#8217;t take it well.]]></description>
 										<content:encoded><![CDATA[<p>Running <a href="https://www.plex.tv/apps-devices/#modal-devices-plex-media-server">Plex Media Server</a> and now I can stream videos to any devices at home.</p>
 <p>I used to use nginx server to serve HTTP traffic which works fine for all laptop/pad/phones, but PS3/PS4 don&#8217;t take it well.</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Wildcard TLS certificate with Let&#8217;s Encrypt/certbot</title>
-		<link>https://xiehang.com/blog/2018/11/11/wildcard-tls-certificate-with-lets-encrypt-certbot/</link>
-		
-		<dc:creator><![CDATA[Hang]]></dc:creator>
-		<pubDate>Sun, 11 Nov 2018 18:27:05 +0000</pubDate>
-				<category><![CDATA[Triviality]]></category>
-		<category><![CDATA[cert]]></category>
-		<category><![CDATA[certbot]]></category>
-		<category><![CDATA[dns]]></category>
-		<category><![CDATA[letsencrypt]]></category>
-		<category><![CDATA[SSL]]></category>
-		<category><![CDATA[TLS]]></category>
-		<guid isPermaLink="false">https://xiehang.com/blog/?p=1793</guid>
-
-					<description><![CDATA[certbot certonly \ --server https://acme-v02.api.letsencrypt.org/directory \ --manual \ --preferred-challenges dns \ -d 'xiehang.com,*.xiehang.com' &#160;]]></description>
-										<content:encoded><![CDATA[<pre class="EnlighterJSRAW" data-enlighter-language="shell">certbot certonly \
-    --server https://acme-v02.api.letsencrypt.org/directory \
-    --manual \
-    --preferred-challenges dns \
-    -d 'xiehang.com,*.xiehang.com'</pre>
-<p>&nbsp;</p>
 ]]></content:encoded>
 					
 		

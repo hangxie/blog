@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Hello, world from CLisp on Windows</title>
 		<link>https://xiehang.com/blog/2009/07/07/hello-world-from-clisp-on-windows/</link>
@@ -34,7 +34,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=548</guid>
 
 					<description><![CDATA[Now here are steps to build a Windows application as for &#8220;hello, world&#8221; 🙂 Create a message.lisp: (use-package "FFI") (def-call-out messagebox (:name "MessageBoxA") (:library "user32.dll") (:arguments (hwnd int) (text c-string) (capt c-string) (type uint)) (:return-type int) (:language :stdc)) (defun main() (messagebox 0 "Hello World!" "Message" 0) (quit)) then run: clisp -M &#8220;C:\Program Files\clisp-2.47\base\lispinit.mem&#8221; -x &#8220;(load <a href='https://xiehang.com/blog/2009/07/07/hello-world-from-clisp-on-windows/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>Now here are steps to build a Windows application as for &#8220;hello, world&#8221; <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+										<content:encoded><![CDATA[<p>Now here are steps to build a Windows application as for &#8220;hello, world&#8221; <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 <p>Create a message.lisp:</p>
 <pre>(use-package "FFI")
 (def-call-out messagebox

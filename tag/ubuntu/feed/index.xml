@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Ubuntu 22.04</title>
 		<link>https://xiehang.com/blog/2022/04/26/ubuntu-22-04/</link>
@@ -278,7 +278,7 @@ sudo virt-install &#8211;name ubuntu-test \<br />
 <li>host name set to some-special-name if DHCP does not provide valid one</li>
 </ul>
 <p>To make things better, you can configure your DHCP server to have MAC address map to some good name and IP address, then add &#8220;&#8211;mac=52:54:00:xx:xx:xx&#8221; to virt-install command line, the host name and domain from the DHCP server will have higher priority.</p>
-<p>Play with it, you will like it. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Play with it, you will like it. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://xiehang.com/blog/2014/03/12/unattended-ubuntu-vm-installation-with-preseed/feed/</wfw:commentRss>
@@ -304,8 +304,8 @@ sudo virt-install &#8211;name ubuntu-test \<br />
 										<content:encoded><![CDATA[<p>Give up MacBook Pro to someone else, and moved back to PC laptop.</p>
 <p>I was thinking of running Ubuntu on the new laptop so to fully utilize the 16G memory and 4-core i7 processor. However, after two days&#8217; painful trial, I finally gave up and moved back to Windows, and you can image &#8211; I moved back to Windows 7 instead of 8.</p>
 <p>The problem with Ubuntu and Windows 8 are similar, they were not designed by following people&#8217;s common sense, or direct sense, whatever you want to name it. I, personally, believe the usability is OSX &gt; Windows 7 (Windows XP as well) &gt; Ubuntu (Windows Vista is almost the same) &gt; Windows 8.</p>
-<p>Heard of Windows 8 is to be upgraded to have something like start button and program folders, etc. though it is still rumor so far. Shall we just name these changes as &#8220;graceful downgrade&#8221; in case they are really true? <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-<p>BTW, I turned on Hyper-Thread on i7 processor so logically, I&#8217;m running a 8-core machine with 16G memory &#8211; this is my dreaming machine several years ago <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Heard of Windows 8 is to be upgraded to have something like start button and program folders, etc. though it is still rumor so far. Shall we just name these changes as &#8220;graceful downgrade&#8221; in case they are really true? <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>BTW, I turned on Hyper-Thread on i7 processor so logically, I&#8217;m running a 8-core machine with 16G memory &#8211; this is my dreaming machine several years ago <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		

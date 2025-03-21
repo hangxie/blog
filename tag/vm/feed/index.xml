@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Mount qemu VM image</title>
 		<link>https://xiehang.com/blog/2014/02/05/mount-qemu-vm-image/</link>
@@ -123,7 +123,7 @@ GRUB_SERIAL_COMMAND="serial --speed=115200 --unit=0 --word=8 --parity=no --stop=
 										<content:encoded><![CDATA[<p>There was not much progress with performance test as mentioned <a href="https://xiehang.com/blog/2009/09/09/mysqlmemcached-vs-openldap/">here</a>.</p>
 <p>I first did test with LDAP vs. memcached, then found there was not much difference between those two, which is suspicious, so I started running test to compare pure database and memcached solution, which ideally should show lot of difference, but I failed.</p>
 <p>I still haven&#8217;t figured out what was the real cause, it seems VM is not that good to do this kind of test &#8211; thinking of limited resource (CPU, mem, network, disk, etc), all VMs will compete each other. Again, this is my guess and I will try to see what would be the best solution to get performance done in VM environment.</p>
-<p>Even if I failed, it shows that VM will not be good for performance testing, nice try <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>Even if I failed, it shows that VM will not be good for performance testing, nice try <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 		

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>.screenrc</title>
 		<link>https://xiehang.com/blog/2010/03/05/screenrc/</link>
@@ -46,7 +46,7 @@ focus down<br />
 screen -t s4 4 ssh s4<br />
 focus top</p></blockquote>
 <p>And you can see the screen shot at right.</p>
-<p>This is exactly what I want. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>This is exactly what I want. <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 					
 		

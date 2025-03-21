@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>v2ray &#8211; Flying Bug</title>
+	<atom:link href="https://xiehang.com/blog/tag/v2ray/feed/" rel="self" type="application/rss+xml" />
+	<link>https://xiehang.com/blog</link>
+	<description>Debugging and Being Debugged</description>
+	<lastBuildDate>Fri, 22 Nov 2024 10:47:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
+	<item>
+		<title>v2ray</title>
+		<link>https://xiehang.com/blog/2024/11/22/v2ray/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Fri, 22 Nov 2024 10:40:14 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[GFW]]></category>
+		<category><![CDATA[home]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[v2ray]]></category>
+		<category><![CDATA[vpn]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1849</guid>
+
+					<description><![CDATA[The diagram can be found at github, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked. v2ray config: { "log": { "loglevel": "warning" }, "inbounds": [ { "port": 20000, "protocol": "vmess", "settings": { "clients": [ { "id": "UUIDv4", "alterId": <a href='https://xiehang.com/blog/2024/11/22/v2ray/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>The diagram can be found at <a href="https://gist.github.com/hangxie/9553c38ff595048222f65e516c0d4083">github</a>, the reason to serve through port 20000 to 30000 is to give end user flexibility to change port if one they are using is blocked.</p>
+<p>v2ray config:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 20000,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "UUIDv4",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "kcp",
+        "kcpSettings": {
+          "uplinkCapacity": 5,
+          "downlinkCapacity": 100,
+          "congestion": true,
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
+</pre>
+<p>and to start v2ray server:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic">docker run -d --rm \
+    --name v2ray \
+    --network host \
+    -v /path/to/v2ray/config.json:/etc/v2ray/config.json \
+    v2fly/v2fly-core run -config /etc/v2ray/config.json
+</pre>
+<p>Note that the service is running at non-privileged port so it does not need to be run as root, you can also do port forwarding if you cannot run host networking for a reason.</p>
+<p>There are a couple of TODO though I&#8217;m not sure if I have time to get them done:</p>
+<ol>
+<li>Packaging latest v2ray, the priority is container (amd64 and arm), deb, rpm</li>
+<li>set it up on Raspberry Pi with Cloudflare tunnel, this is for T-Mobile Home Internet which does not provide port forwarding feature.</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>Solr guys will hate me</title>
 		<link>https://xiehang.com/blog/2012/03/12/solr-guys-will-hate-me/</link>
@@ -86,7 +86,7 @@
 <p>The work flow should be something like this:<span id="more-1256"></span></p>
 <ol>
 <li>Get URL from client&#8217;s request</li>
-<li>If the URL had been crawled and it is not outdated (not sure how to define this yet), return the terms and we are all set (exit 0!!! <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</li>
+<li>If the URL had been crawled and it is not outdated (not sure how to define this yet), return the terms and we are all set (exit 0!!! <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</li>
 <li>kick the URL to the crawl queue so that it can be crawled later on</li>
 <li>return an empty term list back to client (sorry, we don&#8217;t know too much about the page, yet</li>
 </ol>

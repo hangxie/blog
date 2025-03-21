@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.2</generator>
+	<generator>https://wordpress.org/?v=6.7.1</generator>
 	<item>
 		<title>How to delete a record from AWS Route53</title>
 		<link>https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/</link>
@@ -64,7 +64,7 @@ ssh -A -t 111.111.111.111 "LD_PRELOAD= ssh -A -p 58422 222.222.222.222 -t \"SSH_
 </code></p>
 <p>where 111.111.111.111 is jump host in office, and 222.222.222.222 is jump host in the IDC.</p>
 <p>Tricks here: jump host in office is running tsocks, so I have to reset LD_PRELOAD to disable it, and jump host in IDC set default shell to eash (for audit) so I have to setup the ssh agent manually.</p>
-<p>It took me 20 minutes to figure out all quotes and backslashes <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
+<p>It took me 20 minutes to figure out all quotes and backslashes <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> .</p>
 ]]></content:encoded>
 					
 		
