@@ -12,7 +12,7 @@
 	<atom:link href="https://xiehang.com/blog/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Sat, 12 Nov 2022 17:10:36 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 07 Jan 2024 22:53:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,29 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
+		<title>Migrate domains to CloudFlare</title>
+		<link>https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2024 22:53:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[domain]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1839</guid>
+
+					<description><![CDATA[I&#8217;m cheap 🙂 Route 53 charges $0.50 per hosted zone on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare. The only concern for now is that CloudFlare is still young and losing money, people showed their <a href='https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m cheap <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Route 53 charges $0.50 per hosted zone on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare.</p>
+<p>The only concern for now is that CloudFlare is still young and losing money, people showed their concern that CloudFlare may change its pricing modal in the future, but I think I can worry it later when it happens, as none of these domains are critical to me now.</p>
+<p>Also I migrated WordPress site to Mac under UTM, still with simply-static.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>parquet-tools</title>
 		<link>https://xiehang.com/blog/2022/11/12/parquet-tools/</link>
 		
@@ -233,26 +256,6 @@
     --preferred-challenges dns \
     -d 'xiehang.com,*.xiehang.com'</pre>
 <p>&nbsp;</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Migrate domains to AWS</title>
-		<link>https://xiehang.com/blog/2018/11/07/migrate-domains-to-aws/</link>
-		
-		<dc:creator><![CDATA[Hang]]></dc:creator>
-		<pubDate>Wed, 07 Nov 2018 17:21:12 +0000</pubDate>
-				<category><![CDATA[Triviality]]></category>
-		<category><![CDATA[aws]]></category>
-		<category><![CDATA[cloud]]></category>
-		<category><![CDATA[dns]]></category>
-		<category><![CDATA[godaddy]]></category>
-		<guid isPermaLink="false">https://xiehang.com/blog/?p=1791</guid>
-
-					<description><![CDATA[route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.]]></description>
-										<content:encoded><![CDATA[<p>route53 is now hosting all my domains, though registrant is still godaddy, will change that part next August.</p>
 ]]></content:encoded>
 					
 		

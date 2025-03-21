@@ -12,7 +12,7 @@
 	<atom:link href="https://xiehang.com/blog/tag/aws/feed/" rel="self" type="application/rss+xml" />
 	<link>https://xiehang.com/blog</link>
 	<description>Debugging and Being Debugged</description>
-	<lastBuildDate>Wed, 07 Nov 2018 17:21:12 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 07 Jan 2024 22:53:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,29 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
+		<title>Migrate domains to CloudFlare</title>
+		<link>https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/</link>
+		
+		<dc:creator><![CDATA[Hang]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2024 22:53:42 +0000</pubDate>
+				<category><![CDATA[Triviality]]></category>
+		<category><![CDATA[aws]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[cloudflare]]></category>
+		<category><![CDATA[domain]]></category>
+		<guid isPermaLink="false">https://xiehang.com/blog/?p=1839</guid>
+
+					<description><![CDATA[I&#8217;m cheap 🙂 Route 53 charges $0.50 per hosted zone on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare. The only concern for now is that CloudFlare is still young and losing money, people showed their <a href='https://xiehang.com/blog/2024/01/07/migrate-domains-to-cloudflare/' class='excerpt-more'>[...]</a>]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m cheap <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Route 53 charges $0.50 per hosted zone on top of domain registration, it becomes a significant portion after I downgraded S3 storage class to Glacier IR, after looking around I moved all domains to CloudFlare.</p>
+<p>The only concern for now is that CloudFlare is still young and losing money, people showed their concern that CloudFlare may change its pricing modal in the future, but I think I can worry it later when it happens, as none of these domains are critical to me now.</p>
+<p>Also I migrated WordPress site to Mac under UTM, still with simply-static.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Migrate domains to AWS</title>
 		<link>https://xiehang.com/blog/2018/11/07/migrate-domains-to-aws/</link>
 		
@@ -224,36 +247,6 @@ aws route53 change-resource-record-sets --hosted-zone-id ${ZONE_ID} --change-bat
 					
 					<wfw:commentRss>https://xiehang.com/blog/2012/02/14/moving-to-windows-phone-now/feed/</wfw:commentRss>
 			<slash:comments>4</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>aws s3 development tips</title>
-		<link>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/</link>
-					<comments>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/#comments</comments>
-		
-		<dc:creator><![CDATA[Hang]]></dc:creator>
-		<pubDate>Wed, 01 Feb 2012 19:48:42 +0000</pubDate>
-				<category><![CDATA[Triviality]]></category>
-		<category><![CDATA[aws]]></category>
-		<category><![CDATA[iOS]]></category>
-		<category><![CDATA[s3]]></category>
-		<category><![CDATA[tips]]></category>
-		<guid isPermaLink="false">https://xiehang.com/blog/?p=1238</guid>
-
-					<description><![CDATA[This may not be useful to others, but it bothered me quite some time, so I&#8217;d like to write it down in case some others stuck at the same place as I did. getMetadataForKey calls from aws-ios-sdk, actually it: returns user defined meta data, nothing to do with s3&#8217;s meta data the key used here <a href='https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/' class='excerpt-more'>[...]</a>]]></description>
-										<content:encoded><![CDATA[<p>This may not be useful to others, but it bothered me quite some time, so I&#8217;d like to write it down in case some others stuck at the same place as I did.</p>
-<p>getMetadataForKey calls from aws-ios-sdk, actually it:</p>
-<ol>
-<li>returns user defined meta data, nothing to do with s3&#8217;s meta data</li>
-<li>the key used here will be prepended a &#8220;x-aws-meta-&#8220;, that is, in aws console, we will see a meta data entry keyed with &#8220;x-aws-meta-hahaha&#8221;, but in ios app you need to use &#8220;hahaha&#8221; to get the value</li>
-</ol>
-<p>some other interesting stuffs &#8230; don&#8217;t use S3GetObjectRequest/Response call to get object&#8217;s header information, as it will indeed download the object. Instead, you should use S3GetObjectMetadataRequest/Response.</p>
-<p>To get &#8220;Expiry Date&#8221; and  &#8220;Lifecycle Rule&#8221; information as they are shown on aws console, you need to use response&#8221;s valueForHTTPHeaderField method with key &#8220;x-amz-expiration&#8221;, the parse it &#8230; I guess there should be something more easier but havenn&#8217;t figured out how. Both &#8220;expiry-date&#8221; and &#8220;rule-id&#8221; are there so you can use them, note that they can be empty so better prepare for that.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://xiehang.com/blog/2012/02/01/aws-s3-development-tips/feed/</wfw:commentRss>
-			<slash:comments>3</slash:comments>
 		
 		
 			</item>
