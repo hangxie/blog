@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1</generator>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
 		<title>Hello, world from CLisp on Windows</title>
 		<link>https://xiehang.com/blog/2009/07/07/hello-world-from-clisp-on-windows/</link>
@@ -47,7 +47,7 @@
   (messagebox 0 "Hello World!" "Message" 0)
   (quit))</pre>
 <p>then run:</p>
-<blockquote><p>clisp -M &#8220;C:\Program Files\clisp-2.47\base\lispinit.mem&#8221; -x &#8220;(load \&#8221;message.lisp\&#8221;)(ext:saveinitmem \&#8221;message\&#8221; :init-function #&#8217;main :executable t :norc t :quiet t)&#8221;<img decoding="async" loading="lazy" class="alignright size-full wp-image-549" title="helloworld" src="https://xiehang.com/blog/wp-content/uploads/2009/07/helloworld.JPG" alt="helloworld" width="104" height="100" /></p></blockquote>
+<blockquote><p>clisp -M &#8220;C:\Program Files\clisp-2.47\base\lispinit.mem&#8221; -x &#8220;(load \&#8221;message.lisp\&#8221;)(ext:saveinitmem \&#8221;message\&#8221; :init-function #&#8217;main :executable t :norc t :quiet t)&#8221;<img decoding="async" class="alignright size-full wp-image-549" title="helloworld" src="https://xiehang.com/blog/wp-content/uploads/2009/07/helloworld.JPG" alt="helloworld" width="104" height="100" /></p></blockquote>
 <p>now we have a message.exe under the same directory, run it, you will get a standard Windows message box like this:</p>
 <p>Almost all stuffs mentioned here are coming from:</p>
 <blockquote><p><a href="http://www.frank-buss.de/lisp/clisp.html">http://www.frank-buss.de/lisp/clisp.html</a></p></blockquote>

@@ -16,7 +16,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1</generator>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
 		<title>
 		By: oldiev		</title>
@@ -41,7 +41,7 @@
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=527#comment-3827</guid>
 
 					<description><![CDATA[[...] Addendum: Hang from Flying Bug blog just posted some other interesting godaddy tweaks and corrected an indentation error in my original post. Much appreciated - go check out his blog as well: https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/ [...]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] Addendum: Hang from Flying Bug blog just posted some other interesting godaddy tweaks and corrected an indentation error in my original post. Much appreciated &#8211; go check out his blog as well: <a href="https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/" rel="nofollow ugc">https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</a> [&#8230;]</p>
+			<content:encoded><![CDATA[<p>[&#8230;] Addendum: Hang from Flying Bug blog just posted some other interesting godaddy tweaks and corrected an indentation error in my original post. Much appreciated &#8211; go check out his blog as well: <a href="https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/" rel="ugc">https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/</a> [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>

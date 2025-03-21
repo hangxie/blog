@@ -13,29 +13,32 @@
 <link rel="alternate" type="application/rss+xml" title="Flying Bug &raquo; Feed" href="https://xiehang.com/blog/feed/">
 <link rel="alternate" type="application/rss+xml" title="Flying Bug &raquo; Comments Feed" href="https://xiehang.com/blog/comments/feed/">
 <script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/xiehang.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1"}};
+/*  */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/xiehang.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.2"}};
 /*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/*  */
 </script>
-<style type="text/css">img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}</style>
-	<link rel="stylesheet" id="wp-block-library-css" href="https://xiehang.com/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.1" type="text/css" media="all">
-<link rel="stylesheet" id="classic-theme-styles-css" href="https://xiehang.com/blog/wp-includes/css/classic-themes.min.css?ver=1" type="text/css" media="all">
-<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+<style id="wp-emoji-styles-inline-css" type="text/css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://xiehang.com/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
-<link rel="stylesheet" id="wp-syntax-css-css" href="https://xiehang.com/blog/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1" type="text/css" media="all">
+<link rel="stylesheet" id="wp-syntax-css-css" href="https://xiehang.com/blog/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.2" type="text/css" media="all">
 <link rel="stylesheet" id="suffusion-theme-css" href="https://xiehang.com/blog/wp-content/themes/suffusion/style.css?ver=4.5.7" type="text/css" media="all">
 <link rel="stylesheet" id="suffusion-theme-skin-1-css" href="https://xiehang.com/blog/wp-content/themes/suffusion/skins/light-theme-pale-blue/skin.css?ver=4.5.7" type="text/css" media="all">
 <!--[if !IE]>--><link rel="stylesheet" id="suffusion-rounded-css" href="https://xiehang.com/blog/wp-content/themes/suffusion/rounded-corners.css?ver=4.5.7" type="text/css" media="all">
@@ -44,23 +47,18 @@ img.emoji {
 <![endif]-->
 <!--[if lt IE 8]><link rel='stylesheet' id='suffusion-ie-css' href='https://xiehang.com/blog/wp-content/themes/suffusion/ie-fix.css?ver=4.5.7' type='text/css' media='all' />
 <![endif]-->
-<link rel="stylesheet" id="suffusion-generated-css" href="https://xiehang.com/blog?ver=4.5.7&#038;suffusion-css=css" type="text/css" media="all">
-<link rel="stylesheet" id="enlighterjs-css" href="https://xiehang.com/blog/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=1A/Cs6fBRCu6SiA" type="text/css" media="all">
-<script type="text/javascript" src="https://xiehang.com/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://xiehang.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<script type="text/javascript" id="suffusion-js-extra">
-/* <![CDATA[ */
+<link rel="stylesheet" id="suffusion-generated-css" href="https://xiehang.com/blog?ver=4.5.7#038;suffusion-css=css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighterjs-css" href="https://xiehang.com/blog/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=tp7I%2FZWO6eU9f84" type="text/css" media="all">
+<script type="text/javascript" src="https://xiehang.com/blog/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://xiehang.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="suffusion-js-extra">/*  */
 var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","wrapper_max_width_page_template_1l_sidebar_php":"1200","wrapper_min_width_page_template_1l_sidebar_php":"600","wrapper_orig_width_page_template_1l_sidebar_php":"75","wrapper_width_type_page_template_1r_sidebar_php":"fixed","wrapper_max_width_page_template_1r_sidebar_php":"1200","wrapper_min_width_page_template_1r_sidebar_php":"600","wrapper_orig_width_page_template_1r_sidebar_php":"75","wrapper_width_type_page_template_1l1r_sidebar_php":"fixed","wrapper_max_width_page_template_1l1r_sidebar_php":"1200","wrapper_min_width_page_template_1l1r_sidebar_php":"600","wrapper_orig_width_page_template_1l1r_sidebar_php":"75","wrapper_width_type_page_template_2l_sidebars_php":"fixed","wrapper_max_width_page_template_2l_sidebars_php":"1200","wrapper_min_width_page_template_2l_sidebars_php":"600","wrapper_orig_width_page_template_2l_sidebars_php":"75","wrapper_width_type_page_template_2r_sidebars_php":"fixed","wrapper_max_width_page_template_2r_sidebars_php":"1200","wrapper_min_width_page_template_2r_sidebars_php":"600","wrapper_orig_width_page_template_2r_sidebars_php":"75","wrapper_width_type":"fixed","wrapper_max_width":"1200","wrapper_min_width":"600","wrapper_orig_width":"75","wrapper_width_type_page_template_no_sidebars_php":"fixed","wrapper_max_width_page_template_no_sidebars_php":"1200","wrapper_min_width_page_template_no_sidebars_php":"600","wrapper_orig_width_page_template_no_sidebars_php":"75","suf_featured_interval":"4000","suf_featured_transition_speed":"1000","suf_featured_fx":"fade","suf_featured_pause":"Pause","suf_featured_resume":"Resume","suf_featured_sync":"0","suf_featured_pager_style":"numbers","suf_nav_delay":"500","suf_nav_effect":"fade","suf_navt_delay":"500","suf_navt_effect":"fade","suf_jq_masonry_enabled":"disabled","suf_fix_aspect_ratio":"preserve","suf_show_drop_caps":""};
-/* ]]> */
-</script>
+/*  */</script>
 <script type="text/javascript" src="https://xiehang.com/blog/wp-content/themes/suffusion/scripts/suffusion.js?ver=4.5.7" id="suffusion-js"></script>
-<link rel="https://api.w.org/" href="https://xiehang.com/blog/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://xiehang.com/blog/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://xiehang.com/blog/wp-includes/wlwmanifest.xml">
+<link rel="https://api.w.org/" href="https://xiehang.com/blog/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://xiehang.com/blog/xmlrpc.php?rsd">
 <!-- Start Additional Feeds -->
 <!-- End Additional Feeds -->
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-<!-- location header -->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><!-- location header -->
 </head>
 
 <body class="home blog paged paged-36 light-theme-pale-blue suffusion-custom preset-1000px device-desktop">
@@ -72,11 +70,9 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
     </header><!-- /header -->
  	<nav id="nav" class="tab fix">
 		<div class="col-control left">
-		</div>
-<!-- /col-control -->
+		</div><!-- /col-control -->
 	</nav><!-- /nav -->
-			</div>
-<!-- //#header-container -->
+			</div><!-- //#header-container -->
 			<div id="container" class="fix">
 					<div id="main-col">
 		<div id="content" class="hfeed">
@@ -87,13 +83,9 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/28/finished-mysql-replication/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">28</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">28</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-28T00:15:32-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
@@ -102,10 +94,8 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 <p>Some people/application may not care about this too much &#8211; such as user update profile information, if it&#8217;s user him/herself edit the record from two browsers and hit submit at almost the same time, it&#8217;s up to him/her to take the risk. However, this is extrem dangerous if this is a transaction system, that something to do with money, so again, it&#8217;s up to developer to decide using dual/multiple masters or not. If the application itself can guarantee different clients won&#8217;t write to same record at the same or close time (or better be never), such as data are geo-related, then multiple master is still a good solution.</p>
 <p>Anyway, since dual/multiple masters won&#8217;t give me any benifit (no performance gain, no improvement on reliability), so I will leave the test to the future. For now, I will just leave the replication there (well, will add some monitoring stuffs) and go with mysql proxy test.</p>
 <p>Also</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 00:15</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/linux/" rel="tag">linux</a>, <a href="https://xiehang.com/blog/tag/mysql/" rel="tag">mysql</a></span>
 	</footer><!-- .post-footer -->
@@ -117,13 +107,9 @@ var Suffusion_JS = {"wrapper_width_type_page_template_1l_sidebar_php":"fixed","w
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/27/keep-all-linux-installation-up-to-date/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">27</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">27</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-27T10:00:00-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
@@ -134,10 +120,8 @@ ssh -t fedora &#8220;sudo yum -y update&#8221;<br>
 ssh -t centos &#8220;sudo yum -y update&#8221;<br>
 ssh -t opensuse &#8220;sudo zypper -n update &#8221;<br>
 ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;force&#8221;</p></blockquote>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 10:00</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/linux/" rel="tag">linux</a>, <a href="https://xiehang.com/blog/tag/test/" rel="tag">test</a></span>
 	</footer><!-- .post-footer -->
@@ -149,13 +133,9 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/26/linux-distro/#comments">2 Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">26</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">26</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-26T03:20:13-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
@@ -183,10 +163,8 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <p>Mandriva has the same problem as openSUSE and removing CD/DVD from repository is not supported by urpmi, but find out the configuration file is not that hard, and &#8220;#&#8221; is the standard way to comment entries out, which is fair enough.</p>
 <p>I haven&#8217;t tested more yet, but based on my experience playing with couple of distros, I would like to rate Ubuntu and Debian as the best, Fedora is really close to these two, Mandriva and openSUSE is a little bit behind, and CentOS is something better to avoid.</p>
 <p>All about installation, nothing else. 🙂</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 03:20</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/distro/" rel="tag">distro</a>, <a href="https://xiehang.com/blog/tag/installation/" rel="tag">installation</a>, <a href="https://xiehang.com/blog/tag/linux/" rel="tag">linux</a></span>
 	</footer><!-- .post-footer -->
@@ -198,13 +176,9 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/23/concurrent-remote-desktop-for-vista-sp2/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">23</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">23</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-23T20:31:10-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
@@ -212,10 +186,8 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <p><a href="http://www.technullogy.net/index.php/2009/06/22/multiple-remote-desktop-sessions-on-vista-sp2-x86-x64/">http://www.technullogy.net/index.php/2009/06/22/multiple-remote-desktop-sessions-on-vista-sp2-x86-x64/</a></p>
 <p>I&#8217;m trying to migrate some VMs to the Vista Ultimate so that I can utilize all those 4 cores and 6G memory.</p>
 <p>I need to test some mysql proxy and master/slave things, and better try it out in different environments.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 20:31</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/desktop/" rel="tag">desktop</a>, <a href="https://xiehang.com/blog/tag/unix/" rel="tag">unix</a>, <a href="https://xiehang.com/blog/tag/windows/" rel="tag">windows</a></span>
 	</footer><!-- .post-footer -->
@@ -227,13 +199,9 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/21/update-on-pys60/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">21</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">21</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-21T12:51:02-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
@@ -247,10 +215,8 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 </ol>
 <p>There are some other minor findings such as different between list (it&#8217;s an array!!!) and a map. However, I&#8217;m still having problem in dealing with UI, at this moment I want to have a tab with two text boxes, one for showing the conservation (in and out messages), and the other one used to input message. I haven&#8217;t got any ideas how to make it, so far. It seems Canvas is the direction, but output text with line wrapping is way to hard to do to me.</p>
 <p>I will post things here once I get any progress, but I would like to guess that won&#8217;t be significant in near future.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 12:51</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/e90/" rel="tag">e90</a>, <a href="https://xiehang.com/blog/tag/python/" rel="tag">python</a>, <a href="https://xiehang.com/blog/tag/xmpp/" rel="tag">xmpp</a></span>
 	</footer><!-- .post-footer -->
@@ -262,23 +228,17 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/17/making-good-progress-with-im-on-e90/#comments">1 Response &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">17</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">17</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-17T17:08:23-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
 <p>Hey, I&#8217;ve made good progress on E90&#8217;s IM (jabber client).</p>
 <p>There are two threads that I&#8217;m currently working on, one is UI stuffs that I got everything from a book, the other one is XMPP protocol that I got information from xmpppy project&#8217;s sample (and yes, I&#8217;m using this project now as it seems to have minimum external dependencies). UI goes well, though I haven&#8217;t done anything in real yet, and I just made some good progress with XMPP protocol &#8211; I&#8217;ve been able to log into my test accounts and send/receive messages.</p>
 <p>Now I need to speed up the UI progress as I need some basic UI so to make things working smoothly (such as now I have to shutdown my handset to quit the test program, which is SUPER ugly). I will check around and if there is nothing useful than that, I will register a new project on sourceforge, and wish this becomes my second product-level project (1st one is the mail alert but I&#8217;m no longer using it).</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 17:08</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/e90/" rel="tag">e90</a>, <a href="https://xiehang.com/blog/tag/python/" rel="tag">python</a></span>
 	</footer><!-- .post-footer -->
@@ -290,23 +250,17 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/17/garageband-os-x-and-powerbook/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">17</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">17</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-17T10:42:57-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
 <p>Some guy showed me how to use GarageBand to create fancy music thing during a open house event of a piano school, it was pretty impressive and he told me the software is free from Mac, so I decided to give it a try.</p>
 <p>Pity once I got home, after checking the PowerBook (but it&#8217;s running the latest Leopard), I found no GarageBand at all. It seems it&#8217;s part of iLife, which is not free &#8211; It could be free for new Mac buyers but obviously I&#8217;m not.</p>
 <p>Then someone post a review on Apple&#8217;s new Snow Leopard, there are only two things I got from the article &#8211; 64-bit support, and office usage. I don&#8217;t think my old PowerBook qualifies to either of them, so most likely it will run current Leopard forever.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 10:42</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/apple/" rel="tag">apple</a>, <a href="https://xiehang.com/blog/tag/mac/" rel="tag">mac</a>, <a href="https://xiehang.com/blog/tag/music/" rel="tag">music</a></span>
 	</footer><!-- .post-footer -->
@@ -318,23 +272,17 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/17/unlucky-again/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">17</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">17</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-17T10:36:35-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
 <p>I believed the old video card from the HP desktop I purchased last year has no use at all so I threw it away about a week back just after I came back from vacation, but obviously I did something wrong.</p>
 <p>Today I got a mail from HP saying that I can get that one replaced, pity I don&#8217;t have it any more, and have to mention &#8211; I did this while I kept telling myself &#8220;be patient&#8221;.</p>
 <p>Unlucky again, but I will be more patient in the future to make sure I won&#8217;t make similar mistakes again, in other more important pieces of my life.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 10:36</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/desktop/" rel="tag">desktop</a>, <a href="https://xiehang.com/blog/tag/home/" rel="tag">home</a></span>
 	</footer><!-- .post-footer -->
@@ -346,22 +294,16 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/15/godaddys-having-problem/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">15</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">15</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-15T23:07:34-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
 <p>Someone was (or may be still) getting crazy traffic on my shared host, and makes the system totally unusable.</p>
 <p>Load was at ridiculous 500+, hehe.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 23:07</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/godaddy/" rel="tag">godaddy</a></span>
 	</footer><!-- .post-footer -->
@@ -373,26 +315,18 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 		<div class="postdata fix">
 					<span class="category"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/category/triviality/" rel="category tag">Triviality</a></span>
 						<span class="comments"><span class="icon">&nbsp;</span><a href="https://xiehang.com/blog/2009/08/15/new-mouse/#respond">No Responses &#187;</a></span>
-				</div>
-<!-- /.postdata -->
-		</div>
-<!-- /.title -->
-		<div class="date">
-<span class="month">Aug</span> <span class="day">15</span><span class="year">2009</span>
-</div>
+				</div><!-- /.postdata -->
+		</div><!-- /.title -->
+		<div class="date"><span class="month">Aug</span> <span class="day">15</span><span class="year">2009</span></div>
 	</header><!-- /.title-container -->
 	<span class="post-format-icon">&nbsp;</span><span class="updated" title="2009-08-15T12:40:50-07:00"></span>	<div class="entry-container fix">
 		<div class="entry entry-content fix">
 <p>Finally I decided starting to replace mouses I&#8217;m currently using, start from the development machine at home.</p>
 <p>This is the one I bought yesterday:</p>
-<div style="width: 368px" class="wp-caption aligncenter">
-<a href="http://www.microsoft.com/hardware/mouseandkeyboard/ProductDetails.aspx?pid=086&amp;amp;active_tab=overview"><img decoding="async" class=" " src="http://www.microsoft.com/hardware/mouseandkeyboard/images/products/nwlm6k/mk_otherviews_nwlm6k_01.jpg" alt="http://www.microsoft.com/hardware/mouseandkeyboard/ProductDetails.aspx?pid=086&amp;active_tab=overview" width="358" height="228"></a><p class="wp-caption-text">Microsoft Natural Wireless Laser Mouse 6000</p>
-</div>
+<div style="width: 368px" class="wp-caption aligncenter"><a href="http://www.microsoft.com/hardware/mouseandkeyboard/ProductDetails.aspx?pid=086&amp;amp;active_tab=overview"><img fetchpriority="high" decoding="async" class=" " src="http://www.microsoft.com/hardware/mouseandkeyboard/images/products/nwlm6k/mk_otherviews_nwlm6k_01.jpg" alt="http://www.microsoft.com/hardware/mouseandkeyboard/ProductDetails.aspx?pid=086&amp;active_tab=overview" width="358" height="228"></a><p class="wp-caption-text">Microsoft Natural Wireless Laser Mouse 6000</p></div>
 <p>so far so good, though I&#8217;m going to try some more other models especially Logitech.</p>
-		</div>
-<!--entry -->
-	</div>
-<!-- .entry-container -->
+		</div><!--entry -->
+	</div><!-- .entry-container -->
 <footer class="post-footer postdata fix">
 <span class="author"><span class="icon">&nbsp;</span>Posted by <span class="vcard"><a href="https://xiehang.com/blog/author/admin/" class="url fn" rel="author">Hang</a></span> at 12:40</span>		<span class="tags tax"><span class="icon">&nbsp;</span>Tagged with: <a href="https://xiehang.com/blog/tag/computer/" rel="tag">computer</a></span>
 	</footer><!-- .post-footer -->
@@ -400,17 +334,13 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 	<div class="page-nav fix">
 		<span class="previous-entries"><a href="https://xiehang.com/blog/page/37/"><span class="icon">&nbsp;</span>Older Entries</a></span>
 		<span class="next-entries"><a href="https://xiehang.com/blog/page/35/"><span class="icon">&nbsp;</span>Newer Entries</a></span>
-	</div>
-<!-- page nav -->
-      </div>
-<!-- content -->
-    </div>
-<!-- main col -->
+	</div><!-- page nav -->
+      </div><!-- content -->
+    </div><!-- main col -->
 <div id="sidebar-shell-1" class="sidebar-shell sidebar-shell-right">
 <div class="dbx-group right boxed warea" id="sidebar">
-<!--widget start --><aside id="calendar-2" class="dbx-box suf-widget widget_calendar"><div class="dbx-content"><div id="calendar_wrap" class="calendar_wrap">
-<table id="wp-calendar" class="wp-calendar-table">
-	<caption>November 2022</caption>
+<!--widget start --><aside id="calendar-2" class="dbx-box suf-widget widget_calendar"><div class="dbx-content"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar" class="wp-calendar-table">
+	<caption>January 2024</caption>
 	<thead>
 	<tr>
 		<th scope="col" title="Sunday">S</th>
@@ -424,55 +354,27 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 	</thead>
 	<tbody>
 	<tr>
-		<td colspan="2" class="pad">&nbsp;</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
+		<td colspan="1" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
 	</tr>
 	<tr>
-		<td>6</td>
-<td>7</td>
-<td>8</td>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td id="today"><a href="https://xiehang.com/blog/2022/11/12/" aria-label="Posts published on November 12, 2022">12</a></td>
+		<td id="today">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
 	</tr>
 	<tr>
-		<td>13</td>
-<td>14</td>
-<td>15</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>
-<td>19</td>
+		<td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
 	</tr>
 	<tr>
-		<td>20</td>
-<td>21</td>
-<td>22</td>
-<td>23</td>
-<td>24</td>
-<td>25</td>
-<td>26</td>
+		<td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
 	</tr>
 	<tr>
-		<td>27</td>
-<td>28</td>
-<td>29</td>
-<td>30</td>
+		<td>28</td><td>29</td><td>30</td><td>31</td>
 		<td class="pad" colspan="3">&nbsp;</td>
 	</tr>
 	</tbody>
-	</table>
-<nav aria-label="Previous and next months" class="wp-calendar-nav">
-		<span class="wp-calendar-nav-prev"><a href="https://xiehang.com/blog/2022/08/">&laquo; Aug</a></span>
+	</table><nav aria-label="Previous and next months" class="wp-calendar-nav">
+		<span class="wp-calendar-nav-prev"><a href="https://xiehang.com/blog/2022/11/">&laquo; Nov</a></span>
 		<span class="pad">&nbsp;</span>
 		<span class="wp-calendar-nav-next">&nbsp;</span>
-	</nav>
-</div></div></aside><!--widget end -->
+	</nav></div></div></aside><!--widget end -->
 		<!--widget start --><aside id="recent-posts-2" class="dbx-box suf-widget widget_recent_entries"><div class="dbx-content">
 		<h3 class="dbx-handle plain">Recent Posts</h3>
 		<ul>
@@ -493,29 +395,7 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 									</li>
 					</ul>
 
-		</div></aside><!--widget end --><!--widget start --><aside id="recent-comments-2" class="dbx-box suf-widget widget_recent_comments"><div class="dbx-content">
-<h3 class="dbx-handle plain">Recent Comments</h3>
-<ul id="recentcomments">
-<li class="recentcomments">
-<span class="comment-author-link"><a href="https://xiehang.com/blog" rel="external nofollow ugc" class="url">Hang</a></span> on <a href="https://xiehang.com/blog/2022/04/02/goland/comment-page-1/#comment-13963">Goland</a>
-</li>
-<li class="recentcomments">
-<span class="comment-author-link">oldiev</span> on <a href="https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-13611">Symfony and Godaddy</a>
-</li>
-<li class="recentcomments">
-<span class="comment-author-link"><a href="https://xiehang.com/blog" rel="external nofollow ugc" class="url">Hang</a></span> on <a href="https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/comment-page-1/#comment-13405">How to delete a record from AWS Route53</a>
-</li>
-<li class="recentcomments">
-<span class="comment-author-link"><a href="https://xiehang.com/blog" rel="external nofollow ugc" class="url">Hang</a></span> on <a href="https://xiehang.com/blog/2015/11/14/to-do-list-2/comment-page-1/#comment-13371">To-Do List</a>
-</li>
-<li class="recentcomments">
-<span class="comment-author-link"><a href="http://friv.red/" rel="external nofollow ugc" class="url">friv</a></span> on <a href="https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/comment-page-1/#comment-12368">Relationship is the bottleneck</a>
-</li>
-</ul>
-</div></aside><!--widget end --><!--widget start --><aside id="tag_cloud-2" class="dbx-box suf-widget widget_tag_cloud"><div class="dbx-content">
-<h3 class="dbx-handle plain">Tags</h3>
-<div class="tagcloud">
-<a href="https://xiehang.com/blog/tag/ada/" class="tag-cloud-link tag-link-4 tag-link-position-1" style="font-size: 13.510638297872pt;" aria-label="ada (13 items)">ada</a>
+		</div></aside><!--widget end --><!--widget start --><aside id="recent-comments-2" class="dbx-box suf-widget widget_recent_comments"><div class="dbx-content"><h3 class="dbx-handle plain">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://xiehang.com/blog" class="url" rel="ugc">Hang</a></span> on <a href="https://xiehang.com/blog/2022/04/02/goland/comment-page-1/#comment-13963">Goland</a></li><li class="recentcomments"><span class="comment-author-link">oldiev</span> on <a href="https://xiehang.com/blog/2009/07/03/symfony-and-godaddy/comment-page-1/#comment-13611">Symfony and Godaddy</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://xiehang.com/blog" class="url" rel="ugc">Hang</a></span> on <a href="https://xiehang.com/blog/2017/09/23/how-to-delete-a-record-from-aws-route53/comment-page-1/#comment-13405">How to delete a record from AWS Route53</a></li><li class="recentcomments"><span class="comment-author-link"><a href="https://xiehang.com/blog" class="url" rel="ugc">Hang</a></span> on <a href="https://xiehang.com/blog/2015/11/14/to-do-list-2/comment-page-1/#comment-13371">To-Do List</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://friv.red/" class="url" rel="ugc external nofollow">friv</a></span> on <a href="https://xiehang.com/blog/2009/12/08/relationship-is-the-bottleneck/comment-page-1/#comment-12368">Relationship is the bottleneck</a></li></ul></div></aside><!--widget end --><!--widget start --><aside id="tag_cloud-2" class="dbx-box suf-widget widget_tag_cloud"><div class="dbx-content"><h3 class="dbx-handle plain">Tags</h3><div class="tagcloud"><a href="https://xiehang.com/blog/tag/ada/" class="tag-cloud-link tag-link-4 tag-link-position-1" style="font-size: 13.510638297872pt;" aria-label="ada (13 items)">ada</a>
 <a href="https://xiehang.com/blog/tag/amazon/" class="tag-cloud-link tag-link-257 tag-link-position-2" style="font-size: 9.0425531914894pt;" aria-label="amazon (6 items)">amazon</a>
 <a href="https://xiehang.com/blog/tag/android/" class="tag-cloud-link tag-link-236 tag-link-position-3" style="font-size: 12.468085106383pt;" aria-label="android (11 items)">android</a>
 <a href="https://xiehang.com/blog/tag/apache/" class="tag-cloud-link tag-link-82 tag-link-position-4" style="font-size: 9.7872340425532pt;" aria-label="apache (7 items)">apache</a>
@@ -559,34 +439,30 @@ ssh -t mandriva &#8220;sudo urpmi &#8211;auto-update &#8211;auto-orphans &#8211;
 <a href="https://xiehang.com/blog/tag/windows/" class="tag-cloud-link tag-link-38 tag-link-position-42" style="font-size: 11.872340425532pt;" aria-label="windows (10 items)">windows</a>
 <a href="https://xiehang.com/blog/tag/wordpress/" class="tag-cloud-link tag-link-32 tag-link-position-43" style="font-size: 14.255319148936pt;" aria-label="wordpress (15 items)">wordpress</a>
 <a href="https://xiehang.com/blog/tag/work/" class="tag-cloud-link tag-link-24 tag-link-position-44" style="font-size: 22pt;" aria-label="work (51 items)">work</a>
-<a href="https://xiehang.com/blog/tag/xcode/" class="tag-cloud-link tag-link-17 tag-link-position-45" style="font-size: 9.7872340425532pt;" aria-label="xcode (7 items)">xcode</a>
+<a href="https://xiehang.com/blog/tag/xcode/" class="tag-cloud-link tag-link-17 tag-link-position-45" style="font-size: 9.7872340425532pt;" aria-label="xcode (7 items)">xcode</a></div>
+</div></aside><!--widget end --></div><!--/sidebar -->
 </div>
-</div></aside><!--widget end -->
-</div>
-<!--/sidebar -->
-</div>
-	</div>
-<!-- /container -->
+	</div><!-- /container -->
 
 <footer>
 	<div id="cred">
 		<table>
 			<tr>
-				<td class="cred-left">&#169; 2012 <a href="https://xiehang.com/blog">Flying Bug</a>
-</td>
+				<td class="cred-left">&#169; 2012 <a href="https://xiehang.com/blog">Flying Bug</a></td>
 				<td class="cred-center"></td>
 				<td class="cred-right"><a href="https://aquoid.com/themes/suffusion/">Suffusion theme by Sayontan Sinha</a></td>
 			</tr>
 		</table>
 	</div>
 </footer>
-<!-- 53 queries, 5MB in 0.061 seconds. -->
-</div>
-<!--/wrapper -->
+<!-- 44 queries, 5MB in 0.025 seconds. -->
+</div><!--/wrapper -->
 <!-- location footer -->
-<script type="text/javascript" src="https://xiehang.com/blog/wp-content/plugins/wp-syntax/js/wp-syntax.js?ver=1.1" id="wp-syntax-js-js"></script>
-<script type="text/javascript" src="https://xiehang.com/blog/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=1A/Cs6fBRCu6SiA" id="enlighterjs-js"></script>
-<script type="text/javascript" id="enlighterjs-js-after">!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);</script>
+<script type="text/javascript" src="https://xiehang.com/blog/wp-content/plugins/wp-syntax/js/wp-syntax.js?ver=1.2" id="wp-syntax-js-js"></script>
+<script type="text/javascript" src="https://xiehang.com/blog/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=tp7I%2FZWO6eU9f84" id="enlighterjs-js"></script>
+<script type="text/javascript" id="enlighterjs-js-after">/*  */
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"enlighter","language":"enlighter","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+/*  */</script>
 
 </body>
 </html>

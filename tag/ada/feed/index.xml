@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1</generator>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
 		<title>Ada &#8230;</title>
 		<link>https://xiehang.com/blog/2013/02/12/ada/</link>
@@ -33,7 +33,7 @@
 
 					<description><![CDATA[You know I used to believe Ada is an elegant programming language because its codes look well organized, I thought it inherited this from Pascal till I found out I wrote some codes like this: Ada do need a &#8220;continue&#8221; statement. &#160;]]></description>
 										<content:encoded><![CDATA[<p>You know I used to believe Ada is an elegant programming language because its codes look well organized, I thought it inherited this from Pascal till I found out I wrote some codes like this:</p>
-<p><a href="https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27.png"><img decoding="async" loading="lazy" class="aligncenter size-medium wp-image-1499" alt="Codes" src="https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27-300x116.png" width="300" height="116" srcset="https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27-300x116.png 300w, https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27.png 304w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27.png"><img decoding="async" class="aligncenter size-medium wp-image-1499" alt="Codes" src="https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27-300x116.png" width="300" height="116" srcset="https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27-300x116.png 300w, https://xiehang.com/blog/wp-content/uploads/2013/02/屏幕快照-2013-02-12-上午12.58.27.png 304w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>Ada do need a &#8220;continue&#8221; statement.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
@@ -277,13 +277,13 @@ Linux ubuntu 2.6.28-11-generic #42-Ubuntu SMP Fri Apr 17 01:57:59 UTC 2009 i686 
 <p>许多规则支持将 Ada 特性和特定命名约定的面向对象 (OO) 概念的系统映射。</p>
 <h2><a name="anchor5411263"></a>指南分类</h2>
 <p>这些指导方针并非同等重要。它们大致遵循以下的等级：</p>
-<h3>提示：<img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" /></h3>
+<h3>提示：<img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" /></h3>
 <p>该指导方针仅是一条简单的建议；不遵守它也不会有什么实质性的损害，采用或是不采用它们仅是个人喜好问题。文中的提示用以上符号标出。</p>
-<h3>建议：<img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" /></h3>
+<h3>建议：<img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" /></h3>
 <p>该指导方针通常更多地基于技术的观点；它可能会影响到代码的可移植性或可复用性，并在一些实施中影响性能。 除非有合适的理由，否则必须遵守建议。文中提到一些例外的情况。文中的建议用以上符号标出。</p>
-<h3>限制：<img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" /></h3>
+<h3>限制：<img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" /></h3>
 <p>有疑问的特性使用起来危险，但它并不被完全禁止；应用该特性的决定应在项目级上做出，并且决定应该是高度可见的。文中的限制用以上符号标出。</p>
-<h3>要求：<img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" /></h3>
+<h3>要求：<img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" /></h3>
 <p>违背它定将导致不好的、不可靠的或是不可移植的代码。 要求不可违背。文中的要求用以上符号标出。</p>
 <p>“Rational 设计工具” (Rational Design Facility) 将用来减少受限特性的使用并加强必需法则和许多建议的运用。</p>
 <p>与许多其它的 Ada 程序设计标准不同的是：事实上，这些指导方针中及少有完全禁用的。好的软件的关键在于：</p>
@@ -294,7 +294,7 @@ Linux ubuntu 2.6.28-11-generic #42-Ubuntu SMP Fri Apr 17 01:57:59 UTC 2009 i686 
 <li>十分小心谨慎地在适当处使用该特性。</li>
 </ul>
 <h2><a name="anchor5412258"></a>最根本的原则</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />使用常识。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />使用常识。</p>
 <p>当无法找到可用的规则或指南，当规则明显不适用，当其它一切都失败时：使用常识，并核查基本原则。这条法则凌驾于其它所有法则之上。常识是<em>必不可少的</em>。</p>
 <hr />
 <h2><a name="anchor5156132"></a><em>第三章</em></h2>
@@ -329,8 +329,8 @@ Linux ubuntu 2.6.28-11-generic #42-Ubuntu SMP Fri Apr 17 01:57:59 UTC 2009 i686 
 <p>控制形如 (xxx:aaa; yyy:bbb) 的列表格式，该列表出现在子程序的形参说明处和类型声明中的判别式处。它也控制形如 (xxx=&gt;aaa, yyy=&gt;bbb) 的列表的格式，该列表出现在子程序调用和聚集处。因为该选项非零（真），所以当一个列表无法在一行中装下时，列表中的每一个元素都占用新的一行。</p>
 <h3>Format .Alignment_Threshold : Line_Range := 20</h3>
 <p>说明为使连续语句中的词法构造对齐（如命名符号中的冒号、赋值号和箭头），格式器可插入的空格数。如果对齐一个构造所需的空格数多于这个数，那么构造不被对齐。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />要注意的是，为了形成某种布局，程序员可以插入一个行结束符或者通过输入 &lt;space&gt; &lt;space&gt; &lt;carriage-return&gt; 来敲入一个不会被格式器删掉的行中断。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当 列表中的元素超过 3 个并且在一行中装不下这些元素时，采用上述技巧。Ada 元素列表应分隔为一行仅有一个元素，以提高代码的易读性和可维护性。这一条尤其适用于以下 Ada 构造（象 Ada Reference Manual 的 Appendix E 中所定义的那样 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944">[ISO87]</a>）：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />要注意的是，为了形成某种布局，程序员可以插入一个行结束符或者通过输入 &lt;space&gt; &lt;space&gt; &lt;carriage-return&gt; 来敲入一个不会被格式器删掉的行中断。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当 列表中的元素超过 3 个并且在一行中装不下这些元素时，采用上述技巧。Ada 元素列表应分隔为一行仅有一个元素，以提高代码的易读性和可维护性。这一条尤其适用于以下 Ada 构造（象 Ada Reference Manual 的 Appendix E 中所定义的那样 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944">[ISO87]</a>）：</p>
 <p>实参关联关系</p>
 <pre>pragma Suppress (Range_Check,
 On =&gt; This_Type,
@@ -421,26 +421,26 @@ With_Name      : in    Subscriber.Name);--
 blank or malformed (see syntax description 
 attached to  declaration of type Subscriber.Name).</pre>
 <h2><a name="anchor5417984"></a>注释用法指南</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />注释应放在相关代码的旁边，缩进同样的大小，紧靠着代码 &#8211; 即用空的注释行在视觉上将注释块与 Ada 构造捆在一起：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />注释应放在相关代码的旁边，缩进同样的大小，紧靠着代码 &#8211; 即用空的注释行在视觉上将注释块与 Ada 构造捆在一起：</p>
 <pre>procedure First_One;
 --
 -- This comment relates to First_One.
 -- But this comment is for Second_One.
 -- 
 procedure Second_One (Times : Natural);</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用空行分隔相关的源码块（注释和代码），而不用粗重的注释行，如：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用空行分隔相关的源码块（注释和代码），而不用粗重的注释行，如：</p>
 <pre>-------------------------------------------------------------</pre>
 <p>或者：</p>
 <pre>--===========================================================</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个注释块中，使用空注释行而非空行来分割注释段</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个注释块中，使用空注释行而非空行来分割注释段</p>
 <pre>-- Some explanation here that needs to be continued in a
 -- subsequent paragraph.
 --
 -- The empty comment line above makes it clear that we 
 -- are dealing with a single comment block.</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />虽然注释可以放在相关 Ada 构造的上方或下方，但是要将一节的标题或者一个说明几个 Ada 构造的主要信息放在构造的<em>上方</em>。将评述或附加信息等这一类的注释放在相关 Ada 构造的<em>下方</em>。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用一页的整行宽在 Ada 构造的开头处分组。避免将注释放在 Ada 构造的同一行。这些注释常常变得不对齐。但是在说明一个长的声明时，如枚举类型直接量，这样的注释方式是可以容许的。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用一个小的分层次的标准注释块来说明小节的标题，但这仅仅适用于很大的 Ada 单元（&gt;200 行的声明或者语句）：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />虽然注释可以放在相关 Ada 构造的上方或下方，但是要将一节的标题或者一个说明几个 Ada 构造的主要信息放在构造的<em>上方</em>。将评述或附加信息等这一类的注释放在相关 Ada 构造的<em>下方</em>。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用一页的整行宽在 Ada 构造的开头处分组。避免将注释放在 Ada 构造的同一行。这些注释常常变得不对齐。但是在说明一个长的声明时，如枚举类型直接量，这样的注释方式是可以容许的。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用一个小的分层次的标准注释块来说明小节的标题，但这仅仅适用于很大的 Ada 单元（&gt;200 行的声明或者语句）：</p>
 <pre>--===========================================================
 --
                主标题
@@ -455,9 +455,9 @@ procedure Second_One (Times : Natural);</pre>
                子部分的头
              --------------------</pre>
 <p>在这种标题前面所放的空行数要多于后面的空行数，例如，两行在前一行在后。这样使标题与随后的正文在视觉上相联系。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避 免使用含有信息的函数头，比如作者、电话、创建和修改日期、单元（或文件名）的位置，因为这些信息很快就会过时。将所有者版权信息放在单元的末尾，尤其是 使用“Rational 环境”时。当访问一个程序包的规格说明源码时 &#8211; 例如在“Rational 环境”中按 [Definition] &#8211; 读者不想浏览两页或者三页对理解程序无任何用处的文本和/或完全不带有任何程序信息的文本。避免使用垂直滚动条、封闭图文框或方框，这些东西只会增加视觉 干扰，而且难以保持一致性。用 Rational CMVC 附注（或者其它形式的软件开发文件）来保存单元历史。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要重复可以在其它地方找到的信息；仅提供一个指向该信息的指针即可。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽 量采用 Ada，而非注释。要实现这一点，你可选择更好的名字、附加临时变量、限定、重命名、子类型、静态表达式和属性，这些都不影响生成的代码（至少在一个好的 编译器中不影响）。你也可以采用小的、嵌入式的谓词函数，并将代码分成几个无参过程，这些过程的名字提供了代码几个离散部分的标题。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避 免使用含有信息的函数头，比如作者、电话、创建和修改日期、单元（或文件名）的位置，因为这些信息很快就会过时。将所有者版权信息放在单元的末尾，尤其是 使用“Rational 环境”时。当访问一个程序包的规格说明源码时 &#8211; 例如在“Rational 环境”中按 [Definition] &#8211; 读者不想浏览两页或者三页对理解程序无任何用处的文本和/或完全不带有任何程序信息的文本。避免使用垂直滚动条、封闭图文框或方框，这些东西只会增加视觉 干扰，而且难以保持一致性。用 Rational CMVC 附注（或者其它形式的软件开发文件）来保存单元历史。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要重复可以在其它地方找到的信息；仅提供一个指向该信息的指针即可。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽 量采用 Ada，而非注释。要实现这一点，你可选择更好的名字、附加临时变量、限定、重命名、子类型、静态表达式和属性，这些都不影响生成的代码（至少在一个好的 编译器中不影响）。你也可以采用小的、嵌入式的谓词函数，并将代码分成几个无参过程，这些过程的名字提供了代码几个离散部分的标题。</p>
 <p>示例：</p>
 <p>将：</p>
 <pre>exit when Su.Locate (Ch, Str) /= 0; 
@@ -499,9 +499,9 @@ if Is_Valid (Current_Rank.all) then
 Append (Item, To_List =&gt; Current_Rank.Ptr);
 end if;
 end;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />注意注释中的风格、语法和拼写。不要使用象电报密码一般的风格。使用拼写检查。（在“Rational 环境”中调用 Speller.Check_Image）。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要使用方言字母或者其它非英文字符。根据 Ada Issue AI-339，非英文字符可被一些开发系统支持，一些 Ada 编译器仅在注释中支持。但这是不可移植的，很有可能在其它系统上失效。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于子程序，至少说明：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />注意注释中的风格、语法和拼写。不要使用象电报密码一般的风格。使用拼写检查。（在“Rational 环境”中调用 Speller.Check_Image）。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要使用方言字母或者其它非英文字符。根据 Ada Issue AI-339，非英文字符可被一些开发系统支持，一些 Ada 编译器仅在注释中支持。但这是不可移植的，很有可能在其它系统上失效。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于子程序，至少说明：</p>
 <ul>
 <li>子程序的用途，但这只是当从它的名字中不能明确了解其用途时</li>
 <li>在何种条件下生成了何种异常</li>
@@ -509,22 +509,22 @@ end;</pre>
 <li>其他数据访问，特别是当数据被修改时；这尤其包括有副作用的函数</li>
 <li>正确使用子程序所需的任何限制或附加信息</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于类型和对象，要说明所有不能通过 Ada 表达的不变量或附加约束。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />避免注释中的重复。例如，有关用途的部分应是“它做什么？”这个问题的简单回答，而不是“它怎么做？”的回答。概述应是设计的简短表达。说明中不应描述所用的算法，而应解释程序包应如何使用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于类型和对象，要说明所有不能通过 Ada 表达的不变量或附加约束。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />避免注释中的重复。例如，有关用途的部分应是“它做什么？”这个问题的简单回答，而不是“它怎么做？”的回答。概述应是设计的简短表达。说明中不应描述所用的算法，而应解释程序包应如何使用。</p>
 <p>数据结构和算法部分应含有足够的信息来帮助理解主要的实现策略（以便正确使用程序包），但无需包含所有的实现细节或与正确使用包毫不相关的信息。</p>
 <hr />
 <h2><a name="anchor5158239"></a><em>第五章</em></h2>
 <h1>命名约定</h1>
 <h2>概述</h2>
 <p>给 Ada 实体（程序单元、类型、子类型、对象、直接量、异常）指定好名字是所有软件应用程序要表述的最精巧的事情之一。中等规模到大规模的应用程序存在着另一个问 题：名字间的冲突，或是要找到足够的同义词来指代相同现实世界中相似但又有别的概念（或是命名一个类型、子类、对象、参数）。这里可利用不采用“use” 子句（或只在极为受限的条件下采用）的法则。在许多情形下，这使得可以不冒混淆的风险而缩短名字，并复用相同的描述词。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />选择清晰的、易读的、有意义的名称。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />选择清晰的、易读的、有意义的名称。</p>
 <p>与其它的编程语言不同，Ada 不将标识符的长度限制在 6，8 或者 15 个字符内。短名字打字速度快不是采用它们的可以为人接受的理由。只有一个字母的标识符通常说明选择不当或是懒惰。可能有几个例外，如将 E 作为自然对数的底，Pi，以及其它少数几个易辨识的情况。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用下划线将一个名字中的不同单词分隔开来：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用下划线将一个名字中的不同单词分隔开来：</p>
 <p><code>Is_Name_Valid</code> 不是 <code>IsNameValid</code></p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />采用全名而不是缩写。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />只采用项目认可的缩略词。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />采用全名而不是缩写。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />只采用项目认可的缩略词。</p>
 <p>只能是在两种情况之一时采用缩写：该缩写在应用领域中很普遍（如 FFT 代表傅立叶变换）或者来自公认缩写的项目级列表。否则，很有可能使相似但不相同的缩写到处出现，导致以后的混淆和错误（如将 track_identification 缩写成 trid、trck_id、tr_iden、tid、tr_ident等）。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />少用后缀说明 Ada 构造的分类。它们不能提高易读性。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />少用后缀说明 Ada 构造的分类。它们不能提高易读性。</p>
 <p>通常按照 Ada 实体的类来加后缀，如给程序包加上 _Package，异常加上 _Error，类型加上 _Type，以及子程序的参数加上 _Param，对帮助阅读和理解代码<em>不是</em>很有效。 而加上如 _Array，_Record 和 _Function 这样的后缀则更糟。Ada 编译器和读者都可以根据上下文从子程序中分辨一个异常：显然只有异常名可以在 <em>raise</em> 语句或异常处理中出现。这些后缀在如下受限的条件下可用：</p>
 <ul>
 <li>当合适的词的选择范围非常有限时，给对象选一个最好的名字并加上类型的后缀。</li>
@@ -535,18 +535,18 @@ end;</pre>
 <p>类属形参类型后缀为 _Constrained</p>
 <p>后缀为 _Pointer 的存取类型或其它非直接指代的形式：_Handle 或 _Reference</p>
 <p>通过 _Or_Wait 隐藏了可能阻塞的入口调用的子程序</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />将名字表述出来，使得从<em>使用</em>的角度看，它们还不错。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />将名字表述出来，使得从<em>使用</em>的角度看，它们还不错。</p>
 <p>试想一个导出实体可在其中使用的上下文，并站在那个角度选择一个名字。一个实体仅被定义一次，但却被使用许多次。这一点对于子程序的名字及其参数来说尤为正确； 使用命名关联关系的结果调用应尽量与自然语言相近。记住缺少<em>使用</em>子句使得大多数声明实体必须具有受限名。对于有可能在类属单元中比在享用模块那里使用得还多的类属形参来说，必须寻找一个好的协调办法，但是绝对要保证子程序的形参在享用模块端好看。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />使用英文单词并拼写正确。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />使用英文单词并拼写正确。</p>
 <p>语言的混合（如法语和英语）将使代码难读，有时使标识符的意义摸棱两可。 既然 Ada 的关键字已是英文的，则要求使用英文单词。最好采用美式拼法，以便利用“Rational 环境”中内置的拼写检查。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要重新定义 Standard 程序包中的任何实体。这是绝对禁止的。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要重新定义 Standard 程序包中的任何实体。这是绝对禁止的。</p>
 <p>这样做将产生混淆和严重的错误。该法则可延伸至其它预定义的库单元：Calendar，System。这也包括 <em>Standard</em> 标识符本身。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免对其它预定义程序包中的标识符重定义，如 System 或 Calendar。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要使用如下的标识符：<strong>Wide_Character</strong> 和 <strong>Wide_String</strong>，它们将在 Ada 95 的 Standard 程序包中引入。不要引入一个名为 <strong>Ada</strong> 的编译单元。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要使用以下单词作为标识符：<strong>abstract</strong>，<strong>aliased</strong>，<strong>protected</strong>，<strong>requeue</strong>，<strong>tagged</strong> 和 <strong>until</strong>，它们在 Ada 95 将成为关键字。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免对其它预定义程序包中的标识符重定义，如 System 或 Calendar。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要使用如下的标识符：<strong>Wide_Character</strong> 和 <strong>Wide_String</strong>，它们将在 Ada 95 的 Standard 程序包中引入。不要引入一个名为 <strong>Ada</strong> 的编译单元。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要使用以下单词作为标识符：<strong>abstract</strong>，<strong>aliased</strong>，<strong>protected</strong>，<strong>requeue</strong>，<strong>tagged</strong> 和 <strong>until</strong>，它们在 Ada 95 将成为关键字。</p>
 <p>一些给各种 Ada 实体的命名建议也是同样。假定一般情形下，“面向对象”风格的设计受欢迎。详情请参见附录 A。</p>
 <h2><a name="anchor5419947"></a>程序包</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当一个程序包引入了某个对象类时，用该对象类的名字命名程序包，通常是一个单数形式的名词，若需要（即定义了一个带参数的类），可加上后缀 _Generic。仅当对象总以群体形式出现时，才采用复数形式。例如：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当一个程序包引入了某个对象类时，用该对象类的名字命名程序包，通常是一个单数形式的名词，若需要（即定义了一个带参数的类），可加上后缀 _Generic。仅当对象总以群体形式出现时，才采用复数形式。例如：</p>
 <pre>package Text is
 package Line is
 package Mailbox is
@@ -554,10 +554,10 @@ package Message is
 package Attributes is
 package Subscriber is
 package List_Generic is</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />若一个程序包说明了一个接口或者功能分组，并且它不与任何对象相关，则应在它的名字中将这一点表述出来：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />若一个程序包说明了一个接口或者功能分组，并且它不与任何对象相关，则应在它的名字中将这一点表述出来：</p>
 <pre>package Low_Layer_Interface is
 package Math_Definitions is</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当一个“逻辑”包用平面分解 (flat decomposition)，需要作为几个包来表达时，采用项目级一致的列表中的后缀。例如，一个逻辑程序包 Mailbox 可如下实现：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当一个“逻辑”包用平面分解 (flat decomposition)，需要作为几个包来表达时，采用项目级一致的列表中的后缀。例如，一个逻辑程序包 Mailbox 可如下实现：</p>
 <pre>package Mailbox_Definitions is
 package Mailbox_Exceptions is
 package Mailbox_Io is
@@ -572,19 +572,19 @@ _Hidden_Definitions
 _Maintenance 
 _Debug</pre>
 <h2><a name="anchor5420811"></a>类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当在程序包中定义一个对象类蕴涵拷贝语义时 &#8211; 即当类型可实例化并且某种形式的任务分配可行时，采用：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当在程序包中定义一个对象类蕴涵拷贝语义时 &#8211; 即当类型可实例化并且某种形式的任务分配可行时，采用：</p>
 <pre>type Object is ...</pre>
 <p>注意类名不应在标识符中重复，因为它总是以完全受限的形式使用：</p>
 <pre>Mailbox.Object
 Line.Object</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当包含共享语义时 &#8211; 即类型用存取值（或者其它非直接的形式）实现，并且赋值语句（若存在）不复制对象 &#8211; 用如下方式说明：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当包含共享语义时 &#8211; 即类型用存取值（或者其它非直接的形式）实现，并且赋值语句（若存在）不复制对象 &#8211; 用如下方式说明：</p>
 <p>UL&gt;</p>
 <ul>
 <li><code>type Handle is </code>用于非直接引用</li>
 <li><code>type Reference is </code>是一个可行的备用方案</li>
 </ul>
 <p>这些元素在单独使用时作后缀，前面加上包名，这样并不清楚或非常摸棱两可。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当蕴涵多个对象时，采用：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当蕴涵多个对象时，采用：</p>
 <ul>
 <li><code>type Set is </code>当暗含元素的特殊性时</li>
 <li><code>type List is </code>当包含某种次序时</li>
@@ -592,9 +592,9 @@ Line.Object</pre>
 <li><code>type Iterator is</code> 当提供了 Initialize，Value_Of，Next，Is_Done 等原语时<br />
 （参见 6.5 节）</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于某个对象串的指定，采用：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于某个对象串的指定，采用：</p>
 <p><code>type Name is</code></p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为了达到更好的易读性，类型的受限名也应在整个定义包内使用。“Rational 环境”中，当在子程序调用中采用 [Complete] 函数时，上述方法也可使运行更加好。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为了达到更好的易读性，类型的受限名也应在整个定义包内使用。“Rational 环境”中，当在子程序调用中采用 [Complete] 函数时，上述方法也可使运行更加好。</p>
 <p>例如，注意下面的完全名 Subscriber.Object：</p>
 <pre>package Subscriber is
 type Object is private;
@@ -615,22 +615,22 @@ record
 The_Name : Subscriber.Name (1..20);
                     ...
 end Subscriber;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />在其它情况下，类名采用名词或者修饰符 + 名词。类型可用复数形式，对象（变量）名采用单数：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />在其它情况下，类名采用名词或者修饰符 + 名词。类型可用复数形式，对象（变量）名采用单数：</p>
 <pre>type Point is record ...
 type Hidden_Attributes is ( ...
 type Boxes is array ...</pre>
 <p>对于枚举类型，单独或者作为后缀使用 Mode，Kind，Code 等单词。</p>
 <p>对于数组类型，当已将简单名用于组件类型时，可以采用后缀 _Table。仅当数组用蕴涵语义来维护时，才采用象 _Set 和 _List 这样的名字或后缀。Reserve _Vector 和 _Matrix 应留作相应的数学概念使用。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />因为要避免单数的任务对象（原因在后文解释），所以即使只有一个该类型的对象时，也应引入任务类型。下面是使用了一个象 _Type 这样的简单后缀之后便令人满意的例子：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />因为要避免单数的任务对象（原因在后文解释），所以即使只有一个该类型的对象时，也应引入任务类型。下面是使用了一个象 _Type 这样的简单后缀之后便令人满意的例子：</p>
 <pre>task type Listener_Type is ...
 for Listener_Type'Storage_Size use ...
 Listener : Listener_Type;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />类似地，当类型名采用名词（或者名词短语）存在冲突时，或者几处的对象名或参数名有冲突时，在该类型名后加上后缀 _Kind，而让对象使用（无后缀的）简单名词：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />类似地，当类型名采用名词（或者名词短语）存在冲突时，或者几处的对象名或参数名有冲突时，在该类型名后加上后缀 _Kind，而让对象使用（无后缀的）简单名词：</p>
 <pre>type Status_Kind is (None, Normal, Urgent, Red);
 Status : Status_Kind := None;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />或者，对于总以复数出现的事物的类型，采用复数形式。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />因为存取类型存在固有的危害，所以使用者应小心。一般它们叫做 Pointer。如果名字本身意义还很摸棱两可，则应加上后缀 _pointer。作为后备方案，也可采用 _Access 做后缀。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />有时采用嵌套子程序包来引入次级抽象可以简化命名：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />或者，对于总以复数出现的事物的类型，采用复数形式。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />因为存取类型存在固有的危害，所以使用者应小心。一般它们叫做 Pointer。如果名字本身意义还很摸棱两可，则应加上后缀 _pointer。作为后备方案，也可采用 _Access 做后缀。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />有时采用嵌套子程序包来引入次级抽象可以简化命名：</p>
 <pre>package Subscriber is    ...
 package Status is
 type Kind is (Ok, Deleted, Incomplete, Suspended, 
@@ -640,13 +640,13 @@ To_Subscriber : Subscriber.Handle);
 end Status;
     ...</pre>
 <h2><a name="anchor5421958"></a>异常</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />因为异常只能用来处理错误，所以应使用名词或名词短语来清楚表达一个负面的意义：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />因为异常只能用来处理错误，所以应使用名词或名词短语来清楚表达一个负面的意义：</p>
 <pre>Overflow, Threshold_Exceeded, Bad_Initial_Value</pre>
 <p>当在一个类程序包中定义异常时，标识符无需包含类名 &#8211; 例如 Bad_Initial_Subscriber_Value &#8211; 因为异常一直被用作 Subscriber.Bad_Initial_Value。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />采用 Bad，Incomplete，Invalid，Wrong，Missing 或者 Illegal 中的一个单词作为名字的一部分，而不是系统地采用不传达任何详细信息的 Error：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />采用 Bad，Incomplete，Invalid，Wrong，Missing 或者 Illegal 中的一个单词作为名字的一部分，而不是系统地采用不传达任何详细信息的 Error：</p>
 <pre>Illegal_Data, Incomplete_Data</pre>
 <h2><a name="anchor5422907"></a>子程序</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />过程（和任务入口）采用动词。函数名采用带有对象类属性或特征的名词。返回布尔值（谓词）的函数使用形容词（或过去分词）。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />过程（和任务入口）采用动词。函数名采用带有对象类属性或特征的名词。返回布尔值（谓词）的函数使用形容词（或过去分词）。</p>
 <pre>Subscriber.Create
 Subscriber.Destroy
 Subscriber.List.Append
@@ -656,7 +656,7 @@ Subscriber.List.Next
 Subscriber.Deleted             -- Returns a Boolean.
 Subscriber.Unavailable         -- Returns a Boolean.
 Subscriber.Remote</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于谓词，在一些情况下给名词前面加上前缀 Is_ 或 Has_ 或许有帮助；时态要准确和一致：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于谓词，在一些情况下给名词前面加上前缀 Is_ 或 Has_ 或许有帮助；时态要准确和一致：</p>
 <pre>function Has_First_Name ...
 function Is_Administrator ...
 function Is_First...
@@ -672,7 +672,7 @@ Append
 Revert
 Commit
 Show, Display</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />谓词函数和布尔型的参数采用肯定式。否定式的名字可能产生双重否定（例如 Not Is_Not_Found），从而使代码难读。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />谓词函数和布尔型的参数采用肯定式。否定式的名字可能产生双重否定（例如 Not Is_Not_Found），从而使代码难读。</p>
 <pre>function Is_Not_Valid (...) return Boolean
 procedure Find_Client (With_The_Name : in  Name;
 Not_Found     : out Boolean)</pre>
@@ -683,28 +683,28 @@ Found: out Boolean)</pre>
 <p>这才让享用模块按其所需的那样实现了表达式的否定（这样做不会导致运行时间延长）：</p>
 <pre>if not Is_Valid (...) then ....</pre>
 <p>有些情况下，通过使用反义词，如用“Is_Invalid”来代替“Is_Not_Valid”，可以使否定谓词在不改变语义的情况上变成肯定式。但是，肯定式的名字更易读： “Is_Valid”比“not Is_Invalid”更易理解。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当蕴涵着大致相同的意义时，采用相同的单词，而不是寻找同义词或变体。因此，鼓励使用重载来提高代码的一致性，遵循最小限度意外原则。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />若子程序被用做入口调用的“外表” (skins) 或者“包装” (wrappers)，则给其名字动词加上后缀 _Or_Wait，或者给函数取个 Wait_For_ 短语加名词的名字来反映这一点，这样可能有用：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当蕴涵着大致相同的意义时，采用相同的单词，而不是寻找同义词或变体。因此，鼓励使用重载来提高代码的一致性，遵循最小限度意外原则。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />若子程序被用做入口调用的“外表” (skins) 或者“包装” (wrappers)，则给其名字动词加上后缀 _Or_Wait，或者给函数取个 Wait_For_ 短语加名词的名字来反映这一点，这样可能有用：</p>
 <pre>Subscriber.Get_Reply_Or_Wait
 Subscriber.Wait_For_Reply</pre>
 <p>一些操作应一直使用相同的名字来统一定义：</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于转换到字串和从字串转换来的类型变换，对称函数是：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于转换到字串和从字串转换来的类型变换，对称函数是：</p>
 <pre>    function Image and function Value</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于转换到低级表示法（如用于数据交换的 Byte_String）和从低级表示法转换过来的类型变换，对称过程是：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于转换到低级表示法（如用于数据交换的 Byte_String）和从低级表示法转换过来的类型变换，对称过程是：</p>
 <pre>    procedure Read and Write</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于分配数据：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于分配数据：</p>
 <pre>    function Allocate (rather than Create)
 function Destroy (or Release, to express that the object will disappear)</pre>
 <p>当系统地处理它们时采用统一的命名，类型合成将容易许多。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于活动的迭代程序，必须定义以下原语：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于活动的迭代程序，必须定义以下原语：</p>
 <pre>Initialize
 Next
 Is_Done
 Value_Of</pre>
 <p>若可行，还要定义 <code>Reset</code>。若要在相同的作用域范围内引入几个迭代类型，那么应重载这些原语，而不是为每个迭代程序分别引入一套各不相同的标识符。参见 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor250650">[BOO87]</a>。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当采用 Ada 预确定属性作为函数名时，要保证其用法与一般的语义相同：&#8217;First，&#8217;Last，&#8217;Length，&#8217;Image，&#8217;Value，等等。 注意，几个属性（如 &#8216;Range 和 &#8216;Delta）是不能用做函数名的，因为它们是保留字。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当采用 Ada 预确定属性作为函数名时，要保证其用法与一般的语义相同：&#8217;First，&#8217;Last，&#8217;Length，&#8217;Image，&#8217;Value，等等。 注意，几个属性（如 &#8216;Range 和 &#8216;Delta）是不能用做函数名的，因为它们是保留字。</p>
 <h2><a name="anchor5424181"></a>对象和子程序（或入口）参数</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为表明其唯一性或是表明该实体是活动的主要聚集处，在对象或参数名称前加前缀“The”或“This”。要说明一个次要、临时、辅助的对象，则加前缀“A_”或“Current_”：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为表明其唯一性或是表明该实体是活动的主要聚集处，在对象或参数名称前加前缀“The”或“This”。要说明一个次要、临时、辅助的对象，则加前缀“A_”或“Current_”：</p>
 <pre>procedure Change_Name (The_Subscriber : in Subscriber.Handle;
 The_Name       : in Subscriber.Name );
 declare
@@ -713,37 +713,37 @@ begin
     ...
 A_Subscriber := Subscriber.Next (The_Subscriber);
 end;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于布尔型的对象，采用肯定式的谓词子句：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于布尔型的对象，采用肯定式的谓词子句：</p>
 <pre>Found_It
 Is_Available</pre>
 <p>但是：</p>
 <p><code>Is_Not_Available</code> 必须避免。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于任务对象，应采用一个蕴涵了活动实体的名词或者名词短语：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于任务对象，应采用一个蕴涵了活动实体的名词或者名词短语：</p>
 <pre>Listener
 Resource_Manager
 Terminal_Driver</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于参数，在类名或者一些典型名词前加上一个介词前缀也可以增加代码的易读性，尤其是在使用了命名关联关系的调用方那里。其它有用的可以给辅助参数添加的前缀有：加上 Using_ 的形式，或者当一个 <em>in out</em> 参数作为某个次级效果被影响时，加上 Modifying_：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于参数，在类名或者一些典型名词前加上一个介词前缀也可以增加代码的易读性，尤其是在使用了命名关联关系的调用方那里。其它有用的可以给辅助参数添加的前缀有：加上 Using_ 的形式，或者当一个 <em>in out</em> 参数作为某个次级效果被影响时，加上 Modifying_：</p>
 <pre>procedure Update (The_List     : in out Subscriber.List.Handle;
 With_Id      : in     Subscriber.Identification;
 On_Structure : in out Structure;
 For_Value    : in     Value);
 procedure Change (The_Object   : in out Object;
 Using_Object : in     Object);</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />从调用者的角度讲，参数定义的<em>顺序</em>也是非常重要的：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />从调用者的角度讲，参数定义的<em>顺序</em>也是非常重要的：</p>
 <ul>
 <li>首先按照重要性递减的顺序定义无默认值的参数（因此这包括了所有的 <em>out</em> 和 <em>in out</em> 参数）。对一个类的操作，从操作主要聚集的对象那里开始。</li>
 <li>再定义有默认值的参数，最先可能被修改的最先定义。</li>
 </ul>
 <p>这样，利用了默认值，而主参数不必使用命名关联关系。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />即使在函数中，都应明确指出“in”模式。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />即使在函数中，都应明确指出“in”模式。</p>
 <h2><a name="anchor5425191"></a>类属单元</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />给非类属形式选择一个你想用的最好的名字：对程序包采用类名，对过程（参见上文）采用及物动词（或者动词短语），并在名字后加上后缀 _Generic。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于类属形式类型，当类属程序包定义了某个抽象数据结构时，采用 <code>Item</code> 或者 <code>Element</code> 作为类属形参，采用 <code>Structure</code> 或者其它更为合适的名词作为导出抽象。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于被动态的迭代过程，在标识符中采用如 <code>Apply</code>，<code>Scan</code>，<code>Traverse</code>，<code>Process</code> 或 <code>Iterate</code> 这样的动词：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />给非类属形式选择一个你想用的最好的名字：对程序包采用类名，对过程（参见上文）采用及物动词（或者动词短语），并在名字后加上后缀 _Generic。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于类属形式类型，当类属程序包定义了某个抽象数据结构时，采用 <code>Item</code> 或者 <code>Element</code> 作为类属形参，采用 <code>Structure</code> 或者其它更为合适的名词作为导出抽象。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于被动态的迭代过程，在标识符中采用如 <code>Apply</code>，<code>Scan</code>，<code>Traverse</code>，<code>Process</code> 或 <code>Iterate</code> 这样的动词：</p>
 <pre>generic
 		with procedure Act	(Upon : in out Element);
 procedure Iterate_Generic	(Upon : in out Structure);</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />类属形参名不能是同形异义字。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />类属形参名不能是同形异义字。</p>
 <pre>generic
 type Foo is private;
 type Bar is private;
@@ -766,7 +766,7 @@ function Image (Item : Bar) return String Renames Bar_Image;</pre>
 <p>在一个含有几百个对象和子对象的系统里，在库单元级很有可能产生一些名字冲突。对于一些很有用的象 Utilities，Support，Definitions 等这样的名字，程序员缺乏同义词。</p>
 <h3>Ada 实体容易定位</h3>
 <p>在 Rational 主机上采用浏览工具找到实体在何处定义是很简单的，但是，当代码被移植到一个目标计算机并且使用目标机上的工具（调试器，测试工具，等等）时，要在 100 个子系统的 2，000 个单元中找到过程 Utilities.Get 的位置，这对于一个项目新手来说可能就不那么容易了。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在库级单元名前加上四个字母的缩写表示它所属子系统，将这四个字母作为前缀。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在库级单元名前加上四个字母的缩写表示它所属子系统，将这四个字母作为前缀。</p>
 <p>子系统的列表可在 Software Architecture Document (SAD) 中找到。这条规则对高度可复用组件（即很可能被数个项目，COTS 产品和标准单元复用）的库除外。</p>
 <p>示例：</p>
 <p>Comm Communication</p>
@@ -784,17 +784,17 @@ Dbms_Subscriber_Defs</pre>
 <hr />
 <h2><a name="anchor5159726"></a><em>第六章</em></h2>
 <h1>类型、对象和程序单元的声明</h1>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />Ada 的强类型手段是用来防止不同类型的混淆。概念不同的类型应作为不同的用户定义类型来实现。子类型应该用来提高程序的可读性，增强运行时编译器生成的检测的效用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />Ada 的强类型手段是用来防止不同类型的混淆。概念不同的类型应作为不同的用户定义类型来实现。子类型应该用来提高程序的可读性，增强运行时编译器生成的检测的效用。</p>
 <h2><a name="anchor5428537"></a>枚举类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽量在枚举中导入一些额外的直接量值来表示未初始化、不可用或是完全没有值：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽量在枚举中导入一些额外的直接量值来表示未初始化、不可用或是完全没有值：</p>
 <pre>type Mode  is (Undefined, Circular, Sector, Impulse);
 type Error is (None, Overflow, Invalid_Input_Value,Illformed_Name);</pre>
 <p>这支持系统地初始化对象的法则。将这个直接量放在列表的开头而不是末尾，这样便于维护，并允许有效值（如下）的子域相邻：</p>
 <pre>subtype Actual_Error is Error range Overflow ..Error'Last;</pre>
 <h2><a name="anchor5429626"></a>数值类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免使用预定义的数值类型。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免使用预定义的数值类型。</p>
 <p>当目标是实现代码的高可移植性和高可复用性，或是当数值对象所占用的内存空间需要控制时，预定义的数值类型（来自 Standard 程序包）不可用。这样要求的原因是，预定义类型 Integer 和 Float 的特点在 Reference Manual for the Ada Programming Language <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944">[ISO87]</a> 中（有意地）未加以说明。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />首选的系统化策略是引入针对项目的数值类型 &#8211; 例如，在程序包 System_Types 中 &#8211; 名字中含有精确度或内存大小的说明：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />首选的系统化策略是引入针对项目的数值类型 &#8211; 例如，在程序包 System_Types 中 &#8211; 名字中含有精确度或内存大小的说明：</p>
 <pre>package System_Types is
 type Byte is range -128 ..127;
 type Integer16 is range -32568 ..32567;
@@ -803,11 +803,11 @@ type Float6 is digits 6;
 type Float13 is digits 13;
 ...
 end System_Types;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要重定义 Standard 程序包中的标准类型。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要指定它们应从何种基类派生出来；让编译器来选择。 下面是一个不好的例子：</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要重定义 Standard 程序包中的标准类型。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要指定它们应从何种基类派生出来；让编译器来选择。 下面是一个不好的例子：</p>
 <pre>type Byte is new Integer range -128 ..127;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />Float6 是一个比 Float32 更好的名字，即使在大多数机器上，32 位的浮点数也可实现 6 位数精度。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />在项目的不同部分，派生出比 Baty_System_Types 有更多有意义的名字的类型出来。一些最精确的类型可作为私有类型，以便在有限精确度支持下支持到目标的最终端口。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />Float6 是一个比 Float32 更好的名字，即使在大多数机器上，32 位的浮点数也可实现 6 位数精度。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />在项目的不同部分，派生出比 Baty_System_Types 有更多有意义的名字的类型出来。一些最精确的类型可作为私有类型，以便在有限精确度支持下支持到目标的最终端口。</p>
 <p>这一策略在如下情形下采用：</p>
 <ul>
 <li>几种类型间必须相关联。</li>
@@ -820,10 +820,10 @@ type Length is digits 5;</pre>
 <pre>type Counter is new Integer range 1..100; -- could be 64 bits
 type Length is new Float digits 5; -- could be digits 13</pre>
 <p>第二种策略迫使程序员考虑每种类型所要求的准确的上下限和精度，而不是任意地选择几位。但要小心，如果范围与基类的范围不相同，编译器将系统地进行检查 &#8211; 例如，在上述的类型 Counter 中，如果基类型是一个 32 位的整型。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />如果范围检测成为一个问题，那么避免它们的一种方法是声明：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />如果范围检测成为一个问题，那么避免它们的一种方法是声明：</p>
 <pre>type Counter_Min_Range is range 0 ..10_000;
 type Counter is range Counter_Min_Range'Base'First ..Counter_Min_Range'Base'Last;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免标准类型通过象循环、指针范围等这样的标准类型漏到代码中去。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免标准类型通过象循环、指针范围等这样的标准类型漏到代码中去。</p>
 <p>预定义数值类型的子类型只在以下环境中使用：</p>
 <ul>
 <li>Positive 子类型作为 String 类型对象的索引。</li>
@@ -838,40 +838,40 @@ type A is array (0 ..15) of Boolean;
 <p>采用形式：Some_Integer range L ..H</p>
 <pre>for I in Counter range 1 ..100 loop ...
 type A is array (Byte range 0 ..15) of Boolean;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要试图实现无符号类型。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要试图实现无符号类型。</p>
 <p>Ada 中不存在无符号算术整型。在 Ada 语言定义里，所有整型都直接或间接地从预定义类型中派生出来，它们应关于零对称。</p>
 <h2><a name="anchor5430745"></a>实型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为实现可移植性，只依靠值域在以下范围内的实数类型：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为实现可移植性，只依靠值域在以下范围内的实数类型：</p>
 <pre>[-F'Large ..-F'Small]  [0.0]  [F'Small ..F'Large]</pre>
 <p>注意 F&#8217;Last 和 F&#8217;First 可能并非模型数 (model number)，甚至可能不在任何的模型区间内。F&#8217;Last 和 F&#8217;Large 的相对位置有赖于类型定义和基础硬件。一个特别糟的示例是一个定点类型的 &#8216;Last 不属于该类型的例子，如下：</p>
 <pre>type FF is delta 1.0 range -8.0 ..8.0;</pre>
 <p>其中，根据 Ada Reference Manual 3.5.9(6) 中的一条严格的说法是，FF&#8217;Last = 8.0 不可属于该类型。</p>
 <p>要描述很大或者很小的实数，采用属性 &#8216;Large 或者 &#8216;Small （以及它们相应的否定式），而不是描述整型时采用的 &#8216;First 和 &#8216;Last。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于浮点类型，仅采用 &lt;= 和 &gt;=，不采用 =，&lt;，&gt;，/=。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于浮点类型，仅采用 &lt;= 和 &gt;=，不采用 =，&lt;，&gt;，/=。</p>
 <p>绝对值比较的语义定义的不好（在表达式上看是相等的，但在要求的精度范围内看是不等的）。例如，X &lt; Y 产生的结果可能与 not (X &gt;= Y) 产生的结果不同。要检测相等性，A = B 应表述成：</p>
 <pre>abs (A - B) &lt;= abs(A)*F'Epsilon</pre>
 <p>要提高可读性和可维护性，可考虑提供一个 Equal 操作符来封装上面的表达式。</p>
 <p>也要注意到，如下的一个简单的表达式：</p>
 <pre>abs (A - B) &lt;= F'Small</pre>
 <p>仅在 A 和 B 的值较小时才为真，因此这种表达法一般不建议使用。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免使用预定义异常 Numeric_Error。Ada 设计组的一个既定解释已使所有生成 Numeric_Error 的情形现在都生成 Constraint_Error。Ada 95 中已废弃 Numeric_Error 异常。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />如果 Numeric_Error 仍在执行过程中产生（这是 Rational 本地编译器的处理方法），那么总是在异常处理的检查 Numeric_Error 的同一选择语句中一起检查 Constraint_Error：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免使用预定义异常 Numeric_Error。Ada 设计组的一个既定解释已使所有生成 Numeric_Error 的情形现在都生成 Constraint_Error。Ada 95 中已废弃 Numeric_Error 异常。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />如果 Numeric_Error 仍在执行过程中产生（这是 Rational 本地编译器的处理方法），那么总是在异常处理的检查 Numeric_Error 的同一选择语句中一起检查 Constraint_Error：</p>
 <pre>when Numeric_Error | Constraint_Error =&gt; ...</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />注意下溢。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />注意下溢。</p>
 <p>Ada 中不检查下溢。结果是 0.0，没有异常生成。注意，下溢的检测可如下明确实现：当操作数都非 0.0 时，乘或者除 0.0，再检查其结果。并注意到，可以利用你自己的操作符来自动完成这种检测，虽然这有可能影响效率。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制定点类型的使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制定点类型的使用。</p>
 <p>尽量采用浮点类型。在一个 Ada 程序的实现中，定点类型的不均衡使用将带来可移植性问题。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />对于定点类型，&#8217;Small 应该与 &#8216;Delta 相等。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />对于定点类型，&#8217;Small 应该与 &#8216;Delta 相等。</p>
 <p>代码中应说明这一点。&#8217;Small 的缺省选项是 0.1 的 2 次方将导致各种问题。一个让选项清晰明白的方法是按如下方式写代码：</p>
 <pre>Fx_Delta : constant := 0.01;
 type FX is delta Fx_Delta range L ..H;
 for FX'Small use Fx_Delta;</pre>
 <p>如果不支持定点类型的长度子句，那么唯一遵循这条规则的方法是明确说明 &#8216;Delta 是 0.1 的 2 次方。子类型可以具有与 &#8216;Delta 不同的 &#8216;Small （这一条法则仅适用于类型定义，或者 Ada Reference Manual 中的术语“初次命名子类型”）。</p>
 <h2><a name="anchor5431859"></a>记录类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽量给记录类型的组件提供简单、静态的初始值（通常可用 &#8216;First 或 &#8216;Last 这样的值）。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽量给记录类型的组件提供简单、静态的初始值（通常可用 &#8216;First 或 &#8216;Last 这样的值）。</p>
 <p>但这不适用于判别式。语言规则规定，判别式总是有值。仅当可变性是要求的特点时，才应引入可变记录（即判别式具有默认值的记录）。否则，可变记录将产生额外的内存空间（常常分配最大的变量）和时间（变量的检测更难实现）耗费。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免函数在任何组件的默认值下调用，因为这将导致“确立前访问”的错误（参见“程序结构和编译问题”）。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于可变记录（判别式具有默认值的记录），如果一个判别式在其它某个组件的域内使用，应将其具体到一个合理的小范围内。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免函数在任何组件的默认值下调用，因为这将导致“确立前访问”的错误（参见“程序结构和编译问题”）。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于可变记录（判别式具有默认值的记录），如果一个判别式在其它某个组件的域内使用，应将其具体到一个合理的小范围内。</p>
 <p>示例：</p>
 <pre>type Record_Type (D : Integer := 0) is 
 record 
@@ -879,26 +879,26 @@ S : String (1 ..D);
 end record;
 A_Record : Record_Type;</pre>
 <p>在大多数实施中会产生 Storage_Error。要给判别式 D 的子类型说明一个更合理的范围。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要对记录的物理层做任何假设。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要对记录的物理层做任何假设。</p>
 <p>特别是，与其它程序设计语言不同，组件无需按照定义的顺序排列。</p>
 <h2><a name="anchor5433114"></a>存取类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制存取类型的使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制存取类型的使用。</p>
 <p>这一点对于要在小型的无虚拟内存的机器上永久运行的应用程序来说尤其正确。存取类型是不安全的，因为小小的程序设计错误可能会导致存储耗尽，甚至即使在好的程序设计下使用，也会产生内存碎片。存取类型也很<em>慢</em>。存取类型的使用应作为项目范围内策略的一部分，应追踪束 (collection)、束的大小、分配点和回收点。为了让一个抽象的享用模块意识到存取值受控制，选用的名字应指出这一点：采用 Pointer 命名或者在名字后面加上后缀 _Pointer。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在程序确立时分配束，并系统地说明每个束的大小。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在程序确立时分配束，并系统地说明每个束的大小。</p>
 <p>（在存储单元中）给出的值应是静态的或能动态计算出来的（例如，从一个文件中读取）。这条法则的基本原理是，宁愿让程序在启动时立刻运行失败，而不要让它神秘地在 N 天之后死掉。类属程序包可以给这个值提供附加的类属形参来说明其大小。</p>
 <p>注意，每个分配的对象常常有一些开销：可能是出于内部空间管理目的的需要，在目标系统上的运行给每个内存块分配了一些附加的信息。所以，要存储 N 个大小为 M 个存储单元的对象，可能需要给束分配多于 N * M 个存储单元 &#8211; 譬如说，N * (M + K) 个。从 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944">[ISO87]</a> 的 Appendix F 或者从试验中获得开销 K 的值。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />封装分配符（Ada 原语 <em>new</em>）和 release 的用法。若可行，应管理一个内部可用空间列表，而不是依靠无检查收集 (Unchecked_Deallocation)。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />封装分配符（Ada 原语 <em>new</em>）和 release 的用法。若可行，应管理一个内部可用空间列表，而不是依靠无检查收集 (Unchecked_Deallocation)。</p>
 <p>若用一个存取类型实现某个递归数据结构，则很有可能访问的记录类型具有（作为一个组件）与其相同的存取类型。不附加任何空间上的开销（除了指向列表头的指针外），通过将可用空闲单元串联起来，可以使这些单元重新利用。</p>
 <p>明确地处理好由 <em>new</em> 生成的 Storage_Error 异常，并重新导出一个更有意义的异常来说明束的最大存储已耗尽。</p>
 <p>只在一处完成分配和收集使遇到问题时，跟踪与调试更加简单。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />收集时，仅收集与其大小相同（因此判别式一样）的已分配单元。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />收集时，仅收集与其大小相同（因此判别式一样）的已分配单元。</p>
 <p>这一点对于避免内存碎片很重要。 无检查收集 (Unchecked_Deallocation) 不大可能提供内存压缩服务。 你可能想检查一下运行时的系统是否提供相邻释放块的合并功能。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />系统化地给 Destroy （或者 Free，Release）原语提供存取类型。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />系统化地给 Destroy （或者 Free，Release）原语提供存取类型。</p>
 <p>这一点对于采用存取类型的抽象数据类型尤为重要，应系统化地来做，以实现多个此种类型的组合。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />系统地释放对象。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />系统地释放对象。</p>
 <p>找到分配与收集调用之间的映射，以保证所有分配的数据都收回了。尽量在与分配数据相同的域内回收数据。记住，当异常发生时也要回收。注意，这只是使用 <em>when others</em> 选择语句并用一个 <em>raise</em> 语句结束的的一种情形。</p>
 <p>较好的策略是运用模式：Get-Use-Release。程序员得到 (Gets) 对象（对象生成了动态的数据结构），然后使用 (Uses) 它，最后必须释放 (Release) 它。要确保三个操作在代码中可清楚分辨，并且在所有可能的框架的出口，包括异常的出口，完成了释放。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />收集临时的合成数据结构时要小心，它们可能含在记录中。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />收集临时的合成数据结构时要小心，它们可能含在记录中。</p>
 <p>示例：</p>
 <pre>type Object is
 record
@@ -934,7 +934,7 @@ Do_Something
 Release(My_Object);
 end;</pre>
 <h2><a name="anchor5434441"></a>私有类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />若需要隐藏实现细节，则将类型声明为<em>私有</em>。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />若需要隐藏实现细节，则将类型声明为<em>私有</em>。</p>
 <p>以下情况下，要将实现细节隐藏：</p>
 <ul>
 <li>必须保持完备类的内部一致性。</li>
@@ -944,7 +944,7 @@ end;</pre>
 <li>相应数值类型的精确度不大可能在所有可能的目标上直接实现。</li>
 </ul>
 <p>在“Rational 环境”中，私有类型同封闭私有部分 (closed private parts) 以及子系统一起，大大降低了预料外接口设计变化所带来的影响。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />与所谓的“纯粹的”面向对象程序设计恰好相反，当相应的<em>完备</em>类型是最好的可能的抽象时，不要使用私有类型。讲求实效；问一问让类型私有是否可以增加什么。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />与所谓的“纯粹的”面向对象程序设计恰好相反，当相应的<em>完备</em>类型是最好的可能的抽象时，不要使用私有类型。讲求实效；问一问让类型私有是否可以增加什么。</p>
 <p>例如，一个数学矢量最好表示成一个数组，或平面上的一个点表示成一个记录，而不是将它们表示成一个私有类型：</p>
 <pre>type Vector is array (Positive range &lt;&gt;) of Float;
 Type Point is 
@@ -952,18 +952,18 @@ record
 X, Y : Float := Float'Large;
 end record;</pre>
 <p>数组下标、记录组件选择、聚集符号，都远比一系列的子程序调用要易读得多（并且最终更有效率），而这些调用是在类型毫无必要地私有后不可避免的。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当实际对象和值的缺省赋值或比较毫无意义、不直观或不可能时，将私有类型声明为<em>受限的</em>。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />当实际对象和值的缺省赋值或比较毫无意义、不直观或不可能时，将私有类型声明为<em>受限的</em>。</p>
 <p>这是在如下条件下的情形：</p>
 <ul>
 <li>完备类型本身包含一个受限成分。</li>
 <li>完备类型不是单独一大块 &#8211; 例如，用存取值实现的递归数据类型。</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />受限私有类型应自初始化。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />受限私有类型应自初始化。</p>
 <p>这种类型的对象声明必须接收一个合理的初始值，因为一般来说，要在以后赋初值并且不冒在子程序调用中产生异常的风险，是不切实际的。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />只要可行或有意义，给受限类型提供一个 Copy （或 Assign） 过程和一个 Destroy 过程。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />设计类属形式类型时，只要在内部不要求相等或赋值，则应说明<em>受限</em>私有类型，以提高相应类属单元的可用性。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />只要可行或有意义，给受限类型提供一个 Copy （或 Assign） 过程和一个 Destroy 过程。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />设计类属形式类型时，只要在内部不要求相等或赋值，则应说明<em>受限</em>私有类型，以提高相应类属单元的可用性。</p>
 <p>与前面讲述的规则相一致，可以导入一个 Copy 和一个 Destroy 类属形式过程以及，若有意义，一个 Are_Equal 谓词。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于类属形式私有类型，要在说明中指出相应的实际量是否应受约束。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于类属形式私有类型，要在说明中指出相应的实际量是否应受约束。</p>
 <p>这可以通过命名约定和/或注释来实现。</p>
 <pre>generic
 --Must be constrained.
@@ -975,7 +975,7 @@ type Element is limited private;
 pragma Must_Be_Constrained (Element);
 package ...</pre>
 <h2><a name="anchor5435613"></a>派生类型</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />记住，派生一个类型也就派生了所有在父类型的同一声明部分声明的子程序：可派生子程序。因此，无需在派生类型中将它们都作为“外表” (skin) 程序重新定义。但是类属子程序不可派生，因此可能需要将其作为“外表”程序重新定义。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />记住，派生一个类型也就派生了所有在父类型的同一声明部分声明的子程序：可派生子程序。因此，无需在派生类型中将它们都作为“外表” (skin) 程序重新定义。但是类属子程序不可派生，因此可能需要将其作为“外表”程序重新定义。</p>
 <p>示例：</p>
 <pre>package Base is
 type Foo is
@@ -999,16 +999,16 @@ type Bar is new Foo;
 end Client;</pre>
 <p>因此也不需将这些操作重定义为“外表”程序。但要注意，类属子程序（例如被动的迭代程序）不随着其它操作一起派生出来，因此必须作为“外表”程序重新导出。 在包含基类声明的规格说明之外的其它地方定义的子程序也不能派生，必须作为“外表”程序重新导出。</p>
 <h2><a name="anchor5436675"></a>对象声明</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />应在对象声明中说明初始值，除非对象是自初始化的或者暗含了一个默认的初始值（例如，存取类型、任务类型、非判别式域有默认值的记录）。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />应在对象声明中说明初始值，除非对象是自初始化的或者暗含了一个默认的初始值（例如，存取类型、任务类型、非判别式域有默认值的记录）。</p>
 <p>所赋的值必须是一个真实的有意义的值，不是该类的一个任意值。如果实际的初始化值可用，例如输入参数之一，则将值赋给它。若不可能计算出一个有意义的值，则考虑以后再声明该对象，或者可能的话，赋“空” (Nil)。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" /> “空”意味着“未初始化”，它被用来声明那种“不可用但已知值”的直接量，这些直接量可通过算法在控制中摈弃掉。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" /> “空”意味着“未初始化”，它被用来声明那种“不可用但已知值”的直接量，这些直接量可通过算法在控制中摈弃掉。</p>
 <p>尽量让“空”值只用于初始化，这样它的出现总意味着一个还未初始化的变量错误。</p>
 <p>注意有时不可能将所有类型都声明为“空”，尤其是在模运算类型中，例如角度。这种情况下选择较不可能出现的值。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />注意，初始化大型记录的代码的开销很大，尤其是当记录中存在变量并一些初始值是非静态时（或者更准确地说，当值不能在编译时计算出来时）。有时，一次性地完全确立起一个初始值（可能在程序包中定义其类型）并明确地赋值将更有效。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />注意，初始化大型记录的代码的开销很大，尤其是当记录中存在变量并一些初始值是非静态时（或者更准确地说，当值不能在编译时计算出来时）。有时，一次性地完全确立起一个初始值（可能在程序包中定义其类型）并明确地赋值将更有效。</p>
 <pre>R : Some_Record := Initial_Value_For_Some_Record;</pre>
 <p>注：</p>
 <p>经验表明，在移植代码时，未初始化的变量是问题产生的主要原因，也是程序设计错误的主要来源。 当开发主机想通过提供至少部分对象的默认值来对程序设计者“更好”（例如，在 Rational 本地编译器上的 Integer 类型）时，或者当目标系统在程序调入之前，将内存置零（例如，在 DEC VAX 上）时，情况将更加恶化。<em>要实现可移植性，永远要做最坏的假设</em>。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当开销太大或者对象显然在使用前要赋值时，在声明中可以不赋初值。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当开销太大或者对象显然在使用前要赋值时，在声明中可以不赋初值。</p>
 <p>示例：</p>
 <pre>procedure Schmoldu is
 Temp : Some_Very_Complex_Record_Type;
@@ -1017,20 +1017,20 @@ begin
 loop
 Temp := Some_Expression ...
         ...</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在代码中避免使用直接量值。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在代码中避免使用直接量值。</p>
 <p>当定义的值固定于一个类型时，采用常数（带有一个类型）。 否则，采用已命名的数字，尤其是对所有无维值（纯值）来说：</p>
 <pre>Earth_Radius : constant Meter := 6366190.7;   -- In meters.
 Pi           : constant       := 3.141592653; -- No units.</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />用全局的静态表达式来定义相关直接量：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />用全局的静态表达式来定义相关直接量：</p>
 <pre>Bytes_Per_Page :   constant := 512;
 Pages_Per_Buffer : constant := 10;
 Buffer_Size :      constant := Bytes_Per_Page * Pages_Per_Buffer;
 Pi_Over_2   :      constant := Pi / 2.0;</pre>
 <p>这利用了这些表达式必须在编译时准确计算出来这一点。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要用匿名类型声明对象（参见 Ada Reference Manual 3.3.1）</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要用匿名类型声明对象（参见 Ada Reference Manual 3.3.1）</p>
 <p>否则，会降低可维护性，使对象不能作为参数传递，并且常常产生类型冲突错误。</p>
 <h2><a name="anchor5440697"></a>子程序和类属单元</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />子程序可被声明为过程或函数；以下是一些通用标准，可用来选择应以何种形式来声明。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />子程序可被声明为过程或函数；以下是一些通用标准，可用来选择应以何种形式来声明。</p>
 <p>如下情况时，将子程序声明为函数：</p>
 <ul>
 <li>定义了一个操作符，并且该操作符是表达子程序任务的最易读的方式</li>
@@ -1050,8 +1050,8 @@ Pi_Over_2   :      constant := Pi / 2.0;</pre>
 <li>可能产生错误</li>
 <li>当有疑虑或者两者几乎差不多时，将子程序声明为一个过程</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免给用于有大小的结构（表、束，等）的类属形参赋默认值。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽量减少局部过程的副作用，函数应完全无副作用。说明副作用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免给用于有大小的结构（表、束，等）的类属形参赋默认值。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />尽量减少局部过程的副作用，函数应完全无副作用。说明副作用。</p>
 <p>副作用通常是对全局变量的修改，并且只在读子程序<em>体</em>时才注意到。在调用处，程序员可能意识不到它的副作用。</p>
 <p>在要求的对象内将子程序作为参数传递可以增加代码的强壮性，使代码更易理解，更少依赖于它的内容。</p>
 <p>这条法则主要适用于局部子程序；导出子程序常常要求在程序包体内合法访问全局变量。</p>
@@ -1059,17 +1059,17 @@ Pi_Over_2   :      constant := Pi / 2.0;</pre>
 <h2><a name="anchor5161086"></a><em>第七章</em></h2>
 <h1>表达式和语句</h1>
 <h2>表达式</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />使用冗余的圆括号使复合表达式含义更加清晰。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />使用冗余的圆括号使复合表达式含义更加清晰。</p>
 <p>表达式的嵌套层数定义为：忽略操作符优先级原则时，从左到右求表达式的值所需圆括号的嵌套数。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />将表达式的嵌套程度限制在四以内。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />记录聚集应采用已命名关联关系并加以限定：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />将表达式的嵌套程度限制在四以内。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />记录聚集应采用已命名关联关系并加以限定：</p>
 <pre>Subscriber.Descriptor'(Name    =&gt; Subscriber.Null_Name,
 Mailbox =&gt; Mailbox.Nil,
 Status  =&gt; Subscriber.Unknown,
                    ...);</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" /><em>when others</em> 在记录聚集中禁止使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" /><em>when others</em> 在记录聚集中禁止使用。</p>
 <p>这是因为与数组不同，记录自然而然地是不同种类的结构，因此统一赋值是不合理的。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于简单谓词，用简单的布尔表达式来取代“if&#8230;then&#8230;else”语句：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于简单谓词，用简单的布尔表达式来取代“if&#8230;then&#8230;else”语句：</p>
 <p>PRE&gt;function Is_In_Range(The_Value: Value; The_Range: Range) return Boolean is begin if The_Value &gt;= The_Range.Min and The_Value &lt;= The_Range.Max; then return True; end if; end Is_In_Range;</p>
 <p>应重写成：</p>
 <pre>function Is_In_Range(The_Value: Value; The_Range: Range)
@@ -1080,7 +1080,7 @@ and The_Value &lt;= The_Range.Max;
 end Is_In_Range;</pre>
 <p>如果影响可读性，那么含有两个或多个 if 语句的复杂表达式就不应这样修改。</p>
 <h2><a name="anchor5444672"></a>语句</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />循环语句在以下情形中应具有名字：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />循环语句在以下情形中应具有名字：</p>
 <ul>
 <li>当它们超过 25 行时</li>
 <li>当它们嵌套时</li>
@@ -1090,11 +1090,11 @@ end Is_In_Range;</pre>
 <pre>Forever: loop
    ...
 end loop Forever;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />若循环有名字，那么它所含的任何 exit 语句应说明该名字。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />需在一开始就进行完全测试的循环应采用“while”循环形式。需在其它地方进行完全测试的循环应采用一般形式和一个 exit 语句。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />最小化循环中的 exit 语句数。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个对数组进行迭代的“for”循环中，对数组对象采用 &#8216;Range 属性，而不是一个明确的范围或者某个其它子类型。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />从循环中去掉所有独立于循环之外的代码。虽然“代码提升” (code hoisting) 是一种常用的编译优化方法，但是当不变体代码调用其它编译单元时却不能使用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />若循环有名字，那么它所含的任何 exit 语句应说明该名字。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />需在一开始就进行完全测试的循环应采用“while”循环形式。需在其它地方进行完全测试的循环应采用一般形式和一个 exit 语句。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />最小化循环中的 exit 语句数。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个对数组进行迭代的“for”循环中，对数组对象采用 &#8216;Range 属性，而不是一个明确的范围或者某个其它子类型。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />从循环中去掉所有独立于循环之外的代码。虽然“代码提升” (code hoisting) 是一种常用的编译优化方法，但是当不变体代码调用其它编译单元时却不能使用。</p>
 <p>示例：</p>
 <pre>World_Search:
 while not World.Is_At_End(World_Iterator) loop
@@ -1126,7 +1126,7 @@ The_City =&gt; Nation.City_Of
 In_Atlas =&gt; This_Country_Atlas );
 begin
                 ...</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />子程序和入口调用应采用命名关联关系。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />子程序和入口调用应采用命名关联关系。</p>
 <p>但是，若第一个（或者唯一的）参数明显是操作的主要聚集点（例如，一个及物动词的直接对象）时，仅有这个参数的名字可省略：</p>
 <pre>Subscriber.Delete (The_Subscriber =&gt; Old_Subscriber);</pre>
 <p>其中，Subscriber.Delete 是及物动词，Old_Subscriber 是直接对象。下面无命名关联关系 The_Subscriber =&gt; Old_Subscriber 的表达式亦可接受：</p>
@@ -1138,13 +1138,13 @@ if Is_Administrator (Old_Subscriber) then ...</pre>
 <p>也可能有这样的情况：参数的意思很明显，使得命名关联关系只会降低易读性。这是真的，例如，当所有参数都是相同类型、模式，并且没有默认值时：</p>
 <pre>if Is_Equal (X, Y) then ...
 Swap (U, B);</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" /><em>when others</em> 不应在 case 语句或者记录类型定义（对变量的）中使用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" /><em>when others</em> 不应在 case 语句或者记录类型定义（对变量的）中使用。</p>
 <p>当离散类型定义修改时，通过使这些结构失效，不使用 <em>when others</em>，这在代码维护阶段有用，将迫使程序员考虑应如何处理那些修改。但是，当可选范围是一个大的整型范围时，它是可容许的。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当分支条件是一个离散值时，采用 case 语句，而不是一系列“else if”语句。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />子程序应在单点返回。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当分支条件是一个离散值时，采用 case 语句，而不是一系列“else if”语句。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />子程序应在单点返回。</p>
 <p>尽量在语句部分的末尾从子程序里退出。函数应仅有一个返回语句。返回语句在程序体中自由放置与 <em>goto</em> 的情况类似，会造成编码难以阅读和维护。</p>
 <p>过程不应带有任何返回语句。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />仅在很小的函数里，即当所有的 <em>return</em> 语句都能被同时看到并且代码有十分规则的结构时，才允许存在多个 <em>return</em> 语句。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />仅在很小的函数里，即当所有的 <em>return</em> 语句都能被同时看到并且代码有十分规则的结构时，才允许存在多个 <em>return</em> 语句。</p>
 <pre>function Get_Some_Attribute return Some_Type is
 begin
 if Some_Condition then
@@ -1153,11 +1153,11 @@ else
 return That_Other_Value;
 end if;
 end Get_Some_Attribute;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制 <em>goto</em> 语句的使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制 <em>goto</em> 语句的使用。</p>
 <p>为“goto”语句说几句话：应注意到，<em>goto</em> 标志的语法和 Ada 中使用 <em>goto</em> 的限制条件使这个语句并不象所想的那样有害，而且在许多场合下，采用 <em>goto</em> 语句比采用与之等价的构造要好，要更易读，更有意义（例如，一个带异常的伪 <em>goto</em> 语句）。</p>
 <h2><a name="anchor5446110"></a>编码提示</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当对数组进行操作时，不要假定数组下标从 1 开始。应采用属性 &#8216;Last，&#8217;First 和 &#8216;Range。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />定义无约束类型 &#8211; 大多是记录 &#8211; 的最常用约束子类型，并将这些子类型作为参数和返回值，以增加客户端（享用模块）的自检测：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当对数组进行操作时，不要假定数组下标从 1 开始。应采用属性 &#8216;Last，&#8217;First 和 &#8216;Range。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />定义无约束类型 &#8211; 大多是记录 &#8211; 的最常用约束子类型，并将这些子类型作为参数和返回值，以增加客户端（享用模块）的自检测：</p>
 <pre>type Style is (Regular, Bold, Italic, Condensed);
 type Font (Variety: Style) is ...
 subtype Regular_Font is Font (Variety =&gt; Regular);
@@ -1171,23 +1171,23 @@ Using_Font : in     Italic_Font);
 <h1>可见性问题</h1>
 <h2>重载和同形异义字</h2>
 <p>以下是几点指导性建议：</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />重载子程序。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />重载子程序。</p>
 <p>但是，当使用相同标识符时，一定要确保所指的的确是相同的操作。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免嵌套作用域内隐藏同形异义标识符。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免嵌套作用域内隐藏同形异义标识符。</p>
 <p>这会使读者模糊不清，维护时造成潜在的危险。也要小心“for”循环控制变量的存在和作用域。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要在子类型上重载操作，一定要在类型上重载。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要在子类型上重载操作，一定要在类型上重载。</p>
 <p>与一些天真的读者可能有的想法截然相反的是，重载将被运用到基类型和它的所有子类型中去。</p>
 <p>示例：</p>
 <pre>subtype Table_Page is Syst.Natural16 range 0..10;
 function "+"(Left, Right: Table_Page) return Table_Page;</pre>
 <p>当匹配子程序时，编译器查找一个参数的基类型，而非子类型。因此，上例中当前程序包内的所有 Natural16的“+”实际上都重定义了，而不仅仅是 Table_Page。因此，所有“Natural16 + Natural16”表达式现在都被映射到一个调用中去“+”(Table_Page, Table_Page),调用很可能返回错误的结果，或者生成异常。</p>
 <h2><a name="anchor5448097"></a>上下文子句</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />使由“with”子句引入的依赖关系个数最少。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />使由“with”子句引入的依赖关系个数最少。</p>
 <p>在采用了“with”子句扩展可见性的地方，子句应尽量减小所覆盖的代码区。只在需要时才使用“with”子句，理想情况是只在程序体，或者一个大的程序体存根 (body stub) 处采用。</p>
 <p>采用接口程序包重新导出低级实体，所以应避免显式地“with”上大量的低级程序包。要实现这一点，采用派生类型、重命名、“外表”子程序以及可能的象字符串这样的预定义类型（正象 Environment 命令程序包一样）。</p>
 <p>通过类属形式参数，采用单元间的<em>软</em>（弱）耦合，而不是通过“with”子句实现<em>硬</em>（强）耦合。</p>
 <p>例如：要在一个组合类型上导出一个 Put 过程，则将某个 Put 过程作为类属形式量导入，并作为导出过程的组件，而不是直接 <em>with</em> 上 Text_Io。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要采用“Use”子句。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要采用“Use”子句。</p>
 <p>倘若实现有效使用上下文的命名约定以及适当重命名都充分支持这条法则，则尽量避免使用“use”子句可以提高代码可读性和易读性。（参见上文中的“命名约定”）。它也有助于防止某些可见性意外，尤其是在代码维护阶段。</p>
 <p>对于一个定义了字符类型的包来说，在任何需要定义基于该字符类型的字符串直接量的编译单元中，都必须使用“use”子句：</p>
 <pre>package Internationalization is
@@ -1202,7 +1202,7 @@ Hello : constant Latin_1_String := "Baba"</pre>
 renames Subscriber."=";
 function "+" (X, Y :Base_Types.Angle) return Base_Types.Angle
 renames Base_Types."+";</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />因为无“use”子句常常使许多客户单元（享用模块）中含有一套相同的重命名，这些重命名可在本身的定义包中通过嵌入其中的 Operations 程序包分解。所以，在客户单元中推荐使用 Operations 程序包上的“use”子句：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />因为无“use”子句常常使许多客户单元（享用模块）中含有一套相同的重命名，这些重命名可在本身的定义包中通过嵌入其中的 Operations 程序包分解。所以，在客户单元中推荐使用 Operations 程序包上的“use”子句：</p>
 <pre>package Pack is
 type Foo is range 1 ..10;
 type Bar is private;
@@ -1247,7 +1247,7 @@ begin
     ...
 end;                -- The scope of the use clause ends here.</pre>
 <h2><a name="anchor5449655"></a>重命名</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />采用重命名声明。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />采用重命名声明。</p>
 <p>在限制使用“use”子句的同时推荐使用重命名，这可让代码易读。当一个很长的名字被引用几次时，给它取个短名字将提高易读性：</p>
 <pre>with Directory_Tools;
 with String_Utilities;
@@ -1259,7 +1259,7 @@ package Tio renames Text_Io;
 package Dtn renames Directory_Tools.Naming;
 package Dto renames Directory_Tools.Object;
         ...</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />短名的选取应在项目中保持一致，以符合最小限度意外原则。实现方法是由程序包本身提供短名。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />短名的选取应在项目中保持一致，以符合最小限度意外原则。实现方法是由程序包本身提供短名。</p>
 <pre>package With_A_Very_Long_Name is package Vln renames 
 With_A_Very_Long_Name;
     ...
@@ -1268,12 +1268,12 @@ with With_A_Very_Long_Name;
 package Example is package Vln renames With_A_Very_Long_Name;
 -- From here on Vln is an abbreviation.</pre>
 <p>注意，包的重命名仅是将可见性赋予被命名包的可见部分。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />导入的包的重命名必须在声明部分的开头分组，并按照字母顺序排列。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />重命名可在任何可提高易读性的地方局部地使用（这样做不会使运行时间延长）。类型可被重命名为无限制子类型。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />导入的包的重命名必须在声明部分的开头分组，并按照字母顺序排列。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />重命名可在任何可提高易读性的地方局部地使用（这样做不会使运行时间延长）。类型可被重命名为无限制子类型。</p>
 <p>正如有关注释部分所说的那样，重命名常常给说明代码提供了一个漂亮并可维护的方式 &#8211; 例如，给复杂对象取简单名，或者局部细化类型的意思。重命名标识符的作用域的选择应避免引入混淆。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />重命名异常可使异常在几个单元中分解 &#8211; 例如，在一个类属包的所有实例中分解。注意到，在一个派生类型的程序包中，可能由派生子程序产生的异常应与派生类型一起重新导出，以避免享用模块不得不“with”上原来的包：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />重命名异常可使异常在几个单元中分解 &#8211; 例如，在一个类属包的所有实例中分解。注意到，在一个派生类型的程序包中，可能由派生子程序产生的异常应与派生类型一起重新导出，以避免享用模块不得不“with”上原来的包：</p>
 <p>PRE&gt;with Inner_Defs; package Exporter is &#8230; procedure May_Raise_Exception; &#8212; Raises exception Inner_Defs.Bad_Schmoldu when &#8230;&#8230; Bad_Schmoldu : exception renames Inner_Defs.Bad_Schmoldu; &#8230;</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />重命名“in”参数有不同的默认值的子程序可实现简单的代码分解，并增强易读性：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />重命名“in”参数有不同的默认值的子程序可实现简单的代码分解，并增强易读性：</p>
 <pre>procedure Alert (Message : String;
 Beeps   : Natural);
 procedure Bip (Message : String := "";
@@ -1288,7 +1288,7 @@ renames Alert;
 procedure Warning (Message : String;
 Beeps   : Natural := 1)
 renames Alert;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免在重命名声明的直接作用域内使用重命名实体的旧名；只使用由重命名声明（新名字的）所引入的标识符或操作符。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免在重命名声明的直接作用域内使用重命名实体的旧名；只使用由重命名声明（新名字的）所引入的标识符或操作符。</p>
 <h2><a name="anchor5450738"></a>关于 <em>Use</em> 子句的说明</h2>
 <p>多年以来，在 Ada 语言界一直都有关于“use”子句的争议，有时甚至濒临一场信仰战争。双方都采用了各种论据和实例，但这些论据常常不能很好地扩展到大的项目上去，或是这些实例太不现实，或明显不公允。</p>
 <p>“use”子句的提倡者声称，子句提高了易读性；而且他们给出了非常不可读的冗长的名字的例子，若名字要使用几次，将其重命名会带来优点。他们还声 称 Ada 编译器可以解决重载，这是真的，但是陷入一个大型 Ada 程序的人不可能象编译器那样可靠地并快速地完成重载。他们声称象“Rational 环境”这样复杂的 APSEs 令清晰的完全修饰名毫无用处；但这不对，因为使用者无需对每一个他（她）不肯定的标识符都用 [Definition] 来察看说明。使用者不应猜测，但应能立即看出使用了哪些对象和抽象。 “use”子句的提倡者否认子句在程序维护上存在潜在的危险，并提出，应给那些生成了这种危险的程序设计者一个不及格分数。</p>
@@ -1311,19 +1311,19 @@ renames Alert;</pre>
 <p>b）<em>平面</em> (flat) 分解</p>
 <p>逻辑包被分解为一些用“with”子句相联系的小程序包的网络，最初的逻辑包很可能是一个重新导出“外表”程序（或者是一个不再存在的设计品）。</p>
 <p>每种方法既有优点也有缺点。嵌套式的分解需要写的代码较少，命名较简单（许多标识符无需加前缀）；此外，至少在“Rational 环境”中，结构在库的映像内可见，并且结构容易改变（用 Ada.Make_Separate，Ada.Make_Inline）。平面分解常使得重编译的次数减少，结构更好或更整洁（尤其是在子系统边界处）； 它也促进了复用机制。通过使用自动重编译工具和配置管理，它也令管理更加容易。但是，平面结构“with”一些在分解中生成的低级包，带来了较大可能违反 最初设计的风险。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />子程序的嵌套级应限制在三以内，包则应限制在二以内；不要让包嵌套在子程序中。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />子程序的嵌套级应限制在三以内，包则应限制在二以内；不要让包嵌套在子程序中。</p>
 <pre>package Level_1 is
 package Level_2 is
 package body Level_1 is
 procedure Level_2 is
 procedure Level_3 is</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当如下情形时，对嵌套单元（“分离体”）采用体存根 (body stubs)：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当如下情形时，对嵌套单元（“分离体”）采用体存根 (body stubs)：</p>
 <p>体很大（比打印文本的一页要大）或者，</p>
 <p>体中有元素依赖其它单元，而剩余包体中没有，或者</p>
 <p>体存在多个变体版本（例如，为了支持不同的硬件或操作系统）。</p>
 <h2><a name="anchor5452557"></a>声明部分的结构</h2>
 <h3>程序包的规格说明</h3>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />程序包规格说明的声明部分所包含的声明应按如下顺序排列：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />程序包规格说明的声明部分所包含的声明应按如下顺序排列：</p>
 <p>1) 程序包本身的重命名声明</p>
 <p>2) 导入实体的重命名声明</p>
 <ul>
@@ -1338,7 +1338,7 @@ procedure Level_3 is</pre>
 <p>8) 导出子程序规格说明</p>
 <p>9) 嵌套程序包（如果存在的话）</p>
 <p>10) 私有部分。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于引入了几个主要类型的程序包，最好有几套相关声明：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对于引入了几个主要类型的程序包，最好有几套相关声明：</p>
 <p>5) A 的类型和子类型声明</p>
 <p>6) 常数</p>
 <p>7) 异常声明</p>
@@ -1348,9 +1348,9 @@ procedure Level_3 is</pre>
 <p>7) 异常声明</p>
 <p>8) 在 B 上的操作的导出子程序规格说明</p>
 <p>等等。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当声明部分很大（&gt;100 行），采用小的注释块来划分不同部分的界限。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />当声明部分很大（&gt;100 行），采用小的注释块来划分不同部分的界限。</p>
 <h3>程序包的体</h3>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />程序包体声明的声明部分所包含的声明应按如下顺序排列：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />程序包体声明的声明部分所包含的声明应按如下顺序排列：</p>
 <p>1) 重命名声明（用于导入实体）</p>
 <p>2) “Use”子句</p>
 <p>3) 命名数</p>
@@ -1362,11 +1362,11 @@ procedure Level_3 is</pre>
 <p>9) 导出子程序体</p>
 <p>10) 嵌套程序包体（如果存在的话）。</p>
 <h3>其它构造</h3>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />其它如在子程序体、任务体和块语句中的声明部分遵循相同的通用模式。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />其它如在子程序体、任务体和块语句中的声明部分遵循相同的通用模式。</p>
 <h2><a name="anchor5453895"></a>上下文子句</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />每个导入库单元采用一个“with”子句。按照字母顺序排列“with”子句。如果一个“with”单元上的“use”子句适当，则应紧接上相应的“with”子句。有关编译注释的详细描述，参见下文。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />每个导入库单元采用一个“with”子句。按照字母顺序排列“with”子句。如果一个“with”单元上的“use”子句适当，则应紧接上相应的“with”子句。有关编译注释的详细描述，参见下文。</p>
 <h2><a name="anchor5455075"></a>确立顺序</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要依赖库单元的确立顺序来实现任何特殊效果。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要依赖库单元的确立顺序来实现任何特殊效果。</p>
 <p>每一个 Ada 应用程序可自由选则一个策略来计算确立顺序，它满足Ada Reference Manual <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944">[ISO87]</a> 中阐述的一些很简单的规则。一些应用程序采用比其它程序更明智的策略（例如，在相应的说明之后及早确立体），而一些应用程序不采用这些策略（尤其是类属实例），从而导致非常严重的可移植问题。</p>
 <p>在程序确立中，有三个主要的导致声名狼藉的“确立前访问”错误的来源：</p>
 <ul>
@@ -1377,7 +1377,7 @@ procedure Level_3 is</pre>
 <pre>task type T;
 type T_Ptr is access T;
 SomeT : T_Ptr := new T; -- Access before elaboration.</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />要避免将应用程序从一个 Ada 编译器移植到另一个编译器时产生问题，程序员应该重新编写代码结构（并不总是可实现的），或者通过编译注释详细描述，并采用以下策略来明确控制确立顺序：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />要避免将应用程序从一个 Ada 编译器移植到另一个编译器时产生问题，程序员应该重新编写代码结构（并不总是可实现的），或者通过编译注释详细描述，并采用以下策略来明确控制确立顺序：</p>
 <p>在单元 Q 的上下文子句中，应将编译注释 Elaborate 运用于每个出现在“with”子句中的单元 P：</p>
 <ul>
 <li>若 P 是或者包含有在 Q 中实例化的类属单元</li>
@@ -1396,30 +1396,30 @@ pragma Elaborate (P);</pre>
 <hr />
 <h2><a name="anchor5164826"></a><em>第十章</em></h2>
 <h1>并行</h1>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制任务的使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制任务的使用。</p>
 <p>任务是一个很强大的特性，但是它们的用法讲究。不明智地使用任务将导致很大的空间和时间开销。 对系统某些部分的小修改可能全面地威胁到一套任务的运行，产生“饥饿” (starvation) 和/或死锁 (deadlocks)。测试和调试任务分派程序很困难。因此，任务的使用、位置和相互作用是一个项目级的决定。不应采用一种隐藏的方式使用任务，或者由 无经验的程序员来编写任务。一个 Ada 程序的任务分派模型应是可见的和可理解的。</p>
 <p>除非可以获得并行硬件的有效支持，否则应仅在的确需要并发性时才引入任务。这是要加速有赖于时间的操作时的情形：周期性的活动或者超时 (time-out) 的导入，或者是依赖于一个如中断或外部消息到达的外部事件。也需引入任务来解耦一些活动，譬如：缓冲、排队、分派以及对公共资源的同步访问。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用一个 &#8216;Storage_Size 长度的子句说明任务堆栈的大小。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />用一个 &#8216;Storage_Size 长度的子句说明任务堆栈的大小。</p>
 <p>在与要求束 (collection) 采用长度子句的相同的原因和环境下（前文“存取类型”一节），当内存是一种宝贵资源时，应说明任务的大小。要达到这一点，应始终声明一个明确声明的类型的 任务（因为长度子句只能用于一个类型）。可用一个函数调用来动态分配堆栈的大小。</p>
 <p>注意：估计每个任务需要多大的堆栈可能非常困难。为辅助它，运行时系统可以利用一种“高水位标志” (high-water mark) 机制。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在任务体中采用一个异常处理来避免，或至少报告，一个任务的无法解释的死亡。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在任务体中采用一个异常处理来避免，或至少报告，一个任务的无法解释的死亡。</p>
 <p>不处理异常的任务常常悄悄死掉。若可能，报告死亡原因，尤其是 Storage_Error。这可以很好地调整好堆栈大小。注意，这要求将分配（原语 new）封装在一个可重导出异常而不是 Storage_Error 的子程序中。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在程序确立时生成任务。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在程序确立时生成任务。</p>
 <p>在与要求束在程序确立中分配的相同的原因和环境下（前文“存取类型”一节），整个应用程序任务分配结构应在程序启动时及早创建。与其让程序在几天之后死去，还不如因为内存消耗而完全不启动它。</p>
 <p>在后继规则中，<em>服务</em>任务和<em>应用</em>任务间有一些区别。服务任务是一些小的算法简单的用于将应用程序相关任务“胶着”起来的 任务。服务任务（或中介任务）的例子有缓冲区、传送器、中继器、代理、监视器等，它们通常提供同步、解耦、缓冲和等待服务。而正如同它的名字所传达的那 样，应用任务则更直接地与应用软件的主要功能相关联。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免混合任务：应用任务应是纯粹的调用者，而服务任务应是纯粹的被调用者。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免混合任务：应用任务应是纯粹的调用者，而服务任务应是纯粹的被调用者。</p>
 <p>一个纯粹的被调用者是只包含接收 (accept) 语句或选择性等待并且没有入口调用的任务。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免循环的入口调用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免循环的入口调用。</p>
 <p>这可以极大地降低死锁风险。若不能完全避免，则至少应在系统稳态时杜绝循环。这两条法则也使结构易于理解。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制共享变量的使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制共享变量的使用。</p>
 <p>尤其要小心<em>隐藏的</em>共享变量 &#8211; 例如隐含在程序包体内并可通过原语被几个任务访问的变量。当会合 (rendezvous) 的代价太大时，共享变量可在要求对公共数据结构的访问同步的极端情况下使用。检查编译注释 Shared 是否被有效支持。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用异常中断 (abort) 语句。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用异常中断 (abort) 语句。</p>
 <p>一致承认，异常中断是编程语言中最不安全和最有害处的原语之一。它的无条件（并且几乎是异步的）中止任务的用法使判断给定任务结构的行为几乎成为不可能。但是，也有极少数需要异常中断的情况。</p>
 <p>例如：所提供的一些低级服务缺乏超时 (time-out) 工具。唯一的可引入超时的方法是，让某个辅助代理任务提供该服务，等待（用一个超时）代理的答复，若在延时内未提供服务，则用异常中断杀死代理。</p>
 <p>当可以证明只有中断者和被中断者会受到影响时，可以使用异常中断 &#8211; 例如，当没有任何其它的任务可以调用被中断任务时。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用延迟 (delay) 语句。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用延迟 (delay) 语句。</p>
 <p>随意将一个任务挂起可能导致严重的调度问题，这种问题难于追踪和纠正。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用 &#8216;Count，&#8217;Terminated 和 &#8216;Callable 属性。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用 &#8216;Count，&#8217;Terminated 和 &#8216;Callable 属性。</p>
 <p>&#8216;Count 属性只能作为一个大致说明，调度决策不能靠该属性是否为零作出，因为从计算该属性值到运用该属性值这段时间里，实际等待任务数可能发生了变化。</p>
 <p>采用有条件的入口调用（或者可以接受的相当的构造）来可靠地监测无等待任务。</p>
 <pre>select
@@ -1434,15 +1434,15 @@ else
 -- do something else
 end if;</pre>
 <p>&#8216;Terminated 属性只有为“真”时才有意义，&#8217;Callable 只有为“假”才有意义，这一点很大程度地限制了它们的可用性。它们不应被用作在系统关闭时提供任务间同步。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制优先级的使用。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制优先级的使用。</p>
 <p>Ada 中的优先级对调度的影响有限。特别是，在给入口队列排序或在选择性等待语句中选取入口时，为入口服务的任务的优先级是不在考虑之列的。这有可能产生优先级倒置问题（参见 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor248569">[GOO88]</a>）。优先级只被调度程序用来在等待执行的任务中选取下一个要运行的任务。因为存在优先级倒置的危险，所以对于互斥，不要依赖优先级。</p>
 <p>通过采用入口族 (families of entries)，可以将入口队列分成几个子队列，这样常常可以引入一个关于重要性的明确概念。</p>
 <p>若不需要优先级，就不要给任何任务分配优先级。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />一旦给一个任务分配了优先级，则要给应用程序中的所有任务都分配优先级。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />一旦给一个任务分配了优先级，则要给应用程序中的所有任务都分配优先级。</p>
 <p>需要这条法则，是因为任务的优先级在无编译注释 Priority 的情况下是未定义的。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为了可移植性起见，让优先级数尽量小。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />为了可移植性起见，让优先级数尽量小。</p>
 <p>子类型 System.Priority 的范围由实施定义，经验证明实际可行的范围随系统的不同变化很大。而且，最好集中定义优先级，给出名字和定义，而不是在所有的任务中采用整型直接量。存在 一个中心的 System_Priorities 程序包有助于可移植性，并与前述的规则一起，使所有任务规格说明的定位变得容易。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />为避免在循环任务中漂移，在编写延迟语句时要考虑处理时间、开销和任务优先权：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />为避免在循环任务中漂移，在编写延迟语句时要考虑处理时间、开销和任务优先权：</p>
 <pre>Next_Time := Calendar.Clock;
 loop
 -- Do the job.
@@ -1450,15 +1450,15 @@ Next_Time := Next_Time + Period;
 delay Next_Time - Clock;
 end loop;</pre>
 <p>注意 Next_Time &#8211; Clock 可能为负，这说明循环任务运行滞后。可以去掉一个周期。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />为保证可调度性，按“Rate Monotonic调度算法”给循环任务分配优先级 &#8211; 即使用频率最高的任务优先级最高。（详情请参见 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor244436">[SHA90]</a>。）</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />将高的优先级分配给速度很快的中继服务者：显示器、缓冲区。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />为保证可调度性，按“Rate Monotonic调度算法”给循环任务分配优先级 &#8211; 即使用频率最高的任务优先级最高。（详情请参见 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor244436">[SHA90]</a>。）</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />将高的优先级分配给速度很快的中继服务者：显示器、缓冲区。</p>
 <p>但是要确保这些服务者不会因为要会合其它任务而将自己阻塞。在代码中说明这个优先级，以便在程序维护时重视它。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />为最小化“抖动” (jitter) 所产生的效果，依靠给输入样本或输出数据加时间标签，而不是靠这段时间本身。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免忙碌等待（查询）。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />为最小化“抖动” (jitter) 所产生的效果，依靠给输入样本或输出数据加时间标签，而不是靠这段时间本身。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免忙碌等待（查询）。</p>
 <p>保证任务在有选择、入口调用或被延迟的情况下等待，而不是拼命查询要做的事。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对每个会合，要确保至少有一方在等待，并且只有一方具有条件入口调用，或者计时入口调用或等待。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />对每个会合，要确保至少有一方在等待，并且只有一方具有条件入口调用，或者计时入口调用或等待。</p>
 <p>否则，在循环中显而易见的是，代码存在着一种运行到“赛跑”状态，结果极为类似于忙碌等待状态的危险。未能很好地使用优先级将使这种情况恶化。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />封装类时，要保证让它们的一些特性高度可见。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />封装类时，要保证让它们的一些特性高度可见。</p>
 <p>如果在子程序中隐藏了入口调用，要确保阅读这些子程序的读者能够意识到，调用这个子程序有可能阻塞。此外，要说明等待是否有界；如果有，给出对上界的估计。采用命名约定来说明可能的等待（前文中“子程序”一节）。</p>
 <p>如果一个包的确立，一个子程序的调用，或者一个类属单元的实例激活了一个任务，应让这一点对享用模块可见：</p>
 <pre>package Mailbox_Io is
@@ -1469,19 +1469,19 @@ procedure Read_Or_Wait
 (Name: Mailbox.Name; Mbox: in out Mailbox.Object);
         --
 -- Blocking (unbounded wait).</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个选择性等待语句中，不要依赖于入口选择的任何特定顺序。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个选择性等待语句中，不要依赖于入口选择的任何特定顺序。</p>
 <p>若要公平地选择排列在入口的任务，则可通过无等待语句的按需要的顺序来明确地检查队列，然后在所有入口上等待。不要使用 &#8216;Count。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />相同声明部分的任务确立不要依赖任何特定的激活顺序。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />相同声明部分的任务确立不要依赖任何特定的激活顺序。</p>
 <p>如果需要一个特定的启动顺序，应通过与特殊启动入口会合来实现。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />让任务在实现时正常终止。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />让任务在实现时正常终止。</p>
 <p>除非应用程序本身需要任务一旦被激活就永久运行，否则任务应该或者通过正常完成或者通过终止选择语句来终止。这对于宿主是库级程序包的任务来说，可能是不可行的，因为 Ada Reference Manual 未说明在何种条件下它们应该终止。</p>
 <p>如果独立于宿主之外的结构不允许干干净净地终止，那么任务应提供并且等待特殊的在系统关闭时调用的关闭入口。</p>
 <hr />
 <h2><a name="anchor5165643"></a><em>第十一章</em></h2>
 <h1>错误处理与异常</h1>
 <p>通常的思想是，只对错误采用异常处理：逻辑和编程错误，设置错误，被破坏的数据，资源耗尽，等等。通常的法则是，系统在正常状态下以及无重载或硬件失效状态下，不应产生任何异常。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />采用异常来处理逻辑和编程错误，设置错误，被破坏的数据，资源耗尽。尽早采用适当的日志机制来报告异常，包括在发生时刻产生的异常。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />使从一个给定的抽象类中导出的异常的个数尽量少。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />采用异常来处理逻辑和编程错误，设置错误，被破坏的数据，资源耗尽。尽早采用适当的日志机制来报告异常，包括在发生时刻产生的异常。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />使从一个给定的抽象类中导出的异常的个数尽量少。</p>
 <p>在大型系统中，在每一级不得不处理大量的异常会使代码难于阅读和理解。有时，异常阻碍了正常的处理。</p>
 <p>有以下几种方式可令异常的数目尽量少：</p>
 <ul>
@@ -1490,8 +1490,8 @@ procedure Read_Or_Wait
 <li>当错误发生时，将待执行操作作为类属形式过程导入，而不是生成异常。</li>
 <li>为对象添加“异常”状态，提供明确检查对象合法性的原语。</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要使用未在程序设计中说明的异常。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />除非被捕捉到的异常重新生成，否则应避免在错误处理中采用 <em>when others</em> 选择语句。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要使用未在程序设计中说明的异常。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />除非被捕捉到的异常重新生成，否则应避免在错误处理中采用 <em>when others</em> 选择语句。</p>
 <p>这使得在不介入无法在本级处理的异常的情况下，实现本地管理。</p>
 <pre>exception
 when others =&gt; 
@@ -1501,7 +1501,7 @@ end if;
 raise;
 end;</pre>
 <p>另一个可采用 <em>when others</em> 语句的地方是一个任务体的末尾。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于经常发生的可预计事件不要采用异常。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />对于经常发生的可预计事件不要采用异常。</p>
 <p>用异常来表达并非一定是错误的状态有几个不便之处：</p>
 <ul>
 <li>它令人糊涂。</li>
@@ -1509,9 +1509,9 @@ end;</pre>
 <li>它使代码调试更加痛苦，因为大多数源码级的调试器在默认值状态下标志出所有的异常。</li>
 </ul>
 <p>例如，不要将异常以某种附加值的形式从函数返回（象查询中的 Value_Not_Found）；使用一个含有“out”参数的进程，或者引入一个意思为 Not_Found 的特殊值，或者用判别式 Not_Found 将返回类型包裹在一个记录中。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要采用异常来实现控制结构。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />不要采用异常来实现控制结构。</p>
 <p>这是前面规则的一个特例：异常不应作为“goto”语句的一种形式来使用。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />在捕获预定义异常时，将处理句柄放在一个很小的包围产生异常的构造的框架中。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />在捕获预定义异常时，将处理句柄放在一个很小的包围产生异常的构造的框架中。</p>
 <p>象 Constraint_Error，Storage_Error 等这样的预定义异常可在许多地方产生。若因为某种特定原因要捕获某个这一类的异常，则应尽量限制处理句柄的作用域：</p>
 <pre>begin
 Ptr := new Subscriber.Object;
@@ -1519,18 +1519,18 @@ exception
 when Storage_Error =&gt; 
 raise Subscriber.Collection_Overflow;
 end;</pre>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在函数中用一个“return”语句或者“raise”语句来终止异常处理。否则将在调用者内产生 Program_Error 异常。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />少用检查限制 (suppressing of checks)。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在函数中用一个“return”语句或者“raise”语句来终止异常处理。否则将在调用者内产生 Program_Error 异常。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />少用检查限制 (suppressing of checks)。</p>
 <p>当代的 Ada 编译器使通过限制检查所带来的代码长度的可能缩短和性能提高非常得少。 因此，应少用检查限制，要将其控制在很少的被认为是性能瓶颈（通过测量）的代码段上；它决不应该被应用于整个系统。</p>
 <p>必然的结论是，不要只是为了后来某人决定限制检查这种不大可能出现的情况，而增加额外的明确的范围和判别式检测。 依靠 Ada 内置的限制条件检查工具。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />不要在异常的声明域之外滥用异常。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />不要在异常的声明域之外滥用异常。</p>
 <p>这会使享用模块代码无法明确地处理异常，除非采用 <em>when others</em> 选择语句，但它可能不够准确。</p>
 <p>这条法则的一个必然结论是：当通过派生重新导出一个类型时，考虑重新导出派生子程序可能产生的异常,例如通过重命名。否则，享用模块将不得不“with”上原来的定义包。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />一定要将 Numeric_Error 和 Constraint_Error 一起处理。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />一定要将 Numeric_Error 和 Constraint_Error 一起处理。</p>
 <p>Ada 设计组已决定所有可能产生 Numeric_Error 的情况都应生成 Constraint_Error。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />确保状态码有一个正确值。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />确保状态码有一个正确值。</p>
 <p>当用由一个子程序返回的状态码作为一个“out”参数时，一定要确保“out”参数赋了值，这可以通过将赋值语句作为子程序体的第一个可执行语句来实现。 系统化地将所有状态的默认值设置为“成功” (success) 或“失败” (failure)。 考虑子程序的所有可能出口，包括异常处理。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />本地执行安全检查；不要希望您的客户会这样做。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />本地执行安全检查；不要希望您的客户会这样做。</p>
 <p>也就是说，如果给一个子程序错误的输入时它可能给出错误的输出，则应在子程序中加入以控制方式进行检测和报告非法输入的代码。不要依赖注释语句来告知客户应输入适当的值。如果不检测无效参数，早晚有一天，那条注释语句会被忽略掉，从而导致难以调试的错误。</p>
 <p>进一步说明请参见 <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247316">[KR90b]</a>。</p>
 <hr />
@@ -1538,8 +1538,8 @@ end;</pre>
 <h1>低级编程</h1>
 <p>这一部分讨论先验的不可移植的 Ada 语言特征。它们在 <em>Reference Manual for the Ada Programming Language</em><a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944"> [ISO87]</a> 的第十三章中定义，针对特定编译器的特征在 Ada 编译器销售商提供的“Appendix F”中说明。</p>
 <h2><a name="anchor5458692"></a>表示子句和属性</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />仔细研读 Ada Reference Manual 的 Appendix F （并动手做一些小测试以保证真正理解了）。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制表示子句 (representation clause) 的使用。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />仔细研读 Ada Reference Manual 的 Appendix F （并动手做一些小测试以保证真正理解了）。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制表示子句 (representation clause) 的使用。</p>
 <p>从一个应用平台到另一个应用平台，表示子句并不是总被支持。它们的用法中有许多的陷阱。因此不应在系统上随意使用它们。</p>
 <p>表示子句在如下情况下可能是必需的：</p>
 <ul>
@@ -1562,22 +1562,22 @@ for Foo use (Bla =&gt; 1, Bli =&gt;3, Blu =&gt; 4, Blo =&gt; 5);</pre>
 <ul>
 <li>若一个记录的表示子句的用途是为有一个更紧凑的存储，那么对每个组件和子组件采用一个长度子句（或者编译注释 Pack），然后再对记录类型采用编译注释 Pack，可能也足够了。</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />将具有表示子句的类型分组到包，包要明确标识出含有独立于实施之外的代码。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在记录布局中，不要假定一个特定的顺序。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个记录表示子句中，一定要说明所有判别式的位置，并一定在说明变量内的任何组件之前说明。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免联合子句 (alignment clause)。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />将具有表示子句的类型分组到包，包要明确标识出含有独立于实施之外的代码。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在记录布局中，不要假定一个特定的顺序。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个记录表示子句中，一定要说明所有判别式的位置，并一定在说明变量内的任何组件之前说明。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />避免联合子句 (alignment clause)。</p>
 <p>相信编译器会将工作完成得很好；它了解目标联合约束。使用联合子句很有可能导致后来的联合冲突。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />小心在无约束合成类型中存在由编译器生成的域：</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_1.gif" alt="" width="23" height="28" align="bottom" />小心在无约束合成类型中存在由编译器生成的域：</p>
 <p>记录中：动态域的偏移量、不同的子句索引、约束位，等等。</p>
 <p>数组中：预测矢量。</p>
 <p>关于编译器的详情请参见 Appendix F。不要完全依赖 Ada Reference Manual <a href="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/ada/ada.htm#anchor247944">[ISO87]</a> 中的第十三章。</p>
 <h2><a name="anchor5460020"></a>无检查变换</h2>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用无检查变换 (Unchecked_Conversion)。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />限制使用无检查变换 (Unchecked_Conversion)。</p>
 <p>从一个 Ada 编译器到另一个编译器，对无检查变换的支持程度变化很大，支持的具体方式也略微不同，尤其是运用在合成类型和存取类型时。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个无检查转换的实例中，要保证源类型和目标类型都受约束，并且具有相同的大小。</p>
+<p><img decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_4.gif" alt="" width="30" height="37" align="bottom" />在一个无检查转换的实例中，要保证源类型和目标类型都受约束，并且具有相同的大小。</p>
 <p>这是实现有限的可移植性和避免在加入实施信息（如预测矢量）后产生问题的唯一方法。一种保证使两种类型大小相同的方法是，将它们“包”进一个具有记录表示子句的记录类型中。</p>
 <p>一种使类型受约束的方式是在一个约束已预先计算出来的“外表”函数中进行实例化。</p>
-<p><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要将无检查转换应用于存取值或者任务。</p>
+<p><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />不要将无检查转换应用于存取值或者任务。</p>
 <p>不仅所有的系统（如 Rational <em>本地</em>编译器）不支持这一点，而且也不应假定：</p>
 <ul>
 <li>存取值与 System.Address 同形：存取值可能比机器地址 .address 位数要少；</li>
@@ -1587,7 +1587,7 @@ for Foo use (Bla =&gt; 1, Bli =&gt;3, Blu =&gt; 4, Blo =&gt; 5);</pre>
 <h2><a name="anchor5168080"></a><em>第十三章</em></h2>
 <h1>总结</h1>
 <p>这里概括一下要注意的最重要的事情：</p>
-<h3>受限特征（<img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />）：</h3>
+<h3>受限特征（<img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_2.gif" alt="" width="17" height="35" align="bottom" />）：</h3>
 <ul>
 <li>存取类型</li>
 <li>定点类型</li>
@@ -1604,7 +1604,7 @@ for Foo use (Bla =&gt; 1, Bli =&gt;3, Blu =&gt; 4, Blo =&gt; 5);</pre>
 <li>表示子句（&#8217;Small 除外）</li>
 <li>无检查变换 (Unchecked_Conversion)</li>
 </ul>
-<h3>绝对不可以做的（<img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />）</h3>
+<h3>绝对不可以做的（<img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/manuals/images/cg_3.gif" alt="" width="35" height="17" align="bottom" />）</h3>
 <ul>
 <li>非自初始化的受限类型</li>
 <li>未初始化变量</li>
@@ -1728,7 +1728,7 @@ for Foo use (Bla =&gt; 1, Bli =&gt;3, Blu =&gt; 4, Blo =&gt; 5);</pre>
 <p>        RupBlue=MSFPpreload(getImageUrl('/images/rup1_a.gif'));</p>
 <p>    }</p>
 <p>// --&gt;</p>
-<p></script> <a onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true" onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" href="javascript:loadTop();"> </a><a onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true" onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" href="javascript:loadTop();"><img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/images/rup1.gif" border="0" alt="分栏显示 Rational Unified Process" width="20" height="110" /></a></td>
+<p></script> <a onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true" onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" href="javascript:loadTop();"> </a><a onmouseover="if(MSFPhover) document['Home'].src=RupBlue.src; self.status='Display Rational Unified Process using frames'; return true" onmouseout="if(MSFPhover) document['Home'].src=RupGray.src; self.status= ' ';return true" href="javascript:loadTop();"><img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/images/rup1.gif" border="0" alt="分栏显示 Rational Unified Process" width="20" height="110" /></a></td>
 </tr>
 <p><!--msnavigation--></tbody>
 </table>
@@ -1737,7 +1737,7 @@ for Foo use (Bla =&gt; 1, Bli =&gt;3, Blu =&gt; 4, Blo =&gt; 5);</pre>
 <tbody>
 <tr>
 <td>
-<p align="right"><span style="font-family: Arial;"><small><small>Rational Unified Process   <img decoding="async" loading="lazy" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/_borders/rupversion.gif" border="0" alt="" width="68" height="7" /></small></small></span></p>
+<p align="right"><span style="font-family: Arial;"><small><small>Rational Unified Process   <img loading="lazy" decoding="async" src="http://www.woodpecker.org.cn:9081/doc/RationalUnifiedProcess.zh_cn/_borders/rupversion.gif" border="0" alt="" width="68" height="7" /></small></small></span></p>
 </td>
 </tr>
 <p><!--msnavigation--></tbody>

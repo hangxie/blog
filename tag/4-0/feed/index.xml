@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1</generator>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
 		<title>Solr 4.0/trunk changed request handler bahavior</title>
 		<link>https://xiehang.com/blog/2012/02/21/solr-4-0trunk-changed-request-handler-bahavior/</link>

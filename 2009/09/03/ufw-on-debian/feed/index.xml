@@ -16,7 +16,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1</generator>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
 	<item>
 		<title>
 		By: INSTALLING UFW (UNCOMPLICATED FIREWALL) IN DEBIAN-IT大道		</title>
@@ -87,7 +87,7 @@ and<br />
 		<guid isPermaLink="false">https://xiehang.com/blog/?p=654#comment-2803</guid>
 
 					<description><![CDATA[[...] Debian specifics on ufw persistance post-reboot https://xiehang.com/blog/2009/09/03/ufw-on-debian/ [...]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] Debian specifics on ufw persistance post-reboot <a href="https://xiehang.com/blog/2009/09/03/ufw-on-debian/" rel="nofollow ugc">https://xiehang.com/blog/2009/09/03/ufw-on-debian/</a> [&#8230;]</p>
+			<content:encoded><![CDATA[<p>[&#8230;] Debian specifics on ufw persistance post-reboot <a href="https://xiehang.com/blog/2009/09/03/ufw-on-debian/" rel="ugc">https://xiehang.com/blog/2009/09/03/ufw-on-debian/</a> [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>
